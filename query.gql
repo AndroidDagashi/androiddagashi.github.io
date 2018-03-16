@@ -1,0 +1,52 @@
+query {
+  repository(name: "androiddagashi", owner: "yshrsmz") {
+    name,
+    createdAt,
+    milestones(first: 10){
+      edges {
+        node {
+          title
+          issues(first: 10, orderBy: { direction: ASC, field: CREATED_AT}) {
+            edges {
+              node {
+                id,
+                title,
+                createdAt,
+                bodyHTML,
+                labels(first: 50) {
+                  edges {
+                    node {
+                      name,
+                      description
+                    }
+                  }
+                }
+                comments(first: 100) {
+                  totalCount,
+                  edges {
+                    node {
+                        body,
+                        author {
+                          login,
+                          url,
+                          avatarUrl
+                        }
+                    }
+                  }
+                }
+              }
+            }
+            pageInfo {
+              endCursor,
+              startCursor
+            }
+          }
+        }
+      }
+      pageInfo {
+        endCursor,
+        startCursor
+      }
+    }
+  }
+}
