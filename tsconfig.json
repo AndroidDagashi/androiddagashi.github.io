@@ -1,4 +1,13 @@
 {
+  "include": [
+    "./apollo/**/*",
+    "./components/**/*",
+    "./layouts/**/*",
+    "./middleware/**/*",
+    "./pages/**/*",
+    "./plugins/**/*",
+    "./store/**/*",
+  ],
   "compilerOptions": {
     "target": "es5",
     "lib": ["dom", "es2015"],

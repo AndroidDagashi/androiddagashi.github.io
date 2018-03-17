@@ -25,10 +25,7 @@ module.exports = function() {
       }
     }
     // Add .ts extension in webpack resolve
-    if (
-      config.resolve.extensions.indexOf(".ts") ===
-      -1
-    ) {
+    if (config.resolve.extensions.indexOf(".ts") === -1) {
       config.resolve.extensions.push(".ts")
     }
   })
