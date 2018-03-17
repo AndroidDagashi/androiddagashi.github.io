@@ -1,5 +1,5 @@
 <template>
-  <v-list-tile nuxt :to="{name: 'issue-id', params: {id:milestone.id}}">
+  <v-list-tile nuxt :to="{ name: 'issue-id', params: { id:milestone.id } }">
     <v-list-tile-content>
       <v-list-tile-title v-html="title"/>
       <v-list-tile-sub-title v-html="getSummary(milestone)"></v-list-tile-sub-title>

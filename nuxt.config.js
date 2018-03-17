@@ -75,6 +75,9 @@ module.exports = {
       }
     }
   },
+  generate: {
+    fallback: true
+  },
   modules: [
     "@nuxtjs/axios",
     '@nuxtjs/apollo',
