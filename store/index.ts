@@ -7,7 +7,7 @@ export const state = () => ({
   fetchIssuesPerMilestone: 20,
   fetchCommentsPerIssue: 20,
   totalCount: 0,
-  nodes: [] as GHMilestone[],
+  milestones: [] as GHMilestone[],
   pageInfo: {} as GHPageInfo
 })
 
@@ -21,7 +21,7 @@ export const mutations = {
   },
   setMilestones(state, { totalCount, nodes, pageInfo }: GHMilestones) {
     state.totalCount = totalCount
-    state.nodes = nodes
+    state.milestones = nodes
     state.pageInfo = pageInfo
   }
 }
@@ -67,6 +67,7 @@ export type GHMilestones = {
 
 export type GHMilestone = {
   id: string;
+  number: number;
   url: string;
   title: string;
   description: string | null;
@@ -93,6 +94,7 @@ export type GHLabels = {
 export type GHLabel = {
   name: string;
   description: string | null;
+  color: string;
 }
 
 export type GHComments = {

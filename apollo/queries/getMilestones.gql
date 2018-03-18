@@ -4,6 +4,7 @@ query getMilestones(
   $fetchMilestonesPerPage: Int = 5
   $fetchIssuesPerMilestone: Int = 5
   $fetchCommentsPerIssue: Int = 5
+  $fetchLabelsPerIssue: Int = 5
   $endMilestoneCursor: String
 ) {
   repository(owner: $repoOwner, name: $repoName) {
@@ -22,6 +23,7 @@ query getMilestones(
       }
       nodes {
         id
+        number
         url
         title
         description
@@ -37,10 +39,11 @@ query getMilestones(
             url
             title
             body
-            labels(first: 5) {
+            labels(first: $fetchLabelsPerIssue) {
               nodes {
                 name
                 description
+                color
               }
             }
             comments(first: $fetchCommentsPerIssue) {

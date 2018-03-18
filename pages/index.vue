@@ -5,6 +5,8 @@
       <div class="text-xs-center">
         <img src="~/assets/image/logo.jpg" width="200" alt="Android Dagashi" class="mb-5" />
       </div>
+
+      <!-- description -->
       <v-card>
         <v-card-title class="headline">Android Dagashi</v-card-title>
         <v-card-text>
@@ -18,32 +20,19 @@
     </v-flex>
     </v-layout>
     <v-layout row justify-center align-center>
+
+    <!-- Issue list -->
     <v-flex xs12 sm12 md8 class="mt-2">
       <v-card>
         <v-list three-line>
           <v-subheader>Issues</v-subheader>
-          <v-divider/>
-          <issue-link
-          v-for="(milestone, index) in nodes"
-          :key="milestone.id"
-          :milestone="milestone"
-          :index="index"/>
+          <template v-for="(item, index) in milestonesWithDivider">
+            <v-divider v-if="item.isDivider" :key="index"/>
+            <issue-link v-else :key="item.id" :milestone="item" :index="index"/>
+          </template>
         </v-list>
       </v-card>
     </v-flex>
-    <!-- <section>
-    <ol>
-      <li
-      v-for="node in nodes"
-      :key="node.id"
-      >
-      <nuxt-link
-      :to="{name: 'issue-id', params: {id:node.id}}">
-      {{ node.title }}
-      </nuxt-link>
-      </li>
-    </ol>
-  </section> -->
   </v-layout>
 </div>
 </template>
@@ -54,17 +43,27 @@ import { Component, Prop, Provide, Vue } from "nuxt-property-decorator";
 import getMilestones from "~/apollo/queries/getMilestones.gql";
 import IssueLink from "~/components/IssueLink.vue";
 import { GHMilestone } from "store";
+import flatmap from "lodash.flatmap";
+
+type VDividerItem = {
+  isDivider: boolean;
+};
 
 @Component({
   name: "index",
   components: {
     IssueLink
   },
-  computed: mapState(["repoOwner", "repoName", "totalCount", "nodes"])
+  computed: mapState(["repoOwner", "repoName", "totalCount", "milestones"])
 })
 export default class Index extends Vue {
+
+  // insert divider
   get milestonesWithDivider() {
-    return ((this as any).nodes as GHMilestone[]).map;
+    return flatmap(
+      (this as any).milestones as GHMilestone[],
+      (milestone: GHMilestone) => [{ isDivider: true }, milestone]
+    );
   }
 
   async fetchMilestones() {

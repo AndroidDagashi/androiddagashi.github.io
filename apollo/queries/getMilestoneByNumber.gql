@@ -1,0 +1,56 @@
+query getMilestoneByNumber(
+  $repoOwner: String!
+  $repoName: String!
+  $milestoneNumber: Int
+  $fetchIssuesPerMilestone: Int = 5
+  $fetchCommentsPerIssue: Int = 5
+  $endIssueCursor: String
+) {
+  repository(owner: $repoOwner, name: $repoName) {
+    milestone(number: $milestoneNumber) {
+      id
+      number
+      url
+      title
+      description
+      issues(first: $fetchIssuesPerMilestone, after: $endIssueCursor) {
+        totalCount
+        pageInfo {
+          startCursor
+          endCursor
+          hasPreviousPage
+          hasNextPage
+        }
+        nodes {
+          url
+          title
+          body
+          labels(first: $fetchLabelsPerIssue) {
+            nodes {
+              name
+              description
+              color
+            }
+          }
+          comments(first: $fetchCommentsPerIssue) {
+            totalCount
+            pageInfo {
+              startCursor
+              endCursor
+              hasPreviousPage
+              hasNextPage
+            }
+            nodes {
+              body
+              author {
+                login
+                url
+                avatarUrl
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
