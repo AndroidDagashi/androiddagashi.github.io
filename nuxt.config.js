@@ -19,6 +19,8 @@ const host =
   process.env.HOST ||
   process.env.npm_package_config_nuxt_host ||
   "localhost"
+
+  console.log("process.env.NODE_ENV", process.env.NODE_ENV)
 module.exports = {
   env: {
     baseUrl: process.env.BASE_URL || `http://${host}:${port}`,
@@ -92,5 +94,8 @@ module.exports = {
     clientConfigs: {
       default: '~/apollo/client-configs/default.ts'
     }
+  },
+  router: {
+    base: process.env.NODE_ENV === 'dev' ? '/' : '/androiddagashi/'
   }
 }
