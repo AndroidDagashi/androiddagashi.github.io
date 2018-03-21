@@ -20,11 +20,14 @@ const host =
   process.env.npm_package_config_nuxt_host ||
   'localhost';
 
+const baseUrl = process.env.NODE_ENV === 'dev'
+  ? `http://${host}:${port}` : process.env.BASE_URL || `http://${host}:${port}`
+
 const tokenA = process.env.GH_READONLY_TOKEN.slice(0, 10);
 const tokenB = process.env.GH_READONLY_TOKEN.slice(10);
 module.exports = {
   env: {
-    baseUrl: process.env.BASE_URL || `http://${host}:${port}`,
+    baseUrl: baseUrl,
     // GH_READONLY_TOKEN: process.env.GH_READONLY_TOKEN,
     GHRT_A: tokenA,
     GHRT_B: tokenB,

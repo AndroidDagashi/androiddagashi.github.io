@@ -6,7 +6,7 @@
   "author": "Yasuhiro Shimizu <the.phantom.bane@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "nuxt",
+    "dev": "cross-env NODE_ENV=dev nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "prepareJson": "node buildscripts/githubapi-fetcher/index.js",
@@ -21,6 +21,7 @@
     "@vue/cli": "^3.0.0-beta.6",
     "ajv": "^6.2.1",
     "apollo-fetch": "^0.7.0",
+    "cross-env": "^5.1.4",
     "eslint": "^4.19.0",
     "eslint-config-typescript": "^1.0.2",
     "eslint-plugin-typescript": "^0.10.0",
