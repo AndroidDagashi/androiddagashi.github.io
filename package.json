@@ -11,7 +11,9 @@
     "start": "nuxt start",
     "prepare": "node buildscripts/githubapi-fetcher/index.js",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=master --cleanup"
+    "deploy": "push-dir --dir=dist --branch=master --cleanup",
+    "lint": "eslint '**/*.{ts,vue,js}'",
+    "lintAndFix": "eslint --fix '**/*.{ts,vue,js}'"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.105",
@@ -20,12 +22,17 @@
     "ajv": "^6.2.1",
     "apollo-codegen": "^0.19.0",
     "apollo-fetch": "^0.7.0",
+    "eslint": "^4.19.0",
+    "eslint-config-typescript": "^1.0.2",
+    "eslint-plugin-typescript": "^0.10.0",
+    "eslint-plugin-vue": "^4.3.0",
     "graphql": "^0.13.1",
     "push-dir": "^0.4.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
     "ts-loader": "3.5.0",
-    "typescript": "^2.7.2"
+    "typescript": "^2.7.2",
+    "typescript-eslint-parser": "^14.0.0"
   },
   "dependencies": {
     "@nuxtjs/apollo": "^3.0.5",
