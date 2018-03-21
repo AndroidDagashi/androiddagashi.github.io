@@ -9,6 +9,7 @@
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
+    "prepare": "node buildscripts/githubapi-fetcher/index.js",
     "generate": "nuxt generate",
     "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
@@ -18,6 +19,7 @@
     "@vue/cli": "^3.0.0-beta.6",
     "ajv": "^6.2.1",
     "apollo-codegen": "^0.19.0",
+    "apollo-fetch": "^0.7.0",
     "graphql": "^0.13.1",
     "push-dir": "^0.4.1",
     "stylus": "^0.54.5",

@@ -1,0 +1,33 @@
+query getMilestoneDigests(
+  $repoOwner: String!
+  $repoName: String!
+  $fetchMilestones: Int = 50
+  $fetchIssuesPerMilestone: Int = 20
+) {
+  repository(owner: $repoOwner, name: $repoName) {
+    name
+    url
+    milestones(first: $fetchMilestones){
+      totalCount
+      nodes {
+        id
+        number
+        url
+        title
+        description
+        issues(first: $fetchIssuesPerMilestone) {
+          totalCount
+          nodes {
+            title
+          }
+        }
+      }
+      pageInfo {
+        startCursor
+        endCursor
+        hasPreviousPage
+        hasNextPage
+      }
+    }
+  }
+}

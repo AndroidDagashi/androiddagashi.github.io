@@ -1,7 +1,7 @@
 query getMilestoneByNumber(
   $repoOwner: String!
   $repoName: String!
-  $milestoneNumber: Int
+  $milestoneNumber: Int!
   $fetchIssuesPerMilestone: Int = 5
   $fetchCommentsPerIssue: Int = 5
   $endIssueCursor: String
@@ -25,7 +25,7 @@ query getMilestoneByNumber(
           url
           title
           body
-          labels(first: $fetchLabelsPerIssue) {
+          labels(first: 10) {
             nodes {
               name
               description
