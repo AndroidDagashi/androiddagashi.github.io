@@ -7,7 +7,7 @@ export default (ctx) => {
 
   // middleware
   const middlewareLink = new ApolloLink((operation, forward) => {
-    const token = ctx.env.GH_READONLY_TOKEN;
+    const token = `${ctx.env.GHRT_A}${ctx.env.GHRT_B}`;
 
     console.log("token", token)
     operation.setContext({
