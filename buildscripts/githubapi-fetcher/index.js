@@ -1,3 +1,4 @@
+/* eslint no-console:0 */
 const config = require('./config');
 const fs = require('fs');
 const { createApolloFetch } = require('apollo-fetch');
@@ -19,23 +20,45 @@ apolloFectch.use(({ request, options }, next) => {
   next();
 });
 
-async function generateJsons() {
-  try {
-    // generate json for home
-    var { milestones } = await generateIndexJson();
-
-    // generate json for each issue
-    for (var i = 0; i < milestones.nodes.length; i++){
-      console.log('fetching milestone:', milestones.nodes[i].number)
-      var milestone = await generateIssueJson(milestones.nodes[i].number)
+/**
+ * generate json for issue
+ * @param {number} milestoneNumber milestone number to fetch
+ * @returns {Void} Void
+ */
+async function generateIssueJson(milestoneNumber) {
+  var { data, errors }  = await apolloFectch(
+    {
+      query: milestoneQuery,
+      variables: {
+        repoOwner: config.repoOwner,
+        repoName: config.repoName,
+        milestoneNumber: milestoneNumber,
+        fetchIssuesPerMilestone: 50,
+        fetchCommentsPerIssue: 10
+      },
+      operationName: 'getMilestoneByNumber'
     }
+  );
 
-  } catch (e) {
-    console.error('Failed to generate json', e)
-    return null;
+  if (errors) {
+    console.error(errors);
+  } else {
+    let milestone = data.repository.milestone;
+    if (milestone.issues.pageInfo.hasNextPage) {
+      // TODO: fetch issues & comments recursively
+    }
+    fs.writeFileSync(
+      `./static/api/issue/${milestone.id}.json`,
+      JSON.stringify(milestone, null, '  '),
+      'utf8'
+    );
   }
 }
 
+/**
+ * generate json file for index
+ * @returns {object} repository
+ */
 async function generateIndexJson() {
   var { data, errors } = await apolloFectch(
     {
@@ -46,10 +69,10 @@ async function generateIndexJson() {
       },
       operationName: 'getMilestoneDigests'
     }
-  )
+  );
 
   if (errors) {
-    console.log('Failed to generate index.json', errors)
+    console.log('Failed to generate index.json', errors);
     return null;
   } else {
     let repository = data.repository;
@@ -65,34 +88,24 @@ async function generateIndexJson() {
   }
 }
 
-// generate json for issue
-async function generateIssueJson(milestoneNumber) {
-  var { data, errors }  = await apolloFectch(
-    {
-      query: milestoneQuery,
-      variables: {
-        repoOwner: config.repoOwner,
-        repoName: config.repoName,
-        milestoneNumber: milestoneNumber,
-        fetchIssuesPerMilestone: 50,
-        fetchCommentsPerIssue: 10
-      },
-      operationName: 'getMilestoneByNumber'
-    }
-  )
+/**
+ * entry method.
+ * generate all required json files.
+ * @returns {Void} Void
+ */
+async function generateJsons() {
+  try {
+    // generate json for home
+    var { milestones } = await generateIndexJson();
 
-  if (errors) {
-    console.error(errors)
-  } else {
-    let milestone = data.repository.milestone;
-    if (milestone.issues.pageInfo.hasNextPage) {
-      // TODO: fetch issues & comments recursively
+    // generate json for each issue
+    for (var i = 0; i < milestones.nodes.length; i++){
+      console.log('fetching milestone:', milestones.nodes[i].number);
+      var milestone = await generateIssueJson(milestones.nodes[i].number);
     }
-    fs.writeFileSync(
-      `./static/api/issue/${milestone.id}.json`,
-      JSON.stringify(milestone, null, '  '),
-      'utf8'
-    );
+
+  } catch (e) {
+    console.error('Failed to generate json', e);
   }
 }
 

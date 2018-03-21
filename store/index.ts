@@ -1,4 +1,75 @@
-import getMilestones from "~/apollo/queries/getMilestones.gql"
+import getMilestones from '~/apollo/queries/getMilestones.gql';
+
+export type GHPageInfo = {
+  startCursor: string | null;
+  endCursor: string | null;
+  hasPreviousPage: boolean;
+  hasNextPage: boolean;
+};
+
+
+export type GHAuthor = {
+  login: string;
+  url: string;
+  avatarUrl: string;
+};
+
+
+export type GHComment = {
+  body: string;
+  author: GHAuthor;
+};
+
+export type GHComments = {
+  totalCount: number;
+  pageInfo: GHPageInfo;
+  nodes: Array<GHComment>;
+};
+
+export type GHLabel = {
+  name: string;
+  description: string | null;
+  color: string;
+};
+
+export type GHLabels = {
+  nodes: Array<GHLabel>;
+};
+
+export type GHIssue = {
+  url: string;
+  title: string;
+  body: string;
+  labels: GHLabels;
+};
+
+export type GHIssues = {
+  totalCount: number;
+  pageInfo: GHPageInfo;
+  nodes: Array<GHIssue>;
+};
+
+export type GHMilestone = {
+  id: string;
+  number: number;
+  url: string;
+  title: string;
+  description: string | null;
+  issues: GHIssues;
+};
+
+export type GHMilestones = {
+  totalCount: number;
+  pageInfo: GHPageInfo;
+  nodes: Array<GHMilestone>;
+};
+
+export type GHRepository = {
+  name: string;
+  description: string | null;
+  milestones: GHMilestones;
+};
+
 
 export const state = () => ({
   repoOwner: '',
@@ -9,7 +80,7 @@ export const state = () => ({
   totalCount: 0,
   milestones: [] as GHMilestone[],
   pageInfo: {} as GHPageInfo
-})
+});
 
 
 export const mutations = {
@@ -20,11 +91,11 @@ export const mutations = {
     state.repoName = repoName;
   },
   setMilestones(state, { totalCount, nodes, pageInfo }: GHMilestones) {
-    state.totalCount = totalCount
-    state.milestones = nodes
-    state.pageInfo = pageInfo
+    state.totalCount = totalCount;
+    state.milestones = nodes;
+    state.pageInfo = pageInfo;
   }
-}
+};
 
 
 export const actions = {
@@ -44,79 +115,10 @@ export const actions = {
           fetchIssuesPerMilestone: state.fetchIssuesPerMilestone,
           fetchCommentsPerIssue: state.fetchCommentsPerIssue
         }
-      })
+      });
       commit('setMilestones', data.repository.milestones as Array<GHMilestone>);
     } catch (err) {
       console.error(err);
     }
   }
-}
-
-
-export type GHRepository = {
-  name: string;
-  description: string | null;
-  milestones: GHMilestones;
-}
-
-export type GHMilestones = {
-  totalCount: number;
-  pageInfo: GHPageInfo;
-  nodes: Array<GHMilestone>;
-}
-
-export type GHMilestone = {
-  id: string;
-  number: number;
-  url: string;
-  title: string;
-  description: string | null;
-  issues: GHIssues;
-}
-
-export type GHIssues = {
-  totalCount: number;
-  pageInfo: GHPageInfo;
-  nodes: Array<GHIssue>;
-}
-
-export type GHIssue = {
-  url: string;
-  title: string;
-  body: string;
-  labels: Array<GHLabel>
-}
-
-export type GHLabels = {
-  nodes: Array<GHLabel>;
-}
-
-export type GHLabel = {
-  name: string;
-  description: string | null;
-  color: string;
-}
-
-export type GHComments = {
-  totalCount: number;
-  pageInfo: GHPageInfo;
-  nodes: Array<GHComment>
-}
-
-export type GHComment = {
-  body: string;
-  author: GHAuthor;
-}
-
-export type GHAuthor = {
-  login: string;
-  url: string;
-  avatarUrl: string;
-}
-
-export type GHPageInfo = {
-  startCursor: string | null;
-  endCursor: string | null;
-  hasPreviousPage: boolean;
-  hasNextPage: boolean;
-}
+};

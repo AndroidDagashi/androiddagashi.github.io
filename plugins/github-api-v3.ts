@@ -1,4 +1,4 @@
-import axios from "axios"
+import axios from 'axios';
 
 export default ({ env }, inject) => {
   inject(
@@ -8,5 +8,5 @@ export default ({ env }, inject) => {
       timeout: 10000,
       headers: { authorization: `token: ${env.GH_WRITE_TOKEN}`}
     })
-  )
-}
+  );
+};

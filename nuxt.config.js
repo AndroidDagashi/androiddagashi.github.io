@@ -1,29 +1,27 @@
-const nodeExternals = require('webpack-node-externals')
-const parseArgs = require("minimist")
+const nodeExternals = require('webpack-node-externals');
+const parseArgs = require('minimist');
 const argv = parseArgs(process.argv.slice(2), {
   alias: {
-    H: "hostname",
-    p: "port"
+    H: 'hostname',
+    p: 'port'
   },
-  string: ["H"],
+  string: ['H'],
   unknown: parameter => false
-})
+});
 
 const port =
   argv.port ||
   process.env.PORT ||
   process.env.npm_package_config_nuxt_port ||
-  "3000"
+  '3000';
 const host =
   argv.hostname ||
   process.env.HOST ||
   process.env.npm_package_config_nuxt_host ||
-  "localhost"
+  'localhost';
 
-console.log("process.env.NODE_ENV", process.env.NODE_ENV)
-
-const tokenA = process.env.GH_READONLY_TOKEN.slice(0, 10)
-const tokenB = process.env.GH_READONLY_TOKEN.slice(10)
+const tokenA = process.env.GH_READONLY_TOKEN.slice(0, 10);
+const tokenB = process.env.GH_READONLY_TOKEN.slice(10);
 module.exports = {
   env: {
     baseUrl: process.env.BASE_URL || `http://${host}:${port}`,
@@ -34,24 +32,24 @@ module.exports = {
     GH_REPO_NAME: process.env.GH_REPO_NAME
   },
   head: {
-    title: "tt1",
+    title: 'tt1',
     meta: [
-      { charset: "utf-8" },
+      { charset: 'utf-8' },
       {
-        name: "viewport",
-        content: "width=device-width, initial-scale=1"
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1'
       },
       {
-        hid: "description",
-        name: "description",
-        content: "Nuxt.js project"
+        hid: 'description',
+        name: 'description',
+        content: 'Nuxt.js project'
       }
     ],
     link: [
       {
-        rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico'
       },
       {
         rel: 'stylesheet',
@@ -63,13 +61,13 @@ module.exports = {
   /*
   ** Customize the progress-bar color
   */
-  loading: { color: "#3B8070" },
+  loading: { color: '#3B8070' },
   /*
   ** Build configuration
   */
   css: [
-    "~/assets/css/main.css",
-    "~/assets/css/app.styl"
+    '~/assets/css/main.css',
+    '~/assets/css/app.styl'
   ],
   build: {
     extend(configs, ctx) {
@@ -78,7 +76,7 @@ module.exports = {
           nodeExternals({
             whitelist: [/^vuetify/]
           })
-        ]
+        ];
       }
     }
   },
@@ -86,13 +84,14 @@ module.exports = {
     fallback: true
   },
   modules: [
-    "@nuxtjs/axios",
+    '@nuxtjs/axios',
     '@nuxtjs/apollo',
-    "~/modules/typescript.js"
+    '~/modules/typescript.js'
   ],
   plugins: [
-    "~/plugins/github-api-v3.ts",
-    "~/plugins/vuetify.ts"
+    '~/plugins/github-api-v3.ts',
+    '~/plugins/androiddagashi-api.ts',
+    '~/plugins/vuetify.ts'
   ],
   axios: {},
   apollo: {
@@ -100,4 +99,4 @@ module.exports = {
       default: '~/apollo/client-configs/default.ts'
     }
   }
-}
+};

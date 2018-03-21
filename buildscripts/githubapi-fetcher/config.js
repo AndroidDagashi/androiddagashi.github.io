@@ -4,4 +4,4 @@ module.exports = {
   repoOwner: process.env.GH_REPO_OWNER,
   repoName: process.env.GH_REPO_NAME,
   outputDir: '../../assets/api'
-}
+};

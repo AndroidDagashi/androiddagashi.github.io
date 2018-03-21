@@ -1,27 +1,40 @@
 <template>
-  <v-layout row justify-center align-center>
-    <v-flex xs12 sm12 md8>
+  <v-layout
+    row
+    justify-center
+    align-center>
+    <v-flex
+      xs12
+      sm12
+      md8>
       <v-card>
         <v-card-title class="headline">{{ milestone.title }}</v-card-title>
         <!-- <v-card-text v-if="milestone.description" v-html="milestone.description"/> -->
         <v-card-text>
           <div>
             <template v-for="(item, index) in issuesWithDivider">
-              <v-divider v-if="item.isDivider" :key="index"/>
-              <article class="mt-3" v-else :key="item.id">
+              <v-divider
+                v-if="item.isDivider"
+                :key="index"/>
+              <article
+                v-else
+                :key="item.id"
+                class="mt-3">
                 <div>
-                  <h1 v-html="item.title" class="mb-1"/>
+                  <h1
+                    class="mb-1"
+                    v-html="item.title"/>
                   <div class="text-xs-left mb-2">
                     <issue-label
-                    v-for="(label, index) in item.labels.nodes"
-                    :key="index"
-                    :labelInfo="label"
-                    :index="index"/>
+                      v-for="(label, index) in item.labels.nodes"
+                      :key="index"
+                      :label-info="label"
+                      :index="index"/>
                   </div>
                   <vue-markdown
+                    :anchor-attributes="{ target: '_blank' }"
                     class="px-3 issue-body"
-                    :anchorAttributes="{ target: '_blank' }"
-                    >{{ item.body }}</vue-markdown>
+                  >{{ item.body }}</vue-markdown>
                 </div>
               </article>
             </template>
@@ -33,12 +46,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "nuxt-property-decorator";
-import { mapState } from "vuex";
-import { GHMilestone, GHLabel } from "store";
-import flatmap from "lodash.flatmap";
-import VueMarkdown from "vue-markdown"
-import IssueLabel from "~/components/IssueLabel.vue"
+import { Component, Prop, Vue } from 'nuxt-property-decorator';
+import { mapState } from 'vuex';
+import { GHMilestone, GHLabel } from 'store';
+import flatmap from 'lodash.flatmap';
+import VueMarkdown from 'vue-markdown';
+import IssueLabel from '~/components/IssueLabel.vue';
 
 @Component({
   name: "issue",
