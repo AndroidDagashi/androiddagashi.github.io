@@ -11,7 +11,7 @@
     "start": "nuxt start",
     "prepare": "node buildscripts/githubapi-fetcher/index.js",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
+    "deploy": "push-dir --dir=dist --branch=master --cleanup"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.105",
