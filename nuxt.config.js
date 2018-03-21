@@ -99,8 +99,5 @@ module.exports = {
     clientConfigs: {
       default: '~/apollo/client-configs/default.ts'
     }
-  },
-  router: {
-    base: process.env.NODE_ENV === 'dev' ? '/' : '/androiddagashi/'
   }
 }
