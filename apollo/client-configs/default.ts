@@ -9,7 +9,6 @@ export default (ctx) => {
   const middlewareLink = new ApolloLink((operation, forward) => {
     const token = `${ctx.env.GHRT_A}${ctx.env.GHRT_B}`;
 
-    console.log("token", token)
     operation.setContext({
       headers: { authorization: `Bearer ${token}` }
     });
