@@ -4,7 +4,7 @@ export default ({ env }, inject) => {
   inject(
     'dagashiApi',
     axios.create({
-      baseURL: `${env.baseURL}/api`,
+      baseURL: `${env.baseUrl}/api`,
       timeout: 10000
     })
   );

@@ -46,12 +46,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'nuxt-property-decorator';
-import { mapState } from 'vuex';
-import { GHMilestone, GHLabel } from 'store';
-import flatmap from 'lodash.flatmap';
-import VueMarkdown from 'vue-markdown';
-import IssueLabel from '~/components/IssueLabel.vue';
+import { Component, Prop, Vue } from "nuxt-property-decorator";
+import { mapState } from "vuex";
+import { GHMilestone, GHLabel } from "store";
+import flatmap from "lodash.flatmap";
+import VueMarkdown from "vue-markdown";
+import IssueLabel from "~/components/IssueLabel.vue";
 
 @Component({
   name: "issue",
@@ -62,16 +62,17 @@ import IssueLabel from '~/components/IssueLabel.vue';
   }
 })
 export default class Issue extends Vue {
-  milestones: GHMilestone[];
+  milestone: GHMilestone;
 
   get milestoneId(): string {
     return this.$route.params.id;
   }
 
-  get milestone(): GHMilestone {
-    return this.milestones.filter(
-      (value, index, array) => value.id == this.milestoneId
-    )[0];
+  async asyncData({ app, params }) {
+    const { data } = await app.$dagashiApi.get(`/issue/${params.id}.json`)
+    return {
+      milestone: data
+    };
   }
 
   get issuesWithDivider() {
@@ -84,7 +85,7 @@ export default class Issue extends Vue {
 </script>
 
 <style scoped>
-  .issue-body {
-    word-break: break-all;
-  }
+.issue-body {
+  word-break: break-all;
+}
 </style>

@@ -7,13 +7,11 @@ export type GHPageInfo = {
   hasNextPage: boolean;
 };
 
-
 export type GHAuthor = {
   login: string;
   url: string;
   avatarUrl: string;
 };
-
 
 export type GHComment = {
   body: string;
@@ -71,15 +69,37 @@ export type GHRepository = {
 };
 
 
+export type GHDigestIssue = {
+  title: string;
+};
+
+export type GHDigestMilestone = {
+  id: string;
+  number: string;
+  url: string;
+  title: string;
+  description: string;
+  issues: {
+    totalCount: number;
+    nodes: Array<GHDigestIssue>
+  };
+};
+
+export type GHDigest = {
+  name: string;
+  url: string;
+  milestones: {
+    totalCount: number;
+    nodes: Array<GHDigestMilestone>
+  }
+};
+
+
 export const state = () => ({
   repoOwner: '',
   repoName: '',
-  fetchMilestonesPerPage: 20,
-  fetchIssuesPerMilestone: 20,
-  fetchCommentsPerIssue: 20,
-  totalCount: 0,
-  milestones: [] as GHMilestone[],
-  pageInfo: {} as GHPageInfo
+  digest: null as GHDigest | null,
+  milestones: [] as GHMilestone[]
 });
 
 
@@ -94,6 +114,9 @@ export const mutations = {
     state.totalCount = totalCount;
     state.milestones = nodes;
     state.pageInfo = pageInfo;
+  },
+  setDigest(state, digest: GHDigest) {
+    state.digest = digest;
   }
 };
 
@@ -106,17 +129,8 @@ export const actions = {
     commit('setRepoName', repoName);
 
     try {
-      const { data } = await app.apolloProvider.defaultClient.query({
-        query: getMilestones,
-        variables: {
-          repoOwner: repoOwner,
-          repoName: repoName,
-          fetchMilestonesPerPage: state.fetchMilestonesPerPage,
-          fetchIssuesPerMilestone: state.fetchIssuesPerMilestone,
-          fetchCommentsPerIssue: state.fetchCommentsPerIssue
-        }
-      });
-      commit('setMilestones', data.repository.milestones as Array<GHMilestone>);
+      const { data } = await app.$dagashiApi.get('/index.json')
+      commit('setDigest', data as GHDigest);
     } catch (err) {
       console.error(err);
     }
