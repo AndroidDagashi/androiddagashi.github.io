@@ -55,7 +55,6 @@ import IssueLabel from "~/components/IssueLabel.vue";
 
 @Component({
   name: "issue",
-  computed: mapState(["milestones"]),
   components: {
     VueMarkdown,
     IssueLabel
