@@ -32,7 +32,7 @@ module.exports = {
     GH_REPO_NAME: process.env.GH_REPO_NAME
   },
   head: {
-    title: 'tt1',
+    title: 'Android Dagashi',
     meta: [
       { charset: 'utf-8' },
       {
@@ -42,7 +42,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Nuxt.js project'
+        content: 'Weekly Android development news digest in Japanese'
       }
     ],
     link: [
