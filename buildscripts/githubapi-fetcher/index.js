@@ -23,13 +23,11 @@ async function generateJsons() {
   try {
     // generate json for home
     var { milestones } = await generateIndexJson();
-    console.log(milestones)
 
     // generate json for each issue
     for (var i = 0; i < milestones.nodes.length; i++){
-      console.log(milestones.nodes[i].number)
+      console.log('fetching milestone:', milestones.nodes[i].number)
       var milestone = await generateIssueJson(milestones.nodes[i].number)
-      console.log(milestone)
     }
 
   } catch (e) {
@@ -39,7 +37,7 @@ async function generateJsons() {
 }
 
 async function generateIndexJson() {
-  var { data } = await apolloFectch(
+  var { data, errors } = await apolloFectch(
     {
       query: indexQuery,
       variables: {
@@ -49,12 +47,22 @@ async function generateIndexJson() {
       operationName: 'getMilestoneDigests'
     }
   )
-  fs.writeFileSync(
-    './static/api/index.json',
-    JSON.stringify(data.repository, null, '  '),
-    'utf8'
-  );
-  return data.repository
+
+  if (errors) {
+    console.log('Failed to generate index.json', errors)
+    return null;
+  } else {
+    let repository = data.repository;
+    if (repository.milestones.pageInfo.hasNextPage) {
+      // TODO: fetch milestones recursively
+    }
+    fs.writeFileSync(
+      './static/api/index.json',
+      JSON.stringify(repository, null, '  '),
+      'utf8'
+    );
+    return repository;
+  }
 }
 
 // generate json for issue
@@ -76,13 +84,16 @@ async function generateIssueJson(milestoneNumber) {
   if (errors) {
     console.error(errors)
   } else {
+    let milestone = data.repository.milestone;
+    if (milestone.issues.pageInfo.hasNextPage) {
+      // TODO: fetch issues & comments recursively
+    }
     fs.writeFileSync(
-      `./static/api/issue/${data.repository.milestone.id}.json`,
-      JSON.stringify(data.repository.milestone, null, '  '),
+      `./static/api/issue/${milestone.id}.json`,
+      JSON.stringify(milestone, null, '  '),
       'utf8'
-    )
+    );
   }
-  console.log(data)
 }
 
 
