@@ -89,6 +89,7 @@ module.exports = {
   modules: [
     '@nuxtjs/axios',
     '@nuxtjs/apollo',
+    ['@nuxtjs/google-analytics', { 'id': 'UA-116221691-1' }],
     '~/modules/typescript.js'
   ],
   plugins: [
