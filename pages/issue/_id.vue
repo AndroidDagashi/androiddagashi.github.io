@@ -63,6 +63,12 @@ import IssueLabel from "~/components/IssueLabel.vue";
 export default class Issue extends Vue {
   milestone: GHMilestone;
 
+  head() {
+    return {
+      title: `${this.milestone.title}`
+    };
+  }
+
   get milestoneId(): string {
     return this.$route.params.id;
   }
