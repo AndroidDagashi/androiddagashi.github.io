@@ -7,7 +7,11 @@ query getMilestoneDigests(
   repository(owner: $repoOwner, name: $repoName) {
     name
     url
-    milestones(first: $fetchMilestones){
+    milestones(
+      first: $fetchMilestones
+      states: [CLOSED]
+      orderBy: { field: CREATED_AT, direction: DESC}
+      ){
       totalCount
       nodes {
         id

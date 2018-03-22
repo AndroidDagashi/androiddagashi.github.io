@@ -13,6 +13,7 @@ query getMilestones(
     milestones(
       first: $fetchMilestonesPerPage
       after: $endMilestoneCursor
+      states: [CLOSED]
     ) {
       totalCount
       pageInfo {
