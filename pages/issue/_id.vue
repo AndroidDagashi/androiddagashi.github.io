@@ -65,7 +65,7 @@ export default class Issue extends Vue {
 
   head() {
     return {
-      title: `${this.milestone.title}`
+      title: `${this.milestone.title} - Android Dagashi`
     };
   }
 
