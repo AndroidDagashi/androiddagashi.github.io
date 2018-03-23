@@ -8,7 +8,7 @@
       sm12
       md8>
       <v-card>
-        <v-card-title class="headline">{{ milestone.title }}</v-card-title>
+        <v-card-title class="headline">#{{ milestone.title }}</v-card-title>
         <!-- <v-card-text v-if="milestone.description" v-html="milestone.description"/> -->
         <v-card-text>
           <div>
@@ -77,7 +77,6 @@ export default class Issue extends Vue {
   }
 
   async asyncData({ app, params }) {
-    console.log('asyncData');
     const { data } = await app.$dagashiApi.get(`/issue/${params.id}.json`)
     return {
       milestone: data,
