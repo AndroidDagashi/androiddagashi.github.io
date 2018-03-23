@@ -83,7 +83,7 @@ type VDividerItem = {
   components: {
     IssueLink
   },
-  computed: mapState(["repoOwner", "repoName", "digest"])
+  computed: mapState(["repoOwner", "repoName"])
 })
 export default class Index extends Vue {
   // insert divider
@@ -92,6 +92,13 @@ export default class Index extends Vue {
       (this as any).digest.milestones.nodes as GHDigestMilestone[],
       (milestone: GHDigestMilestone) => [{ isDivider: true }, milestone]
     );
+  }
+
+  async asyncData({ app, params }) {
+    const { data } = await app.$dagashiApi.get(`/index.json`);
+    return {
+      digest: data
+    };
   }
 }
 </script>

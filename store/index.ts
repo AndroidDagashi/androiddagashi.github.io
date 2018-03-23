@@ -97,9 +97,7 @@ export type GHDigest = {
 
 export const state = () => ({
   repoOwner: '',
-  repoName: '',
-  digest: null as GHDigest | null,
-  milestones: [] as GHMilestone[]
+  repoName: ''
 });
 
 
@@ -109,14 +107,6 @@ export const mutations = {
   },
   setRepoName(state, repoName: string) {
     state.repoName = repoName;
-  },
-  setMilestones(state, { totalCount, nodes, pageInfo }: GHMilestones) {
-    state.totalCount = totalCount;
-    state.milestones = nodes;
-    state.pageInfo = pageInfo;
-  },
-  setDigest(state, digest: GHDigest) {
-    state.digest = digest;
   }
 };
 
@@ -127,12 +117,5 @@ export const actions = {
 
     commit('setRepoOwner', repoOwner);
     commit('setRepoName', repoName);
-
-    try {
-      const { data } = await app.$dagashiApi.get('/index.json')
-      commit('setDigest', data as GHDigest);
-    } catch (err) {
-      console.error(err);
-    }
   }
 };
