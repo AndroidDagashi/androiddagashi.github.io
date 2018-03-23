@@ -14,7 +14,6 @@ export default ({ app }) => {
   gtag('config', 'UA-116221691-1');
 
   app.router.afterEach((to, from) => {
-    console.log(to)
     gtag('config', 'UA-116221691-1', {
       // 'page_title': '',
       'page_location': to.fullPath,
