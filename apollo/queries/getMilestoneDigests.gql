@@ -10,7 +10,7 @@ query getMilestoneDigests(
     milestones(
       first: $fetchMilestones
       states: [CLOSED]
-      orderBy: { field: CREATED_AT, direction: DESC}
+      orderBy: { field: DUE_DATE, direction: DESC}
       ){
       totalCount
       nodes {
