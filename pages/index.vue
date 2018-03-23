@@ -93,15 +93,6 @@ export default class Index extends Vue {
       (milestone: GHDigestMilestone) => [{ isDivider: true }, milestone]
     );
   }
-
-  async fetchMilestones() {
-    // this.$apollo.getClient().query({
-    //   query: getMilestones,
-    //   variables: {
-    //     repoOwner:
-    //   }
-    // })
-  }
 }
 </script>
 

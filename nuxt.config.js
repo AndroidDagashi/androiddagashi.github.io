@@ -88,8 +88,6 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/apollo',
-    '@nuxtjs/google-analytics',
     '~/modules/typescript.js'
   ],
   plugins: [
@@ -97,25 +95,5 @@ module.exports = {
     '~/plugins/androiddagashi-api.ts',
     '~/plugins/vuetify.ts'
   ],
-  axios: {},
-  apollo: {
-    clientConfigs: {
-      default: '~/apollo/client-configs/default.ts'
-    }
-  },
-  'google-analytics': {
-    id: 'UA-116221691-1',
-    debug: {
-      enabled: true
-    },
-    autoTracking: {
-      pageviewTemplate: route => {
-        return {
-          page: route.path,
-          title: document.title,
-          location: window.location.href,
-        };
-      },
-    }
-  }
+  axios: {}
 };
