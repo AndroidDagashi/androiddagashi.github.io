@@ -22,15 +22,10 @@ const host =
 
 const baseUrl = process.env.NODE_ENV === 'dev'
   ? `http://${host}:${port}` : process.env.BASE_URL || `http://${host}:${port}`
-
-const tokenA = process.env.GH_READONLY_TOKEN.slice(0, 10);
-const tokenB = process.env.GH_READONLY_TOKEN.slice(10);
+console.log('baseUrl: ', baseUrl)
 module.exports = {
   env: {
     baseUrl: baseUrl,
-    // GH_READONLY_TOKEN: process.env.GH_READONLY_TOKEN,
-    GHRT_A: tokenA,
-    GHRT_B: tokenB,
     GH_REPO_OWNER: process.env.GH_REPO_OWNER,
     GH_REPO_NAME: process.env.GH_REPO_NAME
   },
