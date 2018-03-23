@@ -93,7 +93,8 @@ module.exports = {
   plugins: [
     '~/plugins/github-api-v3.ts',
     '~/plugins/androiddagashi-api.ts',
-    '~/plugins/vuetify.ts'
+    '~/plugins/vuetify.ts',
+    { src: "~/plugins/ga.js", ssr: false }
   ],
   axios: {}
 };

@@ -1,6 +1,6 @@
 <template>
   <v-list-tile
-    :to="{ name: 'issue-id', params: { id:milestone.id } }"
+    :to="{ name: 'issue-id', params: { id:milestone.title }}"
     nuxt >
     <v-list-tile-content>
       <v-list-tile-title v-html="title"/>
@@ -22,7 +22,7 @@ export default class IssueLink extends Vue {
   @Prop() index: number;
 
   get title(): string {
-    return `${this.milestone.title} (${ this.milestone.issues.totalCount }件のリンク)`;
+    return `#${this.milestone.title} (${ this.milestone.issues.totalCount }件のリンク)`;
   }
 
   getSummary = (milestone: GHDigestMilestone): string => {

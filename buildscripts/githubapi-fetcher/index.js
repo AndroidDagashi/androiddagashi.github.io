@@ -48,7 +48,7 @@ async function generateIssueJson(milestoneNumber) {
       // TODO: fetch issues & comments recursively
     }
     fs.writeFileSync(
-      `./static/api/issue/${milestone.id}.json`,
+      `./static/api/issue/${milestone.title}.json`,
       JSON.stringify(milestone, null, '  '),
       'utf8'
     );
