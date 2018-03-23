@@ -62,11 +62,14 @@ import IssueLabel from "~/components/IssueLabel.vue";
 })
 export default class Issue extends Vue {
   milestone: GHMilestone;
+  title: string;
 
   head() {
-    return {
-      title: `${this.milestone.title}`
+    const head = {
+      title: `${this.title} - Android Dagashi`
     };
+
+    return head;
   }
 
   get milestoneId(): string {
@@ -74,9 +77,11 @@ export default class Issue extends Vue {
   }
 
   async asyncData({ app, params }) {
+    console.log('asyncData');
     const { data } = await app.$dagashiApi.get(`/issue/${params.id}.json`)
     return {
-      milestone: data
+      milestone: data,
+      title: `#${data.title}`
     };
   }
 

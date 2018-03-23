@@ -88,19 +88,13 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/axios',
-    '@nuxtjs/apollo',
-    ['@nuxtjs/google-analytics', { 'id': 'UA-116221691-1' }],
     '~/modules/typescript.js'
   ],
   plugins: [
     '~/plugins/github-api-v3.ts',
     '~/plugins/androiddagashi-api.ts',
-    '~/plugins/vuetify.ts'
+    '~/plugins/vuetify.ts',
+    { src: "~/plugins/ga.js", ssr: false }
   ],
-  axios: {},
-  apollo: {
-    clientConfigs: {
-      default: '~/apollo/client-configs/default.ts'
-    }
-  }
+  axios: {}
 };
