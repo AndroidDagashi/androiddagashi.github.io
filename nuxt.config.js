@@ -21,8 +21,8 @@ const host =
   'localhost';
 
 const baseUrl = process.env.NODE_ENV === 'dev'
-  ? `http://${host}:${port}` : process.env.BASE_URL || `http://${host}:${port}`
-console.log('baseUrl: ', baseUrl)
+  ? `http://${host}:${port}` : process.env.BASE_URL || `http://${host}:${port}`;
+
 module.exports = {
   env: {
     baseUrl: baseUrl,
@@ -89,7 +89,7 @@ module.exports = {
     '~/plugins/github-api-v3.ts',
     '~/plugins/androiddagashi-api.ts',
     '~/plugins/vuetify.ts',
-    { src: "~/plugins/ga.js", ssr: false }
+    { src: '~/plugins/ga.js', ssr: false }
   ],
   axios: {}
 };

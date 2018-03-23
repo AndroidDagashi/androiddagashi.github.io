@@ -46,12 +46,12 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from "nuxt-property-decorator";
-import { mapState } from "vuex";
-import { GHMilestone, GHLabel } from "store";
-import flatmap from "lodash.flatmap";
-import VueMarkdown from "vue-markdown";
-import IssueLabel from "~/components/IssueLabel.vue";
+import { Component, Prop, Vue } from 'nuxt-property-decorator';
+import { mapState } from 'vuex';
+import { GHMilestone, GHLabel } from 'store';
+import flatmap from 'lodash.flatmap';
+import VueMarkdown from 'vue-markdown';
+import IssueLabel from '~/components/IssueLabel.vue';
 
 @Component({
   name: "issue",
@@ -77,7 +77,7 @@ export default class Issue extends Vue {
   }
 
   async asyncData({ app, params }) {
-    const { data } = await app.$dagashiApi.get(`/issue/${params.id}.json`)
+    const { data } = await app.$dagashiApi.get(`/issue/${params.id}.json`);
     return {
       milestone: data,
       title: `#${data.title}`

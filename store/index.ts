@@ -81,7 +81,7 @@ export type GHDigestMilestone = {
   description: string;
   issues: {
     totalCount: number;
-    nodes: Array<GHDigestIssue>
+    nodes: Array<GHDigestIssue>;
   };
 };
 
@@ -90,8 +90,8 @@ export type GHDigest = {
   url: string;
   milestones: {
     totalCount: number;
-    nodes: Array<GHDigestMilestone>
-  }
+    nodes: Array<GHDigestMilestone>;
+  };
 };
 
 
