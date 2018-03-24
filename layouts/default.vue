@@ -6,6 +6,10 @@
       fixed
       app>
       <v-toolbar-title>Android Dagashi</v-toolbar-title>
+      <v-spacer/>
+      <v-toolbar-items>
+        <v-btn flat :href="rss">RSS</v-btn>
+      </v-toolbar-items>
     </v-toolbar>
     <v-content>
       <v-container
@@ -39,16 +43,18 @@
 import AppHeader from '~/components/AppHeader.vue';
 import AppFooter from '~/components/AppFooter.vue';
 import { Component, Prop, Provide, Vue } from 'nuxt-property-decorator';
+import { mapState } from 'vuex';
 
 @Component({
   name: "default-layout",
+  computed: mapState(['rss']),
   components: {
     AppHeader,
     AppFooter
   }
 })
 export default class DefaultLayout extends Vue {
-  message = 'this is message2';
+  rss: string;
   didMount = false;
 
   async mounted() {
