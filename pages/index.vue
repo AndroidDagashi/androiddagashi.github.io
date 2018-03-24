@@ -95,7 +95,7 @@ export default class Index extends Vue {
   }
 
   async asyncData({ app, params }) {
-    const { data } = await app.$dagashiApi.get('/index.json');
+    const { data } = await app.$axios.get('/api/index.json');
     return {
       digest: data
     };

@@ -77,7 +77,7 @@ export default class Issue extends Vue {
   }
 
   async asyncData({ app, params }) {
-    const { data } = await app.$dagashiApi.get(`/issue/${params.id}.json`);
+    const { data } = await app.$axios.get(`/api/issue/${params.id}.json`);
     return {
       milestone: data,
       title: `#${data.title}`
