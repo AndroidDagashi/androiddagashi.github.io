@@ -5,7 +5,11 @@
       dark
       fixed
       app>
-      <v-toolbar-title>Android Dagashi</v-toolbar-title>
+      <v-toolbar-title>
+        <nuxt-link class="title white--text" style="text-decoration:none;" to="/">
+        Android Dagashi
+        </nuxt-link>
+        </v-toolbar-title>
       <v-spacer/>
       <v-toolbar-items>
         <v-btn flat :href="rss">RSS</v-btn>
