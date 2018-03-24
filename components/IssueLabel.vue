@@ -12,11 +12,16 @@
 <script lang="ts">
 import { Component, Prop, Vue } from 'nuxt-property-decorator';
 import { GHLabel } from 'store';
+import { mapState } from 'vuex';
 
 @Component({
-  name: 'issue-label'
+  name: 'issue-label',
+  computed: mapState(['repoOwner', 'repoName'])
 })
 export default class IssueLabel extends Vue {
+
+  repoOwner: string;
+  repoName: string;
 
   @Prop() index: number;
 
@@ -28,7 +33,7 @@ export default class IssueLabel extends Vue {
   }
 
   get githubLabelLink(): string {
-    return `https://github.com/yshrsmz/androiddagashi/issues?q=label%3A${this.labelInfo.name}`;
+    return `https://github.com/${this.repoOwner}/${this.repoName}/issues?q=label%3A${this.labelInfo.name}`;
   }
 }
 </script>
