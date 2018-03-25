@@ -96,6 +96,7 @@ export type GHDigest = {
 
 
 export const state = () => ({
+  baseUrl: '',
   repoOwner: '',
   repoName: '',
   rss: ''
@@ -103,6 +104,9 @@ export const state = () => ({
 
 
 export const mutations = {
+  setBaseUrl(state, url: string) {
+    state.baseUrl = url;
+  },
   setRepoOwner(state, repoOwner: string) {
     state.repoOwner = repoOwner;
   },
@@ -117,8 +121,9 @@ export const mutations = {
 
 export const actions = {
   async nuxtServerInit({ commit, state }, { app, env }) {
-    const { GH_REPO_OWNER: repoOwner, GH_REPO_NAME: repoName, RSS: rss } = env;
+    const { baseUrl, GH_REPO_OWNER: repoOwner, GH_REPO_NAME: repoName, RSS: rss } = env;
 
+    commit('setBaseUrl', baseUrl);
     commit('setRepoOwner', repoOwner);
     commit('setRepoName', repoName);
     commit('setRss', rss);

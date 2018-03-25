@@ -58,18 +58,30 @@ import IssueLabel from '~/components/IssueLabel.vue';
   components: {
     VueMarkdown,
     IssueLabel
-  }
+  },
+  computed: mapState(['baseUrl'])
 })
 export default class Issue extends Vue {
   milestone: GHMilestone;
   title: string;
+  baseUrl: string;
 
   head() {
-    const head = {
-      title: `${this.title} - Android Dagashi`
-    };
+    const title = `${this.title} - Android Dagashi`;
 
-    return head;
+    return {
+      title: title,
+      meta: [
+        { property: 'og:title', content: title },
+        {
+          property: 'og:description',
+          content: 'Weekly Android developer news digest in Japanese'
+        },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },
+        { property: 'og:image', content: '/image/logo.jpg' }
+      ]
+    };
   }
 
   get milestoneId(): string {

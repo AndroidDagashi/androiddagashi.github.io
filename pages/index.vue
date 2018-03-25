@@ -10,7 +10,7 @@
         md8>
         <div class="text-xs-center">
           <img
-            src="~/assets/image/logo.jpg"
+            src="/image/logo.jpg"
             width="200"
             alt="Android Dagashi"
             class="mb-5" >
@@ -70,7 +70,7 @@
 import { mapState, mapMutations, mapGetters } from 'vuex';
 import { Component, Prop, Provide, Vue } from 'nuxt-property-decorator';
 import IssueLink from '~/components/IssueLink.vue';
-import { GHDigestMilestone } from '~/store';
+import { GHDigestMilestone, GHDigest } from '~/store';
 import flatmap from 'lodash.flatmap';
 
 type VDividerItem = {
@@ -82,9 +82,15 @@ type VDividerItem = {
   components: {
     IssueLink
   },
-  computed: mapState(["repoOwner", "repoName"])
+  computed: mapState(["baseUrl", "repoOwner", "repoName"])
 })
 export default class Index extends Vue {
+
+  baseUrl: string;
+  repoOwner: string;
+  repoName: string;
+  digest: GHDigest;
+
   // insert divider
   get milestonesWithDivider() {
     return flatmap(
@@ -106,6 +112,21 @@ export default class Index extends Vue {
 
     return {
       digest: data
+    };
+  }
+
+  head() {
+    return {
+      meta: [
+        { property: 'og:title', content: 'Android Dagashi' },
+        {
+          property: 'og:description',
+          content: 'Weekly Android developer news digest in Japanese'
+        },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },
+        { property: 'og:image', content: '/image/logo.jpg' }
+      ]
     };
   }
 }
