@@ -80,7 +80,7 @@ export default class Issue extends Vue {
         },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },
-        { property: 'og:image', content: '/image/logo.jpg' }
+        { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` }
       ]
     };
   }
