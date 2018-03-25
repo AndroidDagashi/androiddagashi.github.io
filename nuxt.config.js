@@ -77,6 +77,8 @@ module.exports = {
           })
         ];
       }
+      configs.node = configs.node || {};
+      configs.node['fs'] = 'empty';
     }
   },
   generate: {

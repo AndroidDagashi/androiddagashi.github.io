@@ -69,7 +69,6 @@
 <script lang="ts">
 import { mapState, mapMutations, mapGetters } from 'vuex';
 import { Component, Prop, Provide, Vue } from 'nuxt-property-decorator';
-import getMilestones from '~/apollo/queries/getMilestones.gql';
 import IssueLink from '~/components/IssueLink.vue';
 import { GHDigestMilestone } from '~/store';
 import flatmap from 'lodash.flatmap';
@@ -94,8 +93,17 @@ export default class Index extends Vue {
     );
   }
 
-  async asyncData({ app, params }) {
-    const { data } = await app.$axios.get('/api/index.json');
+  async asyncData({ app, params, isStatic }) {
+    let data;
+    if ((process as any).server) {
+      data = JSON.parse(
+        require('fs').readFileSync('./static/api/index.json', 'utf8')
+      );
+    } else {
+      let res = await app.$axios.get('/api/index.json');
+      data = res.data;
+    }
+
     return {
       digest: data
     };

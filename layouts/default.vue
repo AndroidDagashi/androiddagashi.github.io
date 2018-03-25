@@ -6,13 +6,18 @@
       fixed
       app>
       <v-toolbar-title>
-        <nuxt-link class="title white--text" style="text-decoration:none;" to="/">
-        Android Dagashi
+        <nuxt-link
+          class="title white--text"
+          style="text-decoration:none;"
+          to="/">
+          Android Dagashi
         </nuxt-link>
-        </v-toolbar-title>
+      </v-toolbar-title>
       <v-spacer/>
       <v-toolbar-items>
-        <v-btn flat :href="rss">RSS</v-btn>
+        <v-btn
+          :href="rss"
+          flat>RSS</v-btn>
       </v-toolbar-items>
     </v-toolbar>
     <v-content>
@@ -51,7 +56,7 @@ import { mapState } from 'vuex';
 
 @Component({
   name: "default-layout",
-  computed: mapState(['rss']),
+  computed: mapState(["rss"]),
   components: {
     AppHeader,
     AppFooter
