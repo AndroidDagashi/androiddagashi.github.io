@@ -72,6 +72,7 @@ import { Component, Prop, Provide, Vue } from 'nuxt-property-decorator';
 import IssueLink from '~/components/IssueLink.vue';
 import { GHDigestMilestone, GHDigest } from '~/store';
 import flatmap from 'lodash.flatmap';
+import axios from '~/plugins/axios';
 
 type VDividerItem = {
   isDivider: boolean;
@@ -106,7 +107,7 @@ export default class Index extends Vue {
         require('fs').readFileSync('./static/api/index.json', 'utf8')
       );
     } else {
-      let res = await app.$axios.get('/api/index.json');
+      let res = await axios.get('/api/index.json');
       data = res.data;
     }
 

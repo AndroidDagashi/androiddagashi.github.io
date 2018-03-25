@@ -52,6 +52,7 @@ import { GHMilestone, GHLabel } from 'store';
 import flatmap from 'lodash.flatmap';
 import VueMarkdown from 'vue-markdown';
 import IssueLabel from '~/components/IssueLabel.vue';
+import axios from '~/plugins/axios';
 
 @Component({
   name: "issue",
@@ -89,7 +90,7 @@ export default class Issue extends Vue {
   }
 
   async asyncData({ app, params }) {
-    const { data } = await app.$axios.get(`/api/issue/${params.id}.json`);
+    const { data } = await axios.get(`/api/issue/${params.id}.json`);
     return {
       milestone: data,
       title: `#${data.title}`
