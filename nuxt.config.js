@@ -1,5 +1,8 @@
 const nodeExternals = require('webpack-node-externals');
 const parseArgs = require('minimist');
+
+const indexJson = require('./static/api/index.json');
+
 const argv = parseArgs(process.argv.slice(2), {
   alias: {
     H: 'hostname',
@@ -22,6 +25,9 @@ const host =
 
 const baseUrl = process.env.NODE_ENV === 'dev'
   ? `http://${host}:${port}` : process.env.BASE_URL || `http://${host}:${port}`;
+
+
+const issueIds = indexJson.milestones.nodes.map((milestone, index, array) => `/issue/${milestone.title}`);
 
 module.exports = {
   env: {
@@ -82,7 +88,8 @@ module.exports = {
     }
   },
   generate: {
-    fallback: true
+    fallback: true,
+    routes: issueIds
   },
   modules: [
     '@nuxtjs/axios',

@@ -90,7 +90,15 @@ export default class Issue extends Vue {
   }
 
   async asyncData({ app, params }) {
-    const { data } = await axios.get(`/api/issue/${params.id}.json`);
+    let data;
+    if ((process as any).server){
+      data = JSON.parse(
+              require('fs').readFileSync(`./static/api/issue/${params.id}.json`, 'utf8')
+            );
+    } else {
+      let res =await axios.get(`/api/issue/${params.id}.json`);
+      data=res.data;
+    }
     return {
       milestone: data,
       title: `#${data.title}`
