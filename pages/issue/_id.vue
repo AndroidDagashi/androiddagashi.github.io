@@ -96,7 +96,7 @@ export default class Issue extends Vue {
               require('fs').readFileSync(`./static/api/issue/${params.id}.json`, 'utf8')
             );
     } else {
-      let res =await axios.get(`/api/issue/${params.id}.json`);
+      let res = await axios.get(`/api/issue/${params.id}.json`);
       data=res.data;
     }
     return {
