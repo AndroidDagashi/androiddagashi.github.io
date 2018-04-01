@@ -1,4 +1,4 @@
-  <template>
+<template>
   <v-layout
     row
     justify-center
@@ -37,12 +37,13 @@
                   >{{ item.body }}</vue-markdown>
                   <v-layout>
                     <v-spacer/>
-                    <v-btn flat
-                    :href="item.url"
-                    target="_blank">
-                    GitHubで見る
-                    <v-icon v-if="item.comments.totalCount > 0">mdi-comment</v-icon>
-                    {{ item.comments.totalCount > 0 ? `(${item.comments.totalCount})` : "" }}
+                    <v-btn
+                      :href="item.url"
+                      flat
+                      target="_blank">
+                      GitHubで見る
+                      <v-icon v-if="item.comments.totalCount > 0">mdi-comment</v-icon>
+                      {{ item.comments.totalCount > 0 ? `(${item.comments.totalCount})` : "" }}
                     </v-btn>
                   </v-layout>
                 </div>
