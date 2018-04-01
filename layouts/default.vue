@@ -29,7 +29,6 @@
       </v-container>
     </v-content>
     <v-footer
-      app
       height="auto">
       <v-flex
         xs12
