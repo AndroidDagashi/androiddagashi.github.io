@@ -39,6 +39,7 @@ export type GHIssue = {
   title: string;
   body: string;
   labels: GHLabels;
+  comments: GHComments;
 };
 
 export type GHIssues = {

@@ -1,4 +1,4 @@
-<template>
+  <template>
   <v-layout
     row
     justify-center
@@ -19,7 +19,7 @@
               <article
                 v-else
                 :key="item.id"
-                class="mt-3">
+                class="mt-3 mb-2">
                 <div>
                   <h1
                     class="mb-1"
@@ -33,8 +33,18 @@
                   </div>
                   <vue-markdown
                     :anchor-attributes="{ target: '_blank' }"
-                    class="px-3 issue-body"
+                    class="issue-body"
                   >{{ item.body }}</vue-markdown>
+                  <v-layout>
+                    <v-spacer/>
+                    <v-btn flat
+                    :href="item.url"
+                    target="_blank">
+                    GitHubで見る
+                    <v-icon v-if="item.comments.totalCount > 0">mdi-comment</v-icon>
+                    {{ item.comments.totalCount > 0 ? `(${item.comments.totalCount})` : "" }}
+                    </v-btn>
+                  </v-layout>
                 </div>
               </article>
             </template>
@@ -114,8 +124,14 @@ export default class Issue extends Vue {
 }
 </script>
 
-<style scoped>
+<style lang="stylus" scoped>
 .issue-body {
   word-break: break-all;
+
+  >>> ul {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 </style>
+
