@@ -42,8 +42,8 @@
                       flat
                       target="_blank">
                       GitHubで見る
-                      <v-icon v-if="item.comments.totalCount > 0">mdi-comment</v-icon>
                       {{ item.comments.totalCount > 0 ? `(${item.comments.totalCount})` : "" }}
+                      <v-icon v-if="item.comments.totalCount > 0">mdi-comment</v-icon>
                     </v-btn>
                   </v-layout>
                 </div>
