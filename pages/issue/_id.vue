@@ -19,7 +19,7 @@
               <article
                 v-else
                 :key="item.id"
-                class="mt-3 mb-2">
+                class="mt-3">
                 <div>
                   <h1
                     class="mb-1"
