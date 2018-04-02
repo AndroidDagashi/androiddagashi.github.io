@@ -6,11 +6,11 @@
   "author": "Yasuhiro Shimizu <the.phantom.bane@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=dev nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
+    "dev": "cross-env NODE_ENV=development nuxt",
+    "build": "cross-env NODE_ENV=production nuxt build",
+    "start": "cross-env NODE_ENV=production nuxt start",
     "prepareJson": "node buildscripts/githubapi-fetcher/index.js",
-    "generate": "nuxt generate",
+    "generate": "cross-env NODE_ENV=production nuxt generate",
     "deploy": "push-dir --dir=dist --branch=master --cleanup",
     "lint": "eslint '**/*.{ts,vue,js}'",
     "lintAndFix": "eslint --fix '**/*.{ts,vue,js}'"
