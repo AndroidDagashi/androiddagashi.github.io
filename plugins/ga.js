@@ -2,6 +2,9 @@
 
 export default ({ app }) => {
 
+  if (process.env.NODE_ENV === 'development') {
+    return;
+  }
 
   var newTag = document.createElement('script');
   newTag.async = true;

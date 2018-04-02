@@ -23,7 +23,7 @@ const host =
   process.env.npm_package_config_nuxt_host ||
   'localhost';
 
-const baseUrl = process.env.NODE_ENV === 'dev'
+const baseUrl = process.env.NODE_ENV === 'development'
   ? `http://${host}:${port}` : process.env.BASE_URL || `http://${host}:${port}`;
 
 
