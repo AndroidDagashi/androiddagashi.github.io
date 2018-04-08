@@ -52,7 +52,7 @@ jobs:
           name: debug info
           command: |
             git remote
-            git satus
+            git status
           when: on_fail
 
   push_json:
@@ -85,7 +85,7 @@ jobs:
           name: debug info
           command: |
             git remote
-            git satus
+            git status
           when: on_fail
       - run:
           name: push json
