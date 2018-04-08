@@ -4,6 +4,26 @@
 #
 version: 2
 jobs:
+  build:
+    docker:
+      - image: circleci/node:9.5.0
+    environment:
+      TZ: /user/share/zoneinfo/Asia/Tokyo
+    working_directory: ~/repo
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+      - run: yarn install
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+      - run: yarn generate
+
   deploy:
     docker:
       - image: circleci/node:9.5.0
@@ -68,6 +88,12 @@ jobs:
 
 workflows:
   version: 2
+  # build:
+  #   jobs:
+  #     - build:
+  #         filters:
+  #           branches:
+  #             only: development
   update_json:
     jobs:
       - push_json
@@ -84,6 +110,6 @@ workflows:
       - deploy:
           filters:
             branches:
-              only: master
+              only: development
 
 
