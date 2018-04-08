@@ -124,4 +124,7 @@ workflows:
             branches:
               only: development
 
-
+general:
+  branches:
+    ignore:
+      - master
