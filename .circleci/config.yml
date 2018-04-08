@@ -32,6 +32,11 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
+      - run:
+          name: setup git config
+          command: |
+            git config user.email "androiddagashi-bot@users.noreply.github.com"
+            git config user.name "AndroidDagashi store staff"
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
