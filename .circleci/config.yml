@@ -48,6 +48,7 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn generate
+      - run: cp -r -f ./.circleci ./dist/.circleci
       - run:
           name: deploy site
           command: |
