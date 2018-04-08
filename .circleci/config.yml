@@ -47,7 +47,13 @@ jobs:
           name: deploy site
           command: |
             git remote add upstream https://${GITHUB_ACCESS_TOKEN}@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}
-            yarn push-dir --dir=dist --remote=upstream --branch=master --cleanup
+            yarn deployUpstream
+      - run:
+          name: debug info
+          command: |
+            git remote
+            git satus
+          when: on_fail
 
   push_json:
     docker:
@@ -78,6 +84,7 @@ jobs:
       - run:
           name: debug info
           command: |
+            git remote
             git satus
           when: on_fail
       - run:
