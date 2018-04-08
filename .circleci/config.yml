@@ -86,7 +86,7 @@ jobs:
       - run: yarn prepareJson
       - run: |
           git add ./static/api
-          git commit -m "Update stock info"
+          git commit --allow-empty -m "Update stock info"
       - run:
           name: debug info
           command: |
