@@ -11,8 +11,8 @@
     "start": "cross-env NODE_ENV=production nuxt start",
     "prepareJson": "node buildscripts/githubapi-fetcher/index.js",
     "generate": "cross-env NODE_ENV=production nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=master --cleanup",
-    "deployUpstream": "push-dir --dir=dist --remote=upstream --branch=master --cleanup",
+    "deploy": "push-dir --dir=dist --branch=master --cleanup --verbose",
+    "deployUpstream": "push-dir --dir=dist --remote=upstream --branch=master --cleanup --verbose",
     "lint": "eslint '**/*.{ts,vue,js}'",
     "lintAndFix": "eslint --fix '**/*.{ts,vue,js}'"
   },
