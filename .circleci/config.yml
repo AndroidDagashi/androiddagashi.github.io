@@ -84,20 +84,23 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn prepareJson
-      - run: |
-          git add ./static/api
-          git commit --allow-empty -m "Update stock info"
+      - run:
+          name: push json
+          command: |
+            if [[ -z "$(git status -s)" ]]; then
+              echo "Nothing to commit"
+            else
+              git add ./static/api
+              git commit --allow-empty -m "Update stock info"
+              git remote add upstream https://${GITHUB_ACCESS_TOKEN}@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}
+              git push upstream development
+            fi
       - run:
           name: debug info
           command: |
             git remote
             git status
           when: on_fail
-      - run:
-          name: push json
-          command: |
-            git remote add upstream https://${GITHUB_ACCESS_TOKEN}@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}
-            git push upstream development
 
 workflows:
   version: 2
