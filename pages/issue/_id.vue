@@ -11,6 +11,9 @@
         <v-card-title class="headline">#{{ milestone.title }}</v-card-title>
         <!-- <v-card-text v-if="milestone.description" v-html="milestone.description"/> -->
         <v-card-text>
+          <no-ssr>
+            <share-widgets/>
+          </no-ssr>
           <div>
             <template v-for="(item, index) in issuesWithDivider">
               <v-divider
@@ -63,13 +66,15 @@ import { GHMilestone, GHLabel } from 'store';
 import flatmap from 'lodash.flatmap';
 import VueMarkdown from 'vue-markdown';
 import IssueLabel from '~/components/IssueLabel.vue';
+import ShareWidgets from '~/components/ShareWidgets.vue';
 import axios from '~/plugins/axios';
 
 @Component({
   name: "issue",
   components: {
     VueMarkdown,
-    IssueLabel
+    IssueLabel,
+    ShareWidgets
   },
   computed: mapState(['baseUrl'])
 })
