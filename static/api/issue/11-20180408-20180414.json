@@ -1,0 +1,312 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzI1MDMwOA==",
+  "number": 11,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/11",
+  "title": "11-20180408-20180414",
+  "description": "",
+  "issues": {
+    "totalCount": 15,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhK7sXI=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhKdisQ=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/150",
+        "title": "Picasso 3.0で何が変わるか",
+        "body": "https://speakerdeck.com/jakewharton/rinsing-the-brush-picasso-3-dot-0-chicago-roboto-2018\r\n\r\nChicago Roboto 2018での発表です。相変わらずビデオがないとよく分かりませんが、okioベースにする話はなかなか興味深いです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/149",
+        "title": "ConstraintLayout 2.0について",
+        "body": "https://speakerdeck.com/camaelon/constraintlayout-2-dot-0-sneak-peek\r\n\r\nConstraintLayout 2.0で追加予定の機能のチラ見せ。\r\nGoogle I/Oでより詳細な発表があるかも？",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/148",
+        "title": "ConstraintLayout 1.1.0リリース",
+        "body": "https://androidstudio.googleblog.com/2018/04/constraintlayout-110.html\r\n\r\n- 1.0からのバグ修正\r\n- レイアウトパフォーマンス向上のための新しいオプティマイザの導入\r\n- `barrier` 等のヘルパーオブジェクト追加\r\n- 複雑なchainのサポート\r\n- dimension constraints, circular constraints",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/147",
+        "title": "EventBusへの登録/解除をonStart()/onStop()でやるべきという話",
+        "body": "https://www.reddit.com/r/androiddev/comments/8bg6es/activity_lifecycle_for_professional_developers/\r\n\r\n言いたいことは理解できるのですが、ライク問題のようにバックグラウンドにいるActivityにイベントを伝えたい場合はどうするのでしょうか？また、通信中に他のアプリに移動して戻ってきたときも通信し直しになるのでしょうか。そもそもServiceやSQLiteを使えという話なのかもしれませんが、ちょっと極端すぎる気もします :innocent: ",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/146",
+        "title": "なにもしなければapkはサインされないと思っていたら違った話",
+        "body": "https://www.reddit.com/r/androiddev/comments/8b7pdz/til_always_sign_your_apk_using_your_own_keystore/\r\n\r\nマシンごとに存在する debug.keystore が使われるので、他のマシンで生成した apk でアプリを更新しようとするとエラーになる、という話。\r\n\r\n日本語の同じ内容の記事：https://qiita.com/taka0125/items/c408df4061a0af49c9b3",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/145",
+        "title": "I/O 2018のスケジュールが大幅に更新",
+        "body": "https://developers.googleblog.com/2018/04/updated-google-io-2018-schedule-and-session-reservations.html\r\n\r\n今年からKeynoteというセッションが3日間にわたっていくつかあるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/144",
+        "title": "Gradleプラグインの作り方",
+        "body": "https://speakerdeck.com/tnj/guide-to-build-gradle-plugin-for-efficient-development\r\n\r\nDroidKaigi 2018 の発表ですが、デバッグ方法やローカルで確認する方法、公開手順まであって大変素晴しいです。動画はこちら。\r\nhttps://www.youtube.com/watch?v=Lo326kQt7L8",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/143",
+        "title": "とうとうGCMが2019年4月に削除されることがアナウンス",
+        "body": "https://firebase.googleblog.com/2018/04/time-to-upgrade-from-gcm-to-fcm.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/142",
+        "title": "Android Studio 3.1 でデフォルトになった D8 の説明",
+        "body": "https://proandroiddev.com/the-d8-dexer-6736deb55fb8\r\n\r\n簡単な内容ですが、分かりやすかったです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/141",
+        "title": "モバイルアプリケーションの開発に特化したCIツール「fastlane.ci」オープンソースで公開。fastlaneチームが開発",
+        "body": "http://www.publickey1.jp/blog/18/cifastlaneci.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI",
+              "description": "Continuous Integration",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/140",
+        "title": "Flutter Beta 2 が公開",
+        "body": "https://medium.com/flutter-io/https-medium-com-flutter-io-announcing-flutters-beta-2-c85ba1557d5e",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/139",
+        "title": "GoogleによるDataBindingのサンプルレポジトリが公開",
+        "body": "https://github.com/googlesamples/android-databinding\r\n２つのプロジェクトが含まれている\r\n- BasicSample: 基本的なDataBindingの使い方(layout xmlやBindingAdapterの書き方、ViewModelとの組み合わせ方)\r\n- TwoWaySample: 双方向DataBindingの使い方やより高度なBindingAdapter、アニメーション等々\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">🧐 There&#39;s a new repo in town!<a href=\"https://t.co/UsYDnC6Fya\">https://t.co/UsYDnC6Fya</a><br>The first two official Data Binding Library samples for Android 🙌<br>Take a look and please report any issues! <a href=\"https://t.co/aPS4ABSfak\">pic.twitter.com/aPS4ABSfak</a></p>&mdash; Jose Alcérreca (@ppvi) <a href=\"https://twitter.com/ppvi/status/983369505807192065?ref_src=twsrc%5Etfw\">2018年4月9日</a></blockquote>",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/138",
+        "title": "adbコマンドの使い方",
+        "body": "https://proandroiddev.com/adb-commands-part-iii-997f97c03546\r\n\r\n`adb reverse` は知らなかったので参考になりました。いつも xip.io を使ってた……。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/136",
+        "title": "pom形式の依存をコピーしてIntelliJに貼り付けるとgradle形式になるらしい",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Forgive me for praising our own tools, but sometimes the little details just make things so pleasant. <a href=\"https://t.co/SLx6CfdNCB\">pic.twitter.com/SLx6CfdNCB</a></p>&mdash; Hadi Hariri (@hhariri) <a href=\"https://twitter.com/hhariri/status/979773674176831489?ref_src=twsrc%5Etfw\">March 30, 2018</a></blockquote>\r\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\n知らなかった……。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/137",
+        "title": "Android PでAppComponentFactoryというクラスが追加される",
+        "body": "https://developer.android.com/reference/android/app/AppComponentFactory.html\r\n\r\nApplication/Activity/Serviceのインスタンス化をカスタマイズできるようになるみたい。\r\nついにActivityでもコンストラクタ経由のDependency Injectionができるように…？",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
