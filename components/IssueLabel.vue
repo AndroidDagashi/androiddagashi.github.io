@@ -33,7 +33,7 @@ export default class IssueLabel extends Vue {
   }
 
   get githubLabelLink(): string {
-    return `https://github.com/${this.repoOwner}/${this.repoName}/issues?q=label%3A${this.labelInfo.name}`;
+    return `https://github.com/${this.repoOwner}/${this.repoName}/issues?q=label%3A"${this.labelInfo.name}"`;
   }
 }
 </script>
