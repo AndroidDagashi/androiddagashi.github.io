@@ -1,6 +1,6 @@
 <template>
   <v-list-tile
-    :to="{ name: 'issue-id', params: { id:milestone.title }}"
+    :to="`issue/${milestone.title}/`"
     nuxt >
     <v-list-tile-content>
       <v-list-tile-title v-html="title"/>
