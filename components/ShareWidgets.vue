@@ -1,4 +1,5 @@
 <template>
+  <no-ssr>
     <div>
       <span class="mr-2">
         <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="AndroidDagashi" data-show-count="false">Tweet</a>
@@ -11,6 +12,7 @@
         <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
       </span>
     </div>
+  </no-ssr>
 </template>
 <script lang="ts">
 import { Component, Prop, Vue } from "nuxt-property-decorator";
