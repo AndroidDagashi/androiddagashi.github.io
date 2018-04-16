@@ -11,9 +11,7 @@
         <v-card-title class="headline">#{{ milestone.title }}</v-card-title>
         <!-- <v-card-text v-if="milestone.description" v-html="milestone.description"/> -->
         <v-card-text>
-          <no-ssr>
-            <share-widgets/>
-          </no-ssr>
+          <share-widgets/>
           <div>
             <template v-for="(item, index) in issuesWithDivider">
               <v-divider
