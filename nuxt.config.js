@@ -98,7 +98,7 @@ module.exports = {
   },
   modules: [
     '@nuxtjs/axios',
-    '~/modules/typescript.js'
+    '~/modules/typescript'
   ],
   plugins: [
     '~/plugins/github-api-v3.ts',

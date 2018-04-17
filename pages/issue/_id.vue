@@ -93,14 +93,14 @@ export default class Issue extends Vue {
           content: 'Weekly Android developer news digest in Japanese'
         },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },
+        { property: 'og:url', content: `${this.baseUrl}${(this as any).$route.fullPath}` },
         { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` }
       ]
     };
   }
 
   get milestoneId(): string {
-    return this.$route.params.id;
+    return (this as any).$route.params.id;
   }
 
   async asyncData({ app, params }) {
