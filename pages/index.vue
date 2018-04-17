@@ -68,11 +68,12 @@
 
 <script lang="ts">
 import { mapState, mapMutations, mapGetters } from 'vuex';
-import { Component, Prop, Provide, Vue } from 'nuxt-property-decorator';
 import IssueLink from '~/components/IssueLink.vue';
 import { GHDigestMilestone, GHDigest } from '~/store';
 import flatmap from 'lodash.flatmap';
 import axios from '~/plugins/axios';
+import Component from 'nuxt-class-component'
+import Vue from 'vue';
 
 type VDividerItem = {
   isDivider: boolean;

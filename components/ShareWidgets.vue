@@ -15,7 +15,8 @@
   </no-ssr>
 </template>
 <script lang="ts">
-import { Component, Prop, Vue } from "nuxt-property-decorator";
+import Component from 'nuxt-class-component'
+import Vue from 'vue';
 
 @Component({
   name: "share-widgets"

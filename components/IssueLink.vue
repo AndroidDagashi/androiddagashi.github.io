@@ -10,8 +10,10 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Provide, Vue } from 'nuxt-property-decorator';
+import { Prop } from 'vue-property-decorator';
 import { GHDigestMilestone } from '~/store';
+import Component from 'nuxt-class-component'
+import Vue from 'vue';
 
 @Component({
   name: "issue-link"
