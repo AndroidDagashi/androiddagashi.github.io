@@ -65,7 +65,7 @@ import VueMarkdown from 'vue-markdown';
 import IssueLabel from '~/components/IssueLabel.vue';
 import ShareWidgets from '~/components/ShareWidgets.vue';
 import axios from '~/plugins/axios';
-import Component from 'nuxt-class-component'
+import Component from 'nuxt-class-component';
 import Vue from 'vue';
 
 @Component({

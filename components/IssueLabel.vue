@@ -13,7 +13,7 @@
 import { Prop } from 'vue-property-decorator';
 import { GHLabel } from 'store';
 import { mapState } from 'vuex';
-import Component from 'nuxt-class-component'
+import Component from 'nuxt-class-component';
 import Vue from 'vue';
 
 @Component({

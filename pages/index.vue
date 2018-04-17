@@ -72,7 +72,7 @@ import IssueLink from '~/components/IssueLink.vue';
 import { GHDigestMilestone, GHDigest } from '~/store';
 import flatmap from 'lodash.flatmap';
 import axios from '~/plugins/axios';
-import Component from 'nuxt-class-component'
+import Component from 'nuxt-class-component';
 import Vue from 'vue';
 
 type VDividerItem = {

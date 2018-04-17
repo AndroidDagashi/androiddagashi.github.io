@@ -1,6 +1,6 @@
 module.exports = function () {
   // Add .ts extension for store, middleware and more
-  this.nuxt.options.extensions.push('ts')
+  this.nuxt.options.extensions.push('ts');
   // Extend build
   this.extendBuild(config => {
     const tsLoader = {
@@ -14,7 +14,7 @@ module.exports = function () {
         /\.temp/,
         /\.nuxt/
       ]
-    }
+    };
     // Add TypeScript loader
     config.module.rules.push(
       Object.assign(
@@ -23,10 +23,10 @@ module.exports = function () {
         },
         tsLoader
       )
-    )
+    );
     // Add .ts extension in webpack resolve
     if (config.resolve.extensions.indexOf('.ts') === -1) {
-      config.resolve.extensions.push('.ts')
+      config.resolve.extensions.push('.ts');
     }
-  })
-}
+  });
+};
