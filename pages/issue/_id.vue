@@ -67,6 +67,7 @@ import ShareWidgets from '~/components/ShareWidgets.vue';
 import axios from '~/plugins/axios';
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
+import WithRoute from 'types/WithRoute';
 
 @Component({
   name: "issue",
@@ -77,7 +78,8 @@ import Vue from 'vue';
   },
   computed: mapState(['baseUrl'])
 })
-export default class Issue extends Vue {
+export default class Issue extends Vue implements WithRoute {
+
   milestone: GHMilestone;
   title: string;
   baseUrl: string;
@@ -94,19 +96,19 @@ export default class Issue extends Vue {
           content: 'Weekly Android developer news digest in Japanese'
         },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: `${this.baseUrl}${(this as any).$route.fullPath}` },
+        { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },
         { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` }
       ]
     };
   }
 
   get milestoneId(): string {
-    return (this as any).$route.params.id;
+    return this.$route.params.id;
   }
 
   async asyncData({ app, params }) {
     let data;
-    if ((process as any).server){
+    if (process.server){
       data = JSON.parse(
               require('fs').readFileSync(`./static/api/issue/${params.id}.json`, 'utf8')
             );
