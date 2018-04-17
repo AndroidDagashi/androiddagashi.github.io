@@ -74,6 +74,8 @@ import flatmap from 'lodash.flatmap';
 import axios from '~/plugins/axios';
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
+import {Route} from 'vue-router';
+import WithRoute from 'types/WithRoute';
 
 type VDividerItem = {
   isDivider: boolean;
@@ -86,7 +88,7 @@ type VDividerItem = {
   },
   computed: mapState(["baseUrl", "repoOwner", "repoName"])
 })
-export default class Index extends Vue {
+export default class Index extends Vue implements WithRoute {
 
   baseUrl: string;
   repoOwner: string;
@@ -96,14 +98,14 @@ export default class Index extends Vue {
   // insert divider
   get milestonesWithDivider() {
     return flatmap(
-      (this as any).digest.milestones.nodes as GHDigestMilestone[],
+      this.digest.milestones.nodes as GHDigestMilestone[],
       (milestone: GHDigestMilestone) => [{ isDivider: true }, milestone]
     );
   }
 
   async asyncData({ app, params, isStatic }) {
     let data;
-    if ((process as any).server) {
+    if (process.server) {
       data = JSON.parse(
         require('fs').readFileSync('./static/api/index.json', 'utf8')
       );
@@ -126,7 +128,7 @@ export default class Index extends Vue {
           content: 'Weekly Android developer news digest in Japanese'
         },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: `${this.baseUrl}${(this as any).$route.fullPath}` },
+        { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },
         { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` }
       ]
     };
