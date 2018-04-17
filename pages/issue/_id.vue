@@ -58,7 +58,6 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue } from 'nuxt-property-decorator';
 import { mapState } from 'vuex';
 import { GHMilestone, GHLabel } from 'store';
 import flatmap from 'lodash.flatmap';
@@ -66,6 +65,8 @@ import VueMarkdown from 'vue-markdown';
 import IssueLabel from '~/components/IssueLabel.vue';
 import ShareWidgets from '~/components/ShareWidgets.vue';
 import axios from '~/plugins/axios';
+import Component from 'nuxt-class-component';
+import Vue from 'vue';
 
 @Component({
   name: "issue",
