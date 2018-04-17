@@ -125,7 +125,7 @@ export default class Index extends Vue {
           content: 'Weekly Android developer news digest in Japanese'
         },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },
+        { property: 'og:url', content: `${this.baseUrl}${(this as any).$route.fullPath}` },
         { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` }
       ]
     };
