@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import { Prop } from 'vue-property-decorator';
-import { GHDigestMilestone } from '~/store';
+import { GHDigestMilestone } from 'types/GitHubApi';
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
 

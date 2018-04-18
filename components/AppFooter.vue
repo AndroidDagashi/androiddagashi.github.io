@@ -1,17 +1,26 @@
 <template>
-  <footer>
-    <div class="footer-inner">
-      <nav class="links">
-        <a href="https://twitter.com/androiddagashi">AndroidDagashi</a>
-        <a href="https://github.com/yshrsmz/androiddagashi">GitHub</a>
-      </nav>
-    </div>
-  </footer>
+  <v-footer
+    height="auto">
+    <v-flex
+      xs12
+      py-3
+      text-xs-center>
+      &copy;{{ (new Date()).getUTCFullYear() }} — <strong>{{ title }}</strong>
+    </v-flex>
+  </v-footer>
 </template>
 <script lang="ts">
-export default {
+import { mapState } from 'vuex';
+import Component from 'nuxt-class-component';
+import Vue from 'vue';
 
-};
+@Component({
+  name: 'app-footer',
+  computed: mapState(["title"])
+})
+export default class AppFooter extends Vue {
+  title: string;
+}
 </script>
 
 

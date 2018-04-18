@@ -1,7 +1,12 @@
+const fs = require('fs');
+const yaml = require('js-yaml');
+
+const siteConfig = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'));
+
 module.exports = {
   api: 'https://api.github.com/graphql',
   token: process.env.GH_READONLY_TOKEN,
-  repoOwner: process.env.GH_REPO_OWNER,
-  repoName: process.env.GH_REPO_NAME,
+  repoOwner: siteConfig.issueRepository.owner,
+  repoName: siteConfig.issueRepository.name,
   outputDir: '../../assets/api'
 };

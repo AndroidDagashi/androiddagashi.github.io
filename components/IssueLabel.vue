@@ -11,19 +11,19 @@
 
 <script lang="ts">
 import { Prop } from 'vue-property-decorator';
-import { GHLabel } from 'store';
+import { GHLabel } from 'types/GitHubApi';
 import { mapState } from 'vuex';
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
+import { SiteConfigRepository } from 'types/SiteConfig';
 
 @Component({
   name: 'issue-label',
-  computed: mapState(['repoOwner', 'repoName'])
+  computed: mapState(['issueRepository'])
 })
 export default class IssueLabel extends Vue {
 
-  repoOwner: string;
-  repoName: string;
+  issueRepository: SiteConfigRepository;
 
   @Prop() index: number;
 
@@ -35,7 +35,7 @@ export default class IssueLabel extends Vue {
   }
 
   get githubLabelLink(): string {
-    return `https://github.com/${this.repoOwner}/${this.repoName}/issues?q=label%3A"${this.labelInfo.name}"`;
+    return `https://github.com/${this.issueRepository.owner}/${this.issueRepository.name}/issues?q=label%3A"${this.labelInfo.name}"`;
   }
 }
 </script>

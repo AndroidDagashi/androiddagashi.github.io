@@ -59,7 +59,7 @@
 
 <script lang="ts">
 import { mapState } from 'vuex';
-import { GHMilestone, GHLabel } from 'store';
+import { GHMilestone, GHLabel } from 'types/GitHubApi';
 import flatmap from 'lodash.flatmap';
 import VueMarkdown from 'vue-markdown';
 import IssueLabel from '~/components/IssueLabel.vue';
@@ -76,16 +76,23 @@ import WithRoute from 'types/WithRoute';
     IssueLabel,
     ShareWidgets
   },
-  computed: mapState(['baseUrl'])
+  computed: mapState({
+    siteTitle: "title",
+    description: "description",
+    baseUrl: "baseUrl"
+  })
 })
 export default class Issue extends Vue implements WithRoute {
 
   milestone: GHMilestone;
   title: string;
+
+  siteTitle: string;
+  description: string;
   baseUrl: string;
 
   head() {
-    const title = `${this.title} - Android Dagashi`;
+    const title = `${this.title} - ${this.siteTitle}`;
 
     return {
       title: title,
@@ -93,7 +100,7 @@ export default class Issue extends Vue implements WithRoute {
         { property: 'og:title', content: title },
         {
           property: 'og:description',
-          content: 'Weekly Android developer news digest in Japanese'
+          content: this.description
         },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },

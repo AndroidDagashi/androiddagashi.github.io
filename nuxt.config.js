@@ -1,6 +1,9 @@
 const nodeExternals = require('webpack-node-externals');
 const parseArgs = require('minimist');
+const yaml = require('js-yaml');
+const fs = require('fs');
 
+const siteConfigs = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'));
 const indexJson = require('./static/api/index.json');
 
 const argv = parseArgs(process.argv.slice(2), {
@@ -24,20 +27,17 @@ const host =
   'localhost';
 
 const baseUrl = process.env.NODE_ENV === 'development'
-  ? `http://${host}:${port}` : process.env.BASE_URL || `http://${host}:${port}`;
+  ? `http://${host}:${port}` : siteConfigs.baseUrl || `http://${host}:${port}`;
 
 
 const issueIds = indexJson.milestones.nodes.map((milestone, index, array) => `/issue/${milestone.title}`);
 
 module.exports = {
   env: {
-    baseUrl: baseUrl,
-    GH_REPO_OWNER: process.env.GH_REPO_OWNER,
-    GH_REPO_NAME: process.env.GH_REPO_NAME,
-    RSS: 'http://feeds.feedburner.com/AndroidDagashi'
+    SITE_CONFIG: JSON.stringify(siteConfigs)
   },
   head: {
-    title: 'Android Dagashi',
+    title: siteConfigs.title,
     meta: [
       { charset: 'utf-8' },
       {
@@ -47,7 +47,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Weekly Android development news digest in Japanese'
+        content: siteConfigs.description
       }
     ],
     link: [
@@ -105,5 +105,7 @@ module.exports = {
     '~/plugins/vuetify.ts',
     { src: '~/plugins/ga.js', ssr: false }
   ],
-  axios: {}
+  axios: {
+    baseURL: baseUrl
+  }
 };
