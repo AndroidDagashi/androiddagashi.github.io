@@ -10,15 +10,15 @@
         md8>
         <div class="text-xs-center">
           <img
+            :alt="title"
             src="/image/logo.jpg"
             width="200"
-            alt="Android Dagashi"
             class="mb-5" >
         </div>
 
         <!-- description -->
         <v-card>
-          <v-card-title class="headline">Android Dagashi</v-card-title>
+          <v-card-title class="headline">{{ title }}</v-card-title>
           <v-card-text>
             <p><a
               href="https://twitter.com/hydrakecat"
@@ -28,8 +28,8 @@
             <p>おおよそ毎週日曜日の夜に更新してします。</p>
             <div class="text-xs-right">
               <em><small>&mdash; <a
-                href="https://twitter.com/AndroidDagashi"
-                target="_blank">@AndroidDagashi</a></small></em>
+                :href="contact.link"
+                target="_blank">{{ contact.name }}</a></small></em>
             </div>
           </v-card-text>
         </v-card>
@@ -75,6 +75,7 @@ import axios from '~/plugins/axios';
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
 import WithRoute from 'types/WithRoute';
+import { SiteConfigContact } from 'types/SiteConfig';
 
 type VDividerItem = {
   isDivider: boolean;
@@ -85,13 +86,14 @@ type VDividerItem = {
   components: {
     IssueLink
   },
-  computed: mapState(["baseUrl", "repoOwner", "repoName"])
+  computed: mapState(["title", "description", "baseUrl", "contact"])
 })
 export default class Index extends Vue implements WithRoute {
 
+  title: string;
+  description: string;
+  contact: SiteConfigContact;
   baseUrl: string;
-  repoOwner: string;
-  repoName: string;
   digest: GHDigest;
 
   // insert divider
@@ -121,11 +123,8 @@ export default class Index extends Vue implements WithRoute {
   head() {
     return {
       meta: [
-        { property: 'og:title', content: 'Android Dagashi' },
-        {
-          property: 'og:description',
-          content: 'Weekly Android developer news digest in Japanese'
-        },
+        { property: 'og:title', content: this.title },
+        { property: 'og:description', content: this.description },
         { property: 'og:type', content: 'website' },
         { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },
         { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` }

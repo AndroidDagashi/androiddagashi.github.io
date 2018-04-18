@@ -1,26 +1,6 @@
 <template>
   <v-app>
-    <v-toolbar
-      color="indigo"
-      dark
-      fixed
-      app>
-      <v-toolbar-title>
-        <nuxt-link
-          class="title white--text"
-          style="text-decoration:none;"
-          to="/">
-          Android Dagashi
-        </nuxt-link>
-      </v-toolbar-title>
-      <v-spacer/>
-      <v-toolbar-items>
-        <v-btn
-          :href="rss"
-          flat
-          target="_blank">RSS(仮)</v-btn>
-      </v-toolbar-items>
-    </v-toolbar>
+    <app-header/>
     <v-content>
       <v-container
         fluid
@@ -29,15 +9,7 @@
         <nuxt/>
       </v-container>
     </v-content>
-    <v-footer
-      height="auto">
-      <v-flex
-        xs12
-        py-3
-        text-xs-center>
-        &copy;2018 — <strong>Android Dagashi</strong>
-      </v-flex>
-    </v-footer>
+    <app-footer/>
     <span v-if="didMount">
       <script
         async
@@ -57,14 +29,12 @@ import Vue from 'vue';
 
 @Component({
   name: "default-layout",
-  computed: mapState(["rss"]),
   components: {
     AppHeader,
     AppFooter
   }
 })
 export default class DefaultLayout extends Vue {
-  rss: string;
   didMount = false;
 
   async mounted() {
@@ -74,7 +44,6 @@ export default class DefaultLayout extends Vue {
 </script>
 
 <style scoped>
-.title {
-  padding-left: 20px;
-}
+
 </style>
+
