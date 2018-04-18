@@ -28,6 +28,7 @@ query getMilestones(
         url
         title
         description
+        closedAt
         issues(first: $fetchIssuesPerMilestone) {
           totalCount
           pageInfo {

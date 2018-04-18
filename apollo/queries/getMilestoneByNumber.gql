@@ -13,6 +13,7 @@ query getMilestoneByNumber(
       url
       title
       description
+      closedAt
       issues(first: $fetchIssuesPerMilestone, after: $endIssueCursor) {
         totalCount
         pageInfo {

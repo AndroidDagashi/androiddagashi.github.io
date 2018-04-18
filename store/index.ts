@@ -53,6 +53,7 @@ export type GHMilestone = {
   number: number;
   url: string;
   title: string;
+  closedAt: string;
   description: string | null;
   issues: GHIssues;
 };
@@ -80,6 +81,7 @@ export type GHDigestMilestone = {
   url: string;
   title: string;
   description: string;
+  closedAt: string;
   issues: {
     totalCount: number;
     nodes: Array<GHDigestIssue>;
