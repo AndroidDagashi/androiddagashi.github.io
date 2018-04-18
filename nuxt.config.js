@@ -34,7 +34,7 @@ module.exports = {
     baseUrl: baseUrl,
     GH_REPO_OWNER: process.env.GH_REPO_OWNER,
     GH_REPO_NAME: process.env.GH_REPO_NAME,
-    RSS: 'https://twitrss.me/twitter_user_to_rss/?user=AndroidDagashi'
+    RSS: 'http://feeds.feedburner.com/AndroidDagashi'
   },
   head: {
     title: 'Android Dagashi',
