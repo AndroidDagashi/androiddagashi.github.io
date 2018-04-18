@@ -6,6 +6,7 @@ function create() {
   const today = new Date();
   const digest = JSON.parse(fs.readFileSync('./static/api/index.json', 'utf8'));
 
+  // create feed xml root
   let feed = new Feed({
     title: 'Android Dagashi',
     description: 'Weekly Android developer news digest in Japanese',
@@ -24,6 +25,7 @@ function create() {
   })
 
 
+  // create feeed items from milestones
   digest.milestones.nodes.forEach(milestone => {
     var descriptions = [];
     milestone.issues.nodes.forEach(issue => {
