@@ -4,7 +4,6 @@ const yaml = require('js-yaml');
 const fs = require('fs');
 
 const siteConfigs = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'));
-console.log(siteConfigs);
 const indexJson = require('./static/api/index.json');
 
 const argv = parseArgs(process.argv.slice(2), {
@@ -35,10 +34,7 @@ const issueIds = indexJson.milestones.nodes.map((milestone, index, array) => `/i
 
 module.exports = {
   env: {
-    baseUrl: baseUrl,
-    GH_REPO_OWNER: process.env.GH_REPO_OWNER,
-    GH_REPO_NAME: process.env.GH_REPO_NAME,
-    RSS: 'http://feeds.feedburner.com/AndroidDagashi'
+    SITE_CONFIG: JSON.stringify(siteConfigs)
   },
   head: {
     title: 'Android Dagashi',
