@@ -1,6 +1,10 @@
 const nodeExternals = require('webpack-node-externals');
 const parseArgs = require('minimist');
+const yaml = require('js-yaml');
+const fs = require('fs');
 
+const siteConfigs = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'));
+console.log(siteConfigs);
 const indexJson = require('./static/api/index.json');
 
 const argv = parseArgs(process.argv.slice(2), {
