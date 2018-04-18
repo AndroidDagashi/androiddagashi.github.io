@@ -59,7 +59,7 @@
 
 <script lang="ts">
 import { mapState } from 'vuex';
-import { GHMilestone, GHLabel } from 'store';
+import { GHMilestone, GHLabel } from 'types/GitHubApi';
 import flatmap from 'lodash.flatmap';
 import VueMarkdown from 'vue-markdown';
 import IssueLabel from '~/components/IssueLabel.vue';

@@ -69,7 +69,7 @@
 <script lang="ts">
 import { mapState, mapMutations, mapGetters } from 'vuex';
 import IssueLink from '~/components/IssueLink.vue';
-import { GHDigestMilestone, GHDigest } from 'store';
+import { GHDigestMilestone, GHDigest } from 'types/GitHubApi';
 import flatmap from 'lodash.flatmap';
 import axios from '~/plugins/axios';
 import Component from 'nuxt-class-component';

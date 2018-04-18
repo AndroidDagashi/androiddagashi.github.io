@@ -1,134 +1,62 @@
 import getMilestones from '~/apollo/queries/getMilestones.gql';
+import { SiteConfig, SiteConfigRepository, SiteConfigContact } from '~/types/SiteConfig';
 
-export type GHPageInfo = {
-  startCursor: string | null;
-  endCursor: string | null;
-  hasPreviousPage: boolean;
-  hasNextPage: boolean;
-};
+export interface RootState extends SiteConfig {
 
-export type GHAuthor = {
-  login: string;
-  url: string;
-  avatarUrl: string;
-};
-
-export type GHComment = {
-  body: string;
-  author: GHAuthor;
-};
-
-export type GHComments = {
-  totalCount: number;
-  pageInfo: GHPageInfo;
-  nodes: Array<GHComment>;
-};
-
-export type GHLabel = {
-  name: string;
-  description: string | null;
-  color: string;
-};
-
-export type GHLabels = {
-  nodes: Array<GHLabel>;
-};
-
-export type GHIssue = {
-  url: string;
-  title: string;
-  body: string;
-  labels: GHLabels;
-  comments: GHComments;
-};
-
-export type GHIssues = {
-  totalCount: number;
-  pageInfo: GHPageInfo;
-  nodes: Array<GHIssue>;
-};
-
-export type GHMilestone = {
-  id: string;
-  number: number;
-  url: string;
-  title: string;
-  closedAt: string;
-  description: string | null;
-  issues: GHIssues;
-};
-
-export type GHMilestones = {
-  totalCount: number;
-  pageInfo: GHPageInfo;
-  nodes: Array<GHMilestone>;
-};
-
-export type GHRepository = {
-  name: string;
-  description: string | null;
-  milestones: GHMilestones;
-};
-
-
-export type GHDigestIssue = {
-  title: string;
-};
-
-export type GHDigestMilestone = {
-  id: string;
-  number: string;
-  url: string;
-  title: string;
-  description: string;
-  closedAt: string;
-  issues: {
-    totalCount: number;
-    nodes: Array<GHDigestIssue>;
-  };
-};
-
-export type GHDigest = {
-  name: string;
-  url: string;
-  milestones: {
-    totalCount: number;
-    nodes: Array<GHDigestMilestone>;
-  };
-};
-
+}
 
 export const state = () => ({
+  title: '',
+  description: '',
   baseUrl: '',
-  repoOwner: '',
-  repoName: '',
-  rss: ''
-});
-
+  rssUrl: '',
+  issueRepository: {
+    owner: '',
+    name: ''
+  },
+  contact: {
+    name: '',
+    link: ''
+  },
+  authors: []
+} as RootState);
 
 export const mutations = {
-  setBaseUrl(state, url: string) {
+  setTitle(state: RootState, title: string){
+    state.title = title;
+  },
+  setDescription(state: RootState, description: string){
+    state.description = description;
+  },
+  setBaseUrl(state: RootState, url: string) {
     state.baseUrl = url;
   },
-  setRepoOwner(state, repoOwner: string) {
-    state.repoOwner = repoOwner;
+  setRssUrl(state: RootState, rssUrl: string) {
+    state.rssUrl = rssUrl;
   },
-  setRepoName(state, repoName: string) {
-    state.repoName = repoName;
+  setIssueRepository(state: RootState, repo: SiteConfigRepository){
+    state.issueRepository = repo;
   },
-  setRss(state, rss: string) {
-    state.rss = rss;
+  setContact(state: RootState, contact: SiteConfigContact){
+    state.contact = contact;
+  },
+  setAuthors(state: RootState, authors: Array<SiteConfigContact>){
+    state.authors = authors;
   }
 };
 
 
 export const actions = {
   async nuxtServerInit({ commit, state }, { app, env }) {
-    const { baseUrl, GH_REPO_OWNER: repoOwner, GH_REPO_NAME: repoName, RSS: rss } = env;
+    const { SITE_CONFIG: siteConfigStr } = env;
+    const siteConfigs: SiteConfig = JSON.parse(siteConfigStr);
 
-    commit('setBaseUrl', baseUrl);
-    commit('setRepoOwner', repoOwner);
-    commit('setRepoName', repoName);
-    commit('setRss', rss);
+    commit('setTitle', siteConfigs.title);
+    commit('setDescription', siteConfigs.description);
+    commit('setBaseUrl', siteConfigs.baseUrl);
+    commit('setRssUrl', siteConfigs.rssUrl);
+    commit('setIssueRepository', siteConfigs.issueRepository);
+    commit('setContact', siteConfigs.contact);
+    commit('setAuthors', siteConfigs.authors);
   }
 };

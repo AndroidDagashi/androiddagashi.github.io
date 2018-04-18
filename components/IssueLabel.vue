@@ -11,7 +11,7 @@
 
 <script lang="ts">
 import { Prop } from 'vue-property-decorator';
-import { GHLabel } from 'store';
+import { GHLabel } from 'types/GitHubApi';
 import { mapState } from 'vuex';
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
