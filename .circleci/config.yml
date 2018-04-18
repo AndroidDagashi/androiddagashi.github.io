@@ -61,7 +61,7 @@ jobs:
             git status
           when: on_fail
 
-  push_json:
+  push_json_and_rssfeed:
     docker:
       - image: circleci/node:9.5.0
     environment:
@@ -83,7 +83,8 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
-      - run: yarn prepareJson
+      - run: yarn generateJson
+      - run: yarn generateRssFeed
       - run:
           name: push json
           command: |
@@ -91,6 +92,7 @@ jobs:
               echo "Nothing to commit"
             else
               git add ./static/api
+              git add ./static/feed.xml
               git commit --allow-empty -m "Update stock info"
               git remote add upstream https://${GITHUB_ACCESS_TOKEN}@github.com/${CIRCLE_PROJECT_USERNAME}/${CIRCLE_PROJECT_REPONAME}
               git push upstream development
@@ -112,7 +114,7 @@ workflows:
   #             only: development
   update_json:
     jobs:
-      - push_json
+      - push_json_and_rssfeed
     triggers:
       - schedule:
           # 毎時ちょうどにビルド
