@@ -105,5 +105,7 @@ module.exports = {
     '~/plugins/vuetify.ts',
     { src: '~/plugins/ga.js', ssr: false }
   ],
-  axios: {}
+  axios: {
+    baseURL: baseUrl
+  }
 };
