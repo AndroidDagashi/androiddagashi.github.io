@@ -1,6 +1,10 @@
 const fs = require('fs');
 const Feed = require('feed');
 
+/**
+ * generate rss feed xml
+ * @returns {Void} Void
+ */
 function create() {
   let rootUrl = 'https://androiddagashi.github.io/';
   const today = new Date();
@@ -22,7 +26,7 @@ function create() {
       name: 'AndroidDagashi',
       link: rootUrl
     }
-  })
+  });
 
 
   // create feeed items from milestones
@@ -30,7 +34,7 @@ function create() {
     var descriptions = [];
     milestone.issues.nodes.forEach(issue => {
       descriptions.push(issue.title);
-    })
+    });
     var description = descriptions.join('/');
     var url = `${rootUrl}issue/${milestone.title}`;
     feed.addItem({
@@ -40,9 +44,9 @@ function create() {
       description,
       date: new Date(milestone.closedAt)
     });
-  })
+  });
 
-  feed.addCategory('Android')
+  feed.addCategory('Android');
 
   feed.addContributor({
     name: '_yshrsmz',
@@ -57,7 +61,7 @@ function create() {
     './static/feed.xml',
     feed.atom1(),
     'utf8'
-  )
+  );
 }
 
 
