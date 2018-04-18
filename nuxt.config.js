@@ -27,7 +27,7 @@ const host =
   'localhost';
 
 const baseUrl = process.env.NODE_ENV === 'development'
-  ? `http://${host}:${port}` : process.env.BASE_URL || `http://${host}:${port}`;
+  ? `http://${host}:${port}` : siteConfigs.baseUrl || `http://${host}:${port}`;
 
 
 const issueIds = indexJson.milestones.nodes.map((milestone, index, array) => `/issue/${milestone.title}`);
@@ -37,7 +37,7 @@ module.exports = {
     SITE_CONFIG: JSON.stringify(siteConfigs)
   },
   head: {
-    title: 'Android Dagashi',
+    title: siteConfigs.title,
     meta: [
       { charset: 'utf-8' },
       {
@@ -47,7 +47,7 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: 'Weekly Android development news digest in Japanese'
+        content: siteConfigs.description
       }
     ],
     link: [

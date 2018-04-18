@@ -17,7 +17,7 @@
       <v-btn
         :href="rssUrl"
         flat
-        target="_blank">RSS(仮)</v-btn>
+        target="_blank">RSS</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>

@@ -1,29 +1,32 @@
 const fs = require('fs');
+const yaml = require('js-yaml');
 const Feed = require('feed');
+
+const siteConfig = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'));
 
 /**
  * generate rss feed xml
  * @returns {Void} Void
  */
 function create() {
-  let rootUrl = 'https://androiddagashi.github.io/';
+  let rootUrl = `${siteConfig.baseUrl}/`;
   const today = new Date();
   const digest = JSON.parse(fs.readFileSync('./static/api/index.json', 'utf8'));
 
   // create feed xml root
   let feed = new Feed({
-    title: 'Android Dagashi',
-    description: 'Weekly Android developer news digest in Japanese',
+    title: siteConfig.title,
+    description: siteConfig.description,
     id: rootUrl,
     link: rootUrl,
     favicon: `${rootUrl}favicon.ico`,
-    copyright: `All rights reserved ${today.getUTCFullYear()}, Android Dagashi`,
+    copyright: `All rights reserved ${today.getUTCFullYear()}, ${siteConfig.title}`,
     updated: new Date(digest.milestones.nodes[0].closedAt),
     feedLinks: {
       atom: `${rootUrl}feed.xml`
     },
     author: {
-      name: 'AndroidDagashi',
+      name: siteConfig.title,
       link: rootUrl
     }
   });
@@ -48,13 +51,11 @@ function create() {
 
   feed.addCategory('Android');
 
-  feed.addContributor({
-    name: '_yshrsmz',
-    link: 'https://twitter.com/_yshrsmz'
-  });
-  feed.addContributor({
-    name: 'hydrakecat',
-    link: 'https://twitter.com/hydrakecat'
+  siteConfig.authors.forEach(author => {
+    feed.addContributor({
+      name: author.name,
+      link: author.link
+    });
   });
 
   fs.writeFileSync(
