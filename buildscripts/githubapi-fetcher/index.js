@@ -3,11 +3,12 @@ const config = require('./config');
 const fs = require('fs');
 const { createApolloFetch } = require('apollo-fetch');
 
-
 // query for index
 const indexQuery = fs.readFileSync('./apollo/queries/getMilestoneDigests.gql', 'utf8');
 // query for issue
 const milestoneQuery = fs.readFileSync('./apollo/queries/getMilestoneByNumber.gql', 'utf8');
+// query for checking rate limit
+const rateLimitQuery = fs.readFileSync('./apollo/queries/getRateLimit.gql', 'utf8');
 
 // setup apollo
 const apolloFectch = createApolloFetch({ uri: config.api });
@@ -72,7 +73,7 @@ async function generateIndexJson() {
   );
 
   if (errors) {
-    console.log('Failed to generate index.json', errors);
+    console.error('Failed to generate index.json', errors);
     return null;
   } else {
     let repository = data.repository;
@@ -89,9 +90,29 @@ async function generateIndexJson() {
 }
 
 /**
+ * get and report current rate limit information
+ * @returns { Promise } Promise
+ */
+async function reportRateLimit() {
+  var { data, errors } = await apolloFectch(
+    {
+      query: rateLimitQuery,
+      operationName: 'getRateLimit'
+    }
+  );
+
+  if (errors) {
+    console.error('Failed to fetch Rate Limit', errors);
+  } else {
+    console.log('RateLimit:');
+    console.log(data.rateLimit);
+  }
+}
+
+/**
  * entry method.
  * generate all required json files.
- * @returns {Void} Void
+ * @returns {Promise} Promise
  */
 async function generateJsons() {
   try {
@@ -99,16 +120,15 @@ async function generateJsons() {
     var { milestones } = await generateIndexJson();
 
     // generate json for each issue
-    for (var i = 0; i < milestones.nodes.length; i++){
+    for (var i = 0; i < milestones.nodes.length; i++) {
       console.log('fetching milestone:', milestones.nodes[i].number);
       var milestone = await generateIssueJson(milestones.nodes[i].number);
     }
-
   } catch (e) {
     console.error('Failed to generate json', e);
   }
 }
 
 
-generateJsons();
-
+generateJsons()
+  .then(() => reportRateLimit());
