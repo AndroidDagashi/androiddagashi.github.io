@@ -13,6 +13,7 @@ export type GHAuthor = {
 
 export type GHComment = {
   body: string;
+  publishedAt: string;
   author: GHAuthor;
 };
 
