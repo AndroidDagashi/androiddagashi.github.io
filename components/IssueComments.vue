@@ -27,9 +27,9 @@
               v-else
               :key="index">
               <v-container px-0>
-                <v-layout 
-                  d-inline-flex 
-                  justify-start 
+                <v-layout
+                  d-inline-flex
+                  justify-start
                   row>
                   <v-flex mr-2>
                     <v-avatar
@@ -38,8 +38,8 @@
                     </v-avatar>
                   </v-flex>
                   <v-flex justify-start>
-                    <v-layout 
-                      row 
+                    <v-layout
+                      row
                       wrap>
                       <v-flex xs12>
                         <a
@@ -49,13 +49,9 @@
                         </a>
                       </v-flex>
                       <v-flex xs12>
-                        <a
-                          :href="item.url"
-                          target="_blank">
-                          <no-ssr>
-                            <span>{{ publishedAt(item) }}</span>
-                          </no-ssr>
-                        </a>
+                        <no-ssr>
+                          <span>{{ publishedAt(item) }}</span>
+                        </no-ssr>
                       </v-flex>
                     </v-layout>
                   </v-flex>
@@ -69,14 +65,14 @@
           </template>
         </v-card-text>
         <v-card-actions>
-          <v-btn 
-            color="primary" 
-            flat 
+          <v-btn
+            color="primary"
+            flat
             @click.stop="isDialogActive=false">Close</v-btn>
-          <v-btn 
-            :href="issue.url" 
-            color="primary" 
-            flat 
+          <v-btn
+            :href="issue.url"
+            color="primary"
+            flat
             target="_blank">コメントする</v-btn>
         </v-card-actions>
       </v-card>
