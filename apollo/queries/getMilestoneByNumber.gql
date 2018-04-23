@@ -43,6 +43,7 @@ query getMilestoneByNumber(
             }
             nodes {
               body
+              publishedAt
               author {
                 login
                 url
