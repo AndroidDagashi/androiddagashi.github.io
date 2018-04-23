@@ -4,11 +4,11 @@
       flat
       @click.stop="isDialogActive=true">
       <v-avatar
-        v-for="(comment, index) in issue.comments.nodes"
+        v-for="(author, index) in distinctAuthors"
         :key="index"
         size="20px">
         <img
-          :src="comment.author.avatarUrl">
+          :src="author.avatarUrl">
       </v-avatar>
       ({{ issue.comments.totalCount }})
       <v-icon>mdi-comment</v-icon>
@@ -86,6 +86,7 @@ import { Prop } from 'vue-property-decorator';
 import Vue from 'vue';
 import { GHIssue, GHComment } from 'types/GitHubApi';
 import flatmap from 'lodash.flatmap';
+import uniqBy from 'lodash.uniqby';
 import VueMarkdown from 'vue-markdown';
 import { DateTime } from 'luxon';
 
@@ -111,6 +112,11 @@ export default class IssueComents extends Vue {
           ];
       }
     });
+  }
+
+  get distinctAuthors() {
+    return uniqBy(this.issue.comments.nodes, (comment) => comment.author.login)
+      .map((comment) => comment.author);
   }
 
   publishedAt(comment: GHComment) {
