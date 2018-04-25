@@ -1,6 +1,6 @@
 <template>
-  <div class="issue-comments">
-    <h2>Comments</h2>
+  <section class="issue-comments">
+    <h3>Comments</h3>
     <v-container>
       <v-layout class="shrink" justify-end>
         <v-flex class="shrink" md8 xs12>
@@ -15,7 +15,7 @@
                   size="20px">
                   <img :src="item.author.avatarUrl"/>
                 </v-avatar>
-                <a :href="item.author.url">{{ item.author.login }}</a>
+                <strong class="issue-comments__username"><a :href="item.author.url">{{ item.author.login }}</a></strong>
               </v-card-title>
               <v-card-text>
                 <vue-markdown
@@ -29,7 +29,7 @@
         </v-flex>
       </v-layout>
     </v-container>
-  </div>
+  </section>
 </template>
 
 <script lang="ts">
@@ -73,18 +73,31 @@ export default class IssueComments extends Vue {
 <style lang="stylus" scoped>
 .issue-comments {
   width: 100%;
-
-  >>> h2 {
-    text-decoration: underline;
-  }
 }
 
 .issue-comments__comment {
   background-color: #FAFBFC;
 }
 
+.issue-comments__username {
+  >>> a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
 .comment-body {
   word-break: break-all;
+
+  >>> a {
+    text-decoration: none;
+    color: #0366d6
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 
   >>> p {
     margin-bottom: 4px;

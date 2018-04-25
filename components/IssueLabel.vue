@@ -40,7 +40,7 @@ export default class IssueLabel extends Vue {
 }
 </script>
 
-<style>
+<style lang="stylus">
   .caption .chip__content {
     height: 24px;
     color: white;
@@ -49,5 +49,7 @@ export default class IssueLabel extends Vue {
 
   .caption .chip__content a {
     color: white;
+    text-decoration: none;
+    font-weight: bold;
   }
 </style>
