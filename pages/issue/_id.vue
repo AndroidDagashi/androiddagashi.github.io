@@ -37,10 +37,14 @@
                     class="issue-body"
                   >{{ item.body }}</vue-markdown>
                   <v-container class="px-0">
-                    <v-layout row v-if="item.comments.totalCount">
+                    <v-layout 
+                      v-if="item.comments.totalCount" 
+                      row>
                       <issue-comments :issue="item"/>
                     </v-layout>
-                    <v-layout row justify-end>
+                    <v-layout 
+                      row 
+                      justify-end>
                       <v-btn
                         :href="item.url"
                         class="mr-0"
