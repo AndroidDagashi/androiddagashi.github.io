@@ -36,17 +36,20 @@
                     :anchor-attributes="{ target: '_blank' }"
                     class="issue-body"
                   >{{ item.body }}</vue-markdown>
-                  <v-layout>
-                    <v-spacer/>
-                    <v-btn
-                      :href="item.url"
-                      flat
-                      target="_blank">
-                      GitHubで見る
-                      {{ item.comments.totalCount > 0 ? `(${item.comments.totalCount})` : "" }}
-                      <v-icon v-if="item.comments.totalCount > 0">mdi-comment</v-icon>
-                    </v-btn>
-                  </v-layout>
+                  <v-container class="px-0">
+                    <v-layout row v-if="item.comments.totalCount">
+                      <issue-comments :issue="item"/>
+                    </v-layout>
+                    <v-layout row justify-end>
+                      <v-btn
+                        :href="item.url"
+                        class="mr-0"
+                        flat
+                        target="_blank">
+                        GitHubで見る
+                      </v-btn>
+                    </v-layout>
+                  </v-container>
                 </div>
               </article>
             </template>
@@ -64,6 +67,7 @@ import flatmap from 'lodash.flatmap';
 import VueMarkdown from 'vue-markdown';
 import IssueLabel from '~/components/IssueLabel.vue';
 import ShareWidgets from '~/components/ShareWidgets.vue';
+import IssueComments from '~/components/IssueComments.vue';
 import axios from '~/plugins/axios';
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
@@ -74,6 +78,7 @@ import WithRoute from 'types/WithRoute';
   components: {
     VueMarkdown,
     IssueLabel,
+    IssueComments,
     ShareWidgets
   },
   computed: mapState({
