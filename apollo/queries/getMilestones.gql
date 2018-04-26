@@ -58,6 +58,7 @@ query getMilestones(
               }
               nodes {
                 body
+                publishedAt
                 author {
                   login
                   url
