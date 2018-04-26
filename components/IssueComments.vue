@@ -2,12 +2,12 @@
   <section class="issue-comments">
     <h3>Comments</h3>
     <v-container>
-      <v-layout 
-        class="shrink" 
+      <v-layout
+        class="shrink"
         justify-end>
-        <v-flex 
-          class="shrink" 
-          md8 
+        <v-flex
+          class="shrink"
+          md8
           xs12>
           <template v-for="(item, index) in issue.comments.nodes">
             <v-card
@@ -21,8 +21,8 @@
                   <img :src="item.author.avatarUrl">
                 </v-avatar>
                 <strong class="issue-comments__username">
-                  <a 
-                    :href="item.author.url" 
+                  <a
+                    :href="item.author.url"
                     target="_blank">{{ item.author.login }}</a>
                 </strong>
               </v-card-title>
@@ -31,9 +31,11 @@
                   :anchor-attributes="{ target: '_blank' }"
                   class="comment-body"
                 >{{ item.body }}</vue-markdown>
-                <p 
-                  :title="item.publishedAt" 
-                  class="text-xs-right mb-0">{{ publishedAt(item) }}</p>
+                <no-ssr>
+                  <p
+                    :title="item.publishedAt"
+                    class="text-xs-right mb-0">{{ publishedAt(item) }}</p>
+                </no-ssr>
               </v-card-text>
             </v-card>
           </template>
