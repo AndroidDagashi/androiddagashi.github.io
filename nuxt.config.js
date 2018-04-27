@@ -101,8 +101,8 @@ module.exports = {
     '~/modules/typescript'
   ],
   plugins: [
-    '~/plugins/github-api-v3.ts',
     '~/plugins/vuetify.ts',
+    '~/plugins/markdownit.ts',
     { src: '~/plugins/ga.js', ssr: false }
   ],
   axios: {

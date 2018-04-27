@@ -74,7 +74,6 @@ import flatmap from 'lodash.flatmap';
 import axios from '~/plugins/axios';
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
-import WithRoute from 'types/WithRoute';
 import { SiteConfigContact } from 'types/SiteConfig';
 
 type VDividerItem = {
@@ -88,7 +87,7 @@ type VDividerItem = {
   },
   computed: mapState(["title", "description", "baseUrl", "contact"])
 })
-export default class Index extends Vue implements WithRoute {
+export default class Index extends Vue {
 
   title: string;
   description: string;

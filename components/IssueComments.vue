@@ -27,10 +27,10 @@
                 </strong>
               </v-card-title>
               <v-card-text>
-                <vue-markdown
-                  :anchor-attributes="{ target: '_blank' }"
+                <div
                   class="comment-body"
-                >{{ item.body }}</vue-markdown>
+                  v-html="$md.render(item.body)"
+                ></div>
                 <no-ssr>
                   <p
                     :title="item.publishedAt"
@@ -48,17 +48,13 @@
 <script lang="ts">
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
-import VueMarkdown from 'vue-markdown';
 import { Prop } from 'vue-property-decorator';
 import { GHIssue, GHComment } from 'types/GitHubApi';
 import flatmap from 'lodash.flatmap';
 import { DateTime } from 'luxon';
 
 @Component({
-  name: "issue-comments",
-  components: {
-    VueMarkdown
-  }
+  name: "issue-comments"
 })
 export default class IssueComments extends Vue {
   @Prop() issue: GHIssue
