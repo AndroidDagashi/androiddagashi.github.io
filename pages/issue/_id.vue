@@ -145,21 +145,5 @@ export default class Issue extends Vue {
 </script>
 
 <style lang="stylus" scoped>
-.issue-body {
-  word-break: break-all;
-
-  >>> a {
-    text-decoration: none;
-    color: #0366d6
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  >>> ul {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
 </style>
 

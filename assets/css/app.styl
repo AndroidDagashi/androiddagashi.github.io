@@ -12,3 +12,30 @@ $theme := {
 
 // Import Vuetify styling
 @require '~vuetify/src/stylus/main'
+
+.issue-body, .comment-body {
+  word-break: break-all;
+
+  a {
+    text-decoration: none;
+    color: #0366d6
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  p {
+    margin-bottom: 4px;
+  }
+
+  ul {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  blockquote {
+    padding: 0 1em;
+    color: #6a737d;
+    border-left: 0.25em solid #dfe2e5;
+  }
+}

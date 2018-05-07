@@ -96,20 +96,4 @@ export default class IssueComments extends Vue {
     }
   }
 }
-
-.comment-body {
-  word-break: break-all;
-
-  >>> a {
-    text-decoration: none;
-    color: #0366d6
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  >>> p {
-    margin-bottom: 4px;
-  }
-}
 </style>
