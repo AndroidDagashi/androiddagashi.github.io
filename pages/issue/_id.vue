@@ -32,18 +32,18 @@
                       :label-info="label"
                       :index="index"/>
                   </div>
-                  <vue-markdown
-                    :anchor-attributes="{ target: '_blank' }"
+                  <div
                     class="issue-body"
-                  >{{ item.body }}</vue-markdown>
+                    v-html="$md.render(item.body)"
+                  />
                   <v-container class="px-0">
-                    <v-layout 
-                      v-if="item.comments.totalCount" 
+                    <v-layout
+                      v-if="item.comments.totalCount"
                       row>
                       <issue-comments :issue="item"/>
                     </v-layout>
-                    <v-layout 
-                      row 
+                    <v-layout
+                      row
                       justify-end>
                       <v-btn
                         :href="item.url"
@@ -68,19 +68,16 @@
 import { mapState } from 'vuex';
 import { GHMilestone, GHLabel } from 'types/GitHubApi';
 import flatmap from 'lodash.flatmap';
-import VueMarkdown from 'vue-markdown';
 import IssueLabel from '~/components/IssueLabel.vue';
 import ShareWidgets from '~/components/ShareWidgets.vue';
 import IssueComments from '~/components/IssueComments.vue';
 import axios from '~/plugins/axios';
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
-import WithRoute from 'types/WithRoute';
 
 @Component({
   name: "issue",
   components: {
-    VueMarkdown,
     IssueLabel,
     IssueComments,
     ShareWidgets
@@ -91,7 +88,7 @@ import WithRoute from 'types/WithRoute';
     baseUrl: "baseUrl"
   })
 })
-export default class Issue extends Vue implements WithRoute {
+export default class Issue extends Vue {
 
   milestone: GHMilestone;
   title: string;
@@ -148,21 +145,5 @@ export default class Issue extends Vue implements WithRoute {
 </script>
 
 <style lang="stylus" scoped>
-.issue-body {
-  word-break: break-all;
-
-  >>> a {
-    text-decoration: none;
-    color: #0366d6
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-
-  >>> ul {
-    padding-left: 16px;
-    padding-right: 16px;
-  }
-}
 </style>
 
