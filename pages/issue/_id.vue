@@ -9,7 +9,7 @@
       md8>
       <v-card>
         <v-card-title class="headline">#{{ milestone.title }}</v-card-title>
-        <!-- <v-card-text v-if="milestone.description" v-html="milestone.description"/> -->
+        <v-card-text v-if="milestone.description" v-html="$md.render(milestone.description)"/>
         <v-card-text>
           <share-widgets/>
           <div>

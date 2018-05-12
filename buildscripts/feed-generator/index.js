@@ -1,6 +1,7 @@
 const fs = require('fs');
 const yaml = require('js-yaml');
 const Feed = require('feed');
+const MarkdownIt = require('markdown-it');
 
 const siteConfig = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'));
 
@@ -31,6 +32,7 @@ function create() {
     }
   });
 
+  const md = new MarkdownIt();
 
   // create feeed items from milestones
   digest.milestones.nodes.forEach(milestone => {
@@ -38,7 +40,7 @@ function create() {
     milestone.issues.nodes.forEach(issue => {
       descriptions.push(issue.title);
     });
-    var description = descriptions.join('/');
+    var description = md.render(milestone.description) + descriptions.join('/');
     var url = `${rootUrl}issue/${milestone.title}`;
     feed.addItem({
       title: milestone.title,
