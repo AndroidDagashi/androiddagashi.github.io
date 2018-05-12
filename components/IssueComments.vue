@@ -28,9 +28,9 @@
               </v-card-title>
               <v-card-text>
                 <div
-                  class="comment-body"
+                  class="comment-body md-body"
                   v-html="$md.render(item.body)"
-                ></div>
+                />
                 <no-ssr>
                   <p
                     :title="item.publishedAt"
