@@ -112,10 +112,10 @@
           ]
         },
         "comments": {
-          "totalCount": 1,
+          "totalCount": 2,
           "pageInfo": {
             "startCursor": "Y3Vyc29yOnYyOpHOF7W/FQ==",
-            "endCursor": "Y3Vyc29yOnYyOpHOF7W/FQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOF7cIHQ==",
             "hasPreviousPage": false,
             "hasNextPage": false
           },
@@ -127,6 +127,15 @@
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
                 "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "私は基本メソッドで書いてしまいますね…\r\nあとはふじたくさんの挙げているリンク参考にしています",
+              "publishedAt": "2018-06-17T11:04:51Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
               }
             }
           ]
@@ -183,7 +192,7 @@
       {
         "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/252",
         "title": "Kotlin 1.2.50リリース",
-        "body": "https://blog.jetbrains.com/kotlin/2018/06/kotlin-1-2-50-is-out/\r\n\r\nAndroid関連で大きそうなのは下記の通りです。\r\n\r\n- マルチモジュールプロジェクトでのインクリメンタルビルドのパフォーマンス向上\r\n- kaptのパフォーマンス向上\r\n- ~~`gradle.properties`に`kapt.use.worker.api=true`を書くと、kaptをGradleのワーカーで動かしてくれる~~\r\n  - ~~要Gradle 4.3以降~~\r\n  - ~~1.2.60からデフォルトで有効にする予定~~\r\n\r\nまた、コンパイラにProgressiveモードが追加されました。\r\nこれは本来メジャーバージョンでしかリリースされない、後方互換性のない修正や改善をマイナーリリースでも有効にするためのものです。基本的に、Kotlinのバージョンアップにキャッチアップしているアクティブな開発者向け機能なようです。\r\nProgressiveモードはKotlinコンパイラの引数に`-Xprogressive`を追加することでモジュール毎に有効にされます。\r\n本来メジャーバージョンアップで追加されるはずの変更が適用されるので、もちろん既存コードがエラーになることもあります。",
+        "body": "https://blog.jetbrains.com/kotlin/2018/06/kotlin-1-2-50-is-out/\r\n\r\nAndroid関連で大きそうなのは下記の通りです。\r\n\r\n- マルチモジュールプロジェクトでのインクリメンタルビルドのパフォーマンス向上\r\n- kaptのパフォーマンス向上\r\n- ~~`gradle.properties`に`kapt.use.worker.api=true`を書くと、kaptをGradleのワーカーで動かしてくれる~~\r\n  - ~~要Gradle 4.3以降~~\r\n  - ~~1.2.60からデフォルトで有効にする予定~~\r\n\r\nまた、コンパイラにProgressiveモードが追加されました。\r\nこれは本来メジャーバージョンでしかリリースされない、後方互換性のない修正や改善をマイナーリリースでも有効にするためのものです。  \r\n基本的に、Kotlinのバージョンアップにキャッチアップしているアクティブな開発者向け機能なようです。  \r\nProgressiveモードはKotlinコンパイラの引数に`-Xprogressive`を追加することでモジュール毎に有効にされます。\r\n本来メジャーバージョンアップで追加されるはずの変更が適用されるので、もちろん既存コードがエラーになることもあります。",
         "labels": {
           "nodes": [
             {
