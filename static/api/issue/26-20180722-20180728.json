@@ -203,14 +203,33 @@
           "nodes": []
         },
         "comments": {
-          "totalCount": 0,
+          "totalCount": 2,
           "pageInfo": {
-            "startCursor": null,
-            "endCursor": null,
+            "startCursor": "Y3Vyc29yOnYyOpHOGGIEdQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGGIK5w==",
             "hasPreviousPage": false,
             "hasNextPage": false
           },
-          "nodes": []
+          "nodes": [
+            {
+              "body": "ちょっとだけ補足しておきますね。\r\n\r\nTwitter4A は Twitter4J の Android 向けのフォークですが、Android 向けという意味では(maven ではなく)gradle でビルドできるようにした程度です。\r\nTwitter4J は 2016/12 の v4.0.6 から更新されておらず、最新のTwitterの機能にいち早く対応するためのフォークという位置づけになります。\r\n\r\n8/16 に予定されている新DM APIへの完全移行(現行のDM APIは廃止される)や、動画の投稿、140文字を超えるツイートのための機能などが必要な方のためにリリースしました。\r\n\r\nちなみにTwitterの公式SDKとは全く別物です。",
+              "publishedAt": "2018-07-31T02:50:06Z",
+              "author": {
+                "login": "takke",
+                "url": "https://github.com/takke",
+                "avatarUrl": "https://avatars1.githubusercontent.com/u/73930?v=4"
+              }
+            },
+            {
+              "body": "@takke 補足ありがとうございます。てっきり、Android向けにOAuthのログインまわりが変わるのかなと思っていたのですが、より一般的な改善を目指しているのですね。ありがとうございました。",
+              "publishedAt": "2018-07-31T03:00:29Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
         }
       },
       {
