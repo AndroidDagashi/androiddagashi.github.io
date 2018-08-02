@@ -7,5 +7,8 @@
     "eslint:recommended",
     "plugin:vue/recommended",
     "typescript"
-  ]
+  ],
+  "rules": {
+    "vue/no-v-html": "off"
+  }
 }

@@ -1,4 +1,4 @@
-/* eslint no-console:0 */
+/* eslint no-console: "off", typescript/no-var-requires: "off" */
 const config = require('./config');
 const fs = require('fs');
 const { createApolloFetch } = require('apollo-fetch');

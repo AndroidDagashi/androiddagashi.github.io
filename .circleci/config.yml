@@ -63,7 +63,7 @@ jobs:
 
   push_json_and_rssfeed:
     docker:
-      - image: circleci/node:9.5.0
+      - image: circleci/node:9.11.2
     environment:
       TZ: /user/share/zoneinfo/Asia/Tokyo
     working_directory: ~/repo

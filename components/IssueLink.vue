@@ -1,10 +1,10 @@
 <template>
   <v-list-tile
     :to="`issue/${milestone.title}/`"
-    nuxt >
+    nuxt>
     <v-list-tile-content>
-      <v-list-tile-title v-html="title"/>
-      <v-list-tile-sub-title v-html="getSummary(milestone)"/>
+      <v-list-tile-title v-html="title" />
+      <v-list-tile-sub-title v-html="getSummary(milestone)" />
     </v-list-tile-content>
   </v-list-tile>
 </template>

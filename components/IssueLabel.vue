@@ -1,7 +1,7 @@
 <template>
   <v-chip
-    :style="chipColorStyle"
     :key="index"
+    :style="chipColorStyle"
     class="caption">
     <a
       :href="githubLabelLink"
