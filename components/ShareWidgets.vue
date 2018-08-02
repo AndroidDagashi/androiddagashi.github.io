@@ -10,7 +10,7 @@
         <script 
           async 
           src="https://platform.twitter.com/widgets.js" 
-          charset="utf-8"/>
+          charset="utf-8" />
       </span>
       <span>
         <a 
@@ -24,13 +24,13 @@
             alt="このエントリーをはてなブックマークに追加" 
             width="20" 
             height="20" 
-            style="border: none;" >
+            style="border: none;">
         </a>
         <script 
           type="text/javascript" 
           src="https://b.st-hatena.com/js/bookmark_button.js" 
           charset="utf-8" 
-          async="async"/>
+          async="async" />
       </span>
     </div>
   </no-ssr>

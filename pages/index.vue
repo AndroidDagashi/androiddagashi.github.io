@@ -13,7 +13,7 @@
             :alt="title"
             src="/image/logo.jpg"
             width="200"
-            class="mb-5" >
+            class="mb-5">
         </div>
 
         <!-- description -->
@@ -52,12 +52,12 @@
             <template v-for="(item, index) in milestonesWithDivider">
               <v-divider
                 v-if="item.isDivider"
-                :key="index"/>
+                :key="index" />
               <issue-link
                 v-else
                 :key="item.id"
                 :milestone="item"
-                :index="index"/>
+                :index="index" />
             </template>
           </v-list>
         </v-card>

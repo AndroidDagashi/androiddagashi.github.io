@@ -1,3 +1,4 @@
+/* eslint typescript/no-var-requires: "off" */
 const nodeExternals = require('webpack-node-externals');
 const parseArgs = require('minimist');
 const yaml = require('js-yaml');

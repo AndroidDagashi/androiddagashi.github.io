@@ -5,7 +5,7 @@ export interface RootState extends SiteConfig {
 
 }
 
-export const state = () => ({
+export const state = (): RootState => ({
   title: '',
   description: '',
   baseUrl: '',

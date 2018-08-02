@@ -1,21 +1,21 @@
 <template>
   <v-app>
-    <app-header/>
+    <app-header />
     <v-content>
       <v-container
         fluid
         fill-height
         justify-center>
-        <nuxt/>
+        <nuxt />
       </v-container>
     </v-content>
-    <app-footer/>
+    <app-footer />
     <span v-if="didMount">
       <script
         async
         defer
         src="//platform.twitter.com/widgets.js"
-        charset="utf-8"/>
+        charset="utf-8" />
     </span>
   </v-app>
 </template>

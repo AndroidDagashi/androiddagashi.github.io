@@ -1,3 +1,4 @@
+/* eslint typescript/no-var-requires: "off" */
 const fs = require('fs');
 const yaml = require('js-yaml');
 const Feed = require('feed');

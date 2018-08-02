@@ -12,7 +12,7 @@
         {{ title }}
       </nuxt-link>
     </v-toolbar-title>
-    <v-spacer/>
+    <v-spacer />
     <v-toolbar-items>
       <v-btn
         :href="rssUrl"
