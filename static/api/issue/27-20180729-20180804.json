@@ -1,0 +1,319 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzUzMDI4Nw==",
+  "number": 27,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/27",
+  "title": "27-20180729-20180804",
+  "description": "2018/8/1から新規アプリはtargetSdkVersion=26が必須に、Plaid 2.0の開発が進行中、Fragmentを扱う上で避けたほうがいいこと",
+  "closedAt": "2018-08-05T10:58:26Z",
+  "issues": {
+    "totalCount": 13,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhS5Fg8=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhSawGA=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/349",
+        "title": "Kotlin標準ライブラリのあまり知られていない便利メソッド",
+        "body": "https://tech.okcupid.com/hidden-gems-in-kotlin-stdlib/\r\n\r\nいろいろ便利メソッドあるので、一度しっかり調べておくと捗りそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/348",
+        "title": "RxRelayとSubjectの違い、エラーハンドリングについて",
+        "body": "https://articles.caster.io/android/rxify-error-handling-with-subjects-relays/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/347",
+        "title": "Gradleタスクのパフォーマンス計測",
+        "body": "https://jakewharton.com/tracing-gradle-task-execution/\r\n\r\nChromeツールで見れるのは便利そうです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/346",
+        "title": "2018/8/1から新規アプリはtargetSdkVersion=26が必須に",
+        "body": "https://www.reddit.com/r/androiddev/comments/93r94l/targetsdk26_requirement_goes_live_today_august/\r\nhttps://android-developers.googleblog.com/2017/12/improving-app-security-and-performance.html\r\n\r\n既存のアプリは11月以降からtargetSdkVersionが26未満だと更新できなくなります。\r\n対応が必要な方はお早めに。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/345",
+        "title": "Kotlin 1.2.60リリース",
+        "body": "https://blog.jetbrains.com/kotlin/2018/08/kotlin-1-2-60-is-out/\r\n\r\n[1.2.50](https://github.com/AndroidDagashi/AndroidDagashi/issues/252)で入るはずだった `kapt` をGradleのWorkerで直接動かすオプションが復活しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGHGSTw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGHGSTw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "プロジェクトによってはけっこう高速になるようです",
+              "publishedAt": "2018-08-02T23:12:38Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/344",
+        "title": "Plaid 2.0の開発が進行中",
+        "body": "https://medium.com/@crafty/restitching-plaid-9ca5588d3b0a\r\n\r\nMaterial Designの実装例として有名な[Plaid](https://github.com/nickbutcher/plaid)ですが、KotlinやArchitecture Componentsを用い、[アプリのアーキテクチャガイド](https://developer.android.com/jetpack/docs/guide)に沿った構成への変更が行われているようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGHIZAg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGHIZAg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "けっこう意欲的なのでたのしみですね",
+              "publishedAt": "2018-08-03T03:04:07Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/343",
+        "title": "Fragmentを扱う上で避けたほうがいいこと",
+        "body": "https://www.reddit.com/r/androiddev/comments/92zgwg/fragment_related_pitfalls_and_how_to_avoid_them/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGHGTXA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGHGTXA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "「たとえば〜」の下りが3回連続で「母親から電話があって」で笑いました。可能ならFragmentはあまり使いたくないですね……。",
+              "publishedAt": "2018-08-02T23:14:09Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/342",
+        "title": "RxJava 2.2.0",
+        "body": "https://github.com/ReactiveX/RxJava/releases/tag/v2.2.0\r\n\r\n機能的には`2.1.17`と変わらず、`Experimental/Beta`だったAPIが標準化されただけのようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/341",
+        "title": "okio-2.0.0-rc1がリリース",
+        "body": "https://github.com/square/okio/blob/master/CHANGELOG.md#version-200-rc1\r\n\r\n2.0.0からKotlinで書かれるようです。これはKotlinのstdlibを依存に含むということですし、OkHttpやRetrofitにも少なからず影響を与えそうな気がします。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/340",
+        "title": "Android Studio 3.2 beta5",
+        "body": "https://androidstudio.googleblog.com/2018/07/android-studio-32-beta-5-now-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/339",
+        "title": "TechBoosterのC94のAndroid本が予約開始",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"ja\" dir=\"ltr\"><a href=\"https://twitter.com/hashtag/C94?src=hash&amp;ref_src=twsrc%5Etfw\">#C94</a> 新刊「技術の夏、未来の夏。～Android P特集～」「Jetpack Handbook」の紹介です🙌 <a href=\"https://t.co/HCIocRNI0T\">https://t.co/HCIocRNI0T</a> Pの最新情報に留まらずArchitecture Componentsも含めたJetpackの解説書がついに出来ました！最初の一歩におすすめしたい技術書です。本日より予約開始。ぜひ夏のお供にご利用ください😊 <a href=\"https://t.co/piZEV45usV\">pic.twitter.com/piZEV45usV</a></p>&mdash; mhidaka@1日目西れ11b (@mhidaka) <a href=\"https://twitter.com/mhidaka/status/1024097676797698049?ref_src=twsrc%5Etfw\">July 31, 2018</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nAndroid関連はAndroid PとJetpackの2冊のようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/338",
+        "title": "iOSエンジニアから見たFlutter",
+        "body": "https://harveynick.com/2018/05/21/an-ios-developers-opinions-of-flutter/\r\n\r\nFlutterがネイティブのコンポーネントを使わないが故に、iOSに慣れた目から見ると奇妙に見えるという話のようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/337",
+        "title": "なぜDiscordはReact Nativeに固執するか",
+        "body": "https://blog.discordapp.com/why-discord-is-sticking-with-react-native-ccc34be0d427\r\n\r\nかなり初期からReact Nativeを使っていたDiscordチームのブログ記事です。ただ、冒頭でもあるようにAndroidには適用せず、iOSだけで使っているようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
