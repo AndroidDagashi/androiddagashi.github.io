@@ -3,56 +3,67 @@
   <v-layout
     row
     justify-center
-    align-center>
+    align-center
+  >
     <v-flex
       xs12
       sm12
-      md8>
+      md8
+    >
       <v-card>
         <v-card-title class="headline">#{{ milestone.title }}</v-card-title>
         <v-card-text
           v-if="milestone.description"
           class="md-body"
-          v-html="$md.render(milestone.description)" />
+          v-html="$md.render(milestone.description)"
+        />
         <v-card-text>
           <share-widgets />
           <div>
             <template v-for="(item, index) in issuesWithDivider">
               <v-divider
                 v-if="item.isDivider"
-                :key="index" />
+                :key="index"
+              />
               <article
                 v-else
                 :key="item.id"
-                class="mt-3">
+                class="mt-3"
+              >
                 <div>
                   <h1
                     class="mb-1"
-                    v-html="item.title" />
+                    v-html="item.title"
+                  />
                   <div class="text-xs-left mb-2">
                     <issue-label
-                      v-for="(label, index) in item.labels.nodes"
-                      :key="index"
+                      v-for="(label, index2) in item.labels.nodes"
+                      :key="index2"
                       :label-info="label"
-                      :index="index" />
+                      :index="index2"
+                    />
                   </div>
                   <div
                     class="issue-body md-body"
-                    v-html="$md.render(item.body)" />
+                    v-html="$md.render(item.body)"
+                  />
                   <v-container class="px-0">
                     <v-layout
                       v-if="item.comments.totalCount"
-                      row>
+                      row
+                    >
                       <issue-comments :issue="item" />
                     </v-layout>
                     <v-layout
                       row
-                      justify-end>
+                      justify-end
+                    >
                       <v-btn
                         :href="item.url"
                         class="mr-0"
                         flat
-                        target="_blank">
+                        target="_blank"
+                      >
                         GitHubで見る
                       </v-btn>
                     </v-layout>

@@ -3,17 +3,20 @@
     <v-layout
       row
       justify-center
-      align-center>
+      align-center
+    >
       <v-flex
         xs12
         sm12
-        md8>
+        md8
+      >
         <div class="text-xs-center">
           <img
             :alt="title"
             src="/image/logo.jpg"
             width="200"
-            class="mb-5">
+            class="mb-5"
+          >
         </div>
 
         <!-- description -->
@@ -22,14 +25,17 @@
           <v-card-text>
             <p><a
               href="https://twitter.com/hydrakecat"
-              target="_blank">@hydrakecat</a>と<a
-                href="https://twitter.com/_yshrsmz"
-                target="_blank">@_yshrsmz</a>が、一週間の間に気になったAndroid関連のニュースをざっくりまとめます。</p>
+              target="_blank"
+            >@hydrakecat</a>と<a
+              href="https://twitter.com/_yshrsmz"
+              target="_blank"
+            >@_yshrsmz</a>が、一週間の間に気になったAndroid関連のニュースをざっくりまとめます。</p>
             <p>おおよそ毎週日曜日の夜に更新してします。</p>
             <div class="text-xs-right">
               <em><small>&mdash; <a
                 :href="contact.link"
-                target="_blank">{{ contact.name }}</a></small></em>
+                target="_blank"
+              >{{ contact.name }}</a></small></em>
             </div>
           </v-card-text>
         </v-card>
@@ -38,26 +44,30 @@
     <v-layout
       row
       justify-center
-      align-center>
+      align-center
+    >
 
       <!-- Issue list -->
       <v-flex
         xs12
         sm12
         md8
-        class="mt-2">
+        class="mt-2"
+      >
         <v-card>
           <v-list three-line>
             <v-subheader>Issues</v-subheader>
             <template v-for="(item, index) in milestonesWithDivider">
               <v-divider
                 v-if="item.isDivider"
-                :key="index" />
+                :key="index"
+              />
               <issue-link
                 v-else
                 :key="item.id"
                 :milestone="item"
-                :index="index" />
+                :index="index"
+              />
             </template>
           </v-list>
         </v-card>

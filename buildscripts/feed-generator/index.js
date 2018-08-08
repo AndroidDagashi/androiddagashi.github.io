@@ -1,7 +1,7 @@
 /* eslint typescript/no-var-requires: "off" */
 const fs = require('fs');
 const yaml = require('js-yaml');
-const Feed = require('feed');
+const Feed = require('feed').Feed;
 const MarkdownIt = require('markdown-it');
 
 const siteConfig = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'));

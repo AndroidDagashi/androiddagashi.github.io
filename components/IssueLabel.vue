@@ -2,10 +2,12 @@
   <v-chip
     :key="index"
     :style="chipColorStyle"
-    class="caption">
+    class="caption"
+  >
     <a
       :href="githubLabelLink"
-      target="_blank">{{ labelInfo.name }}</a>
+      target="_blank"
+    >{{ labelInfo.name }}</a>
   </v-chip>
 </template>
 
@@ -25,7 +27,7 @@ export default class IssueLabel extends Vue {
 
   issueRepository: SiteConfigRepository;
 
-  @Prop() index: number;
+  @Prop() index:  number;
 
   @Prop() labelInfo: GHLabel;
 

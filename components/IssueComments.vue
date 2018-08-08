@@ -4,36 +4,44 @@
     <v-container>
       <v-layout
         class="shrink"
-        justify-end>
+        justify-end
+      >
         <v-flex
           class="shrink"
           md8
-          xs12>
+          xs12
+        >
           <template v-for="(item, index) in issue.comments.nodes">
             <v-card
               :key="index"
-              class="issue-comments__comment mb-2">
+              class="issue-comments__comment mb-2"
+            >
               <v-card-title
-                class="pb-0">
+                class="pb-0"
+              >
                 <v-avatar
                   class="mr-2"
-                  size="20px">
+                  size="20px"
+                >
                   <img :src="item.author.avatarUrl">
                 </v-avatar>
                 <strong class="issue-comments__username">
                   <a
                     :href="item.author.url"
-                    target="_blank">{{ item.author.login }}</a>
+                    target="_blank"
+                  >{{ item.author.login }}</a>
                 </strong>
               </v-card-title>
               <v-card-text>
                 <div
                   class="comment-body md-body"
-                  v-html="$md.render(item.body)" />
+                  v-html="$md.render(item.body)"
+                />
                 <no-ssr>
                   <p
                     :title="item.publishedAt"
-                    class="text-xs-right mb-0">{{ publishedAt(item) }}</p>
+                    class="text-xs-right mb-0"
+                  >{{ publishedAt(item) }}</p>
                 </no-ssr>
               </v-card-text>
             </v-card>
