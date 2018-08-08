@@ -3,12 +3,14 @@
     color="indigo"
     dark
     fixed
-    app>
+    app
+  >
     <v-toolbar-title>
       <nuxt-link
         class="title white--text"
         style="text-decoration:none;"
-        to="/">
+        to="/"
+      >
         {{ title }}
       </nuxt-link>
     </v-toolbar-title>
@@ -17,7 +19,8 @@
       <v-btn
         :href="rssUrl"
         flat
-        target="_blank">RSS</v-btn>
+        target="_blank"
+      >RSS</v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>

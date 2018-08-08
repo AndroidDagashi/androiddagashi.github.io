@@ -5,7 +5,8 @@
       <v-container
         fluid
         fill-height
-        justify-center>
+        justify-center
+      >
         <nuxt />
       </v-container>
     </v-content>
@@ -15,7 +16,8 @@
         async
         defer
         src="//platform.twitter.com/widgets.js"
-        charset="utf-8" />
+        charset="utf-8"
+      />
     </span>
   </v-app>
 </template>
