@@ -41,13 +41,13 @@ export default class IssueLabel extends Vue {
 </script>
 
 <style lang="stylus">
-  .caption .chip__content {
+  .caption .v-chip__content {
     height: 24px;
     color: white;
     font-weight: bold;
   }
 
-  .caption .chip__content a {
+  .caption .v-chip__content a {
     color: white;
     text-decoration: none;
     font-weight: bold;
