@@ -1,0 +1,274 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzY4MDM2NA==",
+  "number": 35,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/35",
+  "title": "35-20180923-20180929",
+  "description": "Android Studio 3.2がStable Channelでリリース、Android 10周年、OracleによるJava SDK商用利用ライセンスの有料化について、など",
+  "closedAt": "2018-09-30T10:59:24Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhXEJU0=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhWoIwU=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/442",
+        "title": "OracleによるJava SDK商用利用ライセンスの有料化について",
+        "body": "https://docs.google.com/document/d/1nFGazvrCvHMZJgFstlbzoHjpAVwv5DEdnaBr_5pKuHo/edit#\r\n\r\n色々と話が錯綜としているのですが、この文書がいちばんまとまっているように感じました。\r\n\r\nAndroidアプリ開発者の視点で言うと、無料のJava 9以上のSDKを開発に使うならAdoptOpenJDKにするのが無難なようです。Androidアプリ開発での利用が商用利用かどうかはちょっと自信がないですが、おそらく商用利用に当たると思われます。もし勘違いしているようでしたらコメントなどでご指摘ください :bowing_man: :sweat_drops: ",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/441",
+        "title": "ConnectableObservableの罠",
+        "body": "https://blog.danlew.net/2018/09/25/connectable-observables-so-hot-right-now/\r\n\r\nあるあるなのですが、 `connect()` を呼んだタイミングと実際に `subscribe` するタイミングが前後すると期待する結果が得られないよという話です。`Subject` も似た話はあるのですが、ともかくストリームを共有するものはこの手のタイミング問題が悩ましいですね。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/440",
+        "title": "OculusがどうAndroidアプリをハックしているか",
+        "body": "https://forums.oculusvr.com/developer/discussion/comment/608470/#Comment_608470\r\n\r\nちょっとオフトピですが、OculusのアプリをAndroid Studioでリモットデバッグできないという話です。実はOculusはアプリの初期化時に無効な命令を入れてSIGILLをトラップすることでAndroid APIの呼び出しをフックするハックを入れていたそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/439",
+        "title": "Kotlin Demystified: The power of `when`",
+        "body": "https://medium.com/androiddevelopers/kotlin-demystified-the-power-of-when-f0ac616ddd1a\r\n\r\nNESを題材にKotlinの `when` について説明しています。`case` のところに式を入れるのはよくやりますが `in 0..10` みたいに書くのはたしかに便利そうですね。おまけでKotlin 1.3で入る予定の`when`内でローカル変数を定義できる機能にも触れられています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/438",
+        "title": "ConstraintLayout 2.0のImageFilterView",
+        "body": "https://riggaroo.co.za/constraintlayout-2-0-imagefilterview/\r\n\r\n彩度とかコントラストとか、いろいろ簡単にいじれるようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGV5T8Q==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGV5T8Q==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "だんだんConstraintLayoutがどこに向かいたいのかわからなくなってきました 🤔 ",
+              "publishedAt": "2018-09-29T03:33:57Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/437",
+        "title": "Espress(androidx.test)のソースコードがGitHubで公開",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">Espresso (androidx.test) source code is up on github !!! Thanks a ton to the <a href=\"https://twitter.com/onlythoughtwork?ref_src=twsrc%5Etfw\">@onlythoughtwork</a>  and rest of androidx.test team for making that happen! <a href=\"https://t.co/EuuBwBJI8s\">https://t.co/EuuBwBJI8s</a></p>&mdash; kotlinearl (@yogurtearl) <a href=\"https://twitter.com/yogurtearl/status/1045410000347131904?ref_src=twsrc%5Etfw\">2018年9月27日</a></blockquote>\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/436",
+        "title": "Material ComponentsライブラリのMaterialButtonがすごい話",
+        "body": "https://qiita.com/Reyurnible/items/20457d2ef9572b0eee94\r\n\r\nボタンの形を簡単に変えられるようになっているようです。\r\nまだExperimentalでコードからのカスタマイズしかできないようですが、正式公開が待ち遠しいです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/435",
+        "title": "KotlinとJavaができる人向けDart速習",
+        "body": "https://qiita.com/kikuchy/items/2cce118d38fc15324b2b",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/434",
+        "title": "Android 10周年",
+        "body": "https://jp.techcrunch.com/2018/09/26/2018-09-23-history-of-android-the-good-the-bad-the-nexus/\r\n\r\nこうして振り返ってみると感慨深いですね",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGVPwDA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGVPwDA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自分は触り始めたのが Galaxy S からなので、あまり共有できませんが、各端末への評価と Nexus 6P で iPhone に追いついたという分析はおもしろいですね",
+              "publishedAt": "2018-09-27T01:59:33Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/433",
+        "title": "Moshi 1.7.0がリリース",
+        "body": "https://github.com/square/moshi/blob/master/CHANGELOG.md#version-170\r\n\r\nenumのフォールバックがあるそうです。これはけっこうよさそう。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/432",
+        "title": "Android Studio 3.2がStable Channelでリリース",
+        "body": "https://android-developers.googleblog.com/2018/09/android-studio-32.html\r\n\r\nBetaで使っていた人には同じみかもしれませんが、App Bundle対応やEnergy Profilerなどが入っています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGUjYpA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGUjZUQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://issuetracker.google.com/issues/111788726\r\nKotlinのファイル編集中にフリーズする問題も、Kotlin 1.2.71とAndroid Studio 3.2で解消されているようです",
+              "publishedAt": "2018-09-25T04:35:32Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "そんな不具合があったんですね…… 😨 ",
+              "publishedAt": "2018-09-25T04:36:49Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
