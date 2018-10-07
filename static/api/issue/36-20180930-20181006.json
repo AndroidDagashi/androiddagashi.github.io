@@ -1,0 +1,333 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzY5OTExNQ==",
+  "number": 36,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/36",
+  "title": "36-20180930-20181006",
+  "description": "Made by Google 2018が日本時間10/8の夜24時に開催、Kotlin Conf 2018、Kotlin Coroutinesでデータの流れが単方向なアーキテクチャを作る、など",
+  "closedAt": "2018-10-07T10:56:16Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhXmx5A=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhXSnto=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/454",
+        "title": "Gradle 5.0 M1がリリース",
+        "body": "https://docs.gradle.org/5.0-milestone-1/release-notes.html\r\n\r\nそろそろ5.0のリリースが近付いてきたようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGXwcmA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGXwcmA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Kotlin DSLを使いたい気もしますが、ASではいつ使えるようになるのでしょうか",
+              "publishedAt": "2018-10-06T10:46:01Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/453",
+        "title": "Exo Player 2.9.0 リリース",
+        "body": "https://medium.com/google-exoplayer/exoplayer-2-9-0-whats-new-5aa39a3aadce\r\n\r\n2.9でだいぶ色々と機能が入ったようです。Exo Playerを使っている人にはよさそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGXwaFw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGXwaFw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "個人的には audio focus サポートが気になりました",
+              "publishedAt": "2018-10-06T10:34:47Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/452",
+        "title": "Android Suspenders",
+        "body": "https://chris.banes.me/talks/2018/android-suspenders/\r\n\r\nChris Banesによる、Kotlin coroutineの解説です。最近のcoroutineの変更についても書いてありますし、とりあえずこれを読んでおけばあまり困らないのではないでしょうか。スライドの一部がちゃんと変換されなかったのか灰色で見えないのが残念でした。動画を待ちたいです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGXwZRw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGXwZRw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "個人的にはChannelはちょっと使いどころがあまりない思っていましたが、Location Updateで使うのはなるほどという感じでした。",
+              "publishedAt": "2018-10-06T10:31:19Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/451",
+        "title": "Room 2.0",
+        "body": "https://developer.android.com/jetpack/docs/release-notes#october_1_2018\r\n\r\n2.0.0-rc01からの修正はとくにないようです(Paging Libraryは一件のバグ修正有)",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/450",
+        "title": "新しいKotlinでRxJavaのSAM変換が問題なく扱えるようになるという噂",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Good news everyone! The SAM issue with <a href=\"https://twitter.com/RxJava?ref_src=twsrc%5Etfw\">@RxJava</a> and <a href=\"https://twitter.com/kotlin?ref_src=twsrc%5Etfw\">@kotlin</a> is getting fixed with the new type inference system!<a href=\"https://twitter.com/hashtag/kotlinconf18?src=hash&amp;ref_src=twsrc%5Etfw\">#kotlinconf18</a></p>&mdash; Thomas Nield (@thomasnield9727) <a href=\"https://twitter.com/thomasnield9727/status/1047860398270152704?ref_src=twsrc%5Etfw\">October 4, 2018</a></blockquote>\r\n\r\nこの情報のソースがどこか分かりませんが、期待して待ちましょう。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/449",
+        "title": "A Multiplatform Delight",
+        "body": "https://speakerdeck.com/jakewharton/a-multiplatform-delight-kotlinconf-2018\r\n\r\nhttps://youtu.be/_yaaCtWF8aE\r\n\r\nAlec StrongとJake Whartonによるマルチプラットフォームの話です。SQLDelight 1.0の話とマルチプラットフォーム対応をした話が半々くらいでした。Kotlinは標準APIにClosableがないためにプラットフォームごとの実装が必要だったという話はマルチプラットフォームの難しさを感じさせます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGXksWQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGXksWQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ところで発表の中で触れられているSQLDelgihtの機能がたいへん素晴しかったので 1.0-RC を心待ちにしております",
+              "publishedAt": "2018-10-05T13:46:44Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/448",
+        "title": "Kotlin Conf 2018",
+        "body": "https://youtu.be/_yaaCtWF8aE\r\n\r\n10/4と5の2日にわたってKotlin Conf 2018が開催されました。キーノートでは、そんなに吃驚はありませんでしたが、Kotlinの現状と近い未来がまとまっていました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGXwdLQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGXwdLQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ここに一連のスライドがまとまっているようです。便利。\r\nhttps://jeroenmols.com/blog/2018/10/05/kotlinconf18/",
+              "publishedAt": "2018-10-06T10:48:32Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/447",
+        "title": "Kotlin Coroutinesでデータの流れが単方向なアーキテクチャを作る",
+        "body": "https://proandroiddev.com/unidirectional-data-flow-using-coroutines-f5a792bf34e5\r\n\r\nUnidirectional Data Flowです。\r\nこの分野、AndroidではRxJavaをベースにしたものばかりですが、「じゃあKotlin Coroutinesでやってみたらどうなるだろう？」ということで試してみたそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/446",
+        "title": "Flutter/Dartでのコード生成",
+        "body": "https://medium.com/flutter-community/part-1-code-generation-in-dart-the-basics-3127f4c842cc\r\n\r\nAndroidのaptにあたるものがFlutterにもあります。\r\n今回の記事はごく簡単な導入ですが、数回に分けて詳しくコード生成の方法について見ていくようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/445",
+        "title": "Flutterで作られたアプリの一覧",
+        "body": "https://itsallwidgets.com/\r\n\r\nオープンソースかどうか、でもフィルタリングできるので参考になりそうです。\r\n自分で登録していく方式のようなので、Flutterで作ったことのある方はぜひ。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/444",
+        "title": "Made by Google Launch Event 2018が日本時間で10/8の夜24時に開催",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Hey you, we’ve got some big news. Tune in on 10/9 11am ET. We’ll be live streaming it all right here. <a href=\"https://twitter.com/hashtag/madebygoogle?src=hash&amp;ref_src=twsrc%5Etfw\">#madebygoogle</a> <a href=\"https://t.co/F6WrgMvfkM\">https://t.co/F6WrgMvfkM</a></p>&mdash; Made by Google (@madebygoogle) <a href=\"https://twitter.com/madebygoogle/status/1047162767264768001?ref_src=twsrc%5Etfw\">October 2, 2018</a></blockquote>\r\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nhttps://9to5google.com/2018/10/02/made-by-google-2018-livestream-pixel-3/\r\n\r\nおそらくPixel 3が発表されるであろうMade by GoogleのLaunch Eventが10/8(火)のアメリカ東部時間で朝11時、日本時間で夜24時に始まります。日本ではちょっと辛い時間ですが、気になる人は見てみましょう。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/443",
+        "title": "Adopting Kotlin",
+        "body": "https://medium.com/@tiembo/adopting-kotlin-50c0df79b879\r\n\r\nGoogle I/OやPlaidをKotlin化した経験をもとに、どうやって既存プロジェクトにKotlinを導入していったかという話が書いてあります。ややいまさら感はありますが、「チーム内に1人Kotlin championを作ろう」とか「必要なだけ使おう（たとえば `apply` は2行以上の場合のみ）」といったあたりのルール作りはおもしろかったです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
