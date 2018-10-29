@@ -39,3 +39,9 @@ $theme := {
     border-left: 0.25em solid #dfe2e5;
   }
 }
+
+.v-list--three-line .v-list__tile__sub-title {
+  /* workaround for https://github.com/vuetifyjs/vuetify/issues/5235 */
+  /* autoprefixer: ignore next */
+  -webkit-box-orient: vertical;
+}
