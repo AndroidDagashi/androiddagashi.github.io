@@ -35,8 +35,8 @@ import Vue from 'vue';
   computed: mapState(["title", "rssUrl"])
 })
 export default class AppHeader extends Vue {
-  title: string;
-  rssUrl: string;
+  title!: string;
+  rssUrl!: string;
 }
 </script>
 

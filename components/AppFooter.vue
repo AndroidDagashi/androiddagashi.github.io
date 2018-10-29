@@ -21,7 +21,7 @@ import Vue from 'vue';
   computed: mapState(["title"])
 })
 export default class AppFooter extends Vue {
-  title: string;
+  title!: string;
 }
 </script>
 
