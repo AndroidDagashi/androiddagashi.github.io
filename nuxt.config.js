@@ -1,8 +1,8 @@
 /* eslint typescript/no-var-requires: "off" */
-const nodeExternals = require('webpack-node-externals');
-const parseArgs = require('minimist');
-const yaml = require('js-yaml');
-const fs = require('fs');
+import nodeExternals from 'webpack-node-externals';
+import parseArgs from 'minimist';
+import yaml from 'js-yaml';
+import fs from 'fs';
 
 const siteConfigs = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'));
 const indexJson = require('./static/api/index.json');
@@ -77,8 +77,8 @@ module.exports = {
   ** Build configuration
   */
   css: [
-    '~/assets/css/main.css',
-    '~/assets/css/app.styl'
+    '~assets/css/main.css',
+    '~assets/css/app.styl'
   ],
   build: {
     extend(configs, ctx) {

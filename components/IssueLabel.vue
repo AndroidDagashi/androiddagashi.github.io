@@ -25,7 +25,7 @@ import { SiteConfigRepository } from 'types/SiteConfig';
 })
 export default class IssueLabel extends Vue {
 
-  issueRepository: SiteConfigRepository;
+  issueRepository!: SiteConfigRepository;
 
   @Prop() index:  number;
 

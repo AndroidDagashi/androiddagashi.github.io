@@ -99,10 +99,10 @@ type VDividerItem = {
 })
 export default class Index extends Vue {
 
-  title: string;
-  description: string;
-  contact: SiteConfigContact;
-  baseUrl: string;
+  title!: string;
+  description!: string;
+  contact!: SiteConfigContact;
+  baseUrl!: string;
   digest: GHDigest;
 
   // insert divider

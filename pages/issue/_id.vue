@@ -105,11 +105,11 @@ import Vue from 'vue';
 export default class Issue extends Vue {
 
   milestone: GHMilestone;
-  title: string;
+  title: string = '';
 
-  siteTitle: string;
-  description: string;
-  baseUrl: string;
+  siteTitle!: string;
+  description!: string;
+  baseUrl!: string;
 
   head() {
     const title = `${this.title} - ${this.siteTitle}`;
