@@ -6,7 +6,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:9.11.2
+      - image: circleci/node:10.12.0
     environment:
       TZ: /user/share/zoneinfo/Asia/Tokyo
     working_directory: ~/repo
@@ -26,7 +26,7 @@ jobs:
 
   deploy:
     docker:
-      - image: circleci/node:9.11.2
+      - image: circleci/node:10.12.0
     environment:
       TZ: /user/share/zoneinfo/Asia/Tokyo
     working_directory: ~/repo
@@ -63,7 +63,7 @@ jobs:
 
   push_json_and_rssfeed:
     docker:
-      - image: circleci/node:9.11.2
+      - image: circleci/node:10.12.0
     environment:
       TZ: /user/share/zoneinfo/Asia/Tokyo
     working_directory: ~/repo
