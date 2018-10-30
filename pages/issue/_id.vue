@@ -103,7 +103,6 @@ import Vue from 'vue';
   })
 })
 export default class Issue extends Vue {
-
   milestone: GHMilestone;
   title: string = '';
 
@@ -120,11 +119,18 @@ export default class Issue extends Vue {
         { property: 'og:title', content: title },
         {
           property: 'og:description',
-          content: this.description
+          content: this.milestone.description || this.description
         },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },
-        { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` }
+        {
+          property: 'og:url',
+          content: `${this.baseUrl}${this.$route.fullPath}`
+        },
+        { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` },
+        {
+          name: 'description',
+          content: this.milestone.description || this.description
+        }
       ]
     };
   }
@@ -135,13 +141,16 @@ export default class Issue extends Vue {
 
   async asyncData({ app, params }) {
     let data;
-    if (process.server){
+    if (process.server) {
       data = JSON.parse(
-              require('fs').readFileSync(`./static/api/issue/${params.id}.json`, 'utf8')
-            );
+        require('fs').readFileSync(
+          `./static/api/issue/${params.id}.json`,
+          'utf8'
+        )
+      );
     } else {
       let res = await axios.get(`/api/issue/${params.id}.json`);
-      data=res.data;
+      data = res.data;
     }
     return {
       milestone: data,
