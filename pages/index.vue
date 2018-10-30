@@ -138,11 +138,7 @@ export default class Index extends Vue {
           property: 'og:url',
           content: `${this.baseUrl}${this.$route.fullPath}`
         },
-        { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` },
-        {
-          name: 'description',
-          content: this.description
-        }
+        { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` }
       ]
     };
   }

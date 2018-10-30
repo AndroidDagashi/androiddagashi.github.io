@@ -129,6 +129,7 @@ export default class Issue extends Vue {
         { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` },
         {
           name: 'description',
+          hid: 'description',
           content: this.milestone.description || this.description
         }
       ]
