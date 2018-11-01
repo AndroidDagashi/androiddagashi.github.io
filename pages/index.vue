@@ -98,7 +98,6 @@ type VDividerItem = {
   computed: mapState(["title", "description", "baseUrl", "contact"])
 })
 export default class Index extends Vue {
-
   title!: string;
   description!: string;
   contact!: SiteConfigContact;
@@ -135,7 +134,10 @@ export default class Index extends Vue {
         { property: 'og:title', content: this.title },
         { property: 'og:description', content: this.description },
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: `${this.baseUrl}${this.$route.fullPath}` },
+        {
+          property: 'og:url',
+          content: `${this.baseUrl}${this.$route.fullPath}`
+        },
         { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` }
       ]
     };
@@ -144,5 +146,4 @@ export default class Index extends Vue {
 </script>
 
 <style>
-
 </style>
