@@ -111,7 +111,11 @@ export default class Issue extends Vue {
   baseUrl!: string;
 
   head() {
-    const title = `${this.title} - ${this.siteTitle}`;
+    let titleDescription = '';
+    if (this.milestone.description) {
+      titleDescription = `: ${this.milestone.description}`
+    }
+    const title = `${this.title}${titleDescription} - ${this.siteTitle}`;
 
     return {
       title: title,
