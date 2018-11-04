@@ -1,3 +1,7 @@
+/**
+ * typescript module for Nuxt.js
+ * @returns {Void} void
+ */
 export default function () {
   // Add .ts extension for store, middleware and more
   this.nuxt.options.extensions.push('ts');
@@ -29,4 +33,4 @@ export default function () {
       config.resolve.extensions.push('.ts');
     }
   });
-};
+}
