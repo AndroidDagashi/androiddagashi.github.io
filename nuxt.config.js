@@ -31,7 +31,7 @@ const baseUrl = process.env.NODE_ENV === 'development'
   ? `http://${host}:${port}` : siteConfigs.baseUrl || `http://${host}:${port}`;
 
 
-const issueIds = indexJson.milestones.nodes.map((milestone, index, array) => `/issue/${milestone.title}`);
+const issueIds = indexJson.milestones.nodes.map((milestone, index, array) => `/issue/${milestone.path}`);
 
 module.exports = {
   env: {
