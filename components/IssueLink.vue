@@ -1,6 +1,6 @@
 <template>
   <v-list-tile
-    :to="`issue/${milestone.title}/`"
+    :to="`issue/${milestone.path}/`"
     nuxt
   >
     <v-list-tile-content>
