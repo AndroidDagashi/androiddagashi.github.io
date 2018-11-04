@@ -22,6 +22,19 @@ apolloFectch.use(({ request, options }, next) => {
 });
 
 /**
+ * create Android Dagashi issue page path from GitHub's milestone title
+ * replace any spaces with '-'. You need to use `encodeURIComponent` if necessary.
+ *
+ * ex. `40 2018-11-04` -> `40-2018-11-04`
+ *
+ * @param {*} milestone target milestone object
+ * @returns {string} path
+ */
+function createIssuePathFromMilestone(milestone) {
+  return milestone.title.trim().replace(/\s/g, '-');
+}
+
+/**
  * generate json for issue
  * @param {number} milestoneNumber milestone number to fetch
  * @returns {Void} Void
@@ -49,7 +62,7 @@ async function generateIssueJson(milestoneNumber) {
       // TODO: fetch issues & comments recursively
     }
     fs.writeFileSync(
-      `./static/api/issue/${milestone.title}.json`,
+      `./static/api/issue/${createIssuePathFromMilestone(milestone)}.json`,
       JSON.stringify(milestone, null, '  '),
       'utf8'
     );
@@ -77,6 +90,9 @@ async function generateIndexJson() {
     return null;
   } else {
     let repository = data.repository;
+    repository.milestones.nodes.forEach(milestone => {
+      milestone.path = createIssuePathFromMilestone(milestone);
+    });
     if (repository.milestones.pageInfo.hasNextPage) {
       // TODO: fetch milestones recursively
     }

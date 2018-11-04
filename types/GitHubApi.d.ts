@@ -78,6 +78,7 @@ export type GHDigestMilestone = {
   id: string;
   number: string;
   url: string;
+  path: string; // androiddagashiサイトのパス。 buildscripts/githubapi-fetcherで生成
   title: string;
   description: string;
   closedAt: string;

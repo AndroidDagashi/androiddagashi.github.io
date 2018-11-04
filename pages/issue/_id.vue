@@ -113,7 +113,7 @@ export default class Issue extends Vue {
   head() {
     let titleDescription = '';
     if (this.milestone.description) {
-      titleDescription = `: ${this.milestone.description}`
+      titleDescription = `: ${this.milestone.description}`;
     }
     const title = `${this.title}${titleDescription} - ${this.siteTitle}`;
 
