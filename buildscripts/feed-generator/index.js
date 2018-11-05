@@ -42,9 +42,9 @@ function create() {
       descriptions.push(issue.title);
     });
     var description = md.render(milestone.description) + descriptions.join('/');
-    var url = `${rootUrl}issue/${milestone.title}`;
+    var url = `${rootUrl}issue/${milestone.path}`;
     feed.addItem({
-      title: milestone.title,
+      title: `#${milestone.title}`,
       id: url,
       link: url,
       description,
