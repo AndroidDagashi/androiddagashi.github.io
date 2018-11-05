@@ -106,12 +106,10 @@ jobs:
 
 workflows:
   version: 2
-  # build:
-  #   jobs:
-  #     - build:
-  #         filters:
-  #           branches:
-  #             only: development
+  build:
+    jobs:
+      - build
+
   update_json:
     jobs:
       - push_json_and_rssfeed
