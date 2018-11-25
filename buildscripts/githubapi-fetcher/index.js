@@ -69,17 +69,15 @@ async function generateIssueJson(milestoneNumber) {
   }
 }
 
-/**
- * generate json file for index
- * @returns {object} repository
- */
-async function generateIndexJson() {
+async function generatePagedIndexJson(cursor, pageNo) {
+  console.log(`fetchng milestones. page: ${pageNo}`);
   var { data, errors } = await apolloFectch(
     {
       query: indexQuery,
       variables: {
         repoOwner: config.repoOwner,
-        repoName: config.repoName
+        repoName: config.repoName,
+        after: cursor
       },
       operationName: 'getMilestoneDigests'
     }
@@ -94,15 +92,47 @@ async function generateIndexJson() {
       milestone.path = createIssuePathFromMilestone(milestone);
     });
     if (repository.milestones.pageInfo.hasNextPage) {
-      // TODO: fetch milestones recursively
+      repository.milestones.pageInfo.nextPage = pageNo + 1;
     }
     fs.writeFileSync(
-      './static/api/index.json',
+      `./static/api/${pageNo}.json`,
       JSON.stringify(repository, null, '  '),
       'utf8'
     );
     return repository;
   }
+}
+
+/**
+ * generate json file for index
+ * @returns {object} repository
+ */
+async function generateIndexJson() {
+  let pageNo = 0;
+
+  // load first page
+  let wholeRepository = await generatePagedIndexJson(null, pageNo);
+
+  let hasNext = wholeRepository.milestones.pageInfo.hasNextPage;
+  let nextCursor = wholeRepository.milestones.pageInfo.endCursor;
+
+  // load next pages
+  while (hasNext) {
+    pageNo++;
+
+    let repo = await generatePagedIndexJson(nextCursor, pageNo);
+
+    wholeRepository.milestones.nodes = wholeRepository.milestones.nodes.concat(repo.milestones.nodes);
+
+    hasNext = repo.milestones.pageInfo.hasNextPage;
+    nextCursor = repo.milestones.pageInfo.endCursor;
+  }
+
+  wholeRepository.milestones.nodes.forEach(milestone => {
+    milestone.path = createIssuePathFromMilestone(milestone);
+  });
+
+  return wholeRepository;
 }
 
 /**
