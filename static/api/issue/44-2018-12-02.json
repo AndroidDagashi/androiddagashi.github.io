@@ -1,0 +1,267 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzg0Njg0OQ==",
+  "number": 44,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/44",
+  "title": "44 2018-12-02",
+  "description": "RobolectricでPDFの描画をテスト、AS3.3 RC1、Matrixを利用した変形、DroidKaigi2019チケット販売開始日、Gradle 5.0",
+  "closedAt": "2018-12-02T10:40:09Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhcKLVk=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhbmONc=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/547",
+        "title": "ある開発者のレビューへの反応",
+        "body": "https://www.reddit.com/r/androiddev/comments/a0c78w/one_of_the_best_dev_reactions_ive_ever_seen/\r\n\r\nこのやり方がいいか悪いかはさておき、何もわかってないレビューってたまにありますよね",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/546",
+        "title": "AndroidにおけるJava 9, 10, 11, 12のサポートについて",
+        "body": "https://jakewharton.com/androids-java-9-10-11-and-12-support/\r\n\r\nシリーズ第二弾です",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/545",
+        "title": "Android用SDK開発者向けのGoogleによる新しいサポートプログラム",
+        "body": "https://android-developers.googleblog.com/2018/11/sdk-developers-sign-up-to-stay-up-to.html\r\n\r\nアプリ開発者ではなく、アナリティクスやら開発系ツールやら、そういったサードパーティSDK開発者がターゲットのようです。\r\n登録するとGoogle Play Storeのポリシー変更等の最新情報を配信してくれるそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/544",
+        "title": "DroidKaigi 2019チケット販売開始日と採択セッション公開のお知らせ",
+        "body": "https://medium.com/droidkaigi/droidkaigi-2019%E3%83%81%E3%82%B1%E3%83%83%E3%83%88%E8%B2%A9%E5%A3%B2%E9%96%8B%E5%A7%8B%E6%97%A5%E3%81%A8%E6%8E%A1%E6%8A%9E%E3%82%BB%E3%83%83%E3%82%B7%E3%83%A7%E3%83%B3%E5%85%AC%E9%96%8B%E3%81%AE%E3%81%8A%E7%9F%A5%E3%82%89%E3%81%9B-c9a5b8c5f774\r\n\r\n> 販売開始：12月6日（木）12:00〜(JST)\r\n> 価格\r\n> ・アーリーバード: 10,000円\r\n> ・一般: 15,000円\r\n> ・学生: 4,000円\r\n\r\nとのことです。\r\nまた、旅費参加費を補助する学生向けスカラシッププログラムも用意する予定だそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/543",
+        "title": "VectorDrawableを理解する",
+        "body": "https://medium.com/androiddevelopers/understanding-androids-vector-image-format-vectordrawable-ab09e41d5c68\r\n\r\nラスタ画像(普通のjpegとかpngとか)と比較しながらの解説です。\r\nなぜSVGじゃないのか？　という点についても少し触れられています。\t",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/542",
+        "title": "IntelliJ/ASでコードフォーマットに従っていないときに警告を出す設定",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">You don&#39;t need to use ktlint or detekt to ensure that your code is formatted consistently. Simply enable &quot;File is not formatted according to project settings&quot; in the inspection settings. <a href=\"https://t.co/Kh3S8rC9e8\">pic.twitter.com/Kh3S8rC9e8</a></p>&mdash; Kotlin (@kotlin) <a href=\"https://twitter.com/kotlin/status/1067825173196414976?ref_src=twsrc%5Etfw\">November 28, 2018</a></blockquote>\r\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nどうもツイートのスレッドは本題とは逸れて ktlint/detekt が必要かという話になっていますが、元ツイートの設定は便利そうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/541",
+        "title": "Matrixを利用した変形を理解する",
+        "body": "https://medium.com/a-problem-like-maria/understanding-android-matrix-transformations-25e028f56dc7\r\n\r\n敬遠しがちなMatrixについて、サンプルと共にわかりやすくまとめられています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/540",
+        "title": "GitHubがレポジトリのリリース情報のみのwatch機能をリリース",
+        "body": "<img width=\"542\" alt=\"2018-11-28 10 28 07\" src=\"https://user-images.githubusercontent.com/654889/49122654-b2c70a00-f2f8-11e8-8c12-eff4f9b40519.png\">\r\n<img width=\"457\" alt=\"2018-11-28 10 32 02\" src=\"https://user-images.githubusercontent.com/654889/49122700-e0ac4e80-f2f8-11e8-997c-42e846993127.png\">\r\n\r\n今までは\"watch\"するとissueも含めたすべてのアップデートが通知されてしまいましたが、リリース情報の更新だけを受け取る選択肢ができました。\r\nレポジトリ側でGitHubのリリース機能を適切に使っている必要はありますが、これでOSSライブラリの更新をタイムリーにしることができます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/539",
+        "title": "Gradle 5.0がリリース",
+        "body": "https://docs.gradle.org/5.0/release-notes.html\r\n\r\nKotlin DSLが正式にサポートになりました。移行については [Upgrading your build from Gradle 4.x to 5.0](https://docs.gradle.org/5.0/userguide/upgrading_version_4.html) をどうぞ。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGl1jaA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGl1jaA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://github.com/gradle/gradle/blob/v5.0.0/subprojects/docs/src/docs/design/gradle-module-metadata-specification.md\r\n\r\nmodule metadataの仕様が固まるかも、とちょっと期待していましたがまだ先のようですね…\r\n\r\nKotlin Multiplatform対応なライブラリはこの機能利用していて、リリースに使用されたGradleのバージョンが異なるライブラリ同士は一緒に使えないという問題があります。",
+              "publishedAt": "2018-11-28T05:47:19Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/538",
+        "title": "AS 3.3 RC1と3.4 Canary 5がリリース",
+        "body": "https://androidstudio.googleblog.com/2018/11/android-studio-33-release-candidate-1.html\r\nhttps://androidstudio.googleblog.com/2018/11/android-studio-34-canary-5-available.html\r\n\r\nJacoco関連の問題が3.4 Canary 5で直るのでしょうか",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/537",
+        "title": "Robolectricを使ってPDFの描画をテストする",
+        "body": "https://pspdfkit.com/blog/2018/rendering-tests-using-robolectric/\r\n\r\n独自の `ShadowBitmap` を作って、エミュレータを使ったテストからRobolectricのユニットテストに移行した話",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGlekEw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGlekEw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "実機/エミュレータテストしなくていいのはいいですね。記事もとても丁寧で分かりやすかったです 👍 ",
+              "publishedAt": "2018-11-27T07:07:37Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
