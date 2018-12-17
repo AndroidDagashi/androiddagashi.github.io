@@ -2,6 +2,12 @@
 const config = require('./config');
 const fs = require('fs');
 const { createApolloFetch } = require('apollo-fetch');
+const del = require('del');
+const { promisify } = require('util');
+
+const mkdirAsync = promisify(fs.mkdir);
+
+const API_DIR = "./static/api";
 
 // query for index
 const indexQuery = fs.readFileSync('./apollo/queries/getMilestoneDigests.gql', 'utf8');
@@ -22,6 +28,13 @@ apolloFectch.use(({ request, options }, next) => {
 });
 
 /**
+ * remove current json files.
+ */
+async function removeApiJsons() {
+  await del(`${API_DIR}/**/*.json`);
+}
+
+/**
  * create Android Dagashi issue page path from GitHub's milestone title
  * replace any spaces with '-'. You need to use `encodeURIComponent` if necessary.
  *
@@ -40,7 +53,7 @@ function createIssuePathFromMilestone(milestone) {
  * @returns {Void} Void
  */
 async function generateIssueJson(milestoneNumber) {
-  var { data, errors }  = await apolloFectch(
+  var { data, errors } = await apolloFectch(
     {
       query: milestoneQuery,
       variables: {
@@ -62,7 +75,7 @@ async function generateIssueJson(milestoneNumber) {
       // TODO: fetch issues & comments recursively
     }
     fs.writeFileSync(
-      `./static/api/issue/${createIssuePathFromMilestone(milestone)}.json`,
+      `${API_DIR}/issue/${createIssuePathFromMilestone(milestone)}.json`,
       JSON.stringify(milestone, null, '  '),
       'utf8'
     );
@@ -175,6 +188,6 @@ async function generateJsons() {
   }
 }
 
-
-generateJsons()
+removeApiJsons()
+  .then(() => generateJsons())
   .then(() => reportRateLimit());
