@@ -7,7 +7,7 @@ const { promisify } = require('util');
 
 const mkdirAsync = promisify(fs.mkdir);
 
-const API_DIR = "./static/api";
+const API_DIR = './static/api';
 
 // query for index
 const indexQuery = fs.readFileSync('./apollo/queries/getMilestoneDigests.gql', 'utf8');
@@ -29,6 +29,7 @@ apolloFectch.use(({ request, options }, next) => {
 
 /**
  * remove current json files.
+ * @return {Void} Void
  */
 async function removeApiJsons() {
   await del(`${API_DIR}/**/*.json`);
@@ -82,6 +83,12 @@ async function generateIssueJson(milestoneNumber) {
   }
 }
 
+/**
+ *
+ * @param {string} cursor Next cursor or null
+ * @param {string} fileName file name
+ * @returns {Promise} Promise of GHDigest
+ */
 async function generatePagedIndexJson(cursor, fileName) {
   console.log(`fetchng milestones. page: ${fileName}`);
   var { data, errors } = await apolloFectch(
