@@ -1,7 +1,7 @@
 query getMilestoneDigests(
   $repoOwner: String!
   $repoName: String!
-  $fetchMilestones: Int = 10
+  $fetchMilestones: Int = 50
   $fetchIssuesPerMilestone: Int = 20,
   $after: String = null
 ) {
