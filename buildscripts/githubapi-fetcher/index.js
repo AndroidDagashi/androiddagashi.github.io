@@ -82,8 +82,8 @@ async function generateIssueJson(milestoneNumber) {
   }
 }
 
-async function generatePagedIndexJson(cursor, pageNo) {
-  console.log(`fetchng milestones. page: ${pageNo}`);
+async function generatePagedIndexJson(cursor, fileName) {
+  console.log(`fetchng milestones. page: ${fileName}`);
   var { data, errors } = await apolloFectch(
     {
       query: indexQuery,
@@ -104,11 +104,8 @@ async function generatePagedIndexJson(cursor, pageNo) {
     repository.milestones.nodes.forEach(milestone => {
       milestone.path = createIssuePathFromMilestone(milestone);
     });
-    if (repository.milestones.pageInfo.hasNextPage) {
-      repository.milestones.pageInfo.nextPage = pageNo + 1;
-    }
     fs.writeFileSync(
-      `./static/api/${pageNo}.json`,
+      `${API_DIR}/${fileName}.json`,
       JSON.stringify(repository, null, '  '),
       'utf8'
     );
@@ -121,24 +118,26 @@ async function generatePagedIndexJson(cursor, pageNo) {
  * @returns {object} repository
  */
 async function generateIndexJson() {
-  let pageNo = 0;
+  let fileName = 'index';
+  let nextCursor = null;
+  let hasNext = true;
 
-  // load first page
-  let wholeRepository = await generatePagedIndexJson(null, pageNo);
+  let wholeRepository = null;
 
-  let hasNext = wholeRepository.milestones.pageInfo.hasNextPage;
-  let nextCursor = wholeRepository.milestones.pageInfo.endCursor;
-
-  // load next pages
+  // load milestones
   while (hasNext) {
-    pageNo++;
 
-    let repo = await generatePagedIndexJson(nextCursor, pageNo);
+    let repo = await generatePagedIndexJson(nextCursor, fileName);
 
-    wholeRepository.milestones.nodes = wholeRepository.milestones.nodes.concat(repo.milestones.nodes);
+    if (wholeRepository == null) {
+      wholeRepository = repo;
+    } else {
+      wholeRepository.milestones.nodes = wholeRepository.milestones.nodes.concat(repo.milestones.nodes);
+    }
 
     hasNext = repo.milestones.pageInfo.hasNextPage;
     nextCursor = repo.milestones.pageInfo.endCursor;
+    fileName = repo.milestones.pageInfo.endCursor;
   }
 
   wholeRepository.milestones.nodes.forEach(milestone => {
