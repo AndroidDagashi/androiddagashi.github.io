@@ -20,7 +20,9 @@
         :href="rssUrl"
         flat
         target="_blank"
-      >RSS</v-btn>
+      >
+        RSS
+      </v-btn>
     </v-toolbar-items>
   </v-toolbar>
 </template>
@@ -31,8 +33,8 @@ import Component from 'nuxt-class-component';
 import Vue from 'vue';
 
 @Component({
-  name: "app-header",
-  computed: mapState(["title", "rssUrl"])
+  name: 'app-header',
+  computed: mapState(['title', 'rssUrl'])
 })
 export default class AppHeader extends Vue {
   title!: string;

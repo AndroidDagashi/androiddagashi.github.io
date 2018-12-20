@@ -11,7 +11,9 @@
       md8
     >
       <v-card>
-        <v-card-title class="headline">#{{ milestone.title }}</v-card-title>
+        <v-card-title class="headline">
+          #{{ milestone.title }}
+        </v-card-title>
         <v-card-text
           v-if="milestone.description"
           class="md-body"
@@ -90,16 +92,16 @@ import Component from 'nuxt-class-component';
 import Vue from 'vue';
 
 @Component({
-  name: "issue",
+  name: 'issue',
   components: {
     IssueLabel,
     IssueComments,
     ShareWidgets
   },
   computed: mapState({
-    siteTitle: "title",
-    description: "description",
-    baseUrl: "baseUrl"
+    siteTitle: 'title',
+    description: 'description',
+    baseUrl: 'baseUrl'
   })
 })
 export default class Issue extends Vue {
