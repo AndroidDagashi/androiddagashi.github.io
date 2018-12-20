@@ -7,7 +7,9 @@
     <a
       :href="githubLabelLink"
       target="_blank"
-    >{{ labelInfo.name }}</a>
+    >
+      {{ labelInfo.name }}
+    </a>
   </v-chip>
 </template>
 

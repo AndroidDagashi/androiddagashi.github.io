@@ -21,21 +21,35 @@
 
         <!-- description -->
         <v-card>
-          <v-card-title class="headline">{{ title }}</v-card-title>
+          <v-card-title class="headline">
+            {{ title }}
+          </v-card-title>
           <v-card-text>
-            <p><a
-              href="https://twitter.com/hydrakecat"
-              target="_blank"
-            >@hydrakecat</a>と<a
-              href="https://twitter.com/_yshrsmz"
-              target="_blank"
-            >@_yshrsmz</a>が、一週間の間に気になったAndroid関連のニュースをざっくりまとめます。</p>
+            <p>
+              <a
+                href="https://twitter.com/hydrakecat"
+                target="_blank"
+              >
+                @hydrakecat
+              </a>と<a
+                href="https://twitter.com/_yshrsmz"
+                target="_blank"
+              >
+                @_yshrsmz
+              </a>が、一週間の間に気になったAndroid関連のニュースをざっくりまとめます。
+            </p>
             <p>おおよそ毎週日曜日の夜に更新してします。</p>
             <div class="text-xs-right">
-              <em><small>&mdash; <a
-                :href="contact.link"
-                target="_blank"
-              >{{ contact.name }}</a></small></em>
+              <em>
+                <small>
+                  &mdash; <a
+                    :href="contact.link"
+                    target="_blank"
+                  >
+                    {{ contact.name }}
+                  </a>
+                </small>
+              </em>
             </div>
           </v-card-text>
         </v-card>
@@ -46,7 +60,6 @@
       justify-center
       align-center
     >
-
       <!-- Issue list -->
       <v-flex
         xs12
@@ -91,11 +104,11 @@ type VDividerItem = {
 };
 
 @Component({
-  name: "index",
+  name: 'index',
   components: {
     IssueLink
   },
-  computed: mapState(["title", "description", "baseUrl", "contact"])
+  computed: mapState(['title', 'description', 'baseUrl', 'contact'])
 })
 export default class Index extends Vue {
   title!: string;
