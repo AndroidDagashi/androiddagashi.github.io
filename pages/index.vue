@@ -1,20 +1,20 @@
 <template>
   <div>
-    <v-layout 
-      row 
-      justify-center 
+    <v-layout
+      row
+      justify-center
       align-center
     >
-      <v-flex 
-        xs12 
-        sm12 
+      <v-flex
+        xs12
+        sm12
         md8
       >
         <div class="text-xs-center">
-          <img 
-            :alt="title" 
-            src="/image/logo.jpg" 
-            width="200" 
+          <img
+            :alt="title"
+            src="/image/logo.jpg"
+            width="200"
             class="mb-5"
           >
         </div>
@@ -61,32 +61,32 @@
       align-center
     >
       <!-- Issue list -->
-      <v-flex 
-        xs12 
-        sm12 
-        md8 
+      <v-flex
+        xs12
+        sm12
+        md8
         class="mt-2"
       >
         <v-card>
           <v-list three-line>
             <v-subheader>Issues</v-subheader>
             <template v-for="(item, index) in milestonesWithDivider">
-              <v-divider 
-                v-if="item.isDivider" 
+              <v-divider
+                v-if="item.isDivider"
                 :key="index"
               />
-              <issue-link 
-                v-else 
-                :key="item.id" 
-                :milestone="item" 
+              <issue-link
+                v-else
+                :key="item.id"
+                :milestone="item"
                 :index="index"
               />
             </template>
-            <template v-if="nextCursor && nextCursor.hasNextPage">
+            <template v-if="pageInfo.hasNextPage">
               <v-divider />
-              <v-list-tile 
-                class="load-next" 
-                @click="onLoadNext(nextCursor.endCursor)"
+              <v-list-tile
+                class="load-next"
+                @click="onLoadNext(pageInfo.endCursor)"
               >
                 <v-list-tile-content>
                   <v-icon x-large>
@@ -109,8 +109,11 @@ import { GHDigestMilestone, GHDigest, GHPageInfo } from 'types/GitHubApi';
 import flatmap from 'lodash.flatmap';
 import axios from '~/plugins/axios';
 import Component from 'nuxt-class-component';
+import { Action } from 'vuex-class';
 import Vue from 'vue';
 import { SiteConfigContact } from 'types/SiteConfig';
+
+import * as ActionTypes from '~/store/ActionTypes';
 
 type VDividerItem = {
   isDivider: boolean;
@@ -121,7 +124,9 @@ type VDividerItem = {
   components: {
     IssueLink
   },
-  computed: mapState(['title', 'description', 'baseUrl', 'contact'])
+  computed: {
+    ...mapState(['title', 'description', 'baseUrl', 'contact', 'digest'])
+  }
 })
 export default class Index extends Vue {
   title!: string;
@@ -129,7 +134,9 @@ export default class Index extends Vue {
   contact!: SiteConfigContact;
   baseUrl!: string;
   digest: GHDigest;
-  nextCursor: GHPageInfo;
+
+  @Action(ActionTypes.FETCH_DIGEST)
+  fetchDigest;
 
   // insert divider
   get milestonesWithDivider() {
@@ -139,30 +146,12 @@ export default class Index extends Vue {
     );
   }
 
-  async asyncData({ app, params, isStatic }) {
-    let data;
-    if (process.server) {
-      data = JSON.parse(
-        require('fs').readFileSync('./static/api/index.json', 'utf8')
-      );
-    } else {
-      let res = await axios.get('/api/index.json');
-      data = res.data;
-    }
-
-    return {
-      digest: data,
-      nextCursor: data.milestones.pageInfo
-    };
+  get pageInfo(): GHPageInfo {
+    return this.digest.milestones.pageInfo;
   }
 
-  async onLoadNext(endCursor: String) {
-    const data = (await axios.get(`/api/${endCursor}.json`)).data;
-    this.digest.milestones.nodes = this.digest.milestones.nodes.concat(
-      data.milestones.nodes
-    );
-    this.digest.milestones.pageInfo = data.milestones.pageInfo;
-    this.nextCursor = data.milestones.pageInfo;
+  async onLoadNext(endCursor: string) {
+    await this.fetchDigest({ cursor: endCursor });
   }
 
   head() {

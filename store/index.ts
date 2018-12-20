@@ -1,8 +1,15 @@
 import getMilestones from '~/apollo/queries/getMilestones.gql';
+
 import { SiteConfig, SiteConfigRepository, SiteConfigContact } from '~/types/SiteConfig';
 
-export interface RootState extends SiteConfig {
+import axios from '~/plugins/axios';
 
+import * as MutationTypes from '~/store/MutationTypes';
+import * as ActionTypes from '~/store/ActionTypes';
+import { GHDigest } from '~/types/GitHubApi';
+
+export interface RootState extends SiteConfig {
+  digest: GHDigest | null;
 }
 
 export const state = (): RootState => ({
@@ -18,45 +25,72 @@ export const state = (): RootState => ({
     name: '',
     link: ''
   },
-  authors: []
+  authors: [],
+  digest: null
 } as RootState);
 
 export const mutations = {
-  setTitle(state: RootState, title: string){
+  [MutationTypes.UPDATE_TITLE](state: RootState, title: string) {
     state.title = title;
   },
-  setDescription(state: RootState, description: string){
+  [MutationTypes.UPDATE_DESCRIPTION](state: RootState, description: string) {
     state.description = description;
   },
-  setBaseUrl(state: RootState, url: string) {
+  [MutationTypes.UPDATE_BASE_URL](state: RootState, url: string) {
     state.baseUrl = url;
   },
-  setRssUrl(state: RootState, rssUrl: string) {
+  [MutationTypes.UPDATE_RSS_URL](state: RootState, rssUrl: string) {
     state.rssUrl = rssUrl;
   },
-  setIssueRepository(state: RootState, repo: SiteConfigRepository){
+  [MutationTypes.UPDATE_ISSUE_REPOSITORY](state: RootState, repo: SiteConfigRepository) {
     state.issueRepository = repo;
   },
-  setContact(state: RootState, contact: SiteConfigContact){
+  [MutationTypes.UPDATE_CONTACT](state: RootState, contact: SiteConfigContact) {
     state.contact = contact;
   },
-  setAuthors(state: RootState, authors: Array<SiteConfigContact>){
+  [MutationTypes.UPDATE_AUTHORS](state: RootState, authors: Array<SiteConfigContact>) {
     state.authors = authors;
+  },
+  [MutationTypes.UPDATE_DIGEST](state: RootState, { digest }: { digest: GHDigest }) {
+    if (state.digest == null) {
+      state.digest = digest;
+    } else {
+      state.digest.milestones.nodes = state.digest.milestones.nodes.concat(digest.milestones.nodes);
+      state.digest.milestones.pageInfo = digest.milestones.pageInfo;
+    }
   }
 };
 
 
 export const actions = {
-  async nuxtServerInit({ commit, state }, { app, env }) {
+  async nuxtServerInit({ commit, dispatch }, { app, env }) {
     const { SITE_CONFIG: siteConfigStr } = env;
     const siteConfigs: SiteConfig = JSON.parse(siteConfigStr);
 
-    commit('setTitle', siteConfigs.title);
-    commit('setDescription', siteConfigs.description);
-    commit('setBaseUrl', siteConfigs.baseUrl);
-    commit('setRssUrl', siteConfigs.rssUrl);
-    commit('setIssueRepository', siteConfigs.issueRepository);
-    commit('setContact', siteConfigs.contact);
-    commit('setAuthors', siteConfigs.authors);
+    commit(MutationTypes.UPDATE_TITLE, siteConfigs.title);
+    commit(MutationTypes.UPDATE_DESCRIPTION, siteConfigs.description);
+    commit(MutationTypes.UPDATE_BASE_URL, siteConfigs.baseUrl);
+    commit(MutationTypes.UPDATE_RSS_URL, siteConfigs.rssUrl);
+    commit(MutationTypes.UPDATE_ISSUE_REPOSITORY, siteConfigs.issueRepository);
+    commit(MutationTypes.UPDATE_CONTACT, siteConfigs.contact);
+    commit(MutationTypes.UPDATE_AUTHORS, siteConfigs.authors);
+
+    await dispatch(ActionTypes.FETCH_INITIAL_DIGEST);
+  },
+
+  async [ActionTypes.FETCH_INITIAL_DIGEST]({ commit }) {
+    let data;
+    if (process.server) {
+      data = JSON.parse(require('fs').readFileSync('./static/api/index.json', 'utf8'));
+    } else {
+      let res = await axios.get('/api/index.json');
+      data = res.data;
+    }
+    commit(MutationTypes.UPDATE_DIGEST, { digest: data });
+  },
+
+  async [ActionTypes.FETCH_DIGEST]({ commit }, payload: { cursor: string }) {
+    const data: GHDigest = (await axios.get(`/api/${payload.cursor}.json`)).data;
+    commit(MutationTypes.UPDATE_DIGEST, {digest: data});
   }
 };
