@@ -29,7 +29,9 @@
                   <a
                     :href="item.author.url"
                     target="_blank"
-                  >{{ item.author.login }}</a>
+                  >
+                    {{ item.author.login }}
+                  </a>
                 </strong>
               </v-card-title>
               <v-card-text>
@@ -41,7 +43,9 @@
                   <p
                     :title="item.publishedAt"
                     class="text-xs-right mb-0"
-                  >{{ publishedAt(item) }}</p>
+                  >
+                    {{ publishedAt(item) }}
+                  </p>
                 </no-ssr>
               </v-card-text>
             </v-card>
@@ -61,7 +65,7 @@ import flatmap from 'lodash.flatmap';
 import { DateTime } from 'luxon';
 
 @Component({
-  name: "issue-comments"
+  name: 'issue-comments'
 })
 export default class IssueComments extends Vue {
   @Prop() issue: GHIssue

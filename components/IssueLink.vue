@@ -17,7 +17,7 @@ import Component from 'nuxt-class-component';
 import Vue from 'vue';
 
 @Component({
-  name: "issue-link"
+  name: 'issue-link'
 })
 export default class IssueLink extends Vue {
   @Prop() milestone: GHDigestMilestone;
