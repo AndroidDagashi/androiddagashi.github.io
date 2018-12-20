@@ -3,9 +3,6 @@ const config = require('./config');
 const fs = require('fs');
 const { createApolloFetch } = require('apollo-fetch');
 const del = require('del');
-const { promisify } = require('util');
-
-const mkdirAsync = promisify(fs.mkdir);
 
 const API_DIR = './static/api';
 

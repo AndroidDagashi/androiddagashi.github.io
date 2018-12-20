@@ -18,7 +18,7 @@ import Vue from 'vue';
 
 @Component({
   name: 'app-footer',
-  computed: mapState(["title"])
+  computed: mapState(['title'])
 })
 export default class AppFooter extends Vue {
   title!: string;

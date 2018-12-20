@@ -1,5 +1,7 @@
 # AndroidDagashi
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/AndroidDagashi/androiddagashi.github.io.svg)](https://greenkeeper.io/)
+
 
 ## Build Setup
 

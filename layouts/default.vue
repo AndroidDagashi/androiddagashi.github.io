@@ -30,7 +30,7 @@ import Component from 'nuxt-class-component';
 import Vue from 'vue';
 
 @Component({
-  name: "default-layout",
+  name: 'default-layout',
   components: {
     AppHeader,
     AppFooter

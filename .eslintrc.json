@@ -9,6 +9,7 @@
     "typescript"
   ],
   "rules": {
-    "vue/no-v-html": "off"
+    "vue/no-v-html": "off",
+    "vue/component-name-in-template-casing": "kebab-case"
   }
 }
