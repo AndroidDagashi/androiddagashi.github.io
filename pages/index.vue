@@ -3,17 +3,20 @@
     <v-layout 
       row 
       justify-center 
-      align-center>
+      align-center
+    >
       <v-flex 
         xs12 
         sm12 
-        md8>
+        md8
+      >
         <div class="text-xs-center">
           <img 
             :alt="title" 
             src="/image/logo.jpg" 
             width="200" 
-            class="mb-5">
+            class="mb-5"
+          >
         </div>
 
         <!-- description -->
@@ -62,26 +65,34 @@
         xs12 
         sm12 
         md8 
-        class="mt-2">
+        class="mt-2"
+      >
         <v-card>
           <v-list three-line>
             <v-subheader>Issues</v-subheader>
             <template v-for="(item, index) in milestonesWithDivider">
               <v-divider 
                 v-if="item.isDivider" 
-                :key="index"/>
+                :key="index"
+              />
               <issue-link 
                 v-else 
                 :key="item.id" 
                 :milestone="item" 
-                :index="index"/>
+                :index="index"
+              />
             </template>
             <template v-if="nextCursor && nextCursor.hasNextPage">
-              <v-divider/>
+              <v-divider />
               <v-list-tile 
                 class="load-next" 
-                @click="onLoadNext(nextCursor.endCursor)">
-                <v-list-tile-content><v-icon x-large>expand_more</v-icon></v-list-tile-content>
+                @click="onLoadNext(nextCursor.endCursor)"
+              >
+                <v-list-tile-content>
+                  <v-icon x-large>
+                    expand_more
+                  </v-icon>
+                </v-list-tile-content>
               </v-list-tile>
             </template>
           </v-list>
