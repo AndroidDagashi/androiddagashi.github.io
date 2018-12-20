@@ -2,7 +2,8 @@ query getMilestoneDigests(
   $repoOwner: String!
   $repoName: String!
   $fetchMilestones: Int = 50
-  $fetchIssuesPerMilestone: Int = 20
+  $fetchIssuesPerMilestone: Int = 20,
+  $after: String = null
 ) {
   repository(owner: $repoOwner, name: $repoName) {
     name
@@ -11,6 +12,7 @@ query getMilestoneDigests(
       first: $fetchMilestones
       states: [CLOSED]
       orderBy: { field: DUE_DATE, direction: DESC}
+      after: $after
       ){
       totalCount
       nodes {

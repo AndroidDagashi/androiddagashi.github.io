@@ -2,6 +2,9 @@
 const config = require('./config');
 const fs = require('fs');
 const { createApolloFetch } = require('apollo-fetch');
+const del = require('del');
+
+const API_DIR = './static/api';
 
 // query for index
 const indexQuery = fs.readFileSync('./apollo/queries/getMilestoneDigests.gql', 'utf8');
@@ -22,6 +25,14 @@ apolloFectch.use(({ request, options }, next) => {
 });
 
 /**
+ * remove current json files.
+ * @return {Void} Void
+ */
+async function removeApiJsons() {
+  await del(`${API_DIR}/**/*.json`);
+}
+
+/**
  * create Android Dagashi issue page path from GitHub's milestone title
  * replace any spaces with '-'. You need to use `encodeURIComponent` if necessary.
  *
@@ -40,7 +51,7 @@ function createIssuePathFromMilestone(milestone) {
  * @returns {Void} Void
  */
 async function generateIssueJson(milestoneNumber) {
-  var { data, errors }  = await apolloFectch(
+  var { data, errors } = await apolloFectch(
     {
       query: milestoneQuery,
       variables: {
@@ -62,7 +73,7 @@ async function generateIssueJson(milestoneNumber) {
       // TODO: fetch issues & comments recursively
     }
     fs.writeFileSync(
-      `./static/api/issue/${createIssuePathFromMilestone(milestone)}.json`,
+      `${API_DIR}/issue/${createIssuePathFromMilestone(milestone)}.json`,
       JSON.stringify(milestone, null, '  '),
       'utf8'
     );
@@ -70,16 +81,20 @@ async function generateIssueJson(milestoneNumber) {
 }
 
 /**
- * generate json file for index
- * @returns {object} repository
+ *
+ * @param {string} cursor Next cursor or null
+ * @param {string} fileName file name
+ * @returns {Promise} Promise of GHDigest
  */
-async function generateIndexJson() {
+async function generatePagedIndexJson(cursor, fileName) {
+  console.log(`fetchng milestones. page: ${fileName}`);
   var { data, errors } = await apolloFectch(
     {
       query: indexQuery,
       variables: {
         repoOwner: config.repoOwner,
-        repoName: config.repoName
+        repoName: config.repoName,
+        after: cursor
       },
       operationName: 'getMilestoneDigests'
     }
@@ -93,16 +108,47 @@ async function generateIndexJson() {
     repository.milestones.nodes.forEach(milestone => {
       milestone.path = createIssuePathFromMilestone(milestone);
     });
-    if (repository.milestones.pageInfo.hasNextPage) {
-      // TODO: fetch milestones recursively
-    }
     fs.writeFileSync(
-      './static/api/index.json',
+      `${API_DIR}/${fileName}.json`,
       JSON.stringify(repository, null, '  '),
       'utf8'
     );
     return repository;
   }
+}
+
+/**
+ * generate json file for index
+ * @returns {object} repository
+ */
+async function generateIndexJson() {
+  let fileName = 'index';
+  let nextCursor = null;
+  let hasNext = true;
+
+  let wholeRepository = null;
+
+  // load milestones
+  while (hasNext) {
+
+    let repo = await generatePagedIndexJson(nextCursor, fileName);
+
+    if (wholeRepository == null) {
+      wholeRepository = repo;
+    } else {
+      wholeRepository.milestones.nodes = wholeRepository.milestones.nodes.concat(repo.milestones.nodes);
+    }
+
+    hasNext = repo.milestones.pageInfo.hasNextPage;
+    nextCursor = repo.milestones.pageInfo.endCursor;
+    fileName = repo.milestones.pageInfo.endCursor;
+  }
+
+  wholeRepository.milestones.nodes.forEach(milestone => {
+    milestone.path = createIssuePathFromMilestone(milestone);
+  });
+
+  return wholeRepository;
 }
 
 /**
@@ -145,6 +191,6 @@ async function generateJsons() {
   }
 }
 
-
-generateJsons()
+removeApiJsons()
+  .then(() => generateJsons())
   .then(() => reportRateLimit());

@@ -1,20 +1,20 @@
 <template>
   <div>
-    <v-layout
-      row
-      justify-center
+    <v-layout 
+      row 
+      justify-center 
       align-center
     >
-      <v-flex
-        xs12
-        sm12
+      <v-flex 
+        xs12 
+        sm12 
         md8
       >
         <div class="text-xs-center">
-          <img
-            :alt="title"
-            src="/image/logo.jpg"
-            width="200"
+          <img 
+            :alt="title" 
+            src="/image/logo.jpg" 
+            width="200" 
             class="mb-5"
           >
         </div>
@@ -61,26 +61,39 @@
       align-center
     >
       <!-- Issue list -->
-      <v-flex
-        xs12
-        sm12
-        md8
+      <v-flex 
+        xs12 
+        sm12 
+        md8 
         class="mt-2"
       >
         <v-card>
           <v-list three-line>
             <v-subheader>Issues</v-subheader>
             <template v-for="(item, index) in milestonesWithDivider">
-              <v-divider
-                v-if="item.isDivider"
+              <v-divider 
+                v-if="item.isDivider" 
                 :key="index"
               />
-              <issue-link
-                v-else
-                :key="item.id"
-                :milestone="item"
+              <issue-link 
+                v-else 
+                :key="item.id" 
+                :milestone="item" 
                 :index="index"
               />
+            </template>
+            <template v-if="nextCursor && nextCursor.hasNextPage">
+              <v-divider />
+              <v-list-tile 
+                class="load-next" 
+                @click="onLoadNext(nextCursor.endCursor)"
+              >
+                <v-list-tile-content>
+                  <v-icon x-large>
+                    expand_more
+                  </v-icon>
+                </v-list-tile-content>
+              </v-list-tile>
             </template>
           </v-list>
         </v-card>
@@ -92,7 +105,7 @@
 <script lang="ts">
 import { mapState, mapMutations, mapGetters } from 'vuex';
 import IssueLink from '~/components/IssueLink.vue';
-import { GHDigestMilestone, GHDigest } from 'types/GitHubApi';
+import { GHDigestMilestone, GHDigest, GHPageInfo } from 'types/GitHubApi';
 import flatmap from 'lodash.flatmap';
 import axios from '~/plugins/axios';
 import Component from 'nuxt-class-component';
@@ -116,6 +129,7 @@ export default class Index extends Vue {
   contact!: SiteConfigContact;
   baseUrl!: string;
   digest: GHDigest;
+  nextCursor: GHPageInfo;
 
   // insert divider
   get milestonesWithDivider() {
@@ -137,8 +151,18 @@ export default class Index extends Vue {
     }
 
     return {
-      digest: data
+      digest: data,
+      nextCursor: data.milestones.pageInfo
     };
+  }
+
+  async onLoadNext(endCursor: String) {
+    const data = (await axios.get(`/api/${endCursor}.json`)).data;
+    this.digest.milestones.nodes = this.digest.milestones.nodes.concat(
+      data.milestones.nodes
+    );
+    this.digest.milestones.pageInfo = data.milestones.pageInfo;
+    this.nextCursor = data.milestones.pageInfo;
   }
 
   head() {
@@ -158,5 +182,10 @@ export default class Index extends Vue {
 }
 </script>
 
-<style>
+<style lang="stylus" scoped>
+.load-next {
+  >>> div {
+    align-items: center;
+  }
+}
 </style>

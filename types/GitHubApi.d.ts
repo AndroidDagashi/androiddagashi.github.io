@@ -94,5 +94,6 @@ export type GHDigest = {
   milestones: {
     totalCount: number;
     nodes: Array<GHDigestMilestone>;
+    pageInfo: GHPageInfo;
   };
 };
