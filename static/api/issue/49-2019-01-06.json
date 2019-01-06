@@ -1,0 +1,316 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzkzMDQ4NQ==",
+  "number": 49,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/49",
+  "title": "49 2019-01-06",
+  "description": "Fuchshia上でAndroidアプリが動くことが確認される、OkHttpがAndroid 4.x以下を切ることを検討、クリスマスにGoogle Playの開発者アカウントを停止された話、など",
+  "closedAt": "2019-01-06T10:31:50Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzheeJXo=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzheOBfM=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/608",
+        "title": "マルチモジュールの遷移について考える Part1",
+        "body": "https://satoshun.github.io/2018/12/multi-module_transition_part1/\r\n\r\n互いに行き来できる複数画面が別モジュールになっているとき、どう循環依存せずにするかという話です。自分はあまりマルチモジュール化をしていないので興味深かったです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/607",
+        "title": "Call/SMS権限を利用するアプリは1/9までに対応を",
+        "body": "https://www.reddit.com/r/androiddev/comments/acs5t2/google_sending_out_3rd_and_final_reminder_to/\r\n\r\nGoogleはユーザ保護のための施策として、Call/SMS権限を使えるアプリを制限しようとしています。\r\n該当の方々にはメールで通知が行っているようですが、締切が迫っているようなので早めの対応が必要そうです。\r\n1/9から、届け出を出して認可をもらっていないアプリは該当の権限を使えなくなるようです。\r\n時間が足りない場合も届け出を行うと、2019年3月9日まで期間を延長してもらえます。\r\n\r\nこの件に関するGoogleのサポートページはこちら\r\nhttps://support.google.com/googleplay/android-developer/answer/9047303",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/606",
+        "title": "Multi Moduleプロジェクトでのフォルダ構成",
+        "body": "https://medium.com/@star_zero/android-multi-module%E3%81%A7%E3%81%AE%E3%83%95%E3%82%A9%E3%83%AB%E3%83%80%E6%A7%8B%E6%88%90-b52d608d78a0\r\n\r\nトップレベルにモジュール作っていくと分かりづらくなるので、専用のフォルダ作ってその中で管理していこう、という話です",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGuzIIg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGuzIIg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "機能ごとにモジュールを分けるのは徐々に広まりそうですね",
+              "publishedAt": "2019-01-06T08:44:45Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/605",
+        "title": "Kotlinであなたが知らないかもしれない5つのこと",
+        "body": "https://proandroiddev.com/fast-of-cool-things-in-kotlin-eccf514a2def",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGuzGnw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGuzGnw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Delegateのやつは知りませんでしたが、ちょっとやりすぎな気もしますね。",
+              "publishedAt": "2019-01-06T08:37:40Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/604",
+        "title": "Dagger2からKoinに移行する",
+        "body": "https://proandroiddev.com/migrating-from-dagger2-to-koin-3b2b3f5285e9",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGuzHXw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGuzHXw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "対応関係があるのはありがたいですが、Daggerをすでに理解している人はKoinを理解するのはそれほど難しくない気もします",
+              "publishedAt": "2019-01-06T08:40:45Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/603",
+        "title": "クリスマスにGoogle Playの開発者アカウントを停止された話",
+        "body": "https://android.jlelse.eu/google-just-terminated-our-start-up-google-play-publisher-account-on-christmas-day-5cb69a454da0",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGuy73w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGuy8Nw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/aauvqi/google_just_terminated_our_startup_google_play/\t\r\n\r\nHackerNewsでも盛り上がっています\r\nhttps://news.ycombinator.com/item?id=18788450",
+              "publishedAt": "2019-01-06T07:39:30Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "筆者の別の開発者アカウントが以前停止されたことがあるようで、そのアカウントの関連アカウントとみなされて停止されたのではないか、という話もあがっています",
+              "publishedAt": "2019-01-06T07:41:35Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/602",
+        "title": "Flutterでの開発をスムーズに行うためのTips集",
+        "body": "https://medium.com/flutter-jp/tips-b2487a63a8",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/601",
+        "title": "Google Maven Centralレポジトリのマルチリージョン",
+        "body": "https://storage-download.googleapis.com/maven-central/index.html\r\nhttp://takari.io/2015/10/28/google-maven-central.html\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">If you&#39;re using Maven Central to access some of your dependencies (instead of that other host), Google hosts a multi-region mirror that might be faster if you&#39;re building on GCB, Travis, Circle, etc.<a href=\"https://t.co/nLVcNOrarS\">https://t.co/nLVcNOrarS</a><br><br>For Gradle: maven { url &#39;one of the urls&#39; }</p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/1080927108782800903?ref_src=twsrc%5Etfw\">January 3, 2019</a></blockquote>\r\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\n不勉強にして知らなかったのですが、各地域でGoogle Maven Centralレポジトリが存在するようです。適したリージョンのレポジトリを指定すればCIが速くなるかもしれません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/600",
+        "title": "Butter Knife 10.0がリリース",
+        "body": "https://github.com/JakeWharton/butterknife/blob/master/CHANGELOG.md#version-900-2019-01-03\r\nhttps://github.com/JakeWharton/butterknife/blob/master/CHANGELOG.md#version-1000-2019-01-03\r\n\r\nついにAndroidX対応が入ったようです。v9.0とv10.0の中身は同じでAndroidX対応しているかどうかの違いとのこと。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/599",
+        "title": "Fuchshia上でAndroidアプリが動くことが確認される",
+        "body": "https://9to5google.com/2019/01/02/android-runtime-app-support-fuchsia/\r\n\r\nAOSPの`device/google/fuchsia`のREADMEに説明が追加されたようです。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGuzFRA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGuzFRA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "AndroidがFuchsiaベースに移行する気ではないかという観測がこちらです。\r\nhttps://www.tomsguide.com/us/google-fuchsia-os-replace-android,news-28966.html",
+              "publishedAt": "2019-01-06T08:31:49Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/598",
+        "title": "OkHttpがAndroid 4.x以下を切ることを検討",
+        "body": "https://github.com/square/okhttp/issues/4481\r\n\r\nつぎのOkHttp 3.13でAndroid 2.3+ → Android 5.0+とすることが議論されているようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGt81IQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGt81IQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Redditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/abii86/okhttp_will_drop_support_for_android_4_in_their/",
+              "publishedAt": "2019-01-02T10:58:38Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
