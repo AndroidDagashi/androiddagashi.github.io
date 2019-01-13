@@ -1,0 +1,326 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzk0NDM5Mg==",
+  "number": 50,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/50",
+  "title": "50 2019-01-13",
+  "description": "DroidKaigi 2019のタイムテーブルが公開される、DroidKaigi 2019公式アプリのコードが公開される、SQLDelight 1.0.0リリース、Looperの閉じ忘れでファイルディスクリプタが枯渇する話など。",
+  "closedAt": "2019-01-13T10:51:36Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhfBFlM=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzheeRfg=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/618",
+        "title": "DBのIDをinline classで表現する",
+        "body": "https://jakewharton.com/inline-classes-make-great-database-ids/\r\nhttps://www.reddit.com/r/androiddev/comments/aek2pg/inline_classes_make_great_database_ids_jake/\r\n\r\ninline classを利用すれば、異なるテーブルのIDを間違って使わずにすむ、ということのようです。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGwydzQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGwydzQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "SQLDelightが自動的にAS文から生成してくれるのですね。なるほど。",
+              "publishedAt": "2019-01-13T08:34:54Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/617",
+        "title": "Androidのコードはハンガリアン記法をやめたの？",
+        "body": "https://www.reddit.com/r/androiddev/comments/ae4i43/does_android_team_starts_to_abandon_hungarian\r\n\r\nGoogleチームからコメントが入ってますが、別にやめたわけではなく、マテリアデザインのライブラリはAOSPのコーティングルールでなくGoogleのコーティングルールに従っているというだけのようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGwsuaQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGwsuaQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ところでポストにリンクがあるハンガリアン記法（という名称は正確ではないのですが）をスタイルガイドに導入した人の記事はなかなかおもしろかったです。\r\nhttp://beust.com/weblog/2017/07/17/i-am-the-reason-for-hungarian-notation-in-android/",
+              "publishedAt": "2019-01-12T04:06:11Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/616",
+        "title": "DroidKaigi 2019公式アプリのコードが公開される",
+        "body": "https://github.com/DroidKaigi/conference-app-2019\r\n\r\n今年は\r\n\r\n- Flux\r\n- Kotlin Multiplatform Project\r\n\r\nな構成のようです。\r\nいろいろissueが立っているので、はじめてのOSS活動に良いかもしれません",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/615",
+        "title": "DroidKaigi 2019のタイムテーブルが公開される",
+        "body": "https://droidkaigi.jp/2019/timetable\r\n\r\n開催は2/7, 2/8です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/614",
+        "title": "Looperの閉じ忘れでファイルディスクリプタが枯渇する話",
+        "body": "https://blog.japantaxi.co.jp/2018/12/23/3108\r\n\r\n使っていたSDKがLooperを閉じ忘れており、そのせいでファイルディスクリプタが枯渇してアプリ側でエラーになっていたそうです。Looperを直で触るときは覚えておきたいですね。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGvp6pw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGvp6pw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "余談ですが『Androidを支える技術』にLooperをepollで実装する話は出てきた覚えがあります",
+              "publishedAt": "2019-01-09T09:07:43Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/613",
+        "title": "SQLDelight 1.0.0リリース",
+        "body": "https://medium.com/@anstrong22/announcing-sqldelight-1-0-d482aa408f64\r\nhttps://github.com/square/sqldelight\r\n\r\n抜本的な書き直しを行い、Kotlin Multiplatform Projectにも対応しました。\r\niOS用のアーティファクトも用意されています。\r\n\r\nRxJava2にも対応し、リソースの集中のためかSQLBriteが非推奨になりました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGwtIQw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGwtIQw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Roomとの比較がRedditで議論されています。Alec, JakeとYigitの考えは多少異なるようです。余談ですがReddit上でこういった（社内で行われ得る）議論が可視化されるのはよいことだと感じます。\r\nhttps://www.reddit.com/r/androiddev/comments/adxwr3/announcing_sqldelight_10_alec_strong_medium/",
+              "publishedAt": "2019-01-12T06:34:22Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/612",
+        "title": "技術記事を検索してもチュートリアルばかり出てくるという嘆き",
+        "body": "https://www.reddit.com/r/androiddev/comments/adi3i9/rant_the_headache_of_reading_through_one_android/\r\n\r\nAndroidアプリ開発に限らないですが、英語の記事でも事情はおなじようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGvP7rw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGvP7rw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "なお、Medium記事にある \"unnecessary meme images\" というのは思わず頷いてしまいました",
+              "publishedAt": "2019-01-08T07:10:58Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/611",
+        "title": "複数Activityにまたがるデータをどう管理するか",
+        "body": "https://www.reddit.com/r/androiddev/comments/adaecm/how_do_you_or_your_team_scope_an_object_that/\r\n\r\nLiveDataやSingle Activity、Intentでバケツリレー、シングルトンといった方法が議論されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGvP0Qg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGvP0Qg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Single Activity + Fluxが主流になっていくのかなぁという気はします。",
+              "publishedAt": "2019-01-08T06:59:50Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/610",
+        "title": "Android Qがシステム全体でダークモードを持つという噂",
+        "body": "https://www.androidpolice.com/2019/01/06/googler-seemingly-confirms-that-android-q-will-have-system-wide-dark-mode/\r\n\r\nChromeチームのメンバーが公開範囲を誤って書き込んだとのことです。前から噂はあったのですが、Qではダークモードがきそうな気配です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/609",
+        "title": "クライアントとサーバーどちらに実装するかの設計指針をチームで持つこと",
+        "body": "http://tomoima525.hatenablog.com/entry/2019/01/06/075644\r\n\r\nよく議論になるトピックなので指針を持つのはよさそうです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGuzmWQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGuzmWQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "なお、自分もクライアントサイドがメインなのでポジショントークに聞こえるかもしれませんが、この記事にあるのと同じ理由で基本的にサーバーでロジックを持つべきと考えています。テストもはるかに書きやすいと思います。",
+              "publishedAt": "2019-01-06T11:08:19Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
