@@ -56,7 +56,10 @@ export const mutations = {
       state.digest = digest;
     } else {
       state.digest.milestones.nodes = state.digest.milestones.nodes.concat(digest.milestones.nodes);
-      state.digest.milestones.pageInfo = digest.milestones.pageInfo;
+
+      const pageInfo = digest.milestones.pageInfo;
+      state.digest.milestones.pageInfo.hasNextPage = pageInfo.hasNextPage;
+      state.digest.milestones.pageInfo.endCursor = pageInfo.endCursor;
     }
   }
 };

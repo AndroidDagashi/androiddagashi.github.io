@@ -137,6 +137,10 @@ async function generateIndexJson() {
       wholeRepository = repo;
     } else {
       wholeRepository.milestones.nodes = wholeRepository.milestones.nodes.concat(repo.milestones.nodes);
+
+      const pageInfo = repo.milestones.pageInfo;
+      wholeRepository.milestones.pageInfo.hasNextPage = pageInfo.hasNextPage;
+      wholeRepository.milestones.pageInfo.endCursor = pageInfo.endCursor;
     }
 
     hasNext = repo.milestones.pageInfo.hasNextPage;
