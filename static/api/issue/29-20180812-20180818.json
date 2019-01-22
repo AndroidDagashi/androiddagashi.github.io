@@ -1,0 +1,321 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzU2Mzg2OQ==",
+  "number": 29,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/29",
+  "title": "29-20180812-20180818",
+  "description": "Google I/O 2018のAndroidアプリのソースコードが公開、UberがDagggerを簡単に使えるDIライブラリMotifを公開、Firebaseが大幅アップデート、など。",
+  "closedAt": "2018-08-19T10:29:07Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhT5YH4=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhTcNbo=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/376",
+        "title": "Kotlinでのcompositionとdelegation",
+        "body": "https://proandroiddev.com/kotlin-composition-and-delegation-d1a387f8c158",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGK7p5w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGK7p5w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "compositionでdelegationを使うのはとてもいいと思いますが、dataクラスはopenにできないから、という理由はちょっと不安になりました。また、そのあとのgetValue/setValueを実装するハックもやややり過ぎに見えました。SuperheroとPersonがis-a関係かどうか、ということを考えてinheritanceにするかcompositionにするか決める方がいいのではないでしょうか。",
+              "publishedAt": "2018-08-19T09:47:40Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/375",
+        "title": "Kotlinの拡張関数を乱用するには",
+        "body": "https://www.philosophicalhacker.com/post/how-to-abuse-kotlin-extension-functions/\r\n\r\n釣りっぽいタイトルですが、こういう拡張関数の使い方は間違ってるよ、というのをGoogle I/Oアプリのコードを例にして示しています。\r\n拡張関数云々、というよりも本質的には設計よりの話です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGK7rYQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGK7rYQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "去年の記事なので、参考にしているGoogle I/Oのコードはこのあいだ公開されたものではないようですね。何も考えずに拡張関数を生やすのは Utils クラスや Helper クラスを作るのと変わらないというもっともな話でした。",
+              "publishedAt": "2018-08-19T09:55:57Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/374",
+        "title": "coroutinesのKotlin Native実装（WIP）",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/commit/ebbea841082aee40eaa49db6bd7861004a7dc961\r\n\r\n待望（？）のKotlin Native向けのcoroutines実装が始まっているようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/373",
+        "title": "アプリストアのレビューへ返信するコツ",
+        "body": "https://appfigures.com/resources/reply-to-ios-android-app-reviews",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/372",
+        "title": "RxAndroid 2.1.0で追加されたパフォーマンス向上の仕組み",
+        "body": "https://medium.com/@sweers/rxandroids-new-async-api-4ab5b3ad3e93\r\n\r\nhttps://androiddagashi.github.io/issue/24-20180708-20180714/ でも触れた VSYNC をスキップする変更がRxAndroid 2.1.0で入ったようです。ところで、さいきんのUberを見ていると、やはり力があるなと感じます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/371",
+        "title": "Firebaseが大幅アップデート",
+        "body": "https://firebase.googleblog.com/2018/08/in-app-messaging-crashlytics.html\r\nhttps://jp.techcrunch.com/2018/08/17/2018-08-16-google-firebase-adds-in-app-messaging-jira-integration-new-reports-and-more/\r\n\r\nIn-App Messagingの追加やCrashlyticsのデータをBigQueryにエクスポートできるようになったり、いろいろはかどりそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/370",
+        "title": "BLE経由で難聴をサポートする音声ストリーミングのスペックに対応",
+        "body": "https://android-developers.googleblog.com/2018/08/streaming-support-spec-for-hearing-aids_16.html\r\n\r\n詳しくは理解していませんが、補聴器用のスペックをサポートしているようです。とくに音声ストリーミングを提供している開発者は興味を持つかもしれません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/369",
+        "title": "趣味のプロジェクトでモチベーションを維持するには",
+        "body": "https://ninichimusic.com/blog/2017/5/30/how-to-stay-motivated-to-complete-your-indie-project\r\nhttps://www.reddit.com/r/androiddev/comments/9775vv/how_to_stay_motivated_to_complete_your_indie/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGK7nmQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGK7nmQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "趣味プロジェクトを投げ出してしまう気持ちはすごく分かります（自分の趣味プロジェクトのToDoを眺めながら）",
+              "publishedAt": "2018-08-19T09:36:25Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/368",
+        "title": "UberがDagggerを簡単に使えるDIライブラリMotifを公開",
+        "body": "https://github.com/uber/motif\r\n\r\nちゃんと読んでいませんが、ネストしたスコープを簡単に扱いたいという動機のようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGKVUwA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGKVUwA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "コード生成のためのコードを生成する、というのもなんか面白いですねｗ\r\nredditでの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/97g7fg/motif_new_di_library_from_uber_abstraction_over/",
+              "publishedAt": "2018-08-16T09:47:04Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/367",
+        "title": "Google I/O 2018のAndroidアプリのソースコードが公開",
+        "body": "https://android-developers.googleblog.com/2018/08/google-releases-source-for-google-io.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGJo1Kw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGJo1Kw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自分はひそかにSyncAdapterが好きだったのでちょっと残念ですが、参考になりそうです。",
+              "publishedAt": "2018-08-14T05:32:46Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/366",
+        "title": "Kyash AndroidでUIテストを導入したときの指針",
+        "body": "http://konifar.hatenablog.com/entry/2018/08/13/180157",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/365",
+        "title": "DevFest 2018 が日本各地で開催されます",
+        "body": "https://developers-jp.googleblog.com/2018/08/devfest-2018.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
