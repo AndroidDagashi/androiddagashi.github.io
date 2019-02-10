@@ -1,0 +1,312 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzM5NjIxOQ==",
+  "number": 19,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/19",
+  "title": "19-20180603-20180609",
+  "description": "今週はFacebookがReactNativeをやめるという噂に始まり、jcenterの変更でビルドが壊れたりと賑やかな一週間でした。そんな中でAndroid Studio 3.2 Canary 17やP Developer Preview 3が出ています。",
+  "closedAt": "2018-06-10T10:47:59Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhO4njY=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhOZgos=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/247",
+        "title": "Swiftで書いたビジネスロジックをAndroidでも使う",
+        "body": "https://blog.readdle.com/why-we-use-swift-for-android-db449feeacaf\r\n\r\nそういえばSwift、Androidでも使えるんでしたね…\r\nまだまだ制約も多いようですが、iOSエンジニアの多い環境なら試してみるのもありかもしれません\r\n\r\nサンプルプロジェクトはこちら。\r\nhttps://github.com/readdle/swift-android-architecture",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/246",
+        "title": "Android Studio 3.2 canary17リリース",
+        "body": "https://androidstudio.googleblog.com/2018/06/android-studio-32-canary-17-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOF5TCeg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOF5TCeg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ブログも出たようです。\r\nhttps://developers-jp.googleblog.com/2018/06/android-studio-3-2-canary.html",
+              "publishedAt": "2018-06-08T02:20:48Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/245",
+        "title": "Android Studio 3.1.3リリース",
+        "body": "https://androidstudio.googleblog.com/2018/06/android-studio-313-bug-fix-update.html\r\n\r\nメモリリークがいくつか解消されたみたいですね",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/244",
+        "title": "Android Studioのメモリリークのリスト",
+        "body": "https://www.reddit.com/r/androiddev/comments/8pcb2s/updates_on_recent_android_studio_memory_leak/\r\n\r\nGoogleの中の人が詳細な表を上げてくれています。ASがメモリリークしている、いやメモリを食っているだけでリークではない、など今までもよく議論になっていましたが、少なくとも幾つかはメモリリークだったようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/243",
+        "title": "YelpのAndroidチームがどのようにしてアプリをマルチモジュール化したか",
+        "body": "https://engineeringblog.yelp.com/2018/06/how-yelp-modularized-the-android-app.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/242",
+        "title": "Android P DP3 が出ました",
+        "body": "https://developer.android.com/preview/release-notes#dp3\r\n\r\n併せて api 28 が正式に利用可能になったようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOF5TEpg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOF5TEpg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "恒例の CommonsBlog による分析です。 `cantSaveState` 属性はちょっと変わり種で面白いですね。\r\nhttps://commonsware.com/blog/2018/06/07/random-musings-p-developer-preview-3.html",
+              "publishedAt": "2018-06-08T02:23:51Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/241",
+        "title": "build.gradleでgoogle()がjcenter()より上にないと409が返るエラーがあったようです",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\"><a href=\"https://twitter.com/hashtag/AndroidDev?src=hash&amp;ref_src=twsrc%5Etfw\">#AndroidDev</a> <br><br>Looks like jcenter started mirroring Google&#39;s repo. If you start getting &quot;Failed to get resource: HEAD. [HTTP/1.1 409&quot; error, make sure you have google() first in the repositories section of your build.gradle.<br><br>h/t to <a href=\"https://twitter.com/botteaap?ref_src=twsrc%5Etfw\">@botteaap</a>, <a href=\"https://twitter.com/hanspeide?ref_src=twsrc%5Etfw\">@hanspeide</a> &amp; <a href=\"https://twitter.com/droidxav?ref_src=twsrc%5Etfw\">@droidxav</a> for the fix. <a href=\"https://t.co/NeFFpnmFnA\">pic.twitter.com/NeFFpnmFnA</a></p>&mdash; Danny Roa (@dannyroa) <a href=\"https://twitter.com/dannyroa/status/1004327241826762752?ref_src=twsrc%5Etfw\">June 6, 2018</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nSee also: https://stackoverflow.com/questions/50678691/jcenter-throwing-409-for-play-services/50686610\r\n\r\n一週間くらい前にも似たような問題があってすぐに直ったという話だったのですが、同じ問題なのでしょうか。\r\nhttps://issuetracker.google.com/issues/80362794",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOF5I-fw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOF5I-fw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "どうやらgoogleレポジトリからいくつかのartifactをjcenterに移行したところ、checksumが壊れていて、409を返すようになったそうです。\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Re the situation with Google artifacts from Google Maven repository:<br>1. Some artifacts were brought over to jcenter() from google()<br>2. For some reason Google repository contained incorrect checksums for certain artifacts.<br>🔽</p>&mdash; JFrog Bintray (@bintray) <a href=\"https://twitter.com/bintray/status/1004974875851685888?ref_src=twsrc%5Etfw\">June 8, 2018</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nしかし、なぜ404を返さずに409というちょっとマニアックなステータスを返したのかは謎です……。",
+              "publishedAt": "2018-06-07T15:21:01Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/240",
+        "title": "プッシュ通信のE2E暗号化をするCapillary",
+        "body": "https://android-developers.googleblog.com/2018/06/project-capillary-end-to-end-encryption.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/239",
+        "title": "ARCoreのSceneformの使い方",
+        "body": "https://proandroiddev.com/building-arcore-apps-using-sceneform-part-1-b9e57d1057e6\r\n\r\nシリーズもので長いのですが、最初の3つは内容が薄いので読み飛ばして大丈夫です。逆に Part 4 はもうちょっと説明してほしいところでした :upside_down_face: \r\n\r\n自分もSceneformがない頃にすこし触ったことがあるのですが、セットアップが面倒な印象はあったのでSceneformによってそのへんがだいぶ簡単になったのはよさそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AR/VR",
+              "description": "",
+              "color": "d6a0e8"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/238",
+        "title": "Retrofitで段階的にMoshiに乗り換える方法",
+        "body": "https://medium.com/@naturalwarren/kotlin-users-safely-upgrade-to-moshi-c01168a39f79\r\n\r\n自分でアノテーションを付けて一部のエンドポイントだけMoshiに移行するのは、いいやり方だなと思いました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/237",
+        "title": "設定画面にすべきか迷ったときに見るフローチャート",
+        "body": "https://www.reddit.com/r/androiddev/comments/8o6hts/android_settings_flow_chart_this_may_be_handy_for/\r\n\r\n半分ネタではあるのですが、困ったときに「じゃあ設定で変えられるようにしておいて！」となってしまうのは、あるあるだなと思いました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/236",
+        "title": "FacebookがReactNativeを使わない方向に進んでいるというFUD",
+        "body": "https://www.reddit.com/r/androiddev/comments/8o4p6n/facebook_moving_away_from_react_native/\r\n\r\nこのツイートに関しては日本のツイッター上でも話題になっていましたが、Facebookの中の人が否定しているのを見るとやや勇み足だったのかもしれません。\r\n\r\nそれはそれとしてredditで「この噂が本当ならうちのマネージャーがRNをねじこんでくるのをやめさせられるのに」というコメントがあって、なんともいえない気分になりました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

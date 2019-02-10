@@ -1,0 +1,413 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzUxMzk4OA==",
+  "number": 26,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/26",
+  "title": "26-20180722-20180728",
+  "description": "Android P Beta4、Kotlin 1.3-M1、WorkManager alpha3、Android Thingsが最高だった話、Dagger論争",
+  "closedAt": "2018-07-29T10:32:02Z",
+  "issues": {
+    "totalCount": 15,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhSXQug=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhR4FiM=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/336",
+        "title": "WorkManager 1.0.0-alpha05",
+        "body": "https://developer.android.com/jetpack/docs/release-notes#july_24_2018\r\nhttps://www.reddit.com/r/androiddev/comments/91jo57/workmanager_alpha05_is_here/\r\n\r\n`WorkManager.getInstance()` がNonNullになったりとか",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/335",
+        "title": "Firebase MLKitを使ってバーコードを読み込む",
+        "body": "https://medium.com/google-developer-experts/exploring-firebase-mlkit-on-android-barcode-scanning-part-three-cc6f5921a108",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/334",
+        "title": "AndroidXに移行するために",
+        "body": "https://speakerdeck.com/syarihu/androidxniyi-xing-surutameni\r\n\r\n実際にマネーフォワードで移行しようとして挫折した話です。依存ライブラリの対応が必要なのはなかなか大変ですね……。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/333",
+        "title": "Kotlin 1.3-M1",
+        "body": "https://blog.jetbrains.com/kotlin/2018/07/see-whats-coming-in-kotlin-1-3-m1\r\n\r\nまだM1なので、今後も変更があるかもしれませんが、新しい機能を試せるようになりました。個人的には、 `inline classes` と `SuccessOrFailure` が一番アツい気がしています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGFYCHQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGFYCHQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "`capturing when subject in a variable`も良さそうですねー",
+              "publishedAt": "2018-07-27T02:10:17Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/332",
+        "title": "Dagger 論争",
+        "body": "http://fragmentedpodcast.com/episodes/133/\r\nhttps://speakerdeck.com/dpreussler/to-inject-or-not-inject-dependency-injection-in-a-kotlin-world-appbuilders-dot-ch-2018\r\n\r\nFragmentedのep. 133が発端になって、KoinはDIかどうか、あるいは、Dagger 2複雑すぎじゃね、という話が一部で話題のようです。\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">So we&#39;re complaining about the pass-things-into-constructors pattern and pass-things-into-constructor pattern helper libraries this week?<br><br>Great.</p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/1022138266013917184?ref_src=twsrc%5Etfw\">July 25, 2018</a></blockquote>\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Just that most apps are trivial and might not need non-trivial solutions. Developers love to complicate things. Pick the right library for the job (if you even need a library), Dagger is one out of many. Often needed, often not.</p>&mdash; Danny Preussler (@PreusslerBerlin) <a href=\"https://twitter.com/PreusslerBerlin/status/1022144069907230720?ref_src=twsrc%5Etfw\">July 25, 2018</a></blockquote>\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGFF8IQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGFF8IQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Dannyの「適切なライブラリを選ぶべき」という主張は分かりますが、自分は依存関係を自動で解決してくれないDIライブラリにどれくらい価値があるのかはやや疑問に思っています。また Danny のスライドはこれだけ見るとちょっと Jake を挑発しすぎで逆鱗に触れてしまったような気もします :sweat_smile: ",
+              "publishedAt": "2018-07-26T06:41:50Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/330",
+        "title": "Android P Beta 4リリース",
+        "body": "https://android-developers.googleblog.com/2018/07/final-preview-update-official-android-p.html\r\n\r\nこれが最後のPreview版のようです。\r\n正式版のリリースが近づいてきました！",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGFIFPg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGFXWGg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://developer.android.com/preview/behavior-changes?hl=ja\r\nPでの動作変更点はこちらにまとまっています",
+              "publishedAt": "2018-07-26T08:59:38Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "いちユーザとしてはShush機能を心待ちにしているのですが、ぜんぜん来なくて悲しいです :cry: ",
+              "publishedAt": "2018-07-27T00:52:48Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/329",
+        "title": "Twitter APIを利用する際にレビューが必要になったようです",
+        "body": "https://blog.twitter.com/developer/en_us/topics/tools/2018/new-developer-requirements-to-protect-our-platform.html\r\n\r\nAndroidと直接的には関係ありませんが、どうやら開発者アカウントを申請し、使用するアプリの目的などを明記しないといけなくなったようです。AndroidのサンプルでTwitterアプリを作るのは定番だったのですが、すこしやりにくくなりますね……。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGEzuCw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGEzuCw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://blog.twitter.com/developer/ja_jp/topics/tools/2018/jp-new-developer-requirements-to-protect-our-platform.html\r\n\r\n日本語の記事も来てますね。\r\nAPIのレート制限も厳しくなるので、制限緩和申請の承認基準次第ですが、いろいろ厳しくなりそうです……",
+              "publishedAt": "2018-07-25T09:34:13Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/328",
+        "title": "Android用Twitterライブラリ twitter4a",
+        "body": "https://github.com/takke/twitter4a\r\n\r\ntwitter4jのAndroid向けフォークのようです。Twitterの公式SDKとの違いはちょっと分かりませんが、むかしからtwitter4jでやっていた人にはよさそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGGIEdQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGGIK5w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ちょっとだけ補足しておきますね。\r\n\r\nTwitter4A は Twitter4J の Android 向けのフォークですが、Android 向けという意味では(maven ではなく)gradle でビルドできるようにした程度です。\r\nTwitter4J は 2016/12 の v4.0.6 から更新されておらず、最新のTwitterの機能にいち早く対応するためのフォークという位置づけになります。\r\n\r\n8/16 に予定されている新DM APIへの完全移行(現行のDM APIは廃止される)や、動画の投稿、140文字を超えるツイートのための機能などが必要な方のためにリリースしました。\r\n\r\nちなみにTwitterの公式SDKとは全く別物です。",
+              "publishedAt": "2018-07-31T02:50:06Z",
+              "author": {
+                "login": "takke",
+                "url": "https://github.com/takke",
+                "avatarUrl": "https://avatars1.githubusercontent.com/u/73930?v=4"
+              }
+            },
+            {
+              "body": "@takke 補足ありがとうございます。てっきり、Android向けにOAuthのログインまわりが変わるのかなと思っていたのですが、より一般的な改善を目指しているのですね。ありがとうございました。",
+              "publishedAt": "2018-07-31T03:00:29Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/327",
+        "title": "TimingLogger",
+        "body": "https://developer.android.com/reference/android/util/TimingLogger\r\n\r\nパフォーマンス計測のログを仕込むのに便利なクラスです。不勉強にして初めて知りました……。API 1 から使えるのですね。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/326",
+        "title": "Leak Canary 1.6リリース",
+        "body": "https://medium.com/square-corner-blog/leakcanary-1-6-91fad513b5cf\r\n\r\n地味に色々と改善されているようです。ヒープ取るところがかなり重くて固まることが多かったのですが、そこが改善されているなら嬉しいですね。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/325",
+        "title": "Kotlinのwhenの条件節でvalを使えるようにする提案",
+        "body": "https://github.com/Kotlin/KEEP/blob/val-in-when-subject/proposals/val-in-when-subject.md\r\n\r\nissue では `if` でも同じことがしたいという提案がされています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/324",
+        "title": "Kotlin Fest 2018のチケット販売開始",
+        "body": "https://kotlin-fest-2018.peatix.com/\r\n\r\nすでにLT枠は売り切れてしまったようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/323",
+        "title": "androidxがAOSPに移行",
+        "body": "https://www.reddit.com/r/androiddev/comments/91bqzq/androidx_development_moving_to_aosp/\r\n\r\nandroidxがAOSPに移行したそうです。これでパッチも送れるし変更も追跡できるようになるとのことです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGFX9aQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGFX9aQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://android-developers.googleblog.com/2018/07/androidx-development-is-now-even-better.html\r\n\r\n公式ブログにも来ましたねー",
+              "publishedAt": "2018-07-27T02:01:53Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/322",
+        "title": "KotlinのLintツールDetektでカスタムルールを作る",
+        "body": "https://medium.com/@vanniktech/writing-your-first-detekt-rule-ee940e56428d\r\n\r\nKotlinのLintツールだと他にはktlintが有名です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/321",
+        "title": "Android Thingsが最高だった話",
+        "body": "http://masato-ka.hatenablog.com/entry/2018/07/22/202525",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Android Things",
+              "description": "",
+              "color": "b8f77e"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGEXiyg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGEXiyg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自分もDroidKaigiのワークショップに参加した程度ですが、センサーまわりが簡単に扱えるのはいいなと思いました。",
+              "publishedAt": "2018-07-23T23:34:50Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

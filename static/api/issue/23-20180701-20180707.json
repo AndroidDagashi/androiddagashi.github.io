@@ -1,0 +1,323 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzQ2NDg1MQ==",
+  "number": 23,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/23",
+  "title": "23-20180701-20180707",
+  "description": "Airbnbに続いてUdacityもReact Nativeをやめたようです。FragmentedにもGabrielが出て解説していましたので興味のある方はぜひ聞いてみてください。",
+  "closedAt": "2018-07-08T10:14:03Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhQ211s=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhQcc2E=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/293",
+        "title": "Kotlinにおける成功時の戻り値と例外を両方格納できるユニオン型の提案",
+        "body": "https://github.com/Kotlin/KEEP/blob/success-or-failure/proposals/stdlib/success-or-failure.md\r\n\r\n自分でsealed classを定義したりしている方も多いと思いますが、JetBrainsから正式に提案があったようです。いくつかの実例を交えて、なぜそのようなユニオン型が必要なのか説明しているだけでなく、濫用の危険性やなぜflatMapがないのか、他の言語はどうしているのか、など説明が多岐に渡っていて読み応えがあります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/292",
+        "title": "Firebaseの各機能を3行で説明する",
+        "body": "https://qiita.com/shibukk/items/4a015c5b3296563ac19d",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/291",
+        "title": "AirbnbのReact NativeサンセットについてFragmentedで話されたようです",
+        "body": "http://fragmentedpodcast.com/episodes/129/\r\nhttp://fragmentedpodcast.com/episodes/130/\r\n\r\n両方合わせて1時間半くらいありますが……。ブログをすでに読んでいればかなり聴き飛ばせると思います。個人的にはReact Nativeのイメージがつきすぎて困った話や、最終的にネイティブ開発者の方がはるかに多くなった話が興味深かったです。このあたりは採用と密接に関わるのかもしれません。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/290",
+        "title": "Android PでのTextViewまわりの改善",
+        "body": "https://android-developers.googleblog.com/2018/07/whats-new-for-text-in-android-p.html\r\n\r\n`PrecomputedText` というテキストのレイアウト処理の一部をバックグラウンド等で予め行える仕組みが追加されました。androidxで　`PrecomputedTextCompat` が提供されているのでAPI14から利用できますが、コードを見た限りだと実際に処理が有効になるのはAPI21以降のようです。\r\n\r\nまた、 `Magnifier` といういわゆる虫眼鏡機能も追加されています。これはTextViewだけでなく、WindowにアタッチされているViewならどんなものにでも使うことができます。\r\n\r\n他にもSmart Linkifyや `lineHeight` アトリビュートの追加など、盛りだくさんです。\t\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGAUsaQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGAUsaQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "I/Oのセッションでも一部話されていましたね。 https://www.youtube.com/watch?v=x-FcOX6ErdI",
+              "publishedAt": "2018-07-06T10:14:15Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/289",
+        "title": "Kotlin 1.2.51",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.2.51\r\n\r\nバグフィックスなリリースです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/288",
+        "title": "AndroidのCI時間を10分短縮し、開発を爆速にするためのKarakuriを作った話",
+        "body": "https://tech.mercari.com/entry/2018/07/04/110000",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI",
+              "description": "Continuous Integration",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/287",
+        "title": "Android Studioが壊れたときにすることリスト",
+        "body": "https://medium.com/google-developer-experts/android-studio-is-borked-my-checklist-for-fixing-build-issues-e41a9dd8cba8\r\n\r\n自分はClean Projectくらいで治ることが多いのですが、ご参考までに。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOF_3LfA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOF_3LfA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "databindingがビルドエラーになるときはよく `/<userhome>/.gradle/cache` 消したりしてましたね…\r\n[android-cache-fix-gradle-plugin](https://github.com/gradle/android-cache-fix-gradle-plugin)入れてからは大丈夫になりましたが",
+              "publishedAt": "2018-07-04T15:23:06Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/286",
+        "title": "完全に理解した気になるKotlin Coroutines",
+        "body": "https://speakerdeck.com/takahirom/wan-quan-nili-jie-sitaqi-ninaru-kotlin-coroutines\r\n\r\n実装に潜ったり自分で実装して理解しようとするのは良いアプローチに思えます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/285",
+        "title": "UdacityがReact Nativeをやめた理由",
+        "body": "https://engineering.udacity.com/react-native-a-retrospective-from-the-mobile-engineering-team-at-udacity-89975d6a8102\r\n\r\nAirbnbよりもかなり軽い使い方で、一部のfeatureの実装に使っていたようです。iOSチームとAndroidチームで評価が異なるのがおもしろいです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/284",
+        "title": "AirbnbがReact Nativeやめることについて、Appceleratorの見解",
+        "body": "https://www.appcelerator.com/blog/2018/06/airbnb-sunsets-react-native-what-does-it-mean-for-cross-platform-app-development/\r\n\r\nAxway AppceleratorはクロスプラットフォームアプリのSDK、Titanium SDKを作ってる会社です。いろいろ思い出のある方もいるのではないでしょうか。\r\nクロスプラットフォームなSDKを開発してるので当たり前な結論かもしれませんが、彼らも既存のアプリにクロスプラットフォームな要素を混ぜていくよりは一からクロスプラットフォームで作ったほうがいい、という意見のようです。\r\n\r\n最終的に自社プロダクトの宣伝になるのはまあお約束ですねｗ\t",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOF_sfeg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOF_sfeg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ネイティブとReactNativeを混ぜることをunusual、unwiseと強めの語句を使っているところはちょっとどうかなと思いますが、一から作った方がいいという点は同意ですね。\r\n\r\n余談ですが、読後の第一感は、Titaniumはまだがんばっていたのか、という失礼な印象でした :bowing_man: ",
+              "publishedAt": "2018-07-04T01:09:26Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/283",
+        "title": "Android P Beta 3",
+        "body": "https://android-developers.googleblog.com/2018/07/android-p-beta-3-is-now-available.html\r\n\r\nほぼ最終バージョンと一緒ということで、自分達のアプリを動かして確認することをすすめています。また7/19にredditでAndroid PについてAMA (Ask me anything)を行う予定だそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOF_X-cg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOF_X-cg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Beta 2のときの記事の日本語訳も出ているので、併せてどうぞ。\r\nhttps://developers-jp.googleblog.com/2018/07/android-p-beta-2-and-final-apis.html",
+              "publishedAt": "2018-07-03T02:52:58Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/282",
+        "title": "adb-enhanced",
+        "body": "https://ashishb.net/tech/introducing-adb-enhanced-a-swiss-army-knife-for-android-development/\r\n\r\nadbコマンドを使いやすくしたコマンドだそうです。まだ機能は多くはないようですが、興味があれば機能を足してみてはどうでしょうか。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,307 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzk2NjA4MA==",
+  "number": 51,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/51",
+  "title": "51 2019-01-20",
+  "description": "Android Studio 3.3、複数モジュール環境でのDI、Instant Runの後継機能Apply Changes、8月から64bitサポートが必須に、など。",
+  "closedAt": "2019-01-20T10:12:14Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhfoC_A=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhfGcV4=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/629",
+        "title": "Google Play App Translation Service",
+        "body": "https://android-developers.googleblog.com/2019/01/grow-your-app-business-internationally.html\r\n\r\nGoogle Playの開発者コンソールからアプリ内リソースの翻訳が依頼できるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGyvRKw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGyvRKw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自動翻訳ではなく、人間がやるのですね。Play Consoleで管理できるのはよさそうです。",
+              "publishedAt": "2019-01-20T11:01:46Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/628",
+        "title": "年収を共有するスレッド",
+        "body": "https://www.reddit.com/r/androiddev/comments/aflpre/can_we_have_a_salary_sharing_thread_wondering_if/\r\n\r\n日本人はいませんが、いろいろな国の人がシェアしています。\r\nやっぱり年収は気になるみたいですね🤔 ",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/627",
+        "title": "高セキュリティなアプリを作るためにどんなことを調べればいい？",
+        "body": "https://www.reddit.com/r/androiddev/comments/aha8lm/what_sort_of_things_should_i_look_into_for_high/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGyvQ0w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGyvQ0w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Certificate Pinningが推奨されていますが、自分の記憶が確かなら多少慎重になった方がよかったと思います。\r\nhttps://twitter.com/jessewilson/status/1004404492878663680\r\nhttps://cabforum.org/pipermail/public/2016-November/008989.html",
+              "publishedAt": "2019-01-20T11:00:11Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/626",
+        "title": "2019年8月から64bitサポートが必須に",
+        "body": "https://android-developers.googleblog.com/2019/01/get-your-apps-ready-for-64-bit.html\r\n\r\n以前からアナウンスがありましたが、いよいよ64bit版を提供しないアプリは一部例外を除いて更新や新規公開ができなくなるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/625",
+        "title": "JetBrains ToolboxでAndroid Studioが管理可能に",
+        "body": "https://blog.jetbrains.com/blog/2019/01/17/toolbox-app-1-13-with-android-studio/\r\n\r\n複数バージョンのASを入れている場合はバージョン固定などもてぎて便利そうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/624",
+        "title": "複数モジュール環境でのDI",
+        "body": "https://medium.com/androiddevelopers/dependency-injection-in-a-multi-module-project-1a09511c14b7\r\n\r\nPlaidの中の人による、マルチモジュールでどうDIするかという話です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/623",
+        "title": "Kotlin 1.3.20 EAP 3が利用可能に",
+        "body": "https://discuss.kotlinlang.org/t/kotlin-1-3-20-early-access-preview/10748\r\n\r\n主にバグフィックスのようですがMPPまわりでいくつか変更が入っているようです\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/622",
+        "title": "Android Studio 3.5 Alpha 1の新機能、Apply Changes",
+        "body": "https://www.reddit.com/r/androiddev/comments/agbjn4/android_studio_35_alpha_1_incudes_an_instant_run\r\nhttps://developer.android.com/studio/preview/features/\r\n\r\nAndroid Studio 3.5-alpha-1では、Apply ChangesというInstant Runを置き換える新機能が実装されました。\r\n\r\nこれはAPI 26から実装された機能を利用し実現しているようで、つまりAPI 26以降の端末・エミュレータでのみ使うことができます。\t\r\n\r\nまた現状はいろいろ制限があるようで、たとえばAPI26以降で利用できるといいつつも今の所API28以降でしか動かなかったり、x86_64なエミュレータは対象外です。\t",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGxumWA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGx9wtw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "> It does something very, very different. Instant Run had a very specific impact on build, instrumenting each of your classes at compile time to prepare them for being replaced during the runtime with a new version of the class. It also split your APK in several APKs to re-upload your app more incrementally.\r\n>\r\n> Apply Changes does nothing like it. Your APK is very much the same whether you use Apply Changes or not. Instead it relies on new runtime instrumentation capabilities of the ART VM to dynamic reload classes and replace them while the app is running. This is why it requires much newer versions of Android.\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/agbjn4/android_studio_35_alpha_1_incudes_an_instant_run/ee5f2w8/\r\n\r\nAndroid Studioの開発メンバーによるこのコメントがわかりやすかったです",
+              "publishedAt": "2019-01-16T14:23:42Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "このブログ記事にもありますが、どうやら「Instant Runは失敗なので別のアプローチにした」ということのようですね。\r\nhttps://androidstudio.googleblog.com/2019/01/android-studio-35-canary-1-available.html",
+              "publishedAt": "2019-01-17T05:14:32Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/621",
+        "title": "SMS/Callパーミッションのポリシーに適合しないアプリ削除が始まる",
+        "body": "https://android-developers.googleblog.com/2019/01/reminder-smscall-log-policy-changes.html\r\n\r\n[2019-01-06の49号](https://androiddagashi.github.io/issue/49-2019-01-06/)で触れたニュースの続報ですが、いよいよSMS/Callパーミッションを使っていて届出を出していないアプリは削除されるようです。ブログ記事内には削除された場合の対応についても載っています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/620",
+        "title": "Android Studio 3.3の安定板がリリース",
+        "body": "https://android-developers.googleblog.com/2019/01/android-studio-33.html\r\n\r\nパフォーマンスの向上が主な変更のようです。プロファイラのパフォーマンス向上は嬉しいですね。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/619",
+        "title": "バックグラウンドのアプリをkillするベンダーリスト",
+        "body": "https://dontkillmyapp.com/\r\n\r\n一部のベンダーは定期的にバックグラウンドのアプリをkillしているようです。Android OSの仕様とは別に専用のアプリを起動しているようで、睡眠トラッキングアプリなどは頭を悩ませているようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGw-Gyg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGw-Gyg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Android Centralのフォロー記事はこちら https://www.androidcentral.com/phone-makers-are-misusing-androids-memory-management-and-google-isnt-doing-anything\r\nRedditの議論はこちら https://www.reddit.com/r/androiddev/comments/afmfyv/phone_makers_are_messing_with_androids_memory/",
+              "publishedAt": "2019-01-14T13:21:20Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

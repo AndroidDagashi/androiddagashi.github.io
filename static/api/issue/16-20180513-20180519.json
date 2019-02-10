@@ -1,0 +1,241 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzM0MTc3NA==",
+  "number": 16,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/16",
+  "title": "16-20180513-20180519",
+  "description": "",
+  "closedAt": "2018-05-20T10:53:48Z",
+  "issues": {
+    "totalCount": 9,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhNY920=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhNHgtk=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/214",
+        "title": "LiveDataにStream API的なオペレータを追加する",
+        "body": "https://medium.com/@henrytao/chaining-livedata-like-rxjava-with-kotlin-extension-e3a2c15ac11\r\n\r\nこんな感じ。\r\n\r\n```kotlin\r\nval liveData: MutableLiveData<Boolean> = MutableLiveData()\r\nliveData\r\n  .distinct()\r\n  .filter { it == false }\r\n  .map { true }\r\n  .nonNull()\r\n  .observe(lifecycleOwner, { result ->\r\n    // result is non-null and always true\r\n  })\r\n ```\r\n\r\n拡張関数と`MediatorLiveData` で実現しているようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/213",
+        "title": "Dagger 2 は複雑すぎるという主張とそれに対する擁護および反論",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"en\" data-theme=\"light\"><p lang=\"en\" dir=\"ltr\">Whatever philosophical or technical issues Dagger 2 was created to address, it did so at the cost of the things that made Guice / Dagger 1 so easy to understand and use. The amount of time I spend munging with Dagger 2 configuration is 10x what I spent with Guice / D1.</p>&mdash; Rob Dickerson (@rcdickerson) <a href=\"https://twitter.com/rcdickerson/status/997236482351009792?ref_src=twsrc%5Etfw\">May 17, 2018</a></blockquote>\r\n\r\nちょっと長いですが、flavour ごとに component を切り替える話に始まって、それぞれの主張が入り混じっておもしろいです。ちなみに、RobもJakeもPyもRayもSquareで働いていたようです（時期が重なっているか分かりませんが）。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/212",
+        "title": "KotlinでService Locatorパターンをするスニペット",
+        "body": "https://www.reddit.com/r/androiddev/comments/8k6bal/gist_the_poor_mans_dagger_example_how_to/\r\n\r\n一般に Service Locator はそれほどよくないとされているようですが、ご参考までに。\r\n\r\nところで、reified type を使うと、型チェックやクラス型のオブジェクトを渡したり、といったことがなくなるのはいいですね。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/211",
+        "title": "Androidのホーム画面とナビゲーションUIの変遷",
+        "body": "https://medium.com/google-design/evolution-of-android-homescreen-and-navigation-bad189d536f2\r\n\r\n開発からはちょっと外れますが、こうして見てみるとかなり変わっていますね",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/210",
+        "title": "targetSdkVersionを26以上にするときに考慮すること",
+        "body": "http://y-anz-m.blogspot.jp/2018/05/io-recap-migrate-your-existing-app-to.html\r\n\r\n新規アプリだったら2018年8月以降のリリースで、既存アプリは2018年11月以降のアップデートで`targetSdkVersion >= 26` が求められます。\r\n\r\nいろいろやることがあるので頑張りましょう 💪 ",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/209",
+        "title": "Moshi v1.6.0はKotlinのコードを生成する",
+        "body": "https://medium.com/@sweers/exploring-moshis-kotlin-code-gen-dec09d72de5e\r\n\r\n\"Kotlinから使いやすいJavaコード\"ではなく、\"Kotlinで書かれたコード\"を生成するようです。\r\nこのお陰でリフレクションを利用せずよくなり、サイズが大きいことで有名な(2.8MBくらい？) `kotlin-reflect`を使う必要がなくなりました。\r\n\r\n今までMoshiのKotlinサポートにはジェネリクス周りで不具合があり、[Kotshi](https://github.com/ansman/kotshi)というJsonAdapter生成ライブラリが使われていましたが、これでMoshi単体で使えるようになりそうです。\r\n\r\nKotlinのコード生成には[KotlinPoet](https://github.com/square/kotlinpoet)というライブラリを使っています。\r\nKotlinのコードを生成するアノテーションプロセッサも今後増えていきそうですね 😇 ",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFz_ERA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFz_ERA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ちなみにMoshiは[Jake氏のペットのフレンチブルドッグ](https://twitter.com/MoshiFrenchie)の名前",
+              "publishedAt": "2018-05-18T00:23:44Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/208",
+        "title": "Chicago Robot 2018 のセッション動画が公開されたようです",
+        "body": "https://chicagoroboto.com/session-videos/\r\n\r\nまだすべては出揃っていませんが、じきに揃うと思います。Jake の Picasso のセッションが楽しみ。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/207",
+        "title": "CookpadがminSdkVersionを21に",
+        "body": "http://techlife.cookpad.com/entry/2018-05-15-android-minsdkversion-21\r\n\r\n\r\nこういう大きめのところも上げてくれると説得しやすい感ありますね。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFz0MkA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFz0MkA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "minSdkVersion の決め方も詳しく載っていていいですね。ぼくも 21 にしたいです。",
+              "publishedAt": "2018-05-17T14:01:00Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/206",
+        "title": "JakeがFlutter（Flutterとは言っていない）が I/O で大きく取り上げられたことに疑義を呈しているようです",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Another I/O with tons of questions to the Android framework and UI toolkit teams about building apps with an &quot;alternative&quot; framework. (1/7)</p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/996080298478665733?ref_src=twsrc%5Etfw\">May 14, 2018</a></blockquote>\r\n\r\n\r\n明言はしていませんが Skia と言っているし Flutter に見えます。感情的な強い反発に対して「いつ Flutter と言った？やり直し」と返しているところは、さすがだなと思いましたw\r\nhttps://twitter.com/JakeWharton/status/996356491190980608\r\n\r\n個人的には、自分も Web を進化させる方が筋が良いと思っていますが、どうでしょうね。クロスプラットフォームとホットリロードへの強い要求はよく分かります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFzszBg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFzszBg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "「AndroidとChromeの話だけど？」って言ってる箇所もあったりして、なかなか釣り上手ですねｗ\r\n<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">Who mentioned Flutter? I&#39;m talking about Android and Chrome.</p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/996090243605516288?ref_src=twsrc%5Etfw\">2018年5月14日</a></blockquote>",
+              "publishedAt": "2018-05-17T06:09:23Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

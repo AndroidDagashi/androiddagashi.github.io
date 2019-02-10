@@ -1,0 +1,386 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzg2NDA4OQ==",
+  "number": 45,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/45",
+  "title": "45 2018-12-09",
+  "description": "DroidKaigi 2019の参加受付が開始、2018年12月のAndroidXリリース、Kotlin Coroutine 1.0.0までに夏から変わったところ、など",
+  "closedAt": "2018-12-09T10:37:26Z",
+  "issues": {
+    "totalCount": 14,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhcvdwg=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhcUC7s=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/561",
+        "title": "Android/Kotlinのアドベントカレンダー",
+        "body": "Android: https://qiita.com/advent-calendar/2018/android\r\nAndroid その2: https://qiita.com/advent-calendar/2018/android2\r\nKotlin: https://qiita.com/advent-calendar/2018/kotlin\r\n\r\n今年も始まりました",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/560",
+        "title": "Data Bindingのエラーログが3.4.0-alpha07から見やすくなる",
+        "body": "https://satoshun.github.io/2018/12/databinding_decrease_error_log/\r\n\r\nまだリリースはされていないようですが、待望なのでたのしみです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/559",
+        "title": "Androidの公式エミュレータがFuchsiaのZirconカーネルをサポート",
+        "body": "https://9to5google.com/2018/12/05/android-emulator-fuchsia-zircon/\r\n\r\nというコミットが入ったよ、というだけでまだリリースはされていないようです。\r\n実際のコミットはこちら\r\nhttps://android-review.googlesource.com/c/platform/external/qemu/+/842155\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/558",
+        "title": "DroidKaigi 2019の参加受付が開始",
+        "body": "https://droidkaigi.doorkeeper.jp/events/83641\r\n\r\n早期割引と学生割引は受付終了していますが、一般参加はできるのでどうぞ。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/557",
+        "title": "Kotlin Coroutine 1.0.0までに夏から変わったところ",
+        "body": "http://sys1yagi.hatenablog.com/entry/2018/12/08/181232",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGo3zuA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGo3zuA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "scopeまわりは理解が難しいですよね。自分もまだドキュメントを読んだだけですが、実際に使ってみないと分かんなさそうな気がします。",
+              "publishedAt": "2018-12-09T04:36:29Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/556",
+        "title": "VectorDrawableで描画する",
+        "body": "https://medium.com/androiddevelopers/draw-a-path-rendering-android-vectordrawables-89a33b5e5ebf\r\n\r\n[先週紹介した記事](https://github.com/AndroidDagashi/AndroidDagashi/issues/543)の続きです。\r\n\r\n今回は実際にVectorDrawableを使っていく上でのいろいろなテクニックについて書かれています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/555",
+        "title": "React Nativeアプリのメモリリークを追いかける",
+        "body": "https://quipper.hatenablog.com/entry/2018/12/07/memory_leak_investigation",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGo31Pw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGo31Pw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "よくある感じのリークですが、Chrome Development Toolで調査できるのはいいですね。軽い補足としてはdiffを取る前にGCを必ず走らせておくとよいです。",
+              "publishedAt": "2018-12-09T04:48:05Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/554",
+        "title": "Google Play ServicesがAPI 14と15を切る",
+        "body": "https://android-developers.googleblog.com/2018/12/google-play-services-discontinuing.html\r\n\r\nPlay Servicesのバージョンを上げつつ、API 16未満をどうサポートするかという話も載っています。とはいえ、マルチAPKになるので、当然ながらAPI 16未満で新しいPlay Servicesは使うことはできません。実質的にはminSdkVersionを16以上にすることになりそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGo-Sgw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGo-Sgw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "感慨深い…。\r\nユーザ的にはうれしくないでしょうが、開発者的には福音ですねｗ",
+              "publishedAt": "2018-12-10T01:37:14Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/553",
+        "title": "WorkManager 1.0.0-alpha12",
+        "body": "https://developer.android.com/jetpack/docs/release-notes#december_5_2018\r\n\r\n- RxJava2に対応\r\n- FirebaseのJobDispatcherサポートを削除(`work-firebase`アーティファクトはもうメンテされない)\r\n\r\n他にもいくつか破壊的変更があります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/552",
+        "title": "Room 2.1.0-alpha03",
+        "body": "https://developer.android.com/jetpack/docs/release-notes#december_4_2018\r\n\r\nKotlin Coroutinesに対応したようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGo3w0w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGo3w0w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "CustomTokenizer対応は人によっては助かりそうです",
+              "publishedAt": "2018-12-09T04:14:20Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/551",
+        "title": "Flutter 1.0",
+        "body": "https://developers.googleblog.com/2018/12/flutter-10-googles-portable-ui-toolkit.html\r\n\r\n2018/12/04 16:00(UTC)から開催されたFlutterLiveで、Flutter 1.0が発表されました。\r\n各セッションの録画はこちらで公開されています\r\nhttps://developers.google.com/events/flutter-live/\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGnvwqg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGnvwqg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "FlutterをWeb上で動かす\"Hummingbird\"についても発表されました\r\nhttps://medium.com/flutter-io/hummingbird-building-flutter-for-the-web-e687c2a023a8\r\n",
+              "publishedAt": "2018-12-05T02:00:56Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/550",
+        "title": "Google Play ベスト オブ 2018",
+        "body": "https://japan.googleblog.com/2018/12/play-best-of-2018-top5.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/549",
+        "title": "Kotlin Coroutinesの実装パターンとアンチパターン",
+        "body": "https://proandroiddev.com/kotlin-coroutines-patterns-anti-patterns-f9d12984c68e",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGo3xyg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGo3xyg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "うーん、自分にはちょっとピンとこないものがいくつかありました。たとえば WorkManager の例はそもそもスコープを分けるべきな気がするのですが、どうなのでしょうか。\r\n\r\nあと冒頭の `coroutineScope` でラップする解決方法は[sys1yagiさんのブログ記事でやるな](http://sys1yagi.hatenablog.com/entry/2018/12/08/181232)と書いてある気がします。",
+              "publishedAt": "2018-12-09T04:21:33Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/548",
+        "title": "2018年12月のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/androidx-rn#2018-dec-03\r\n\r\n今回はalphaリリースばかりです\r\n\r\n- androidx.activity 1.0.0-alpha02\r\n- androidx.appcompat 1.1.0-alpha01\r\n- androidx.collection 1.1.0-alpha01\r\n- androidx.coordinatorlayout 1.1.0-alpha01\r\n- androidx.fragment 1.1.0-alpha02\r\n- androidx.loader 1.1.0-alpha01\r\n- androidx.media 1.1.0-alpha01\r\n- androidx.mediarouter 1.1.0-alpha01\r\n- androidx.recyclerview 1.1.0-alpha01\r\n- androidx.recyclerview-selection 1.1.0-alpha01\r\n- androidx.swiperefreshlayout 1.1.0-alpha01\r\n- androidx.textclassifier 1.0.0-alpha01\r\n- androidx.transition 1.1.0-alpha01\r\n- androidx.vectordrawable 1.1.0-alpha01",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGndeKw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGo3xPQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "- `AppCompatTextView`でcompound drawable(`app:drawableLeftCompat`など)が使えるように\r\n- androidx.collectionにJava8のAPI追加が始まる\r\n- `NestedScrollView`に続いて`CoordinatorLayout`や`RecyclerView`、`SwipeRefreshLayout`も`NestedScrollingParent3`を実装\r\n\r\nなどなど",
+              "publishedAt": "2018-12-04T09:26:29Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "androidx.collectionはJakeがやっているみたいですね\r\nhttps://twitter.com/JakeWharton/status/1069679080411414529",
+              "publishedAt": "2018-12-09T04:17:13Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
