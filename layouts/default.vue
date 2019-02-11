@@ -1,35 +1,25 @@
 <template>
   <v-app>
-    <app-header />
+    <app-header/>
     <v-content>
-      <v-container
-        fluid
-        fill-height
-        justify-center
-      >
-        <nuxt />
+      <v-container fluid fill-height justify-center>
+        <nuxt/>
       </v-container>
     </v-content>
-    <app-footer />
+    <app-footer/>
     <span v-if="didMount">
-      <script
-        async
-        defer
-        src="//platform.twitter.com/widgets.js"
-        charset="utf-8"
-      />
+      <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"/>
     </span>
   </v-app>
 </template>
 
 <script lang="ts">
-import AppHeader from '~/components/AppHeader.vue';
-import AppFooter from '~/components/AppFooter.vue';
-import Component from 'nuxt-class-component';
-import Vue from 'vue';
+import AppHeader from "~/components/AppHeader.vue";
+import AppFooter from "~/components/AppFooter.vue";
+import { Component, Vue } from "vue-property-decorator";
 
 @Component({
-  name: 'default-layout',
+  name: "default-layout",
   components: {
     AppHeader,
     AppFooter
@@ -45,6 +35,5 @@ export default class DefaultLayout extends Vue {
 </script>
 
 <style scoped>
-
 </style>
 

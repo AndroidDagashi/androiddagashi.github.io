@@ -6,16 +6,18 @@
   "author": "Yasuhiro Shimizu <the.phantom.bane@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nuxt",
-    "build": "cross-env NODE_ENV=production nuxt build",
-    "start": "cross-env NODE_ENV=production nuxt start",
+    "dev": "cross-env NODE_ENV=development nuxt-ts",
+    "build": "cross-env NODE_ENV=production nuxt-ts build",
+    "start": "cross-env NODE_ENV=production nuxt-ts start",
     "generateJson": "node buildscripts/githubapi-fetcher/index.js",
     "generateRssFeed": "node buildscripts/feed-generator/index.js",
-    "generate": "cross-env NODE_ENV=production nuxt generate",
+    "generate": "cross-env NODE_ENV=production nuxt-ts generate",
     "deploy": "push-dir --dir=dist --branch=master --cleanup --verbose",
     "deployUpstream": "push-dir --dir=dist --remote=upstream --branch=master --cleanup --verbose",
-    "lint": "eslint '**/*.{ts,vue,js}'",
-    "lintAndFix": "eslint --fix '**/*.{ts,vue,js}'"
+    "eslint": "eslint './buildscripts/**/*.{ts,vue,js}'",
+    "eslintfix": "eslint --fix './buildscripts/**/*.{ts,vue,js}'",
+    "tslint": "tslint --project .",
+    "tslintfix": "tslint --fix --project ."
   },
   "devDependencies": {
     "@types/lodash": "^4.14.120",
@@ -39,7 +41,9 @@
     "push-dir": "^0.4.1",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "ts-loader": "^5.3.3",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "tslint-plugin-prettier": "^2.0.1",
     "typescript": "^3.3.3"
   },
   "dependencies": {
@@ -48,14 +52,11 @@
     "luxon": "^1.11.2",
     "markdown-it": "^8.4.2",
     "modern-normalize": "^0.5.0",
-    "nuxt": "^2.3.4",
-    "nuxt-class-component": "^1.2.1",
-    "vue": "^2.5.22",
-    "vue-class-component": "^6.3.2",
+    "nuxt-ts": "^2.4.3",
+    "vue": "^2.6.5",
     "vue-property-decorator": "^7.3.0",
-    "vue-server-renderer": "^2.5.22",
-    "vuetify": "^1.4.2",
-    "vuex": "^3.0.1",
+    "vue-server-renderer": "^2.6.5",
+    "vuetify": "^1.5.0",
     "vuex-class": "^0.3.1"
   }
 }
