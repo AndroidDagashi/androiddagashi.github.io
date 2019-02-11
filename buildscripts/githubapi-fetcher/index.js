@@ -25,14 +25,6 @@ apolloFectch.use(({ request, options }, next) => {
 });
 
 /**
- * remove current json files.
- * @return {Void} Void
- */
-async function removeApiJsons() {
-  await del(`${API_DIR}/**/*.json`);
-}
-
-/**
  * create Android Dagashi issue page path from GitHub's milestone title
  * replace any spaces with '-'. You need to use `encodeURIComponent` if necessary.
  *
@@ -195,6 +187,5 @@ async function generateJsons() {
   }
 }
 
-removeApiJsons()
-  .then(() => generateJsons())
+generateJsons()
   .then(() => reportRateLimit());
