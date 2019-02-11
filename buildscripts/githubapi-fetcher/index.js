@@ -1,8 +1,7 @@
-/* eslint no-console: "off", typescript/no-var-requires: "off" */
+/* eslint no-console: "off", no-undef: "off", @typescript-eslint/no-var-requires: "off" */
 const config = require('./config');
 const fs = require('fs');
 const { createApolloFetch } = require('apollo-fetch');
-const del = require('del');
 
 const API_DIR = './static/api';
 
@@ -15,7 +14,7 @@ const rateLimitQuery = fs.readFileSync('./apollo/queries/getRateLimit.gql', 'utf
 
 // setup apollo
 const apolloFectch = createApolloFetch({ uri: config.api });
-apolloFectch.use(({ request, options }, next) => {
+apolloFectch.use(({ options }, next) => {
   if (!options.headers) {
     options.headers = {};
   }
@@ -180,7 +179,7 @@ async function generateJsons() {
     // generate json for each issue
     for (var i = 0; i < milestones.nodes.length; i++) {
       console.log('fetching milestone:', milestones.nodes[i].number);
-      var milestone = await generateIssueJson(milestones.nodes[i].number);
+      await generateIssueJson(milestones.nodes[i].number);
     }
   } catch (e) {
     console.error('Failed to generate json', e);

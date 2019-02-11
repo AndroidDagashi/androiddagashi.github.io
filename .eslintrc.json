@@ -1,15 +1,28 @@
 {
   "parser": "vue-eslint-parser",
-  "parserOptions":{
-    "parser": "typescript-eslint-parser"
+  "parserOptions": {
+    "parser": "@typescript-eslint/parser"
   },
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "extends": [
     "eslint:recommended",
     "plugin:vue/recommended",
-    "typescript"
+    "plugin:@typescript-eslint/recommended"
   ],
   "rules": {
     "vue/no-v-html": "off",
-    "vue/component-name-in-template-casing": "kebab-case"
+    "vue/component-name-in-template-casing": "kebab-case",
+    "@typescript-eslint/indent": [
+      "error",
+      2
+    ],
+    "@typescript-eslint/no-unused-vars": [
+      "warn",
+      {
+        "args": "after-used"
+      }
+    ]
   }
 }

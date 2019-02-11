@@ -1,53 +1,53 @@
-export type GHPageInfo = {
+export interface GHPageInfo {
   startCursor: string | null;
   endCursor: string | null;
   hasPreviousPage: boolean;
   hasNextPage: boolean;
-};
+}
 
-export type GHAuthor = {
+export interface GHAuthor {
   login: string;
   url: string;
   avatarUrl: string;
-};
+}
 
-export type GHComment = {
+export interface GHComment {
   body: string;
   publishedAt: string;
   author: GHAuthor;
-};
+}
 
-export type GHComments = {
+export interface GHComments {
   totalCount: number;
   pageInfo: GHPageInfo;
-  nodes: Array<GHComment>;
-};
+  nodes: GHComment[];
+}
 
-export type GHLabel = {
+export interface GHLabel {
   name: string;
   description: string | null;
   color: string;
-};
+}
 
-export type GHLabels = {
-  nodes: Array<GHLabel>;
-};
+export interface GHLabels {
+  nodes: GHLabel[];
+}
 
-export type GHIssue = {
+export interface GHIssue {
   url: string;
   title: string;
   body: string;
   labels: GHLabels;
   comments: GHComments;
-};
+}
 
-export type GHIssues = {
+export interface GHIssues {
   totalCount: number;
   pageInfo: GHPageInfo;
-  nodes: Array<GHIssue>;
-};
+  nodes: GHIssue[];
+}
 
-export type GHMilestone = {
+export interface GHMilestone {
   id: string;
   number: number;
   url: string;
@@ -55,26 +55,26 @@ export type GHMilestone = {
   closedAt: string;
   description: string | null;
   issues: GHIssues;
-};
+}
 
-export type GHMilestones = {
+export interface GHMilestones {
   totalCount: number;
   pageInfo: GHPageInfo;
-  nodes: Array<GHMilestone>;
-};
+  nodes: GHMilestone[];
+}
 
-export type GHRepository = {
+export interface GHRepository {
   name: string;
   description: string | null;
   milestones: GHMilestones;
-};
+}
 
 
-export type GHDigestIssue = {
+export interface GHDigestIssue {
   title: string;
-};
+}
 
-export type GHDigestMilestone = {
+export interface GHDigestMilestone {
   id: string;
   number: string;
   url: string;
@@ -84,16 +84,16 @@ export type GHDigestMilestone = {
   closedAt: string;
   issues: {
     totalCount: number;
-    nodes: Array<GHDigestIssue>;
+    nodes: GHDigestIssue[];
   };
-};
+}
 
-export type GHDigest = {
+export interface GHDigest {
   name: string;
   url: string;
   milestones: {
     totalCount: number;
-    nodes: Array<GHDigestMilestone>;
+    nodes: GHDigestMilestone[];
     pageInfo: GHPageInfo;
   };
-};
+}

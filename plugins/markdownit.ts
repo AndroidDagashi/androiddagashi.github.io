@@ -1,6 +1,6 @@
 import MarkdownIt from 'markdown-it';
 
-export default ({ app }, inject) => {
+export default (ctx, inject) => {
   const md = new MarkdownIt({
     html: true,
     breaks: true,
@@ -11,6 +11,7 @@ export default ({ app }, inject) => {
     return self.renderToken(tokens, idx, options);
   };
 
+  // eslint-disable-next-line @typescript-eslint/camelcase
   md.renderer.rules.link_open = function (tokens, idx, options, env, self){
     let aIndex = tokens[idx].attrIndex('target');
 

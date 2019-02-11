@@ -1,4 +1,4 @@
-/* eslint typescript/no-var-requires: "off" */
+/* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
 const fs = require('fs');
 const yaml = require('js-yaml');
 

@@ -1,4 +1,4 @@
-/* eslint typescript/no-var-requires: "off" */
+/* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
 import nodeExternals from 'webpack-node-externals';
 import parseArgs from 'minimist';
 import yaml from 'js-yaml';
@@ -13,7 +13,7 @@ const argv = parseArgs(process.argv.slice(2), {
     p: 'port'
   },
   string: ['H'],
-  unknown: parameter => false
+  unknown: () => false
 });
 
 const port =
@@ -31,7 +31,7 @@ const baseUrl = process.env.NODE_ENV === 'development'
   ? `http://${host}:${port}` : siteConfigs.baseUrl || `http://${host}:${port}`;
 
 
-const issueIds = indexJson.milestones.nodes.map((milestone, index, array) => `/issue/${milestone.path}`);
+const issueIds = indexJson.milestones.nodes.map((milestone) => `/issue/${milestone.path}`);
 
 module.exports = {
   env: {

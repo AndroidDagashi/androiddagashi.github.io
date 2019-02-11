@@ -103,11 +103,10 @@
 </template>
 
 <script lang="ts">
-import { mapState, mapMutations, mapGetters } from 'vuex';
+import { mapState } from 'vuex';
 import IssueLink from '~/components/IssueLink.vue';
 import { GHDigestMilestone, GHDigest, GHPageInfo } from 'types/GitHubApi';
 import flatmap from 'lodash.flatmap';
-import axios from '~/plugins/axios';
 import Component from 'nuxt-class-component';
 import { Action } from 'vuex-class';
 import Vue from 'vue';
@@ -115,9 +114,9 @@ import { SiteConfigContact } from 'types/SiteConfig';
 
 import * as ActionTypes from '~/store/ActionTypes';
 
-type VDividerItem = {
+interface VDividerItem {
   isDivider: boolean;
-};
+}
 
 @Component({
   name: 'index',

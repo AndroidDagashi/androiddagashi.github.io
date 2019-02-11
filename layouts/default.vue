@@ -25,7 +25,6 @@
 <script lang="ts">
 import AppHeader from '~/components/AppHeader.vue';
 import AppFooter from '~/components/AppFooter.vue';
-import { mapState } from 'vuex';
 import Component from 'nuxt-class-component';
 import Vue from 'vue';
 

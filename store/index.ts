@@ -1,5 +1,3 @@
-import getMilestones from '~/apollo/queries/getMilestones.gql';
-
 import { SiteConfig, SiteConfigRepository, SiteConfigContact } from '~/types/SiteConfig';
 
 import axios from '~/plugins/axios';
@@ -27,7 +25,7 @@ export const state = (): RootState => ({
   },
   authors: [],
   digest: null
-} as RootState);
+});
 
 export const mutations = {
   [MutationTypes.UPDATE_TITLE](state: RootState, title: string) {
@@ -48,7 +46,7 @@ export const mutations = {
   [MutationTypes.UPDATE_CONTACT](state: RootState, contact: SiteConfigContact) {
     state.contact = contact;
   },
-  [MutationTypes.UPDATE_AUTHORS](state: RootState, authors: Array<SiteConfigContact>) {
+  [MutationTypes.UPDATE_AUTHORS](state: RootState, authors: SiteConfigContact[]) {
     state.authors = authors;
   },
   [MutationTypes.UPDATE_DIGEST](state: RootState, { digest }: { digest: GHDigest }) {
@@ -66,7 +64,7 @@ export const mutations = {
 
 
 export const actions = {
-  async nuxtServerInit({ commit, dispatch }, { app, env }) {
+  async nuxtServerInit({ commit, dispatch }, { env }) {
     const { SITE_CONFIG: siteConfigStr } = env;
     const siteConfigs: SiteConfig = JSON.parse(siteConfigStr);
 
@@ -83,7 +81,9 @@ export const actions = {
 
   async [ActionTypes.FETCH_INITIAL_DIGEST]({ commit }) {
     let data;
+    // eslint-disable-next-line no-undef
     if (process.server) {
+      // eslint-disable-next-line no-undef
       data = JSON.parse(require('fs').readFileSync('./static/api/index.json', 'utf8'));
     } else {
       let res = await axios.get('/api/index.json');

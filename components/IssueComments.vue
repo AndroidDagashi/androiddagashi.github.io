@@ -71,7 +71,7 @@ export default class IssueComments extends Vue {
   @Prop() issue: GHIssue
 
   get commentsWithDivider() {
-    return flatmap(this.issue.comments.nodes, (comment: GHComment, index: number, array) => {
+    return flatmap(this.issue.comments.nodes, (comment: GHComment, index: number) => {
       if (index == 0){
         return [ comment ];
       } else {

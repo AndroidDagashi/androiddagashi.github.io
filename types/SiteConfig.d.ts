@@ -16,5 +16,5 @@ export interface SiteConfig {
   rssUrl: string;
   issueRepository: SiteConfigRepository;
   contact: SiteConfigContact;
-  authors: Array<SiteConfigContact>;
+  authors: SiteConfigContact[];
 }

@@ -82,7 +82,7 @@
 
 <script lang="ts">
 import { mapState } from 'vuex';
-import { GHMilestone, GHLabel } from 'types/GitHubApi';
+import { GHMilestone } from 'types/GitHubApi';
 import flatmap from 'lodash.flatmap';
 import IssueLabel from '~/components/IssueLabel.vue';
 import ShareWidgets from '~/components/ShareWidgets.vue';
@@ -146,10 +146,12 @@ export default class Issue extends Vue {
     return this.$route.params.id;
   }
 
-  async asyncData({ app, params }) {
+  async asyncData({ params }) {
     let data;
+    // eslint-disable-next-line no-undef
     if (process.server) {
       data = JSON.parse(
+        // eslint-disable-next-line no-undef
         require('fs').readFileSync(
           `./static/api/issue/${params.id}.json`,
           'utf8'
@@ -166,7 +168,7 @@ export default class Issue extends Vue {
   }
 
   get issuesWithDivider() {
-    return flatmap(this.milestone.issues.nodes, (value, index, array) => [
+    return flatmap(this.milestone.issues.nodes, (value) => [
       { isDivider: true },
       value
     ]);
