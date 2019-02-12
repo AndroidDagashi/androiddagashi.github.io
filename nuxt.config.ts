@@ -33,7 +33,7 @@ const baseUrl = process.env.NODE_ENV === 'development'
 
 const issueIds = indexJson.milestones.nodes.map((milestone) => `/issue/${milestone.path}`);
 
-module.exports = {
+export default {
   env: {
     SITE_CONFIG: JSON.stringify(siteConfigs)
   },
@@ -98,8 +98,7 @@ module.exports = {
     routes: issueIds
   },
   modules: [
-    '@nuxtjs/axios',
-    '~/modules/typescript'
+    '@nuxtjs/axios'
   ],
   plugins: [
     '~/plugins/vuetify.ts',

@@ -1,42 +1,22 @@
 /* eslint vue/no-v-html: "off"  */
 <template>
-  <v-layout
-    row
-    justify-center
-    align-center
-  >
-    <v-flex
-      xs12
-      sm12
-      md8
-    >
+  <v-layout row justify-center align-center>
+    <v-flex xs12 sm12 md8>
       <v-card>
-        <v-card-title class="headline">
-          #{{ milestone.title }}
-        </v-card-title>
+        <v-card-title class="headline">#{{ milestone.title }}</v-card-title>
         <v-card-text
           v-if="milestone.description"
           class="md-body"
           v-html="$md.render(milestone.description)"
         />
         <v-card-text>
-          <share-widgets />
+          <share-widgets/>
           <div>
             <template v-for="(item, index) in issuesWithDivider">
-              <v-divider
-                v-if="item.isDivider"
-                :key="index"
-              />
-              <article
-                v-else
-                :key="item.id"
-                class="mt-3"
-              >
+              <v-divider v-if="item.isDivider" :key="index"/>
+              <article v-else :key="item.id" class="mt-3">
                 <div>
-                  <h1
-                    class="mb-1"
-                    v-html="item.title"
-                  />
+                  <h1 class="mb-1" v-html="item.title"/>
                   <div class="text-xs-left mb-2">
                     <issue-label
                       v-for="(label, index2) in item.labels.nodes"
@@ -45,29 +25,13 @@
                       :index="index2"
                     />
                   </div>
-                  <div
-                    class="issue-body md-body"
-                    v-html="$md.render(item.body)"
-                  />
+                  <div class="issue-body md-body" v-html="$md.render(item.body)"/>
                   <v-container class="px-0">
-                    <v-layout
-                      v-if="item.comments.totalCount"
-                      row
-                    >
-                      <issue-comments :issue="item" />
+                    <v-layout v-if="item.comments.totalCount" row>
+                      <issue-comments :issue="item"/>
                     </v-layout>
-                    <v-layout
-                      row
-                      justify-end
-                    >
-                      <v-btn
-                        :href="item.url"
-                        class="mr-0"
-                        flat
-                        target="_blank"
-                      >
-                        GitHubで見る
-                      </v-btn>
+                    <v-layout row justify-end>
+                      <v-btn :href="item.url" class="mr-0" flat target="_blank">GitHubで見る</v-btn>
                     </v-layout>
                   </v-container>
                 </div>
@@ -81,61 +45,80 @@
 </template>
 
 <script lang="ts">
-import { mapState } from 'vuex';
-import { GHMilestone } from 'types/GitHubApi';
-import flatmap from 'lodash.flatmap';
-import IssueLabel from '~/components/IssueLabel.vue';
-import ShareWidgets from '~/components/ShareWidgets.vue';
-import IssueComments from '~/components/IssueComments.vue';
-import axios from '~/plugins/axios';
-import Component from 'nuxt-class-component';
-import Vue from 'vue';
+import { mapState } from "vuex";
+import { GHMilestone } from "types/GitHubApi";
+import flatmap from "lodash.flatmap";
+import IssueLabel from "~/components/IssueLabel.vue";
+import ShareWidgets from "~/components/ShareWidgets.vue";
+import IssueComments from "~/components/IssueComments.vue";
+import axios from "~/plugins/axios";
+import { Component, Vue } from "vue-property-decorator";
 
 @Component({
-  name: 'issue',
+  name: "issue",
   components: {
     IssueLabel,
     IssueComments,
     ShareWidgets
   },
   computed: mapState({
-    siteTitle: 'title',
-    description: 'description',
-    baseUrl: 'baseUrl'
-  })
+    siteTitle: "title",
+    description: "description",
+    baseUrl: "baseUrl"
+  }),
+  async asyncData({ route }) {
+    let data;
+    // eslint-disable-next-line no-undef
+    if (process.server) {
+      data = JSON.parse(
+        // eslint-disable-next-line no-undef
+        require("fs").readFileSync(
+          `./static/api/issue/${route.params.id}.json`,
+          "utf8"
+        )
+      );
+    } else {
+      const res = await axios.get(`/api/issue/${route.params.id}.json`);
+      data = res.data;
+    }
+    return {
+      milestone: data,
+      title: `#${data.title}`
+    };
+  }
 })
 export default class Issue extends Vue {
-  milestone: GHMilestone;
-  title: string = '';
+  milestone!: GHMilestone;
+  title: string = "";
 
   siteTitle!: string;
   description!: string;
   baseUrl!: string;
 
   head() {
-    let titleDescription = '';
+    let titleDescription = "";
     if (this.milestone.description) {
       titleDescription = `: ${this.milestone.description}`;
     }
     const title = `${this.title}${titleDescription} - ${this.siteTitle}`;
 
     return {
-      title: title,
+      title,
       meta: [
-        { property: 'og:title', content: title },
+        { property: "og:title", content: title },
         {
-          property: 'og:description',
+          property: "og:description",
           content: this.milestone.description || this.description
         },
-        { property: 'og:type', content: 'website' },
+        { property: "og:type", content: "website" },
         {
-          property: 'og:url',
+          property: "og:url",
           content: `${this.baseUrl}${this.$route.fullPath}`
         },
-        { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` },
+        { property: "og:image", content: `${this.baseUrl}/image/logo.jpg` },
         {
-          name: 'description',
-          hid: 'description',
+          name: "description",
+          hid: "description",
           content: this.milestone.description || this.description
         }
       ]
@@ -146,29 +129,8 @@ export default class Issue extends Vue {
     return this.$route.params.id;
   }
 
-  async asyncData({ params }) {
-    let data;
-    // eslint-disable-next-line no-undef
-    if (process.server) {
-      data = JSON.parse(
-        // eslint-disable-next-line no-undef
-        require('fs').readFileSync(
-          `./static/api/issue/${params.id}.json`,
-          'utf8'
-        )
-      );
-    } else {
-      let res = await axios.get(`/api/issue/${params.id}.json`);
-      data = res.data;
-    }
-    return {
-      milestone: data,
-      title: `#${data.title}`
-    };
-  }
-
   get issuesWithDivider() {
-    return flatmap(this.milestone.issues.nodes, (value) => [
+    return flatmap(this.milestone.issues.nodes, value => [
       { isDivider: true },
       value
     ]);
