@@ -29,7 +29,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { Component, Vue, Prop } from "nuxt-property-decorator";
 import { GHIssue, GHComment } from "types/GitHubApi";
 import flatmap from "lodash.flatmap";
 import { DateTime } from "luxon";

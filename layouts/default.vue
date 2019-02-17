@@ -16,7 +16,7 @@
 <script lang="ts">
 import AppHeader from "~/components/AppHeader.vue";
 import AppFooter from "~/components/AppFooter.vue";
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from "nuxt-property-decorator";
 
 @Component({
   name: "default-layout",

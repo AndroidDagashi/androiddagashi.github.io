@@ -7,7 +7,7 @@
 <script lang="ts">
 import { GHLabel } from "types/GitHubApi";
 import { mapState } from "vuex";
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { Component, Vue, Prop } from "nuxt-property-decorator";
 import { SiteConfigRepository } from "types/SiteConfig";
 
 @Component({

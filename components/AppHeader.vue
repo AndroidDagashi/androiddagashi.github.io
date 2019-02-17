@@ -12,7 +12,7 @@
 
 <script lang="ts">
 import { mapState } from "vuex";
-import { Component, Vue } from "vue-property-decorator";
+import { Component, Vue } from "nuxt-property-decorator";
 
 @Component({
   name: "app-header",

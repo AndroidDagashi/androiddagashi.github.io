@@ -9,7 +9,7 @@
 
 <script lang="ts">
 import { GHDigestMilestone } from "types/GitHubApi";
-import { Component, Vue, Prop } from "vue-property-decorator";
+import { Component, Vue, Prop } from "nuxt-property-decorator";
 
 @Component({
   name: "issue-link"
