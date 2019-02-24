@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://androiddagashi.github.io/</id>
     <title>Android Dagashi</title>
-    <updated>2019-02-17T10:49:45.000Z</updated>
+    <updated>2019-02-24T10:36:26.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Android Dagashi</name>
@@ -23,6 +23,15 @@
         <name>@hydrakecat</name>
         <uri>https://twitter.com/hydrakecat</uri>
     </contributor>
+    <entry>
+        <title type="html"><![CDATA[#56 2019-02-24]]></title>
+        <id>https://androiddagashi.github.io/issue/56-2019-02-24</id>
+        <link href="https://androiddagashi.github.io/issue/56-2019-02-24">
+        </link>
+        <updated>2019-02-24T10:36:26.000Z</updated>
+        <summary type="html"><![CDATA[<p>アプリの名前を変えたらストアから削除された話、GoogleによるAndroid開発者向けサーベイ、ViewPager2の仕組み、Apply Changesの裏側、など</p>
+Kotlin DSL を考慮した Gradle Plugin を記述するために必要だったこと/ViewPager2の仕組み/Kotlinがいかにしてメモリリークを避ける助けになるか/Androidアプリのモジュール化について/AAC Navigation 1.0.0-rc1リリース/Apply Changesの裏側/2019年秋からPlay Storeでの公開にはtargetSdkVersion 28が必須/GoogleによるAndroid開発者向けサーベイ/KotlinConf 2019のCall for Speakersが開始/メッセージングアプリのSignalがPlay Storeのアップデートでトラブル/Android Qで戻るボタンが消えるという噂/アプリの名前を変えたらストアから削除された話]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[#55 2019-02-17]]></title>
         <id>https://androiddagashi.github.io/issue/55-2019-02-17</id>
@@ -456,13 +465,5 @@ Kotlin Coroutinesの色々な使い方/バージョン15からPlay servicesとFi
         </link>
         <updated>2018-03-27T11:01:55.000Z</updated>
         <summary type="html"><![CDATA[Caster.IOでReact Nativeの入門コースが3/21まで無料/Firebase Remote ConfigのREST APIが提供開始/Googleの画像をセマンティックに分割するライブラリがオープンソースになったらしい/Android Studio 3.2 Canary 6/4年の開発が積み重なったアプリへのリファクタリング手法/設計にみるAWA Androidアプリのこれまでとこれから/“good”から”great”なUIアニメーションに進化させるためのtips/How to Kontribute (V3) - Setup/navigationというリソースタイプがAAPT2に追加されて物議を醸しているそうです/いいリードAndroidエンジニアに必要な素質   /元GooglerによるGoogle Androidプラットフォーム批判]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[#6-20180304-20180310]]></title>
-        <id>https://androiddagashi.github.io/issue/6-20180304-20180310</id>
-        <link href="https://androiddagashi.github.io/issue/6-20180304-20180310">
-        </link>
-        <updated>2018-03-24T13:31:15.000Z</updated>
-        <summary type="html"><![CDATA[DroidKaigi 2018のアプリについて/信頼のThe CommonsBlogによるPの変更点の解説/正式にサポートライブラリでないFragmentとLoaderのdeprecatedがアナウンスされたようです/Picassoの生存を確認(v2.71828がリリースされた模様)/Android Studio 3.1 RC と 3.2 Canary 5/Android Things Developer Preview 7のおしらせ/SharedPreferencesの仕組み/PSA: v27.1.0のViewModelだと親Activityがfinishしても、子FragmentのViewModel#onClearedが呼ばれないらしい/Kotlinでの色々な条件文の書き方/このdestructuring extensionはたしかによさそう/support library 28.0.0-alpha1/Android P Developer Preview/スタートアップでAndroidチームは何人がいいか？という議論/恒例のハンガリアン記法論争ふたたび/BazelがどうAndroidをビルドするか/Gradle moduleの依存グラフを出力してくれるライブラリ]]></summary>
     </entry>
 </feed>
