@@ -1,0 +1,388 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDE4NzYwNg==",
+  "number": 62,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/62",
+  "title": "62 2019-04-07",
+  "description": "Android Q Beta2、Android開発でもっと早く知っておけばよかったこと、CameraX Support Library、ViewCompiler、Kotlin CoroutinesのFlow APIプレビュー版、など",
+  "closedAt": "2019-04-07T10:20:16Z",
+  "issues": {
+    "totalCount": 13,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhmhGYY=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhl7CVw=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/758",
+        "title": "Android Emulator 29.0.1 Canary",
+        "body": "https://androidstudio.googleblog.com/2019/04/emulator-2901-canary.html\r\n\r\nFoldableデバイスが使えるようになって、Qに必要なRAMサイズが2GBに上がったそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/757",
+        "title": "Androidのイースターエッグを見つけたがGoogleに採用はされなかった話",
+        "body": "https://www.reddit.com/r/androiddev/comments/b9q0rx/how_i_discovered_an_easter_egg_in_androids/\r\n\r\nDroidGuardを解析していたら「よく見つけたね。ここにメールを。」というメッセージを発見してメールしたけれど、とくに就職はできなかったという話です。経緯もおもしろいですが、DroidGuardが何をしているかという説明も興味深いです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/756",
+        "title": "Kotlin Coroutines 1.2.0-alpha-2にFlow(cold streams)のプレビュー版が追加される",
+        "body": "https://www.reddit.com/r/androiddev/comments/b9dvxe/flowpreview_cold_streams_in_kotlin_coroutines/\r\nhttps://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.2.0-alpha-2\r\n\r\nプレビュー版なのでまだまだ仕様変更も多そうですが、ついにやってきました。\r\n結構RxJavaに似たAPIに見えます。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHJ6QrQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHKNNmQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ずっとKotlin Multiplatform環境でも使えるRxがほしかったのですが、これでだいぶ捗りそうです",
+              "publishedAt": "2019-04-05T05:34:04Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "いちおうReactive Streams準拠なんですね。自分はちょっと使う機会なさそうですが興味深いです。",
+              "publishedAt": "2019-04-06T01:46:28Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/755",
+        "title": "ViewCompiler",
+        "body": "https://www.reddit.com/r/androiddev/comments/b9fy2p/android_q_beta_2_contains_a_new_experimental/\r\nhttps://android.googlesource.com/platform/frameworks/base/+/master/startop/view_compiler/README.md\r\n\r\nAndroid Q Beta2でLayout XMLをJavaコードにコンパイルするコマンドラインツールが追加されたそうです。\r\nまだいろいろ制約が多いですが、実際に使えるものになったら面白そうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHJ6NpQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHJ6YCw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditのスレを読むまで知らなかったのですが、Jake Wharton氏もなにやら `R.id.*` や `R.layout.*` を消すための\"なにか\"を作っているようです",
+              "publishedAt": "2019-04-05T05:28:58Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "スレッドでRomain Guy氏も指摘していますが、素のXMLではなくバイナリ化されているんですよね。ただinflate時にリフレクションが走ることは確かだと思うので、そこが削減できるならいいかもしれません。余談ですが、JakeもRomainも初耳みたいなのがちょっと面白いですね。",
+              "publishedAt": "2019-04-05T05:46:34Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/754",
+        "title": "Android Dev Summit 2019の日程が発表",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">🚨 Big Announcement 🚨<br><br>Something awesome this way comes. Save the date! Wait ... <a href=\"https://t.co/bjd1afXedC\">pic.twitter.com/bjd1afXedC</a></p>&mdash; Android Developers (@AndroidDev) <a href=\"https://twitter.com/AndroidDev/status/1113833681381089281?ref_src=twsrc%5Etfw\">April 4, 2019</a></blockquote>\r\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nとても分かりにくいですがGIF画像を解読すると Android Dev Summit が 10/23-24 に開催されるという内容のようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHJ4sGA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHJ4sGA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "途中で止めると \"#AndroidDevSummit\" という文字列と \"4f 63 74 6f 62 65 72 20 32 33 2d 32 34\" という文字列が読み取れます。後者はASCIIコードで\"October 23-24\"と読めます。",
+              "publishedAt": "2019-04-05T02:30:11Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/753",
+        "title": "今週のAndroidXの更新",
+        "body": "https://developer.android.com/jetpack/androidx/releases\r\n\r\nたくさんあります",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHJfSxg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHJfSxg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "目立つところだと `Annotation` の `@ContentView` の挙動が変わって、代わりにActivityやFragmentのコンストラクタでレイアウトIDを指定できるようになったことでしょうか。\r\n\r\n[DataBindingとActivityのコンストラクタ Layout Id指定を一緒に使う - stsnブログ](https://satoshun.github.io/2019/04/jetpack-coroutine-support/)も参考になります。",
+              "publishedAt": "2019-04-04T01:08:28Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/752",
+        "title": "CameraX Support Library",
+        "body": "https://events.google.com/io/schedule/events/8d400240-f31f-4ac2-bfab-f8347ef3ab3e\r\n\r\n詳細は不明ですが、Jetpackにカメラ向けのライブラリが入るようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/751",
+        "title": "Android Q Beta 2",
+        "body": "https://android-developers.googleblog.com/2019/04/android-q-beta-2-update.html\r\n\r\nBeta 2が出ました。いくつかのAPIが追加されていますし、Foldableのエミュレータも使えるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHJfBHA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHJfBHA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Bubbles APIは要注目かもしれません。使いたい人は多そうです。",
+              "publishedAt": "2019-04-04T00:41:30Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/750",
+        "title": "Androidのセキュリティおよびプライバシーレビュー2018年版",
+        "body": "https://source.android.com/security/reports/Google_Android_Security_2018_Report_Final.pdf\r\n\r\nhttps://japan.zdnet.com/article/35135096/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/749",
+        "title": "生成コードの最適化",
+        "body": "https://jakewharton.com/optimizing-bytecode-by-manipulating-source-code/\r\n\r\n[前回](https://jakewharton.com/the-economics-of-generated-code/)の続きで、Annotation ProcessorのようなJavaコードを生成するときに、さらにどのような最適化が可能か詳述しています。なかなか興味深い記事でした。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHJEqzw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHJEqzw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ふだんは意識する必要ないことですが、Javaコードをどう書くと最適化されたバイトコードが生成されるか、というのはおもしろいですね。",
+              "publishedAt": "2019-04-03T00:48:13Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/748",
+        "title": "Android開発でもっと早く知っておけばよかったこと",
+        "body": "https://www.reddit.com/r/androiddev/comments/b877eq/devs_of_reddit_what_is_something_that_you_learned/\r\n\r\nいくつか挙がっていて、どれもおもしろいです :-)",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/747",
+        "title": "ARTプロファイルを使ったアプリ起動の高速化",
+        "body": "https://android-developers.googleblog.com/2019/04/improving-app-performance-with-art.html\r\n\r\nユーザーも開発者も意識しないうちにアプリを高速化する仕組みについての解説です。匿名のアプリ利用時のプロファイル情報を集めて高速化するそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/746",
+        "title": "Kotlin 1.3.30 EAP3がリリース",
+        "body": "https://github.com/JetBrains/kotlin/releases/v1.3.30-eap-125\r\n\r\n以前紹介しましたが、kaptのインクリメンタルビルドサポートが入ったりしています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHInj8w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHInj8w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "AndroidのNonNull/Nullableアノテーションもサポートされるようですね。YouTrackの該当issueを見ると、どうやらQをターゲットにしていてKotlin 1.3.30を使っていると、nullnessが違ったときにコンパイルエラーにしてくれるようです。",
+              "publishedAt": "2019-04-02T00:45:35Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
