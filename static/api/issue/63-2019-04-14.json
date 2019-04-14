@@ -1,0 +1,353 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDIwNzI5Nw==",
+  "number": 63,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/63",
+  "title": "63 2019-04-14",
+  "description": "Kotlin 1.3.30リリース、Android StudioのLintパフォーマンス改善、Cold flows, hot channels、など。",
+  "closedAt": "2019-04-14T10:42:59Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLAzhnOWC8=",
+      "endCursor": "Y3Vyc29yOnYyOpLAzhmz7kk=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/769",
+        "title": "Square Cashのアーキテクチャ",
+        "body": "https://speakerdeck.com/egorand/u-plus-2019-modern-android-architecture\r\n動画：https://www.youtube.com/watch?v=z3u10ynX-VA&feature=youtu.be&t=7104\r\n\r\nSquareのCashアプリのアーキテクチャのオーバービューです。スライドだけだと分かりづらいですが、自分たちに必要なものをOSSプロジェクトにうまく切り出しているところが興味深かったです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHMkzVw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHMkzVw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "API周りのBlockerの仕組みはフレキシブルでとても良さそうでした。\r\n\r\nPresenterが基本的にpure function、というのも面白いですね。MVIというかCycle.jsぽさを感じました",
+              "publishedAt": "2019-04-14T10:58:22Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/768",
+        "title": "Android StudioのLintパフォーマンス改善",
+        "body": "https://medium.com/androiddevelopers/android-studio-project-marble-lint-performance-8baedbff2521\r\n\r\nAndroid Studio 3.3から始まったProject Marbleの一環としてAndroid Lintのパフォーマンスを改善した話です。[Android Lint用のプロファイラ](https://github.com/google/android-lint-performance-probe)も公開されているようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHMkPnQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHMkPnQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "去年のAndroid Dev Summitのファイヤーサイドチャットで「Lintが遅いんだけれど？」という質問に対してTorが「Lintのパフォーマンスは我々のフォーカスではない」と言っていましたが、なんのかんので改善してくれたようで有りがたいです。",
+              "publishedAt": "2019-04-14T09:44:46Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/767",
+        "title": "Dagger2のComponent.Factory",
+        "body": "https://proandroiddev.com/dagger-and-the-shiny-new-component-factory-c2234fcae6b1\r\nhttps://www.reddit.com/r/androiddev/comments/bbwwqz/dagger_and_the_shiny_new_componentfactory/\r\n\r\n2.22から追加された`@Component.Factory`は、Builderパターンで外部からの依存を`@BindInstance`する`@Component.Builder`と異なり、createメソッドの引数を直接`@BindInstance`することができます。\r\n\r\nこれで外部からの依存を渡し忘れてランタイムにクラッシュする、ということがなくなります。\r\nredditに記載されているコードスニペットがわかりやすいです。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHMkRIA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHMkRIA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "コンポーネント作成時に渡すものが少ないならFactoryの方がよさそうですね。個人的にもFactoryの方が好みです。",
+              "publishedAt": "2019-04-14T09:49:43Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/766",
+        "title": "最近のAndroid開発ってどんな感じなの？",
+        "body": "https://www.reddit.com/r/androiddev/comments/bcevyg/how_is_the_current_android_development_landscape/\r\n\r\nOPはKitKatの時代にAndroid開発をしていて、最近また再開しようとしているそうです。\r\nKitKatは2013年10月末のリリースです。\r\nこうして振り返ってみるといろいろなことが変わっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHMjkSA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHMkQqA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "一番評価の高いコメント、OPのタイトルとあわせると洒落が効いていておもしろいです",
+              "publishedAt": "2019-04-14T07:43:36Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "いいコメントですね。LiveDataなどの利用で画面回転固定のアプリがもうすこし減ってくれるといいですね :-)",
+              "publishedAt": "2019-04-14T09:48:13Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/765",
+        "title": "Android開発を経験した後にiOS開発を勉強し始めるのってどんな感じ？",
+        "body": "https://www.reddit.com/r/androiddev/comments/bcosru/how_is_it_like_learning_ios_development_after/\r\n\r\n\r\nAndroidの方が好きな人もiOSが好きな人もいて、意見が割れている印象です。\r\nあんまり突っ込むと宗教戦争になりそうですが。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/764",
+        "title": "Kotlin Multiplatform ProjectでのMVPアーキテクチャ",
+        "body": "https://medium.com/@liewjuntung/mvp-in-kotlin-multiplatform-4b828f18ed63\r\n\r\n\t",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/763",
+        "title": "ML Kitに自然言語処理系のAPIが追加される",
+        "body": "https://proandroiddev.com/android-settings-panels-app-engagement-f21aecfa443\r\n\r\n言語認識とスマートリプライが可能になったようです。\r\nスマートリプライはGmailやGoogle Assistantで見かける、内容に沿った返信の候補を挙げる機能です\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/762",
+        "title": "JankTestでUIのパフォーマンスをテストする",
+        "body": "https://proandroiddev.com/deep-dive-into-writing-performance-tests-with-janktest-46494e46b43\r\n\r\nAndroidXのテストライブラリに、UIのパフォーマンスを測定し、jank(遅延したり描画されなかったフレームのこと)を検出するための `JankTestHelper` というものがあるそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/761",
+        "title": "Kotlin 1.3.30リリース",
+        "body": "https://blog.jetbrains.com/kotlin/2019/04/kotlin-1-3-30-released\r\n\r\n更新履歴はこちら\r\nhttps://github.com/JetBrains/kotlin/blob/1.3.30/ChangeLog.md\r\n\r\nインクリメンタルビルド対応をはじめ、KAPTのパフォーマンス改善施策がいくつか含まれています。\r\n\r\nKotlin/Native周りだと、CocoaPodsの実験的なサポートが追加されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHMjfMw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHMjfMw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://www.reddit.com/r/androiddev/comments/bcix8v/kotlin_1330_released/\r\n\r\nredditの反応はこちら\r\n\r\n私も経験しましたが、Daggerで`@IntoMap`/`@MapKey`使ってMapを作り、`Map<Class<out ViewModel>, Provider<ViewModel>>`的なものをInjectするような作りになっているコードだと、コンパイルに失敗します。\r\nhttps://github.com/google/dagger/issues/1478\r\nhttps://youtrack.jetbrains.com/issue/KT-30979\r\n\r\nひとまずのworkaroundは`@MapKey`使うアノテーションをJavaにすることだそうですが、KClassの挙動がおかしい可能性があるので別の場所でも問題になるかもしれません。",
+              "publishedAt": "2019-04-14T07:20:54Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/760",
+        "title": "RecyclerViewで画面を作る",
+        "body": "https://techlife.cookpad.com/entry/2019/04/11/130000\r\n\r\nScrollView系を使わずに、Groupieを利用してRecyclerViewで複雑な画面をつくったそうです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHLsEAw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHMbAHw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Epoxyなんかは一覧だけでなくこの系統の画面作成に特化しているようなイメージありますが、RecyclerViewベースでUIつくると差分更新が楽で好みです。\r\n\r\nMVI/Redux系のアーキテクチャとも親和性高いです",
+              "publishedAt": "2019-04-11T08:24:06Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "ScrollViewが全体を最初にinflateするのに比べてパフォーマンスもよさそうですね",
+              "publishedAt": "2019-04-13T08:06:12Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/759",
+        "title": "Cold flows, hot channels",
+        "body": "https://medium.com/@elizarov/cold-flows-hot-channels-d74769805f9\r\n\r\nKotlin Coroutineの開発者Romanによる[Kotlin Coroutines 1.2.0-alpha-2にFlow(cold streams)のプレビュー版が追加される](https://github.com/AndroidDagashi/AndroidDagashi/issues/756)で追加されたFlowの解説です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHMktBQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHMktBQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Kotlin Slackで見かけましたが、Jake氏もさっそくSqlDelightのFlow対応を始めたようです",
+              "publishedAt": "2019-04-14T10:44:45Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
