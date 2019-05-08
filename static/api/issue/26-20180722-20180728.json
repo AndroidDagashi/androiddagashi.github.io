@@ -4,7 +4,7 @@
   "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/26",
   "title": "26-20180722-20180728",
   "description": "Android P Beta4、Kotlin 1.3-M1、WorkManager alpha3、Android Thingsが最高だった話、Dagger論争",
-  "closedAt": "2018-07-29T10:32:02Z",
+  "closedAt": "2018-07-29T03:32:02Z",
   "issues": {
     "totalCount": 15,
     "pageInfo": {
@@ -92,7 +92,7 @@
           "nodes": [
             {
               "body": "`capturing when subject in a variable`も良さそうですねー",
-              "publishedAt": "2018-07-27T02:10:17Z",
+              "publishedAt": "2018-07-26T19:10:17Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -120,7 +120,7 @@
           "nodes": [
             {
               "body": "Dannyの「適切なライブラリを選ぶべき」という主張は分かりますが、自分は依存関係を自動で解決してくれないDIライブラリにどれくらい価値があるのかはやや疑問に思っています。また Danny のスライドはこれだけ見るとちょっと Jake を挑発しすぎで逆鱗に触れてしまったような気もします :sweat_smile: ",
-              "publishedAt": "2018-07-26T06:41:50Z",
+              "publishedAt": "2018-07-25T23:41:50Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -148,7 +148,7 @@
           "nodes": [
             {
               "body": "https://developer.android.com/preview/behavior-changes?hl=ja\r\nPでの動作変更点はこちらにまとまっています",
-              "publishedAt": "2018-07-26T08:59:38Z",
+              "publishedAt": "2018-07-26T01:59:38Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -157,7 +157,7 @@
             },
             {
               "body": "いちユーザとしてはShush機能を心待ちにしているのですが、ぜんぜん来なくて悲しいです :cry: ",
-              "publishedAt": "2018-07-27T00:52:48Z",
+              "publishedAt": "2018-07-26T17:52:48Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -185,7 +185,7 @@
           "nodes": [
             {
               "body": "https://blog.twitter.com/developer/ja_jp/topics/tools/2018/jp-new-developer-requirements-to-protect-our-platform.html\r\n\r\n日本語の記事も来てますね。\r\nAPIのレート制限も厳しくなるので、制限緩和申請の承認基準次第ですが、いろいろ厳しくなりそうです……",
-              "publishedAt": "2018-07-25T09:34:13Z",
+              "publishedAt": "2018-07-25T02:34:13Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -213,7 +213,7 @@
           "nodes": [
             {
               "body": "ちょっとだけ補足しておきますね。\r\n\r\nTwitter4A は Twitter4J の Android 向けのフォークですが、Android 向けという意味では(maven ではなく)gradle でビルドできるようにした程度です。\r\nTwitter4J は 2016/12 の v4.0.6 から更新されておらず、最新のTwitterの機能にいち早く対応するためのフォークという位置づけになります。\r\n\r\n8/16 に予定されている新DM APIへの完全移行(現行のDM APIは廃止される)や、動画の投稿、140文字を超えるツイートのための機能などが必要な方のためにリリースしました。\r\n\r\nちなみにTwitterの公式SDKとは全く別物です。",
-              "publishedAt": "2018-07-31T02:50:06Z",
+              "publishedAt": "2018-07-30T19:50:06Z",
               "author": {
                 "login": "takke",
                 "url": "https://github.com/takke",
@@ -222,7 +222,7 @@
             },
             {
               "body": "@takke 補足ありがとうございます。てっきり、Android向けにOAuthのログインまわりが変わるのかなと思っていたのですが、より一般的な改善を目指しているのですね。ありがとうございました。",
-              "publishedAt": "2018-07-31T03:00:29Z",
+              "publishedAt": "2018-07-30T20:00:29Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -340,7 +340,7 @@
           "nodes": [
             {
               "body": "https://android-developers.googleblog.com/2018/07/androidx-development-is-now-even-better.html\r\n\r\n公式ブログにも来ましたねー",
-              "publishedAt": "2018-07-27T02:01:53Z",
+              "publishedAt": "2018-07-26T19:01:53Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -398,7 +398,7 @@
           "nodes": [
             {
               "body": "自分もDroidKaigiのワークショップに参加した程度ですが、センサーまわりが簡単に扱えるのはいいなと思いました。",
-              "publishedAt": "2018-07-23T23:34:50Z",
+              "publishedAt": "2018-07-23T16:34:50Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",

@@ -4,7 +4,7 @@
   "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/66",
   "title": "66 2019-05-05",
   "description": "AS3.5でのレイアウトエディタの改善、MicrosoftのAndroidエンジニアブログ、Kotlinのビルドパフォーマンス、AndroidでのCoroutine、「ヤバそうな」Kotlinコード、など",
-  "closedAt": "2019-05-05T10:19:48Z",
+  "closedAt": "2019-05-05T03:19:48Z",
   "issues": {
     "totalCount": 10,
     "pageInfo": {
@@ -50,7 +50,7 @@
           "nodes": [
             {
               "body": "Redditのスレの[Jakeのこのコメント](https://www.reddit.com/r/androiddev/comments/bjrree/android_rx_onerror_guidelines/embcabf/) が具体的かつ簡潔で分かりやすかったです",
-              "publishedAt": "2019-05-05T00:55:06Z",
+              "publishedAt": "2019-05-04T17:55:06Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -78,7 +78,7 @@
           "nodes": [
             {
               "body": "Epoxyよりは手軽そうですが、構成はけっこう重いのでコンポーネントを再利用するかどうかがポイントかもしれません",
-              "publishedAt": "2019-05-05T00:47:29Z",
+              "publishedAt": "2019-05-04T17:47:29Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -112,7 +112,7 @@
           "nodes": [
             {
               "body": "人によっては首肯しかねるものもあるかもしれませんが、自分の経験上はおおむね同意でした。とくに「`!!`を回避しようとしすぎる」は自分もよく目にするコードで、後段にある `mapNotNull` のような関数を使うか、さもなければクラッシュさせる方がよいと思います。",
-              "publishedAt": "2019-05-05T00:37:19Z",
+              "publishedAt": "2019-05-04T17:37:19Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -121,7 +121,7 @@
             },
             {
               "body": "まず標準ライブラリの熟読が必要ですね 😇 \r\n自前でやってたけどよくよく調べてみたら標準ライブラリにあった、とかたまにありますｗ",
-              "publishedAt": "2019-05-05T11:12:31Z",
+              "publishedAt": "2019-05-05T04:12:31Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -179,7 +179,7 @@
           "nodes": [
             {
               "body": "BottomNavigationのバッヂ、いつもハックしていたので待望ですね",
-              "publishedAt": "2019-05-05T00:59:47Z",
+              "publishedAt": "2019-05-04T17:59:47Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -236,7 +236,7 @@
           "nodes": [
             {
               "body": "UberではBuckをビルドツールとして採用しているそうです。\r\n検証自体は動作環境やビルドツールに依存しないようにしたそうなので、Gradleプロジェクトでも参考になると思います。\r\n\r\nそれにしても、モノレポで20以上のアプリケーションを開発、というのはちょっと想像がつきません…",
-              "publishedAt": "2019-05-02T08:49:51Z",
+              "publishedAt": "2019-05-02T01:49:51Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -270,7 +270,7 @@
           "nodes": [
             {
               "body": "てんこ盛りですね 😄 Project Marble、野心的な目標に挑戦していてよいですね。ところで、レイアウトエディタで変更したときにXMLがグチャグチャになるのは直ったのでしょうか？",
-              "publishedAt": "2019-05-05T00:57:54Z",
+              "publishedAt": "2019-05-04T17:57:54Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -309,7 +309,7 @@
           "nodes": [
             {
               "body": "発表が楽しみですねー。\r\nそういえば以前[ViewCompiler](https://github.com/AndroidDagashi/AndroidDagashi/issues/755)をとりあげたとき、Jake氏が`R.id.*`や`R.layout.*`を使わなくするための”なにか”を開発中、という話がありましたね 🤔 ",
-              "publishedAt": "2019-05-05T07:16:44Z",
+              "publishedAt": "2019-05-05T00:16:44Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",

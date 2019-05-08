@@ -4,7 +4,7 @@
   "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/19",
   "title": "19-20180603-20180609",
   "description": "今週はFacebookがReactNativeをやめるという噂に始まり、jcenterの変更でビルドが壊れたりと賑やかな一週間でした。そんな中でAndroid Studio 3.2 Canary 17やP Developer Preview 3が出ています。",
-  "closedAt": "2018-06-10T10:47:59Z",
+  "closedAt": "2018-06-10T03:47:59Z",
   "issues": {
     "totalCount": 12,
     "pageInfo": {
@@ -56,7 +56,7 @@
           "nodes": [
             {
               "body": "ブログも出たようです。\r\nhttps://developers-jp.googleblog.com/2018/06/android-studio-3-2-canary.html",
-              "publishedAt": "2018-06-08T02:20:48Z",
+              "publishedAt": "2018-06-07T19:20:48Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -155,7 +155,7 @@
           "nodes": [
             {
               "body": "恒例の CommonsBlog による分析です。 `cantSaveState` 属性はちょっと変わり種で面白いですね。\r\nhttps://commonsware.com/blog/2018/06/07/random-musings-p-developer-preview-3.html",
-              "publishedAt": "2018-06-08T02:23:51Z",
+              "publishedAt": "2018-06-07T19:23:51Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -183,7 +183,7 @@
           "nodes": [
             {
               "body": "どうやらgoogleレポジトリからいくつかのartifactをjcenterに移行したところ、checksumが壊れていて、409を返すようになったそうです。\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Re the situation with Google artifacts from Google Maven repository:<br>1. Some artifacts were brought over to jcenter() from google()<br>2. For some reason Google repository contained incorrect checksums for certain artifacts.<br>🔽</p>&mdash; JFrog Bintray (@bintray) <a href=\"https://twitter.com/bintray/status/1004974875851685888?ref_src=twsrc%5Etfw\">June 8, 2018</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nしかし、なぜ404を返さずに409というちょっとマニアックなステータスを返したのかは謎です……。",
-              "publishedAt": "2018-06-07T15:21:01Z",
+              "publishedAt": "2018-06-07T08:21:01Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",

@@ -4,7 +4,7 @@
   "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/41",
   "title": "41 2018-11-11",
   "description": "Android Dev Summit 2018、Foldable、Androidエコシステムのセキュリティレポート、11月のAndroidXリリース、AS3.3 BetaでR8が利用可能、など。",
-  "closedAt": "2018-11-11T10:35:21Z",
+  "closedAt": "2018-11-11T02:35:21Z",
   "issues": {
     "totalCount": 12,
     "pageInfo": {
@@ -68,7 +68,7 @@
           "nodes": [
             {
               "body": "各アプリでもダークモードを実装するのが流行りつつある気がします",
-              "publishedAt": "2018-11-14T14:47:31Z",
+              "publishedAt": "2018-11-14T06:47:31Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -138,7 +138,7 @@
           "nodes": [
             {
               "body": "https://commonsware.com/blog/2018/11/10/foldables-developers.html\r\n\r\nいつものcommonswareさんによる解説はこちら。\r\nガジェットとしてはとても気になります…",
-              "publishedAt": "2018-11-11T08:34:44Z",
+              "publishedAt": "2018-11-11T00:34:44Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -214,7 +214,7 @@
           "nodes": [
             {
               "body": "シュッとした気がします",
-              "publishedAt": "2018-11-06T10:10:50Z",
+              "publishedAt": "2018-11-06T02:10:50Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -242,7 +242,7 @@
           "nodes": [
             {
               "body": "ちょっと変更が多いので気になったのをいくつか。\r\n\r\n`ComponentActivity`という新しいActivityが追加されました(以前から存在した`SupportActivity`をリネームしたもののようです)。これは`FragmentActivity`や`AppComatActivity`のベースクラスなようで、アプリ開発者が直接使うものではなさそうです。\r\n`ComponentActivity#addOnBackPressedCallback`という、`onBackPressed`のコールバックを設定できる機能が追加されています。\r\n\r\nFragmentには`FragmentFactory`という、FragmentManagerがFragmentをインスタンス化する挙動をコントロールするためのクラスが追加されています。\t\r\n\r\n他には`NestedScrollView`が`NestedScrollingChild3`と`NestedScrollingParent3`を実装するようになったりしています。\r\n\r\nとにかく盛り沢山なのでぜひご一読を。",
-              "publishedAt": "2018-11-06T10:01:43Z",
+              "publishedAt": "2018-11-06T02:01:43Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -251,7 +251,7 @@
             },
             {
               "body": "- `onRetainCustomNonConfigurationInstance has been deprecated`も一部には影響がありそうです 🙄 \r\n- `fragment-testing` も気になりますね 👀 ",
-              "publishedAt": "2018-11-07T14:20:37Z",
+              "publishedAt": "2018-11-07T06:20:37Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",

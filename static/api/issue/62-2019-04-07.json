@@ -4,7 +4,7 @@
   "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/62",
   "title": "62 2019-04-07",
   "description": "Android Q Beta2、Android開発でもっと早く知っておけばよかったこと、CameraX Support Library、ViewCompiler、Kotlin CoroutinesのFlow APIプレビュー版、など",
-  "closedAt": "2019-04-07T10:20:16Z",
+  "closedAt": "2019-04-07T03:20:16Z",
   "issues": {
     "totalCount": 13,
     "pageInfo": {
@@ -91,7 +91,7 @@
           "nodes": [
             {
               "body": "ずっとKotlin Multiplatform環境でも使えるRxがほしかったのですが、これでだいぶ捗りそうです",
-              "publishedAt": "2019-04-05T05:34:04Z",
+              "publishedAt": "2019-04-04T22:34:04Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -100,7 +100,7 @@
             },
             {
               "body": "いちおうReactive Streams準拠なんですね。自分はちょっと使う機会なさそうですが興味深いです。",
-              "publishedAt": "2019-04-06T01:46:28Z",
+              "publishedAt": "2019-04-05T18:46:28Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -134,7 +134,7 @@
           "nodes": [
             {
               "body": "redditのスレを読むまで知らなかったのですが、Jake Wharton氏もなにやら `R.id.*` や `R.layout.*` を消すための\"なにか\"を作っているようです",
-              "publishedAt": "2019-04-05T05:28:58Z",
+              "publishedAt": "2019-04-04T22:28:58Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -143,7 +143,7 @@
             },
             {
               "body": "スレッドでRomain Guy氏も指摘していますが、素のXMLではなくバイナリ化されているんですよね。ただinflate時にリフレクションが走ることは確かだと思うので、そこが削減できるならいいかもしれません。余談ですが、JakeもRomainも初耳みたいなのがちょっと面白いですね。",
-              "publishedAt": "2019-04-05T05:46:34Z",
+              "publishedAt": "2019-04-04T22:46:34Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -171,7 +171,7 @@
           "nodes": [
             {
               "body": "途中で止めると \"#AndroidDevSummit\" という文字列と \"4f 63 74 6f 62 65 72 20 32 33 2d 32 34\" という文字列が読み取れます。後者はASCIIコードで\"October 23-24\"と読めます。",
-              "publishedAt": "2019-04-05T02:30:11Z",
+              "publishedAt": "2019-04-04T19:30:11Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -199,7 +199,7 @@
           "nodes": [
             {
               "body": "目立つところだと `Annotation` の `@ContentView` の挙動が変わって、代わりにActivityやFragmentのコンストラクタでレイアウトIDを指定できるようになったことでしょうか。\r\n\r\n[DataBindingとActivityのコンストラクタ Layout Id指定を一緒に使う - stsnブログ](https://satoshun.github.io/2019/04/jetpack-coroutine-support/)も参考になります。",
-              "publishedAt": "2019-04-04T01:08:28Z",
+              "publishedAt": "2019-04-03T18:08:28Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -251,7 +251,7 @@
           "nodes": [
             {
               "body": "Bubbles APIは要注目かもしれません。使いたい人は多そうです。",
-              "publishedAt": "2019-04-04T00:41:30Z",
+              "publishedAt": "2019-04-03T17:41:30Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -297,7 +297,7 @@
           "nodes": [
             {
               "body": "ふだんは意識する必要ないことですが、Javaコードをどう書くと最適化されたバイトコードが生成されるか、というのはおもしろいですね。",
-              "publishedAt": "2019-04-03T00:48:13Z",
+              "publishedAt": "2019-04-02T17:48:13Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -373,7 +373,7 @@
           "nodes": [
             {
               "body": "AndroidのNonNull/Nullableアノテーションもサポートされるようですね。YouTrackの該当issueを見ると、どうやらQをターゲットにしていてKotlin 1.3.30を使っていると、nullnessが違ったときにコンパイルエラーにしてくれるようです。",
-              "publishedAt": "2019-04-02T00:45:35Z",
+              "publishedAt": "2019-04-01T17:45:35Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
