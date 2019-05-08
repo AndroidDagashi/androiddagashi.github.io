@@ -4,7 +4,7 @@
   "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/33",
   "title": "33-20180909-20180915",
   "description": "Kotlin 1.2.70、AndroidStudio 3.2 RC3、DroidKaigi 2019、など",
-  "closedAt": "2018-09-16T04:00:13Z",
+  "closedAt": "2018-09-16T11:00:13Z",
   "issues": {
     "totalCount": 10,
     "pageInfo": {
@@ -32,7 +32,7 @@
           "nodes": [
             {
               "body": "有識者による解説記事も出ていました。\r\nhttp://bonotake.hatenablog.com/entry/2018/09/16/192010",
-              "publishedAt": "2018-09-21T20:35:59Z",
+              "publishedAt": "2018-09-22T03:35:59Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -216,7 +216,7 @@
           "nodes": [
             {
               "body": "もしかしたら、このkotlinx.coroutinesの [issue](https://github.com/Kotlin/kotlinx.coroutines/issues/410) や [ドキュメント](https://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.experimental/-coroutine-scope/index.html) を読んだ方がわかりやすいかもしれません。\r\n\r\n自分の雑な理解では、いままで `launch` や `async` メソッドに引数としてコンテキストとしてディスパッチャやスコープを同時に与えてきたのをやめて、 `coroutineContext` メソッドを使って別の形でスコープを指定するようになったようです。\r\n\r\n個人的にはcoroutineのジョブのキャンセルまわりは複雑だと思っていたので歓迎したい変更ですが、既にcoroutineを使っていたコードの移行はちょっと大変そうです。",
-              "publishedAt": "2018-09-13T13:59:49Z",
+              "publishedAt": "2018-09-13T20:59:49Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",

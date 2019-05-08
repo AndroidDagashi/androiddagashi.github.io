@@ -4,7 +4,7 @@
   "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/59",
   "title": "59 2019-03-17",
   "description": "Android Q Beta 1リリース、Android Qの新機能や制約、Google Play Storeのアイコン新仕様、Android Jetpack Navigation安定版、など",
-  "closedAt": "2019-03-17T03:49:57Z",
+  "closedAt": "2019-03-17T10:49:57Z",
   "issues": {
     "totalCount": 10,
     "pageInfo": {
@@ -62,7 +62,7 @@
           "nodes": [
             {
               "body": "なお、自分の使っている 1 Password も Autofill のときに警告が出ました。かなりの数のアプリが影響を受けそうです。",
-              "publishedAt": "2019-03-17T00:36:38Z",
+              "publishedAt": "2019-03-17T07:36:38Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -90,7 +90,7 @@
           "nodes": [
             {
               "body": "API diffに`getContentCaptureSession`というAPIが生えているので、それかもしれません\r\nhttps://developer.android.com/sdk/api_diff/q-beta1/changes/android.view.View.html",
-              "publishedAt": "2019-03-17T00:31:21Z",
+              "publishedAt": "2019-03-17T07:31:21Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -124,7 +124,7 @@
           "nodes": [
             {
               "body": "正直に言うと、自分はあまりスコープ関数は使わないので、ピンとはきませんでしたが、どういうときにどのスコープ関数を使うか、という基準をプロジェクト内で定めるときは参考になるかもしれません。",
-              "publishedAt": "2019-03-15T21:51:29Z",
+              "publishedAt": "2019-03-16T04:51:29Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -170,7 +170,7 @@
           "nodes": [
             {
               "body": "中身は通常のonSaveInstanceStateを使った状態保存なので、TransactionTooLargeExceotionに気を付けましょう",
-              "publishedAt": "2019-03-15T21:08:23Z",
+              "publishedAt": "2019-03-16T04:08:23Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -179,7 +179,7 @@
             },
             {
               "body": "https://medium.com/androiddevelopers/viewmodels-persistence-onsaveinstancestate-restoring-ui-state-and-loaders-fc7cc4a6c090#81a0\r\n\r\n以前から推奨されていた、「`onSavedInstanceState`でViewModelの状態復元に必要な最小限の情報を保存しておこう」というのを公式でライブラリ化した感じでしょうかね。",
-              "publishedAt": "2019-03-17T02:29:17Z",
+              "publishedAt": "2019-03-17T09:29:17Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",

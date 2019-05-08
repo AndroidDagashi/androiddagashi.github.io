@@ -4,7 +4,7 @@
   "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/45",
   "title": "45 2018-12-09",
   "description": "DroidKaigi 2019の参加受付が開始、2018年12月のAndroidXリリース、Kotlin Coroutine 1.0.0までに夏から変わったところ、など",
-  "closedAt": "2018-12-09T02:37:26Z",
+  "closedAt": "2018-12-09T10:37:26Z",
   "issues": {
     "totalCount": 14,
     "pageInfo": {
@@ -116,7 +116,7 @@
           "nodes": [
             {
               "body": "scopeまわりは理解が難しいですよね。自分もまだドキュメントを読んだだけですが、実際に使ってみないと分かんなさそうな気がします。",
-              "publishedAt": "2018-12-08T20:36:29Z",
+              "publishedAt": "2018-12-09T04:36:29Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -168,7 +168,7 @@
           "nodes": [
             {
               "body": "よくある感じのリークですが、Chrome Development Toolで調査できるのはいいですね。軽い補足としてはdiffを取る前にGCを必ず走らせておくとよいです。",
-              "publishedAt": "2018-12-08T20:48:05Z",
+              "publishedAt": "2018-12-09T04:48:05Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -196,7 +196,7 @@
           "nodes": [
             {
               "body": "感慨深い…。\r\nユーザ的にはうれしくないでしょうが、開発者的には福音ですねｗ",
-              "publishedAt": "2018-12-09T17:37:14Z",
+              "publishedAt": "2018-12-10T01:37:14Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -248,7 +248,7 @@
           "nodes": [
             {
               "body": "CustomTokenizer対応は人によっては助かりそうです",
-              "publishedAt": "2018-12-08T20:14:20Z",
+              "publishedAt": "2018-12-09T04:14:20Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -282,7 +282,7 @@
           "nodes": [
             {
               "body": "FlutterをWeb上で動かす\"Hummingbird\"についても発表されました\r\nhttps://medium.com/flutter-io/hummingbird-building-flutter-for-the-web-e687c2a023a8\r\n",
-              "publishedAt": "2018-12-04T18:00:56Z",
+              "publishedAt": "2018-12-05T02:00:56Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -334,7 +334,7 @@
           "nodes": [
             {
               "body": "うーん、自分にはちょっとピンとこないものがいくつかありました。たとえば WorkManager の例はそもそもスコープを分けるべきな気がするのですが、どうなのでしょうか。\r\n\r\nあと冒頭の `coroutineScope` でラップする解決方法は[sys1yagiさんのブログ記事でやるな](http://sys1yagi.hatenablog.com/entry/2018/12/08/181232)と書いてある気がします。",
-              "publishedAt": "2018-12-08T20:21:33Z",
+              "publishedAt": "2018-12-09T04:21:33Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -362,7 +362,7 @@
           "nodes": [
             {
               "body": "- `AppCompatTextView`でcompound drawable(`app:drawableLeftCompat`など)が使えるように\r\n- androidx.collectionにJava8のAPI追加が始まる\r\n- `NestedScrollView`に続いて`CoordinatorLayout`や`RecyclerView`、`SwipeRefreshLayout`も`NestedScrollingParent3`を実装\r\n\r\nなどなど",
-              "publishedAt": "2018-12-04T01:26:29Z",
+              "publishedAt": "2018-12-04T09:26:29Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -371,7 +371,7 @@
             },
             {
               "body": "androidx.collectionはJakeがやっているみたいですね\r\nhttps://twitter.com/JakeWharton/status/1069679080411414529",
-              "publishedAt": "2018-12-08T20:17:13Z",
+              "publishedAt": "2018-12-09T04:17:13Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",

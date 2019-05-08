@@ -4,7 +4,7 @@
   "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/53",
   "title": "53 2019-02-03",
   "description": "DroidKaigi2019のアプリがリリース、サンタトラッカーのソースコードが公開、リフレクションベースのDagger2、など",
-  "closedAt": "2019-02-03T02:11:07Z",
+  "closedAt": "2019-02-03T10:11:07Z",
   "issues": {
     "totalCount": 11,
     "pageInfo": {
@@ -38,7 +38,7 @@
           "nodes": [
             {
               "body": "第4回にそれぞれの立場からどう捉えるべきかという話が載っていて興味深かったです",
-              "publishedAt": "2019-02-02T23:35:48Z",
+              "publishedAt": "2019-02-03T07:35:48Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -114,7 +114,7 @@
           "nodes": [
             {
               "body": "どうやら、いままでも、WebViewだけのActivityをつくってアプリとしてリリースすることは可能だったのですが、TWAを使うことでWebViewを使わなくてもよくなったということのようです",
-              "publishedAt": "2019-01-31T21:10:42Z",
+              "publishedAt": "2019-02-01T05:10:42Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -123,7 +123,7 @@
             },
             {
               "body": "スマホの黎明期によく見かけたWebViewだけのなんちゃってアプリを思い出してしまいますが、Webでできることも増えているので良さそうですね",
-              "publishedAt": "2019-02-03T00:09:56Z",
+              "publishedAt": "2019-02-03T08:09:56Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -157,7 +157,7 @@
           "nodes": [
             {
               "body": "開発時はreflectionを使い、プロダクションではannotation processorをつかうというアプローチはButteKnifeでもありましたね。\r\nhttps://github.com/JakeWharton/butterknife/tree/master/butterknife-reflect",
-              "publishedAt": "2019-02-02T23:12:07Z",
+              "publishedAt": "2019-02-03T07:12:07Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -191,7 +191,7 @@
           "nodes": [
             {
               "body": "いろいろありますが、`activity`の`@ContentView`アノテーションがおもしろそうです。\r\nDataBinding使ってたら特に使いみちないかもですが…",
-              "publishedAt": "2019-01-31T08:08:30Z",
+              "publishedAt": "2019-01-31T16:08:30Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -219,7 +219,7 @@
           "nodes": [
             {
               "body": "よさそうですね。いままで目で数えてました 💦 ",
-              "publishedAt": "2019-02-02T23:14:43Z",
+              "publishedAt": "2019-02-03T07:14:43Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -289,7 +289,7 @@
           "nodes": [
             {
               "body": "Kotlin Multiplatform Projectで開発をしているとKotlin/Native関連のpomファイルがsyncのたびにダウンロードされてめちゃくちゃ時間がかかる、という問題がありますが、これもこの機能を利用して抑制することができます\r\n\r\nhttps://youtrack.jetbrains.com/issue/KT-28128\t",
-              "publishedAt": "2019-01-29T08:22:36Z",
+              "publishedAt": "2019-01-29T16:22:36Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -323,7 +323,7 @@
           "nodes": [
             {
               "body": "自分の経験では画面内のコンポーネントが互いに連携するのなら、1画面1ViewModelがよいように感じています",
-              "publishedAt": "2019-01-28T16:22:53Z",
+              "publishedAt": "2019-01-29T00:22:53Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",

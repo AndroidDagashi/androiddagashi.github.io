@@ -4,7 +4,7 @@
   "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/51",
   "title": "51 2019-01-20",
   "description": "Android Studio 3.3、複数モジュール環境でのDI、Instant Runの後継機能Apply Changes、8月から64bitサポートが必須に、など。",
-  "closedAt": "2019-01-20T02:12:14Z",
+  "closedAt": "2019-01-20T10:12:14Z",
   "issues": {
     "totalCount": 11,
     "pageInfo": {
@@ -32,7 +32,7 @@
           "nodes": [
             {
               "body": "自動翻訳ではなく、人間がやるのですね。Play Consoleで管理できるのはよさそうです。",
-              "publishedAt": "2019-01-20T03:01:46Z",
+              "publishedAt": "2019-01-20T11:01:46Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -90,7 +90,7 @@
           "nodes": [
             {
               "body": "Certificate Pinningが推奨されていますが、自分の記憶が確かなら多少慎重になった方がよかったと思います。\r\nhttps://twitter.com/jessewilson/status/1004404492878663680\r\nhttps://cabforum.org/pipermail/public/2016-November/008989.html",
-              "publishedAt": "2019-01-20T03:00:11Z",
+              "publishedAt": "2019-01-20T11:00:11Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -213,7 +213,7 @@
           "nodes": [
             {
               "body": "> It does something very, very different. Instant Run had a very specific impact on build, instrumenting each of your classes at compile time to prepare them for being replaced during the runtime with a new version of the class. It also split your APK in several APKs to re-upload your app more incrementally.\r\n>\r\n> Apply Changes does nothing like it. Your APK is very much the same whether you use Apply Changes or not. Instead it relies on new runtime instrumentation capabilities of the ART VM to dynamic reload classes and replace them while the app is running. This is why it requires much newer versions of Android.\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/agbjn4/android_studio_35_alpha_1_incudes_an_instant_run/ee5f2w8/\r\n\r\nAndroid Studioの開発メンバーによるこのコメントがわかりやすかったです",
-              "publishedAt": "2019-01-16T06:23:42Z",
+              "publishedAt": "2019-01-16T14:23:42Z",
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -222,7 +222,7 @@
             },
             {
               "body": "このブログ記事にもありますが、どうやら「Instant Runは失敗なので別のアプローチにした」ということのようですね。\r\nhttps://androidstudio.googleblog.com/2019/01/android-studio-35-canary-1-available.html",
-              "publishedAt": "2019-01-16T21:14:32Z",
+              "publishedAt": "2019-01-17T05:14:32Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -292,7 +292,7 @@
           "nodes": [
             {
               "body": "Android Centralのフォロー記事はこちら https://www.androidcentral.com/phone-makers-are-misusing-androids-memory-management-and-google-isnt-doing-anything\r\nRedditの議論はこちら https://www.reddit.com/r/androiddev/comments/afmfyv/phone_makers_are_messing_with_androids_memory/",
-              "publishedAt": "2019-01-14T05:21:20Z",
+              "publishedAt": "2019-01-14T13:21:20Z",
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
