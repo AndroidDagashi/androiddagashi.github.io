@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://androiddagashi.github.io/</id>
     <title>Android Dagashi</title>
-    <updated>2019-05-12T10:26:09.000Z</updated>
+    <updated>2019-05-19T10:16:37.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Android Dagashi</name>
@@ -23,6 +23,15 @@
         <name>@hydrakecat</name>
         <uri>https://twitter.com/hydrakecat</uri>
     </contributor>
+    <entry>
+        <title type="html"><![CDATA[#68 2019-05-19]]></title>
+        <id>https://androiddagashi.github.io/issue/68-2019-05-19</id>
+        <link href="https://androiddagashi.github.io/issue/68-2019-05-19">
+        </link>
+        <updated>2019-05-19T10:16:37.000Z</updated>
+        <summary type="html"><![CDATA[<p>Android Studio 3.4.1, OkHttpのKotln化, Kotlin FlowとCoroutine, 詳細なFabricのFirebase移行プラン, Jetpack Composeのバックグラウンド, など</p>
+ML Kitを使ってWordSearchゲームを解く/Jetpack Composeのバックグラウンド/Pinterestがktlintのオーナーになる/より詳細なFabricのFirebase移行プラン/WorkManager 2.1.0-alpha02/Zomatoのビルド時間を95%減らした話/スイッチアクセス用のデバイスを自作する/Android Studio 3.4.1/Kotlin FlowとCoroutine/外部ストレージの死：Beta 3の現状/OkHttpのKotlin化がほぼ完了]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[#67 2019-05-12]]></title>
         <id>https://androiddagashi.github.io/issue/67-2019-05-12</id>
@@ -463,14 +472,5 @@ JetpackのNavigationでCustom Viewを管理する/最近のアプリ界隈での
         <updated>2018-06-10T10:47:59.000Z</updated>
         <summary type="html"><![CDATA[<p>今週はFacebookがReactNativeをやめるという噂に始まり、jcenterの変更でビルドが壊れたりと賑やかな一週間でした。そんな中でAndroid Studio 3.2 Canary 17やP Developer Preview 3が出ています。</p>
 Swiftで書いたビジネスロジックをAndroidでも使う/Android Studio 3.2 canary17リリース/Android Studio 3.1.3リリース/Android Studioのメモリリークのリスト/YelpのAndroidチームがどのようにしてアプリをマルチモジュール化したか/Android P DP3 が出ました/build.gradleでgoogle()がjcenter()より上にないと409が返るエラーがあったようです/プッシュ通信のE2E暗号化をするCapillary/ARCoreのSceneformの使い方/Retrofitで段階的にMoshiに乗り換える方法/設定画面にすべきか迷ったときに見るフローチャート/FacebookがReactNativeを使わない方向に進んでいるというFUD]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[#18-20180527-20180602]]></title>
-        <id>https://androiddagashi.github.io/issue/18-20180527-20180602</id>
-        <link href="https://androiddagashi.github.io/issue/18-20180527-20180602">
-        </link>
-        <updated>2018-06-03T10:47:37.000Z</updated>
-        <summary type="html"><![CDATA[<p>GDPRの話が落ち着いて、I/Oで発表された機能のリキャップがちらほら出始めているようです。</p>
-Google I/O 2018 に見るこれからの Android アプリ開発方法/Kotlinがラムダ式をどうやって実現しているか/Android Pで追加されるAppComponentFactoryについての議論/一部のAndroid端末でString#intern()の挙動が仕様と異なるという報告/WorkManagerの登場でevernote/android-jobが将来的に非推奨に/HAXM 7.2.0 が利用可能になったそうです/JSR310（java.time）とJoda-Timeの違い/targetSdkVersionが低いとLintがエラーを出すようになったみたいです/Google Play Store ConsoleのAPI keyが流出し、不正なアプリがリリースされてしまった事案/Jetpackをふんだんに使ったGoogle謹製のサンプルアプリ]]></summary>
     </entry>
 </feed>
