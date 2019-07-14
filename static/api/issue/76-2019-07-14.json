@@ -1,0 +1,327 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDQ3MDU2Mw==",
+  "number": 76,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/76",
+  "title": "76 2019-07-14",
+  "description": "DroidKaigi 2020, Android Studio 3.4.2, Flutter 1.7, Kotlin Flowの例外ハンドリング, Dagger2公式チュートリアル, suspend関数入門, など",
+  "closedAt": "2019-07-14T10:20:01Z",
+  "issues": {
+    "totalCount": 13,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABRPOG-Jb3g==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOG8dItg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/925",
+        "title": "DroidKaigi 2020のサイトが公開",
+        "body": "https://droidkaigi.jp/2020/\r\n\r\n2020/02/20-21の開催で、場所は五反田です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/924",
+        "title": "Android版React Native用のJSエンジン、Hermes",
+        "body": "https://code.fb.com/android/hermes/\r\nhttps://github.com/facebook/hermes\r\n\r\nFacebookがReact Nativeの実行に特化したJavaScriptエンジン、Hermesをリリースしました。\r\nAOTコンパイルを採用したのでより時間をかけて最適化することができ、また端末上ではバイトコードが直接実行されるそうです。\r\n\r\nAndroid限定なのは、iOSだと独自のJavaScriptエンジンを入れると審査が通らないからだと思われます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/923",
+        "title": "Kotlin Flowの例外ハンドリング",
+        "body": "https://link.medium.com/YoaEFndqjY\r\n\r\nRomanによるKotlin Flowの例外の扱いについての解説です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/922",
+        "title": "Room 2.2.0-Alpha01",
+        "body": "https://developer.android.com/jetpack/androidx/releases/room#2.2.0-alpha01\r\n\r\n- アセットや任意の場所からDBを読み込むAPI\r\n- Many-to-Many, One-to-Oneの関係のサポート\r\n- カラムのデフォルト値\r\n\r\nなど、新機能がいろいろ追加されています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/921",
+        "title": "WorkManagerのジョブ実行時の位置情報パーミッション",
+        "body": "https://www.reddit.com/r/androiddev/comments/cc7l32/new_permissions_dialog_at_android_q_and/\r\n\r\nAndroid Qでは位置情報のパーミッションに「アプリ使用時のみ」という選択肢がありますが、それを選んだ場合、WorkManagerでジョブを実行したときに位置情報にアクセスできるのか、という話です。試した限りでは可能なようですが、仕様に沿っているかは不明なようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/920",
+        "title": "Dagger 2公式チュートリアル",
+        "body": "https://dagger.dev/tutorial/\r\n\r\nコマンドラインでATMを作るチュートリアルです。他のドキュメントより実際的かつ十分に複雑なので、Daggerの概念を理解しやすいかもしれません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/919",
+        "title": "使うだけに絞ったsuspend関数入門",
+        "body": "https://karino2.github.io/kotlin-lesson/suspend_intro.html\r\n\r\nご存知『Androidを支える技術』の著者の有野さんによる、使う側に向けたsuspend関数の説明です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHmyhNw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHmyhNw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自分もたまにlaunchをスレッドの起動と同じと考えているような説明を見かけるので、よい説明だなと思いました。なんとなくでlaunchで囲んでいる人はぜひ読んでみてください。",
+              "publishedAt": "2019-07-11T10:49:53Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/918",
+        "title": "Android Q Beta 5",
+        "body": "https://android-developers.googleblog.com/2019/07/android-q-beta-5-update.html\r\n\r\nBeta 5がリリースされました。APIは変更ありませんが、Gestural Navigationが改善されたようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHmrToQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHmrToQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://www.reddit.com/r/android_beta/comments/cbjifg/android_q_beta_5_now_available/\r\n\r\nredditはこちら",
+              "publishedAt": "2019-07-11T03:45:38Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/917",
+        "title": "Flutter 1.7",
+        "body": "https://medium.com/flutter/announcing-flutter-1-7-9cab4f34eacf\r\n\r\n- AndroidX対応\r\n- Android App Bundle対応\r\n- 64bit対応\r\n\r\nなどなど盛りだくさんです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/916",
+        "title": "Android Q時代のConnectivity Monitoring",
+        "body": "https://takasfz.hatenablog.com/entry/2019/07/04/191744",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/915",
+        "title": "Truth 1.0リリース",
+        "body": "https://opensource.googleblog.com/2019/07/truth-10-fluent-assertions-for-java-and.html\r\n\r\nGoogle製のアサーションライブラリ、Truthがついに1.0になりました。\r\nTruthはメソッドチェーンを利用して流れるようにアサーションを記述することができます。\r\n\r\nKotlinサポートも計画されているようです\r\nhttps://github.com/google/truth/issues/572",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/914",
+        "title": "アスペクト指向 vs. 関数",
+        "body": "https://link.medium.com/JuHgFsKecY\r\n\r\nKotlinの開発者の一人であるRomanのアスペクト指向プログラミングと高階関数を使った手法との比較です。AOP的なことをやりたいことはままあるので参考になるかもしれません。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/913",
+        "title": "AS 3.4.2リリース",
+        "body": "https://androidstudio.googleblog.com/2019/07/android-studio-342-available.html\r\n\r\n主にバグ修正のようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
