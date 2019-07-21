@@ -1,0 +1,286 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDQ5MDA3MA==",
+  "number": 77,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/77",
+  "title": "77 2019-07-21",
+  "description": "Kotlin 1.3.50 EAP1, Android Studio 3.5 RC1, Android Dev Summit 2019の登録が開始, CoroutinesとAndroid SQLiteのスレッドモデル, など",
+  "closedAt": "2019-07-21T10:16:40Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABEvOHA1sEA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOG_LB2w==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/936",
+        "title": "Kotlin 1.3.50 EAP 1",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.3.50-eap-5",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/935",
+        "title": "Kotlin Coroutines 1.3.0-RC",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.3.0-rc\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/cfchad/kotlinxcoroutines_130rc_flow_api_promoted_to/\r\n\r\nFlowのコアAPIがステーブルになりました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHpp-Xg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHpqkLQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ReceiveChannelからFlowへの変換APIが追加されたのは、ちょうど最近悩んでいたところなので嬉しいです",
+              "publishedAt": "2019-07-20T06:25:53Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "Cold/Hotに応じてFlow/Channelを使いわけるのはちょっと面倒そうだなと思っていましたが、変換APIがあるなら使いやすいかもですね",
+              "publishedAt": "2019-07-20T09:06:23Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/934",
+        "title": "Android Studio 3.6 canary 5",
+        "body": "https://androidstudio.googleblog.com/2019/07/android-studio-36-canary-5-available.html\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/cejw9j/android_studio_36_canary_5_available/\r\n\r\nViewBindingはまだ使えないようですが、redditでのJake氏の発言によるともうすぐだそうです\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/933",
+        "title": "Android Studio 3.5 RC1",
+        "body": "https://androidstudio.googleblog.com/2019/07/android-studio-35-release-candidate-1.html\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/cejw9q/android_studio_35_release_candidate_1_available/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/932",
+        "title": "androidxライブラリのリリースの通知を受け取るレポジトリ",
+        "body": "https://satoshun.github.io/2019/07/androidx-releases/\r\n\r\n説明にあるように **Watch** > **Releases only** とすると、リリースをGitHubの通知で見れるようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/931",
+        "title": "corourineとAndroid SQLiteのためのスレッドモデル",
+        "body": "https://link.medium.com/gep3iEfbqY\r\n\r\nRoomがKotlin corourineサポートをするにあたって行ったスレッドモデルの解説です。当初想像したよりもはるかに大変そうでした。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/930",
+        "title": "Androidで動画をサクッと撮るコマンドラインツール",
+        "body": "https://oishi-kenko.hatenablog.com/entry/2019/07/18/145904\r\n\r\nタイトルのまんまですが、デバイスの動画をキャプチャするためのコマンドラインツールのようです。GitHubのPRに貼り付けられるようにGIF形式になっているようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHo_XVQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHo_XVQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "なお、自分はエミュレータの録画機能を使っています。エミュレータでないと取れないのが玉に瑕ですが、GIF出力をサポートしています。",
+              "publishedAt": "2019-07-18T09:38:52Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/929",
+        "title": "Play Storeの64bit要求",
+        "body": "https://android-developers.googleblog.com/2019/01/get-your-apps-ready-for-64-bit.html\r\n\r\n何度も予告されていたPlay Storeの64bit要求のより詳細なタイムラインです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/928",
+        "title": "今週のAndroidXのリリース",
+        "body": "https://developer.android.com/jetpack/androidx/releases#july_17_2019\r\n\r\n以下が更新されました\r\n- Fragment 1.1.0 rc2\r\n- Navigation 2.1.0 beta1\r\n- ViewPager2 1.0.0 beta1\r\n- WorkManager 2.2.0 beta1",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/927",
+        "title": "Channel IDに \"miscellaneous\" は使えない",
+        "body": "https://commonsware.com/blog/2019/07/15/magic-values-obscure.html\r\n\r\nブログ記事の本題は「APIを設計するときにマジック定数に一般的な単語は使わないように」という話なのですが、 `DEFAULT_CHANNEL_ID` の値が `miscellaneous` なのはなかなか驚きだなと思いました。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/926",
+        "title": "Android Dev Summit 2019の登録が開始",
+        "body": "https://android-developers.googleblog.com/2019/07/android-dev-summit-19-registration.html\r\n\r\n今年は10/23-24のようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
