@@ -17,6 +17,7 @@
     "noImplicitThis": false,
     "noEmit": true,
     "noUnusedParameters": true,
+    "removeComments": true,
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
@@ -43,22 +44,3 @@
     "./types/**/*"
   ]
 }
-
-// {
-//   "compilerOptions": {
-//     "removeComments": true,
-//     "suppressImplicitAnyIndexErrors": true,
-//     "allowSyntheticDefaultImports": true,
-//     "paths": {
-//       "~/": ["./"],
-//       "~/assets/*": ["./assets/*"],
-//       "~/components/*": ["./components/*"],
-//       "~/middleware/*": ["./middleware/*"],
-//       "~/pages/*": ["./pages/*"],
-//       "~/plugins/*": ["./plugins/*"],
-//       "~/static/*": ["./static/*"],
-//       "~/store/*": ["./store/*"],
-//       "~/types/*": ["./types/*"]
-//     }
-//   }
-// }
