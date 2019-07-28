@@ -14,8 +14,6 @@
     "generate": "cross-env NODE_ENV=production nuxt generate",
     "deploy": "push-dir --dir=dist --branch=master --cleanup --verbose",
     "deployUpstream": "push-dir --dir=dist --remote=upstream --branch=master --cleanup --verbose",
-    "eslint": "eslint './buildscripts/**/*.{ts,vue,js}'",
-    "eslintfix": "eslint --fix './buildscripts/**/*.{ts,vue,js}'",
     "tslint": "tslint --project .",
     "tslintfix": "tslint --fix --project .",
     "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",

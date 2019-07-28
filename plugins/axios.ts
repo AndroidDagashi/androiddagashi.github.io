@@ -1,6 +1,6 @@
-import axios from "axios";
+import axios from 'axios'
 
 export default axios.create({
   // eslint-disable-next-line no-undef
   baseURL: process.env.baseUrl
-});
+})
