@@ -1,5 +1,37 @@
 {
-  "extends": "@nuxt/typescript",
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
+    ],
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "noImplicitThis": false,
+    "noEmit": true,
+    "noUnusedParameters": true,
+    "strictNullChecks": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
+      ],
+      "@/*": [
+        "./*"
+      ]
+    },
+    "types": [
+      "@types/node",
+      "@nuxt/vue-app"
+    ]
+  },
   "include": [
     "./apollo/**/*",
     "./components/**/*",
@@ -9,37 +41,24 @@
     "./plugins/**/*",
     "./store/**/*",
     "./types/**/*"
-  ],
-  "compilerOptions": {
-    "target": "es5",
-    "lib": [
-      "dom",
-      "es2015"
-    ],
-    "experimentalDecorators": true,
-    "noImplicitAny": false,
-    "noImplicitThis": false,
-    "noUnusedParameters": true,
-    "strictNullChecks": true,
-    "removeComments": true,
-    "suppressImplicitAnyIndexErrors": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "types": [
-      "@types/node",
-      "@nuxt/vue-app"
-    ],
-    "allowJs": true,
-    "paths": {
-      "~/": ["./"],
-      "~/assets/*": ["./assets/*"],
-      "~/components/*": ["./components/*"],
-      "~/middleware/*": ["./middleware/*"],
-      "~/pages/*": ["./pages/*"],
-      "~/plugins/*": ["./plugins/*"],
-      "~/static/*": ["./static/*"],
-      "~/store/*": ["./store/*"],
-      "~/types/*": ["./types/*"]
-    }
-  }
+  ]
 }
+
+// {
+//   "compilerOptions": {
+//     "removeComments": true,
+//     "suppressImplicitAnyIndexErrors": true,
+//     "allowSyntheticDefaultImports": true,
+//     "paths": {
+//       "~/": ["./"],
+//       "~/assets/*": ["./assets/*"],
+//       "~/components/*": ["./components/*"],
+//       "~/middleware/*": ["./middleware/*"],
+//       "~/pages/*": ["./pages/*"],
+//       "~/plugins/*": ["./plugins/*"],
+//       "~/static/*": ["./static/*"],
+//       "~/store/*": ["./store/*"],
+//       "~/types/*": ["./types/*"]
+//     }
+//   }
+// }

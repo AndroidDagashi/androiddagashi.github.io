@@ -1,4 +1,5 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
+import NuxtConfiguration from '@nuxt/config'
 import nodeExternals from "webpack-node-externals";
 import parseArgs from "minimist";
 import yaml from "js-yaml";
@@ -44,7 +45,7 @@ const issueIds = indexJson.milestones.nodes.map(
   milestone => `/issue/${milestone.path}`
 );
 
-export default {
+const config:NuxtConfiguration= {
   env: {
     SITE_CONFIG: JSON.stringify(siteConfigs)
   },
@@ -115,3 +116,5 @@ export default {
     baseURL: baseUrl
   }
 };
+
+export default config;
