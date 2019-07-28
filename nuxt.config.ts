@@ -88,7 +88,7 @@ const config: NuxtConfiguration = {
   /*
    * Build configuration
    */
-  css: ['~assets/css/main.css', '~assets/css/app.styl'],
+  css: ['~assets/css/main.css', '~assets/css/app.scss'],
   build: {
     extend (configs, ctx) {
       if (ctx.isServer) {
