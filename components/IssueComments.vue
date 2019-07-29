@@ -1,5 +1,5 @@
 <template>
-  <section class="issue-comments">
+  <section class="issue-comments text--primary">
     <h3>Comments</h3>
     <v-container>
       <v-layout class="shrink" justify-end>
@@ -10,14 +10,14 @@
                 <v-avatar class="mr-2" size="20px">
                   <img :src="item.author.avatarUrl">
                 </v-avatar>
-                <strong class="issue-comments__username">
+                <strong class="issue-comments__username body-2">
                   <a :href="item.author.url" target="_blank">{{ item.author.login }}</a>
                 </strong>
               </v-card-title>
-              <v-card-text>
-                <div class="comment-body md-body" v-html="$md.render(item.body)" />
+              <v-card-text class="pt-3">
+                <div class="comment-body md-body text--primary" v-html="$md.render(item.body)" />
                 <no-ssr>
-                  <p :title="item.publishedAt" class="text-xs-right mb-0">
+                  <p :title="item.publishedAt" class="text-right mb-0">
                     {{ publishedAt(item) }}
                   </p>
                 </no-ssr>
@@ -63,7 +63,7 @@ export default class IssueComments extends Vue {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .issue-comments {
   width: 100%;
 }
@@ -73,7 +73,8 @@ export default class IssueComments extends Vue {
 }
 
 .issue-comments__username {
-  >>> a {
+  font-weight: bolder;
+  a {
     text-decoration: none;
 
     &:hover {

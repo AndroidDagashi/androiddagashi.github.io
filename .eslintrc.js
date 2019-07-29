@@ -13,7 +13,6 @@ module.exports = {
     'vue/no-v-html': 'off',
     'vue/component-name-in-template-casing': ['error', 'kebab-case'],
     '@typescript-eslint/indent': ['error', 2],
-    '@typescript-eslint/no-unused-vars': ['warn', {'args': 'after-used'}
-    ]
+    '@typescript-eslint/no-unused-vars': ['warn', {'args': 'after-used'}]
   }
 }
