@@ -1,25 +1,25 @@
 <template>
   <v-app>
-    <app-header/>
+    <app-header />
     <v-content>
       <v-container fluid fill-height justify-center>
-        <nuxt/>
+        <nuxt />
       </v-container>
     </v-content>
-    <app-footer/>
+    <app-footer />
     <span v-if="didMount">
-      <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8"/>
+      <script async defer src="//platform.twitter.com/widgets.js" charset="utf-8" />
     </span>
   </v-app>
 </template>
 
 <script lang="ts">
-import AppHeader from "~/components/AppHeader.vue";
-import AppFooter from "~/components/AppFooter.vue";
-import { Component, Vue } from "nuxt-property-decorator";
+import { Component, Vue } from 'nuxt-property-decorator'
+import AppHeader from '~/components/AppHeader.vue'
+import AppFooter from '~/components/AppFooter.vue'
 
 @Component({
-  name: "default-layout",
+  name: 'default-layout',
   components: {
     AppHeader,
     AppFooter
@@ -28,12 +28,12 @@ import { Component, Vue } from "nuxt-property-decorator";
 export default class DefaultLayout extends Vue {
   didMount = false;
 
-  async mounted() {
-    this.didMount = true;
+  // eslint-disable-next-line require-await
+  async mounted () {
+    this.didMount = true
   }
 }
 </script>
 
 <style scoped>
 </style>
-

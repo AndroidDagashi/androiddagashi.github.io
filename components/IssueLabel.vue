@@ -5,14 +5,14 @@
 </template>
 
 <script lang="ts">
-import { GHLabel } from "types/GitHubApi";
-import { mapState } from "vuex";
-import { Component, Vue, Prop } from "nuxt-property-decorator";
-import { SiteConfigRepository } from "types/SiteConfig";
+import { GHLabel } from 'types/GitHubApi'
+import { mapState } from 'vuex'
+import { Component, Vue, Prop } from 'nuxt-property-decorator'
+import { SiteConfigRepository } from 'types/SiteConfig'
 
 @Component({
-  name: "issue-label",
-  computed: mapState(["issueRepository"])
+  name: 'issue-label',
+  computed: mapState(['issueRepository'])
 })
 export default class IssueLabel extends Vue {
   issueRepository!: SiteConfigRepository;
@@ -21,15 +21,15 @@ export default class IssueLabel extends Vue {
 
   @Prop() labelInfo!: GHLabel;
 
-  get chipColorStyle(): string {
-    const color = `#${this.labelInfo.color}`;
-    return `background-color: ${color}; border-color: ${color};`;
+  get chipColorStyle (): string {
+    const color = `#${this.labelInfo.color}`
+    return `background-color: ${color}; border-color: ${color};`
   }
 
-  get githubLabelLink(): string {
+  get githubLabelLink (): string {
     return `https://github.com/${this.issueRepository.owner}/${
       this.issueRepository.name
-    }/issues?q=label%3A"${this.labelInfo.name}"`;
+    }/issues?q=label%3A"${this.labelInfo.name}"`
   }
 }
 </script>

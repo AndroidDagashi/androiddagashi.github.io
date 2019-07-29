@@ -15,9 +15,11 @@
                 </strong>
               </v-card-title>
               <v-card-text>
-                <div class="comment-body md-body" v-html="$md.render(item.body)"/>
+                <div class="comment-body md-body" v-html="$md.render(item.body)" />
                 <no-ssr>
-                  <p :title="item.publishedAt" class="text-xs-right mb-0">{{ publishedAt(item) }}</p>
+                  <p :title="item.publishedAt" class="text-xs-right mb-0">
+                    {{ publishedAt(item) }}
+                  </p>
                 </no-ssr>
               </v-card-text>
             </v-card>
@@ -29,34 +31,34 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from "nuxt-property-decorator";
-import { GHIssue, GHComment } from "types/GitHubApi";
-import flatmap from "lodash.flatmap";
-import { DateTime } from "luxon";
+import { Component, Vue, Prop } from 'nuxt-property-decorator'
+import { GHIssue, GHComment } from 'types/GitHubApi'
+import flatmap from 'lodash.flatmap'
+import { DateTime } from 'luxon'
 
 @Component({
-  name: "issue-comments"
+  name: 'issue-comments'
 })
 export default class IssueComments extends Vue {
   @Prop({ required: true }) issue!: GHIssue;
 
-  get commentsWithDivider() {
+  get commentsWithDivider () {
     return flatmap(
       this.issue.comments.nodes,
       (comment: GHComment, index: number) => {
         if (index === 0) {
-          return [comment];
+          return [comment]
         } else {
-          return [{ isDivider: true }, comment];
+          return [{ isDivider: true }, comment]
         }
       }
-    );
+    )
   }
 
-  publishedAt(comment: GHComment) {
+  publishedAt (comment: GHComment) {
     return DateTime.fromISO(comment.publishedAt).toLocaleString(
       DateTime.DATETIME_SHORT_WITH_SECONDS
-    );
+    )
   }
 }
 </script>

@@ -9,7 +9,7 @@
             data-hashtags="AndroidDagashi"
             data-show-count="false"
           >Tweet</a>
-          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"/>
+          <script async src="https://platform.twitter.com/widgets.js" charset="utf-8" />
         </span>
         <span>
           <a
@@ -39,10 +39,10 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from "nuxt-property-decorator";
+import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component({
-  name: "share-widgets"
+  name: 'share-widgets'
 })
 export default class ShareWidgets extends Vue {}
 </script>

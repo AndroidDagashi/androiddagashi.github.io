@@ -1,22 +1,22 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
-const fs = require('fs');
-const yaml = require('js-yaml');
-const Feed = require('feed').Feed;
-const MarkdownIt = require('markdown-it');
+const fs = require('fs')
+const yaml = require('js-yaml')
+const Feed = require('feed').Feed
+const MarkdownIt = require('markdown-it')
 
-const siteConfig = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'));
+const siteConfig = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'))
 
 /**
  * generate rss feed xml
  * @returns {Void} Void
  */
-function create() {
-  let rootUrl = `${siteConfig.baseUrl}/`;
-  const today = new Date();
-  const digest = JSON.parse(fs.readFileSync('./static/api/index.json', 'utf8'));
+function create () {
+  const rootUrl = `${siteConfig.baseUrl}/`
+  const today = new Date()
+  const digest = JSON.parse(fs.readFileSync('./static/api/index.json', 'utf8'))
 
   // create feed xml root
-  let feed = new Feed({
+  const feed = new Feed({
     title: siteConfig.title,
     description: siteConfig.description,
     id: rootUrl,
@@ -31,42 +31,41 @@ function create() {
       name: siteConfig.title,
       link: rootUrl
     }
-  });
+  })
 
-  const md = new MarkdownIt();
+  const md = new MarkdownIt()
 
   // create feeed items from milestones
-  digest.milestones.nodes.forEach(milestone => {
-    var descriptions = [];
-    milestone.issues.nodes.forEach(issue => {
-      descriptions.push(issue.title);
-    });
-    var description = md.render(milestone.description) + descriptions.join('/');
-    var url = `${rootUrl}issue/${milestone.path}`;
+  digest.milestones.nodes.forEach((milestone) => {
+    const descriptions = []
+    milestone.issues.nodes.forEach((issue) => {
+      descriptions.push(issue.title)
+    })
+    const description = md.render(milestone.description) + descriptions.join('/')
+    const url = `${rootUrl}issue/${milestone.path}`
     feed.addItem({
       title: `#${milestone.title}`,
       id: url,
       link: url,
       description,
       date: new Date(milestone.closedAt)
-    });
-  });
+    })
+  })
 
-  feed.addCategory('Android');
+  feed.addCategory('Android')
 
-  siteConfig.authors.forEach(author => {
+  siteConfig.authors.forEach((author) => {
     feed.addContributor({
       name: author.name,
       link: author.link
-    });
-  });
+    })
+  })
 
   fs.writeFileSync(
     './static/feed.xml',
     feed.atom1(),
     'utf8'
-  );
+  )
 }
 
-
-create();
+create()

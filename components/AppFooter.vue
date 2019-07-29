@@ -7,16 +7,14 @@
   </v-footer>
 </template>
 <script lang="ts">
-import { mapState } from "vuex";
-import { Component, Vue } from "nuxt-property-decorator";
+import { mapState } from 'vuex'
+import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component({
-  name: "app-footer",
-  computed: mapState(["title"])
+  name: 'app-footer',
+  computed: mapState(['title'])
 })
 export default class AppFooter extends Vue {
   title!: string;
 }
 </script>
-
-

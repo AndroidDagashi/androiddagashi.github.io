@@ -69,7 +69,6 @@ export interface GHRepository {
   milestones: GHMilestones;
 }
 
-
 export interface GHDigestIssue {
   title: string;
 }
