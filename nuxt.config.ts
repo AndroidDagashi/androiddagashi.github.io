@@ -4,6 +4,7 @@ import NuxtConfiguration from '@nuxt/config'
 import nodeExternals from 'webpack-node-externals'
 import parseArgs from 'minimist'
 import yaml from 'js-yaml'
+import colors from 'vuetify/es5/util/colors'
 
 const siteConfigs = yaml.safeLoad(fs.readFileSync('./siteconfig.yml', 'utf8'))
 const indexJson = require('./static/api/index.json')
@@ -44,6 +45,23 @@ const baseUrl = process.env.NODE_ENV === 'development'
 const issueIds = indexJson.milestones.nodes.map(
   milestone => `/issue/${milestone.path}`
 )
+
+const vuetifyOptions = {
+  theme: {
+    dark: false,
+    themes: {
+      light: {
+        primary: '#121212',
+        accent: colors.grey.darken3,
+        secondary: colors.amber.darken3,
+        info: colors.teal.lighten1,
+        warning: colors.amber.base,
+        error: colors.deepOrange.accent4,
+        success: colors.green.accent3
+      }
+    }
+  }
+}
 
 const config: NuxtConfiguration = {
   env: {
@@ -107,6 +125,7 @@ const config: NuxtConfiguration = {
     routes: issueIds
   },
   modules: ['@nuxtjs/axios'],
+  devModules: ['@nuxtjs/vuetify'],
   plugins: [
     '~/plugins/vuetify.ts',
     '~/plugins/markdownit.ts',
@@ -114,6 +133,10 @@ const config: NuxtConfiguration = {
   ],
   axios: {
     baseURL: baseUrl
+  },
+  vuetify: {
+    treeShake: true,
+    ...vuetifyOptions
   }
 }
 

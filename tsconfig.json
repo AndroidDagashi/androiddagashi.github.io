@@ -14,9 +14,10 @@
     "sourceMap": true,
     "strict": true,
     "noImplicitAny": false,
+    "suppressImplicitAnyIndexErrors": true,
     "noImplicitThis": false,
     "noEmit": true,
-    "noUnusedParameters": true,
+    "noUnusedParameters": false,
     "removeComments": true,
     "strictNullChecks": true,
     "baseUrl": ".",
@@ -30,7 +31,8 @@
     },
     "types": [
       "@types/node",
-      "@nuxt/vue-app"
+      "@nuxt/vue-app",
+      "@nuxtjs/vuetify"
     ]
   },
   "include": [

@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-layout row justify-center align-center>
+    <v-layout justify-center align-center>
       <v-flex xs12 sm12 md8>
-        <div class="text-xs-center">
+        <div class="text-center">
           <img :alt="title" src="/image/logo.jpg" width="200" class="mb-5">
         </div>
 
@@ -11,13 +11,13 @@
           <v-card-title class="headline">
             {{ title }}
           </v-card-title>
-          <v-card-text>
+          <v-card-text class="text--primary">
             <p>
               <a href="https://twitter.com/hydrakecat" target="_blank">@hydrakecat</a>と
               <a href="https://twitter.com/_yshrsmz" target="_blank">@_yshrsmz</a>が、一週間の間に気になったAndroid関連のニュースをざっくりまとめます。
             </p>
             <p>おおよそ毎週日曜日の夜に更新してします。</p>
-            <div class="text-xs-right">
+            <div class="text-right">
               <em>
                 <small>&mdash;
                   <a :href="contact.link" target="_blank">{{ contact.name }}</a>
@@ -28,7 +28,7 @@
         </v-card>
       </v-flex>
     </v-layout>
-    <v-layout row justify-center align-center>
+    <v-layout justify-center align-center>
       <!-- Issue list -->
       <v-flex xs12 sm12 md8 class="mt-2">
         <v-card>
@@ -40,13 +40,13 @@
             </template>
             <template v-if="pageInfo.hasNextPage">
               <v-divider />
-              <v-list-tile class="load-next" @click="onLoadNext(pageInfo.endCursor)">
-                <v-list-tile-content>
+              <v-list-item class="load-next" @click="onLoadNext(pageInfo.endCursor)">
+                <v-list-item-content>
                   <v-icon x-large>
                     expand_more
                   </v-icon>
-                </v-list-tile-content>
-              </v-list-tile>
+                </v-list-item-content>
+              </v-list-item>
             </template>
           </v-list>
         </v-card>
@@ -118,7 +118,7 @@ export default class Index extends Vue {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 .load-next {
   >>> div {
     align-items: center;

@@ -1,6 +1,6 @@
 <template>
   <v-footer height="auto">
-    <v-flex xs12 py-3 text-xs-center>
+    <v-flex xs12 py-3 text-center>
       &copy;{{ (new Date()).getUTCFullYear() }} —
       <strong>{{ title }}</strong>
     </v-flex>

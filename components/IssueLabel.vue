@@ -1,5 +1,5 @@
 <template>
-  <v-chip :key="index" :style="chipColorStyle" class="caption">
+  <v-chip :key="index" :style="chipColorStyle" class="caption" small>
     <a :href="githubLabelLink" target="_blank">{{ labelInfo.name }}</a>
   </v-chip>
 </template>
@@ -34,16 +34,18 @@ export default class IssueLabel extends Vue {
 }
 </script>
 
-<style lang="stylus">
-.caption .v-chip__content {
-  height: 24px;
-  color: white;
-  font-weight: bold;
-}
+<style lang="scss">
+.caption {
+  margin: 4px;
+  .v-chip__content {
+    color: white;
+    font-weight: bold;
 
-.caption .v-chip__content a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
+    a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  }
 }
 </style>

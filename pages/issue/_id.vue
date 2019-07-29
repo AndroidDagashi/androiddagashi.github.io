@@ -1,6 +1,6 @@
 /* eslint vue/no-v-html: "off"  */
 <template>
-  <v-layout row justify-center align-center>
+  <v-layout justify-center align-center>
     <v-flex xs12 sm12 md8>
       <v-card>
         <v-card-title class="headline">
@@ -8,7 +8,7 @@
         </v-card-title>
         <v-card-text
           v-if="milestone.description"
-          class="md-body"
+          class="md-body text--primary"
           v-html="$md.render(milestone.description)"
         />
         <v-card-text>
@@ -19,7 +19,7 @@
               <article v-else :key="item.id" class="mt-3">
                 <div>
                   <h1 class="mb-1" v-html="item.title" />
-                  <div class="text-xs-left mb-2">
+                  <div class="text-left mb-2">
                     <issue-label
                       v-for="(label, index2) in item.labels.nodes"
                       :key="index2"
@@ -27,13 +27,13 @@
                       :index="index2"
                     />
                   </div>
-                  <div class="issue-body md-body" v-html="$md.render(item.body)" />
+                  <div class="issue-body md-body text--primary" v-html="$md.render(item.body)" />
                   <v-container class="px-0">
-                    <v-layout v-if="item.comments.totalCount" row>
+                    <v-layout v-if="item.comments.totalCount">
                       <issue-comments :issue="item" />
                     </v-layout>
-                    <v-layout row justify-end>
-                      <v-btn :href="item.url" class="mr-0" flat target="_blank">
+                    <v-layout justify-end>
+                      <v-btn :href="item.url" class="mr-0" text target="_blank">
                         GitHubで見る
                       </v-btn>
                     </v-layout>
@@ -139,5 +139,5 @@ export default class Issue extends Vue {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 </style>

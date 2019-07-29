@@ -1,10 +1,10 @@
 <template>
-  <v-list-tile :to="`issue/${milestone.path}/`" nuxt>
-    <v-list-tile-content>
-      <v-list-tile-title v-html="title" />
-      <v-list-tile-sub-title v-html="getSummary(milestone)" />
-    </v-list-tile-content>
-  </v-list-tile>
+  <v-list-item :to="`issue/${milestone.path}/`" nuxt>
+    <v-list-item-content>
+      <v-list-item-title v-html="title" />
+      <v-list-item-subtitle class="issue-summary" v-html="getSummary(milestone)" />
+    </v-list-item-content>
+  </v-list-item>
 </template>
 
 <script lang="ts">
@@ -30,3 +30,9 @@ export default class IssueLink extends Vue {
   };
 }
 </script>
+
+<style lang="scss">
+.issue-summary {
+  line-height: 1.5 !important;
+}
+</style>
