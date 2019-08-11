@@ -1,0 +1,262 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDU0NTMzNQ==",
+  "number": 80,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/80",
+  "title": "80 2019-08-11",
+  "description": "Android Q最終ベータ, Android Studio 3.5 RC3, HuaweiのHarmony OS, Gesture Navigationの手引き, 8/7のAndroidXリリース, など",
+  "closedAt": "2019-08-11T10:36:02Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAA-fOHJIz7Q==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOHGrr6A==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/967",
+        "title": "Structured Concurrencyについてのセッション動画",
+        "body": "https://www.youtube.com/watch?v=Mj5P47F6nJg\r\n\r\nRoman ElizarovによるKotlin CoroutinesのStructured Concurrencyについてのセッション、おそらく最新版です(2019/07/12公開)",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/966",
+        "title": "Harmony and Compatibility",
+        "body": "https://commonsware.com/blog/2019/08/10/harmony-compatibility.html\r\n\r\nHuaweiが発表したHarmony OSについて、CommonsWareによる解説です。\r\nAndroidアプリとの互換性はないようですが、「少しの変更」で対応できるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHwHU0A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHwHU0A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "記事内でも指摘されていますが、実際に開発者に負担をかけないで変換する仕組みを提供するのはかなり難しそうですね。自分も筆者が言うように「まずは中国国内のアプリ開発者に向けてHarnomy OSでアプリを出すように説得する」というのがもっともありそうなシナリオに思いました。",
+              "publishedAt": "2019-08-11T09:30:55Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/965",
+        "title": "AdMobの利用にapp-ads.txtの設定が必要になる",
+        "body": "https://support.google.com/admob/answer/9363762?hl=ja\r\nhttps://www.reddit.com/r/androiddev/comments/cnikwo/appadstxt_mail_from_admob/\r\n\r\napp-ads.txtはアプリ広告の不正利用を防止するための仕組みです。AdSenseでも同様の仕組み(`ads.txt`)はありましたが、今回AdMobでも必要になったようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/964",
+        "title": "Android Studio 3.5 RC3",
+        "body": "https://androidstudio.googleblog.com/2019/08/android-studio-35-release-candidate-3.html\r\nhttps://www.reddit.com/r/androiddev/comments/cnp258/android_studio_35_release_candidate_3_available/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/963",
+        "title": "ジェスチャーナビゲーションにいたった背景",
+        "body": "https://android-developers.googleblog.com/2019/08/gesture-navigation-backstory.html\r\n\r\nAndroidチームがなぜ、Qのスワイプによるナビゲーションをオプションとして加えたのか、について語られています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHv3AtQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHv3AtQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "手持ちのPixel 3をQ Betaにしてからジェスチャーナビゲーションを使っていますが、たしかにたまに誤動作はあるものの、たいへん快適です。",
+              "publishedAt": "2019-08-09T14:44:17Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/962",
+        "title": "8/7のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/releases#august_7_2019\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHvYVcA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHvYVcA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "いろいろありますが、この辺が気になりました。\r\n\r\n- RoomがFlowに対応\r\n- Lifecycleの`ViewModelProviders.of()`が非推奨に\r\n  - `ViewModelProvider(ViewModelStoreOwner)`コンストラクタが代替\r\n  - Kotlinならby viewModels()`も使える\r\n- `SavedStateViewModelFactory`がActivity/Fragment/Navigationのデフォルトに\r\n- Fragmentが、動的にFragmentを切り替える際のコンテナViewとして`FragmentContainerView`を追加\r\n  - FrameLayoutからの移行が強く推奨されています\r\n- RecyclerViewのデフォルトのスタイル設定用アトリビュート、`recyclerViewStyle`が追加",
+              "publishedAt": "2019-08-08T09:30:29Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/961",
+        "title": "Gesture Navigationサポートの手引き Part 2：Window Insets",
+        "body": "https://medium.com/androiddevelopers/gesture-navigation-handling-visual-overlaps-4aed565c134c\r\n\r\n前回システムUIの背後までアプリを描画したのを受けて、今回はアプリの画面がシステムUIと被らないようにWindow Insetsを使う話です。6種類のWindow Insetsが説明されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/960",
+        "title": "Android Q最終ベータがリリース",
+        "body": "https://android-developers.googleblog.com/2019/08/final-beta-update-official-android-q.html\r\n\r\n数週間後に正式版がリリース予定だそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/959",
+        "title": "SMS User Consent APIをつかった自動SMS認証の実装",
+        "body": "https://medium.com/androiddevelopers/automatic-sms-verification-with-sms-user-consent-da8c16135e25\r\n\r\nSMSで番号が送られてきたときに自動で認証する仕組みをどう実装するか解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/958",
+        "title": "Okioが2.3.0でKotlin Multiplatformに対応",
+        "body": "https://github.com/square/okio/blob/master/CHANGELOG.md#version-230\r\n\r\n[Okio 2](https://github.com/AndroidDagashi/AndroidDagashi/issues/391)のリリース時から将来的な対応が予告されていましたが、2019/07/29リリースのv2.3.0でKotlin Multiplatform Projectに移行したようです。\r\n現状JVM, JavaScript, Nativeがサポートされていますが、JavaScriptとNativeはプレビュー版というステータスです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHvvhjA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHvvhjA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "実際のコードを見てみるとまだ[こんな状態](https://github.com/square/okio/blob/a93f96c0dc2b1256f209ec719dc96b6c121bba45/okio/src/nativeMain/kotlin/okio/Okio.kt)だったりします。\r\n\r\n新しいプラットフォームのサポートは結構考えることも多いので、とりあえずインターフェースだけ先に用意しておく、という方針なのかもしれません。",
+              "publishedAt": "2019-08-09T08:06:25Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
