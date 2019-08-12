@@ -109,7 +109,6 @@ const config: NuxtConfiguration = {
   modules: ['@nuxtjs/axios'],
   devModules: ['@nuxtjs/vuetify'],
   plugins: [
-    '~/plugins/vuetify.ts',
     '~/plugins/markdownit.ts',
     { src: '~/plugins/ga.js', ssr: false }
   ],
