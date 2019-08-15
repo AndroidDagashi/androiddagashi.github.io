@@ -37,9 +37,10 @@ const host =
   process.env.npm_package_config_nuxt_host ||
   'localhost'
 
-const baseUrl = process.env.NODE_ENV === 'development'
-  ? `http://${host}:${port}`
-  : siteConfigs.baseUrl || `http://${host}:${port}`
+const isDev = process.env.NODE_ENV === 'development'
+// const isProd = process.env.NODE_ENV === 'production'
+
+const baseUrl = isDev ? `http://${host}:${port}` : siteConfigs.baseUrl || `http://${host}:${port}`
 
 const issueIds = indexJson.milestones.nodes.map(
   milestone => `/issue/${milestone.path}`
