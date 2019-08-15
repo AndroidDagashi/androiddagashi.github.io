@@ -90,7 +90,7 @@ import axios from '~/plugins/axios'
 })
 export default class Issue extends Vue {
   milestone!: GHMilestone;
-  title: string = '';
+  title = '';
 
   siteTitle!: string;
   description!: string;
