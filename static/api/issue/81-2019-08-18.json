@@ -1,0 +1,380 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDU2NDAxMw==",
+  "number": 81,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/81",
+  "title": "81 2019-08-18",
+  "description": "KotlinでDIを自前で行う, Androidにおけるアクセシビリティ向上の取り組み, Google I/O 2019アプリのコードが公開, Kotlin 1.3.50-EAP3, WorkManager 2.2.0",
+  "closedAt": "2019-08-18T10:25:52Z",
+  "issues": {
+    "totalCount": 13,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABRPOHLpXcA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOHJTKQw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/980",
+        "title": "Android/iOSでコードを共有する共有する際の隠れた(?)コスト",
+        "body": "https://blogs.dropbox.com/tech/2019/08/the-not-so-hidden-cost-of-sharing-code-between-ios-and-android/\r\nhttps://www.reddit.com/r/androiddev/comments/cqa9fn/the_not_so_hidden_cost_of_sharing_code_between/\r\n\r\nDropboxは長いこと(2013年から)C++を利用してAndroid/iOS間でコードを共有してきました。しかし、近頃この方針を撤回して各プラットフォーム固有の言語(KotlinやSwift)を利用した開発に切り替えたそうです。\r\n\r\nこのブログでは、標準的でない方法で開発をする際にどういったコストが発生するのか、またどうしてコード共有をやめることにしたのか、Dropboxの事例を紹介してくれています。\t\t\t\t",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHyHGpQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHyHGpQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "今だったらKotlin Multiplatform Projectがありますが、これを採用したサービスが5年後その決断をどう評価するのか気になります。\t",
+              "publishedAt": "2019-08-18T09:49:18Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/979",
+        "title": "AndroidX 8/15のリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#august_15_2019\r\n\r\nとうとうWorkManager 2.2からRCが取れたようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/978",
+        "title": "Androidにおけるアクセシビリティ向上の取り組み",
+        "body": "https://android-developers.googleblog.com/2019/08/improving-accessibility-in-android_56.html\r\n\r\nPre-launchレポートでアクセシビリティについてのサジェストを行ったり教育用コースも用意されているようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/977",
+        "title": "KotlinでDIを自前で行う",
+        "body": "https://speakerdeck.com/handstandsam/android-summit-2019-diy-dependency-injection-with-kotlin\r\n\r\nSDKを作成するためにサードパーティのライブラリを使わずに自前でDIを行った話です。Kotlinのデフォルトパラメータと`by lazy`をつかうことで、自前でApplicationクラスでネットワークグラフを作成しておき、それを各Activity/Fragmentで使っています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHxpyoA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHxpyoA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://github.com/handstandsam/ShoppingApp/ に参照実装がありますが、NetworkGraphの切り替えのあたりはちょっと苦しそうだなという気もします。",
+              "publishedAt": "2019-08-15T23:03:11Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/976",
+        "title": "Roomのpre-populate機能の紹介",
+        "body": "https://medium.com/androiddevelopers/packing-the-room-pre-populate-your-database-with-this-one-method-333ae190e680\r\n\r\nRoom 2.2からpre-populate機能が使えるようになり、あらかじめ必要なデータをassetもしくはローカルファイルに置いておくと、初期化時にその内容をロードできるそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHxSiNg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHxSiNg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "記事の後半にマイグレーションとの関係が載っていますが、なかなか複雑そうでした。",
+              "publishedAt": "2019-08-14T22:37:28Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/975",
+        "title": "Google I/O 2019 for Androidのソースコードが公開",
+        "body": "https://android-developers.googleblog.com/2019/08/google-releases-source-code-for-google.html\r\n\r\n以前と比べてどのような改善があったか、詳しく述べられていて参考になります",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/974",
+        "title": "Kotlin Coroutines 1.3.0-RC2",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.3.0-rc2\r\n\r\n引き続きFlowの改善が行われています\t",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/973",
+        "title": "Kotlin 1.3.50 EAP3",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.3.50-eap-86\r\n\r\n前回のEAPからの差分はこちら\r\nhttps://github.com/JetBrains/kotlin/commit/9704646e0432c2fd91c3fd03d7f7a6625b3d00b8?short_path=e705c8f#diff-e705c8fadf1193ab59443a5e6c8cbe8b",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/972",
+        "title": "Flutterチームが開発者向けにアンケートを実施中",
+        "body": "https://google.qualtrics.com/jfe/form/SV_3kiGXYfYOfXUjB3?Source=Reddit\r\nhttps://www.reddit.com/r/FlutterDev/comments/cpfwnt/help_improve_flutter_take_our_quarterly_survey/\r\n\r\n四半期に一回のFlutter開発者アンケートです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/971",
+        "title": "Android Studio 3.6 Canary 6",
+        "body": "https://androidstudio.googleblog.com/2019/08/android-studio-36-canary-6-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/cpwq7p/android_studio_36_canary_6_available/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHw9PXw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHw9PXw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditによると、使えなくもない状態のViewBindingが含まれた最初のリリースだそうです。\r\nただ、まだ外部のユーザに試してもらう準備が整っていないので言及がないのだとか。\r\nhttps://www.reddit.com/r/androiddev/comments/cpwq7p/android_studio_36_canary_6_available/ewsfeux/",
+              "publishedAt": "2019-08-14T04:27:37Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/970",
+        "title": "Now in Android Episode 2",
+        "body": "https://medium.com/androiddevelopers/now-in-android-episode-2-b17fc5630fea\r\n\r\nちゃんとシリーズ化されたようです :-p Android Q Beta 6の話やAndroidXのとくにAdsライブラリについて触れられています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/969",
+        "title": "KotlinConf 2019の発表内容が公開",
+        "body": "https://kotlinconf.com/speakers/\r\n\r\n今年のKotlin Confのスピーカーと発表内容が公開されました（スピーカーをクリックすると発表内容が見れます）",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHwS7DA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHwS7DA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "個人的にいちばん気になっているのはErik Meijerです。発表内容が TBD ですが……。",
+              "publishedAt": "2019-08-12T12:26:33Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/968",
+        "title": "Kotlinファーストの画像ロードライブラリ",
+        "body": "https://tech.instacart.com/introducing-coil-kotlin-first-image-loading-on-android-f0fdc7a2a99e\r\n\r\nKotlinファーストでcoroutineなどもサポートしている画像ライブラリのようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHwOfdw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHwOiOQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Instacartという会社で使われており、作者もInstacartに勤めているようですが、会社が主体となってメンテしていくのかどうかは分かりません。",
+              "publishedAt": "2019-08-12T08:01:36Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "InstacartというとFragmented Podcastのホストの一人が勤めている会社だなと思っていたのですが、Fragmentedの新エピソードも併せて出たようです\r\nhttps://fragmentedpodcast.com/episodes/171/",
+              "publishedAt": "2019-08-12T08:04:30Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
