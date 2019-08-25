@@ -1,0 +1,350 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDU4MTkwOQ==",
+  "number": 82,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/82",
+  "title": "82 2019-08-25",
+  "description": "Kotlin 1.3.50,  Kotlin Festのセッション一覧, Androidアプリでも審査が開始, Android Qのリリース名, Android Studio 3.5, Daggerコードラボ, など",
+  "closedAt": "2019-08-25T10:30:14Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABK_OHOaXfw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOHMzFQg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/993",
+        "title": "Kotlin型実践入門",
+        "body": "https://speakerdeck.com/satoshun/kotlin-fest-2019-kotlinxing-shi-jian-ru-men\r\n\r\n型推論に始まって、コントラクトやジェネリクスの話など実例とともに紹介されています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/992",
+        "title": "今からはじめる Android Kotlin",
+        "body": "https://speakerdeck.com/yanzm/jin-karahazimeru-android-kotlin?slide=119\r\n\r\n基本的な導入のしかたに始まってAndroidアプリ開発でKotlinを使う方法が丁寧に説明されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/991",
+        "title": "Kotlin Fest 2019 セッション一覧",
+        "body": "https://kotlin.connpass.com/event/129860/\r\nhttps://docs.google.com/document/d/e/2PACX-1vSrhqi78mkNdsW0GN3otMfb8pznZ0_yTcich85KcsDnuWkz-FbydNIwO_0mXBAEPdbHY_Iupg2taZVb/pub\r\n\r\nKotlin Fest 2019が開催されました。公式な資料がまとまっている場所はまだないようです :cry: ",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOH0STDQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOH0STDQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "非公式のものは見つけました\r\nhttps://gist.github.com/hiroga-cc/d27df1349548db991551a1c2db7b609d",
+              "publishedAt": "2019-08-24T23:24:13Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/990",
+        "title": "SQLDelightクイックスタートガイド",
+        "body": "https://handstandsam.com/2019/08/23/sqldelight-1-x-quick-start-guide-for-android/\r\n\r\nKotlin MPPでよく使われるSQLDelightをAndroidプロジェクトで使うためのガイドです。動画つきで分かりやすいです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/988",
+        "title": "Kotlin Coroutines 1.3.0",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.3.0\r\n\r\nFlow APIがstableになっています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/987",
+        "title": "Kotlin 1.3.50リリース",
+        "body": "https://blog.jetbrains.com/kotlin/2019/08/kotlin-1-3-50-released/\r\n\r\n1.3.50がリリースされました。Kotlin 1.4でnullチェックの例外の型が変わることや、experimentalで導入されたTime APIやビット演算APIが含まれています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHz033A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHz033A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "私が最近業務でやっているKotlin Multiplatform周りだと\r\n\r\n- 完全なbitcodeサポート\r\n- Kotlin/Nativeコンパイラのパフォーマンス向上\r\n- jvmターゲットでjavaファイルを含むことが可能に\r\n- IntelliJ UltimateでKotlin/Nativeのデバッグが可能に\r\n\r\nなどなど、他にも盛り沢山です\r\n",
+              "publishedAt": "2019-08-22T22:44:52Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/986",
+        "title": "Androidアプリにも審査がされるようになった件",
+        "body": "https://qiita.com/k_masa777/items/54727e14f0861ba594ea\r\n\r\n以前から最大で48時間かかる可能性があると言われていたものの、ほとんどのアプリには影響がなかった審査ですが、どうやら徐々に影響を受けるアプリが増えているようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHzpbZA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHzpbZA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Redditでも話題になっているようです。\r\nhttps://www.reddit.com/r/androiddev/comments/ctczq1/google_play_store_approval_for_new_apps_will_now/",
+              "publishedAt": "2019-08-22T13:58:07Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/985",
+        "title": "Android Qのリリース名が発表される",
+        "body": "https://www.blog.google/products/android/evolving-android-brand/\r\n\r\n歴代のAndroid OSはお菓子にちなむ名前が付けられており、[Qで始まるお菓子は何か](https://www.theverge.com/tldr/2018/8/6/17655790/android-p-q-naming-10-google-quinoa-quiche-desserts)注目の的でしたが、最終的にお菓子はやめて「Android 10」が正式名称になったそうです。また併せてAndroidのロゴも変更されたようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHzpdfw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHz2y8w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Google本社にあるドロイド君の人形も新しく作られなくなるのでしょうか。",
+              "publishedAt": "2019-08-22T13:59:20Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "https://www.theverge.com/2019/8/22/20827231/android-10-q-google-name-officially-announced-new-logo-wordmark-desserts\r\n\r\nThe Vergeの記事が言葉遊びをしていて小粋です",
+              "publishedAt": "2019-08-23T01:27:51Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/984",
+        "title": "PlayStoreのリデザイン",
+        "body": "https://android-developers.googleblog.com/2019/08/the-google-play-stores-visual-refresh.html\r\n\r\n最近行われたPlay Storeのリデザインについて解説されています。また新しいアイコンの仕様についても触れられています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/983",
+        "title": "Androidプロジェクトのビルド中にAndroid Studioをサスペンドするスクリプト",
+        "body": "https://medium.com/@akhilgupta.me/android-studio-build-time-hack-a06ba2dd7f1\r\n\r\n冗談みたいな話ですが、Android Studioが起動しているとビルドが遅いのでビルド中はAndroid Studioをサスペンドするようにしたところビルドが50%速くなったそうです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHzEo2w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHzEo2w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "記事内ではAndroid StudioがCPUを食うからではないかとあって、使っているマシンのスペックに依存していそうではあります。",
+              "publishedAt": "2019-08-21T06:24:28Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/982",
+        "title": "Daggerのコードラボ",
+        "body": "https://dagger-codelab.netlify.com/\r\n\r\n見た目が公式のようですが、有志による手作りのようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHzDcGQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHzDcGQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ちらっと見ただけですが、トラブルシュート（よくあるエラーとその解決方法）があるのがユニークでおもしろかったです。",
+              "publishedAt": "2019-08-21T04:57:28Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/981",
+        "title": "Android Studio 3.5 Project Marbleがステーブルに",
+        "body": "https://android-developers.googleblog.com/2019/08/android-studio-35-project-marble-goes.html\r\n\r\n以前からしばしば言及されていたProject Marbleの成果が入ったAndroid Studio 3.5がStableになりました。この記事では3.5に入った改善がいくつか説明されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHzC1Ow==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHzC1Ow==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://takasfz.hatenablog.com/entry/2019/04/19/120750\r\n\r\nレイアウトファイルのフォーマットがぐちゃぐちゃになってしまう方はこの辺が参考になります\t",
+              "publishedAt": "2019-08-21T04:00:21Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
