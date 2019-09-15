@@ -1,0 +1,321 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDY0MTQ0Ng==",
+  "number": 85,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/85",
+  "title": "85 2019-09-15",
+  "description": "Flutter 1.9, API29のソースコードが利用可能に, Android Studio 3.6 Canary 11でViewBindingが公開, Impl付きクラス名の是非, など",
+  "closedAt": "2019-09-15T10:25:12Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAA-fOHW2SqA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOHVvccA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1028",
+        "title": "Kotlin Multiplatformのexpect/actualについて",
+        "body": "https://medium.com/@ben_98270/kotlin-multiplatform-expect-actuals-66a0d8ad9f4b\r\n\r\nKotlin Multiplatform Projectで異なるプラットフォームのコードを呼び分ける仕組みであるexpect/actualの使い方について、Date型を例に解説しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1027",
+        "title": "GradleファイルをGoovyからKotlinに書き換える",
+        "body": "https://proandroiddev.com/converting-your-android-gradle-scripts-to-kotlin-1172f1069880",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1026",
+        "title": "CodemagicがFlutter for desktopのビルドをサポート",
+        "body": "https://blog.codemagic.io/codemagic-ci-cd-releases-support-for-flutter-desktop/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI",
+              "description": "Continuous Integration",
+              "color": "006b75"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1025",
+        "title": "LiveDataをユニットテストする",
+        "body": "https://medium.com/androiddevelopers/unit-testing-livedata-and-other-common-observability-problems-bb477262eb04",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1024",
+        "title": "Flutter 1.9",
+        "body": "https://developers.googleblog.com/2019/09/flutter-news-from-gdd-china-flutter1.9.html\r\n\r\nGDD ChilnaでFlutter 1.9が発表されました\r\n今までExperimentalということでFlutter for Webはパッケージが `flutter_web` に分けられていましたが、今回のリリースで `flutter` に統合されたようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOH66rpA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOH66rpA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "同時にリリースされたDart 2.5には、Cで書かれたライブラリをDartから使えるようにするFFI機能のプレリリース版が実装されています",
+              "publishedAt": "2019-09-15T07:08:42Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1023",
+        "title": "Dependency InjectionとService Locatorの違い",
+        "body": "https://www.reddit.com/r/androiddev/comments/d1b4i1/understanding_the_difference_between_di_and_sl/\r\n\r\nやや食傷気味かもしれませんが、またぞろDependency InjectionとService Locatorの違い、および Koin と Dagger の違いの議論です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOH6z4mg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOH6z4mg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://www.reddit.com/r/androiddev/comments/d1b4i1/understanding_the_difference_between_di_and_sl/ezmv7cy/ にあるように、Jakeの定義では「依存関係をかってに構築してくれる（wire）」のがDIで、「依存関係を自分で定義してあげないといけない」のがSLということのようです。\r\n\r\nDI/SLの定義論争は不毛かもしれませんが、DaggerとKoinの違いとして、その部分は認識しておくとよさそうです。",
+              "publishedAt": "2019-09-14T00:32:47Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1022",
+        "title": "Impl付きのクラス名の是非",
+        "body": "https://www.reddit.com/r/androiddev/comments/d05di8/do_you_use_the_impl_suffix_if_you_only_have_one/\r\n\r\nよく見かける `MyRepository` インタフェースにたいして、実装クラスが1つだけでその名前が `MyRepositoryImpl` になることの是非を議論しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1021",
+        "title": "API 29のソースコードが利用可能になる",
+        "body": "https://www.reddit.com/r/androiddev/comments/d35i0r/api_29_sources_are_available/\r\n\r\nようやくソースがダウンロードできるようになったようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1020",
+        "title": "ButterKnife 10.2.0",
+        "body": "https://github.com/JakeWharton/butterknife/blob/master/CHANGELOG.md\r\n\r\n前から要望のあったインクリメンタルなアノテーションプロセッシングに対応したようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOH66WYA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOH66Wjg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "READMEを見ると、ButterKnifeの開発は縮小していくこととview bindingへの移行推奨が追記されています。\r\nおそらくview bindingが安定版になったタイミングで、ButterKnifeはdeprecatedになるのではないでしょうか\r\n",
+              "publishedAt": "2019-09-15T05:15:13Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "また、[kotterknife](https://github.com/JakeWharton/kotterknife)の方はすでにdeprecatedになっていて、view bindingへ移行するよう書かれています",
+              "publishedAt": "2019-09-15T05:16:19Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1019",
+        "title": "Android Studio 3.6 Canary 11",
+        "body": "https://androidstudio.googleblog.com/2019/09/android-studio-36-canary-11-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/d2tkea/android_studio_36_canary_11_available/\r\n\r\nついにViewBindingが公式に使えるようになりました\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOH6EHFw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOH66Wxg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "スプラッシュ画面もかわりました\r\nhttps://www.reddit.com/r/androiddev/comments/d2v3cm/android_studio_36_canary_11_loading_screen/",
+              "publishedAt": "2019-09-12T03:15:10Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "ViewBinding自体のドキュメントはこちらです\r\nhttps://developer.android.com/topic/libraries/view-binding",
+              "publishedAt": "2019-09-15T05:17:16Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
