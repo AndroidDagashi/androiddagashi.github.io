@@ -1,0 +1,247 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDY4MDI1OQ==",
+  "number": 87,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/87",
+  "title": "87 2019-09-29",
+  "description": "Strructured Concurrencyの振り返り, React Native 0.61, Firebase Summit 2019での新機能発表, Google Play Pass発表, 若手Androidアプリ開発者への助言, など",
+  "closedAt": "2019-09-29T11:21:49Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAMfOHbRyeQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OHcvm8Q==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1041",
+        "title": "React Native 0.61",
+        "body": "https://facebook.github.io/react-native/blog/2019/09/18/version-0.61\r\n\r\n'Live Reloading(状態を保持せずアプリをリロード)'と'Hot Reloading(状態を保持したままアプリをリロード)'を統合した`Fast Refresh`が実装されました。\r\n\r\n'Hot Reloading'の課題であったfunctional componentへの対応がなされた他、全体的な信頼性も上がっているようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1040",
+        "title": "Play Storeに有料アプリのサブクリプションサービスが登場",
+        "body": "https://android-developers.googleblog.com/2019/09/unlock-your-creativity-with-google-play.html\r\n\r\nApple Arcadeと同じように、月額課金のサービスに登録すると、一部の有料アプリやゲームが使い放題になるPlay Passというサービスだそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1042",
+        "title": "Firebase Summit 2019で発表された新機能",
+        "body": "https://firebase.googleblog.com/2019/09/Whats-new-at-Firebase-Summit-2019.html\r\n\r\nApp Distributionがついにパブリックリリースされました。\r\nこれを持ってFabricからの移行が完了したそうです。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1043",
+        "title": "R8におけるClass Reflectionの最適化",
+        "body": "https://jakewharton.com/r8-optimization-class-reflection-and-forced-inlining/\r\n\r\nすこし間が空きましたが、JakeによるR8の最適化の記事です。今回は`Class`クラスのメソッドのインライン化についてです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1044",
+        "title": "カスタムLintチェック",
+        "body": "https://photos.google.com/share/AF1QipPxirsdM5qk9gjO2WdCez5di5uZ3-N2MWzpY3XtPrRLdiAUD6gsoBby821SJOMt-g?key=YmhKeUJXS1V0NDVFN3k4Nk9GWGJlQTlaX29jZDBR\r\n\r\nAndroid GDG Meetupで発表されたカスタムLintの話です。デモのソースやなにが出来るかが示されているだけで具体的な内容は去年のAndroid Dev Summitの動画に任せているようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1045",
+        "title": "Structured Concurrencyの振り返り",
+        "body": "https://link.medium.com/8RtbYmvvm0\r\n\r\nKotlin Corourineの作者のRomanがCorourine Scopeについて振り返っています。当初の狙いが達成できたか、ここはもう少し改善できた、今後どうするか、といったことが書かれています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1046",
+        "title": "Droidcon NYC 2019のセッション動画が公開",
+        "body": "https://www.droidcon.com/videos?path=NewYork%20City\r\n\r\n今年はKotlin関連、それもMultiplatform周りのセッションが多かったそうです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1047",
+        "title": "test-fixturesプラグインを使ってテストコードを再利用する",
+        "body": "http://michaelevans.org/blog/2019/09/21/stop-repeating-yourself-sharing-test-code-across-android-modules/\r\n\r\nテストダブル(スタブとかモックとか)を再利用できる `java-test-fixtures` プラグインの紹介です。\r\nAndroidやKotlinから利用するにはまだ制限がありますが、便利そうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1048",
+        "title": "若手Androidアプリ開発者への助言",
+        "body": "https://www.reddit.com/r/androiddev/comments/d9y376/advice_to_a_young_android_developer_or_things_the/\r\n\r\nあるいはチュートリアルが教えてくれないこと",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1049",
+        "title": "レイヤードアーキテクチャの階層の分け方",
+        "body": "https://proandroiddev.com/multiple-ways-of-defining-clean-architecture-layers-bbb70afa5d4a\r\n\r\nマルチモジュールプロジェクトでClean Architectureをするとき、どういう階層の分け方があるだろう？　という話",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1050",
+        "title": "AndroidStudioでカスタムLive Templateを作成する",
+        "body": "https://proandroiddev.com/add-custom-live-templates-in-android-studio-11b59dd0284d\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
