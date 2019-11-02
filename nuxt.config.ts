@@ -1,6 +1,6 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
 import fs from 'fs'
-import NuxtConfiguration from '@nuxt/config'
+import { Configuration } from '@nuxt/types'
 import nodeExternals from 'webpack-node-externals'
 import parseArgs from 'minimist'
 import yaml from 'js-yaml'
@@ -46,7 +46,7 @@ const issueIds = indexJson.milestones.nodes.map(
   milestone => `/issue/${milestone.path}`
 )
 
-const config: NuxtConfiguration = {
+const config: Configuration = {
   env: {
     SITE_CONFIG: JSON.stringify(siteConfigs)
   },
@@ -109,6 +109,7 @@ const config: NuxtConfiguration = {
   },
   modules: ['@nuxtjs/axios'],
   devModules: ['@nuxtjs/vuetify'],
+  buildModules: ['@nuxt/typescript-build'],
   plugins: [
     '~/plugins/markdownit.ts',
     { src: '~/plugins/ga.js', ssr: false }

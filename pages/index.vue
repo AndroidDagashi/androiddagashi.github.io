@@ -59,8 +59,7 @@
 import { mapState } from 'vuex'
 import { GHDigestMilestone, GHDigest, GHPageInfo } from 'types/GitHubApi'
 import flatmap from 'lodash.flatmap'
-import { Component, Vue } from 'nuxt-property-decorator'
-import { Action } from 'vuex-class'
+import { Action, Component, Vue } from 'nuxt-property-decorator'
 import { SiteConfigContact } from 'types/SiteConfig'
 import IssueLink from '~/components/IssueLink.vue'
 
