@@ -1,6 +1,6 @@
 # AndroidDagashi
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/AndroidDagashi/androiddagashi.github.io.svg)](https://greenkeeper.io/)
+[![CircleCI](https://circleci.com/gh/AndroidDagashi/androiddagashi.github.io/tree/development.svg?style=svg)](https://circleci.com/gh/AndroidDagashi/androiddagashi.github.io/tree/development)
 
 
 ## Build Setup
