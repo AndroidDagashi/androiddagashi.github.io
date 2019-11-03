@@ -1,0 +1,314 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDc4Nzc2OQ==",
+  "number": 92,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/92",
+  "title": "92 2019-11-03",
+  "description": "Android Studio 3.6 beta2, Biometric APIの解説, dagger.androidの開発が終了, SAFの解説, アプリをChrome OS向けに最適化する, など",
+  "closedAt": "2019-11-03T10:22:01Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOHrOX8A==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-0_OHs3h_g==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1094",
+        "title": "D8による最適化",
+        "body": "https://jakewharton.com/d8-optimizations/\r\n\r\nJakeのR8/D8シリーズの続きです。今回はR8ではなくD8の最適化について説明しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1095",
+        "title": "Android Studio 3.6 Beta 2",
+        "body": "https://androidstudio.googleblog.com/2019/10/android-studio-36-beta-2-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOILN1vQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOILN1vQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/dpqmhj/android_studio_36_beta_2_available/",
+              "publishedAt": "2019-11-01T01:33:49Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1096",
+        "title": "Now in Android エピソード7",
+        "body": "https://medium.com/androiddevelopers/now-in-android-7-4b9ce75498a8\r\n\r\nAndroid Dev Summit、Android Studio 4.0、Android Developer Challengeなどについてまとまっています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1097",
+        "title": "Storage Access Framework (SAF)の解説",
+        "body": "https://commonsware.com/blog/2019/10/27/scoped-storage-stories-durable-access.html\r\nhttps://commonsware.com/blog/2019/11/02/scoped-storage-stories-documentfile.html\r\n\r\n[前回](https://commonsware.com/blog/2019/10/19/scoped-storage-stories-saf-basics.html)に引き続きScoped Storageにまつわる話を解説しています。今回はStorage Access Frameworkで取得したUriが基本的にActivity内でしか使えないことや DocumetFile について解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1098",
+        "title": "Bitometric APIの解説",
+        "body": "https://android-developers.googleblog.com/2019/10/one-biometric-api-over-all-android.html\r\n\r\nAndroidXで使えるようになったBiometric APIの解説です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOILqjRQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOILrqlQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Biometricまわりは色々と変遷があったのですが、最終的にこのライブラリを使うことでAndroid 6.0以降で統一的に扱えるようです。",
+              "publishedAt": "2019-11-03T03:40:08Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/dplh99/one_biometric_api_over_all_android/",
+              "publishedAt": "2019-11-03T09:51:05Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1099",
+        "title": "Android Emulator 29.2.7 Canary",
+        "body": "https://androidstudio.googleblog.com/2019/11/emulator-2927-canary.html\r\n\r\n28.1.8で追加された`emulator-headless`コマンドが廃止されました。今後は`emulator -no-window`でヘッドレスなエミュレータが起動します",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1100",
+        "title": "Android 11ではADBのワイヤレス接続がより使いやすくなるかも",
+        "body": "https://www.xda-developers.com/android-11-native-wireless-adb/\r\nhttps://www.reddit.com/r/androiddev/comments/dp3dj0/android_11_may_finally_bring_a_proper_native/\r\n\r\nAOSPへのコミットから、新しい開発者オプション、`wireless debugging`についてのコミットが発見されて話題になっています。\r\nまだマージはされてないようですが、QRコードを利用したペアリングもできるようになるとか",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1101",
+        "title": "ターゲットJVMの違いとKotlinバイトコード",
+        "body": "https://medium.com/@sergei.rybalkin/state-of-kotlin-targeting-different-jvms-e1e28e2a5d8f\r\n\r\nKotlinコンパイル時のターゲットJVMの違いによって、interfaceのデフォルトメソッドやinline classなどのバイトコードがどのように変わるか説明しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1102",
+        "title": "Android アプリのエクスペリエンスを Chrome OS 向けに最適化する",
+        "body": "https://developers-jp.googleblog.com/2019/11/android-chrome-os.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1103",
+        "title": "dagger.androidの開発が終了",
+        "body": "https://www.youtube.com/watch?v=o-ins1nvbDg\r\n\r\nAndroid Dev Summit 2019のDIについてのセッションで触れられていました。\r\n今後は新機能の追加はされず、`dagger.android`での経験を踏まえてよりよいアプローチを検討中だそうです。\r\n上記動画の後半で開発中のアイディアについても触れられています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOILrxqg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOILrxqg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "新機能の開発は終了しましたが、まだ`deprecated`になったわけではないことは注意する必要があります。\r\n実際、今後も代替のソリューションが提供されるまで保守は続くことがTwitterで述べられています。\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\"><a href=\"https://t.co/e02rd7Hw5N\">https://t.co/e02rd7Hw5N</a> is NOT deprecated. At <a href=\"https://twitter.com/hashtag/AndroidDeveloperSummit?src=hash&amp;ref_src=twsrc%5Etfw\">#AndroidDeveloperSummit</a>, we communicated that we won&#39;t be adding new features (major improvements) to the library but we&#39;re committed to maintaining it until a suitable stable replacement is available.</p>&mdash; Manuel Vivo (@ manuelvicnt) <a href=\"https://twitter.com/manuelvicnt/status/1188861226530607106?ref_src=twsrc%5Etfw\">October 28, 2019</a></blockquote>",
+              "publishedAt": "2019-11-03T10:18:27Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1104",
+        "title": "人間のためのProvider概要",
+        "body": "https://blog.codemagic.io/flutter-tutorial-provider/\r\n\r\nFlutterのProviderについてのチュートリアルです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1105",
+        "title": "KotlinのFlowを使ってUIイベントを扱う",
+        "body": "https://dev.to/ychescale9/binding-android-ui-with-kotlin-flow-22ok\r\n\r\nKotlin CoroutinesのFlowを使って[RxBinding](https://github.com/JakeWharton/RxBinding)的なものを作る方法を解説しています。\r\n\r\n著者はこの方法で[ReactiveCircus/FlowBinding](https://github.com/ReactiveCircus/FlowBinding)というライブラリを作り公開しています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOILr3fA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOILr3fA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "同じようにKotlin Coroutinesを利用してUI Widgetを扱うライブラリには、[LDRAlighieri/Corbnd](https://github.com/LDRAlighieri/Corbind)というものもあります",
+              "publishedAt": "2019-11-03T10:42:06Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
