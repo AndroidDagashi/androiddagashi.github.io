@@ -114,16 +114,16 @@ workflows:
               ignore:
                 - master
 
-  update_json:
-    jobs:
-      - push_json_and_rssfeed
-    triggers:
-      - schedule:
-          # 毎時ちょうどにビルド
-          cron: "0 * * * *"
-          filters:
-            branches:
-              only: development
+  # update_json:
+  #   jobs:
+  #     - push_json_and_rssfeed
+  #   triggers:
+  #     - schedule:
+  #         # 毎時ちょうどにビルド
+  #         cron: "0 * * * *"
+  #         filters:
+  #           branches:
+  #             only: development
 
   deploy_site:
     jobs:
