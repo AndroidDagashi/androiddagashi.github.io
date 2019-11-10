@@ -14,7 +14,7 @@
           <v-card-text class="text--primary">
             <p>
               <a href="https://twitter.com/hydrakecat" target="_blank">@hydrakecat</a>と
-              <a href="https://twitter.com/_yshrsmz" target="_blank">@_yshrsmz</a>が、一週間の間に気になったAndroid関連のニュースをざっくりまとめます。
+              <a href="https://twitter.com/_yshrsmz" target="_blank">@_yshrsmz</a>、<a href="https://twitter.com/STAR_ZERO" target="_blank">@STAR_ZERO</a>、<a href="https://twitter.com/stsn_jp" target="_blank">@stsn_jp</a>が、一週間の間に気になったAndroid関連のニュースをざっくりまとめます。
             </p>
             <p>おおよそ毎週日曜日の夜に更新してします。</p>
             <div class="text-right">
