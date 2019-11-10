@@ -1,0 +1,51 @@
+name: Update Json files
+on:
+  schedule:
+    - cron: '0 * * * *'
+
+jobs:
+  push_json_and_rssfeed:
+    name: Update Json files
+    runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      GH_READONLY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      PROJECT_USER_NAME: AndroidDagashi
+      PROJECT_REPO_NAME: androiddagashi.github.io
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: development
+        fetch-dept: 1
+
+    - name: Setup git config
+      run: |
+        git config user.email "androiddagashi-bot@users.noreply.github.com"
+        git config user.name "AndroidDagashi store staff"
+
+    - name: Restore cache
+      id: restore-cache
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: v1-dependencies-${{ hashFiles('yarn.lock') }}
+
+    - name: yarn install
+      if: steps.cache-primes.outputs.cache-hit != 'true'
+      run: yarn install
+
+    - name: Generate json resources
+      run: yarn generateJson
+
+    - name: Generate RSS feed
+      run: yarn generateRssFeed
+
+    # - name: Push generate files if there's any update
+    #   run: /.github/push-resources-if-needed.sh
+
+    - name: Print debug info
+      if: failure()
+      run: |
+        git remote
+        git status
