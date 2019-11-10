@@ -19,6 +19,12 @@ jobs:
         ref: development
         fetch-dept: 1
 
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.16.0'
+
+    - run: ls -af
+
     - name: Setup git config
       run: |
         git config user.email "androiddagashi-bot@users.noreply.github.com"
