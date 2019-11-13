@@ -1,5 +1,5 @@
 #!/bin/sh
-git remote add upstream https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+git remote add upstream https://${GITHUB_TOKEN}@github.com/${PROJECT_USERNAME}/${PROJECT_REPONAME}.git
 git add ./static/api ./static/feed.xml && git diff --cached --exit-code --quiet || git commit -m "Update stock info" && git push upstream development
 
 # if [[ -z "$(git status -s)" ]]; then
