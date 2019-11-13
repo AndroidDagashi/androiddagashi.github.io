@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      PUSH_ACCESS_TOKEN: ${{ screts.PUSH_ACCESS_TOKEN }}
+      PUSH_ACCESS_TOKEN: ${{ secrets.PUSH_ACCESS_TOKEN }}
       GH_READONLY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PROJECT_USER_NAME: AndroidDagashi
       PROJECT_REPO_NAME: androiddagashi.github.io
