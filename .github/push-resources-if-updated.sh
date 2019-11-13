@@ -1,5 +1,6 @@
 #!/bin/sh
-git add ./static/api ./static/feed.xml && git diff --cached --exit-code --quiet || git commit -m "Update stock info" && git push origin development
+git remote add upstream https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+git add ./static/api ./static/feed.xml && git diff --cached --exit-code --quiet || git commit -m "Update stock info" && git push upstream development
 
 # if [[ -z "$(git status -s)" ]]; then
 #   echo "Nothing to commit"
