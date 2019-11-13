@@ -35,7 +35,7 @@ jobs:
       with:
         path: node_modules
         # https://github.com/actions/cache/issues/39
-        key: yarn-deps-${{ hashFiles('./yarn.lock') }}
+        key: yarn-deps-${{ hashFiles('yarn.lock') }}
         restore-keys: |
           yarn-deps-
 
