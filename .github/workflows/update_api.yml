@@ -1,7 +1,7 @@
 name: Update Json files
-on: push
-  # schedule:
-  #   - cron: '0 * * * *'
+on:
+  schedule:
+    - cron: '0 * * * *'
 
 jobs:
   push_json_and_rssfeed:
@@ -22,8 +22,6 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: '10.16.0'
-
-    - run: ls -af
 
     - name: Setup git config
       run: |
