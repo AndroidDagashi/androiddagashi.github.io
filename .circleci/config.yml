@@ -125,12 +125,12 @@ workflows:
   #           branches:
   #             only: development
 
-  deploy_site:
-    jobs:
-      - deploy:
-          filters:
-            branches:
-              only: development
+  # deploy_site:
+  #   jobs:
+  #     - deploy:
+  #         filters:
+  #           branches:
+  #             only: development
 
 general:
   branches:
