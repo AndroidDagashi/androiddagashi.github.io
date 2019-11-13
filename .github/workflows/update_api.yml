@@ -49,6 +49,8 @@ jobs:
     - name: Generate RSS feed
       run: yarn generateRssFeed
 
+    - - run: cd ./static && ls -af
+
     - name: Push generate files if there's any update
       run: /.github/push-resources-if-updated.sh
 
