@@ -1,11 +1,12 @@
-name: Update Json files
+name: Deploy Website
 on:
-  schedule:
-    - cron: '0 * * * *'
+  push:
+    branches:
+      - development
 
 jobs:
-  push_json_and_rssfeed:
-    name: Update Json files
+  deploy_site:
+    name: Deploy Website
     runs-on: ubuntu-latest
     env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -13,7 +14,6 @@ jobs:
       GH_READONLY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PROJECT_USER_NAME: AndroidDagashi
       PROJECT_REPO_NAME: androiddagashi.github.io
-
     steps:
     - uses: actions/checkout@v1
       with:
@@ -39,17 +39,15 @@ jobs:
       if: steps.cache-primes.outputs.cache-hit != 'true'
       run: yarn install
 
-    - name: Generate json resources
-      run: yarn generateJson
+    - name: Generate website
+      run: yarn generate
 
-    - name: Generate RSS feed
-      run: yarn generateRssFeed
-
-    - name: Push generated files if there's any update
-      run: sh ./.github/push-resources-if-updated.sh
+    - name: Push website
+      run: sh ./.github/push-website.sh
 
     - name: Print debug info
       if: failure()
       run: |
         git remote
         git status
+
