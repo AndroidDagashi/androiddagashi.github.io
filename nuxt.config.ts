@@ -108,8 +108,7 @@ const config: Configuration = {
     routes: issueIds
   },
   modules: ['@nuxtjs/axios'],
-  devModules: ['@nuxtjs/vuetify'],
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/vuetify'],
   plugins: [
     '~/plugins/markdownit.ts',
     { src: '~/plugins/ga.js', ssr: false }
