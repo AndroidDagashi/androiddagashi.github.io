@@ -37,7 +37,7 @@ jobs:
     #       yarn-deps-
 
     - name: yarn install
-      if: steps.cache-primes.outputs.cache-hit != 'true'
+      # if: steps.cache-primes.outputs.cache-hit != 'true'
       run: yarn install
 
     - name: Generate json resources
