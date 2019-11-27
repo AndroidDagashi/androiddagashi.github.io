@@ -1,5 +1,7 @@
 name: Update Json files
 on:
+  issue_comment:
+    types: [created]
   schedule:
     - cron: '0 * * * *'
 
