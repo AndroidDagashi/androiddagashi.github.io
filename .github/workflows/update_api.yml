@@ -5,6 +5,7 @@ on:
 
 jobs:
   push_json_and_rssfeed:
+    if: github.event.event_name == 'schedule' || (github.event.event_name == 'issue_comment' && github.event.issue.number == 78)
     name: Update Json files
     runs-on: ubuntu-latest
     env:
