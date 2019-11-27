@@ -6,6 +6,12 @@ on:
     - cron: '0 * * * *'
 
 jobs:
+  empty_job:
+    if: github.event_name != 'schedule' && !(github.event_name == 'issue_comment' && github.event.issue.number == 78)
+    steps:
+    - name: print message
+      run: echo 'skip job'
+
   push_json_and_rssfeed:
     if: github.event_name == 'schedule' || (github.event_name == 'issue_comment' && github.event.issue.number == 78)
     name: Update Json files
