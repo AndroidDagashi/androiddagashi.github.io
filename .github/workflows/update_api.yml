@@ -8,6 +8,8 @@ on:
 jobs:
   empty_job:
     if: github.event_name != 'schedule' && !(github.event_name == 'issue_comment' && github.event.issue.number == 78)
+    name: Skip message
+    runs-on: ubuntu-latest
     steps:
     - name: print message
       run: echo 'skip job'
