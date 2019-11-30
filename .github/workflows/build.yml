@@ -4,7 +4,7 @@ on:
     branches-ignore:
     - master
     - development
-  pull_request
+  pull_request:
 
 jobs:
   build:
