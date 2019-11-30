@@ -1,5 +1,8 @@
 # AndroidDagashi
 
+[![Actions Status](https://github.com/AndroidDagashi/androiddagashi.github.io/workflows/Deploy%20Website/badge.svg)](https://github.com/AndroidDagashi/androiddagashi.github.io/actions)
+[![Actions Status](https://github.com/AndroidDagashi/androiddagashi.github.io/workflows/Update%20Json%20files/badge.svg)](https://github.com/AndroidDagashi/androiddagashi.github.io/actions)
+
 ## Build Setup
 
 [`direnv`](https://github.com/direnv/direnv)をインストール
