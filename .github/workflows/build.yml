@@ -1,0 +1,36 @@
+name: Build Website
+on:
+  push:
+    branches-ignore:
+    - master
+    - development
+  pull_request
+
+jobs:
+  build:
+    name: Build Website
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: development
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '10.16.0'
+
+    - name: Restore cache
+      id: restore-cache
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: yarn-deps-${{ hashFiles('yarn.lock') }}
+        restore-keys: |
+          yarn-deps-
+
+    - name: yarn install
+      if: steps.cache-primes.outputs.cache-hit != 'true'
+      run: yarn install
+
+    - name: Generate website
+      run: yarn generate
