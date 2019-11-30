@@ -1,8 +1,5 @@
 # AndroidDagashi
 
-[![CircleCI](https://circleci.com/gh/AndroidDagashi/androiddagashi.github.io/tree/development.svg?style=svg)](https://circleci.com/gh/AndroidDagashi/androiddagashi.github.io/tree/development)
-
-
 ## Build Setup
 
 [`direnv`](https://github.com/direnv/direnv)をインストール
