@@ -6,11 +6,11 @@ const config = require('./config')
 const API_DIR = './static/api'
 
 // query for index
-const indexQuery = fs.readFileSync('./apollo/queries/getMilestoneDigests.gql', 'utf8')
+const indexQuery = fs.readFileSync('./buildscripts/apollo/queries/getMilestoneDigests.gql', 'utf8')
 // query for issue
-const milestoneQuery = fs.readFileSync('./apollo/queries/getMilestoneByNumber.gql', 'utf8')
+const milestoneQuery = fs.readFileSync('./buildscripts/apollo/queries/getMilestoneByNumber.gql', 'utf8')
 // query for checking rate limit
-const rateLimitQuery = fs.readFileSync('./apollo/queries/getRateLimit.gql', 'utf8')
+const rateLimitQuery = fs.readFileSync('./buildscripts/apollo/queries/getRateLimit.gql', 'utf8')
 
 // setup apollo
 const apolloFectch = createApolloFetch({ uri: config.api })
