@@ -1,5 +1,6 @@
 import TwitterClient from './twitter/TwitterClient'
 import TwitterConfig from './twitter/TwitterConfig'
+import serviceAccount from '../../../firestore-service-account.json'
 
 let client = new TwitterClient(
   new TwitterConfig(
@@ -19,6 +20,6 @@ async function main() {
   }
 }
 
-main().then(() => {
-  console.log("finished")
-})
+// main().then(() => {
+//   console.log("finished")
+// })
