@@ -1,0 +1,273 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDg5MjI4MA==",
+  "number": 97,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/97",
+  "title": "97 2019-12-08",
+  "description": "KotlinConf 2019 Opening Keynote, Kotlin Conf 2019アプリのコード, Ankoがdeprecatedに, CoroutinesをViewのコールバックに適用する, など",
+  "closedAt": "2019-12-08T10:45:14Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOH7xLfg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-7POH9uZ8g==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1157",
+        "title": "CoroutinesをViewのコールバックに適用する",
+        "body": "https://medium.com/androiddevelopers/suspending-over-views-19de9ebd7020\r\n\r\nViewのコールバックをCoroutinesに対応してアニメーションさせる実装が紹介されてます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1158",
+        "title": "Ankoがdeprecatedに",
+        "body": "https://github.com/Kotlin/anko/blob/master/GOODBYE.md\r\n\r\nKotlinがAndroidの公式言語になり、AndroidXで様々なktxが提供されはじめ役目を終えた、ということのようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1159",
+        "title": "Kotlin Conf 2019アプリのコードが公開",
+        "body": "https://github.com/JetBrains/kotlinconf-app\r\n\r\nKotlin/Nativeが使われており、マルチプラットフォーム環境を構築するときは参考になりそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1160",
+        "title": "Android Studio 4.0 Canary 5",
+        "body": "https://androidstudio.googleblog.com/2019/12/android-studio-40-canary-5-available.html\r\n\r\nDataBindingやViewBinding、Composeなどの有効/無効切替方法が変更になりました。\r\n詳しくはこちら: https://developer.android.com/studio/preview/features/?hl=en#agp-4-0-0",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1161",
+        "title": "Android Studio 3.6 Beta 5",
+        "body": "https://androidstudio.googleblog.com/2019/12/android-studio-36-beta-5-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1162",
+        "title": "12/4のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#december_4_2019\r\n\r\nAutofillが1.0.0, CoordinatorLayoutが1.1.0の安定版になっています。\r\nRC版に上がったものもいくつかあります",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIYamGw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIYamGw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Lots of big changes in CameraX, CoordinatorLayout 1.1.0 stable, important RC bug fixes, and more for the Jetpack Dec 4th release!<a href=\"https://t.co/rFsCt9BeaM\">https://t.co/rFsCt9BeaM</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1202322055124750337?ref_src=twsrc%5Etfw\">December 4, 2019</a></blockquote>\r\n\r\nGoogleのIan Lakeさんによるリリースの紹介はこちらのツイートから",
+              "publishedAt": "2019-12-06T07:58:42Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1163",
+        "title": "モバイル向けAmplify Frameworkのプレビューが公開",
+        "body": "https://dev.classmethod.jp/cloud/aws/amplify-ios-and-amplify-android/\r\n\r\nAWSのServerlessアプリケーションを作るためのライブラリが公開されました。Analytics、DataStore、GraphQLなどを簡単に実装できるようになるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1164",
+        "title": "Kotlin 1.4の構想",
+        "body": "https://blog.jetbrains.com/kotlin/2019/12/what-to-expect-in-kotlin-1-4-and-beyond/\r\nhttps://www.youtube.com/watch?v=0xKTM0A8gdI\r\n\r\n新しいコンパイラの開発、ビルドのパフォーマンス改善、マルチプラットフォーム改善などが盛り込まれています。大きな機能を追加するバージョンではなく、品質にフォーカスしたバージョンのようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1165",
+        "title": "FingerprintManagerからBiometricPromptへの移行ガイド",
+        "body": "https://medium.com/androiddevelopers/migrating-from-fingerprintmanager-to-biometricprompt-4bc5f570dccd\r\n\r\nAndroidXでBiometric Libraryが提供されたのに伴って、API 23以降で提供されていたFingerPrintManagerを使う方法をBiometricPromptを使う方法に移行する手順が解説されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1166",
+        "title": "AndroidのKotlinへのコミット",
+        "body": "https://android-developers.googleblog.com/2019/12/androids-commitment-to-kotlin.html\r\n\r\nこの1年間のAndroidチームのKotlinへのコミットについて、および今後の予定について説明されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIYxLzw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIYxLzw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "KotlinコンパイラにAndroidチームが貢献していくのはおもしろい動きだと思います。ビルド周りに変化がありそうです。",
+              "publishedAt": "2019-12-07T11:27:15Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars0.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1167",
+        "title": "KotlinConf 2019 Opening Keynote",
+        "body": "https://youtu.be/0xKTM0A8gdI\r\n\r\n目新しい情報はないですがKotlinの今後の方向性についてよくまとまっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
