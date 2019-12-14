@@ -38,4 +38,8 @@ export default class TwitterClient {
       )
     })
   }
+
+  getTweetUrl(tweet: TweetResponse): string {
+    return `https://twitter.com/${tweet.user.screen_name}/${tweet.id_str}`
+  }
 }

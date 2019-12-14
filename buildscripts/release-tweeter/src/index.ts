@@ -1,25 +1,49 @@
 import TwitterClient from './twitter/TwitterClient'
-import TwitterConfig from './twitter/TwitterConfig'
-import serviceAccount from '../../../firestore-service-account.json'
+import FirestoreClient from './firestore/FirestoreClient'
+import config from './config'
+import GitHubClient from './github/GitHubClient'
+import GitHubMilestone from './github/GitHubMilestone'
 
-let client = new TwitterClient(
-  new TwitterConfig(
-    process.env.TWITTER_API_KEY as string,
-    process.env.TWITTER_API_KEY_SECRET as string,
-    process.env.TWITTER_ACCESS_TOKEN as string,
-    process.env.TWITTER_ACCESS_TOKEN_SECRET as string
-  )
-)
+let twitterClient = new TwitterClient(config.twitterConfig)
+let firestoreClient = new FirestoreClient(config.firebaseServiceAccount)
+let gitHubClient = new GitHubClient(config.gitHubConfig)
+
+function generateTweetMessage(milestone: GitHubMilestone): string {
+  return `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestone.number}回を公開しました！ #Androidjp \n` +
+    `${milestone.description}\n` +
+    `https://androiddagashi.github.io/issue/${milestone.title.trim().replace(/\s/g, '-')}`
+}
 
 async function main() {
   try {
-    let result = await client.tweet('test3')
-    console.log("tweeted", result)
+    let latestClosedMilestone = await gitHubClient.getLatestClosedMilestone()
+    if (latestClosedMilestone == null) {
+      console.log("Could not fetch latest closed milestone from GitHub. Terminating...")
+      return
+    }
+
+    let savedMilestone = await firestoreClient.getMilestone(latestClosedMilestone.number)
+    if (savedMilestone != null) {
+      console.log(`Milestone:${savedMilestone.number} is already tweeted. Terminating...`)
+      return
+    }
+
+    let message = generateTweetMessage(latestClosedMilestone)
+    let response = await twitterClient.tweet(encodeURIComponent(message))
+
+    await firestoreClient.addMilestone({
+      title: latestClosedMilestone.title,
+      number: latestClosedMilestone.number,
+      tweetUrl: twitterClient.getTweetUrl(response),
+      timestamp: Date.now()
+    })
+
+    console.log('tweeted and saved')
   } catch (err) {
     console.log('error', err)
   }
 }
 
-// main().then(() => {
-//   console.log("finished")
-// })
+main().then(() => {
+  console.log('finished')
+})

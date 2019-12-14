@@ -1,7 +1,7 @@
 export default interface TweetResponse {
   user: {
-      profile_image_url_https: string;
-      name: string;
-  };
-  text: string;
+    screen_name: string
+  }
+  id_str: string,
+  text: string
 }

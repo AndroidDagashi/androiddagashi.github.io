@@ -8,9 +8,9 @@ export default class FirestoreClient {
   private readonly firestore: admin.firestore.Firestore
 
   constructor(serviceAccount: any) {
-    this.firebaseApp = admin.initializeApp({
-      credential: admin.credential.cert(this.parseServiceAccount(serviceAccount))
-    })
+    let sa = this.parseServiceAccount(serviceAccount)
+    let cert = admin.credential.cert(sa)
+    this.firebaseApp = admin.initializeApp({ credential: cert })
     this.firestore = this.firebaseApp.firestore()
   }
 
@@ -37,9 +37,11 @@ export default class FirestoreClient {
         tweetUrl: milestone.tweetUrl,
         timestamp: milestone.timestamp
       })
+
+    console.log('added', result)
   }
 
-  async getLatestMilestone(milestoneNumber: number): Promise<Milestone | null> {
+  async getMilestone(milestoneNumber: number): Promise<Milestone | null> {
     let ref = await this.firestore.collection(COLLECTION_MILESTONES).doc(`${milestoneNumber}`).get()
     if (ref.exists) {
       let data = ref.data()!
