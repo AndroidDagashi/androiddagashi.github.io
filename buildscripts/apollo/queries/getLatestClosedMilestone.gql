@@ -1,0 +1,14 @@
+query getLatestClosedMilestone(
+  $repoName: String!,
+  $repoOwner: String!,
+) {
+  repository(name: $repoName, owner: $repoOwner) {
+    milestones(last: 1, states: [CLOSED]) {
+      nodes {
+        title
+        description
+        number
+      }
+    }
+  }
+}

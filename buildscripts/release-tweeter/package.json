@@ -5,13 +5,18 @@
   "license": "MIT",
   "repository": "git@github.com:yshrsmz/androiddagashi.git",
   "devDependencies": {
+    "@types/js-yaml": "^3.12.1",
+    "@types/node-fetch": "^2.5.4",
     "@types/oauth": "^0.9.1",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.3"
   },
   "dependencies": {
+    "apollo-boost": "^0.4.7",
     "axios": "^0.19.0",
     "firebase-admin": "^8.8.0",
+    "js-yaml": "^3.13.1",
+    "node-fetch": "^2.6.0",
     "oauth": "^0.9.15"
   }
 }
