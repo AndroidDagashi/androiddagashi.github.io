@@ -35,7 +35,7 @@ export default class FirestoreClient {
         title: milestone.title,
         number: milestone.number,
         tweetUrl: milestone.tweetUrl,
-        timestamp: milestone.timestamp
+        createdAt: milestone.createdAt
       })
 
     console.log('added', result)
@@ -49,7 +49,7 @@ export default class FirestoreClient {
         title: data.title,
         number: data.number,
         tweetUrl: data.tweetUrl,
-        timestamp: data.timestamp
+        createdAt: data.createdAt
       } as Milestone
     } else {
       return null

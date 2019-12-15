@@ -9,8 +9,8 @@ let firestoreClient = new FirestoreClient(config.firebaseServiceAccount)
 let gitHubClient = new GitHubClient(config.gitHubConfig)
 
 function generateTweetMessage(milestone: GitHubMilestone): string {
-  return `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestone.number}回を公開しました！ #Androidjp \n` +
-    `${milestone.description}\n` +
+  return `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestone.number}回を公開しました！ #Androidjp \n\n` +
+    `${milestone.description}\n\n` +
     `https://androiddagashi.github.io/issue/${milestone.title.trim().replace(/\s/g, '-')}`
 }
 
@@ -24,7 +24,7 @@ async function main() {
 
     let savedMilestone = await firestoreClient.getMilestone(latestClosedMilestone.number)
     if (savedMilestone != null) {
-      console.log(`Milestone:${savedMilestone.number} is already tweeted. Terminating...`)
+      console.log(`Milestone:${savedMilestone.number} has already been tweeted. Terminating...`)
       return
     }
 
@@ -35,7 +35,7 @@ async function main() {
       title: latestClosedMilestone.title,
       number: latestClosedMilestone.number,
       tweetUrl: twitterClient.getTweetUrl(response),
-      timestamp: Date.now()
+      createdAt: response.created_at
     })
 
     console.log('tweeted and saved')

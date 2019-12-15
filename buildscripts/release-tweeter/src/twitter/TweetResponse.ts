@@ -3,5 +3,6 @@ export default interface TweetResponse {
     screen_name: string
   }
   id_str: string,
-  text: string
+  text: string,
+  created_at: string
 }
