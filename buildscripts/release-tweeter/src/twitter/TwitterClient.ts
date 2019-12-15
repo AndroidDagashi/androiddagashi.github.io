@@ -23,7 +23,7 @@ export default class TwitterClient {
   tweet(message: string): Promise<TweetResponse> {
     return new Promise<TweetResponse>((resolve, reject) => {
       this.oauth.post(
-        `${TwitterConfig.URL_UPDATE}?status=${message}`,
+        `${TwitterConfig.URL_UPDATE}?status=${this.escapeMessage(message)}`,
         this.config.accessToken,
         this.config.accessTokenSecret,
         null,
@@ -37,6 +37,15 @@ export default class TwitterClient {
         }
       )
     })
+  }
+
+  private escapeMessage(message: string): string {
+    return encodeURIComponent(message)
+      .replace(/\!/g, "%21")
+      .replace(/\*/g, "%2A")
+      .replace(/'/g, "%27")
+      .replace(/\(/g, "%28")
+      .replace(/\)/g, "%29");
   }
 
   getTweetUrl(tweet: TweetResponse): string {

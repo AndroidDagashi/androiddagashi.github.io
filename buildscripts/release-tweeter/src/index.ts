@@ -29,7 +29,7 @@ async function main() {
     }
 
     let message = generateTweetMessage(latestClosedMilestone)
-    let response = await twitterClient.tweet(encodeURIComponent(message))
+    let response = await twitterClient.tweet(message)
 
     await firestoreClient.addMilestone({
       title: latestClosedMilestone.title,
