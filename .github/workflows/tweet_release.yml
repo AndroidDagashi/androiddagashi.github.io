@@ -1,0 +1,37 @@
+name: Tweet new release
+on:
+  page_build
+
+jobs:
+  tweet_release:
+    name: Tweet new release
+    runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tokyo
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      TWITTER_API_KEY: ${{ secrets.TWITTER_API_KEY }}
+      TWITTER_API_KEY_SECRET: ${{ secrets.TWITTER_API_KEY_SECRET }}
+      TWITTER_ACCESS_TOKEN: ${{ secrets.TWITTER_ACCESS_TOKEN }}
+      TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
+
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        ref: development
+
+    - uses: actions/setup-node@v1
+      with:
+        node-version: '12.13.1'
+
+    - name: setup Firebase
+      run: echo ${{ secrets.FIREBASE_JSON }} | base64 -d > ./androiddagashi-serviceaccount.json
+
+    - name: move to working directory
+      run: cd ./buildscripts/release-tweeter
+
+    - name: yarn install
+      run: yarn install
+
+    - name: tweet if not already
+      run: yarn tweet
+
