@@ -26,12 +26,11 @@ jobs:
     - name: setup Firebase
       run: echo ${{ secrets.FIREBASE_JSON }} | base64 -d > ./androiddagashi-serviceaccount.json
 
-    - name: move to working directory
-      run: cd ./buildscripts/release-tweeter
-
     - name: yarn install
+      working-directory: ./buildscripts/release-tweeter
       run: yarn install
 
     - name: tweet if not already
+      working-directory: ./buildscripts/release-tweeter
       run: yarn tweet
 
