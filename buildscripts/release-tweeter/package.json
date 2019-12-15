@@ -4,6 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "repository": "git@github.com:yshrsmz/androiddagashi.git",
+  "scripts": {
+    "tweet": "ts-node index.ts"
+  },
   "devDependencies": {
     "@types/js-yaml": "^3.12.1",
     "@types/node-fetch": "^2.5.4",
