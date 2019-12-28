@@ -16,11 +16,11 @@
               </v-card-title>
               <v-card-text class="pt-3">
                 <div class="comment-body md-body text--primary" v-html="$md.render(item.body)" />
-                <no-ssr>
+                <client-only>
                   <p :title="item.publishedAt" class="text-right mb-0">
                     {{ publishedAt(item) }}
                   </p>
-                </no-ssr>
+                </client-only>
               </v-card-text>
             </v-card>
           </template>

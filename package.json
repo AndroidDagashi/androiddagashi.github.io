@@ -18,9 +18,9 @@
     "lintfix": "eslint --fix --ext .ts,.js,.vue --ignore-path .gitignore ."
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.3.2",
+    "@nuxt/typescript-build": "^0.5.4",
     "@nuxtjs/eslint-config": "^1.1.2",
-    "@nuxtjs/vuetify": "^1.9.0",
+    "@nuxtjs/vuetify": "^1.9.1",
     "@types/lodash": "^4.14.149",
     "@types/luxon": "^1.21.0",
     "@types/markdown-it": "^0.0.9",
@@ -40,16 +40,16 @@
     "js-yaml": "^3.13.1",
     "prettier": "^1.18.2",
     "push-dir": "^0.4.1",
-    "typescript": "^3.6.4"
+    "typescript": "^3.7.4"
   },
   "dependencies": {
-    "@nuxt/typescript-runtime": "^0.2.2",
-    "@nuxtjs/axios": "^5.8.0",
+    "@nuxt/typescript-runtime": "^0.3.5",
+    "@nuxtjs/axios": "^5.9.0",
     "lodash.flatmap": "^4.5.0",
     "luxon": "^1.21.3",
     "markdown-it": "^10.0.0",
     "modern-normalize": "^0.5.0",
-    "nuxt": "^2.10.2",
+    "nuxt": "^2.11.0",
     "nuxt-property-decorator": "^2.5.0",
     "vue": "^2.6.11",
     "vue-server-renderer": "^2.6.11",

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <no-ssr placeholder="loading share widgets...">
+    <client-only placeholder="loading share widgets...">
       <div>
         <span class="mr-2">
           <a
@@ -35,7 +35,7 @@
           />
         </span>
       </div>
-    </no-ssr>
+    </client-only>
   </div>
 </template>
 <script lang="ts">
