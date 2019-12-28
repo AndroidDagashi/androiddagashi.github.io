@@ -1,18 +1,16 @@
-import GitHubConfig from "./GitHubConfig";
-import ApolloClient, { InMemoryCache, gql } from 'apollo-boost'
-import { createHttpLink} from 'apollo-link-http'
-import fetch from 'node-fetch'
-
 import fs from 'fs'
-import GitHubMilestone from "./GitHubMilestone";
+import ApolloClient, { InMemoryCache, gql } from 'apollo-boost'
+import fetch from 'node-fetch'
+import GitHubConfig from './GitHubConfig'
+
+import GitHubMilestone from './GitHubMilestone'
 
 export default class GitHubClient {
-
   readonly config: GitHubConfig
 
   readonly client: ApolloClient<InMemoryCache>
 
-  constructor(config: GitHubConfig) {
+  constructor (config: GitHubConfig) {
     this.config = config
 
     this.client = new ApolloClient({
@@ -24,10 +22,10 @@ export default class GitHubClient {
     })
   }
 
-  async getLatestClosedMilestone(): Promise<GitHubMilestone | null> {
-    let operation = fs.readFileSync('../apollo/queries/getLatestClosedMilestone.gql', 'utf8')
+  async getLatestClosedMilestone (): Promise<GitHubMilestone | null> {
+    const operation = fs.readFileSync('../apollo/queries/getLatestClosedMilestone.gql', 'utf8')
 
-    let result = await this.client.query({
+    const result = await this.client.query({
       query: gql(operation),
       variables: {
         repoName: this.config.repoName,
@@ -35,10 +33,10 @@ export default class GitHubClient {
       }
     })
 
-    if ((result.data?.repository?.milestones?.nodes?.length ?? 0) == 0) {
+    if ((result.data?.repository?.milestones?.nodes?.length ?? 0) === 0) {
       return null
     } else {
-      let milestone = result.data.repository.milestones.nodes[0]
+      const milestone = result.data.repository.milestones.nodes[0]
       return {
         title: milestone.title,
         description: milestone.description,

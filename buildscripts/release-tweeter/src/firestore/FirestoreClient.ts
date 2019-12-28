@@ -7,14 +7,14 @@ export default class FirestoreClient {
   private readonly firebaseApp: admin.app.App
   private readonly firestore: admin.firestore.Firestore
 
-  constructor(serviceAccount: any) {
-    let sa = this.parseServiceAccount(serviceAccount)
-    let cert = admin.credential.cert(sa)
+  constructor (serviceAccount: any) {
+    const sa = this.parseServiceAccount(serviceAccount)
+    const cert = admin.credential.cert(sa)
     this.firebaseApp = admin.initializeApp({ credential: cert })
     this.firestore = this.firebaseApp.firestore()
   }
 
-  private parseServiceAccount(serviceAccount: any): admin.ServiceAccount {
+  private parseServiceAccount (serviceAccount: any): admin.ServiceAccount {
     return {
       type: serviceAccount.type,
       projectId: serviceAccount.project_id,
@@ -29,8 +29,8 @@ export default class FirestoreClient {
     } as admin.ServiceAccount
   }
 
-  async addMilestone(milestone: Milestone) {
-    let result = await this.firestore.collection(COLLECTION_MILESTONES).doc(`${milestone.number}`)
+  async addMilestone (milestone: Milestone) {
+    const result = await this.firestore.collection(COLLECTION_MILESTONES).doc(`${milestone.number}`)
       .set({
         title: milestone.title,
         number: milestone.number,
@@ -41,10 +41,10 @@ export default class FirestoreClient {
     console.log('added', result)
   }
 
-  async getMilestone(milestoneNumber: number): Promise<Milestone | null> {
-    let ref = await this.firestore.collection(COLLECTION_MILESTONES).doc(`${milestoneNumber}`).get()
+  async getMilestone (milestoneNumber: number): Promise<Milestone | null> {
+    const ref = await this.firestore.collection(COLLECTION_MILESTONES).doc(`${milestoneNumber}`).get()
     if (ref.exists) {
-      let data = ref.data()!
+      const data = ref.data()!
       return {
         title: data.title,
         number: data.number,

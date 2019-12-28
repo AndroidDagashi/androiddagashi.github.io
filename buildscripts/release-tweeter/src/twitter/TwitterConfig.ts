@@ -11,7 +11,7 @@ export default class TwitterConfig {
   readonly accessToken: string
   readonly accessTokenSecret: string
 
-  constructor(
+  constructor (
     apiKey: string,
     apiKeySecret: string,
     accessToken: string,

@@ -5,7 +5,7 @@ export default class GitHubConfig {
   readonly repoOwner: string
   readonly apiToken: string
 
-  constructor(
+  constructor (
     repoName: string,
     repoOwner: string,
     apiToken: string

@@ -1,5 +1,5 @@
 export default interface GitHubMilestone {
-  title: string
-  description: string
-  number: number
+  title: string;
+  description: string;
+  number: number;
 }
