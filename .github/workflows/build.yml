@@ -32,7 +32,9 @@ jobs:
 
     - name: yarn install
       if: steps.cache-primes.outputs.cache-hit != 'true'
-      run: yarn install
+      run: |
+        yarn policies set-version
+        yarn install --frozen-lockfile
 
     - name: Generate website
       run: yarn generate
