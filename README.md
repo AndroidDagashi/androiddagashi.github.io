@@ -10,7 +10,7 @@
 `envrc.template`を`.envrc`にリネームして、`GH_READONLY_TOKEN`にGitHub Personal Access Tokenを入力する。  
 PublicレポジトリならPersonal Access Tokenの権限はすべて外せる。
 
-``` bash
+```bash
 # install dependencies
 $ npm install # Or yarn install
 
@@ -27,3 +27,11 @@ $ npm run generate # or yarn generate
 # deploy to GitHub Pages
 $ npm run deploy # or yarn deploy
 ```
+
+## Updating yarn
+
+```bash
+$ yarn policies set-version
+```
+
+`./.yarn` ディレクトリ内の最新リリース以外を削除

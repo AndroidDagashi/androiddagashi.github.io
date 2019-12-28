@@ -29,9 +29,7 @@ jobs:
 
     - name: yarn install
       working-directory: ./buildscripts/release-tweeter
-      run: |
-        yarn policies set-version
-        yarn install --frozen-lockfile
+      run: yarn install --frozen-lockfile
 
     - name: tweet if not already
       working-directory: ./buildscripts/release-tweeter
