@@ -8,46 +8,45 @@
     <v-row no-gutters justify="center" class="mb-8">
       <v-col cols="12" sm="8">
         <v-card class="mx-auto" raised>
-          <v-card-text v-text="tweet" style="white-space: pre-wrap; word-wrap:break-word;"/>
-          <v-card-subtitle :class="{'red--text': !isValidTweet, 'green--text': isValidTweet}">Tweet Length: {{ tweetLength }}</v-card-subtitle>
+          <v-card-text style="white-space: pre-wrap; word-wrap:break-word;" v-text="tweet" />
+          <v-card-subtitle :class="{'red--text': !isValidTweet, 'green--text': isValidTweet}">
+            Tweet Length: {{ tweetLength }}
+          </v-card-subtitle>
         </v-card>
       </v-col>
     </v-row>
     <v-row no-gutters justify="center">
       <v-col cols="12" sm="8">
-          <v-textarea outlined label="Milestone Summary" v-model="summary" @input="onInput"/>
-          <v-text-field type="number" outlined label="Milestone Number" v-model="milestoneNumber" @input="onInput" />
+        <v-textarea v-model="summary" outlined label="Milestone Summary" @input="onInput" />
+        <v-text-field v-model="milestoneNumber" type="number" outlined label="Milestone Number" @input="onInput" />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <script lang="ts">
-import { mapState } from "vuex";
-import { GHDigestMilestone, GHDigest, GHPageInfo } from "types/GitHubApi";
-import flatmap from "lodash.flatmap";
-import { Action, Component, Vue } from "nuxt-property-decorator";
-import { SiteConfigContact } from "types/SiteConfig";
-import twitter, { parseTweet } from 'twitter-text'
+import { mapState } from 'vuex'
+import { Component, Vue } from 'nuxt-property-decorator'
+import twitter from 'twitter-text'
 
 @Component({
-  name: "tweetcompser",
+  name: 'tweetcompser',
   computed: {
-    ...mapState(["baseUrl"])
+    ...mapState(['baseUrl'])
   }
 })
 export default class TweetComposer extends Vue {
   baseUrl!: string;
 
-  summary: string = "";
+  summary = '';
 
-  milestoneNumber: number = 100;
+  milestoneNumber = 100;
 
-  tweet: string = ""
+  tweet = ''
 
-  isValidTweet: boolean = false
+  isValidTweet = false
 
-  tweetLength: number = 0
+  tweetLength = 0
 
   // get tweet(): string {
   //   return this.generateTweet(this.milestoneNumber, this.summary)
@@ -58,25 +57,25 @@ export default class TweetComposer extends Vue {
   //   return result.weightedLength
   // }
 
-  generateTweet(milestoneNumber: number, summary: string): string {
+  generateTweet (milestoneNumber: number, summary: string): string {
     return (
       `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestoneNumber}回を公開しました！ #Androidjp \n\n` +
       `${summary}\n\n` +
       `${this.baseUrl}/issue/${milestoneNumber}-9999-99-99`
-    );
+    )
   }
 
-  onInput(value: string) {
+  onInput (value: string) {
     this.tweet = this.generateTweet(this.milestoneNumber, this.summary)
-    let parseResult = twitter.parseTweet(this.tweet)
+    const parseResult = twitter.parseTweet(this.tweet)
 
     this.tweetLength = parseResult.weightedLength
     this.isValidTweet = parseResult.valid
   }
 
-  mounted() {
+  mounted () {
     // initial calculation
-    this.onInput("")
+    this.onInput('')
   }
 }
 </script>
