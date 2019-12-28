@@ -33,7 +33,7 @@ jobs:
 
     - uses: actions/setup-node@v1
       with:
-        node-version: '10.16.0'
+        node-version: '12.13.1'
 
     - name: Setup git config
       run: sh ./.github/setup-git-config.sh
