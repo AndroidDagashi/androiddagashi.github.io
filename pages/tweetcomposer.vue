@@ -5,14 +5,18 @@
         <h2>Tweet Composer</h2>
       </v-col>
     </v-row>
+    <v-row no-gutters justify="center" class="mb-8">
+      <v-col cols="12" sm="8">
+        <v-card class="mx-auto" raised>
+          <v-card-text v-text="tweet" style="white-space: pre-wrap; word-wrap:break-word;"/>
+          <v-card-subtitle :class="{'red--text': !isValidTweet, 'green--text': isValidTweet}">Tweet Length: {{ tweetLength }}</v-card-subtitle>
+        </v-card>
+      </v-col>
+    </v-row>
     <v-row no-gutters justify="center">
       <v-col cols="12" sm="8">
-          <v-text-field type="number" outlined label="Milestone Number" v-model="milestoneNumber" @input="onInput" />
           <v-textarea outlined label="Milestone Summary" v-model="summary" @input="onInput"/>
-        <v-card class="mx-auto" raised>
-          <v-card-title :class="{'red--text': !isValidTweet, 'green--text': isValidTweet}">Tweet Content: {{ tweetLength }}</v-card-title>
-          <v-card-text v-text="tweet" style="white-space: pre-wrap; word-wrap:break-word;"/>
-        </v-card>
+          <v-text-field type="number" outlined label="Milestone Number" v-model="milestoneNumber" @input="onInput" />
       </v-col>
     </v-row>
   </v-container>
