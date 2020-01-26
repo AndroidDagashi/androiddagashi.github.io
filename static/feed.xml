@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://androiddagashi.github.io/</id>
     <title>Android Dagashi</title>
-    <updated>2020-01-19T10:45:57.000Z</updated>
+    <updated>2020-01-26T10:10:46.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>Android Dagashi</name>
@@ -35,6 +35,14 @@
         <email/>
         <uri>https://twitter.com/stsn_jp</uri>
     </contributor>
+    <entry>
+        <title type="html"><![CDATA[#104 2020-01-26]]></title>
+        <id>https://androiddagashi.github.io/issue/104-2020-01-26</id>
+        <link href="https://androiddagashi.github.io/issue/104-2020-01-26"/>
+        <updated>2020-01-26T10:10:46.000Z</updated>
+        <summary type="html"><![CDATA[<p>Google I/O 2020の日程公開, Kotlin Census 2019, inline classのコストの話, 1/22のAndroidXリリース, GitHub ActionsでKMPライブラリのビルド/デプロイ, など</p>
+Android Studio 4.0 Canary 9/2020年1月22日のAndroidXリリース/Kotlin Census 2019が実施中/Kotlin inline classのコストの話/パラメータで依存関係を動的に変更してビルド時間を削減/GitHub ActionsでKotlin Multiplatformなライブラリをビルド／デプロイする/Now in Android エピソード11/Android での TLS 採用に関する最新情報/TwitterのAndroidアプリがDBのマイグレーションを忘れた件/Google I/O 2020が5月12日～14日に開催]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[#103 2020-01-19]]></title>
         <id>https://androiddagashi.github.io/issue/103-2020-01-19</id>
@@ -426,13 +434,5 @@ Kotlin DSL を考慮した Gradle Plugin を記述するために必要だった
         <updated>2019-02-17T10:49:45.000Z</updated>
         <summary type="html"><![CDATA[<p>DroidKaigiのセッション動画が公開、Kotlin/Nativeのスレッドについて、AndroidThingsのサポートデバイスが縮小、Robolectric 4.2、WorkManager1.0.0-rc1、など</p>
 DroidKaigi 2019のセッションまとめ/WorkManager 1.0.0-rc1リリース/マルチモジュールプロジェクトでの Dagger2を用いた Dependency Injection/OSの分布ダッシュボードが2018年10月から更新されていない件/Robolectric 4.2 リリース/RetrofitにKotlin CoroutinesサポートのPRがマージされる/Kotlin/Nativeのスレッドについて/Kotlinスコープ関数を使う時/Play Storeのアプリ取り締まりの方針は今後も厳しいまま/Android Thingsのサポートデバイスが縮小/DroidKaigi 2019のセッション動画が公開/中間モジュールを挟んでビルド時間を短縮するテクニック/windowIsTranslucentがtrueでportraitのアクティビティはやめた方がいい]]></summary>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[#54 2019-02-10]]></title>
-        <id>https://androiddagashi.github.io/issue/54-2019-02-10</id>
-        <link href="https://androiddagashi.github.io/issue/54-2019-02-10"/>
-        <updated>2019-02-10T10:34:08.000Z</updated>
-        <summary type="html"><![CDATA[<p>DroidKaigi2019資料まとめ、ViewPager2、AndroidStudio 3.3.1、OkHttpのminSdkVersionが21に、KotlinConf2019、など</p>
-DroidKaigi2019資料まとめ/ViewPager2 1.0.0-alpha01/Android Studio 3.3.1/Room 2.1のKotlin Coroutinesサポート/誤ってnon-finalなclassが公開されるのを防ぐライブラリ/Material-Component 1.1.0-alpha03リリース/OkHttp 3.13のminSdkVersionが21に/iOSにあってAndroidにない欲しい機能/Kotlin Conf 2019の日付と場所が発表/Navigation 1.0.0-beta01/WorkManager 1.0.0-beta04]]></summary>
     </entry>
 </feed>
