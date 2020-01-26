@@ -3,11 +3,15 @@ import yaml from 'js-yaml'
 import serviceAccount from '../../../androiddagashi-serviceaccount.json'
 import GitHubConfig from './github/GitHubConfig'
 import TwitterConfig from './twitter/TwitterConfig'
+import DagashiConfig from './dagashi/DagashiConfig'
 
 const siteConfig = yaml.safeLoad(fs.readFileSync('../../siteconfig.yml', 'utf8'))
 
 export default {
   firebaseServiceAccount: serviceAccount,
+  dagashiConfig: new DagashiConfig(
+    '../../static/api/index.json'
+  ),
   twitterConfig: new TwitterConfig(
     process.env.TWITTER_API_KEY as string,
     process.env.TWITTER_API_KEY_SECRET as string,

@@ -1,12 +1,12 @@
 import TwitterClient from './twitter/TwitterClient'
 import FirestoreClient from './firestore/FirestoreClient'
 import config from './config'
-import GitHubClient from './github/GitHubClient'
 import GitHubMilestone from './github/GitHubMilestone'
+import DagashiClient from './dagashi/DagashiClient'
 
 const twitterClient = new TwitterClient(config.twitterConfig)
 const firestoreClient = new FirestoreClient(config.firebaseServiceAccount)
-const gitHubClient = new GitHubClient(config.gitHubConfig)
+const dagashiClient = new DagashiClient(config.dagashiConfig)
 
 function generateTweetMessage (milestone: GitHubMilestone): string {
   return `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestone.number}回を公開しました！ #Androidjp \n\n` +
@@ -16,7 +16,7 @@ function generateTweetMessage (milestone: GitHubMilestone): string {
 
 async function main () {
   try {
-    const latestClosedMilestone = await gitHubClient.getLatestClosedMilestone()
+    const latestClosedMilestone = await dagashiClient.getLatestMilestone()
     if (latestClosedMilestone == null) {
       console.log('Could not fetch latest closed milestone from GitHub. Terminating...')
       return
