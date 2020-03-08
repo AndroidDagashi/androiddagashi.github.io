@@ -1,0 +1,275 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTE1NDUxMQ==",
+  "number": 110,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/110",
+  "title": "110 2020-03-08",
+  "description": "Kotlin 1.3.70, 3/4のAndroidXリリース, Now in Android ep13, DroidKaigi 2020のスタッフ向けアプリについて, Android Platform Codelabが公開, など ",
+  "closedAt": "2020-03-08T10:33:07Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOIkYmQw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfOImuh0A==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1285",
+        "title": "Kotlin 1.3.70",
+        "body": "https://blog.jetbrains.com/kotlin/2020/03/kotlin-1-3-70-released/\r\n\r\n1.3.70の正式版です。スタンダードライブラリにコレクション関係の便利メソッドの追加など、多くの機能、修正が入っています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1286",
+        "title": "2020年3月4日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel?hl=en#march_4_2020\r\n\r\n\r\n安定版のリリースはWebkit v1.2.0とWorkManager v2.3.3があります\r\n\r\nLifecycle v2.3.0-alpha01では新しく `ViewTreeLifecycleOwner` が追加されました",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOI3fPTg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOI3fPTg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "恒例となってるIan Lakeさんによるリリースの解説ツイートはこちらから\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The March 4th Jetpack releases are out now with Webkit 1.2.0 hitting stable (with the new ForceDark API), WorkManager 2.3.3 with an important bug fix from 2.3.2, plus a lot of alpha releases.<a href=\"https://t.co/xyvQjhJTDW\">https://t.co/xyvQjhJTDW</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1235277081400901632?ref_src=twsrc%5Etfw\">March 4, 2020</a></blockquote>",
+              "publishedAt": "2020-03-05T06:38:12Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1287",
+        "title": "Google I/O 2020のオフラインでの開催がキャンセルされる",
+        "body": "https://www.reddit.com/r/androiddev/comments/fd0zrd/google_cancels_io_2020/\r\n\r\n新型コロナウィルスの影響です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOI3fWUg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOI3fWUg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ちなみに、KotlinConf 2020は開催時期が離れていることもあり今の所予定に変更はないようです\r\nhttps://kotlinlang.slack.com/archives/C4J6927RR/p1583263505002800?thread_ts=1583257836.001400&cid=C4J6927RR",
+              "publishedAt": "2020-03-05T06:44:29Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1288",
+        "title": "Now in Android エピソード13",
+        "body": "https://medium.com/androiddevelopers/now-in-android-13-483740e711c0\r\nhttps://www.youtube.com/watch?v=eabGSntGKj4",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1289",
+        "title": " DroidKaigi 2020 運営スタッフ向けアプリについて",
+        "body": "https://blog.keithyokoma.dev/entry/2020/03/04/203247\r\n\r\n「DroidKaigi 2020 のスタッフを支える（はずだった）技術」シリーズです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1290",
+        "title": "AdMobアカウントの停止をネタに脅迫されたら",
+        "body": "https://www.reddit.com/r/androiddev/comments/ff32pn/anyone_have_faced_this_what_should_i_do/\r\n\r\nこういう脅迫ってホントにあるものなんですね。\r\nredditorの意見はGoogleに通報してお金は払わない、というものが大半でした",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOI4ip4g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOI4ip4g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ちなみにPublisher IDは公開情報なので脅迫者が知ってるからと言って気にする必要はないです。\r\nhttps://support.google.com/admob/answer/9363762?hl=ja",
+              "publishedAt": "2020-03-08T02:27:28Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1291",
+        "title": "Android Platform Codelabが公開",
+        "body": "https://android-developers.googleblog.com/2020/03/android-platform-codelab-kickstarts-os.html\r\nhttps://source.android.com/setup/start/index",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1292",
+        "title": "Android 11でのScoped Storageの仕様についてアンケートが実施中",
+        "body": "https://google.qualtrics.com/jfe/form/SV_9HOzzyeCIEw0ij3?Source=scoped-storage\r\nhttps://www.reddit.com/r/androiddev/comments/febs6h/psa_google_survey_about_scoped_storage_for/\r\n\r\nストレージを活用するアプリの開発者は早めに試してフィードバックしておくとよさそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOI4ivhQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOI4ivhQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://developer.android.com/preview/privacy/storage\r\n\r\nちなみにAndroid11でのアップデートの中身はこのへんです",
+              "publishedAt": "2020-03-08T02:52:49Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1293",
+        "title": "tiviにJetpack Composeが導入される",
+        "body": "https://github.com/chrisbanes/tivi/pull/544\r\nhttps://twitter.com/chrisbanes/status/1235929375796838400\r\n\r\nChris Banesさんがメンテしているtiviで部分的にJetpack Composeが導入されました。Transitionを使っていたりと、実践的なコードになっています。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1294",
+        "title": "モジュール化の光と闇",
+        "body": "https://www.reddit.com/r/androiddev/comments/fdyg6a/the_pitfalls_of_preliminary_overmodularization_in/\r\n\r\nモジュール化はメリットよりデメリットのほうが多いのではないか、という記事に対する議論",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
