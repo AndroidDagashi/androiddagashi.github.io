@@ -1,0 +1,228 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTIwMjc1Mg==",
+  "number": 112,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/112",
+  "title": "112 2020-03-22",
+  "description": "Google I/O 2020の開催が完全にキャンセルされる、Fabricの閉鎖が2020年5月4日に延期される、2020年3月19日のAndroidXリリース、など。",
+  "closedAt": "2020-03-22T10:38:17Z",
+  "issues": {
+    "totalCount": 9,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOItBtag==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________HvOIujwxw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1303",
+        "title": "Android 11 Developer Preview 2",
+        "body": "https://android-developers.googleblog.com/2020/03/android-11-developer-preview-2.html?\r\nhttps://www.reddit.com/r/androiddev/comments/fkt2ts/android_11_developer_preview_2/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1304",
+        "title": "Fabricの閉鎖が2020年5月4日に延期される",
+        "body": "https://fabric.io/blog/fabric-shutdown-extension\r\n\r\nもともと3月31日の予定でしたが、昨今のコロナウィルス騒動の影響を鑑みて、5月4日に延期することにしたようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1305",
+        "title": "Android Studio 4.1 Canary 3",
+        "body": "https://androidstudio.googleblog.com/2020/03/android-studio-41-canary-3-available.html\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1306",
+        "title": "Android Studio 4.0 Beta 3",
+        "body": "https://androidstudio.googleblog.com/2020/03/android-studio-40-beta-3-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1307",
+        "title": "2020年3月19日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#march_18_2020\r\n\r\nActivityとFragmentは今後の開発に影響がありそうなアップデートがあります。SecurityはBeta版がリリースされました。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOI90eTQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOI90jhA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "`Fragment`の`onActivityCreated`はDeprecatedになりました。\r\n\r\nhttps://developer.android.com/reference/androidx/fragment/app/Fragment#onActivityCreated(android.os.Bundle)\r\n",
+              "publishedAt": "2020-03-20T13:14:04Z",
+              "author": {
+                "login": "STAR-ZERO",
+                "url": "https://github.com/STAR-ZERO",
+                "avatarUrl": "https://avatars3.githubusercontent.com/u/376376?u=c9428e145dea238d8dec3e06ef275be6b59a77b8&v=4"
+              }
+            },
+            {
+              "body": "ActivityとFragmentには `startActivityForResult`と`onActivityResult`の代わりとなるAPIが追加されています。\r\n\r\nhttps://developer.android.com/training/basics/intents/result",
+              "publishedAt": "2020-03-20T13:16:51Z",
+              "author": {
+                "login": "STAR-ZERO",
+                "url": "https://github.com/STAR-ZERO",
+                "avatarUrl": "https://avatars3.githubusercontent.com/u/376376?u=c9428e145dea238d8dec3e06ef275be6b59a77b8&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1308",
+        "title": "AndroidXのSnapshot版を使う",
+        "body": "https://androidx-dev-prod.appspot.com/\r\n\r\nAndroidXのSnapshot版をこちらから簡単に使うことができます。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1309",
+        "title": "Google I/O 2020の開催が完全にキャンセルされる",
+        "body": "https://events.google.com/io/\r\n\r\nオンラインで開催される見込みだったのですが、2020の開催は完全にキャンセルされるそうです。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOI-HFoA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOI-HFoA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "また、KotlinConf 2020も延期が決まりました。\r\nhttps://kotlinconf.com/",
+              "publishedAt": "2020-03-21T05:40:43Z",
+              "author": {
+                "login": "satoshun",
+                "url": "https://github.com/satoshun",
+                "avatarUrl": "https://avatars1.githubusercontent.com/u/1389835?u=d8608066a7664dbdf0fb8f67fb6db98560232fbe&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1310",
+        "title": "デフォルトで組み込まれているProGuardルールの説明",
+        "body": "https://www.zacsweers.dev/android-proguard-rules/\r\n\r\nデフォルトで組み込まれているproguard-android.txt、R8とProGuardの互換性の話などが、詳細に説明されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1311",
+        "title": "Android 11のWindowInsets",
+        "body": "https://proandroiddev.com/exploring-windowinsets-on-android-11-a80cf8fe19be\r\n\r\nIME insetsなど、Android 11から新しく追加されるAPIについて解説しています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
