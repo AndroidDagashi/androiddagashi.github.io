@@ -1,0 +1,246 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTIzNTYxMQ==",
+  "number": 113,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/113",
+  "title": "113 2020-03-29",
+  "description": "Butter Knifeがdeprecatedに、assertがAGP 4.1以降で使えるように、suspend 修飾子の仕組み、WHOがCOVID-19対策アプリをFlutterで開発中、など。",
+  "closedAt": "2020-03-29T10:37:20Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOIwXE2Q==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfOIyb7Vw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1312",
+        "title": "Butter Knifeがdeprecatedに",
+        "body": "View Bindingを推奨してButter Knifeはdeprecatedになるようです。リプライツイートにもありますが、deprecatedになったからといって慌ててmigrationする必要はないですが、今後バグが見つかった場合は自分でなんとかするしかないので、移行を検討した方がいいかもしれません。\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Butter Knife is now properly deprecated. Migrate to view binding at your leisure.<a href=\"https://t.co/LHWrmkd97C\">https://t.co/LHWrmkd97C</a> <a href=\"https://t.co/L3Mm6kuybz\">pic.twitter.com/L3Mm6kuybz</a></p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/1242537704887406593?ref_src=twsrc%5Etfw\">March 24, 2020</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1313",
+        "title": "Kotlin 1.4-M1",
+        "body": "https://blog.jetbrains.com/kotlin/2020/03/kotlin-1-4-m1-released/\r\n\r\nSAM変換、スマートキャストなどの大きな改善が多数入っています。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1314",
+        "title": "assertがAGP 4.1以降で使えるように",
+        "body": "https://jakewharton.com/d8-optimization-assertions/\r\n\r\nJavaのassertは、Android上では完全に無効になっていたのですが、4.1以降のD8では有効に出来るようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1315",
+        "title": "Now in Android エピソード14",
+        "body": "https://medium.com/androiddevelopers/now-in-android-14-78a91def4962\r\n\r\nAndroid 11で入るIMEアニメーションの話、AndroidXのリリース状況などがまとまっています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1316",
+        "title": "suspend 修飾子の仕組み",
+        "body": "https://medium.com/androiddevelopers/the-suspend-modifier-under-the-hood-b7ce46af624f\r\n\r\nコンパイラが suspend 修飾子をどのように処理するかが解説されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1317",
+        "title": "Kotlin 1.3.71",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.3.71",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1318",
+        "title": "Android RのWindowInsetsAnimationのサンプル",
+        "body": "https://www.reddit.com/r/androiddev/comments/fpivds/new_windowinsetsanimation_sample_released/\r\nhttps://github.com/android/user-interface-samples/tree/master/WindowInsetsAnimation",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1319",
+        "title": "Android Studio Canary 4.1 Canary 4",
+        "body": "https://androidstudio.googleblog.com/2020/03/android-studio-canary-41-canary-4.html\r\nhttps://www.reddit.com/r/androiddev/comments/foa3le/android_studio_canary_41_canary_4_available/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1320",
+        "title": "ReactNative 0.62",
+        "body": "https://reactnative.dev/blog/2020/03/26/version-0.62",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1321",
+        "title": "WHOがCOVID-19対策アプリをFlutterで開発中",
+        "body": "https://github.com/WorldHealthOrganization/app\r\nhttps://www.reddit.com/r/FlutterDev/comments/fpdxz6/the_who_app_is_being_migrated_from_ionic_to/\r\n\r\ntwitterとredditの情報によると、もともとionicで書かれていたそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
