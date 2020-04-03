@@ -31,7 +31,7 @@ jobs:
           yarn-deps-
 
     - name: yarn install
-      if: steps.cache-primes.outputs.cache-hit != 'true'
+      if: steps.restore-cache.outputs.cache-hit != 'true'
       run: yarn install --frozen-lockfile
 
     - name: Generate website
