@@ -32,9 +32,9 @@ jobs:
       uses: actions/cache@v1
       with:
         path: node_modules
-        key: yarn-deps-${{ hashFiles('yarn.lock') }}
+        key: yarn-deps1-${{ hashFiles('yarn.lock') }}
         restore-keys: |
-          yarn-deps-
+          yarn-deps1-
 
     - name: yarn install
       if: steps.cache-primes.outputs.cache-hit != 'true'

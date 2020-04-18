@@ -14,8 +14,6 @@ jobs:
       TZ: Asia/Tokyo
     steps:
     - uses: actions/checkout@v2
-      with:
-        ref: development
 
     - uses: actions/setup-node@v1
       with:
@@ -26,9 +24,9 @@ jobs:
       uses: actions/cache@v1
       with:
         path: node_modules
-        key: yarn-deps-${{ hashFiles('yarn.lock') }}
+        key: yarn-deps1-${{ hashFiles('yarn.lock') }}
         restore-keys: |
-          yarn-deps-
+          yarn-deps1-
 
     - name: yarn install
       if: steps.restore-cache.outputs.cache-hit != 'true'
