@@ -16,22 +16,21 @@ jobs:
       TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
       with:
         ref: development
 
     - uses: actions/setup-node@v1
       with:
-        node-version: '12.13.1'
+        node-version: '13.12.0'
 
     - name: setup Firebase
       run: echo ${{ secrets.FIREBASE_JSON }} | base64 -d > ./androiddagashi-serviceaccount.json
 
     - name: yarn install
-      working-directory: ./buildscripts/release-tweeter
-      run: yarn install --frozen-lockfile
+      run: yarn install
 
     - name: tweet if not already
       working-directory: ./buildscripts/release-tweeter
-      run: yarn tweet
+      run: yarn tweeter:tweet
 

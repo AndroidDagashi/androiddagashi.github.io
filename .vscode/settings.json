@@ -2,5 +2,9 @@
   "[markdown]": {
       "files.trimTrailingWhitespace": false
   },
-  "liveServer.settings.root": "dist/"
+  "liveServer.settings.root": "packages/site/dist/",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.format.enable": true
 }
