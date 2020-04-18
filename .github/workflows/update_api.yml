@@ -27,13 +27,13 @@ jobs:
       PROJECT_REPO_NAME: androiddagashi.github.io
 
     steps:
-    - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
       with:
         ref: development
 
     - uses: actions/setup-node@v1
       with:
-        node-version: '12.13.1'
+        node-version: '13.12.0'
 
     - name: Setup git config
       run: sh ./.github/setup-git-config.sh
@@ -50,13 +50,13 @@ jobs:
 
     - name: yarn install
       # if: steps.cache-primes.outputs.cache-hit != 'true'
-      run: yarn install --frozen-lockfile
+      run: yarn install
 
     - name: Generate json resources
-      run: yarn generateJson
+      run: yarn api:generate
 
     - name: Generate RSS feed
-      run: yarn generateRssFeed
+      run: yarn rss:generate
 
     - name: Push generated files if there's any update
       run: sh ./.github/push-resources-if-updated.sh

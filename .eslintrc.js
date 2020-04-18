@@ -1,18 +1,15 @@
 module.exports = {
-  plugins: ['@typescript-eslint'],
-  parserOptions: {
-    parser: '@typescript-eslint/parser'
-  },
+  root: true,
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint', 'prettier'],
   extends: [
     'eslint:recommended',
-    'plugin:vue/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
-    '@nuxtjs'
+    'prettier',
+    'prettier/@typescript-eslint',
   ],
   rules: {
-    'vue/no-v-html': 'off',
-    'vue/component-name-in-template-casing': ['error', 'kebab-case'],
-    '@typescript-eslint/indent': ['error', 2],
-    '@typescript-eslint/no-unused-vars': ['warn', {'args': 'after-used'}]
+    'prettier/prettier': 'error'
   }
 }
