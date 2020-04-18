@@ -17,6 +17,12 @@ yarnの[workspace機能](https://classic.yarnpkg.com/ja/docs/workspaces/)を使�
 # install dependencies
 $ yarn install
 
+# generate api jsons
+$ yarn api:generate
+
+# generate rss feed
+$ yarn rss:generate
+
 # serve with hot reload at localhost:3000
 $ yarn site:dev
 
@@ -24,13 +30,5 @@ $ yarn site:dev
 $ yarn site:generate
 
 # deploy to GitHub Pages
-$ npm run deploy # or yarn deploy
+$ yarn deploy
 ```
-
-## Updating yarn
-
-```bash
-$ yarn policies set-version
-```
-
-`./.yarn` ディレクトリ内の最新リリース以外を削除
