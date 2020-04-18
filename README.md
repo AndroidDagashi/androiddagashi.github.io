@@ -32,3 +32,7 @@ $ yarn site:generate
 # deploy to GitHub Pages
 $ yarn deploy
 ```
+
+## Workspaces
+
+TBD
