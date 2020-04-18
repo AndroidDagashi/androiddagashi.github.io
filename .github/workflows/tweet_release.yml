@@ -31,6 +31,5 @@ jobs:
       run: yarn install
 
     - name: tweet if not already
-      working-directory: ./buildscripts/release-tweeter
       run: yarn tweeter:tweet
 
