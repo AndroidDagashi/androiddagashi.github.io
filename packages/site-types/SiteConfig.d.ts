@@ -4,7 +4,7 @@ export interface SiteConfig {
   baseUrl: string
   issueRepository: RepositoryConfig
   rssUrl: string
-  constact: ContactInfo
+  contact: ContactInfo
   authors: ContactInfo[]
 }
 

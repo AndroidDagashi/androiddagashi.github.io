@@ -74,10 +74,10 @@
 
 <script lang="ts">
 import { mapState } from 'vuex'
-import { GHDigestMilestone, GHDigest, GHPageInfo } from 'types/GitHubApi'
+import { GHDigestMilestone, GHDigest, GHPageInfo } from 'site-types/GitHubApi'
 import flatmap from 'lodash.flatmap'
 import { Action, Component, Vue } from 'nuxt-property-decorator'
-import { SiteConfigContact } from 'types/SiteConfig'
+import { ContactInfo } from 'site-types/SiteConfig'
 import { Divider } from '../store'
 import IssueLink from '~/components/IssueLink.vue'
 
@@ -95,7 +95,7 @@ import * as ActionTypes from '~/store/ActionTypes'
 export default class Index extends Vue {
   title!: string
   description!: string
-  contact!: SiteConfigContact
+  contact!: ContactInfo
   baseUrl!: string
   digest!: GHDigest
 

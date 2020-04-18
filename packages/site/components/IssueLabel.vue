@@ -5,17 +5,17 @@
 </template>
 
 <script lang="ts">
-import { GHLabel } from 'types/GitHubApi'
+import { GHLabel } from 'site-types/GitHubApi'
 import { mapState } from 'vuex'
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
-import { SiteConfigRepository } from 'types/SiteConfig'
+import { RepositoryConfig } from 'site-types/SiteConfig'
 
 @Component({
   name: 'issue-label',
   computed: mapState(['issueRepository']),
 })
 export default class IssueLabel extends Vue {
-  issueRepository!: SiteConfigRepository
+  issueRepository!: RepositoryConfig
 
   @Prop() index!: number
 

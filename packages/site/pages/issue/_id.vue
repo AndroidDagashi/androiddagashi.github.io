@@ -1,4 +1,3 @@
-/* eslint vue/no-v-html: "off" */
 <template>
   <v-layout justify-center align-center>
     <v-flex xs12 sm12 md8>
@@ -51,7 +50,7 @@
 
 <script lang="ts">
 import { mapState } from 'vuex'
-import { GHMilestone, GHIssue } from 'types/GitHubApi'
+import { GHMilestone, GHIssue } from 'site-types/GitHubApi'
 import flatmap from 'lodash.flatmap'
 import { Component, Vue } from 'vue-property-decorator'
 import { Divider } from '../../store'

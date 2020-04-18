@@ -37,7 +37,7 @@
 
 <script lang="ts">
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
-import { GHIssue, GHComment } from 'types/GitHubApi'
+import { GHIssue, GHComment } from 'site-types/GitHubApi'
 import flatmap from 'lodash.flatmap'
 import { DateTime } from 'luxon'
 import { Divider } from '../store'

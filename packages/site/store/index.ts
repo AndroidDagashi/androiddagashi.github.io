@@ -1,26 +1,22 @@
-import { ActionTree } from 'vuex'
+import { ActionTree, MutationTree } from 'vuex'
 
+import { GHDigest } from 'site-types/GitHubApi'
 import {
   SiteConfig,
-  SiteConfigRepository,
-  SiteConfigContact,
-} from '~/types/SiteConfig'
-
+  ContactInfo,
+  RepositoryConfig,
+} from 'site-types/SiteConfig'
 import axios from '~/plugins/axios'
 
 import * as MutationTypes from '~/store/MutationTypes'
 import * as ActionTypes from '~/store/ActionTypes'
-import { GHDigest } from '~/types/GitHubApi'
-
-export interface RootState extends SiteConfig {
-  digest: GHDigest | null
-}
 
 export interface Divider {
   isDivider: boolean
 }
 
-const s = (): RootState => ({
+// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+export const state = () => ({
   title: '',
   description: '',
   baseUrl: '',
@@ -28,16 +24,18 @@ const s = (): RootState => ({
   issueRepository: {
     owner: '',
     name: '',
-  },
+  } as RepositoryConfig,
   contact: {
     name: '',
     link: '',
-  },
-  authors: [],
-  digest: null,
+  } as ContactInfo,
+  authors: [] as ContactInfo[],
+  digest: null as GHDigest | null,
 })
 
-const mutations = {
+export type RootState = ReturnType<typeof state>
+
+export const mutations: MutationTree<RootState> = {
   [MutationTypes.UPDATE_TITLE](state: RootState, title: string): void {
     state.title = title
   },
@@ -55,19 +53,16 @@ const mutations = {
   },
   [MutationTypes.UPDATE_ISSUE_REPOSITORY](
     state: RootState,
-    repo: SiteConfigRepository
+    repo: RepositoryConfig
   ): void {
     state.issueRepository = repo
   },
-  [MutationTypes.UPDATE_CONTACT](
-    state: RootState,
-    contact: SiteConfigContact
-  ): void {
+  [MutationTypes.UPDATE_CONTACT](state: RootState, contact: ContactInfo): void {
     state.contact = contact
   },
   [MutationTypes.UPDATE_AUTHORS](
     state: RootState,
-    authors: SiteConfigContact[]
+    authors: ContactInfo[]
   ): void {
     state.authors = authors
   },
@@ -89,7 +84,7 @@ const mutations = {
   },
 }
 
-const actions: ActionTree<RootState, RootState> = {
+export const actions: ActionTree<RootState, RootState> = {
   async nuxtServerInit({ commit, dispatch }, { env }) {
     const { SITE_CONFIG: siteConfigStr } = env
     const siteConfigs: SiteConfig = JSON.parse(siteConfigStr)
@@ -125,5 +120,3 @@ const actions: ActionTree<RootState, RootState> = {
     commit(MutationTypes.UPDATE_DIGEST, { digest: data })
   },
 }
-
-export { s as state, actions, mutations }

@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { GHDigestMilestone } from 'types/GitHubApi'
+import { GHDigestMilestone } from 'site-types/GitHubApi'
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
 
 @Component({
