@@ -1,0 +1,344 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTMwMDMzMQ==",
+  "number": 116,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/116",
+  "title": "116 2020-04-19",
+  "description": "CodePenがFlutterをサポート、Coroutinesのユースケースごとのサンプル、Database Inspectorの紹介、Material Componentsへのマイグレーションガイド、など。",
+  "closedAt": "2020-04-19T10:27:53Z",
+  "issues": {
+    "totalCount": 14,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOI8ZKPA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-ofOI-spnA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1340",
+        "title": "Kotlin 1.3.72",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.3.72\r\nhttps://github.com/JetBrains/kotlin-native/releases/tag/v1.3.72",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1341",
+        "title": "Material Components 1.2.0-alpha06",
+        "body": "https://github.com/material-components/material-components-android/releases/tag/1.2.0-alpha06",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1342",
+        "title": "2020年4月15日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel?hl=en#april_15_2020\r\n\r\nCore-Animationという、Animator APIのバックポートライブラリが追加されています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJJ65RA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJJ65RA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Jetpack releases today include Preference 1.1.1 (bug fix + dependency bumps), Navigation 2.2.2 (bug+ProGuard fixes), and VersionedParcelable 1.1.1 (ProGuard fixes) plus new RCs, Betas, and Alphas (including a bunch of Animation related 1.0.0-alpha01s!)<a href=\"https://t.co/sEfDgqQS5Y\">https://t.co/sEfDgqQS5Y</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1250479261699325953?ref_src=twsrc%5Etfw\">April 15, 2020</a></blockquote>",
+              "publishedAt": "2020-04-16T02:42:54Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1343",
+        "title": "CodePenがFlutterをサポート",
+        "body": "https://medium.com/flutter/announcing-codepen-support-for-flutter-bb346406fe50\r\n\r\nフロントエンドのコード共有サイトである「[CodePen](https://codepen.io/)」がFlutterをサポートしました\r\n\r\nCodePenはブログ等への埋め込みもサポートしているので、検証用途だけでなくサンプルを記事に載せたりとかいろいろ捗りそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJKODJA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJKODJA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://medium.com/flutter-jp/codepen-24bf739add97\r\n\r\nmediumへの埋め込みについてはこちらで詳しくまとめられています",
+              "publishedAt": "2020-04-16T14:40:36Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars2.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1344",
+        "title": "KotlinのOperator overloading解説",
+        "body": "https://medium.com/androiddevelopers/code-expressivity-with-operator-overloading-ada22a0ca633\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1346",
+        "title": "Coroutinesのユースケースごとのサンプル",
+        "body": "https://github.com/LukasLechnerDev/Kotlin-Coroutine-Use-Cases-on-Android\r\n\r\nAndroidの様々なユースケースごとのCoroutinesサンプルコードです。テストも含まれているのでCoroutinesを使う際に参考になると思います。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1345",
+        "title": "Database Inspectorの紹介",
+        "body": "https://medium.com/androiddevelopers/database-inspector-9e91aa265316\r\n\r\nAndroid Studio 4.1から導入されるDatabase Inspectorの紹介です。アプリ内のデータベースをAndroid Studioから操作できるようになります。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1347",
+        "title": "2020年春のGoogle Playポリシー変更",
+        "body": "https://android-developers.googleblog.com/2020/04/google-play-trust-and-safety-update.html\r\nhttps://www.youtube.com/watch?v=zfBYJrhMZwQ\r\n\r\nバックグラウンドでの位置情報取得や定期購入などについてポリシーが変更されています。アプリの修正が必要な可能性もあるので確認しておいたほうが良いでしょう。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1348",
+        "title": "Material Componentsへのマイグレーションガイド",
+        "body": "https://medium.com/androiddevelopers/migrating-to-material-components-for-android-ec6757795351\r\n\r\nMaterial Design Components 1.1.0がリリースされましたが、それに伴い、Support LibraryからMDCへの移行について詳しく説明されています。デフォルトのスタイルがかなり変わっていますし、color関係の属性もかなり変わっているので、移行は大変かもしれませんが、最新のMaterial Designに追従したいなら早めに移行してしまった方がいいかもしれません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1349",
+        "title": "Kotlin Serializationを使ったシンプルなマルチプラットフォームRPC",
+        "body": "https://jakewharton.com/simple-multiplatform-rpc-with-kotlin-serialization/\r\n\r\nAndroid アプリに Cast 機能を足すときに Android (Kotlin/JVM) <-> Cast (Kotlin/JS) 間で Kotlin serialization を利用する話です。Polymorphic serialization という機能の話もあってなかなか興味深いです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1350",
+        "title": "WebView BetaにDevToolsが同梱されるようになる",
+        "body": "https://android-developers.googleblog.com/2020/04/developer-tools-to-debug-webview-in-beta.html\r\n\r\nWebView Betaにランチャーアイコンが同梱され、そこから過去に起きたクラッシュを確認できるようになったようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1351",
+        "title": "Android Studio 3.6.3",
+        "body": "https://androidstudio.googleblog.com/2020/04/android-studio-363-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/g36s3v/android_studio_363_available/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1352",
+        "title": "既存アプリをFlutterでフルリプレースした話",
+        "body": "https://qiita.com/youmeee/items/945fd42d6fc403f90c7e\r\n\r\nBlabo!というサービスだそうです。\r\nフルリニューアルではなく「フルリプレース」というのが珍しい点です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1353",
+        "title": "Jetpack Compose dev09でRxJava2、LiveDataをサポート",
+        "body": "https://developer.android.com/jetpack/androidx/releases/ui#0.1.0-dev09\r\n\r\n新しく、ui-livedataとui-rxjava2がサポートされました。RxJava2を使っているプロジェクトでもComposeと協調して動かすことが出来そうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
