@@ -2,8 +2,43 @@
   "name": "AndroidDagashi",
   "url": "https://github.com/AndroidDagashi/AndroidDagashi",
   "milestones": {
-    "totalCount": 117,
+    "totalCount": 118,
     "nodes": [
+      {
+        "id": "MDk6TWlsZXN0b25lNTM0OTk1OQ==",
+        "number": 118,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/118",
+        "title": "118 2020-05-03",
+        "description": "2020年4月29日のAndroidXリリース、startActivityForResult、onActivityResultが非推奨APIに、Android Studio 4.1 Canary 8、など。",
+        "closedAt": "2020-05-03T10:32:11Z",
+        "issues": {
+          "totalCount": 7,
+          "nodes": [
+            {
+              "title": "startActivityForResult、onActivityResultが非推奨APIに"
+            },
+            {
+              "title": "Monzoアプリのテーマのリファクタリング"
+            },
+            {
+              "title": "Android Studio 4.1 Canary 8"
+            },
+            {
+              "title": "2020年4月29日のAndroidXリリース"
+            },
+            {
+              "title": "高リフレッシュレート下でのレンダリング"
+            },
+            {
+              "title": "Kotlinのobjectでは何が行われているか"
+            },
+            {
+              "title": "R8によるKotlinラムダの最適化"
+            }
+          ]
+        },
+        "path": "118-2020-05-03"
+      },
       {
         "id": "MDk6TWlsZXN0b25lNTMzMTQ4Ng==",
         "number": 117,
@@ -2273,58 +2308,11 @@
           ]
         },
         "path": "69-2019-05-26"
-      },
-      {
-        "id": "MDk6TWlsZXN0b25lNDMwNTk2Mg==",
-        "number": 68,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/68",
-        "title": "68 2019-05-19",
-        "description": "Android Studio 3.4.1, OkHttpのKotln化, Kotlin FlowとCoroutine, 詳細なFabricのFirebase移行プラン, Jetpack Composeのバックグラウンド, など",
-        "closedAt": "2019-05-19T10:16:37Z",
-        "issues": {
-          "totalCount": 11,
-          "nodes": [
-            {
-              "title": "ML Kitを使ってWordSearchゲームを解く"
-            },
-            {
-              "title": "Jetpack Composeのバックグラウンド"
-            },
-            {
-              "title": "Pinterestがktlintのオーナーになる"
-            },
-            {
-              "title": "より詳細なFabricのFirebase移行プラン"
-            },
-            {
-              "title": "WorkManager 2.1.0-alpha02"
-            },
-            {
-              "title": "Zomatoのビルド時間を95%減らした話"
-            },
-            {
-              "title": "スイッチアクセス用のデバイスを自作する"
-            },
-            {
-              "title": "Android Studio 3.4.1"
-            },
-            {
-              "title": "Kotlin FlowとCoroutine"
-            },
-            {
-              "title": "外部ストレージの死：Beta 3の現状"
-            },
-            {
-              "title": "OkHttpのKotlin化がほぼ完了"
-            }
-          ]
-        },
-        "path": "68-2019-05-19"
       }
     ],
     "pageInfo": {
-      "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wNC0yNlQwMDowMDowMFrOAFFaHg==",
-      "endCursor": "Y3Vyc29yOnYyOpK0MjAxOS0wNS0xOVQwMDowMDowMFrOAEG0Kg==",
+      "startCursor": "Y3Vyc29yOnYyOpK0MjAyMC0wNS0wM1QwMDowMDowMFrOAFGiRw==",
+      "endCursor": "Y3Vyc29yOnYyOpK0MjAxOS0wNS0yNlQwMDowMDowMFrOAEILhg==",
       "hasPreviousPage": false,
       "hasNextPage": true
     }
