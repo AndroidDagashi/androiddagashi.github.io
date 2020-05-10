@@ -1,0 +1,287 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTM3NjI2MQ==",
+  "number": 119,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/119",
+  "title": "119 2020-05-10",
+  "description": "Android 11のスケジュール更新, Kotlin Coroutines 1.3.6, Flutter 1.17, 6月3日にAndroid 11 Betaのオンラインイベント, GitHub Actionsでのリリース作業, など",
+  "closedAt": "2020-05-10T10:16:37Z",
+  "issues": {
+    "totalCount": 13,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOJKAdeg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-uvOJK1r5Q==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1369",
+        "title": "6月3日にAndroid 11 Betaのオンラインイベント開催",
+        "body": "https://developer.android.com/android11\r\nhttps://android-developers.googleblog.com/2020/05/android-11-beta-plans.html\r\nhttps://www.youtube.com/watch?v=gqJEcy57hA8\r\n\r\nAndroid 11 Betaの発表イベントがオンラインで開催されます。\r\n`#AskAndroid`をつけてツイートされた質問にも回答するようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1370",
+        "title": "Android 11のスケジュール更新",
+        "body": "https://android-developers.googleblog.com/2020/05/android-11-beta-plans.html\r\nhttps://developer.android.com/preview/overview#timeline\r\n\r\nAndroid 11のスケジュールを1ヶ月ほど遅らせるようです。最終リリースについてはQ3後半になるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1371",
+        "title": "Android 11 Developer Preview 4",
+        "body": "https://android-developers.googleblog.com/2020/05/android-11-beta-plans.html\r\nhttps://developer.android.com/preview/release-notes#dp4\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1372",
+        "title": "GitHub Actionsでリリース作業などを行う",
+        "body": "https://overflow.buffer.com/2020/05/07/using-github-actions-for-android-continuous-integration-and-delivery/\r\n\r\nBufferアプリにおけるGitHub Actionsの使用例になります。週単位での依存関係チェック、Dangerによるチェックなど、コード例も豊富です。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1373",
+        "title": "RecyclerViewでスクロール位置を復元する方法",
+        "body": "https://medium.com/androiddevelopers/restore-recyclerview-scroll-position-a8fbdc9a9334\r\n\r\nこれまではリストアイテムの復元をRecyclerViewのレンダリングの前におこなうか、あるいはスクロール位置を自前で復元する必要がありましたが、1.2.0-alpha02からはRecyclerViewに `setStateRestorationPolicy` というメソッドが生えたそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1374",
+        "title": "Android System UIのデモモードを操作するadbコマンド",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">You&#39;ve probably seen &quot;Demo Mode&quot; in your <a href=\"https://twitter.com/hashtag/AndroidDev?src=hash&amp;ref_src=twsrc%5Etfw\">#AndroidDev</a> device&#39;s developer options, but did you know that you can completely customize what is displayed?<br><br>All of the options are listed here: <a href=\"https://t.co/ddcRfpf1oL\">https://t.co/ddcRfpf1oL</a> <a href=\"https://t.co/PH8vymR7L2\">pic.twitter.com/PH8vymR7L2</a></p>&mdash; Chris Banes (@chrisbanes) <a href=\"https://twitter.com/chrisbanes/status/1258397404606484481?ref_src=twsrc%5Etfw\">May 7, 2020</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nadbコマンドでデモモードの切り替えや表示する内容を変更できるようです。スクリーンショットをとるコマンドと組み合わせるとスクショ業が捗るかもしれません。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1375",
+        "title": "Now in Android エピソード17",
+        "body": "https://medium.com/androiddevelopers/now-in-android-17-9d73f7bed7f\r\n\r\nAndroid 11 DP3についてや、さいきん出た記事、新しいAndroidXライブラリなどについて語られています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1376",
+        "title": "Kotlin Coroutines 1.3.6",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.3.6\r\nhttps://github.com/Kotlin/kotlinx.coroutines/issues/1973\r\n\r\n状態を更新可能なFlowとして新たにStateFlowが追加されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1377",
+        "title": "App SigningについてのFAQ",
+        "body": "https://medium.com/androiddevelopers/answers-to-common-questions-about-app-signing-by-google-play-b28fef836af0\r\n\r\nApp SigningについてFAQ形式で細かく解説がされています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1378",
+        "title": "androidxに追加されたWindowManagerの解説",
+        "body": "https://medium.com/androiddevelopers/support-new-form-factors-with-the-new-jetpack-windowmanager-library-4be98f5450da\r\n\r\nWindow Manager関連の機能を提供するライブラリになります。最初のリリースではfoldable端末を重点的にサポートするようです。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1379",
+        "title": "Flutter 1.17",
+        "body": "https://medium.com/flutter/announcing-flutter-1-17-4182d8af7f8e\r\nhttps://www.reddit.com/r/FlutterDev/comments/gelp33/announcing_flutter_117/\r\n\r\n全体的なパフォーマンス向上や新しいMaterial Design Widget追加の他、iOSではMetalがサポートされるようになりました。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1380",
+        "title": "Dart 2.8",
+        "body": "https://medium.com/dartlang/announcing-dart-2-8-7750918db0a\r\nhttps://www.reddit.com/r/FlutterDev/comments/gelnvk/announcing_dart_28/\r\n\r\nDartで将来的にnull安全性をサポートするための破壊的変更がいくつかあります\r\nhttps://github.com/dart-lang/sdk/issues/40686\r\n\r\npubコマンドに新しく`outdated`サブコマンドが追加されています。\r\nこれを使うと更新の必要なパッケージを一覧することができます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1381",
+        "title": "ConstraintLayout 2.0.0 beta5",
+        "body": "https://androidstudio.googleblog.com/2020/05/constraintlayout-200-beta-5.html\r\nhttps://www.reddit.com/r/androiddev/comments/gfimrf/constraintlayout_200_beta_5/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
