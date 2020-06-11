@@ -116,7 +116,11 @@ const config: Configuration = {
   },
   modules: ['@nuxtjs/axios'],
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/vuetify'],
-  plugins: ['~/plugins/markdownit.ts', { src: '~/plugins/ga.js', ssr: false }],
+  plugins: [
+    '~/plugins/api',
+    '~/plugins/markdownit.ts',
+    { src: '~/plugins/ga.js', ssr: false },
+  ],
   axios: {
     baseURL: baseUrl,
   },

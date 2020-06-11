@@ -70,20 +70,10 @@ import IssueComments from '~/components/IssueComments.vue'
     description: 'description',
     baseUrl: 'baseUrl',
   }),
-  async asyncData({ route, $axios }) {
-    let data
-    if (process.server) {
-      data = JSON.parse(
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
-        require('fs').readFileSync(
-          `./static/api/issue/${route.params.id}.json`,
-          'utf8'
-        )
-      )
-    } else {
-      const res = await $axios.get(`/api/issue/${route.params.id}.json`)
-      data = res.data
-    }
+  async asyncData({ route, $api }) {
+    const data = await $api.get<GHMilestone>(
+      `/api/issue/${route.params.id}.json`
+    )
     return {
       milestone: data,
       title: `#${data.title}`,
