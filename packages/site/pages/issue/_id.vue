@@ -57,7 +57,6 @@ import { Divider } from '../../store'
 import IssueLabel from '~/components/IssueLabel.vue'
 import ShareWidgets from '~/components/ShareWidgets.vue'
 import IssueComments from '~/components/IssueComments.vue'
-import axios from '~/plugins/axios'
 
 @Component({
   name: 'issue',
@@ -71,20 +70,10 @@ import axios from '~/plugins/axios'
     description: 'description',
     baseUrl: 'baseUrl',
   }),
-  async asyncData({ route }) {
-    let data
-    if (process.server) {
-      data = JSON.parse(
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
-        require('fs').readFileSync(
-          `./static/api/issue/${route.params.id}.json`,
-          'utf8'
-        )
-      )
-    } else {
-      const res = await axios.get(`/api/issue/${route.params.id}.json`)
-      data = res.data
-    }
+  async asyncData({ route, $api }) {
+    const data = await $api.get<GHMilestone>(
+      `/api/issue/${route.params.id}.json`
+    )
     return {
       milestone: data,
       title: `#${data.title}`,

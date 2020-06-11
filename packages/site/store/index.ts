@@ -6,7 +6,6 @@ import {
   ContactInfo,
   RepositoryConfig,
 } from 'site-types/SiteConfig'
-import axios from '~/plugins/axios'
 
 import * as MutationTypes from '~/store/MutationTypes'
 import * as ActionTypes from '~/store/ActionTypes'
@@ -101,21 +100,12 @@ export const actions: ActionTree<RootState, RootState> = {
   },
 
   async [ActionTypes.FETCH_INITIAL_DIGEST]({ commit }) {
-    let data
-    if (process.server) {
-      data = JSON.parse(
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
-        require('fs').readFileSync('./static/api/index.json', 'utf8')
-      )
-    } else {
-      const res = await axios.get('/api/index.json')
-      data = res.data
-    }
+    const data = await this.$api.get<GHDigest>('/api/index.json')
     commit(MutationTypes.UPDATE_DIGEST, { digest: data })
   },
 
   async [ActionTypes.FETCH_DIGEST]({ commit }, payload: { cursor: string }) {
-    const data: GHDigest = (await axios.get(`/api/${payload.cursor}.json`)).data
+    const data = await this.$api.get<GHDigest>(`/api/${payload.cursor}.json`)
     commit(MutationTypes.UPDATE_DIGEST, { digest: data })
   },
 }
