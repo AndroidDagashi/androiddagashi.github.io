@@ -57,7 +57,6 @@ import { Divider } from '../../store'
 import IssueLabel from '~/components/IssueLabel.vue'
 import ShareWidgets from '~/components/ShareWidgets.vue'
 import IssueComments from '~/components/IssueComments.vue'
-import axios from '~/plugins/axios'
 
 @Component({
   name: 'issue',
@@ -71,7 +70,7 @@ import axios from '~/plugins/axios'
     description: 'description',
     baseUrl: 'baseUrl',
   }),
-  async asyncData({ route }) {
+  async asyncData({ route, $axios }) {
     let data
     if (process.server) {
       data = JSON.parse(
@@ -82,7 +81,7 @@ import axios from '~/plugins/axios'
         )
       )
     } else {
-      const res = await axios.get(`/api/issue/${route.params.id}.json`)
+      const res = await $axios.get(`/api/issue/${route.params.id}.json`)
       data = res.data
     }
     return {
