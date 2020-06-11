@@ -73,10 +73,9 @@ import axios from '~/plugins/axios'
   }),
   async asyncData({ route }) {
     let data
-    // eslint-disable-next-line no-undef
     if (process.server) {
       data = JSON.parse(
-        // eslint-disable-next-line no-undef
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         require('fs').readFileSync(
           `./static/api/issue/${route.params.id}.json`,
           'utf8'
@@ -100,7 +99,7 @@ export default class Issue extends Vue {
   description!: string
   baseUrl!: string
 
-  head(): object {
+  head(): Record<string, unknown> {
     let titleDescription = ''
     if (this.milestone.description) {
       titleDescription = `: ${this.milestone.description}`

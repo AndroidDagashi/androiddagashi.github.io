@@ -97,6 +97,7 @@ const config: Configuration = {
    */
   css: ['~assets/css/main.css', '~assets/css/app.scss'],
   build: {
+    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     extend(configs, ctx): void {
       if (ctx.isServer) {
         configs.externals = [

@@ -1,6 +1,10 @@
+import { Context } from '@nuxt/types'
 import MarkdownIt from 'markdown-it'
 
-export default (_, inject): void => {
+export default (
+  _: Context,
+  inject: (key: string, value: unknown) => void
+): void => {
   const md = new MarkdownIt({
     html: true,
     breaks: true,
@@ -13,7 +17,6 @@ export default (_, inject): void => {
       return self.renderToken(tokens, idx, options)
     })
 
-  // eslint-disable-next-line @typescript-eslint/camelcase
   md.renderer.rules.link_open = (tokens, idx, options, env, self): string => {
     const aIndex = tokens[idx].attrIndex('target')
 

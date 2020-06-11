@@ -118,7 +118,7 @@ export default class Index extends Vue {
     await this.fetchDigest({ cursor: endCursor })
   }
 
-  head(): object {
+  head(): Record<string, unknown> {
     return {
       meta: [
         { property: 'og:title', content: this.title },

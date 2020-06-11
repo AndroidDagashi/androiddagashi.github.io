@@ -15,7 +15,7 @@ export interface Divider {
   isDivider: boolean
 }
 
-// eslint-disable-next-line @typescript-eslint/explicit-function-return-type
+// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const state = () => ({
   title: '',
   description: '',
@@ -102,10 +102,9 @@ export const actions: ActionTree<RootState, RootState> = {
 
   async [ActionTypes.FETCH_INITIAL_DIGEST]({ commit }) {
     let data
-    // eslint-disable-next-line no-undef
     if (process.server) {
-      // eslint-disable-next-line no-undef
       data = JSON.parse(
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
         require('fs').readFileSync('./static/api/index.json', 'utf8')
       )
     } else {
