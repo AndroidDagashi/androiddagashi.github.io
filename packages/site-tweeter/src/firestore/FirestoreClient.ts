@@ -7,16 +7,16 @@ export default class FirestoreClient {
   private readonly firebaseApp: admin.app.App
   private readonly firestore: admin.firestore.Firestore
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  constructor(serviceAccount: any) {
+  constructor(serviceAccount: Record<string, unknown>) {
     const sa = this.parseServiceAccount(serviceAccount)
     const cert = admin.credential.cert(sa)
     this.firebaseApp = admin.initializeApp({ credential: cert })
     this.firestore = this.firebaseApp.firestore()
   }
 
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  private parseServiceAccount(serviceAccount: any): admin.ServiceAccount {
+  private parseServiceAccount(
+    serviceAccount: Record<string, unknown>
+  ): admin.ServiceAccount {
     return {
       type: serviceAccount.type,
       projectId: serviceAccount.project_id,
