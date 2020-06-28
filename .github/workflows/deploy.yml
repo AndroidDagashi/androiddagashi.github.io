@@ -30,12 +30,12 @@ jobs:
 
     - name: Restore cache
       id: restore-cache
-      uses: actions/cache@v1
+      uses: actions/cache@v2
       with:
-        path: node_modules
-        key: yarn-deps1-${{ hashFiles('yarn.lock') }}
+        path: **/node_modules
+        key: yarn-deps2-${{ hashFiles('yarn.lock') }}
         restore-keys: |
-          yarn-deps1-
+          yarn-deps2-
 
     - name: yarn install
       if: steps.cache-primes.outputs.cache-hit != 'true'
