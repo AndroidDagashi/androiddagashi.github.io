@@ -16,6 +16,7 @@ export interface Divider {
 
 // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
 export const state = () => ({
+  initialized: false,
   title: '',
   description: '',
   baseUrl: '',
@@ -81,6 +82,9 @@ export const mutations: MutationTree<RootState> = {
       state.digest.milestones.pageInfo.endCursor = pageInfo.endCursor
     }
   },
+  [MutationTypes.UPDATE_INITIALIZED](state: RootState, initialized: boolean) {
+    state.initialized = initialized
+  },
 }
 
 export const actions: ActionTree<RootState, RootState> = {
@@ -97,6 +101,8 @@ export const actions: ActionTree<RootState, RootState> = {
     commit(MutationTypes.UPDATE_AUTHORS, siteConfigs.authors)
 
     await dispatch(ActionTypes.FETCH_INITIAL_DIGEST)
+
+    commit(MutationTypes.UPDATE_INITIALIZED, true)
   },
 
   async [ActionTypes.FETCH_INITIAL_DIGEST]({ commit }) {

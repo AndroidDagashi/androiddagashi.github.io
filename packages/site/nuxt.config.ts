@@ -122,6 +122,7 @@ const config: Configuration = {
     '~/plugins/api',
     '~/plugins/markdownit.ts',
     { src: '~/plugins/ga.js', ssr: false },
+    { src: '~/plugins/init.client.ts', mode: 'client' },
   ],
   axios: {
     baseURL: baseUrl,
