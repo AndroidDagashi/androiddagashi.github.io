@@ -1,11 +1,11 @@
 <template>
   <v-app>
     <app-header />
-    <v-content class="primary--text">
+    <v-main class="primary--text">
       <v-container fluid fill-height justify-center>
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
     <app-footer />
     <span v-if="didMount">
       <script

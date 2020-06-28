@@ -4,10 +4,12 @@ import { Configuration } from '@nuxt/types'
 import nodeExternals from 'webpack-node-externals'
 import parseArgs from 'minimist'
 import yaml from 'js-yaml'
+import { SiteConfig } from 'site-types/SiteConfig'
 
 const siteConfigs = yaml.safeLoad(
   fs.readFileSync('../../siteconfig.yml', 'utf8')
-)
+) as SiteConfig
+
 const indexJson = require('./static/api/index.json')
 
 let pageInfo = indexJson.milestones.pageInfo
@@ -128,6 +130,8 @@ const config: Configuration = {
     treeShake: true,
     optionsPath: './vuetify.options.ts',
   },
+  // https://github.com/nuxt/telemetry
+  telemetry: true,
 }
 
 export default config

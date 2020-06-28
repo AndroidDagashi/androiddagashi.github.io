@@ -6,10 +6,14 @@ import TopDigestsGenerator from './src/generator/TopDigestsGenerator'
 import IssueGenerator from './src/generator/IssueGenerator'
 import { GitHubClient, GitHubConfig } from 'site-api-github'
 import { chunk } from './src/utils'
+import { SiteConfig } from 'site-types/SiteConfig'
 
 async function generateApi(): Promise<void> {
   // load configs
-  const configYml = yaml.safeLoad(await readFile('../../siteconfig.yml'))
+  const configYml = yaml.safeLoad(
+    await readFile('../../siteconfig.yml')
+  ) as SiteConfig
+
   const config = new Config(
     process.env.GH_READONLY_TOKEN || '',
     configYml.issueRepository.owner,
