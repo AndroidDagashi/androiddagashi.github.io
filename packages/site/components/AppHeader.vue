@@ -2,7 +2,7 @@
   <v-app-bar color="indigo" dark fixed app>
     <v-toolbar-title>
       <nuxt-link
-        class="title white--text"
+        class="text-h6 white--text"
         style="text-decoration: none;"
         to="/"
       >

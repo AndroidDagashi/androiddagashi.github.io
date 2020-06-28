@@ -4,7 +4,7 @@ import MarkdownIt from 'markdown-it'
 export default (
   _: Context,
   inject: (key: string, value: unknown) => void
-): void => {
+): Promise<void> | void => {
   const md = new MarkdownIt({
     html: true,
     breaks: true,
