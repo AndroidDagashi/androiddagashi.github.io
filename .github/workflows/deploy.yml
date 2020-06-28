@@ -32,7 +32,8 @@ jobs:
       id: restore-cache
       uses: actions/cache@v2
       with:
-        path: **/node_modules
+        path: |
+          **/node_modules
         key: yarn-deps2-${{ hashFiles('yarn.lock') }}
         restore-keys: |
           yarn-deps2-
