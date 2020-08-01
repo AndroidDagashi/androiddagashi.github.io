@@ -104,7 +104,7 @@ const config: Configuration = {
       if (ctx.isServer) {
         configs.externals = [
           nodeExternals({
-            whitelist: [/^vuetify/],
+            allowlist: [/^vuetify/],
           }),
         ]
       }

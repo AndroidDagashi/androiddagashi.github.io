@@ -62,8 +62,10 @@ export default class IssueComments extends Vue {
   }
 
   publishedAt(comment: GHComment): string {
-    return DateTime.fromISO(comment.publishedAt).toLocaleString(
-      DateTime.DATETIME_SHORT_WITH_SECONDS
+    return (
+      DateTime.fromISO(comment.publishedAt).toLocaleString(
+        DateTime.DATETIME_SHORT_WITH_SECONDS
+      ) || ''
     )
   }
 }
