@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-layout justify-center align-center>
-      <v-flex xs12 sm12 md8>
+      <v-flex xs12 sm12 md8 xl6>
         <div class="text-center">
           <img :alt="title" src="/image/logo.jpg" width="200" class="mb-5" />
         </div>
@@ -39,7 +39,7 @@
     </v-layout>
     <v-layout justify-center align-center>
       <!-- Issue list -->
-      <v-flex xs12 sm12 md8 class="mt-2">
+      <v-flex xs12 sm12 md8 xl6 class="mt-2">
         <v-card>
           <v-list three-line>
             <v-subheader>Issues</v-subheader>

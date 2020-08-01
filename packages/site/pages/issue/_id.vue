@@ -1,6 +1,6 @@
 <template>
   <v-layout justify-center align-center>
-    <v-flex xs12 sm12 md8>
+    <v-flex xs12 sm12 md8 xl6>
       <v-card>
         <v-card-title class="headline"> #{{ milestone.title }} </v-card-title>
         <v-card-text
