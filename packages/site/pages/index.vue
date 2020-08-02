@@ -45,7 +45,7 @@
             <v-subheader>Issues</v-subheader>
             <template v-for="(item, index) in milestonesWithDivider">
               <v-divider v-if="item.isDivider" :key="index" />
-              <issue-link
+              <IssueLink
                 v-else
                 :key="item.id"
                 :milestone="item"

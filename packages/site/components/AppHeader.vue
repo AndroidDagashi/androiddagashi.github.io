@@ -23,7 +23,7 @@ import { mapState } from 'vuex'
 import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component({
-  name: 'app-header',
+  name: 'AppHeader',
   computed: mapState(['title', 'rssUrl']),
 })
 export default class AppHeader extends Vue {

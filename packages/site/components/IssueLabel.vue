@@ -11,7 +11,7 @@ import { Component, Vue, Prop } from 'nuxt-property-decorator'
 import { RepositoryConfig } from 'site-types/SiteConfig'
 
 @Component({
-  name: 'issue-label',
+  name: 'IssueLabel',
   computed: mapState(['issueRepository']),
 })
 export default class IssueLabel extends Vue {
@@ -32,7 +32,7 @@ export default class IssueLabel extends Vue {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .text-caption {
   margin: 4px;
   .v-chip__content {

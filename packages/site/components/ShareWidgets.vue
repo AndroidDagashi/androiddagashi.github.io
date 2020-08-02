@@ -47,7 +47,7 @@
 import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component({
-  name: 'share-widgets',
+  name: 'ShareWidgets',
 })
 export default class ShareWidgets extends Vue {}
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <section class="issue-comments text--primary">
+  <section class="IssueComments text--primary">
     <h3>Comments</h3>
     <v-container>
       <v-layout class="shrink" justify-end>
@@ -22,7 +22,7 @@ import { DateTime } from 'luxon'
 import IssueCommentsItem from './IssueCommentsItem.vue'
 
 @Component({
-  name: 'issue-comments',
+  name: 'IssueComments',
   components: { IssueCommentsItem },
 })
 export default class IssueComments extends Vue {
@@ -39,7 +39,7 @@ export default class IssueComments extends Vue {
 </script>
 
 <style lang="scss" scoped>
-.issue-comments {
+.IssueComments {
   width: 100%;
 }
 </style>

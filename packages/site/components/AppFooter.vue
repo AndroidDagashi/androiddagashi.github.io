@@ -11,7 +11,7 @@ import { mapState } from 'vuex'
 import { Component, Vue } from 'nuxt-property-decorator'
 
 @Component({
-  name: 'app-footer',
+  name: 'AppFooter',
   computed: mapState(['title']),
 })
 export default class AppFooter extends Vue {

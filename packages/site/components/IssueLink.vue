@@ -15,7 +15,7 @@ import { GHDigestMilestone } from 'site-types/GitHubApi'
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
 
 @Component({
-  name: 'issue-link',
+  name: 'IssueLink',
 })
 export default class IssueLink extends Vue {
   @Prop() milestone!: GHDigestMilestone
@@ -34,7 +34,7 @@ export default class IssueLink extends Vue {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .issue-summary {
   line-height: 1.5 !important;
 }

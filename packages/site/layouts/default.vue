@@ -1,12 +1,12 @@
 <template>
   <v-app>
-    <app-header />
+    <AppHeader />
     <v-main class="primary--text">
       <v-container fluid fill-height justify-center>
         <nuxt />
       </v-container>
     </v-main>
-    <app-footer />
+    <AppFooter />
     <span v-if="didMount">
       <script
         async
