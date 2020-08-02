@@ -14,7 +14,9 @@
           <v-card-text class="text--primary">
             <p>
               <template v-for="(author, index) in authors">
-                <a :key="index" :href="author.link">{{ author.name }}</a
+                <a :key="index" :href="author.link" target="_blank">{{
+                  author.name
+                }}</a
                 >{{ getAuthorConnector(index) }}</template
               >が、一週間の間に気になったAndroid関連のニュースをざっくりまとめます。
             </p>
