@@ -13,15 +13,9 @@
           </v-card-title>
           <v-card-text class="text--primary">
             <p>
-              <a href="https://twitter.com/hydrakecat" target="_blank"
-                >@hydrakecat</a
-              >と
-              <a href="https://twitter.com/_yshrsmz" target="_blank"
-                >@_yshrsmz</a
-              >、<a href="https://twitter.com/STAR_ZERO" target="_blank"
-                >@STAR_ZERO</a
-              >、<a href="https://twitter.com/stsn_jp" target="_blank"
-                >@stsn_jp</a
+              <template v-for="(author, index) in authors">
+                <a :key="index" :href="author.link">{{ author.name }}</a
+                >{{ getAuthorConnector(index) }}</template
               >が、一週間の間に気になったAndroid関連のニュースをざっくりまとめます。
             </p>
             <p>おおよそ毎週日曜日の夜に更新してします。</p>
@@ -73,7 +67,7 @@
 </template>
 
 <script lang="ts">
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
 import { GHDigestMilestone, GHDigest, GHPageInfo } from 'site-types/GitHubApi'
 import flatmap from 'lodash.flatmap'
 import { Action, Component, Vue } from 'nuxt-property-decorator'
@@ -82,6 +76,7 @@ import { Divider } from '../store'
 import IssueLink from '~/components/IssueLink.vue'
 
 import * as ActionTypes from '~/store/ActionTypes'
+import * as GetterTypes from '~/store/GetterTypes'
 
 @Component({
   name: 'index',
@@ -90,6 +85,7 @@ import * as ActionTypes from '~/store/ActionTypes'
   },
   computed: {
     ...mapState(['title', 'description', 'baseUrl', 'contact', 'digest']),
+    ...mapGetters({ authors: GetterTypes.GET_AUTHORS }),
   },
 })
 export default class Index extends Vue {
@@ -98,6 +94,7 @@ export default class Index extends Vue {
   contact!: ContactInfo
   baseUrl!: string
   digest!: GHDigest
+  authors!: ContactInfo[]
 
   @Action(ActionTypes.FETCH_DIGEST)
   fetchDigest
@@ -116,6 +113,17 @@ export default class Index extends Vue {
 
   async onLoadNext(endCursor: string): Promise<void> {
     await this.fetchDigest({ cursor: endCursor })
+  }
+
+  getAuthorConnector(index: number): string {
+    switch (index) {
+      case 0:
+        return 'と'
+      case this.authors.length - 1:
+        return ''
+      default:
+        return '、'
+    }
   }
 
   head(): Record<string, unknown> {

@@ -9,7 +9,7 @@
           v-html="$md.render(milestone.description)"
         />
         <v-card-text>
-          <share-widgets />
+          <ShareWidgets />
           <div>
             <template v-for="(item, index) in issuesWithDivider">
               <v-divider v-if="item.isDivider" :key="index" />
@@ -17,7 +17,7 @@
                 <div>
                   <h1 class="mb-1" v-html="item.title" />
                   <div class="text-left mb-2">
-                    <issue-label
+                    <IssueLabel
                       v-for="(label, index2) in item.labels.nodes"
                       :key="index2"
                       :label-info="label"
@@ -30,7 +30,7 @@
                   />
                   <v-container class="px-0">
                     <v-layout v-if="item.comments.totalCount">
-                      <issue-comments :issue="item" />
+                      <IssueComments :issue="item" />
                     </v-layout>
                     <v-layout justify-end>
                       <v-btn :href="item.url" class="mr-0" text target="_blank">
