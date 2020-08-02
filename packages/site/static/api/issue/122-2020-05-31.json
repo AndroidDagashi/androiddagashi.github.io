@@ -40,7 +40,7 @@
       },
       {
         "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1398",
-        "title": "buildSrc\bを変更するとキャッシュが無効になる",
+        "title": "buildSrcを変更するとキャッシュが無効になる",
         "body": "https://proandroiddev.com/stop-using-gradle-buildsrc-use-composite-builds-instead-3c38ac7a2ab3\r\n\r\nGradleではbuildSrcを使うことで、プロジェクト全体の共通設定などをまとめることが出来ます。しかし、buildSrcを変更すると、キャッシュが無効になるため、ビルドに時間が掛かってしまいます。この記事では、Composite buildsを使うことで、この問題の解決法を提案しています。",
         "labels": {
           "nodes": []
