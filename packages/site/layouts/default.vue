@@ -19,25 +19,26 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import Vue from 'vue'
 import AppHeader from '~/components/AppHeader.vue'
 import AppFooter from '~/components/AppFooter.vue'
 
-@Component({
-  name: 'default-layout',
-  components: {
-    AppHeader,
-    AppFooter,
+interface DefaultLayoutData {
+  didMount: boolean
+}
+
+export default Vue.extend({
+  name: 'DefaultLayout',
+  components: { AppHeader, AppFooter },
+  data(): DefaultLayoutData {
+    return {
+      didMount: false,
+    }
+  },
+  mounted() {
+    this.didMount = true
   },
 })
-export default class DefaultLayout extends Vue {
-  didMount = false
-
-  // eslint-disable-next-line require-await
-  async mounted(): Promise<void> {
-    this.didMount = true
-  }
-}
 </script>
 
 <style scoped></style>

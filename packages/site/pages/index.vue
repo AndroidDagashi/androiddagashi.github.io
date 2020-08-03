@@ -69,80 +69,61 @@
 </template>
 
 <script lang="ts">
-import { mapState, mapGetters } from 'vuex'
-import { GHDigestMilestone, GHDigest, GHPageInfo } from 'site-types/GitHubApi'
+import Vue from 'vue'
+import { mapState, mapGetters, mapActions } from 'vuex'
+import { GHDigestMilestone, GHPageInfo } from 'site-types/GitHubApi'
 import flatmap from 'lodash.flatmap'
-import { Action, Component, Vue } from 'nuxt-property-decorator'
-import { ContactInfo } from 'site-types/SiteConfig'
 import { Divider } from '../store'
+import { renderOGPMeta } from '../utils/ogp'
 import IssueLink from '~/components/IssueLink.vue'
 
 import * as ActionTypes from '~/store/ActionTypes'
 import * as GetterTypes from '~/store/GetterTypes'
 
-@Component({
-  name: 'index',
-  components: {
-    IssueLink,
-  },
+export default Vue.extend({
+  name: 'Index',
+  components: { IssueLink },
   computed: {
     ...mapState(['title', 'description', 'baseUrl', 'contact', 'digest']),
     ...mapGetters({ authors: GetterTypes.GET_AUTHORS }),
+    milestonesWithDivider(): [GHDigestMilestone | Divider] {
+      return flatmap(
+        this.digest.milestones.nodes as GHDigestMilestone[],
+        (milestone: GHDigestMilestone) => [{ isDivider: true }, milestone]
+      )
+    },
+    pageInfo(): GHPageInfo {
+      return this.digest.milestones.pageInfo
+    },
   },
-})
-export default class Index extends Vue {
-  title!: string
-  description!: string
-  contact!: ContactInfo
-  baseUrl!: string
-  digest!: GHDigest
-  authors!: ContactInfo[]
-
-  @Action(ActionTypes.FETCH_DIGEST)
-  fetchDigest
-
-  // insert divider
-  get milestonesWithDivider(): [GHDigestMilestone | Divider] {
-    return flatmap(
-      this.digest.milestones.nodes as GHDigestMilestone[],
-      (milestone: GHDigestMilestone) => [{ isDivider: true }, milestone]
-    )
-  }
-
-  get pageInfo(): GHPageInfo {
-    return this.digest.milestones.pageInfo
-  }
-
-  async onLoadNext(endCursor: string): Promise<void> {
-    await this.fetchDigest({ cursor: endCursor })
-  }
-
-  getAuthorConnector(index: number): string {
-    switch (index) {
-      case 0:
-        return 'と'
-      case this.authors.length - 1:
-        return ''
-      default:
-        return '、'
-    }
-  }
-
+  methods: {
+    ...mapActions({ fetchDigest: ActionTypes.FETCH_DIGEST }),
+    async onLoadNext(endCursor: string): Promise<void> {
+      await this.fetchDigest({ cursor: endCursor })
+    },
+    getAuthorConnector(index: number): string {
+      switch (index) {
+        case 0:
+          return 'と'
+        case this.authors.length - 1:
+          return ''
+        default:
+          return '、'
+      }
+    },
+  },
   head(): Record<string, unknown> {
     return {
       meta: [
-        { property: 'og:title', content: this.title },
-        { property: 'og:description', content: this.description },
-        { property: 'og:type', content: 'website' },
-        {
-          property: 'og:url',
-          content: `${this.baseUrl}${this.$route.fullPath}`,
-        },
-        { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` },
+        ...renderOGPMeta({
+          title: this.title,
+          description: this.description,
+          url: `${this.baseUrl}${this.$route.fullPath}`,
+        }),
       ],
     }
-  }
-}
+  },
+})
 </script>
 
 <style lang="scss" scoped>

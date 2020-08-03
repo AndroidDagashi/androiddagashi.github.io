@@ -16,26 +16,20 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue, Prop } from 'nuxt-property-decorator'
-import { GHIssue, GHComment } from 'site-types/GitHubApi'
-import { DateTime } from 'luxon'
+import Vue, { PropOptions } from 'vue'
+import { GHIssue } from 'site-types/GitHubApi'
 import IssueCommentsItem from './IssueCommentsItem.vue'
 
-@Component({
+export default Vue.extend({
   name: 'IssueComments',
   components: { IssueCommentsItem },
+  props: {
+    issue: {
+      type: Object,
+      required: true,
+    } as PropOptions<GHIssue>,
+  },
 })
-export default class IssueComments extends Vue {
-  @Prop({ required: true }) issue!: GHIssue
-
-  publishedAt(comment: GHComment): string {
-    return (
-      DateTime.fromISO(comment.publishedAt).toLocaleString(
-        DateTime.DATETIME_SHORT_WITH_SECONDS
-      ) || ''
-    )
-  }
-}
 </script>
 
 <style lang="scss" scoped>

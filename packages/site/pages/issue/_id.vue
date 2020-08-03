@@ -49,28 +49,25 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 import { mapState } from 'vuex'
 import { GHMilestone, GHIssue } from 'site-types/GitHubApi'
 import flatmap from 'lodash.flatmap'
-import { Component, Vue } from 'vue-property-decorator'
 import { Divider } from '../../store'
+import { renderOGPMeta } from '../../utils/ogp'
 import IssueLabel from '~/components/IssueLabel.vue'
 import ShareWidgets from '~/components/ShareWidgets.vue'
 import IssueComments from '~/components/IssueComments.vue'
 
-@Component({
-  name: 'issue',
-  components: {
-    IssueLabel,
-    IssueComments,
-    ShareWidgets,
-  },
-  computed: mapState({
-    siteTitle: 'title',
-    description: 'description',
-    baseUrl: 'baseUrl',
-  }),
-  async asyncData({ route, $api }) {
+interface IssueData {
+  milestone: GHMilestone | null
+  title: string
+}
+
+export default Vue.extend({
+  name: 'Issue',
+  components: { IssueLabel, IssueComments, ShareWidgets },
+  async asyncData({ route, $api }): Promise<IssueData> {
     const data = await $api.get<GHMilestone>(
       `/api/issue/${route.params.id}.json`
     )
@@ -79,15 +76,28 @@ import IssueComments from '~/components/IssueComments.vue'
       title: `#${data.title}`,
     }
   },
-})
-export default class Issue extends Vue {
-  milestone!: GHMilestone
-  title = ''
-
-  siteTitle!: string
-  description!: string
-  baseUrl!: string
-
+  data(): IssueData {
+    return {
+      milestone: null,
+      title: '',
+    }
+  },
+  computed: {
+    ...mapState({
+      siteTitle: 'title',
+      description: 'description',
+      baseUrl: 'baseUrl',
+    }),
+    milestoneId(): string {
+      return this.$route.params.id
+    },
+    issuesWithDivider(): (GHIssue | Divider)[] {
+      return flatmap(this.milestone.issues.nodes, (value) => [
+        { isDivider: true },
+        value,
+      ])
+    },
+  },
   head(): Record<string, unknown> {
     let titleDescription = ''
     if (this.milestone.description) {
@@ -98,37 +108,15 @@ export default class Issue extends Vue {
     return {
       title,
       meta: [
-        { property: 'og:title', content: title },
-        {
-          property: 'og:description',
-          content: this.milestone.description || this.description,
-        },
-        { property: 'og:type', content: 'website' },
-        {
-          property: 'og:url',
-          content: `${this.baseUrl}${this.$route.fullPath}`,
-        },
-        { property: 'og:image', content: `${this.baseUrl}/image/logo.jpg` },
-        {
-          name: 'description',
-          hid: 'description',
-          content: this.milestone.description || this.description,
-        },
+        ...renderOGPMeta({
+          title,
+          description: this.milestone.description || this.description,
+          url: `${this.baseUrl}${this.$route.fullPath}`,
+        }),
       ],
     }
-  }
-
-  get milestoneId(): string {
-    return this.$route.params.id
-  }
-
-  get issuesWithDivider(): GHIssue | Divider {
-    return flatmap(this.milestone.issues.nodes, (value) => [
-      { isDivider: true },
-      value,
-    ])
-  }
-}
+  },
+})
 </script>
 
 <style lang="scss" scoped></style>

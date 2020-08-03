@@ -25,25 +25,28 @@
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { Component, Prop } from 'nuxt-property-decorator'
+import Vue, { PropOptions } from 'vue'
 import { GHComment } from 'site-types/GitHubApi'
 import { DateTime } from 'luxon'
 
-@Component({
+export default Vue.extend({
   name: 'IssueCommentsItem',
+  props: {
+    comment: {
+      type: Object,
+      required: true,
+    } as PropOptions<GHComment>,
+  },
+  computed: {
+    publishedAt(): string {
+      return (
+        DateTime.fromISO(this.comment.publishedAt).toLocaleString(
+          DateTime.DATETIME_SHORT_WITH_SECONDS
+        ) || ''
+      )
+    },
+  },
 })
-export default class IssueCommentsItem extends Vue {
-  @Prop({ required: true }) comment!: GHComment
-
-  get publishedAt(): string {
-    return (
-      DateTime.fromISO(this.comment.publishedAt).toLocaleString(
-        DateTime.DATETIME_SHORT_WITH_SECONDS
-      ) || ''
-    )
-  }
-}
 </script>
 
 <style lang="scss" scoped>

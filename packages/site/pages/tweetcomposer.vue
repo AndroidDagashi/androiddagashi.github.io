@@ -41,57 +41,41 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 import { mapState } from 'vuex'
-import { Component, Vue } from 'nuxt-property-decorator'
 import twitter from 'twitter-text'
 
-@Component({
-  name: 'tweetcompser',
-  computed: {
-    ...mapState(['baseUrl']),
+export default Vue.extend({
+  name: 'Tweetcomposer',
+  data() {
+    return {
+      summary: '',
+      milestoneNumber: 100,
+      tweet: '',
+      isValidTweet: false,
+      tweetLength: 0,
+    }
   },
-})
-export default class TweetComposer extends Vue {
-  baseUrl!: string
-
-  summary = ''
-
-  milestoneNumber = 100
-
-  tweet = ''
-
-  isValidTweet = false
-
-  tweetLength = 0
-
-  // get tweet(): string {
-  //   return this.generateTweet(this.milestoneNumber, this.summary)
-  // }
-
-  // get tweetLength(): number {
-  //   let result = twitter.parseTweet(this.tweet)
-  //   return result.weightedLength
-  // }
-
-  generateTweet(milestoneNumber: number, summary: string): string {
-    return (
-      `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestoneNumber}回を公開しました！ #Androidjp \n\n` +
-      `${summary}\n\n` +
-      `${this.baseUrl}/issue/${milestoneNumber}-9999-99-99`
-    )
-  }
-
-  onInput(): void {
-    this.tweet = this.generateTweet(this.milestoneNumber, this.summary)
-    const parseResult = twitter.parseTweet(this.tweet)
-
-    this.tweetLength = parseResult.weightedLength
-    this.isValidTweet = parseResult.valid
-  }
-
+  computed: { ...mapState(['baseUrl']) },
   mounted(): void {
     // initial calculation
     this.onInput()
-  }
-}
+  },
+  methods: {
+    generateTweet(milestoneNumber: number, summary: string): string {
+      return (
+        `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestoneNumber}回を公開しました！ #Androidjp \n\n` +
+        `${summary}\n\n` +
+        `${this.baseUrl}/issue/${milestoneNumber}-9999-99-99`
+      )
+    },
+    onInput(): void {
+      this.tweet = this.generateTweet(this.milestoneNumber, this.summary)
+      const parseResult = twitter.parseTweet(this.tweet)
+
+      this.tweetLength = parseResult.weightedLength
+      this.isValidTweet = parseResult.valid
+    },
+  },
+})
 </script>

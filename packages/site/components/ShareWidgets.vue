@@ -44,10 +44,9 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
+import Vue from 'vue'
 
-@Component({
+export default Vue.extend({
   name: 'ShareWidgets',
 })
-export default class ShareWidgets extends Vue {}
 </script>

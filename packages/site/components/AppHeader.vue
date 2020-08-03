@@ -19,17 +19,15 @@
 </template>
 
 <script lang="ts">
+import Vue from 'vue'
 import { mapState } from 'vuex'
-import { Component, Vue } from 'nuxt-property-decorator'
 
-@Component({
+export default Vue.extend({
   name: 'AppHeader',
-  computed: mapState(['title', 'rssUrl']),
+  computed: {
+    ...mapState(['title', 'rssUrl']),
+  },
 })
-export default class AppHeader extends Vue {
-  title!: string
-  rssUrl!: string
-}
 </script>
 
 <style scoped>

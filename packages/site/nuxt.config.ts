@@ -5,6 +5,7 @@ import nodeExternals from 'webpack-node-externals'
 import parseArgs from 'minimist'
 import yaml from 'js-yaml'
 import { SiteConfig } from 'site-types/SiteConfig'
+import { renderOGPMeta } from './utils/ogp'
 
 const siteConfigs = yaml.safeLoad(
   fs.readFileSync('../../siteconfig.yml', 'utf8')
@@ -65,10 +66,16 @@ const config: Configuration = {
         content: 'width=device-width, initial-scale=1',
       },
       {
-        hid: 'description',
-        name: 'description',
-        content: siteConfigs.description,
+        property: 'og:site_name',
+        hid: 'og:site_name',
+        content: siteConfigs.title,
       },
+      { property: 'og:type', hid: 'og:type', content: 'website' },
+      ...renderOGPMeta({
+        title: siteConfigs.title,
+        description: siteConfigs.description,
+        image: `${siteConfigs.baseUrl}/image/logo.jpg`,
+      }),
     ],
     link: [
       {
