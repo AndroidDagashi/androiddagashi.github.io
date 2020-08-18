@@ -11,8 +11,14 @@ export default (
     linkify: true,
   })
 
-  const defualtRenderer =
+  const defualtLinkRenderer =
     md.renderer.rules.link_open ||
+    ((tokens, idx, options, _env, self): string => {
+      return self.renderToken(tokens, idx, options)
+    })
+
+  const defaultStyleRenderer =
+    md.renderer.rules.image ||
     ((tokens, idx, options, _env, self): string => {
       return self.renderToken(tokens, idx, options)
     })
@@ -27,7 +33,17 @@ export default (
       tokens[idx].attrs![aIndex][1] = '_blank'
     }
 
-    return defualtRenderer(tokens, idx, options, env, self)
+    return defualtLinkRenderer(tokens, idx, options, env, self)
+  }
+
+  md.renderer.rules.image = (tokens, idx, options, env, self): string => {
+    const styleIndex = tokens[idx].attrIndex('style')
+
+    if (styleIndex < 0) {
+      tokens[idx].attrPush(['style', 'max-width: 100%;'])
+    }
+
+    return defaultStyleRenderer(tokens, idx, options, env, self)
   }
 
   inject('md', md)
