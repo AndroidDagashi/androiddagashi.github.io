@@ -1,0 +1,191 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjA5ODIzNQ==",
+  "number": 146,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/146",
+  "title": "146 2020-11-15",
+  "description": "App Bundle Q&A、Now in Android エピソード29、App Bundleのテスト、Android Studio 4.1.1、実践的なDagger Hilt + Kotlin解説、など",
+  "closedAt": "2020-11-15T10:21:58Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOLDKO0A==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OLEyrXg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1625",
+        "title": "App Bundle Q&A",
+        "body": "https://www.youtube.com/watch?v=fnsxImWDxj0&feature=youtu.be\r\n\r\nApp Bundle Q&A が11/19に行われるようです。質問をTwitter上で募集しています。\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">🤔 Send us your questions using <a href=\"https://twitter.com/hashtag/AskAndroid?src=hash&amp;ref_src=twsrc%5Etfw\">#AskAndroid</a>!<br> <br>Ask us anything about App Bundles at our upcoming <a href=\"https://twitter.com/hashtag/MADSkills?src=hash&amp;ref_src=twsrc%5Etfw\">#MADSkills</a> Q&amp;A with <a href=\"https://twitter.com/chethaase?ref_src=twsrc%5Etfw\">@chethaase</a>, <a href=\"https://twitter.com/wkalic?ref_src=twsrc%5Etfw\">@wkalic</a>, Iurii Makhno, and <a href=\"https://twitter.com/keyboardsurfer?ref_src=twsrc%5Etfw\">@keyboardsurfer</a>.<br> <br>Be there on November 18th at 10:00 AM PT. <br> <br>Set a reminder → <a href=\"https://t.co/RLlh2j28da\">https://t.co/RLlh2j28da</a> <a href=\"https://t.co/a4Ex6sfuUk\">pic.twitter.com/a4Ex6sfuUk</a></p>&mdash; Android Developers (@AndroidDev) <a href=\"https://twitter.com/AndroidDev/status/1326838043240665088?ref_src=twsrc%5Etfw\">November 12, 2020</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1626",
+        "title": "Now in Android エピソード29",
+        "body": "https://medium.com/androiddevelopers/now-in-android-29-6061e38f318d\r\n\r\nMAD Skillsシリーズで投稿されたApp Bundlesの解説動画やAndroid Xの新しいリリース、Kotlinのブログ記事について触れられています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1627",
+        "title": "PyTorchがAndroidのNNAPIに対応",
+        "body": "https://medium.com/pytorch/pytorch-mobile-now-supports-android-nnapi-e2a2aeb74534\r\n\r\nNNAPIはNeural Networks APIの略です",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1628",
+        "title": "AOSPのビルドシステムがBazelに移行",
+        "body": "https://developers.googleblog.com/2020/11/welcome-android-open-source-project.html\r\n\r\nAndroid Platformで現在使用しているビルドシステムから段階的にBazelに移行するようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1629",
+        "title": "App Bundleのテスト",
+        "body": "https://www.youtube.com/watch?v=vAEAZPU7w-I\r\n\r\nbundletoolを使ったローカルテストと、Internal App Sharingを使ったテストについて紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1630",
+        "title": "Android Studio 4.1.1",
+        "body": "https://androidstudio.googleblog.com/2020/11/android-studio-411-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/jrq01u/android_studio_411_available/\r\n\r\nいろいろ不具合修正が入っています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1631",
+        "title": "実践的なDagger Hilt + Kotlin解説",
+        "body": "https://medium.com/androiddevelopers/a-pragmatic-guide-to-hilt-with-kotlin-a76859c324a1\r\n\r\nHiltの設定から、HiltAndroidAppアノテーションなどの使い方など、網羅的に説明しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1632",
+        "title": "Android Studioをリモートで実行する",
+        "body": "https://joenrv.medium.com/how-to-run-android-studio-on-any-device-with-jetbrains-projector-3d9d23a8c179\r\nhttps://www.reddit.com/r/androiddev/comments/jscz0m/how_to_run_android_studio_on_any_device_with/\r\n\r\n今までもAndroidのビルドをGCPやAWSに立ち上げたインスタンス上で行うリモートビルドが話題になることはありましたが、今度はAndroid Studio自体をクラウド上の環境で立ち上げてしまおう、という話のようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
