@@ -58,6 +58,7 @@ import { renderOGPMeta } from '../../utils/ogp'
 import IssueLabel from '~/components/IssueLabel.vue'
 import ShareWidgets from '~/components/ShareWidgets.vue'
 import IssueComments from '~/components/IssueComments.vue'
+import { loadScripts } from '~/utils/sharewidget-scripts'
 
 interface IssueData {
   milestone: GHMilestone | null
@@ -115,6 +116,9 @@ export default Vue.extend({
         value,
       ])
     },
+  },
+  mounted() {
+    loadScripts(document)
   },
 })
 </script>

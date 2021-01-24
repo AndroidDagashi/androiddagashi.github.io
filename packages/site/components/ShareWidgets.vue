@@ -10,11 +10,6 @@
             data-show-count="false"
             >Tweet</a
           >
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          />
         </span>
         <span>
           <a
@@ -32,12 +27,6 @@
               style="border: none"
             />
           </a>
-          <script
-            type="text/javascript"
-            src="https://b.st-hatena.com/js/bookmark_button.js"
-            charset="utf-8"
-            async="async"
-          />
         </span>
       </div>
     </client-only>
