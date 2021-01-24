@@ -97,17 +97,14 @@ export const mutations: MutationTree<RootState> = {
 }
 
 export const actions: ActionTree<RootState, RootState> = {
-  async nuxtServerInit({ commit, dispatch }, { env }) {
-    const { SITE_CONFIG: siteConfigStr } = env
-    const siteConfigs: SiteConfig = JSON.parse(siteConfigStr)
-
-    commit(MutationTypes.UPDATE_TITLE, siteConfigs.title)
-    commit(MutationTypes.UPDATE_DESCRIPTION, siteConfigs.description)
-    commit(MutationTypes.UPDATE_BASE_URL, siteConfigs.baseUrl)
-    commit(MutationTypes.UPDATE_RSS_URL, siteConfigs.rssUrl)
-    commit(MutationTypes.UPDATE_ISSUE_REPOSITORY, siteConfigs.issueRepository)
-    commit(MutationTypes.UPDATE_CONTACT, siteConfigs.contact)
-    commit(MutationTypes.UPDATE_AUTHORS, siteConfigs.authors)
+  async nuxtServerInit({ commit, dispatch }) {
+    commit(MutationTypes.UPDATE_TITLE, this.$config.title)
+    commit(MutationTypes.UPDATE_DESCRIPTION, this.$config.description)
+    commit(MutationTypes.UPDATE_BASE_URL, this.$config.baseUrl)
+    commit(MutationTypes.UPDATE_RSS_URL, this.$config.rssUrl)
+    commit(MutationTypes.UPDATE_ISSUE_REPOSITORY, this.$config.issueRepository)
+    commit(MutationTypes.UPDATE_CONTACT, this.$config.contact)
+    commit(MutationTypes.UPDATE_AUTHORS, this.$config.authors)
 
     await dispatch(ActionTypes.FETCH_INITIAL_DIGEST)
 

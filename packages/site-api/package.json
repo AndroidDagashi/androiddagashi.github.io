@@ -6,15 +6,14 @@
     "generate": "ts-node ./index.ts"
   },
   "dependencies": {
-    "js-yaml": "^3.14.0",
     "site-api-github": "^1.0.0",
-    "site-common": "^1.0.0"
+    "site-common": "^1.0.0",
+    "site-config": "^1.0.0"
   },
   "devDependencies": {
-    "@types/js-yaml": "^3.12.5",
     "@types/node": "^14.0.27",
     "site-types": "^1.0.0",
-    "ts-node": "^8.10.1",
-    "typescript": "3.9.7"
+    "ts-node": "^9.1.1",
+    "typescript": "4.1.3"
   }
 }

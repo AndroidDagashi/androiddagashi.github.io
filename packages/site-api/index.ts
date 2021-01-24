@@ -1,23 +1,17 @@
-import { readFile, rmdir, mkdirp, rename } from 'site-common/file'
-import yaml from 'js-yaml'
+import { rmdir, mkdirp, rename } from 'site-common/file'
 import { Config } from './src/config'
 import path from 'path'
 import TopDigestsGenerator from './src/generator/TopDigestsGenerator'
 import IssueGenerator from './src/generator/IssueGenerator'
 import { GitHubClient, GitHubConfig } from 'site-api-github'
 import { chunk } from './src/utils'
-import { SiteConfig } from 'site-types/SiteConfig'
+import { siteConfig } from 'site-config'
 
 async function generateApi(): Promise<void> {
-  // load configs
-  const configYml = yaml.safeLoad(
-    await readFile('../../siteconfig.yml')
-  ) as SiteConfig
-
   const config = new Config(
     process.env.GH_READONLY_TOKEN || '',
-    configYml.issueRepository.owner,
-    configYml.issueRepository.name,
+    siteConfig.issueRepository.owner,
+    siteConfig.issueRepository.name,
     path.normalize(`${__dirname}/../../.temp/api`),
     path.normalize(`${__dirname}/../site/static/api`)
   )

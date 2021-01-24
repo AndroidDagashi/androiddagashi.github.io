@@ -3,7 +3,7 @@
     <v-toolbar-title>
       <nuxt-link
         class="text-h6 white--text"
-        style="text-decoration: none;"
+        style="text-decoration: none"
         to="/"
       >
         {{ title }}
@@ -11,9 +11,7 @@
     </v-toolbar-title>
     <v-spacer />
     <v-toolbar-items>
-      <v-btn :href="rssUrl" text target="_blank">
-        RSS
-      </v-btn>
+      <v-btn :href="rssUrl" text target="_blank"> RSS </v-btn>
     </v-toolbar-items>
   </v-app-bar>
 </template>

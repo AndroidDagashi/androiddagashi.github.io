@@ -55,9 +55,7 @@
                 @click="onLoadNext(pageInfo.endCursor)"
               >
                 <v-list-item-content>
-                  <v-icon x-large>
-                    expand_more
-                  </v-icon>
+                  <v-icon x-large> expand_more </v-icon>
                 </v-list-item-content>
               </v-list-item>
             </template>
@@ -83,6 +81,17 @@ import * as GetterTypes from '~/store/GetterTypes'
 export default Vue.extend({
   name: 'Index',
   components: { IssueLink },
+  head(): Record<string, unknown> {
+    return {
+      meta: [
+        ...renderOGPMeta({
+          title: this.title,
+          description: this.description,
+          url: `${this.baseUrl}${this.$route.fullPath}`,
+        }),
+      ],
+    }
+  },
   computed: {
     ...mapState(['title', 'description', 'baseUrl', 'contact', 'digest']),
     ...mapGetters({ authors: GetterTypes.GET_AUTHORS }),
@@ -111,17 +120,6 @@ export default Vue.extend({
           return '、'
       }
     },
-  },
-  head(): Record<string, unknown> {
-    return {
-      meta: [
-        ...renderOGPMeta({
-          title: this.title,
-          description: this.description,
-          url: `${this.baseUrl}${this.$route.fullPath}`,
-        }),
-      ],
-    }
   },
 })
 </script>

@@ -9,7 +9,7 @@
       <v-col cols="12" sm="8">
         <v-card class="mx-auto" raised>
           <v-card-text
-            style="white-space: pre-wrap; word-wrap: break-word;"
+            style="white-space: pre-wrap; word-wrap: break-word"
             v-text="tweet"
           />
           <v-card-subtitle
