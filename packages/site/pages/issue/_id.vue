@@ -82,22 +82,6 @@ export default Vue.extend({
       title: '',
     }
   },
-  computed: {
-    ...mapState({
-      siteTitle: 'title',
-      description: 'description',
-      baseUrl: 'baseUrl',
-    }),
-    milestoneId(): string {
-      return this.$route.params.id
-    },
-    issuesWithDivider(): (GHIssue | Divider)[] {
-      return flatmap(this.milestone.issues.nodes, (value) => [
-        { isDivider: true },
-        value,
-      ])
-    },
-  },
   head(): Record<string, unknown> {
     let titleDescription = ''
     if (this.milestone.description) {
@@ -115,6 +99,22 @@ export default Vue.extend({
         }),
       ],
     }
+  },
+  computed: {
+    ...mapState({
+      siteTitle: 'title',
+      description: 'description',
+      baseUrl: 'baseUrl',
+    }),
+    milestoneId(): string {
+      return this.$route.params.id
+    },
+    issuesWithDivider(): (GHIssue | Divider)[] {
+      return flatmap(this.milestone.issues.nodes, (value) => [
+        { isDivider: true },
+        value,
+      ])
+    },
   },
 })
 </script>

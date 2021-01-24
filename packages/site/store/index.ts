@@ -1,11 +1,7 @@
 import { ActionTree, MutationTree, GetterTree } from 'vuex'
 
 import { GHDigest } from 'site-types/GitHubApi'
-import {
-  SiteConfig,
-  ContactInfo,
-  RepositoryConfig,
-} from 'site-types/SiteConfig'
+import { ContactInfo, RepositoryConfig } from 'site-types/SiteConfig'
 
 import * as GetterTypes from '~/store/GetterTypes'
 import * as MutationTypes from '~/store/MutationTypes'
