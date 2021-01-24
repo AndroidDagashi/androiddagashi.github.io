@@ -8,12 +8,14 @@
 </template>
 <script lang="ts">
 import Vue from 'vue'
-import { mapState } from 'vuex'
 
 export default Vue.extend({
   name: 'AppFooter',
-  computed: {
-    ...mapState(['title']),
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
   },
 })
 </script>
