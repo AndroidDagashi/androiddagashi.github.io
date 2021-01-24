@@ -1,5 +1,5 @@
 <template>
-  <v-list-item :to="`issue/${milestone.path}/`" nuxt>
+  <v-list-item class="issue-digest" :to="`issue/${milestone.path}/`" nuxt>
     <v-list-item-content>
       <v-list-item-title v-html="title" />
       <v-list-item-subtitle class="issue-summary" v-html="summary" />
@@ -12,7 +12,7 @@ import Vue, { PropOptions } from 'vue'
 import { GHDigestMilestone } from 'site-types/GitHubApi'
 
 export default Vue.extend({
-  name: 'IssueLink',
+  name: 'IssueDigest',
   props: {
     milestone: {
       type: Object,
@@ -35,7 +35,7 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 .issue-summary {
   line-height: 1.5 !important;
 }

@@ -10,14 +10,13 @@ export const siteConfig = {
     name: 'AndroidDagashi',
   },
   rssUrl: 'http://feeds.feedburner.com/AndroidDagashi',
-  contact: {
-    name: '@AndroidDagashi',
-    link: 'https://twitter.com/AndroidDagashi',
-  },
+  // twitter account
+  contact: { name: 'AndroidDagashi' },
+  // twitter account
   authors: [
-    { name: '@_yshrsmz', link: 'https://twitter.com/_yshrsmz' },
-    { name: '@hydrakecat', link: 'https://twitter.com/hydrakecat' },
-    { name: '@STAR_ZERO', link: 'https://twitter.com/STAR_ZERO' },
-    { name: '@stsn_jp', link: 'https://twitter.com/stsn_jp' },
+    { name: '_yshrsmz' },
+    { name: 'hydrakecat' },
+    { name: 'STAR_ZERO' },
+    { name: 'stsn_jp' },
   ],
 } as NuxtRuntimeConfig & SiteConfig

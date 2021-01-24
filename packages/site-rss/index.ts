@@ -51,8 +51,8 @@ async function generateRss(): Promise<void> {
   feed.addCategory('Android')
   siteConfig.authors.forEach((author) => {
     feed.addContributor({
-      name: author.name,
-      link: author.link,
+      name: `@${author.name}`,
+      link: `https://twitter.com/${author.name}`,
     })
   })
 
