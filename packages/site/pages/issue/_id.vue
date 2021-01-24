@@ -3,11 +3,9 @@
     <v-flex xs12 sm12 md8 xl6>
       <v-card>
         <v-card-title class="headline"> #{{ milestone.title }} </v-card-title>
-        <v-card-text
-          v-if="milestone.description"
-          class="md-body text--primary"
-          v-html="$md.render(milestone.description)"
-        />
+        <v-card-text v-if="milestone.description" class="text--primary">
+          <MarkdownText :text="milestone.description" />
+        </v-card-text>
         <v-card-text>
           <ShareWidgets />
           <div>
@@ -24,9 +22,9 @@
                       :index="index2"
                     />
                   </div>
-                  <div
-                    class="issue-body md-body text--primary"
-                    v-html="$md.render(item.body)"
+                  <MarkdownText
+                    class="issue-body text--primary"
+                    :text="item.body"
                   />
                   <v-container class="px-0">
                     <v-layout v-if="item.comments.totalCount">
@@ -58,6 +56,7 @@ import { renderOGPMeta } from '../../utils/ogp'
 import IssueLabel from '~/components/IssueLabel.vue'
 import ShareWidgets from '~/components/ShareWidgets.vue'
 import IssueComments from '~/components/IssueComments.vue'
+import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
 
 interface IssueData {
@@ -67,7 +66,7 @@ interface IssueData {
 
 export default Vue.extend({
   name: 'Issue',
-  components: { IssueLabel, IssueComments, ShareWidgets },
+  components: { IssueLabel, IssueComments, ShareWidgets, MarkdownText },
   async asyncData({ route, $api }): Promise<IssueData> {
     const data = await $api.get<GHMilestone>(
       `/api/issue/${route.params.id}.json`

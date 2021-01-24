@@ -11,10 +11,7 @@
       </strong>
     </v-card-title>
     <v-card-text class="pt-3">
-      <div
-        class="comment-body md-body text--primary"
-        v-html="$md.render(comment.body)"
-      />
+      <MarkdownText class="comment-body text--primary" :text="comment.body" />
       <client-only>
         <p :title="comment.publishedAt" class="text-right mb-0">
           {{ publishedAt }}
@@ -28,9 +25,11 @@
 import Vue, { PropOptions } from 'vue'
 import { GHComment } from 'site-types/GitHubApi'
 import { DateTime } from 'luxon'
+import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 
 export default Vue.extend({
   name: 'IssueCommentsItem',
+  components: { MarkdownText },
   props: {
     comment: {
       type: Object,

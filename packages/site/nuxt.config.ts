@@ -97,7 +97,7 @@ const config: NuxtConfig = {
   /*
    * Build configuration
    */
-  css: ['~assets/css/main.css', '~assets/css/app.scss'],
+  css: ['~assets/css/main.css'],
   build: {
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     extend(configs, ctx): void {
