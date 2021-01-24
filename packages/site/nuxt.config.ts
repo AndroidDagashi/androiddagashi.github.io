@@ -48,6 +48,7 @@ const issueIds = indexJson.milestones.nodes.map(
 )
 
 const config: NuxtConfig = {
+  target: 'static',
   publicRuntimeConfig: siteConfig,
   head: {
     title: siteConfig.title,

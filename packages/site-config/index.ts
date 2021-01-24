@@ -15,7 +15,7 @@ export const siteConfig = {
     link: 'https://twitter.com/AndroidDagashi',
   },
   authors: [
-    { name: '@_yshrsmz', link: 'https://twitter.com/_ysrhsmz' },
+    { name: '@_yshrsmz', link: 'https://twitter.com/_yshrsmz' },
     { name: '@hydrakecat', link: 'https://twitter.com/hydrakecat' },
     { name: '@STAR_ZERO', link: 'https://twitter.com/STAR_ZERO' },
     { name: '@stsn_jp', link: 'https://twitter.com/stsn_jp' },
