@@ -35,18 +35,19 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 .text-caption {
   margin: 4px;
-  .v-chip__content {
-    color: white;
-    font-weight: bold;
+}
 
-    a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-  }
+.text-caption .v-chip__content {
+  color: white;
+  font-weight: bold;
+}
+
+.text-caption .v-chip__content a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
 }
 </style>

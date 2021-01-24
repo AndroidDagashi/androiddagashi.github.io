@@ -48,19 +48,20 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 .IssueCommentsItem {
   background-color: #fafbfc;
+}
 
-  &__username {
-    font-weight: bolder;
-    a {
-      text-decoration: none;
+.IssueCommentsItem__username {
+  font-weight: bolder;
+}
 
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
+.IssueCommentsItem__username a {
+  text-decoration: none;
+}
+
+.IssueCommentsItem__username:hover {
+  text-decoration: underline;
 }
 </style>
