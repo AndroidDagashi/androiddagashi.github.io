@@ -15,5 +15,4 @@ export interface RepositoryConfig {
 
 export interface ContactInfo {
   name: string
-  link: string
 }
