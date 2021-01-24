@@ -36,14 +36,9 @@
       "@nuxtjs/axios"
     ]
   },
-  "include": [
-    "./apollo/**/*",
-    "./components/**/*",
-    "./layouts/**/*",
-    "./middleware/**/*",
-    "./pages/**/*",
-    "./plugins/**/*",
-    "./store/**/*",
-    "./types/**/*"
+  "exclude": [
+    "node_modules",
+    ".nuxt",
+    "dist"
   ]
 }

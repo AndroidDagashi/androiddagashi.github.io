@@ -1,15 +1,9 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
-import fs from 'fs'
-import { Configuration } from '@nuxt/types'
+import { NuxtConfig } from '@nuxt/types'
 import nodeExternals from 'webpack-node-externals'
 import parseArgs from 'minimist'
-import yaml from 'js-yaml'
-import { SiteConfig } from 'site-types/SiteConfig'
+import { siteConfig } from 'site-config'
 import { renderOGPMeta } from './utils/ogp'
-
-const siteConfigs = yaml.safeLoad(
-  fs.readFileSync('../../siteconfig.yml', 'utf8')
-) as SiteConfig
 
 const indexJson = require('./static/api/index.json')
 
@@ -47,18 +41,17 @@ const isDev = process.env.NODE_ENV === 'development'
 
 const baseUrl = isDev
   ? `http://${host}:${port}`
-  : siteConfigs.baseUrl || `http://${host}:${port}`
+  : siteConfig.baseUrl || `http://${host}:${port}`
 
 const issueIds = indexJson.milestones.nodes.map(
   (milestone) => `/issue/${milestone.path}`
 )
 
-const config: Configuration = {
-  env: {
-    SITE_CONFIG: JSON.stringify(siteConfigs),
-  },
+const config: NuxtConfig = {
+  target: 'static',
+  publicRuntimeConfig: siteConfig,
   head: {
-    title: siteConfigs.title,
+    title: siteConfig.title,
     meta: [
       { charset: 'utf-8' },
       {
@@ -68,13 +61,13 @@ const config: Configuration = {
       {
         property: 'og:site_name',
         hid: 'og:site_name',
-        content: siteConfigs.title,
+        content: siteConfig.title,
       },
       { property: 'og:type', hid: 'og:type', content: 'website' },
       ...renderOGPMeta({
-        title: siteConfigs.title,
-        description: siteConfigs.description,
-        image: `${siteConfigs.baseUrl}/image/logo.jpg`,
+        title: siteConfig.title,
+        description: siteConfig.description,
+        image: `${siteConfig.baseUrl}/image/logo.jpg`,
       }),
     ],
     link: [

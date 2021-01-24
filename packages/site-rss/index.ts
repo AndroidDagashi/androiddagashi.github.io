@@ -1,16 +1,11 @@
 import { readFile, writeFile } from 'site-common/file'
-import yaml from 'js-yaml'
 import { Feed } from 'feed'
 import { GHDigest } from 'site-types/GitHubApi'
-import { SiteConfig } from 'site-types/SiteConfig'
+import { siteConfig } from 'site-config'
 import MarkdownIt from 'markdown-it'
 
 async function generateRss(): Promise<void> {
-  const config = yaml.safeLoad(
-    await readFile('../../siteconfig.yml')
-  ) as SiteConfig
-
-  const rootUrl = `${config.baseUrl}/`
+  const rootUrl = `${siteConfig.baseUrl}/`
   const today = new Date()
   const digest = JSON.parse(
     await readFile('../site/static/api/index.json')
@@ -18,18 +13,20 @@ async function generateRss(): Promise<void> {
 
   // create feed xml root
   const feed = new Feed({
-    title: config.title,
-    description: config.description,
+    title: siteConfig.title,
+    description: siteConfig.description,
     id: rootUrl,
     link: rootUrl,
     favicon: `${rootUrl}favicon.ico`,
-    copyright: `All rights reserved ${today.getUTCFullYear()}, ${config.title}`,
+    copyright: `All rights reserved ${today.getUTCFullYear()}, ${
+      siteConfig.title
+    }`,
     updated: new Date(digest.milestones.nodes[0].closedAt),
     feedLinks: {
       atom: `${rootUrl}feed.xml`,
     },
     author: {
-      name: config.title,
+      name: siteConfig.title,
       link: rootUrl,
     },
   })
@@ -52,7 +49,7 @@ async function generateRss(): Promise<void> {
   })
 
   feed.addCategory('Android')
-  config.authors.forEach((author) => {
+  siteConfig.authors.forEach((author) => {
     feed.addContributor({
       name: author.name,
       link: author.link,

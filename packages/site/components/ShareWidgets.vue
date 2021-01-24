@@ -29,7 +29,7 @@
               alt="このエントリーをはてなブックマークに追加"
               width="20"
               height="20"
-              style="border: none;"
+              style="border: none"
             />
           </a>
           <script

@@ -36,3 +36,12 @@ $ yarn deploy
 ## Workspaces
 
 TBD
+
+
+## Others
+
+### delete all node_modules in this repo.
+
+```
+$ find . -name 'node_modules' -type d -exec rm -rf {} \;
+```
