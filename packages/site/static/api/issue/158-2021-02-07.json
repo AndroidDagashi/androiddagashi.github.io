@@ -1,0 +1,235 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjQwMDUwOQ==",
+  "number": 158,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/158",
+  "title": "158 2021-02-07",
+  "description": "Now in Androidエピソード33、Kotlin 1.4.30、5/1にBintray、JCenterが終了、Fragmentを使うときにやりがちの7つの間違い、など",
+  "closedAt": "2021-02-07T10:20:26Z",
+  "issues": {
+    "totalCount": 9,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOL9g6-g==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________HvOL9tNCw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1727",
+        "title": "Now in Androidエピソード33",
+        "body": "https://medium.com/androiddevelopers/now-in-android-33-fc8ef716ccc4\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1728",
+        "title": "CoroutinesとJVMスレッド",
+        "body": "https://medium.com/androiddevelopers/bridging-the-gap-between-coroutines-jvm-threads-and-concurrency-problems-864e563bd7c\r\n\r\nCoroutinesがJVMスレッドとどのように関連しているかを解説しています。また、マルチスレッドにおいてミュータブルな状態を扱うときの問題についても解説しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1729",
+        "title": "Kotlin 1.4.30",
+        "body": "https://blog.jetbrains.com/kotlin/2021/02/kotlin-1-4-30-released/\r\nhttps://blog.jetbrains.com/kotlin/2021/02/new-language-features-preview-in-kotlin-1-4-30/\r\nhttps://blog.jetbrains.com/kotlin/2021/02/the-jvm-backend-is-in-beta-let-s-make-it-stable-together/\r\n\r\n1.5で導入予定の言語機能がPreviewとして試せるようになっています。また、新しいJVM IR BackendがBetaになっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1730",
+        "title": "5/1にBintray、JCenterが終了",
+        "body": "https://jfrog.com/blog/into-the-sunset-bintray-jcenter-gocenter-and-chartcenter/\r\n\r\n5/1にBintray、JCenterが終了することがアナウンスされました。Maven Central等への移行が必要となります。また、JCenterのみでしか提供されていないライブラリを使用してる場合は注意が必要です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOLiwFyw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOLiwIrw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Android的な観点からJCenter終了を見た記事はこちら\r\nhttps://bps-tomoya.hateblo.jp/entry/2021/02/04/184317\r\n\r\nFlutter的な観点からの記事はこちら\r\nhttps://zenn.dev/kikuchy/articles/f76a38a2819126",
+              "publishedAt": "2021-02-07T08:51:12Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "ライブラリ作者としてMaven Centralを使うにあたってのいろいろは、こちらが参考になります\r\nhttps://chris.banes.dev/publishing-to-maven-central/",
+              "publishedAt": "2021-02-07T08:57:01Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1731",
+        "title": "material android 1.3.0のリリース",
+        "body": "https://github.com/material-components/material-components-android/releases/tag/1.3.0\r\n\r\n新しくTime Picker、Progress Indicatorが追加されたそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1732",
+        "title": "Kotlin/Native向けにCoroutineのラッパークラスを生成するライブラリ、koru",
+        "body": "https://github.com/FutureMind/koru\r\n\r\nこのライブラリの、提供する機能以上に面白いところは、本来Kotlin Multiplatformに対応していないkaptを無理やりcommonコードに適用して、コードを生成しているところです。\r\n将来的にはコンパイラープラグインか、あるいはkspに書き換えられたりするのでしょうか",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1733",
+        "title": "Fragmentを使うときにやりがちの7つの間違い",
+        "body": "https://medium.com/mobile-app-development-publication/7-common-mistakes-easily-made-with-android-fragment-6fc85c44e783",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1734",
+        "title": "buildSrcを使う際にKotlinバージョンが不一致になる罠",
+        "body": "https://www.wantedly.com/companies/wantedly/post_articles/302749",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1735",
+        "title": "ViewBinding を用いた View の操作をユニットテストする",
+        "body": "https://blog.keithyokoma.dev/entry/2021/02/05/174227",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
