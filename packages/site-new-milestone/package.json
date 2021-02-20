@@ -1,0 +1,18 @@
+{
+  "name": "site-new-milestone",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "generate": "ts-node ./index.ts"
+  },
+  "dependencies": {
+    "@octokit/rest": "^18.2.0",
+    "date-fns": "^2.17.0",
+    "site-config": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.14.31",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.5"
+  }
+}

@@ -24,7 +24,7 @@
 <script lang="ts">
 import Vue, { PropOptions } from 'vue'
 import { GHComment } from 'site-types/GitHubApi'
-import { DateTime } from 'luxon'
+import { parseISO, format } from 'date-fns'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 
 export default Vue.extend({
@@ -39,9 +39,7 @@ export default Vue.extend({
   computed: {
     publishedAt(): string {
       return (
-        DateTime.fromISO(this.comment.publishedAt).toLocaleString(
-          DateTime.DATETIME_SHORT_WITH_SECONDS
-        ) || ''
+        format(parseISO(this.comment.publishedAt), 'yyyy/MM/dd hh:mm:ss') || ''
       )
     },
   },
