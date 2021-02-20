@@ -21,6 +21,7 @@ async function main(): Promise<string> {
   console.log(milestones)
 
   const latest = milestones.data[0]
+  console.log('latest milestone:', latest)
 
   if (latest.state === 'open') {
     // milestone with 'open' state exists. nothing to do.
@@ -42,6 +43,8 @@ async function main(): Promise<string> {
     title: nextTitle,
     due_on: formatISO(nextDueOn),
   })
+
+  console.log('result:', result.data)
 
   return `${result.data.number}, ${result.data.title}, ${result.data.due_on}`
 }
