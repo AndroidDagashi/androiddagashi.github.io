@@ -10,7 +10,6 @@
     "site:dev": "yarn workspace site dev",
     "site:generate": "yarn workspace site generate",
     "tweeter:tweet": "yarn workspace site-tweeter tweet",
-    "milestone:generate":"yarn workspace site-new-milestone generate",
     "deploy": "push-dir --dir=packages/site/dist --remote=upstream --branch=master --cleanup --verbose",
     "format": "eslint --fix . --ext .js,.ts,.vue --ignore-path .gitignore",
     "lint": "eslint . --ext .js,.ts,.vue --ignore-path .gitignore"
