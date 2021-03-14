@@ -1,0 +1,283 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjUxNjMxNw==",
+  "number": 163,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/163",
+  "title": "163 2021-03-14",
+  "description": "Android Studio 4.2 Beta 6, ComposeのAPIガイドライン, スクリーンショットテストをプロダクトに導入する中で倒してきた課題, GradleのincludeBuildの紹介, など",
+  "closedAt": "2021-03-14T10:19:38Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOMYYWHQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfOMYm9jQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1774",
+        "title": "2021年3月10日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#march_10_2021\r\n\r\nComposeの1.0.0-beta02が出ています。\r\nその他Activity 1.2.3, Fragment 1.3.1, Navigation 2.3.4など。\r\n\r\n新しいところでは、Wear OS のカスタムTileを作成するための Wear Tiles というライブラリが 1.0.0-alpha01 で公開されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOL5KZnA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOL5Kttw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏による紹介ツイートはこちらから\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Jetpack releases today include bug fix releases in Navigation 2.3.4, Fragment 1.3.1, Activity 1.2.1, Hilt reaching 1.0.0-beta01, plus new libraries in Hilt-Navigation-Compose and Wear Tiles.<a href=\"https://t.co/SydrHmtWnI\">https://t.co/SydrHmtWnI</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1369722816652742656?ref_src=twsrc%5Etfw\">March 10, 2021</a></blockquote>",
+              "publishedAt": "2021-03-13T10:45:05Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "ConstraintLayout 2.1.0-beta01 についてはこちらから\r\nhttps://androidstudio.googleblog.com/2021/03/constraintlayout-210-beta-1.html",
+              "publishedAt": "2021-03-13T10:48:55Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1775",
+        "title": "Android Studio 4.2 Beta 6",
+        "body": "https://androidstudio.googleblog.com/2021/03/android-studio-42-beta-6-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOL5K9iA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOL5K9iA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/m1ca7n/android_studio_42_beta_6_available/",
+              "publishedAt": "2021-03-13T10:52:03Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1776",
+        "title": "Android Studio Arctic Fox Canary 9",
+        "body": "https://androidstudio.googleblog.com/2021/03/android-studio-arctic-fox-canary-9.html\r\n\r\nAGP 7.0を使う際にはJDK11が必須になったようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOL5LOdg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOL5LOdg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Java 11の機能を実コード内で使う件についてはこちらで盛り上がってました\r\nhttps://www.reddit.com/r/androiddev/comments/m0pwkv/android_gradle_plugin_70_will_allow_the_use_of/",
+              "publishedAt": "2021-03-13T10:55:37Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1777",
+        "title": "FlutterでWidgetのサイズどうやって設定してる？",
+        "body": "https://www.reddit.com/r/FlutterDev/comments/m2ajjd/widget_sizing_how_do_you_do_it/\r\n\r\nいろいろな画面サイズ/プラットフォームがあるなかで、どうやってレスポンシブにしてる？　という話のようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1778",
+        "title": "FlutterはなぜButtonを一新したのか",
+        "body": "https://zenn.dev/sugitlab/articles/772e107b515908",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1779",
+        "title": "ComposeのAPIガイドライン",
+        "body": "https://github.com/androidx/androidx/blob/androidx-main/compose/docs/compose-api-guidelines.md\r\nhttps://twitter.com/intelligibabble/status/1370138944474472448\r\n\r\nComposeチームが使用してるAPIのガイドラインが公開されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1780",
+        "title": "Jetpack Tiles ライブラリでWear OSのカスタムTileを作る",
+        "body": "https://android-developers.googleblog.com/2021/03/creating-custom-tiles-on-wear-os-by-google-with-jetpack-tiles.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1781",
+        "title": "スクリーンショットテストを3つのプロダクトに導入する中で倒してきた課題",
+        "body": "https://speakerdeck.com/tkmnzm/android-screenshot-test-problems-solved-by-introducing-into-3-products\r\n\r\nDeNA TechConの資料です。スクリーンショットテストを導入する際の障壁など、実践的な内容になっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1782",
+        "title": "Androidファームウェアをビルドするマシンをつくる",
+        "body": "https://www.alsutton.blog/post/2021-aosp-build-machine/\r\n\r\nAOSPからAndroid自体をビルドするためのPCを組むときのTipsなど",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1783",
+        "title": "GradleのincludeBuildの紹介",
+        "body": "https://publicobject.com/2021/03/11/includebuild/\r\n\r\nincludeBuildを使うと、複数のプロジェクトを1つにまとめることが出来ます。この記事では、includeBuildのユースケースを紹介し、使うことによるメリットを解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
