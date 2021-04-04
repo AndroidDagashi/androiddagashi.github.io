@@ -16,41 +16,40 @@ jobs:
       PROJECT_USER_NAME: AndroidDagashi
       PROJECT_REPO_NAME: androiddagashi.github.io
     steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: development
-        persist-credentials: false
+      - uses: actions/checkout@v2
+        with:
+          ref: development
+          persist-credentials: false
 
-    - uses: actions/setup-node@v2
-      with:
-        node-version: '14.16.0'
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.16.0'
 
-    - name: Setup git config
-      run: sh ./.github/setup-git-config.sh
+      - name: Setup git config
+        run: sh ./.github/setup-git-config.sh
 
-    - name: Restore cache
-      id: restore-cache
-      uses: actions/cache@v2
-      with:
-        path: |
-          **/node_modules
-        key: yarn-deps2-${{ hashFiles('yarn.lock') }}
-        restore-keys: |
-          yarn-deps2-
+      - name: Restore cache
+        id: restore-cache
+        uses: actions/cache@v2
+        with:
+          path: |
+            **/node_modules
+          key: yarn-deps2-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            yarn-deps2-
 
-    - name: yarn install
-      if: steps.cache-primes.outputs.cache-hit != 'true'
-      run: yarn install
+      - name: yarn install
+        if: steps.cache-primes.outputs.cache-hit != 'true'
+        run: yarn install
 
-    - name: Generate website
-      run: yarn site:generate
+      - name: Generate website
+        run: yarn site:generate
 
-    - name: Push website
-      run: sh ./.github/push-website.sh
+      - name: Push website
+        run: sh ./.github/push-website.sh
 
-    - name: Print debug info
-      if: failure()
-      run: |
-        git remote
-        git status
-
+      - name: Print debug info
+        if: failure()
+        run: |
+          git remote
+          git status

@@ -11,8 +11,8 @@ jobs:
     name: Skip message
     runs-on: ubuntu-latest
     steps:
-    - name: print message
-      run: echo 'skip job'
+      - name: print message
+        run: echo 'skip job'
 
   push_json_and_rssfeed:
     if: github.event_name == 'schedule' || (github.event_name == 'issue_comment' && github.event.issue.number == 78)
@@ -27,43 +27,43 @@ jobs:
       PROJECT_REPO_NAME: androiddagashi.github.io
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: development
-        persist-credentials: false
+      - uses: actions/checkout@v2
+        with:
+          ref: development
+          persist-credentials: false
 
-    - uses: actions/setup-node@v2
-      with:
-        node-version: '14.16.0'
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.16.0'
 
-    - name: Setup git config
-      run: sh ./.github/setup-git-config.sh
+      - name: Setup git config
+        run: sh ./.github/setup-git-config.sh
 
-    # https://github.com/actions/cache/issues/63
-    # - name: Restore cache
-    #   id: restore-cache
-    #   uses: actions/cache@v1
-    #   with:
-    #     path: node_modules
-    #     key: yarn-deps-${{ hashFiles('yarn.lock') }}
-    #     restore-keys: |
-    #       yarn-deps-
+      # https://github.com/actions/cache/issues/63
+      # - name: Restore cache
+      #   id: restore-cache
+      #   uses: actions/cache@v1
+      #   with:
+      #     path: node_modules
+      #     key: yarn-deps-${{ hashFiles('yarn.lock') }}
+      #     restore-keys: |
+      #       yarn-deps-
 
-    - name: yarn install
-      # if: steps.cache-primes.outputs.cache-hit != 'true'
-      run: yarn install
+      - name: yarn install
+        # if: steps.cache-primes.outputs.cache-hit != 'true'
+        run: yarn install
 
-    - name: Generate json resources
-      run: yarn api:generate
+      - name: Generate json resources
+        run: yarn api:generate
 
-    - name: Generate RSS feed
-      run: yarn rss:generate
+      - name: Generate RSS feed
+        run: yarn rss:generate
 
-    - name: Push generated files if there's any update
-      run: sh ./.github/push-resources-if-updated.sh
+      - name: Push generated files if there's any update
+        run: sh ./.github/push-resources-if-updated.sh
 
-    - name: Print debug info
-      if: failure()
-      run: |
-        git remote
-        git status
+      - name: Print debug info
+        if: failure()
+        run: |
+          git remote
+          git status

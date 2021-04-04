@@ -11,15 +11,16 @@
     "site:generate": "yarn workspace site generate",
     "tweeter:tweet": "yarn workspace site-tweeter tweet",
     "deploy": "push-dir --dir=packages/site/dist --remote=upstream --branch=master --cleanup --verbose",
-    "format": "eslint --fix . --ext .js,.ts,.vue --ignore-path .gitignore",
+    "format:eslint": "eslint --fix . --ext .js,.ts,.vue --ignore-path .gitignore",
+    "format:prettier": "prettier --write .",
+    "format": "yarn format:eslint && yarn format:prettier",
     "lint": "eslint . --ext .js,.ts,.vue --ignore-path .gitignore"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "4.15.1",
-    "@typescript-eslint/parser": "4.15.1",
-    "eslint": "7.20.0",
-    "eslint-config-prettier": "7.2.0",
-    "eslint-plugin-prettier": "3.3.1",
+    "@typescript-eslint/eslint-plugin": "4.20.0",
+    "@typescript-eslint/parser": "4.20.0",
+    "eslint": "7.23.0",
+    "eslint-config-prettier": "8.1.0",
     "prettier": "2.2.1",
     "push-dir": "0.4.1"
   },
