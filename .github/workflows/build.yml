@@ -4,6 +4,7 @@ on:
     branches-ignore:
       - master
       - development
+      - 'renovate/**'
   pull_request:
 
 jobs:
