@@ -1,0 +1,175 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjYwMDQzNQ==",
+  "number": 166,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/166",
+  "title": "166 2021-04-04",
+  "description": "Kotlin 1.5.0-M2、Jetpack Composeの再構成の裏側、Now in Android エピソード37、InflationInject v1.0.0、Android Studio 4.1 で Compose Beta を使う、など",
+  "closedAt": "2021-04-04T10:38:05Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOMpt5TQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OMqeYAw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1802",
+        "title": "KotlinのREPLツール",
+        "body": "https://blog.jetbrains.com/kotlin/2021/04/ki-the-next-interactive-shell-for-kotlin/\r\n\r\nShellで動作するKotlinのREPLツールが紹介されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1803",
+        "title": "Kotlin 1.5.0-M2",
+        "body": "https://blog.jetbrains.com/kotlin/2021/03/kotlin-1-5-0-m2-released-ensure-smooth-migration-to-kotlin-1-5-0/\r\n\r\nKotlin 1.5.0-M2がリリースされています。ブログ内では、1.5の新機能の使用例を募集しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1814",
+        "title": "Jetpack Composeの再構成の裏側",
+        "body": "https://dev.to/zachklipp/scoped-recomposition-jetpack-compose-what-happens-when-state-changes-l78\r\n\r\nSteteが変更されたときに、どのように再構成(Recomposition)されるかを解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1815",
+        "title": "特定の端末のみで起こる WebView プチフリーズを Tracing を利用して追った話",
+        "body": "https://developer.smartnews.com/blog/2021/03/chrome_tracing/\r\n\r\nちょっと Web よりの話題ですが、WebView のリモート inspect でも Chrome の tracing 機能を使える、という話です ",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1816",
+        "title": "フルスクリーン画面対応のこれまでとこれから",
+        "body": "https://star-zero.medium.com/%E3%83%95%E3%83%AB%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E7%94%BB%E9%9D%A2%E5%AF%BE%E5%BF%9C%E3%81%AE%E3%81%93%E3%82%8C%E3%81%BE%E3%81%A7%E3%81%A8%E3%81%93%E3%82%8C%E3%81%8B%E3%82%89-4d49da7c824a",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1817",
+        "title": "Now in Android エピソード37",
+        "body": "https://medium.com/androiddevelopers/now-in-android-37-ea1a435b4967",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1818",
+        "title": "InflationInject v1.0.0",
+        "body": "https://www.reddit.com/r/androiddev/comments/metzvf/inflationinject_v100_released/\r\nhttps://github.com/cashapp/InflationInject\r\n\r\nカスタムViewで Dagger のコンストラクタ・インジェクションを実現するライブラリです。\r\n[LayoutInflater Factory](https://developer.android.com/reference/android/view/LayoutInflater.Factory2) を利用して実現しています。\r\n\r\nSquare 製です",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1819",
+        "title": "Android Studio 4.1 で Compose Beta を使う",
+        "body": "https://marcellogalhardo.dev/posts/2021/03/30/using-compose-beta-on-as-4-1/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
