@@ -1,6 +1,5 @@
 name: Tweet new release
-on:
-  page_build
+on: page_build
 
 jobs:
   tweet_release:
@@ -16,20 +15,19 @@ jobs:
       TWITTER_ACCESS_TOKEN_SECRET: ${{ secrets.TWITTER_ACCESS_TOKEN_SECRET }}
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: development
+      - uses: actions/checkout@v2
+        with:
+          ref: development
 
-    - uses: actions/setup-node@v2
-      with:
-        node-version: '14.16.0'
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '14.16.0'
 
-    - name: setup Firebase
-      run: echo ${{ secrets.FIREBASE_JSON }} | base64 -d > ./androiddagashi-serviceaccount.json
+      - name: setup Firebase
+        run: echo ${{ secrets.FIREBASE_JSON }} | base64 -d > ./androiddagashi-serviceaccount.json
 
-    - name: yarn install
-      run: yarn install
+      - name: yarn install
+        run: yarn install
 
-    - name: tweet if not already
-      run: yarn tweeter:tweet
-
+      - name: tweet if not already
+        run: yarn tweeter:tweet
