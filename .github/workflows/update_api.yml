@@ -1,21 +1,12 @@
 name: Update Json files
 on:
-  issue_comment:
-    types: [created]
+  workflow_dispatch:
   schedule:
     - cron: '0 * * * *'
 
 jobs:
-  empty_job:
-    if: github.event_name != 'schedule' && !(github.event_name == 'issue_comment' && github.event.issue.number == 78)
-    name: Skip message
-    runs-on: ubuntu-latest
-    steps:
-      - name: print message
-        run: echo 'skip job'
 
   push_json_and_rssfeed:
-    if: github.event_name == 'schedule' || (github.event_name == 'issue_comment' && github.event.issue.number == 78)
     name: Update Json files
     runs-on: ubuntu-latest
     env:
@@ -52,7 +43,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: yarn install
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        # if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install
 
       - name: Generate json resources
