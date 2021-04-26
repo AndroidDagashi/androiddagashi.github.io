@@ -43,7 +43,7 @@ jobs:
             ${{ runner.os }}-yarn-
 
       - name: yarn install
-        if: steps.yarn-cache.outputs.cache-hit != 'true'
+        # if: steps.yarn-cache.outputs.cache-hit != 'true'
         run: yarn install
 
       - name: Generate json resources
