@@ -33,7 +33,7 @@
 import Vue from 'vue'
 import { mapState, mapGetters, mapActions } from 'vuex'
 import { GHDigestMilestone, GHPageInfo } from 'site-types/GitHubApi'
-import { renderOGPMeta } from '../utils/ogp'
+import { renderOGPMeta } from '~/utils/ogp'
 import IssueDigestList from '~/components/organisms/IssueDigestList/index.vue'
 import LoadMoreListItem from '~/components/molecules/LoadMoreListItem/index.vue'
 import SiteDescription from '~/components/organisms/SiteDescription/index.vue'
