@@ -1,0 +1,271 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjcxODkyMQ==",
+  "number": 171,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/171",
+  "title": "171 2021-05-09",
+  "description": "Kotlin 1.5.0, Jetpack Compose for Web, Coroutine FlowのshareInとstateIn, Dagger Hiltの紹介, Jetpack Composeを利用してコード生成, など",
+  "closedAt": "2021-05-09T10:34:58Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vONDf9YQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLAzjSM-6c=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1868",
+        "title": "Jetpack Composeを作ったコンソールUI作成ツール",
+        "body": "Jetpack Composeを使ってCLIを作れるライブラリです。\r\n\r\nhttps://github.com/JakeWharton/mosaic",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1870",
+        "title": "Kotlin 1.5.0",
+        "body": "https://blog.jetbrains.com/kotlin/2021/05/kotlin-1-5-0-released/\r\nhttps://www.reddit.com/r/androiddev/comments/n5bzdd/kotlin_150_the_first_big_release_of_2021/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1874",
+        "title": "Jetpack Compose for Web",
+        "body": "https://blog.jetbrains.com/kotlin/2021/05/technology-preview-jetpack-compose-for-web/\r\nhttps://compose-web.ui.pages.jetbrains.team/\r\n\r\nTechnology Previewとして新たにJetpack ComposeでWeb UIを作成するツールがリリースされました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1875",
+        "title": "kotlinx.serialization 1.2",
+        "body": "https://blog.jetbrains.com/kotlin/2021/05/kotlinx-serialization-1-2-released/\r\nhttps://www.youtube.com/watch?v=698I_AH8h6s\r\n\r\nJSONのパフォーマンス向上や、Kotlin 1.5からStableになったValue classのサポートなどが入ってます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1876",
+        "title": "2021年5月5日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#may_5_2021\r\n\r\nCameraX、Paging3、HiltがStableになっています。また新たにAppSearchというのが追加されています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOMc5Q-A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOMc5Q-A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏による紹介ツイートはこちらから\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Happy Cinco de Mayo! Today&#39;s Jetpack releases include big ones: Camera 1.0.0 (!), Hilt 1.0.0 (!), and Paging 3.0.0! In addition, there&#39;s bug fix releases in Activity 1.2.3, Media 1.3.1, and MediaRouter 1.2.3.<a href=\"https://t.co/dVKbeM0Z60\">https://t.co/dVKbeM0Z60</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1390002739762012162?ref_src=twsrc%5Etfw\">May 5, 2021</a></blockquote> ",
+              "publishedAt": "2021-05-09T00:59:17Z",
+              "author": {
+                "login": "STAR-ZERO",
+                "url": "https://github.com/STAR-ZERO",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/376376?u=c9428e145dea238d8dec3e06ef275be6b59a77b8&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1878",
+        "title": "Jetpack Compose を利用して非UI\bコードを生成する",
+        "body": "https://arunkumar.dev/jetpack-compose-for-non-ui-tree-construction-and-code-generation/\r\n\r\nJetpack Compose は本質的には木構造のデータを管理するためのツールです。\r\nこの記事では Jetpack Compose を使い、[graphviz](https://graphviz.org/)で使われる dot ファイルを生成しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1879",
+        "title": "Coroutine FlowのshareInとstateInで知っておきたいこと",
+        "body": "https://medium.com/androiddevelopers/things-to-know-about-flows-sharein-and-statein-operators-20e6ccb2bc74\r\n\r\n比較的最近Coroutineに追加されたshareInとstateInオペレーターについて、それぞれの特徴を説明しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1880",
+        "title": "Dagger Hiltでは簡単にDIが行える",
+        "body": "https://medium.com/androiddevelopers/hilt-is-stable-easier-dependency-injection-on-android-53aca3f38b9c\r\n\r\nPureなDaggerと比べ、ボイラープレートコードが少ない、よりシンプルであるなどの、メリットを紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1881",
+        "title": "kotlinx.coroutines 1.5.0-RC",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/blob/master/CHANGES.md#version-150-rc\r\n\r\nChannel API のリファクタリングが進んでおり、非推奨化されるものがいくつかあります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1877",
+        "title": "Jetpack Compose for Web",
+        "body": "https://blog.jetbrains.com/kotlin/2021/05/technology-preview-jetpack-compose-for-web/\r\n\r\nまでPreview段階のようですが、Jetpack Compose for Webが公開されたようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
