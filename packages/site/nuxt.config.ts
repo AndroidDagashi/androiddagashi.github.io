@@ -79,14 +79,12 @@ const config: NuxtConfig = {
       {
         rel: 'styleSheet',
         type: 'text/css',
-        href:
-          'https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css',
+        href: 'https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css',
       },
       {
         rel: 'stylesheet',
         type: 'text/css',
-        href:
-          'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons',
+        href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons',
       },
     ],
   },
