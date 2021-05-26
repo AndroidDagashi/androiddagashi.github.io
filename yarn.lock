@@ -12167,7 +12167,7 @@ fsevents@~2.3.1:
     twitter-text: 3.1.0
     typescript: 4.2.4
     vue: 2.6.12
-    vuetify: 2.5.0
+    vuetify: 2.5.1
   languageName: unknown
   linkType: soft
 
@@ -13725,7 +13725,16 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"vuetify@npm:2.5.0, vuetify@npm:^2.4.2":
+"vuetify@npm:2.5.1":
+  version: 2.5.1
+  resolution: "vuetify@npm:2.5.1"
+  peerDependencies:
+    vue: ^2.6.4
+  checksum: 22ac118988c1e445755cb74ed36783f9e8c55044a92128ba5dcab8b55a992e370004cca8464059d54eebb60a21d74327d6deebf4eee79c732139273391eca922
+  languageName: node
+  linkType: hard
+
+"vuetify@npm:^2.4.2":
   version: 2.5.0
   resolution: "vuetify@npm:2.5.0"
   peerDependencies:
