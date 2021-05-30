@@ -1,4 +1,11 @@
 {
   "extends": ["config:base"],
-  "lockFileMaintenance": { "enabled": true }
+  "lockFileMaintenance": { "enabled": true },
+  "masterIssue": true,
+  "packageRules": [
+    {
+      "matchSourceUrlPrefixes": ["https://github.com/nuxt/eslint-config"],
+      "groupName": "@nuxtjs/eslint-config"
+    }
+  ],
 }
