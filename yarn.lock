@@ -1968,16 +1968,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/vuetify@npm:1.11.3":
-  version: 1.11.3
-  resolution: "@nuxtjs/vuetify@npm:1.11.3"
+"@nuxtjs/vuetify@npm:1.12.1":
+  version: 1.12.1
+  resolution: "@nuxtjs/vuetify@npm:1.12.1"
   dependencies:
     deepmerge: ^4.2.2
-    sass: ^1.32.4
-    sass-loader: ^10.1.1
-    vuetify: ^2.4.2
-    vuetify-loader: ^1.6.0
-  checksum: 380261911996f26b951cc8a25094186b32fd4d31f3e4af2c2008a975c1cdde63de4e2eb1c063007552016a3ac55d7ff948b0580c8af0671ea6a24ebb18c56ccb
+    sass: ~1.32.13
+    sass-loader: ^10.2.0
+    vuetify: ^2.5.3
+    vuetify-loader: ^1.7.2
+  checksum: e7f3df4aeb34b8fcfb3f99cacf5fd3de7e5e429f8b8b9ac5eda6a64a863ef0c9803f37b24b0fef262bab671f5e911df25848a976109e67142157a13cf501875d
   languageName: node
   linkType: hard
 
@@ -11659,7 +11659,7 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"sass-loader@npm:^10.1.1":
+"sass-loader@npm:^10.2.0":
   version: 10.2.0
   resolution: "sass-loader@npm:10.2.0"
   dependencies:
@@ -12067,7 +12067,7 @@ fsevents@~2.3.1:
     "@nuxtjs/axios": 5.13.6
     "@nuxtjs/eslint-config": 6.0.1
     "@nuxtjs/eslint-config-typescript": 6.0.1
-    "@nuxtjs/vuetify": 1.11.3
+    "@nuxtjs/vuetify": 1.12.1
     "@types/lodash": 4.14.170
     "@types/markdown-it": 12.0.2
     "@types/minimist": 1.2.1
@@ -13652,7 +13652,7 @@ typescript@~4.2:
   languageName: node
   linkType: hard
 
-"vuetify-loader@npm:^1.6.0":
+"vuetify-loader@npm:^1.7.2":
   version: 1.7.2
   resolution: "vuetify-loader@npm:1.7.2"
   dependencies:
@@ -13667,7 +13667,7 @@ typescript@~4.2:
   languageName: node
   linkType: hard
 
-"vuetify@npm:2.5.3, vuetify@npm:^2.4.2":
+"vuetify@npm:2.5.3, vuetify@npm:^2.5.3":
   version: 2.5.3
   resolution: "vuetify@npm:2.5.3"
   peerDependencies:
