@@ -2371,14 +2371,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/markdown-it@npm:12.0.2":
-  version: 12.0.2
-  resolution: "@types/markdown-it@npm:12.0.2"
+"@types/markdown-it@npm:12.0.3":
+  version: 12.0.3
+  resolution: "@types/markdown-it@npm:12.0.3"
   dependencies:
     "@types/highlight.js": ^9.7.0
     "@types/linkify-it": "*"
     "@types/mdurl": "*"
-  checksum: 7859f84a273f33bae9e78aa603338b64aa9b06566739a324ff7aca388f08c7ab13256286493ad5f8894558184fb8b0dfd674a05900995d5f3e7a6e47373fc348
+  checksum: aa0a0162fd9d1f4799706ed3950f4fef8afe8bad3b2e6335186060799255b24fcc05ccf44c305df6bc6e7181543a57ed7e1d6b7c3c705f823314dc7bc8e1b425
   languageName: node
   linkType: hard
 
@@ -8728,9 +8728,9 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"markdown-it@npm:12.0.6":
-  version: 12.0.6
-  resolution: "markdown-it@npm:12.0.6"
+"markdown-it@npm:12.1.0":
+  version: 12.1.0
+  resolution: "markdown-it@npm:12.1.0"
   dependencies:
     argparse: ^2.0.1
     entities: ~2.1.0
@@ -8739,7 +8739,7 @@ fsevents@~2.3.2:
     uc.micro: ^1.0.5
   bin:
     markdown-it: bin/markdown-it.js
-  checksum: 5988f3f68ede314fce680f9bfe279f8af7fcaa4b53cce865d654ae5209ed7707f84685fa242cd9898b046e2a5fabdd5fe730f422d677b2ef36f4a00e32eaab22
+  checksum: affeafccacaf782fe5f737631250c30556c318246d69ebfb66acce53e8178dccd450eb7bf7c60ac83c969f345ecbb70dec9cce73c1726209643011a1fcc822ea
   languageName: node
   linkType: hard
 
@@ -12043,10 +12043,10 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "site-rss@workspace:packages/site-rss"
   dependencies:
-    "@types/markdown-it": 12.0.2
+    "@types/markdown-it": 12.0.3
     "@types/node": 14.17.4
     feed: 4.2.2
-    markdown-it: 12.0.6
+    markdown-it: 12.1.0
     site-common: ^1.0.0
     site-config: ^1.0.0
     site-types: ^1.0.0
@@ -12087,7 +12087,7 @@ fsevents@~2.3.2:
     "@nuxtjs/eslint-config-typescript": 6.0.1
     "@nuxtjs/vuetify": 1.12.1
     "@types/lodash": 4.14.171
-    "@types/markdown-it": 12.0.2
+    "@types/markdown-it": 12.0.3
     "@types/minimist": 1.2.1
     "@types/node": 14.17.4
     "@types/twitter-text": 3.1.1
@@ -12099,7 +12099,7 @@ fsevents@~2.3.2:
     eslint-config-prettier: 8.3.0
     eslint-plugin-nuxt: 2.0.0
     lodash.flatmap: 4.5.0
-    markdown-it: 12.0.6
+    markdown-it: 12.1.0
     minimist: 1.2.5
     modern-normalize: 1.1.0
     nuxt: 2.15.7
