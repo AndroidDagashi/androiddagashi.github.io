@@ -246,7 +246,7 @@
           },
           "nodes": [
             {
-              "body": "ちょっと変更が多いので気になったのをいくつか。\r\n\r\n`ComponentActivity`という新しいActivityが追加されました(以前から存在した`SupportActivity`をリネームしたもののようです)。これは`FragmentActivity`や`AppComatActivity`のベースクラスなようで、アプリ開発者が直接使うものではなさそうです。\r\n`ComponentActivity#addOnBackPressedCallback`という、`onBackPressed`のコールバックを設定できる機能が追加されています。\r\n\r\nFragmentには`FragmentFactory`という、FragmentManagerがFragmentをインスタンス化する挙動をコントロールするためのクラスが追加されています。\t\r\n\r\n他には`NestedScrollView`が`NestedScrollingChild3`と`NestedScrollingParent3`を実装するようになったりしています。\r\n\r\nとにかく盛り沢山なのでぜひご一読を。",
+              "body": "ちょっと変更が多いので気になったのをいくつか。\r\n\r\n`ComponentActivity`という新しいActivityが追加されました(以前から存在した`SupportActivity`をリネームしたもののようです)。これは`FragmentActivity`や`AppComatActivity`のベースクラスなようで、アプリ開発者が直接使うものではなさそうです。\r\n`ComponentActivity#addOnBackPressedCallback`という、`onBackPressed`のコールバックを設定できる機能が追加されています。\r\n\r\nFragmentには`FragmentFactory`という、FragmentManagerがFragmentをインスタンス化する挙動をコントロールするためのクラスが追加されています。\r\n\r\n他には`NestedScrollView`が`NestedScrollingChild3`と`NestedScrollingParent3`を実装するようになったりしています。\r\n\r\nとにかく盛り沢山なのでぜひご一読を。",
               "publishedAt": "2018-11-06T10:01:43Z",
               "author": {
                 "login": "yshrsmz",

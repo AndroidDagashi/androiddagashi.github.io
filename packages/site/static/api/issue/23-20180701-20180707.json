@@ -88,7 +88,7 @@
       {
         "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/290",
         "title": "Android PでのTextViewまわりの改善",
-        "body": "https://android-developers.googleblog.com/2018/07/whats-new-for-text-in-android-p.html\r\n\r\n`PrecomputedText` というテキストのレイアウト処理の一部をバックグラウンド等で予め行える仕組みが追加されました。androidxで　`PrecomputedTextCompat` が提供されているのでAPI14から利用できますが、コードを見た限りだと実際に処理が有効になるのはAPI21以降のようです。\r\n\r\nまた、 `Magnifier` といういわゆる虫眼鏡機能も追加されています。これはTextViewだけでなく、WindowにアタッチされているViewならどんなものにでも使うことができます。\r\n\r\n他にもSmart Linkifyや `lineHeight` アトリビュートの追加など、盛りだくさんです。\t\r\n\r\n",
+        "body": "https://android-developers.googleblog.com/2018/07/whats-new-for-text-in-android-p.html\r\n\r\n`PrecomputedText` というテキストのレイアウト処理の一部をバックグラウンド等で予め行える仕組みが追加されました。androidxで　`PrecomputedTextCompat` が提供されているのでAPI14から利用できますが、コードを見た限りだと実際に処理が有効になるのはAPI21以降のようです。\r\n\r\nまた、 `Magnifier` といういわゆる虫眼鏡機能も追加されています。これはTextViewだけでなく、WindowにアタッチされているViewならどんなものにでも使うことができます。\r\n\r\n他にもSmart Linkifyや `lineHeight` アトリビュートの追加など、盛りだくさんです。",
         "labels": {
           "nodes": []
         },
