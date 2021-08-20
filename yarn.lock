@@ -2319,13 +2319,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/highlight.js@npm:^9.7.0":
-  version: 9.12.4
-  resolution: "@types/highlight.js@npm:9.12.4"
-  checksum: 1a491cc59b58c906b4e1c7263c839b8741f4ef3af395f7e0c90350792d89a832f4c4c39010df577f9c9dd447544c854a45a7c999a7901dc16dc20faedf73e7b5
-  languageName: node
-  linkType: hard
-
 "@types/html-minifier-terser@npm:^5.0.0":
   version: 5.1.2
   resolution: "@types/html-minifier-terser@npm:5.1.2"
@@ -2388,14 +2381,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/markdown-it@npm:12.0.3":
-  version: 12.0.3
-  resolution: "@types/markdown-it@npm:12.0.3"
+"@types/markdown-it@npm:12.2.0":
+  version: 12.2.0
+  resolution: "@types/markdown-it@npm:12.2.0"
   dependencies:
-    "@types/highlight.js": ^9.7.0
     "@types/linkify-it": "*"
     "@types/mdurl": "*"
-  checksum: aa0a0162fd9d1f4799706ed3950f4fef8afe8bad3b2e6335186060799255b24fcc05ccf44c305df6bc6e7181543a57ed7e1d6b7c3c705f823314dc7bc8e1b425
+    highlight.js: ^10.7.2
+  checksum: 5e1a09d8f2c62196ace0fb284417a876d7f9249d85db610731c844b4e9829a5ee7211560bebab406abb57cbbccca2d6d29d19c6241594c17b387929d198cc33e
   languageName: node
   linkType: hard
 
@@ -7221,6 +7214,13 @@ fsevents@~2.3.2:
   version: 1.1.0
   resolution: "hex-color-regex@npm:1.1.0"
   checksum: 44fa1b7a26d745012f3bfeeab8015f60514f72d2fcf10dce33068352456b8d71a2e6bc5a17f933ab470da2c5ab1e3e04b05caf3fefe3c1cabd7e02e516fc8784
+  languageName: node
+  linkType: hard
+
+"highlight.js@npm:^10.7.2":
+  version: 10.7.3
+  resolution: "highlight.js@npm:10.7.3"
+  checksum: defeafcd546b535d710d8efb8e650af9e3b369ef53e28c3dc7893eacfe263200bba4c5fcf43524ae66d5c0c296b1af0870523ceae3e3104d24b7abf6374a4fea
   languageName: node
   linkType: hard
 
@@ -12076,7 +12076,7 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "site-rss@workspace:packages/site-rss"
   dependencies:
-    "@types/markdown-it": 12.0.3
+    "@types/markdown-it": 12.2.0
     "@types/node": 14.17.10
     feed: 4.2.2
     markdown-it: 12.2.0
@@ -12120,7 +12120,7 @@ fsevents@~2.3.2:
     "@nuxtjs/eslint-config-typescript": 6.0.1
     "@nuxtjs/vuetify": 1.12.1
     "@types/lodash": 4.14.172
-    "@types/markdown-it": 12.0.3
+    "@types/markdown-it": 12.2.0
     "@types/minimist": 1.2.2
     "@types/node": 14.17.10
     "@types/twitter-text": 3.1.1
