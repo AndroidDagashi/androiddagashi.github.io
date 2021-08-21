@@ -2436,10 +2436,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:14.17.10":
-  version: 14.17.10
-  resolution: "@types/node@npm:14.17.10"
-  checksum: ec618cb3e0223e6707c97f88ab8525a2addecfa6dc7b7dfb9e6b56f144d8ac47083bfe3fd7a8040e5234f9b7d46c6a5c0bb24ed0129815b6efe82d0f4a55ba60
+"@types/node@npm:14.17.11":
+  version: 14.17.11
+  resolution: "@types/node@npm:14.17.11"
+  checksum: 94192a5f6f5da51a10dfa959049a5cfcff440fbeeefbf98084083c1370a107872fc7f4a2df42f100989dea873cb4128f376d5e4af6be43fec21273359d9dbdb0
   languageName: node
   linkType: hard
 
@@ -12075,7 +12075,7 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "site-api@workspace:packages/site-api"
   dependencies:
-    "@types/node": 14.17.10
+    "@types/node": 14.17.11
     site-api-github: ^1.0.0
     site-common: ^1.0.0
     site-config: ^1.0.0
@@ -12089,7 +12089,7 @@ fsevents@~2.3.2:
   version: 0.0.0-use.local
   resolution: "site-common@workspace:packages/site-common"
   dependencies:
-    "@types/node": 14.17.10
+    "@types/node": 14.17.11
     typescript: 4.3.5
   languageName: unknown
   linkType: soft
@@ -12099,7 +12099,7 @@ fsevents@~2.3.2:
   resolution: "site-config@workspace:packages/site-config"
   dependencies:
     "@nuxt/types": 2.15.8
-    "@types/node": 14.17.10
+    "@types/node": 14.17.11
     site-types: ^1.0.0
     typescript: 4.3.5
   languageName: unknown
@@ -12110,7 +12110,7 @@ fsevents@~2.3.2:
   resolution: "site-rss@workspace:packages/site-rss"
   dependencies:
     "@types/markdown-it": 12.2.0
-    "@types/node": 14.17.10
+    "@types/node": 14.17.11
     feed: 4.2.2
     markdown-it: 12.2.0
     site-common: ^1.0.0
@@ -12155,7 +12155,7 @@ fsevents@~2.3.2:
     "@types/lodash": 4.14.172
     "@types/markdown-it": 12.2.0
     "@types/minimist": 1.2.2
-    "@types/node": 14.17.10
+    "@types/node": 14.17.11
     "@types/twitter-text": 3.1.1
     "@typescript-eslint/eslint-plugin": 4.29.2
     "@typescript-eslint/parser": 4.29.2
