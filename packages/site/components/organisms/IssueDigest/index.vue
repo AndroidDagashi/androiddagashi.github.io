@@ -8,16 +8,17 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
+import type { PropType } from 'vue'
 import { GHDigestMilestone } from 'site-types/GitHubApi'
 
 export default Vue.extend({
   name: 'IssueDigest',
   props: {
     milestone: {
-      type: Object,
+      type: Object as PropType<GHDigestMilestone>,
       required: true,
-    } as PropOptions<GHDigestMilestone>,
+    },
     index: {
       type: Number,
       required: true,

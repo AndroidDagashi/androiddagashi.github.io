@@ -1,4 +1,4 @@
-import { MetaPropertyName, MetaPropertyProperty } from 'vue-meta'
+import type { MetaPropertyName, MetaPropertyProperty } from 'vue-meta'
 
 interface OGPProperties {
   title?: string

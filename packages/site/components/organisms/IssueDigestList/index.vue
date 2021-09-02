@@ -9,7 +9,8 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from 'vue'
+import Vue from 'vue'
+import type { PropType } from 'vue'
 import flatmap from 'lodash.flatmap'
 import { GHDigestMilestone } from '~/../site-types/GitHubApi'
 import IssueDigest from '~/components/organisms/IssueDigest/index.vue'

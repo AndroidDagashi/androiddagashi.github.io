@@ -16,7 +16,8 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
+import type { PropType } from 'vue'
 import { GHIssue } from 'site-types/GitHubApi'
 import IssueCommentsItem from './IssueCommentsItem.vue'
 
@@ -25,9 +26,9 @@ export default Vue.extend({
   components: { IssueCommentsItem },
   props: {
     issue: {
-      type: Object,
+      type: Object as PropType<GHIssue>,
       required: true,
-    } as PropOptions<GHIssue>,
+    },
   },
 })
 </script>

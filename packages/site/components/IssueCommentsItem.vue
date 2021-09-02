@@ -22,7 +22,8 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
+import type { PropType } from 'vue'
 import { GHComment } from 'site-types/GitHubApi'
 import { parseISO, format } from 'date-fns'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
@@ -32,9 +33,9 @@ export default Vue.extend({
   components: { MarkdownText },
   props: {
     comment: {
-      type: Object,
+      type: Object as PropType<GHComment>,
       required: true,
-    } as PropOptions<GHComment>,
+    },
   },
   computed: {
     publishedAt(): string {

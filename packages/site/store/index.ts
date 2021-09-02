@@ -1,4 +1,4 @@
-import { ActionTree, MutationTree, GetterTree } from 'vuex'
+import type { ActionTree, MutationTree, GetterTree } from 'vuex'
 
 import { GHDigest } from 'site-types/GitHubApi'
 import { ContactInfo, RepositoryConfig } from 'site-types/SiteConfig'

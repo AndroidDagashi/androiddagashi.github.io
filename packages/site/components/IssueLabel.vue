@@ -5,7 +5,8 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropOptions } from 'vue'
+import Vue from 'vue'
+import type { PropType } from 'vue'
 import { GHLabel } from 'site-types/GitHubApi'
 import { mapState } from 'vuex'
 import { RootState } from '../store'
@@ -18,9 +19,9 @@ export default Vue.extend({
       required: true,
     },
     labelInfo: {
-      type: Object,
+      type: Object as PropType<GHLabel>,
       required: true,
-    } as PropOptions<GHLabel>,
+    } ,
   },
   computed: {
     ...mapState<RootState>(['issueRepository']),

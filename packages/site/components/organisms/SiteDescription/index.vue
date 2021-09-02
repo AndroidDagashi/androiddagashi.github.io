@@ -24,7 +24,8 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from 'vue'
+import Vue from 'vue'
+import type { PropType } from 'vue'
 import { ContactInfo } from '~/../site-types/SiteConfig'
 import TwitterLink from '~/components/atoms/TwitterLink/index.vue'
 
