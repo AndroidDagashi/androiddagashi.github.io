@@ -20,25 +20,25 @@ export default Vue.extend({
   word-break: break-all;
 }
 
-.markdown-text a {
+.markdown-text >>> a {
   text-decoration: none;
   color: #0366d6;
 }
 
-.markdown-text a:hover {
+.markdown-text >>> a:hover {
   text-decoration: underline;
 }
 
-.markdown-text p {
+.markdown-text >>> p {
   margin-bottom: 4px;
 }
 
-.markdown-text ul {
+.markdown-text >>> ul {
   padding-left: 16px;
   padding-right: 16px;
 }
 
-.markdown-text blockquote {
+.markdown-text >>> blockquote {
   padding: 0 1em;
   color: #6a737d;
   border-left: 0.25em solid #dfe2e5;
