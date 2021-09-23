@@ -21,7 +21,7 @@ export default Vue.extend({
     labelInfo: {
       type: Object as PropType<GHLabel>,
       required: true,
-    } ,
+    },
   },
   computed: {
     ...mapState<RootState>(['issueRepository']),
