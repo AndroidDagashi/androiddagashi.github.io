@@ -122,4 +122,4 @@ export default Vue.extend({
 })
 </script>
 
-<style lang="postcsS" scoped></style>
+<style lang="postcss" scoped></style>

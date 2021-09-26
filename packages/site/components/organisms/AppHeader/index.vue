@@ -28,7 +28,7 @@ export default Vue.extend({
 })
 </script>
 
-<style scoped>
+<style lang="postcss" scoped>
 .title {
   padding-left: 20px;
 }
