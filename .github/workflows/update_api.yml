@@ -2,7 +2,7 @@ name: Update Json files
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 * * * *'
+    - cron: '0 */2 * * *'
 
 jobs:
   push_json_and_rssfeed:
