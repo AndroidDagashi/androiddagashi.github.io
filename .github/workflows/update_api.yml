@@ -2,7 +2,10 @@ name: Update Json files
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 */2 * * *'
+    # schedule does not support timezone, so use to UTC
+    # https://github.com/actions/runner/issues/1423
+    # https://github.community/t/timezone-support-for-scheduled-actions/17279
+    - cron: '0 01-23/2 * * *'
 
 jobs:
   push_json_and_rssfeed:
