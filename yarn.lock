@@ -6557,9 +6557,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-admin@npm:^9.6.0":
-  version: 9.12.0
-  resolution: "firebase-admin@npm:9.12.0"
+"firebase-admin@npm:^10.0.0":
+  version: 10.0.0
+  resolution: "firebase-admin@npm:10.0.0"
   dependencies:
     "@firebase/database-compat": ^0.1.1
     "@firebase/database-types": ^0.7.2
@@ -6575,7 +6575,7 @@ __metadata:
       optional: true
     "@google-cloud/storage":
       optional: true
-  checksum: e8f1393f2bd869d60647a1297c3662510feb2bad20a14d2ea322e6ed48ae5faa8b5fa202db372a13dda62ec597236edcbbf2137965bc56ed79c2d6214773b2d3
+  checksum: ee31a4e22e1c0a41b15beec667b2b79ce289fee05b1a71c3fcd9423b9a58b390186f2e1a93df624f918e92e1a060dae9ec50474f598d0c214122cbeb84173004
   languageName: node
   linkType: hard
 
@@ -12225,7 +12225,7 @@ fsevents@~2.3.2:
   resolution: "site-tweeter@workspace:packages/site-tweeter"
   dependencies:
     "@types/oauth": 0.9.1
-    firebase-admin: ^9.6.0
+    firebase-admin: ^10.0.0
     oauth: ^0.9.15
     site-common: ^1.0.0
     site-config: ^1.0.0
