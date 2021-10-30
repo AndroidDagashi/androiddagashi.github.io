@@ -26,10 +26,14 @@ async function generateApi(): Promise<void> {
   const topGen = new TopDigestsGenerator(ghClient, config.tempOutputDirs)
   const milestoneNumbers = await topGen.generate()
 
+  const latest10 = milestoneNumbers.slice(0, 10)
+  // TODO: update other milestones depending on time?
+  // const others = milestoneNumbers.slice(10)
+
   // generate issue json
   await mkdirp(config.tempOutputDirs.issues)
   const issueGen = new IssueGenerator(ghClient, config.tempOutputDirs)
-  const chunkedMilestoneNumbers = chunk(milestoneNumbers, 3)
+  const chunkedMilestoneNumbers = chunk(latest10, 3)
   await Promise.all(
     chunkedMilestoneNumbers.map((numbers) => {
       return (async (): Promise<void> => {
@@ -47,4 +51,7 @@ async function generateApi(): Promise<void> {
 
 generateApi()
   .then(() => console.log('finished'))
-  .catch((error) => console.error('failed to generate api jsons:', error))
+  .catch((error) => {
+    console.error('failed to generate api jsons:', error)
+    process.exit(1)
+  })

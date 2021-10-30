@@ -6,6 +6,7 @@ on:
     # https://github.com/actions/runner/issues/1423
     # https://github.community/t/timezone-support-for-scheduled-actions/17279
     - cron: '0 01-23/2 * * *'
+    # - cron: '0 * * * *'
 
 jobs:
   push_json_and_rssfeed:
