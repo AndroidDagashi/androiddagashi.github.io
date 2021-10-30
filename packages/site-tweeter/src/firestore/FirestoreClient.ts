@@ -1,22 +1,23 @@
-import * as admin from 'firebase-admin'
+
+import { Firestore, getFirestore } from 'firebase-admin/firestore'
+import { initializeApp, cert, App, ServiceAccount } from 'firebase-admin/app'
 import Milestone from './Milestone'
 
 const COLLECTION_MILESTONES = 'milestones'
 
 export default class FirestoreClient {
-  private readonly firebaseApp: admin.app.App
-  private readonly firestore: admin.firestore.Firestore
+  private readonly firebaseApp: App
+  private readonly firestore: Firestore
 
   constructor(serviceAccount: Record<string, unknown>) {
     const sa = this.parseServiceAccount(serviceAccount)
-    const cert = admin.credential.cert(sa)
-    this.firebaseApp = admin.initializeApp({ credential: cert })
-    this.firestore = this.firebaseApp.firestore()
+    this.firebaseApp = initializeApp({ credential: cert(sa) })
+    this.firestore = getFirestore(this.firebaseApp)
   }
 
   private parseServiceAccount(
     serviceAccount: Record<string, unknown>
-  ): admin.ServiceAccount {
+  ): ServiceAccount {
     return {
       type: serviceAccount.type,
       projectId: serviceAccount.project_id,
@@ -28,7 +29,7 @@ export default class FirestoreClient {
       tokenUri: serviceAccount.token_uri,
       authProviderX509CertUrl: serviceAccount.auth_provider_x509_cert_url,
       clientC509CertUrl: serviceAccount.client_x509_cert_url,
-    } as admin.ServiceAccount
+    } as ServiceAccount
   }
 
   async addMilestone(milestone: Milestone): Promise<void> {
