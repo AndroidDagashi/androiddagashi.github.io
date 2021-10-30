@@ -1,4 +1,5 @@
 import { Context } from '@nuxt/types'
+// eslint-disable-next-line import/named
 import { NuxtAxiosInstance } from '@nuxtjs/axios'
 import { AxiosRequestConfig } from 'axios'
 
