@@ -43,7 +43,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { mapState } from 'vuex'
-import {parseTweet} from 'twitter-text'
+import twitter from 'twitter-text'
 
 export default Vue.extend({
   name: 'Tweetcomposer',
@@ -71,7 +71,7 @@ export default Vue.extend({
     },
     onInput(): void {
       this.tweet = this.generateTweet(this.milestoneNumber, this.summary)
-      const parseResult = parseTweet(this.tweet)
+      const parseResult = twitter.parseTweet(this.tweet)
 
       this.tweetLength = parseResult.weightedLength
       this.isValidTweet = parseResult.valid

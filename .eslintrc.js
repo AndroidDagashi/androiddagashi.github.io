@@ -8,5 +8,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'prettier',
   ],
-  rules: {},
+  rules: {
+    'import/no-named-as-default-member': 'off',
+  },
 }

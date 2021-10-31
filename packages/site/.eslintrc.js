@@ -14,5 +14,6 @@ module.exports = {
   rules: {
     'vue/no-v-html': 'off',
     'no-unused-vars': 'off',
+    'import/no-named-as-default-member': 'off',
   },
 }
