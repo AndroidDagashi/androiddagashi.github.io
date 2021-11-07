@@ -1,0 +1,237 @@
+{
+  "id": "MI_kwDOB4jhdM4Ab4Zl",
+  "number": 197,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/197",
+  "title": "197 2021-11-07",
+  "description": "Kotlin K2 Compiler解説、Protocol BufferのKotlin対応、マルチプラットフォームComposeを実現する、など",
+  "closedAt": "2021-11-07T10:19:15Z",
+  "issues": {
+    "totalCount": 9,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOPmJa9A==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________HvOPmOYVQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2162",
+        "title": "Kotlin K2 Compiler解説",
+        "body": "https://www.youtube.com/watch?v=db19VFLZqJM\r\n\r\n新しいKotinのCompileのK2 Compilerについての解説です。この動画では主にCompiler frontendの動作について解説しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2163",
+        "title": "Kotlinのコードカバレッジ測定",
+        "body": "https://www.youtube.com/watch?v=jNu5LY9HIbw\r\n\r\nKoverというKotlinのコードカバレッジ測定ツールの紹介しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2164",
+        "title": "Now in Android エピソード50",
+        "body": "https://medium.com/androiddevelopers/now-in-android-50-ads-special-9934422f8dd1\r\n\r\n今回はAndroid Developer Summit 2021のまとめになっています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2165",
+        "title": "Gradleのmetadataを使って、マルチプラットフォームComposeを実現する",
+        "body": "https://jakewharton.com/multiplatform-compose-and-gradle-module-metadata-abuse/\r\n\r\nGoogleから提供されているJetpack Composeだと、Kotlinマルチプラットフォームに対応していないので、Gradle metadataをハックすることで、マルチプラットフォームに対応させています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2166",
+        "title": "Protocol BufferのKotlin対応",
+        "body": "https://developers.googleblog.com/2021/11/announcing-kotlin-support-for-protocol.html\r\n\r\nKotlinから使いやすい、APIが生成されるようになったようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2167",
+        "title": "Android 12Lについての雑感",
+        "body": "https://commonsware.com/blog/2021/10/27/random-musings-android-12l-developer-preview.html\r\n\r\n恒例のCommonsWareによるAndroid 12L の気になる変更について。\r\n\r\n`Environment` の `getExternalStorageDirectory()` と `getExternalStoragePublicDirectory()` の非推奨が解除されたようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOOV_jaQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOOV_jaQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://commonsware.com/blog/2021/11/06/about-environment-undeprecations.html\r\n\r\n`Environment` の件について続報です。\r\nGoogleのエンジニアから連絡があり、ミスによる解除ではないそうです。\r\n\r\nただScoped Storageは引き続き有効なので、その範囲内での利用となります。\r\n\r\n\r\n",
+              "publishedAt": "2021-11-07T10:27:15Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2168",
+        "title": "Flutterの状態管理ライブラリRiverpodが1.0.0に到達",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Riverpod 1.0.0 is now released 🎉<br><br>Stay tuned for an article detailing the changes.<br>In the meantime, you can read the CHANGELOG:<a href=\"https://t.co/h3yeM2l83K\">https://t.co/h3yeM2l83K</a></p>&mdash; Remi Rousselet (@remi_rousselet) <a href=\"https://twitter.com/remi_rousselet/status/1456624735899504643?ref_src=twsrc%5Etfw\">November 5, 2021</a></blockquote>\r\n\r\nhttps://pub.dev/packages/flutter_riverpod/changelog#100",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2169",
+        "title": "Compose で Wear OS アプリをつくる",
+        "body": "3回シリーズです\r\n\r\nScaffold: https://proandroiddev.com/compose-for-wear-os-scaffold-89e0fc5cc033\r\nScalingLazyColumn: https://proandroiddev.com/compose-for-wear-os-scalinglazycolumn-63f754e91edb\r\nNavigation: https://proandroiddev.com/compose-for-wear-os-navigation-40c42bce9df7",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2170",
+        "title": "Kotlin 1.6.0-RC2",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.6.0-RC2",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
