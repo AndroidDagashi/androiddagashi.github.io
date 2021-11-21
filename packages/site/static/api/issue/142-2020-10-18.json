@@ -1,0 +1,293 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjAwMjQ3MA==",
+  "number": 142,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/142",
+  "title": "142 2020-10-18",
+  "description": "Android Studio 4.1、2020年10月14日のAndroidXリリース、Kotlin 1.4 Online Event、GDG DevFest 2020、Flutter はプロダクション開発に耐えうるのか、など",
+  "closedAt": "2020-10-18T10:36:16Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOKyI2JA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-0_OKyYfbA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1587",
+        "title": "Android Studio 4.1",
+        "body": "https://developer.android.com/studio/releases/#4-1-0\r\n\r\nAndroid Gradle Plugin 4.1.0のリリースノートはこちら\r\nhttps://developer.android.com/studio/releases/gradle-plugin#4-1-0",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOKl0aiw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOKmKW6g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ART(API level 21+)からできなくなったassertが、AGP 4.1.0で復活されました。\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Upgrading to AGP 4.1 stable this week? It&#39;s time to start using `assert` for Android again!<br><br>(Don&#39;t forget to pass &#39;-Xassertions=jvm&#39; to the Kotlin compiler if you&#39;re using Kotlin assert function though) <a href=\"https://t.co/0Ie9dZfd1s\">https://t.co/0Ie9dZfd1s</a></p>&mdash; Jake Wharton (@ JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/1317114392186585088?ref_src=twsrc%5Etfw\">October 16, 2020</a></blockquote>",
+              "publishedAt": "2020-10-17T04:16:50Z",
+              "author": {
+                "login": "saryongkang",
+                "url": "https://github.com/saryongkang",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/978709?u=76ff40591e4daa265e00dcc32c24027b8f00919b&v=4"
+              }
+            },
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/j9uv1w/android_studio_41_now_available_with_new_features/",
+              "publishedAt": "2020-10-18T01:41:09Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1588",
+        "title": "GitHubでコントリビュートできるAndroidXライブラリが追加",
+        "body": "https://twitter.com/ianhlake/status/1316254590455611392\r\nhttps://github.com/androidx/androidx/blob/androidx-master-dev/CONTRIBUTING.md\r\n\r\n一部AndroidXライブラリはGitHubでもコントリビュートできるようになっていましたが、新たにActivityとFragmentとNavigationが可能になりました。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1589",
+        "title": "Coroutines 1.4.0-M1",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.4.0-M1\r\n\r\nSharedFlowが新たに追加されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1590",
+        "title": "エントリーレベルのAndroid開発職の面接で聞かれることって？",
+        "body": "https://www.reddit.com/r/androiddev/comments/jahp8v/what_can_i_realistically_expect_to_be_asked_in_a/\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1591",
+        "title": "Gradle 6.7",
+        "body": "https://docs.gradle.org/6.7/release-notes.html\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/jbffgz/gradle_67_released/\r\n\r\nAndroid Studioでのサポートはまだ完全ではないようですが、included buildとbuildSrcの挙動に改善が加えられています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1592",
+        "title": "MAD Skillsシリーズ",
+        "body": "https://www.youtube.com/playlist?list=PLWz5rJ2EKKc91i2QT8qfrfKgLNlJiG1z7\r\n\r\n新たにModern Android Development (MAD) Skillsシリーズとして、モダン開発についてのシリーズが始まりました。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1593",
+        "title": "2020年10月14日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#october_14_2020\r\n\r\n安定版のリリースはExifinterface Version 1.3.1, Mediarouter Version 1.2.0, Navigation Version 2.3.1など。\r\nRC版はStartup Version 1.0.0-rc01, Tracing Version 1.0.0-rc01などがあります",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOKmKfIw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOKmKfIw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏による解説ツイートはこちらから\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">AndroidX releases today include MediaRouter 1.2.0 (important for Android 11 features), Wear 1.1.0, plus bug fix releases in ExifInterface 1.3.1 and Navigation 2.3.1.<a href=\"https://t.co/QPhZ8ajpgq\">https://t.co/QPhZ8ajpgq</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1316436001494097922?ref_src=twsrc%5Etfw\">October 14, 2020</a></blockquote>",
+              "publishedAt": "2020-10-18T02:12:47Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1594",
+        "title": "Kotlin 1.4 Online Event",
+        "body": "https://kotlinlang.org/lp/event-14/\r\n\r\n4日間に渡って開催され、スライドと動画が公開されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1595",
+        "title": "REALITY Androidで使っている技術",
+        "body": "https://note.com/reality_eng/n/n504897a3c5b0\r\n\r\nUnityを使っている箇所もあるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1596",
+        "title": "Now in Android エピソード27",
+        "body": "https://medium.com/androiddevelopers/now-in-android-27-cae8da7c1991\r\n\r\nAS 4.1、MAD(Modern Android Development)などを紹介しています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1597",
+        "title": "Flutter はプロダクション開発に耐えうるのか",
+        "body": "https://speakerdeck.com/wasabeef/can-flutter-be-used-for-product-app-development\r\n\r\nFlutterを導入するにあたってのメリット、デメリットや、実際に開発を行う上で必要になる技術について説明しています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1598",
+        "title": "GDG DevFest 2020",
+        "body": "10/17, 18の2日間にわたってGDG DevFestがオンラインで開催されています。Android関連のセッションも多いようです。\r\nhttps://gdg-tokyo.connpass.com/event/190079/\r\n\r\nセッション動画はこちら：https://www.youtube.com/channel/UCjDFW0wOM-3G4CxG3tSHKZA/videos",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

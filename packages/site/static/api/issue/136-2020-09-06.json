@@ -1,0 +1,190 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTgyMzY2Mw==",
+  "number": 136,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/136",
+  "title": "136 2020-09-06",
+  "description": "リソースの最適化でアプリサイズを小さくする、ARTのStructural Class Redefinition機能、Jetpack DataStore、Kotlin Multiplatform Mobile Alpha、など",
+  "closedAt": "2020-09-06T10:50:49Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOKSx1Fg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OKWHzsA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1541",
+        "title": "Android Studio 4.1 RC2",
+        "body": "https://androidstudio.googleblog.com/2020/08/android-studio-41-rc-2-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1542",
+        "title": "リソースの最適化でアプリサイズを小さくする",
+        "body": "https://jakewharton.com/smaller-apks-with-resource-optimization/\r\n\r\nAndroid Gradle Plugin 4.2で追加された `android.enableResourceOptimizations` についての話です",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1543",
+        "title": "Now in Android エピソード24",
+        "body": "https://medium.com/androiddevelopers/now-in-android-24-5f5421f85da3\r\n\r\nJetPack ComposeのアルファリリースやConstraint Layout 2.0、11 Weeks of Androidが終わったことなどについて触れられています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1544",
+        "title": "ARTのStructural Class Redefinition機能",
+        "body": "https://medium.com/androiddevelopers/structural-class-redefinition-6fc0cbab9161\r\n\r\nAndroid StudioのApply Changesで利用されているARTのStructural Class Redefinition機能について解説されています。Android 11から追加された、既存クラスにフィールドやメソッドを追加したときに動的にクラス構造を置き換える機能です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOKP1Ubg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOKP1Ubg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "JVMTI APIとして実装されているようです。JVMの仕様にも関係していておもしろいです。",
+              "publishedAt": "2020-09-06T02:48:17Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1545",
+        "title": "Jetpack DataStore",
+        "body": "https://android-developers.googleblog.com/2020/09/prefer-storing-data-with-jetpack.html\r\n\r\nSharedPreferencesを置き換えるのを目的として新しいデータ保存機能がAlphaリリースされました。Protocol buffers, Coroutinesが使われています。SharedPreferencesの欠点である、UIスレッドの呼び出し、エラー通知、型の扱いなどを改善しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1546",
+        "title": "11 Weeks of Androidまとめ",
+        "body": "https://android-developers.googleblog.com/2020/08/11-weeks-of-android-thats-wrap.html\r\n\r\n11週に渡って行われた #11WeeksOfAndroid の最後のブログです。これまでの内容がまとめられています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1547",
+        "title": "Kotlin Multiplatform Mobile Alpha",
+        "body": "https://blog.jetbrains.com/kotlin/2020/08/kotlin-multiplatform-mobile-goes-alpha/\r\n\r\nKotlin Multiplatform MobileがAlphaになり、Android StudioのPluginもリリースされています。PluginによりKMMのプロジェクトとモジュールの作成ウィザードが追加されたり、実行やデバッグなども可能になっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1548",
+        "title": "SquareがViewの階層を出力するライブラリを公開",
+        "body": "https://developer.squareup.com/blog/introducing-radiography/\r\nhttps://github.com/square/radiography\r\n\r\nEspressoのエラー表示の改善や、クラッシュレポートの改善などの用途を想定しているそうです。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

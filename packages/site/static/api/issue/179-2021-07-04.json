@@ -1,0 +1,268 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjg5MTY2NA==",
+  "number": 179,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/179",
+  "title": "179 2021-07-04",
+  "description": "Android Studio 4.2.2, スコープストレージに関するよくある誤解, Kotlin Multiplatform のユーザ調査が実施中, DroidKaigi 2021のオンライン開催, など",
+  "closedAt": "2021-07-04T10:32:47Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vON8Ze9g==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfON9C6LA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1962",
+        "title": "Android Studio 4.2.2",
+        "body": "https://androidstudio.googleblog.com/2021/06/android-studio-422-available.html\r\n\r\nreddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/ob2uuk/android_studio_422_available/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHONAigFw==",
+            "endCursor": "Y3Vyc29yOnYyOpHONAigFw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "今回のリリースで気づいたのですが、4.2から　Gradle のタスク一覧がデフォルトで生成されないようになったみたいです",
+              "publishedAt": "2021-07-02T13:02:37Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1963",
+        "title": "repeatOnLifecycleのAPI設計",
+        "body": "https://medium.com/androiddevelopers/repeatonlifecycle-api-design-story-8670d1a7d333\r\n\r\nrepeatOnLifecycleのAPI設計について、どのような決定がされたのかが解説されています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1964",
+        "title": "FoldableでのExoPlayerのサンプル",
+        "body": "https://medium.com/androiddevelopers/tabletop-mode-on-foldable-devices-d091b3c500b1\r\n\r\nFoldable端末で半分に折りたたんでいる状態で、ExoPlayerのUIを変化させるサンプルについて解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1965",
+        "title": "スコープストレージに関するよくある誤解",
+        "body": "https://medium.com/androiddevelopers/scope-storage-myths-ca6a97d7ff37\r\n\r\nターゲットAPIを30にすることがほぼ必須になる時期が迫っていますが、ターゲットAPIを30にしたときの大きな変更点であるスコープストレージについて、よくある誤解とその回答が説明されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1966",
+        "title": "Navigation - Live Q&A",
+        "body": "https://www.youtube.com/watch?v=4srssoBo0HU\r\n\r\nNavigationに関する様々な質問に答えています。Composeに関するものもいくつかありました。 ",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1967",
+        "title": "DroidKaigi 2021のオンライン開催",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"ja\" dir=\"ltr\">DroidKaigi 2021 の開催日程が決定しました！<br>2021年10月19日(火) JST〜2021年10月21日(木) JST の3日間にわたってオンライン開催となります🎉<br>同時に、セッション公募も来週から開始予定です。<br>参加登録やセッション公募の詳細は追って告知いたします🙇<a href=\"https://twitter.com/hashtag/DroidKaigi?src=hash&amp;ref_src=twsrc%5Etfw\">#DroidKaigi</a> <a href=\"https://t.co/afwoDO4S2N\">pic.twitter.com/afwoDO4S2N</a></p>&mdash; DroidKaigi (@ DroidKaigi) <a href=\"https://twitter.com/DroidKaigi/status/1410434680122265600?ref_src=twsrc%5Etfw\">July 1, 2021</a></blockquote>\r\n\r\n10月19 ~ 10月21日の3日間、開催されるそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1968",
+        "title": "2021年6月30日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#june_30_2021\r\n\r\nAndroid 12から導入されるSplash screen APIがバックポートされたものが新しく追加されています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHONBFTUg==",
+            "endCursor": "Y3Vyc29yOnYyOpHONBFTUg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏による紹介ツイートはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Jetpack releases today include stable releases of Core 1.6.0 and Core Google Shortcuts 1.0.0, Datastore reaching its 1.0.0-rc01 release, and a brand new Core Splashscreen 1.0.0-alpha01 to back port the new APIs from Android 12 back to API 23.<a href=\"https://t.co/Sd9bjzeK8E\">https://t.co/Sd9bjzeK8E</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1410306320377409540?ref_src=twsrc%5Etfw\">June 30, 2021</a></blockquote>",
+              "publishedAt": "2021-07-04T09:04:55Z",
+              "author": {
+                "login": "STAR-ZERO",
+                "url": "https://github.com/STAR-ZERO",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/376376?u=c9428e145dea238d8dec3e06ef275be6b59a77b8&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1969",
+        "title": "2021年7月1日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#july_1_2021\r\n\r\nJetpack Compose 1.0.0-rc01がリリースされています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHONBFVSQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHONBFVSQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏による紹介ツイートはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">It&#39;s July 1st and with that comes...Jetpack Compose 1.0.0-rc01! 🎉 Activity 1.3.0-rc01 and ProfileInstaller 1.0.0-rc01 are also out, plus updates to Navigation, Paging, and the brand new Wear Compose!<a href=\"https://t.co/VuavrsUYim\">https://t.co/VuavrsUYim</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1410674284612120576?ref_src=twsrc%5Etfw\">July 1, 2021</a></blockquote>",
+              "publishedAt": "2021-07-04T09:08:30Z",
+              "author": {
+                "login": "STAR-ZERO",
+                "url": "https://github.com/STAR-ZERO",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/376376?u=c9428e145dea238d8dec3e06ef275be6b59a77b8&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1970",
+        "title": "Kotlin Multiplatform のユーザ調査が実施中",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Attention all Kotlin Multiplatform users❗❕❗ <br><br>Change the future of the technology by sharing your thoughts and feedback in the Kotlin Multiplatform user survey!<br><br>Special prizes will be raffled after the survey. 🎁<br><br>👉 👉 👉 <a href=\"https://t.co/gv1buiKZew\">https://t.co/gv1buiKZew</a> <a href=\"https://t.co/KZPHaLUpdz\">pic.twitter.com/KZPHaLUpdz</a></p>&mdash; Kotlin (@kotlin) <a href=\"https://twitter.com/kotlin/status/1410976645754802177?ref_src=twsrc%5Etfw\">July 2, 2021</a></blockquote>",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1971",
+        "title": "Android Studio Arctic Fox beta 5",
+        "body": "https://androidstudio.googleblog.com/2021/07/android-studio-arctic-fox-beta-5.html\r\n\r\n\r\nreddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/od0ure/android_studio_arctic_fox_beta_5/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

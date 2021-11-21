@@ -1,0 +1,335 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDc0NzAyMg==",
+  "number": 90,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/90",
+  "title": "90 2019-10-20",
+  "description": "R8によるenumの最適化, Ionic React, Slackにおけるコード共有, Gesture Navigationサポートの手引, ユニットテスト書いてる人どれくらいいる？, など",
+  "closedAt": "2019-10-20T10:48:23Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOHi79wg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-0_OHl9cjg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1071",
+        "title": "!!はアンチパターンなのか論争",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">People who tell you that !! is an anti-pattern in Kotlin but who don&#39;t also include ?. and ?: as anti-patterns aren&#39;t worth listening to. In reality, they&#39;re all fine and, like all things, you just need to learn when each is appropriate (including requireNonNull and checkNonNull)</p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/1183444666613669888?ref_src=twsrc%5Etfw\">October 13, 2019</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nJakeが以前から主張していることですが、以前に比べると賛同者が多いように見えます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIEYrlg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIEYrlg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "なおUbieではコーディング規約で `!!` は禁止しているようです\r\nhttps://github.com/ubie-inc/kotlin-coding-style\r\n\r\n背景についてはこちら。\r\n<blockquote class=\"twitter-tweet\"><p lang=\"ja\" dir=\"ltr\">NotNull変換みたいな危険な操作が !! だけでカジュアルにできるのは本当に危険が危ないので。requireNotNullはエラーメッセージを添えることもできて便利です。<br>lateinitはテストコードでDIするのに使ってるけど、Nullableにしない抜け道に過ぎないので原則使用は控えたい<a href=\"https://t.co/tBareq6hiR\">https://t.co/tBareq6hiR</a></p>&mdash; たろう (@ngsw_taro) <a href=\"https://twitter.com/ngsw_taro/status/1055341548378906624?ref_src=twsrc%5Etfw\">October 25, 2018</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+              "publishedAt": "2019-10-13T23:21:13Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1072",
+        "title": "R8によるenumの最適化",
+        "body": "https://jakewharton.com/r8-optimization-enum-ordinals-and-names/\r\n\r\nJakeのR8 Optimizationシリーズです。今回はenumの `ordinal()` や `name()` の最適化について解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1073",
+        "title": "Android Studio 3.6 Beta 1",
+        "body": "https://androidstudio.googleblog.com/2019/10/android-studio-36-beta-1-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/dg1s83/android_studio_36_beta_1_available/\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1074",
+        "title": "IonicがReactのサポートを発表",
+        "body": "https://ionicframework.com/blog/announcing-ionic-react/\r\n\r\nIonicはWeb技術でクロスプラットフォームなアプリ開発ができるフレームワークです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIG78Hw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIG78Hw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "以前はCordovaベースでしたが、最近はCapacitorという独自開発のエンジンの上で動いているようです",
+              "publishedAt": "2019-10-19T13:35:03Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1075",
+        "title": "Now in Android エピソード6",
+        "body": "https://medium.com/androiddevelopers/now-in-android-6-dd7d1aca1361\r\n\r\n- Room 2.2.0等今週リリースのAndroidXのステーブル/ベータ版紹介\r\n- Droidcon NYCのビデオ\r\n- Android Dev Summitのライブストリーミングや公式アプリ\r\n- ジェスチャーナビゲーションの対応方法\r\n- アクセシビリティのドキュメント改善",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1076",
+        "title": "Slackにおけるコード共有",
+        "body": "https://slack.engineering/client-consistency-at-slack-beyond-libslack-c9cfbe778fb7\r\n\r\n以前AndroidDagashiでも紹介した、[DropboxがC++でのロジック共有をやめた話](https://github.com/AndroidDagashi/AndroidDagashi/issues/980)に触発された記事のようです。\r\n\r\nLibslackという名前のC++ライブラリでAndroid/iOS間のロジック共有を行っていたようですが、最近やめたそうです。\r\nSlackの場合は、すでに存在したAndroid/iOSアプリをリファクタする形でコード共有を進めていったのが問題をややこしくする一因だったとか。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIHA-3A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIHA-3A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditのスレッドはこちら\r\nhttps://www.reddit.com/r/androiddev/comments/djswz2/slack_like_dropbox_also_moves_away_from_c_code/",
+              "publishedAt": "2019-10-20T07:06:17Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1077",
+        "title": "ユニットテスト書いてる人どれくらいいる？",
+        "body": "https://www.reddit.com/r/androiddev/comments/dj65sw/how_many_of_you_guys_are_actually_writing_unit/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1078",
+        "title": "Gesture Navigationサポートの手引き Part 3：干渉の回避",
+        "body": "https://medium.com/androiddevelopers/gesture-navigation-handling-gesture-conflicts-8ee9c2665c69\r\n\r\n前回から間が空きましたが、Chris BanesによるGesture Navigationをサポートする上での解説シリーズのパート3です。今回はアプリのUIとGesture Navigationが干渉する場合の回避方法についてまとめてあります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIHBDHA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIHBDHA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "フローチャートが便利ですが、ViewPagerについて「対応の必要なし」になるのはちょっと不思議でした。自分はGesture Navigationをオンにしていますが、たまにViewPagerと干渉してすこしストレスを感じます。",
+              "publishedAt": "2019-10-20T07:25:12Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1079",
+        "title": "Gesture Navigationサポートの手引き Part 4：Immersiveモード",
+        "body": "https://medium.com/androiddevelopers/gesture-navigation-immersive-modes-43f2d37a925d\r\n\r\nChris BanesによるGesture Navigationの解説パート4です。今回が最終回でStickeyとNon-Stickeyの2つのImmersive Modeについて解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1080",
+        "title": "Storage Access Framework (SAF)の基本",
+        "body": "https://commonsware.com/blog/2019/10/19/scoped-storage-stories-saf-basics.html\r\n\r\nScoped Storageの導入によって今後重要性が増すと思われるStorage Access Framework (SAF)についての解説です。具体的なコードもあって分かりやすいです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIHBGZg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIHBGZg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ところで、恥ずかしながら、この記事を読むまでUriが1つのアクティビティ内でしか利用できないというのを知りませんでした……",
+              "publishedAt": "2019-10-20T07:42:22Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1081",
+        "title": "KotlinのDelegatesを使ってカスタムViewを作る",
+        "body": "https://blog.autsoft.hu/better-custom-views-with-delegates/\r\nhttps://www.reddit.com/r/androiddev/comments/dj7c8f/better_custom_views_with_delegates/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIHBX4g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIHBX4g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "一番最後に書いてある、カスタムDelegateを作って子Viewの振る舞いと親Viewのgetter/setterメソッドを紐付けるのはなかなかおもしろそうでした",
+              "publishedAt": "2019-10-20T08:53:14Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1082",
+        "title": "Android NDK r21",
+        "body": "https://android-developers.googleblog.com/2019/10/introducing-ndk-r21-our-first-long-term.html\r\n\r\nr21からLong Term Supportの概念が取り入れられるようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

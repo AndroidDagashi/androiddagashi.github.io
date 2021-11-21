@@ -1,0 +1,431 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzMyMzMzOQ==",
+  "number": 15,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/15",
+  "title": "15-20180506-20180512",
+  "description": "",
+  "closedAt": "2018-05-13T12:14:36Z",
+  "issues": {
+    "totalCount": 16,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABj_OEzoSig==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOExvgFA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/205",
+        "title": "未使用リソースを削除するGradle Plugin",
+        "body": "http://konifar.hatenablog.com/entry/2018/05/13/125311\r\n\r\nAndroid Lintより賢く探してくれるようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/204",
+        "title": "Android開発を加速するためのAndroid JetpackがI/Oで発表",
+        "body": "https://android-developers.googleblog.com/2018/05/use-android-jetpack-to-accelerate-your.html\r\nhttps://developer.android.com/jetpack/\r\n\r\n基本的には、サポートライブラリ系やArchitecture Components等、今まであったGoogleによるライブラリ群のまとめと、それを利用した開発のガイダンスのようです。\r\n\r\n今回の発表に伴い、バックグラウンド処理を管理する `WorkManager` と画面遷移の管理を簡単にする `Navigation` が新しく追加されています。\r\nまた、`Paging`が正式リリースされてたりします。\r\n\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/203",
+        "title": "KEEP 110：JavaのメソッドをKotlinから使いやすくするプロポーザルが出たようです",
+        "body": "[Android Jetpack: sweetening Kotlin development with Android KTX (Google I/O '18) - YouTube](https://www.youtube.com/watch?v=st1XVfkDWqk) でも触れられて一部で話題になっていたプロポーザルです。\r\n\r\nhttps://github.com/Kotlin/KEEP/issues/110\r\nhttps://github.com/android/KEEP/blob/c0dc7f15d9cc91f9ef773f881ac67c8cc7470528/proposals/java-annotations-for-kotlin-sugar.md\r\n\r\nこのプロポーザルにもあるように、現状では Kotlin フレンドリーなライブラリーを Java で作ろうとすると API を Kotlin から使いやすいように意識して作る、もしくは、Kotlin 拡張関数のライブラリを別に作る、の二択になっており、このプロポーザルによって第三の選択肢が生まれることになります。個人的には、違う言語なのだからライブラリの作者が Kotlin 用の拡張関数ライブラリを提供すればいいのでは、と思っていますが、難しいという気持ちも分かります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/202",
+        "title": "Navigationの登場でSingle Activityアプリにすべきなのかと議論になっているようです",
+        "body": "https://www.reddit.com/r/androiddev/comments/8i73ic/its_official_google_officially_recommends_single/\r\n\r\nただ、これ、直訳すると _single-Activityアプリを（データを複数画面で共有するときの理想的な）アーキテクチャにすることを目的としたフレームワークとしてナビゲーションコンポーネントを導入しました_ という感じなので、別にsingle-Activityが善とは言っていない気もします。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/201",
+        "title": "Material Designが大幅リニューアル",
+        "body": "https://material.io/\r\n公式サイトもかなり変わっています。\r\nこのリニューアルで、各コンポーネント毎にプラットフォームごとの[実装状況](https://material.io/design/components/app-bars-bottom.html#implementation)や[実装方法](https://material.io/develop/android/)とか記載されるようになりました\r\n\r\nチュートリアル\r\nhttps://material.io/collections/developer-tutorials/#android-java\r\n\r\nデザイナー目線でのまとめ\r\nhttps://note.mu/kenichiikeuchi/n/na9d3fc5093be\r\n\r\nかなり自由度があがって、ブランド毎の個性を出しやすくなっているようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFyYcJQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFyYcJQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Androidでは実装がまだなのにFlutterにあったりして面白いですね。 **Implementation** の項目が増えたのはいいと思います。",
+              "publishedAt": "2018-05-11T14:04:43Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/200",
+        "title": "Android CleanArchitectureの火付け役が最近の動向を反映した新しいパターンを紹介",
+        "body": "https://fernandocejas.com/2018/05/07/architecting-android-reloaded/\r\nhttps://github.com/android10/Android-CleanArchitecture-Kotlin\r\n\r\n基本的なレイヤー構成は変わらず、RxJavaの代わりにKotlin coroutinesを利用したMVVMになっているようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/199",
+        "title": "GDPR(EU一般データ保護規則)への対策まとめ",
+        "body": "https://blog.craftz.dog/gdpr-a-practical-guide-for-developers-24f94f2fce34\r\nやること多いわりによくわかっていないGDPRですが、日本語でいい感じにまとまっていました。\r\n罰金もすごいし大変そう…\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/8ig3wn/gdpr_consent_system_open_sourced/\r\nredditではGDPRの同意求めるあたりの処理をまとめたライブラリが共有されていました",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFyYc9g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFyYc9g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "GDPR、アプリよりもバックエンドのデータの持ち方が大変そうですね……。",
+              "publishedAt": "2018-05-11T14:05:33Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/198",
+        "title": "Androidサポートライブラリがandroidxにパッケージ変更",
+        "body": "https://android-developers.googleblog.com/2018/02/introducing-android-ktx-even-sweeter.html\r\n\r\n今後ライブラリ系は基本`androidx.*`なネームスペースになる模様。\r\n\r\n旧サポートライブラリからのマイグレーションは、[パッケージの対応表](https://developer.android.com/topic/libraries/support-library/refactor)も用意されていますが、`28.0.0-alpha1`に更新したらAndroid Studio 3.2に用意されているマイグレーションツールが使えるようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/197",
+        "title": "Google I/OでのAndroid関連のセッション動画",
+        "body": "https://www.youtube.com/playlist?list=PLWz5rJ2EKKc9Gq6FEnSXClhYkWAStbwlC\r\n\r\nhttps://android-developers.googleblog.com/2018/05/google-io-2018-whats-new-in-android.html\r\nAndroid Developers BlogのAndroid関連新情報のまとめ記事はこちら",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFxtdGQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFym1sQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://www.youtube.com/playlist?list=PLOU2XLYxmsIInFRc3M44HUTQc3b_YJ4-Y\r\n\r\nAndroid関係なくすべてのセッション動画の一覧はこちら",
+              "publishedAt": "2018-05-09T08:49:51Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "Techboosterさんのkeynote/developer keynoteのまとめ\r\n\r\nhttps://techbooster.org/android/18079/\r\nhttps://techbooster.org/android/18096/",
+              "publishedAt": "2018-05-13T08:13:35Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/196",
+        "title": "Caster IOでAndroid Thingsのチュートリアルが無料(期間限定)",
+        "body": "https://caster.io/courses/introduction-to-android-things\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">Hey <a href=\"https://twitter.com/hashtag/io18?src=hash&amp;ref_src=twsrc%5Etfw\">#io18</a> folks - we see that you&#39;re getting an Android Things kit! That&#39;s awesome! <br><br>You know what else is awesome? <br><br>We just released <a href=\"https://twitter.com/blundell_apps?ref_src=twsrc%5Etfw\">@blundell_apps</a>  Android Things course for 💥FREE💥 for the next week. Updated for the 1.0 release. Enjoy everyone. 😃 <a href=\"https://t.co/NNRMtq9ZPq\">https://t.co/NNRMtq9ZPq</a> <a href=\"https://t.co/ql9dGPk2pG\">pic.twitter.com/ql9dGPk2pG</a></p>&mdash; Caster IO (@caster_io) <a href=\"https://twitter.com/caster_io/status/993950160291016705?ref_src=twsrc%5Etfw\">2018年5月8日</a></blockquote>",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Android Things",
+              "description": "",
+              "color": "b8f77e"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/195",
+        "title": "LyftによるVirtual DOMライブラリ",
+        "body": "https://github.com/lyft/domic\r\n\r\nまだ途中のようなのでよく分かりませんが、viewを抽象化してreactiveに使うためのライブラリのようです。もうちょっと出揃ったら試してみたいです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/194",
+        "title": "Flutter beta3リリース",
+        "body": "https://developers.googleblog.com/2018/05/ready-for-production-apps-flutter-beta-3.html\r\n\r\nパフォーマンスの改善や多言語対応、広告等いろいろありそうです\r\n\r\nFlutterチームによる記事はこちら: https://medium.com/flutter-io/flutter-beta-3-7d88125245dc",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFxVvFw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFxVvFw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "> We believe mobile development needs an upgrade.\r\n\r\n記事を読んだのですが、全体的に、すごく気合が入ってますよね。本気でモバイルアプリ開発のメインになるつもりなんでしょうか。",
+              "publishedAt": "2018-05-08T04:27:12Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/193",
+        "title": "Twitter SDKのサポートが2018年10月で終了のお知らせ",
+        "body": "https://blog.twitter.com/developer/ja_jp/topics/community/2018/TKSDK_tr.html\r\n\r\nissueやPRの受付がなくなるがarchive状態で残すとのことなので、利用はできそうです。また、フォークは可能そうな気がするので、Twitterが突然banしたりAPIを非公開にしなければメンテナンスもできるかもしれません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFxF17w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFxF17w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "英語版の記事はこちら https://blog.twitter.com/developer/en_us/topics/tools/2018/discontinuing-support-for-twitter-kit-sdk.html",
+              "publishedAt": "2018-05-07T10:08:21Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/192",
+        "title": "Android Things 1.0リリース",
+        "body": "https://android-developers.googleblog.com/2018/05/say-hello-to-android-things-10.html\r\n\r\nNXP i.MX8M, Qualcomm SDA212, Qualcomm SDA624, and MediaTek MT8516 といったSoMのサポートが追加された。\r\nまた、NXP i.MX6ULのサポートは終了",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Android Things",
+              "description": "",
+              "color": "b8f77e"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/191",
+        "title": "画面遷移にCoordinatorパターンを使おう",
+        "body": "http://hannesdorfmann.com/android/coordinators-android\r\n\r\nhttp://daisukenomura.hatenablog.com/entry/2018/05/04/145947\r\n[技術書展でkgmyshinさんが販売していた本](https://booth.pm/ja/items/837226)関係で先週こんな記事もあったので、個人的には非常にタイムリーな内容でした。\r\n\r\nいわゆる `Navigator` クラスと `ViewModel/Presenter`の間に`Coordinator`というレイヤーを追加して、画面遷移のビジネスロジックよりな部分を記述しよう、という試みのようです。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/190",
+        "title": "Fragmentの画面遷移系メソッドまとめ",
+        "body": "http://nein37.hatenablog.com/entry/2018/05/06/204943\r\n\r\n相変わらずよくまとまっています。 `attach()` と `detach()` はたしかに自分で呼んだことないですね。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

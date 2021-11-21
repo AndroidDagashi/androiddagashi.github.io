@@ -1,0 +1,373 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDMyODMyNg==",
+  "number": 69,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/69",
+  "title": "69 2019-05-26",
+  "description": "AS 3.6 Canary 1, Kotlin 1.3.40 eap 1, Kotlin Fest 2019, Android Studioのチップス集, テストでのCoroutineのリーク, など",
+  "closedAt": "2019-05-26T10:39:14Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABK_OGrxLlA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGpOWjg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/842",
+        "title": "AndroidStudioのチップス集",
+        "body": "https://www.reddit.com/r/androiddev/comments/bqlia2/lets_get_a_list_of_common_android_studio_setting/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/841",
+        "title": "テストでのCoroutineのリークを排除する",
+        "body": "https://medium.com/@rickbusarow/eliminating-coroutine-leaks-in-tests-3af825e7cde2\r\n\r\nJUnitのカスタムルールを作ってCoroutineのリークがおきないようにしています。\r\nkotlinx.coroutines.testのTestCoroutineScopeに対応した例ものっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/840",
+        "title": "Kotlin Fest 2019開催の告知",
+        "body": "https://kotlin.connpass.com/event/129860/\r\n\r\n2019/08/24(土) 11:00 ～ 18:30 の開催です。\r\nまた、今回はスピーカーの募集もしています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/839",
+        "title": "drawBitmapMesh APIを使って画像を変形する",
+        "body": "https://proandroiddev.com/transforming-picture-with-android-canvas-drawbitmapmesh-35f359235774\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/838",
+        "title": "すべてのサブスクリプションが72時間後に自動的にリファンドされた話",
+        "body": "https://www.reddit.com/r/androiddev/comments/bsgfx6/play_store_automatic_refunds_after_72_hours/\r\n\r\n詳細はわかりませんがBilling Library 2.0を使っていたため、72時間以内に処理をしないとサブスクリプションがキャンセルされてしまったようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/837",
+        "title": "Android Studio 3.6 Canary 1",
+        "body": "https://androidstudio.googleblog.com/2019/05/android-studio-36-canary-1-available.html\r\n\r\nまだViewBindingは使えないようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHY_BoQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHY_BoQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "存在はするけれど使えないようですね\r\nhttps://www.reddit.com/r/androiddev/comments/bs9qx9/android_studio_36_canary_1_available_to_download/eon7sdn/",
+              "publishedAt": "2019-05-26T01:25:40Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/836",
+        "title": "Compose From First Principles",
+        "body": "http://intelligiblebabble.com/compose-from-first-principles/\r\n\r\nJetpack Composeの簡易版を段階的に実装しながら、Jetpack Composeの内部や思想を理解しよう、という記事です。\r\nなぜComposeのfunctionは何もreturnしないのか？　とかもわかってきます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHYOlGw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHYOlGw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://www.reddit.com/r/androiddev/comments/brtp7i/compose_from_first_principles/\r\n\r\nredditはこちら\r\n著者が質問を受け付けていました。",
+              "publishedAt": "2019-05-23T10:41:50Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/835",
+        "title": "Google Glassの新モデルが発表される",
+        "body": "https://www.itmedia.co.jp/news/articles/1905/21/news056.html\r\n\r\nGoogle Glass Enterprise Edition2だそうです。\r\nAndroid Oreoが搭載されています。\r\n\r\n今後はAR/VR部門に統合されたようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AR/VR",
+              "description": "",
+              "color": "d6a0e8"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHXUIkA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHXw-qw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "一般向けがなさそうなのはちょっと残念です",
+              "publishedAt": "2019-05-21T01:50:47Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "工場などで使われることが想定されているようですね",
+              "publishedAt": "2019-05-22T07:11:50Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/834",
+        "title": "Android Studio 3.5 beta 2",
+        "body": "https://androidstudio.googleblog.com/2019/05/android-studio-35-beta-2-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/833",
+        "title": "Kotlin 1.3.40 EAP 1",
+        "body": "https://github.com/JetBrains/kotlin/releases/v1.3.40-eap-21",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHXw8cQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHXw8cQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "`trimIndent` の修正はJakeがむかし触れていたやつですね\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">In Kotlin 1.3.40, calls to trimIndent and trimMargin on constant strings will be computed at compile-time instead of at runtime.</p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/1108743995813957632?ref_src=twsrc%5Etfw\">March 21, 2019</a></blockquote>\r\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n",
+              "publishedAt": "2019-05-22T07:10:03Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/832",
+        "title": "次期Pixelで設定変更のカスタムルールが作れるという噂",
+        "body": "https://www.reddit.com/r/androiddev/comments/bqj480/google_is_working_on_a_new_settings_routines/\r\n\r\nAOSPに入った変更をもとにした推測なので確度は高くないですが、特定のネットワークに接続したらDo Not Disturbにする、といった設定ルーチンが将来のPixelで可能になるかもしれないようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/831",
+        "title": "GoogleがHuaweiサポート中止を検討",
+        "body": "https://www.itmedia.co.jp/news/articles/1905/20/news053.html\r\n\r\nまだ決定ではないようですが、Play StoreなどのGoogleサービスの提供が中止される可能性があるそうです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHXUMXQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHXU3aw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">Huawei&#39;s own-developed smart phone Operating System, reportedly named &quot;HongMeng OS&quot;, is being trialled out and will gradually replace the Android system, according to three Chinese media reports. <a href=\"https://t.co/GacM5xQMYJ\">pic.twitter.com/GacM5xQMYJ</a></p>&mdash; Global Times (@globaltimesnews) <a href=\"https://twitter.com/globaltimesnews/status/1130348114475282432?ref_src=twsrc%5Etfw\">2019年5月20日</a></blockquote>\r\n\r\nHuaweiはHongMeng OSという独自のOSに移行する計画のようです",
+              "publishedAt": "2019-05-21T01:56:34Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "HongMengに期待してます。",
+              "publishedAt": "2019-05-21T03:00:13Z",
+              "author": {
+                "login": "qingliaowu",
+                "url": "https://github.com/qingliaowu",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/41318040?u=d05c4faf633a07980ee11c6c267c7aa240c3744b&v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

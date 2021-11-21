@@ -1,0 +1,311 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzU4MTE3NA==",
+  "number": 30,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/30",
+  "title": "30-20180819-20180825",
+  "description": "Kotlin Festが開催、Google I/O 2018アプリのアーキテクチャとテスト、RxJavaを使っている既存アプリに Kotlin Coroutinesを導入しよう、など。",
+  "closedAt": "2018-08-26T10:53:50Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABK_OFRqAcg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOFPmevw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/388",
+        "title": "マルチモジュールでRクラスへの参照数を減らす実験的なビルドフラグ",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Want to try a super experimental flag to help with this while proper namespaces are being figured out? Add android.namespacedRClass=true to <a href=\"https://t.co/CNW0TIexRp\">https://t.co/CNW0TIexRp</a> with AGP 3.3. This will prevent references from transitive dependencies being included in library R files. <a href=\"https://t.co/ERnIcQZjis\">https://t.co/ERnIcQZjis</a></p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/1032396242062594048?ref_src=twsrc%5Etfw\">August 22, 2018</a></blockquote>\r\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\n不勉強にして知らなかったのですが、マルチモジュールにすると、参照されているRクラスのフィールドがコピーされ無駄にカウントされてしまうそうです。それを防ぐための実験的なフラグが AGP 3.3 以降だと使えるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGMvLPA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGMvLPA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "あるいは、そもそもRクラスを別のJARにまとめる方法もあるようです。\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">If you&#39;re going to use this flag, you can also use android.enableSeparateRClassCompilation which will generate all the R classes as Jar instead of code. This is a good build speed boost. (Studio support pending as well).</p>&mdash; Xavier Ducrohet (@droidxav) <a href=\"https://twitter.com/droidxav/status/1032398243873738753?ref_src=twsrc%5Etfw\">August 22, 2018</a></blockquote>\r\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n",
+              "publishedAt": "2018-08-26T02:18:22Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/383",
+        "title": "Two-way data bindingのドキュメントが追加",
+        "body": "https://developer.android.com/topic/libraries/data-binding/two-way\r\n\r\nいまさら感もなくはないですが、公式ドキュメントに記載されたようです。Converterの話も載っています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/382",
+        "title": "Android Dev Summitの応募受付が開始",
+        "body": "https://developer.android.com/dev-summit/\r\n\r\n申し込みの締切は分かりませんが、興味のある方はどうぞ。10/8までに結果が来るそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/387",
+        "title": "Kotlin Festが開催",
+        "body": "`国内初 1day Kotlinカンファレンス 「Kotlinを愛でる」` と題してKotlinカンファレンスが東京の品川で開催されました。\r\nhttps://kotlin.connpass.com/event/91666/\r\n\r\n資料は以下に上がっているようです。\r\nhttps://kotlin.connpass.com/event/91666/presentation/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/386",
+        "title": "Android Studio 3.2 rc01がリリース",
+        "body": "https://androidstudio.googleblog.com/2018/08/android-studio-32-release-candidate-1.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGMZxdA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGMwTTg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ちなみに3.3 canary7もリリースされています\r\nhttps://androidstudio.googleblog.com/2018/08/android-studio-33-canary-7-available.html",
+              "publishedAt": "2018-08-24T05:51:05Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "なお、翌日に3.2 rc02がリリースされましたw\r\nhttps://androidstudio.googleblog.com/2018/08/android-studio-32-rc-2-now-available.html",
+              "publishedAt": "2018-08-26T10:06:04Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/385",
+        "title": "Google I/O 2018アプリでのアニメーションについて",
+        "body": "https://medium.com/google-developers/animating-on-a-schedule-8a90d812ae4",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/384",
+        "title": "Android 9.0.0_r1用のソースコード検索エンジンが公開",
+        "body": "http://tools.oesf.biz/android-9.0.0_r1.0/\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"ja\" dir=\"ltr\">Android 9.0.0_r1用のソースコード検索エンジンを立ち上げました！<a href=\"https://t.co/Js5zEFk8xg\">https://t.co/Js5zEFk8xg</a></p>&mdash; SIProp.org (@SIProp_org) <a href=\"https://twitter.com/SIProp_org/status/1032219276889927680?ref_src=twsrc%5Etfw\">2018年8月22日</a></blockquote>\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGL_OSA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGMDpKQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "[AndroidXRef](http://androidxref.com/)とはまた違うんですかね？ 🤔 ",
+              "publishedAt": "2018-08-22T23:43:23Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "おお、そんなのもあるんですね。\r\nどちらもOpenGrokですし、国産であること以外はどうなんでしょうね… 🤔 ",
+              "publishedAt": "2018-08-23T05:27:50Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/381",
+        "title": "Google I/O 2018アプリのアーキテクチャとテスト",
+        "body": "https://medium.com/google-developers/google-i-o-2018-app-architecture-and-testing-f546e37fc7eb\r\n\r\n先週リリースされたGoogle I/O 2018アプリのソースコードに対する解説記事です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/380",
+        "title": "Google for Mobile I/O Recap 2018のセッション動画とQAが公開",
+        "body": "https://developers-jp.googleblog.com/2018/08/qa-google-for-mobile-io-recap-2018.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/379",
+        "title": "RxJavaを使っている既存アプリに Kotlin Coroutinesを導入しよう",
+        "body": "https://qiita.com/takahirom/items/22a6c6ab4c879dd472e4\r\n\r\nサンプルも含めてわかりやすかったです。\r\n[kotlin-coroutines-rx2](https://github.com/Kotlin/kotlinx.coroutines/tree/master/reactive/kotlinx-coroutines-rx2)というライブラリを使うとスムーズに導入できるようです。\r\nRxJava1からRxJava2の時も[RxJavva2Interop](https://github.com/akarnokd/RxJava2Interop)というライブラリがありましたが、こういう変換ライブラリがあるとちょっと試してみるのも楽そうですね。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/378",
+        "title": "スタートアップの技術選定とアプリケーションプラットフォーム",
+        "body": "https://blog.lai.so/entry/2018/08/19/%E3%82%B9%E3%82%BF%E3%83%BC%E3%83%88%E3%82%A2%E3%83%83%E3%83%97%E3%81%AE%E6%8A%80%E8%A1%93%E9%81%B8%E5%AE%9A%E3%81%A8%E3%82%A2%E3%83%97%E3%83%AA%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%97%E3%83%A9\r\n\r\nちょっと毛色の違う話題ですが。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGLAQdA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGLAQdA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ネイティブアプリ vs. モバイルウェブの話は定期的に出ますね。個人的には将来的にwebに収束するだろうと思ってはいますが、ブラウザ（とくにSafari）の動きが読めないのもあって、いつごろ潮目が変わるかはよく分からないですね。",
+              "publishedAt": "2018-08-20T04:04:57Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/377",
+        "title": "Android TVでの新しいテキスト入力方法",
+        "body": "https://android-developers.googleblog.com/2018/08/alternative-input-methods-for-android-tv.html\r\n\r\nNearby APIを利用して手元のスマートフォン経由でログイン情報などを入力させるようです。自分はパスワードがかなり長いので、TV向けのアプリを出しているところはぜひ対応してほしいです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

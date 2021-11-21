@@ -1,0 +1,206 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTQ0NjU2Nw==",
+  "number": 121,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/121",
+  "title": "121 2020-05-24",
+  "description": "Firebase EmulatorのUIがリリース、Kotlinで音楽を演奏する、非同期フレームワークは過大評価されている、タッチしやすいデザイン、など。",
+  "closedAt": "2020-05-24T10:28:04Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOJReL7A==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OJS6yWA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1389",
+        "title": "2020年5月20日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#may_20_2020",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJaprOA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJaprOA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Jetpack releases today (yep, even more!) include CustomView+DrawerLayout+SlidingPaneLayout 1.1.0-rc01, Security 1.1.0-rc02, Navigation 2.3.0-beta01, WorkManager 2.4.0-beta01, plus lots of alpha releases.<a href=\"https://t.co/iL1wnjYofW\">https://t.co/iL1wnjYofW</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1263167042808500224?ref_src=twsrc%5Etfw\">May 20, 2020</a></blockquote>",
+              "publishedAt": "2020-05-21T07:12:39Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1390",
+        "title": "Kotlinのreifiedについて",
+        "body": "https://medium.com/androiddevelopers/reification-of-the-erased-41e246725d2c\r\n\r\nKotlinではreifiedキーワードを使うことで、ジェネリック変数にアクセスすることが出来ますが、内部でどのようなことをしているのかを説明しています。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1391",
+        "title": "非同期フレームワークは過大評価されている",
+        "body": "https://www.techyourchance.com/concurrency-frameworks-overrated-android/\r\n\r\n一部で話題になっていた、「Rxやcoroutineを使わなくてもThreadで十分」という主張の記事です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1392",
+        "title": "タッチしやすいデザイン",
+        "body": "https://addyosmani.com/blog/touch-friendly-design/\r\n\r\nユーザは様々な方法で端末を操作をするので、それを踏まえて、コンテンツの配置場所などを考慮する必要があることを説明しています。またその中で、ボトムナビゲーションが有効なUIであることを紹介しています。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1393",
+        "title": "Now in Android エピソード18",
+        "body": "https://medium.com/androiddevelopers/now-in-android-18-4ee70b267765\r\nhttps://www.youtube.com/watch?v=OR9fVfn6HTs\r\n\r\nAndroid 11に関するアップデート、最近公開された記事、AndroidXのアップデート、新しいCodeLabなどについて書かれています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1394",
+        "title": "Kotlinで音楽を演奏する",
+        "body": "https://www.youtube.com/watch?v=OdQQJPpL6Lo\r\nhttps://github.com/pjagielski/punkt\r\n\r\nKotlinをライブコーディングしながら音楽を演奏しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1395",
+        "title": "Firebase EmulatorのUIがリリース",
+        "body": "https://firebase.googleblog.com/2020/05/local-firebase-emulator-ui.html\r\n\r\n今までもエミュレータ自体は提供されていましたが、今回UIが追加されたようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJb3LUQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJb3LUQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://medium.com/flutter-jp/firebase-emulator-938e9a0cdfad\r\n\r\nFlutterアプリから接続する方法はこちらが詳しいです",
+              "publishedAt": "2020-05-24T08:06:07Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1396",
+        "title": "Flutter Dayの日付が公開",
+        "body": "https://medium.com/flutter/save-the-date-flutter-day-june-25-2020-8e9f5fd03248\r\n\r\n2020年6月25日です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

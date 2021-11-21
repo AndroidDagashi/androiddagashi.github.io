@@ -1,0 +1,278 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjIwNzU1Mw==",
+  "number": 151,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/151",
+  "title": "151 2020-12-20",
+  "description": "Android Studio 4.2 beta2, Jetpack Composeに移行前と移行後, MVVMとMVI, 個人開発者としてアプリをどうやって宣伝/マーケティングしてる？, MAD score, など",
+  "closedAt": "2020-12-20T10:30:47Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOLblJpA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-7POLf0PiA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1668",
+        "title": "Android Studio 4.2 beta 2",
+        "body": "https://androidstudio.googleblog.com/2020/12/android-studio-42-beta-2-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOLJ5nAA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOLJ5nAA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditでの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/kd2rip/android_studio_42_beta_2_available/\r\n",
+              "publishedAt": "2020-12-20T08:29:01Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1669",
+        "title": "Android Studio Arctic Fox Canary 3",
+        "body": "https://androidstudio.googleblog.com/2020/12/android-studio-arctic-fox-canary-3.html\r\n\r\nAGP 7.0 canary 3から`compile`や`provided`といったすでに非推奨になっている依存ライブラリの指定方法が削除されました。\r\n\r\n移行方法も書いてあるのでまだ対応できてない方はお早めに。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1670",
+        "title": "MAD scoreでモダンかを計測",
+        "body": "https://android-developers.googleblog.com/2020/12/whats-your-mad-score.html\r\nhttps://developer.android.com/modern-android-development/scorecard\r\n\r\nAndroid StudioのPluginを使って、どれくらいプロジェクトがモダンなのかを確認できます。\r\nアプリ内のKotlinコードの比率、Android Studioのバージョン、Jetpackライブラリの使用数、App Bundleによる容量削減率、これら4つを計測できます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1671",
+        "title": "Jetpack Composeに移行前と移行後",
+        "body": "https://medium.com/androiddevelopers/jetpack-compose-before-and-after-8b43ba0b7d4f\r\n\r\nJetpack Composeに移行後にアプリサイズ、コード量、ビルドスピードがどのように変化したかが紹介されています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1672",
+        "title": "2020年12月16日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#december_16_2020\r\n\r\nこのリリースが2020年最後となるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOLJvTzA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOLJvTzA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏によるリリース内容紹介ツイート\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The last Jetpack release of the year is out now with bug fix releases in Media2 1.1.1 and Room 2.2.6 as well as Webkit 1.4.0 plus new RC, beta, and alpha releases.<a href=\"https://t.co/wmngWia4wY\">https://t.co/wmngWia4wY</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1339284757583020033?ref_src=twsrc%5Etfw\">December 16, 2020</a></blockquote>",
+              "publishedAt": "2020-12-19T03:02:33Z",
+              "author": {
+                "login": "STAR-ZERO",
+                "url": "https://github.com/STAR-ZERO",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/376376?u=c9428e145dea238d8dec3e06ef275be6b59a77b8&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1673",
+        "title": "Now in Android エピソード31",
+        "body": "https://medium.com/androiddevelopers/now-in-android-31-dfd9eb3111d3\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1674",
+        "title": "Compose Desktopを使ったTodoサンプルアプリ",
+        "body": "https://github.com/JetBrains/compose-jb/tree/master/examples/todoapp\r\nhttps://github.com/JetBrains/compose-jb/pull/166\r\n\r\nJetpack Compose UIを使った、実践寄りのサンプルになります。MVIパターンやSQLDelightなども使われています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1675",
+        "title": "個人開発者としてアプリをどうやって宣伝/マーケティングしてる？",
+        "body": "https://www.reddit.com/r/androiddev/comments/kcuwur/as_the_single_android_developer_working_on_an_app/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1676",
+        "title": "MVVMとMVI",
+        "body": "https://www.reddit.com/r/androiddev/comments/kci2ex/mvvm_vs_mvi/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1677",
+        "title": "Jetpack DataStoreをProtobufではなくKotlin Serializationで使用する",
+        "body": "https://zenn.dev/kafumi/articles/377bca464613f3",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1678",
+        "title": "KtLint + Spotless + GitHub ActionsでPRにsuggested changeさせる",
+        "body": "https://qiita.com/takahirom/items/2a3d2912e74107748765",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

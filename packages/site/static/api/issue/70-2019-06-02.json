@@ -1,0 +1,321 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDM0OTQxOA==",
+  "number": 70,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/70",
+  "title": "70 2019-06-02",
+  "description": "AS 3.5 beta3, Room 2.1 RC1, Kotlin MPPのサンプル, Flutter FAQ, ジェスチャナビゲーションとWindowInsets, など。",
+  "closedAt": "2019-06-02T10:15:14Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABK_OGuRBPw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGsu6_Q==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/854",
+        "title": "Android Studio 3.5 Beta 3",
+        "body": "https://androidstudio.googleblog.com/2019/05/android-studio-35-beta-3-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHa8HOg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHa8HOg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Beta 3では、GradleとAndroid Studioで使うJDKのバージョンが揃っている必要があるようです\r\nhttps://www.reddit.com/r/androiddev/comments/bu2mng/android_studio_35_beta_3_available/",
+              "publishedAt": "2019-06-02T08:18:31Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/853",
+        "title": "Room 2.1 RC1",
+        "body": "https://developer.android.com/jetpack/androidx/releases/room#2.1.0-rc01\r\n\r\nいよいよ正式リリースが近そうです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/852",
+        "title": "KtorとSQLDelightによるKotlin Multiplatformのサンプル",
+        "body": "https://www.reddit.com/r/androiddev/comments/bv5ho8/kotlin_multiplatform_starts_to_rock_android_ios/\r\n\r\n公式ではありませんが、Kotlin Multiplatformを考えている人には参考になるかもしれません。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/851",
+        "title": "Playストアのデザインがアップデートされる",
+        "body": "https://www.reddit.com/r/androiddev/comments/bv3570/material_design_2_is_live_on_play_store_looks/\r\n\r\nコメントにもありますがGoogleの他のアプリと同じようなブランディングになったそうです。スクリーンショットではBottom Navigationになっていますが、自分の端末では依然として上タブでした。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/850",
+        "title": "Emulator CI: Docker Scripts for Linux Emulator",
+        "body": "<blockquote class=\"twitter-tweet\" data-partner=\"tweetdeck\"><p lang=\"ja\" dir=\"ltr\">エミュレータが動作するコンテナイメージのビルドと利用を簡単にするスクリプト | Android Studio Release Updates: Emulator CI: Docker Scripts for Linux Emulator <a href=\"https://t.co/jpFrv2MCMQ\">https://t.co/jpFrv2MCMQ</a></p>&mdash; ホリエ (@ Horie1024) <a href=\"https://twitter.com/Horie1024/status/1134621081707245568?ref_src=twsrc%5Etfw\">June 1, 2019</a></blockquote>\r\n\r\nhttps://androidstudio.googleblog.com/2019/05/emulator-ci-docker-scripts-for-linux.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI",
+              "description": "Continuous Integration",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/849",
+        "title": "Flutter FAQ",
+        "body": "https://medium.com/flutter-jp/faq-f885a6494a8\r\n\r\nよく目にするFlutterへの疑問とその回答が日本語でまとめられています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/848",
+        "title": "ジェスチャーナビゲーションとWindowInsets",
+        "body": "https://blog.stylingandroid.com/gesture-navigation-window-insets/\r\n\r\nAndroid Qではジェスチャーベースのナビゲーションが新しく追加されます。\r\nまた、より没入感のあるUXを提供するために、フルスクリーンでアプリを描画することが推奨されるようです。\r\n\r\nこういった新しい環境に適応したアプリを作るためにWindowInsetsをどう使ったらいいのか、が説明されています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/847",
+        "title": "Kotin 1.3.40 EAP 2",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.3.40-eap-67\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/846",
+        "title": "Material Components 1.1.0-alpha07",
+        "body": "https://github.com/material-components/material-components-android/releases/tag/1.1.0-alpha07\r\n\r\nViewPager2とTabLayoutを連携させるためのTabLayoutMediatorがMDC本体に追加されました(今まではどこかからコピーしてくる必要があった)。\r\n他にもDark Theme周りのサポート拡充やBottomSheetのカスタマイズAPIが追加されたりしています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/845",
+        "title": "Koin 2.0.0",
+        "body": "https://medium.com/koin-developers/ready-for-koin-2-0-2722ab59cac3\r\n\r\nKotlin製のDIライブラリ、Koinの2.0.0がリリースされました。\r\n\r\nAPIがよりシンプルにわかりやすくなったことに加え、パフォーマンスも向上したようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/844",
+        "title": "Google Playストア、子どもを不適切アプリから守るポリシー強化",
+        "body": "https://www.itmedia.co.jp/news/articles/1905/30/news070.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHa8nAw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHa8nAw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "記事中にもありますが、アナウンスされた公式ブログの記事はこちらです\r\nhttps://android-developers.googleblog.com/2019/05/building-safer-google-play-for-kids.html",
+              "publishedAt": "2019-06-02T10:20:19Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/843",
+        "title": "Dagger 2.23",
+        "body": "https://github.com/google/dagger/releases/tag/dagger-2.23\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">Dagger 2.23 turns off formatting by default so your build is faster, but has a flag to turn it back on if you&#39;d like.<br><br>It also brings bug fixes and a more flexible <a href=\"https://t.co/d0MeQYkvAV\">https://t.co/d0MeQYkvAV</a> API that will allow for more androidx support<a href=\"https://t.co/vtW7gebmu2\">https://t.co/vtW7gebmu2</a></p>&mdash; Ron Shapiro (@ rdshapiro) <a href=\"https://twitter.com/rdshapiro/status/1133493726561619968?ref_src=twsrc%5Etfw\">2019年5月28日</a></blockquote>\r\n\r\n- バリデーションの強化\r\n- 生成コードのフォーマットをしない\r\n- 依存関係解決グラフのバリデーション(ModuleだけじゃなくComponentも可能に)\r\n- `Has*Injector` が `HasAndroidInjector` に統合。(さらなるAndroidXサポートに必要らしい)",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHa8lbA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHa8lpA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "`HasAndroidInjector`について、stsn_jpさんブログで解説されていました\r\nhttps://satoshun.github.io/2019/06/dagger-android-injector/",
+              "publishedAt": "2019-06-02T10:13:23Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "ちなみにインクリメンタルビルドが機能しなくなっていたようで、すぐに2.23.1がリリースされていました\r\nhttps://github.com/google/dagger/releases/tag/dagger-2.23.1",
+              "publishedAt": "2019-06-02T10:14:34Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

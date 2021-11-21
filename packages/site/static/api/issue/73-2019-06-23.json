@@ -1,0 +1,308 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDQxMTUyMA==",
+  "number": 73,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/73",
+  "title": "73 2019-06-23",
+  "description": "Kotlin 1.3.40, FlowでRxBindingを置き換える, マルチモジュール化のTIPS, RxJava3の開発が始まる, Envoy Mobile, など",
+  "closedAt": "2019-06-23T10:38:01Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABK_OG2QNeA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOG0CRVg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/889",
+        "title": "Jetifier 1.0.0-beta05",
+        "body": "https://developer.android.com/jetpack/androidx/releases/jetifier#1.0.0-beta05\r\n\r\nAndroidXへの参照を含むライブラリはスキップされるようになったようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/888",
+        "title": "What's Now in Android",
+        "body": "https://medium.com/androiddevelopers/whats-now-in-android-d78061ac8b92\r\n\r\nGoogleのDeveloper Advocate, Chet Haase氏によるGoogle I/O 2019のAndroid関連セッションのまとめです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/887",
+        "title": "FlowのchannelFlowを使ってRxBindingを置き換える",
+        "body": "http://sys1yagi.hatenablog.com/entry/2019/06/22/231311",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/886",
+        "title": "マルチモジュール化のTIPS",
+        "body": "https://jeroenmols.com/blog/2019/06/12/modularizationtips/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHhV4xQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHhV4xQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "新しいモジュールを作成するときにモジュール名を`features:newmodule`にすると`./features/newmodule`に新モジュールが作られるの、今まで知らなかったんですがすごく捗りそうです。",
+              "publishedAt": "2019-06-23T06:13:38Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/885",
+        "title": "KoinはDIか論争",
+        "body": "https://twitter.com/Piwai/status/1142123788122742784\r\n\r\n不毛といえば不毛なのですが、定期的にKoinがDIライブラリかどうかという論争が起きるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/884",
+        "title": "Jetpack Preferencesで設定画面をつくる",
+        "body": "https://joebirch.co/2019/06/19/exploring-android-jetpack-preferences/\r\n\r\n結構いろいろなことができるようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/883",
+        "title": "Kotlin 1.3.40リリース",
+        "body": "https://blog.jetbrains.com/kotlin/2019/06/kotlin-1-3-40-released/\r\n\r\nけっこう色々入っています。いくつかある中ではNew Type Inferenceが目玉でしょうか。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHg5b3g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHhW2XQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら。\r\nhttps://www.reddit.com/r/androiddev/comments/c2j2yp/release_1340_jetbrainskotlin_github/\r\n\r\nGitHubのリリースページを見るとParcelizeがexperimentalを卒業したようです。\r\nただビルド設定から`androidExtensions.experimental = true`を外すと、IDEではエラーになってしまうとか🤔",
+              "publishedAt": "2019-06-21T01:43:32Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "Kotlin Multiplatform周りでも、Kotlin/Nativeのジェネリクスサポートが改善されたりアウトプットフォーマットの古い指定方法が使えなくなったりしています。\r\n\r\n```gradle\r\n// 旧記法\r\nkotlin {\r\n  iosX64 {\r\n    compilations.main.outputKinds(\"framework\")\r\n  }\r\n}\r\n```\r\n↓\r\n```gradle\r\n// 新記法\r\nkotlin {\r\n  iosX64 {\r\n    binaries {\r\n      framework()\r\n    }\r\n  }\r\n}\r\n```",
+              "publishedAt": "2019-06-23T10:35:44Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/882",
+        "title": "Envoy Mobileが発表",
+        "body": "https://envoy-mobile.github.io/\r\n\r\nAndroid/iOS向けのEnvoyライブラリが発表されました。サーバー側のEnvoy Proxyと一緒に使うことでメトリクスの収集やキャッシュ、リトライなどを一括で行えるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHgdoCw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHgdoCw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自分の理解が中途半端なのですが、gRPCベースで独自のプロトコルで通信するようです。Publickeyによる記事はこちら。\r\nhttps://www.publickey1.jp/blog/19/envoy_mobile.html",
+              "publishedAt": "2019-06-20T01:11:41Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/881",
+        "title": "RxJava 3の開発が始まる",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">Development on RxJava 3.x has been started. Release-candidates will be available on a weekly basis and the plan is to release 3.0 in December 2019. The issue list is open for suggestions on behavior, API design, operators and other design discussions. <a href=\"https://t.co/VlWiL2cBRP\">https://t.co/VlWiL2cBRP</a></p>&mdash; RxJava (@RxJava) <a href=\"https://twitter.com/RxJava/status/1141323061859364865?ref_src=twsrc%5Etfw\">June 19, 2019</a></blockquote>\r\n<script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\n提案なども受け付けているようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/880",
+        "title": "GradleチームによるAMA",
+        "body": "https://www.reddit.com/r/androiddev/comments/c22a31/were_part_of_the_gradle_team_ask_us_anything/\r\n\r\nGradleチームが短期間ですが何でも質問に答えてくれるそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/879",
+        "title": "ConstraintLayout 2.0.0 Beta 2",
+        "body": "https://androidstudio.googleblog.com/2019/06/constraintlayout-200-beta-2.html\r\n\r\nBeta 2と言いながらMotionLayoutのAPIがいくつか追加されているようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHfnMdg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHfnMdg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Redditのスレはこちら\r\nhttps://www.reddit.com/r/androiddev/comments/c1o1gu/constraintlayout_200_beta_2/\r\n\r\nConstraintLayoutのチームからBetaでAPIを変えるのはこれで最後（でもみんなよくそう言うけれど）というコメントがついています。",
+              "publishedAt": "2019-06-18T01:32:02Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/878",
+        "title": "FirebaseとGoogle ServiceがAndroidX依存に移行",
+        "body": "https://developers.google.com/android/guides/releases#june_17_2019\r\n\r\nJetifierをオフれる日も近いかもしれません",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

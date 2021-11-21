@@ -1,0 +1,241 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTQ1NzEyNg==",
+  "number": 122,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/122",
+  "title": "122 2020-05-31",
+  "description": "AndroidStudio 4.0 Stable、Dagger 2.28、Android 11 Beta Launch Show、Flutterチームが2020年第2四半期のアンケートを実施中、など。",
+  "closedAt": "2020-05-31T10:42:15Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOJWg7rA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OJWx0Ew==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1397",
+        "title": "KotlinのOptInアノテーションでスコープを表現する",
+        "body": "https://medium.com/@bnorm/kotlin-optin-annotation-as-a-scoping-tool-59a50ee64338\r\n\r\nOptInアノテーションを使うことで、他のクラスにアクセスするときのスコープを表現できます。この記事では、生パスワードを保持しているフィールドを使用例に説明しています。\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1398",
+        "title": "buildSrcを変更するとキャッシュが無効になる",
+        "body": "https://proandroiddev.com/stop-using-gradle-buildsrc-use-composite-builds-instead-3c38ac7a2ab3\r\n\r\nGradleではbuildSrcを使うことで、プロジェクト全体の共通設定などをまとめることが出来ます。しかし、buildSrcを変更すると、キャッシュが無効になるため、ビルドに時間が掛かってしまいます。この記事では、Composite buildsを使うことで、この問題の解決法を提案しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1399",
+        "title": "AndroidStudio 4.0 Stable",
+        "body": "https://android-developers.googleblog.com/2020/05/android-studio-4.html\r\nhttps://www.youtube.com/watch?v=f1fHPqAYj5I\r\nhttps://www.reddit.com/r/androiddev/comments/gsab88/android_studio_40_stable/\r\n\r\n4.0正式版がリリースされました👏\r\nMotionEditor、Build Analyzerなど、もりもりと機能が追加されています。紹介動画も公開されているので、キャッチアップにとても良さそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1400",
+        "title": "Dagger 2.28",
+        "body": "https://github.com/google/dagger/releases/tag/dagger-2.28\r\nhttps://github.com/google/dagger/tree/master/java/dagger/hilt\r\n\r\ndagger.androidに代わるhiltというのが新たにalphaでリリースされています。まだドキュメント等は整備中のようです。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJezZRQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJe7Shg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/gs6uhs/dagger_228_has_been_released/",
+              "publishedAt": "2020-05-30T05:21:19Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "JavaDocはこちら\r\nhttps://dagger.dev/api/2.28/",
+              "publishedAt": "2020-05-31T01:47:38Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1401",
+        "title": "Flutterチームが2020年第2四半期のアンケートを実施中",
+        "body": "https://google.qualtrics.com/jfe/form/SV_5oNFjVJWGRECS3z?Source=Reddit\r\nhttps://www.reddit.com/r/FlutterDev/comments/gr0mz6/take_our_q2_survey/\r\n\r\n四半期に一回、恒例のやつです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJezYiw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJezYiw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ちなみに2020年第1四半期アンケートの結果はこちら\r\n\r\nhttps://medium.com/flutter/what-are-the-important-difficult-tasks-for-flutter-devs-q1-2020-survey-results-a5ef2305429b",
+              "publishedAt": "2020-05-30T05:19:06Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1402",
+        "title": "Android 11 Beta Launch Show",
+        "body": "今年はGoogle I/Oがありませんが、かわりにBeta Launch ShowというAndroid 11の機能を紹介するイベントがあるそうです。恒例のWhat's Newシリーズもあるようです。\r\n\r\nhttps://developer.android.com/android11\r\n\r\n当初は6/3を予定していましたが、現状はAndroid 11 Betaを祝うのに相応しくない時期（おそらくいまUSで頻発している暴動のことだと思います）ということで延期になったようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1403",
+        "title": "Scroller を使う",
+        "body": "スクロール時のアニメーションを実現するための座標を計算してくれるライブラリだそうです。\r\n\r\nhttp://y-anz-m.blogspot.com/2020/05/scroller.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJe2DpA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJe2DpA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "不勉強にしてこのクラスの存在を初めて知りました。",
+              "publishedAt": "2020-05-30T12:14:33Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1404",
+        "title": "Material Components 1.2.0-beta01",
+        "body": "https://twitter.com/materialdesign/status/1266086036653867012\r\nhttps://github.com/material-components/material-components-android/releases/tag/1.2.0-beta01",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

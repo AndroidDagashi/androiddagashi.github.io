@@ -1,0 +1,403 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzI2NzkwNQ==",
+  "number": 12,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/12",
+  "title": "12-20180415-20180421",
+  "description": "",
+  "closedAt": "2018-04-22T10:58:31Z",
+  "issues": {
+    "totalCount": 15,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABdvOEt0a-A==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOEr5fuQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/165",
+        "title": "Pで導入されるSlice APIについて",
+        "body": "https://blog.novoda.com/android-p-slices-missing-documentation-part-1/\r\nhttps://blog.novoda.com/android-p-slices-missing-documentation-part-2/\r\n\r\n不勉強にして Slices API があるのを初めて知りました。アプリによっては色々と活用できそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFtnXnw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFtqcbA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ここでゴニョゴニョつぶやいてますが、まだAPIはバギーなのでAndroid P Preview 2に期待したいところっすね！\r\nhttps://twitter.com/operandoOS/status/987566097653088256",
+              "publishedAt": "2018-04-22T11:38:43Z",
+              "author": {
+                "login": "operando",
+                "url": "https://github.com/operando",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/2127716?u=cb0f37b7cd1f687a97dcd8319af4157ca011147e&v=4"
+              }
+            },
+            {
+              "body": "なるほど！DP2でまた変わりそうな気もしますね。ところで、この機能に気付いたのは岡野さんのツイートが発端でした。いつもありがとうございます！",
+              "publishedAt": "2018-04-23T00:41:11Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/164",
+        "title": "EvernoteチームによるFlutterの評価",
+        "body": "https://www.evernote.com/shard/s12/sh/1192435f-c2c2-4bbf-817c-1d2597f060ee/17099c74e9beff36\r\n\r\nやはりまだ安定しない印象。とくに既存アプリへの組込みはなかなか辛そうな印象です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/163",
+        "title": "Support Library v28で追加されたコンポーネントの解説",
+        "body": "https://medium.com/exploring-android/exploring-the-v28-android-design-support-library-2c96c6031ae8",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/162",
+        "title": "Kotlin 1.2.40リリース",
+        "body": "https://blog.jetbrains.com/kotlin/2018/04/kotlin-1-2-40-is-out/\r\n\r\n- `closeinline` や `suspend` な引数をinline functionでも使えるように\r\n- interfaceのメソッドをjava側で `default` にする `@JvmDefault` の追加(experimental)\r\n- などなど",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/161",
+        "title": "AndroidStudio より IntelliJ の方がメモリ消費量が少なくていいぜ、という話",
+        "body": "https://www.reddit.com/r/androiddev/comments/8d0w75/intellij_idea_is_faster_than_android_studio_30/\r\n\r\n本当か分からないけれど、試してみてもよさそう。なお、Jakeのコメントの downloadmoreram.com は、Reddit でよく出てくるジョークらしい。\r\n詳細は http://knowyourmeme.com/memes/download-more-ram を参照。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/160",
+        "title": "2019年以降のOracle Java 8のライセンスがAndroidに影響するか？",
+        "body": "https://www.reddit.com/r/androiddev/comments/8d1n2d/java_se_9_after_2019_android_looking_ahead/\r\n\r\nたぶん、スレッド主の心配はAndroidで使えるかということだと思うのだけれど、Jakeも書いているように、開発時に使っているJavaがOracle Javaで、かつ、2019年以降にJava 8を使う場合にのみ問題になるように思える。SDKがJava 9や10でも問題はないので、Jakeのいうバグが直っているなら気にしなくてよさそう。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/159",
+        "title": "ここ3ヶ月で公開されたライブラリ25本",
+        "body": "https://medium.com/@mmbialas/25-new-android-libraries-projects-and-tools-worthy-to-check-in-spring-2018-68e3c5e93568\r\n\r\nUI系にちょっと偏っている気もしますが、ざっと眺めるとおもしろいです。Hiroakiはちょっと気になっています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/158",
+        "title": "GradleのAndroidプラグインのドキュメントが役に立たないことにお怒りの開発者",
+        "body": "https://www.reddit.com/r/androiddev/comments/8cqltq/rant_the_android_gradle_plugins_documentation_is/\r\n\r\nbuildVariantに何が入っているか分からなくてイライラする気持ちはよく分かります。デバッガで止めて中身見るとかが一番早いかも。Jakeの、Gradleの変数に頼るよりも自前でタスクつくった方がいいというアドバイスもあります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/157",
+        "title": "Android ThingsのRCがリリース",
+        "body": "https://android-developers.googleblog.com/2018/04/android-things-release-candidate.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Android Things",
+              "description": "",
+              "color": "b8f77e"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/156",
+        "title": "React Native アプリの開発基盤構築",
+        "body": "http://techlife.cookpad.com/entry/2018/04/17/090000\r\n\r\nReact Nativeの開発基盤の作り方について一通りまとめられています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/155",
+        "title": "Android Studio 3.2 Canary 11",
+        "body": "https://androidstudio.googleblog.com/2018/04/android-studio-32-canary-11-now.html\r\n\r\n- アプリ起動時のメソッドトレースを記録できるように\r\n- LintでKotlin - Java間の相互運用性をチェックできるように",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFsHoEw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFsf-4A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">Lint in AGP 3.2 alpha 11 adds a &#39;SyntheticAccessor&#39; check which you can enable to eradicate these useless methods from your libraries. Learn more about them here: <a href=\"https://t.co/xCE4J6rAdv\">https://t.co/xCE4J6rAdv</a>. Also re-computed updated synthetic accessor method counts (slide 77) from apps on my phone. <a href=\"https://t.co/88SPzJwpNC\">pic.twitter.com/88SPzJwpNC</a></p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/985930270074425345?ref_src=twsrc%5Etfw\">2018年4月16日</a></blockquote>\r\n",
+              "publishedAt": "2018-04-17T02:07:55Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "アプリ起動時のメソッドトレース、いいですね。欲しかった機能の1つです。",
+              "publishedAt": "2018-04-18T00:45:20Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/154",
+        "title": "ViewをそのままPDFにする",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"ja\" dir=\"ltr\">Android 4.4 KitKat 以降なら View をそのまま PDF にできる。しかも画像としてではなく文字列も含めて。 <a href=\"https://t.co/V9b2CHrJry\">https://t.co/V9b2CHrJry</a></p>&mdash; Yuichi Araki (@yuichi_araki) <a href=\"https://twitter.com/yuichi_araki/status/985708737225678848?ref_src=twsrc%5Etfw\">2018年4月16日</a></blockquote>",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/153",
+        "title": "プロパティとファンクションの使い分け",
+        "body": "https://blog.kotlin-academy.com/kotlin-should-i-define-function-or-property-6786951da909\r\n\r\n- プロパティ\r\n  - 状態を表す\r\n  - 例外を投げない\r\n  - 処理が軽い\r\n  - 複数回呼んでも同じ結果を返す\r\n\r\n- ファンクション\r\n  - ふるまいを表す\r\n\r\n参考:  [Kotlin公式の、この使い分けに関するコーディング規約](https://kotlinlang.org/docs/reference/coding-conventions.html#functions-vs-properties)",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/152",
+        "title": "Google I/O 2018のスケジュールを分析した結果",
+        "body": "https://medium.com/@elye.project/google-io-2018-schedule-analysis-1085e9ae1d4f\r\n\r\nFlutter、Material Design 2（もし発表されるなら）あたりが話題になりそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/151",
+        "title": "Dagger2 vs. Koin",
+        "body": "https://www.reddit.com/r/androiddev/comments/8ch4cg/dagger2_vs_koin_for_dependency_injection/\r\n\r\nDIライブラリのDagger2と、Service LocatorライブラリのKoinでどちらがいいか、という話。多くの人がDaggerは複雑すぎるしたいていの場合はService Locatorで十分と述べているのに対して、Jakeが犬小屋と家と摩天楼を例に、大規模なアプリではDIが必要であると述べている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

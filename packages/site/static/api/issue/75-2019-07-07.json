@@ -1,0 +1,299 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDQ1MTc4Mg==",
+  "number": 75,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/75",
+  "title": "75 2019-07-07",
+  "description": "Kotlin 1.3.41, Jetpack ComposeとSwift UI, Android Qでの音声キャプチャリング, KotlinのMutable Collection APIの秘密, など",
+  "closedAt": "2019-07-07T10:21:01Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABK_OG7Zgqw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOG6nNPA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/912",
+        "title": "Material Designガイドラインにデータ可視化についての項が追加される",
+        "body": "https://material.io/design/communication/data-visualization.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/911",
+        "title": "KotlinのMutable Collection APIの秘密",
+        "body": "https://proandroiddev.com/the-mystery-of-mutable-kotlin-collections-e82cbf5d781\r\n\r\nKotlinのCollection APIは内部的にはJavaのCollection APIを使っています。この記事ではどのようにしてJavaのAPIがKotlinのinterfaceを実装しているかのように振る舞わせているのか、というところを解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/910",
+        "title": "FlutterとKotlin Multiplatform",
+        "body": "https://blog.kotlin-academy.com/flutter-and-kotlin-multiplatform-relationship-890616005f57",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/909",
+        "title": "Jetpack ComposeとSwift UI",
+        "body": "https://quickbirdstudios.com/blog/swiftui-vs-android-jetpack-compose/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/908",
+        "title": "7月2日のJetpack/AndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/releases#july_2_2019\r\n\r\nTransition 1.1.0がリリースされたほか、いろいろなライブラリがRCに昇格しています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/907",
+        "title": "婚活サービスyoubrideがアプリをFlutterでリニューアル",
+        "body": "https://developer.diverse-inc.com/entry/2019/07/04/173000\r\n\r\n通信はgRPCだったり、いろいろ挑戦しているようです。\r\n国内でもFlutterの事例が増えていくのは嬉しいですね",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/906",
+        "title": "Leaky APIs are Leaky",
+        "body": "https://commonsware.com/blog/2019/07/03/leaky-apis-are-leaky.html\r\n\r\nここでいう`leaky API`はメモリリークのあるAPIではなく、`考慮漏れで開発者の意図していない使い方ができるAPI`のことです。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/905",
+        "title": "Android Qでの音声キャプチャリング",
+        "body": "https://android-developers.googleblog.com/2019/07/capturing-audio-in-android-q.html\r\n\r\nAndroid Qから追加された他のアプリの音声をキャプチャリングできる機能についてまとまっています。自分のアプリが他のアプリにキャプチャリングされたくない場合は明示的にAndroidManifest.xmlに書くなどの対応が必要のようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/904",
+        "title": "Android Qでリークの原因を探った話",
+        "body": "https://developer.squareup.com/blog/story-of-an-android-q-leak-attachment-crazy-town/\r\n\r\nSquareがAndroid Q上でのアプリの動作確認をしている時に発見したリークと、その原因究明のまとめです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHlY1HQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHlZbUw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://github.com/square/workflow\r\n\r\nSquareは今アーキテクチャの移行作業を行っているようです。\r\nこれSwiftの実装もあるのでAndroid/iOSで同じアーキテクチャを採用してるんですかね。\r\n\r\nKotlin Multiplatform Projectでデータ層の共通化を模索しているようですし、全体のアーキテクチャ自体を統一するのも納得ですね。",
+              "publishedAt": "2019-07-07T02:14:53Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "このリークの話はとても面白いですね `onAttachedToWindow` の中で `removeAllViews` を呼んだせいで、 `detach` のあとに `attach` がきたという話のようでした。\r\n\r\n余談ですが LeakCanary 2 はとてもリークが見やすくなっているようでいいですね。",
+              "publishedAt": "2019-07-07T06:49:18Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/903",
+        "title": "Android Q(&A)",
+        "body": "https://arstechnica.com/gadgets/2019/07/android-qa-android-engineers-take-us-on-a-deep-dive-of-android-q/\r\n\r\nGoogleのAndroidエンジニアであるDave BurkeやIliyan Malchev、Anwar GhuloumがAndroid Qで追加される新機能についてインタビューを受けています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/902",
+        "title": "Kotlin 1.3.41",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.3.41\r\n\r\n主にバグ修正のようです。数があるのと、新しい型推論まわりにも修正があるので、アップデートしておくとよさそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/901",
+        "title": "開発者へのダイレクトリクルーティング",
+        "body": "https://www.reddit.com/r/androiddev/comments/c84t0q/android_recruitment_to_a_whole_new_level/\r\n\r\n開発者オプションが有効になってたら求人情報を表示するアプリがあるようです。\r\nWebではコンソールを使って同じことをしているのをたまに見かけますが、スマホでこれをやるのは新しいですね",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

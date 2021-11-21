@@ -1,0 +1,322 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzY1NzE2Ng==",
+  "number": 34,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/34",
+  "title": "34-20180916-20180922",
+  "description": "DroidKaigi 2019 発表者募集開始、Kotlin 1.3 RCがリリース、広告IDを使っている覚えがないのにGoogle Playからポリシー違反を通告されたけどFirebaseのせいだった、など",
+  "closedAt": "2018-09-23T10:53:33Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABEvOFaHdCw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOFYNxTw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/431",
+        "title": "Kotlin Conf 2018はライブストリーミングあり",
+        "body": "https://kotlinconf.com/\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGUfsEw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGUfsEw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "時差が7時間なので、リアルタイムで見るのはちょっとキツいかもしれません。レコーディングもすぐ公開されるといいですね。",
+              "publishedAt": "2018-09-24T22:17:02Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/430",
+        "title": "広告IDを使っている覚えがないのにGoogle Playからポリシー違反を通告されたけどFirebaseのせいだった",
+        "body": "https://qiita.com/Nkzn/items/326ad03e358b5d3fbafc\r\n\r\n一応ドキュメントには記載ありますが、罠っぽいですねｗ",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGUJ9fA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGUJ9fA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ひぇ〜",
+              "publishedAt": "2018-09-23T02:52:19Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/429",
+        "title": "Kotlinの stdlib-jdk7 と stdlib-jdk8 がなにをやっているか",
+        "body": "https://www.reddit.com/r/androiddev/comments/9gvork/what_is_the_future_of_java_on_android/\r\n\r\n完全に本題からずれていますが、JakeによるとKotlinがjdk7/8用の新しいAPIを使って高速化をはかっているわけではないようです（したがってjdk9やjdk10の標準ライブラリも提供されていない）。おそらくjdk8のStreamなどの新しいAPIとの相互運用性を上げるためのライブラリという位置付けなのでしょう。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGUFaXg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGUFaXg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "余談ですが、Jakeは議論を吹っかけられるほど色々と教えてくれるので、やり込められている側には同情しますが傍から読んでいる分にはとても興味深いですw",
+              "publishedAt": "2018-09-22T03:32:13Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/428",
+        "title": "GoogleのAndroidチームがエディタに何をつかっているか",
+        "body": "https://www.reddit.com/r/androiddev/comments/9gdfhv/most_members_of_the_android_team_at_google_used/\r\n\r\n当然ながらAndroidフレームワークのチームはAndroid Studioをつかっていないようです :-p\r\n\r\nJakeがSublimeというのはちょっと意外でした（てっきりJetBrainsかと）",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/427",
+        "title": "Support Library 28.0.0とAndroidX 1.0.0がリリース",
+        "body": "https://developer.android.com/topic/libraries/support-library/revisions#28-0-0\r\nhttps://developer.android.com/topic/libraries/support-library/androidx-rn#1.0.0\r\n\r\n`android.support` パッケージのフィーチャーリリースは28で最後だそうです。そろそろandroidxへの移行をしないといけなさそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/426",
+        "title": "Kotlin 1.3 RCがリリース",
+        "body": "https://blog.jetbrains.com/kotlin/2018/09/kotlin-1-3-rc-is-here-migrate-your-coroutines/\r\n\r\nコードスタイルガイドが変わったりmain関数がsuspendにできるようになったりといくつかの変更がアナウンスされています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/425",
+        "title": "DroidKaigi 2019 発表者募集開始",
+        "body": "https://droidkaigi.jp/2019/requirements/\r\n\r\n締切は `2018/10/21 23:59` です。\r\n今年は一部発表に日英/英日の同時通訳が入るようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGUFSSQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGULPqg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "プロポーザルの書き方も公開されているようです。応募を考えている人には参考になるかもしれません。\r\nhttps://medium.com/droidkaigi/how-to-write-a-good-proposal-for-droidkaigi-2019-jp-ada3ff82d89b",
+              "publishedAt": "2018-09-22T02:45:53Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "https://medium.com/droidkaigi/how-to-write-a-good-proposal-for-droidkaigi-2019-en-2ee66e35a3c3\r\n\r\nプロポーザルの書き方、英語版もあるようです",
+              "publishedAt": "2018-09-23T11:14:54Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/424",
+        "title": "Flutter Release Preview 2がリリース",
+        "body": "https://developers.googleblog.com/2018/09/flutter-release-preview-2-pixel-perfect.html\r\n\r\n1.0が近づいていますね。\r\niOSのWidgetが充実したり、Dartコードのバックグラウンド実行が可能になったり、パッケージサイズが小さくなったり、いろいろ改善されてるようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/423",
+        "title": "StateListAnimatorでelevationを管理する",
+        "body": "https://proandroiddev.com/statelistanimator-a-powerful-little-tool-for-elevation-animation-4b31781e98a0\r\n\r\nGoogleのToDoリストアプリで見られるような、リストの最上部にいるときはToolbarのelevationを0にするようなインタラクションの実装サンプルです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/422",
+        "title": "Google Playが日本向け(?)のポイントプログラム、Google Play Pointsを開始",
+        "body": "https://japan.googleblog.com/2018/09/GooglePlayPoints.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/421",
+        "title": "Gradleの依存宣言には、なぜこの依存が必要かを記述できる",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">TIL you can add a reason to your Gradle dependency declarations, which will show up in the dependencyInsight report: <a href=\"https://t.co/XXcLq0ALzy\">https://t.co/XXcLq0ALzy</a> <a href=\"https://t.co/HIVzIQOhMk\">pic.twitter.com/HIVzIQOhMk</a></p>&mdash; Hannes Struß 🤖 (@hannesstruss) <a href=\"https://twitter.com/hannesstruss/status/1040541248879255552?ref_src=twsrc%5Etfw\">2018年9月14日</a></blockquote>\r\n\r\nコメントで記述するよりいいかもしれませんね\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGUFadg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGUFadg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "いいですね :+1: ",
+              "publishedAt": "2018-09-22T03:32:51Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

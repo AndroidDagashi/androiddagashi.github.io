@@ -1,0 +1,308 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTcyMzM4MQ==",
+  "number": 132,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/132",
+  "title": "132 2020-08-09",
+  "description": "Android 11 final Beta、Android 11 Easter Egg、アプリ内レビューAPI、Android7.1以前でLet's Encrypt証明書のサイトが見られなくなる、など。",
+  "closedAt": "2020-08-09T10:32:14Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOKCvrmA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-0_OKEXyPw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1502",
+        "title": "Material Components 1.2.0",
+        "body": "https://github.com/material-components/material-components-android/releases/tag/1.2.0\r\nhttps://www.reddit.com/r/androiddev/comments/i3zgys/material_components_release_120/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1503",
+        "title": "Android 11 final Beta",
+        "body": "https://android-developers.googleblog.com/2020/08/android-11-final-beta-update.html\r\n\r\nAndroid 11 最後のベータがリリースされました。数週間後の次のリリースが正式リリースになる予定です。\r\nまた、Exposure Notificationを位置情報オフでも使用できるようになっています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1504",
+        "title": "Android 11 Easter Egg",
+        "body": "https://9to5google.com/2020/08/06/android-11-easter-egg-neko-cat-game/\r\n\r\nAndroid 11 Beta3に新しいEaster Eggが入りました。\r\nダイヤルを回して11に合わせることで、電源ボタン長押しからのコントールメニューでCat Controlを使えるようになります。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1505",
+        "title": "2020年8月5日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#august_5_2020\r\n\r\nAppCompat 1.2.0の安定版がリリースされています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1506",
+        "title": "アプリ内レビューAPI",
+        "body": "https://android-developers.googleblog.com/2020/08/in-app-review-api.html\r\n\r\nhttps://developer.android.com/guide/playcore/in-app-review\r\n\r\nアプリ内からレビューを依頼するためのAPIが追加されます。\r\nPlay Core Libraryの一部として用意されます",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 3,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJ_OOsw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJ_6Wtw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/i450fh/leverage_the_inapp_review_api_for_your_google/",
+              "publishedAt": "2020-08-07T01:36:16Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "Play Storeへ遷移せずにレビューさせるのは、以前から要望の高かった機能だけに気になります。ガイドラインもあるので読んでおくとよさそうです。たとえば、最初に「このアプリが気に入りましたか？」という質問をして答えがYesのときのみレビューダイアログを表示、というのはダメだそうです。",
+              "publishedAt": "2020-08-09T02:12:03Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "やんざむさんのブログ記事でも触れられています。\r\n\r\nhttp://y-anz-m.blogspot.com/2020/08/google-play.html",
+              "publishedAt": "2020-08-09T02:17:49Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1507",
+        "title": "Kotlin Symbol Processingを使ったDIライブラリ",
+        "body": "https://github.com/evant/kotlin-inject\r\n\r\n実験的にKotlin Symbol Processingを使ってるDIライブラリです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1508",
+        "title": "Android7.1以前でLet's Encrypt証明書のサイトが見られなくなる",
+        "body": "https://songmu.jp/riji/entry/2020-08-06-android-letsencrypt.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1509",
+        "title": "Kotlin Coroutine Flowのテストライブラリ",
+        "body": "https://github.com/cashapp/turbine\r\n\r\nRxJavaのテストと同じような記法でFlowのテストを書くことが出来ます。今後、Android開発でFlow APIに触れることが増えると思うので、導入を検討するのも良さそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1510",
+        "title": "11 Weeks of Android: App Distribution & Monetization",
+        "body": "https://android-developers.googleblog.com/2020/08/11-weeks-of-android-app-distribution.html\r\n\r\n#11WeeksOfAndroid 8週目は新しいPlay ConsoleやIn-app review APIなどが公開されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1511",
+        "title": "Maven Centralで特定のバージョンのライブラリが利用可能になったら知らせてくれるツール",
+        "body": "Jakeが作成した、Maven Centralにライブラリが公開されたら知らせてくれるツールだそうです。自分達で複数のOSSライブラリを出していてそれに依存しているときは便利かもしれません。\r\n\r\nhttps://github.com/JakeWharton/dependency-watch",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1512",
+        "title": "Jetpack ComposeとFilamentを使ったサンプル実装",
+        "body": "https://github.com/romainguy/sample-materials-shop\r\n\r\nJetpack ComposeのConstraintLayoutの書き方や、LazyColumnForなどの基本的な使い方を学ぶことが出来ます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1513",
+        "title": "Flutter 1.2.0",
+        "body": "https://medium.com/flutter/announcing-flutter-1-20-2aaf68c89c75\r\nhttps://www.reddit.com/r/FlutterDev/comments/i473l7/announcing_flutter_120/\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJ_8mCA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJ_8mCA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "パフォーマンスの改善や、自動補完機能を含む様々なUI周りの改善などなど。\r\npluginを公開する際のpubspec.ymlのフォーマットに変更もあるようです。",
+              "publishedAt": "2020-08-09T10:06:32Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

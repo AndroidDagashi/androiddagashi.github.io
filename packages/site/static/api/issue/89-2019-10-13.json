@@ -1,0 +1,279 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDcyNDkwNg==",
+  "number": 89,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/89",
+  "title": "89 2019-10-13",
+  "description": "Kotlin 1.3.60 EAP1, AndroidDev Summit 2019のアジェンダ, Room 2.2.0, ソフトウェア開発者としてトレンドについていくためにしていること, 内部ストレージまとめ, など",
+  "closedAt": "2019-10-13T10:47:59Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOHf3QFg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfOHi2eYA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1061",
+        "title": "内部ストレージまとめ",
+        "body": "https://commonsware.com/blog/2019/10/06/storage-situation-internal-storage.html\r\n\r\nCommonsWareによる最新の状況を含めた内部ストレージの簡単なまとめです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIB1jBQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIB1jBQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自分もAndroidアプリ開発を始めたばかりの頃に「外部ストレージ」と「物理的なSDカード」をごっちゃにして混乱したことがあります。",
+              "publishedAt": "2019-10-06T23:00:14Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1062",
+        "title": "Kotlin 1.3.60 EAP 1",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.3.60-eap-23\r\n\r\nKotlin/Nativeの更新履歴はこちら\r\nhttps://github.com/JetBrains/kotlin-native/blob/master/CHANGELOG.md#v1360-oct-2019\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIC4MwQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIC4MwQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Kotlin/Nativeはパフォーマンス改善施策やwatchOSやtvOS等対応プラットフォームの追加がされています",
+              "publishedAt": "2019-10-09T08:08:11Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1063",
+        "title": "10/9のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel\r\n\r\nRoom 2.2.0, Transition 1.2.0 など、stable版に昇格したライブラリがいくつかあります。\r\n\r\n特にRoomはM:Mや1:1の関係をサポートしたり、Kotlin CoroutinesのFlowに対応したり、様々な機能が追加されています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIDkAtA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIDkAtA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The October 9th Jetpack release has a lot going on, headlined by stable releases of Room 2.2.0, Transition 1.2.0, Media2 1.0.1, and Loader 1.1.0<a href=\"https://t.co/vyKvuTcbWI\">https://t.co/vyKvuTcbWI</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1181999344230100993?ref_src=twsrc%5Etfw\">October 9, 2019</a></blockquote> \r\n\r\nGoogleのIan Lakeさんによるリリースの紹介はこちらのツイートから",
+              "publishedAt": "2019-10-10T14:12:22Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1064",
+        "title": "Android Dev Summit 2019のアジェンダが発表",
+        "body": "https://android-developers.googleblog.com/2019/10/previewing-androiddevsummit-sessions.html\r\nhttps://developer.android.com/dev-summit/schedule/day1\r\n\r\nセッション一覧が出たようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIESh8w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIESh8w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "やはり気になるのは \"What's New in Jetpack Compose\" でしょうか。",
+              "publishedAt": "2019-10-12T23:15:35Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1065",
+        "title": "Bazel 1.0",
+        "body": "https://blog.bazel.build/2019/10/10/bazel-1.0.html\r\n\r\nAndroidにも対応しているGoogle製のビルドツール、Bazelが1.0になりました",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1066",
+        "title": "ソフトウェア開発者としてトレンドについていくためにしていること",
+        "body": "https://www.reddit.com/r/androiddev/comments/dgivow/how_do_you_keep_up_as_a_software_developer/\r\n\r\n個人プロジェクトをやる、ポッドキャストやブログを読むなどなど",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1067",
+        "title": "WindowInsetsの扱いを簡単にするライブラリ、Insetter",
+        "body": "https://www.reddit.com/r/androiddev/comments/dgb6fr/insetter_a_library_to_help_apps_handle/\r\nhttps://github.com/chrisbanes/insetter\r\n\r\nGoogleのChris Banes氏によるライブラリです。\r\nAndroid 10のジェスチャーナビゲーションによってWindowInsets周りの処理を書くことが必須になりつつあるので、これは捗りそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1068",
+        "title": "Jetpack Composeのリリースが近い？",
+        "body": "https://commonsware.com/blog/2019/10/10/spoiler-alert.html\r\nhttps://www.reddit.com/r/androiddev/comments/dggpqy/jetpack_compose_binaries_are_now_available_to/\r\n\r\n[GoogleのMavenレポジトリ](maven.google.com)にJetpack Compose関連のアーティファクトが現れたようです。\r\nまだ使えるものではないようですが、たとえばAndroid Dev Summitでなにか発表されるのかもしれません",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1069",
+        "title": "MongoDBがRealmとの統合ロードマップを発表",
+        "body": "https://www.mongodb.com/realm#roadmap\r\n\r\n現在はMongoDB Realmというプロダクトを招待制のβ版として提供しているようです。\r\n現在これにMongoDB Stitchの機能を移植する作業をしていて、将来的にはMongoDB Realm一本になるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIEU1NA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIEU1NA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Realm 6.0で`Thread Safe Objects`が使えるようになる、と書いてあるのも気になります。",
+              "publishedAt": "2019-10-13T10:31:57Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1070",
+        "title": "継続的テストのための新しいエミュレータ用ツール",
+        "body": "https://android-developers.googleblog.com/2019/10/continuous-testing-with-new-android.html\r\n\r\nAndroid Emulatorを動かすDockerイメージを作るスクリプト等(現状Linuxのみサポート)公開されたようです。\r\nAndroidのシステムイメージがそのままDockerイメージになっているわけではなく、エミュレータを起動したDockerイメージの中で動かしています。\r\n\r\ngRPCやWebRTCを利用してホストからエミュレータにアクセスすることもできます(もちろんADBでも)",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI",
+              "description": "Continuous Integration",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

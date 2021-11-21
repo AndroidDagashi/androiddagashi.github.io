@@ -1,0 +1,327 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDEwNDU5Mg==",
+  "number": 58,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/58",
+  "title": "58 2019-03-10",
+  "description": "Android Studio 3.3.2、3.4-RC1、WorkManager 1.0、BottomNavigationの新サンプル、ExpoのFlutter対応など",
+  "closedAt": "2019-03-10T10:41:04Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABK_OGPwRfQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGNObjQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/711",
+        "title": "アプリの新しい収益源、Rewarded Product",
+        "body": "https://android-developers.googleblog.com/2019/03/supplement-your-earnings-with-rewarded.html\r\n\r\nお金を払う代わりに特定のことをする、というタイプのアレです。\r\n最初はビデオ広告が提供されるようです。\r\n\r\nBillingライブラリの一部として提供されます",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/710",
+        "title": "AndroidがFIDO2プロトコルの認定を取得",
+        "body": "https://wired.jp/2019/03/04/android-passwordless-login-fido2/\r\n\r\n今までは各開発者が認定を取得する必要がありましたが、今回の認定で簡単に利用することができるようになりました。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/709",
+        "title": "Android Studio 3.3.2",
+        "body": "https://androidstudio.googleblog.com/2019/03/android-studio-332-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/708",
+        "title": "Kotlin: Write Once, Run (Actually) Everywhere",
+        "body": "https://www.infoq.com/presentations/kotlin-run-anywhere\r\nhttps://www.reddit.com/r/androiddev/comments/ayp0xm/jake_whartons_qcon_talk_kotlin_write_once_run/\r\n\r\nQCon San Francisco 2018でJake Wharton氏が話したKotlin Multiplatformに関してのトークの録画です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/707",
+        "title": "CoroutineContextとCoroutineScopeの違い",
+        "body": "https://medium.com/@elizarov/coroutine-context-and-scope-c8b255d59055",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/706",
+        "title": "BottomNavigationViewをマテリアルデザインの仕様通りにしたサンプル",
+        "body": "https://github.com/googlesamples/android-architecture-components/tree/master/NavigationAdvancedSample\r\n\r\n現在のBottomNavigationViewはマテリアルデザインガイドラインに準拠していないという[issue](https://issuetracker.google.com/issues/80029773)があったのですが、それに対してガイドライン準拠にするサンプルがGoogleのレポジトリに追加されたようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHBbJ_w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHBbJ_w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Reddit のスレはこちら\r\nhttps://www.reddit.com/r/androiddev/comments/ayvfme/googles_aac_navigationadvancedsample_for/",
+              "publishedAt": "2019-03-10T07:47:59Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/705",
+        "title": "Android Studio 3.4 RC1",
+        "body": "https://androidstudio.googleblog.com/2019/03/android-studio-34-release-candidate-1.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/704",
+        "title": "Navigation 2.0.0-rc02",
+        "body": "https://developer.android.com/jetpack/androidx/releases/navigation#2.0.0-rc02\r\n\r\n1.0.0がリリースされないうちに2.0.0のRC版がでました。\r\nAndroidX対応のみで、挙動的には1.0.0-rc02と変わらないそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/703",
+        "title": "WorkManager 1.0.0",
+        "body": "https://android-developers.googleblog.com/2019/03/android-jetpack-workmanager-stable.html\r\n\r\nWorkManagerがついにステーブルリリースです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHAKfpA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHAKfpA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://github.com/firebase/firebase-jobdispatcher-android\r\n\r\nFirebase JobDispatcherのレポジトリを見ると、Android Q以降をターゲットしたアプリでは動かないだろうこと、今後はWorkManagerに注力していくことが記載されています",
+              "publishedAt": "2019-03-06T01:51:54Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/702",
+        "title": "ExpoがFlutterに対応",
+        "body": "https://blog.expo.io/flutter-unimodules-bb66b9bf21de\r\n\r\nUnimoduleのFlutter Adapterを提供し始めたようです。\r\nUnimoduleとは、Expoの提唱する各種モバイルアプリ開発プラットフォームで使えるネイティブモジュールの共通仕様です。\r\n大きく分けて、開発プラットフォーム(ReactNativeとかFlutterとか)に依存しないネイティブモジュール実装部分と、各開発プラットフォーム用のアダプタで構成されているようです。\r\nExpoというとReact Native用のSDKという認識があったのですが、2018年初頭からこのUnimodule移行をすすめていたようです。\r\n\r\n現在はReact NativeとFlutterに対応していますが、今後他の開発プラットフォームにも対応する予定だそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHCZzIA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHCZzIA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ちなみに、FlutterがTypeScriptで書けるようになるとかそういう話ではないです。",
+              "publishedAt": "2019-03-13T05:09:24Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/701",
+        "title": "画像の内容に応じて適切にクロップするライブラリ",
+        "body": "https://github.com/the-super-toys/glimpse-android\r\nhttps://www.reddit.com/r/androiddev/comments/aws7vz/a_contentaware_cropping_library_for_android/\r\n\r\n中身を見れば分かりますがTemsorflowを使っているようです。GlideのTransformationが提供されているのは便利ですね。\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/700",
+        "title": "FlutterのAnimated系Widgetまとめ",
+        "body": "https://medium.com/flutter-jp/implicit-animation-b9d4b7358c28\r\n\r\nGifとサンプルコード付きでまとまっています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

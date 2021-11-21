@@ -1,0 +1,279 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzgxMTcxMA==",
+  "number": 42,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/42",
+  "title": "42 2018-11-18",
+  "description": "AndroidX移行の現実、Androidで使えるDIライブラリのパフォーマンス比較、AndroidのGCの歴史、など。",
+  "closedAt": "2018-11-18T11:04:57Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABK_OFsIbxg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOFqdAXg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/526",
+        "title": "Jetpack Preferences",
+        "body": "https://www.youtube.com/watch?v=PS9jhuHECEQ\r\nhttps://developer.android.com/guide/topics/ui/settings/\r\n\r\nAndroid Dev Summit 2018のセッションで紹介されていたのですが、JetPackに入ったPreferencesがだいぶ便利なようでした。むかしPreferenceFragmentなどをすこし使って諦めた人は、見るとちょっと感動するかもしれません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/525",
+        "title": "AndroidのGCの歴史",
+        "body": "https://www.youtube.com/watch?v=Zc4JP8kNGmQ\r\n\r\nAndroid Dev Summit 2日目にChetとRomainが行ったGCについてのセッションです。Droidcon London 2018のキーノートでおこなったものとほぼ同じようですが、自分は初めて聞いたのでおもしろかったです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/524",
+        "title": "Kotlin Conf 2018のビデオが出そろう",
+        "body": "https://kotlinconf.com/talks/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/523",
+        "title": "Google Analytics for Mobileが2019年10月にサンセット予定",
+        "body": "https://www.reddit.com/r/androiddev/comments/9wyz74/google_analytics_for_mobile_to_be_sunsetted_in/\r\n\r\nFirebaseへの移行が求められているようです。2020年1月には過去のデータも見られなくなるとのことです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/522",
+        "title": "どのアプリで共有されたか知る方法",
+        "body": "https://medium.com/code-with-lisa/get-results-from-android-chooser-9cfc5445a871\r\n\r\nAPI 21以降に追加された [Intent#createChooser(Intent, CharSequence, IntentSender)](https://developer.android.com/reference/android/content/Intent#createChooser(android.content.Intent,%20java.lang.CharSequence,%20android.content.IntentSender)) を使うと、ユーザーがたとえばテキストや写真を共有したときにどのアプリで共有されたかを知ることができるという話です。\r\n\r\nビジネス側から、よく計測用に欲しいといわれることが多かったので重宝しそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/521",
+        "title": "Activity、Fragment、Viewにコンストラクタインジェクションする",
+        "body": "https://satoshun.github.io/2018/11/android_all_inject_ctor/\r\n\r\nFragmentFactoryなどをつかってコンストラクタに引数を渡してDIする方法です。\r\n\r\n自分がよく理解できていないのですが、これができるとComponentクラスにいちいち`inject`メソッドを書かなくてよくなるのが嬉しいのでしょうか。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/520",
+        "title": "Androidで使えるDIライブラリのパフォーマンス比較",
+        "body": "https://github.com/Sloy/android-dependency-injection-performance\r\n\r\nKoin, Kodein, Dagger2を、それぞれJavaとKotlinで使った時のパフォーマンスを比較しています。\r\nやはりコード生成しているDaggerは速いですね。\r\n\r\nKoinに関しては、1.1.0で改善するようです\r\nhttps://github.com/InsertKoinIO/koin/issues/281",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGjNtCQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGjNtCQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "話はちょっと違いますが、小数点が `,` なので最初は混乱してしまいました。",
+              "publishedAt": "2018-11-17T01:51:51Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/519",
+        "title": "AndroidX移行の現実",
+        "body": "https://blog.danlew.net/2018/11/14/the-reality-of-migrating-to-androidx/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGjNq2w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGjNq2w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "コード生成系のライブラリがAndroidX対応していてくれれば、そんなに大変じゃないかもですね。コンフリクトの解消はたしかにスクリプトがあった方がよさそうです。",
+              "publishedAt": "2018-11-17T01:44:02Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/518",
+        "title": "Android StudioのSVG to VectorDrawableコンバータをコマンドラインで使う",
+        "body": "https://www.androiddesignpatterns.com/2018/11/android-studio-svg-to-vector-cli.html\r\n\r\nAndroid Studioのコード落としてきてビルドしたらイケるようです。\r\n一応ビルド済みのものも用意してくれています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/517",
+        "title": "Kotlin 1.3.10リリース",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">Kotlin 1.3.10 is now available, with fixes for a number of regressions in Kotlin 1.3. See the full changelog and release notes here: <a href=\"https://t.co/YxJbW0szm5\">https://t.co/YxJbW0szm5</a></p>&mdash; Kotlin (@kotlin) <a href=\"https://twitter.com/kotlin/status/1062413399890518021?ref_src=twsrc%5Etfw\">2018年11月13日</a></blockquote>\r\n\r\nhttps://github.com/JetBrains/kotlin/releases/tag/v1.3.10\r\nバグフィックスなリリースです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/516",
+        "title": "Emulator 28.0.16がリリース",
+        "body": "https://androidstudio.googleblog.com/2018/11/emulator-28016-stable.html\r\nhttps://www.reddit.com/r/androiddev/comments/9wfucd/emulator_28016_stable\r\n\r\n同じAVDを複数インスタンス立ち上げられるようになったみたいで、特にCIで捗りそうです。\r\nほかにもいろいろ改善が入っています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/515",
+        "title": "novoda/bintray-releaseのGradle 4.5以降対応版がリリース",
+        "body": "https://github.com/novoda/bintray-release/releases/tag/0.9\r\n\r\nライブラリ開発者には朗報です。長いことメンテされてなかった印象ですが、ついにGradle4.5以降に対応しました。\r\nまあAndroid Gradle Plugin 3.2対応のときにだいたい別のライブラリに移行しちゃってそうですが……",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

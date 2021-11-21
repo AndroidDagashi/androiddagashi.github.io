@@ -1,0 +1,311 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDAzMDA2NQ==",
+  "number": 54,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/54",
+  "title": "54 2019-02-10",
+  "description": "DroidKaigi2019資料まとめ、ViewPager2、AndroidStudio 3.3.1、OkHttpのminSdkVersionが21に、KotlinConf2019、など",
+  "closedAt": "2019-02-10T10:34:08Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABEvOGFmIyw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGDs3xw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/663",
+        "title": "DroidKaigi2019資料まとめ",
+        "body": "今年もお疲れさまでした\r\n\r\n一日目: https://qiita.com/sacred-sanctuary/items/ec43f811193e7ec19399\r\n二日目: https://qiita.com/sacred-sanctuary/items/f06accea3a879d006f18",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/662",
+        "title": "ViewPager2 1.0.0-alpha01",
+        "body": "https://developer.android.com/jetpack/androidx/releases/viewpager2#1.0.0-alpha01\r\nhttps://www.reddit.com/r/androiddev/comments/ao7wf4/viewpager2_100alpha01_released_viewpager_rewrite/\r\n\r\nRecyclerViewベースで書き直された新しいViewPagerです。\r\nRecyclerViewでありながらもFragmentが使えるので、コードを読んでみると面白いかもしれません。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG4tcFg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG4tcFg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "まだソースを読んでいませんが、FragmentStatePagerAdapterはTransactionTooLargeExceptionで悩まされたのでそのあたりが改善しているとうれしいですね :-)",
+              "publishedAt": "2019-02-10T09:42:12Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/661",
+        "title": "Android Studio 3.3.1",
+        "body": "https://developer.android.com/studio/releases/\r\nhttps://www.reddit.com/r/androiddev/comments/anw5wc/android_studio_331_released/\r\n\r\n細かいチェンジログはありませんが、バグ修正とパフォーマンス改善なリリースだそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/660",
+        "title": "Room 2.1のKotlin Coroutinesサポート",
+        "body": "https://medium.com/androiddevelopers/room-coroutines-422b786dc4c5\r\n\r\nRoom開発チームの一人であるFlorina Muntenescuさんによる解説。\r\n\r\nJavaコードを生成するRoomでどのようにCoroutinesをサポートしているのか、という解説もあり興味深いです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/659",
+        "title": "誤ってnon-finalなclassが公開されるのを防ぐライブラリ",
+        "body": "https://github.com/JakeWharton/nopen\r\n\r\nJakeの一貫していた主張であるところの「クラスのデフォルト修飾子はfinalであるべき」をそのまま形にしたライブラリのようです。\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">After four(ish) years of joking about it, I finally released an error-prone check which prevents accidentally exposing non-final, non-abstract classes in public API. Building a library? Add the &quot;Nope&#39;n&quot; check to your builds: <a href=\"https://t.co/Oa4jT6lchE\">https://t.co/Oa4jT6lchE</a></p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/1093185103868686336?ref_src=twsrc%5Etfw\">February 6, 2019</a></blockquote>\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/658",
+        "title": "Material-Component 1.1.0-alpha03リリース",
+        "body": "https://github.com/material-components/material-components-android/releases/tag/1.1.0-alpha03\r\n\r\nCoordinatorLayoutが新しくなったようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/657",
+        "title": "OkHttp 3.13のminSdkVersionが21に",
+        "body": "https://medium.com/square-corner-blog/okhttp-3-13-requires-android-5-818bb78d07ce\r\n\r\n前から噂されていましたがTLSv1.2を標準にするためにminSdkVersionを上げたそうです。バージョンを上げられない人向けにOkHttp 3.12.xブランチもメンテするとのことです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/656",
+        "title": "iOSにあってAndroidにない欲しい機能",
+        "body": "https://www.reddit.com/r/Android/comments/an1vfj/what_is_something_you_wish_android_could_do_that/\r\n\r\n色々な意見があって興味深いです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 3,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG3GhLA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG37XxA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "個人的にはGBoardにペーストボタン、がこの中で一番欲しいです",
+              "publishedAt": "2019-02-04T22:04:26Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "ステータスバータップでのクイックリターンが私はほしいですねー。\r\nあとはちょっとズレますがApple Pencilなみのスタイラス…",
+              "publishedAt": "2019-02-07T05:57:08Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "https://www.reddit.com/r/iphone/comments/anev5a/what_is_something_you_wish_iphone_could_do_that/\r\n\r\nOPがr/iphoneで逆の質問をしてみたようです",
+              "publishedAt": "2019-02-07T05:57:34Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/655",
+        "title": "Kotlin Conf 2019の日付と場所が発表",
+        "body": "https://twitter.com/kotlinconf/status/1092399874719473666?s=09\r\n\r\n12/04-06でコペンハーゲンだそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/654",
+        "title": "Navigation 1.0.0-beta01",
+        "body": "https://developer.android.com/jetpack/androidx/releases/navigation\r\n\r\n初のベータリリースです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG3LjNQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG3LjNQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">Navigation 1.0.0-beta01 is out now! Navigation is now API stable, but bugs or feature requests (for the next release) are always welcome. Note the one behavior change, detailed in the release notes: <a href=\"https://t.co/erLXGTF8Jr\">https://t.co/erLXGTF8Jr</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1092500135467044864?ref_src=twsrc%5Etfw\">2019年2月4日</a></blockquote>\r\n\r\nAPI仕様はこれで確定のようですね。正式リリースが待ち遠しい…\r\n",
+              "publishedAt": "2019-02-05T05:03:58Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/653",
+        "title": "WorkManager 1.0.0-beta04",
+        "body": "https://developer.android.com/jetpack/androidx/releases/work\r\n\r\nバグ修正だけのようです。そろそろ正式リリースも近いでしょうか。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG363sA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG363sA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "いくつか不具合が紛れ込んだようで、1.0.0-beta05がすでにリリースされています(笑",
+              "publishedAt": "2019-02-07T05:03:35Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

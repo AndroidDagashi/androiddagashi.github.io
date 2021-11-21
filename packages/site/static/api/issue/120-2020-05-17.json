@@ -1,0 +1,178 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTQwMjU4Mw==",
+  "number": 120,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/120",
+  "title": "120 2020-05-17",
+  "description": "AndroidStudio 4.0 RC1、Kotlin 1.4-M2、ConstraintLayout 2.0.0 beta 6、C言語だけでAndroidアプリを作る、2020年5月14日のAndroidXリリース、など。",
+  "closedAt": "2020-05-17T10:27:36Z",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOJNQSpA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOJO7tWA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1382",
+        "title": "AndroidStudio 4.0 RC1",
+        "body": "https://androidstudio.googleblog.com/2020/05/android-studio-40-release-candidate-1.html\r\nhttps://www.reddit.com/r/androiddev/comments/gig7r8/android_studio_40_release_candidate_1_available/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1383",
+        "title": "Kotlin 1.4-M2",
+        "body": "https://blog.jetbrains.com/kotlin/2020/05/1-4-m2-standard-library\r\n\r\nKotlin 1.4-M2における、スタンダードライブラリ、デリゲーション周りの追加、変更点を説明しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1384",
+        "title": "BBQ用アプリがブラウザアプリとして扱われる不具合",
+        "body": "https://www.androidpolice.com/2020/05/11/grillscape-navigator-webers-barbecue-thermometer-app-really-wants-to-be-your-default-browser/\r\n\r\nほぼ笑い話ですが、AndroidManifest.xmlの設定が適当だったせいでデフォルトブラウザの候補にグリル器具をリモートコントロールするアプリが表示されて話題になっていました。\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">I think my BBQ just offered to be my default browser? <a href=\"https://t.co/dSfHZRTGAB\">pic.twitter.com/dSfHZRTGAB</a></p>&mdash; Kate McNamara (@kaydo) <a href=\"https://twitter.com/kaydo/status/1259747848502960130?ref_src=twsrc%5Etfw\">May 11, 2020</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJYjhUQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJYjhUQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "この不具合の原因についてCommonsWareが解説してくれています。\r\nhttps://commonsware.com/blog/2020/05/13/vet-your-manifest-again.html",
+              "publishedAt": "2020-05-17T01:09:45Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1385",
+        "title": "ConstraintLayout 2.0.0 beta 6",
+        "body": "https://androidstudio.googleblog.com/2020/05/constraintlayout-200-beta-6.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1386",
+        "title": "C言語だけでAndroidアプリを作る",
+        "body": "https://www.reddit.com/r/androiddev/comments/ghaxyb/build_android_apps_entirely_in_c/\r\nhttps://github.com/cnlohr/rawdrawandroid\r\n\r\nJava、Kotlinを一切使わずにC言語とMakefileだけで作られたアプリです。約25kbしかないようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1387",
+        "title": "2020年5月14日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#may_14_2020\r\n\r\nShareTargetの1.0.0が出ています。\r\n他にはWear 1.1.0-rc01やAppCompat 1.2.0-rc01など。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1388",
+        "title": "ホームアプリの作り方",
+        "body": "https://proandroiddev.com/building-yal-yet-another-launcher-a-rudimentary-app-launcher-1b3164c2f473\r\nhttps://www.reddit.com/r/androiddev/comments/gidcmn/building_yal_yet_another_launcher_a_rudimentary/\r\nhttps://github.com/KunalRaghav/YAL",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

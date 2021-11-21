@@ -1,0 +1,274 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDM2NzczNg==",
+  "number": 71,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/71",
+  "title": "71 2019-06-09",
+  "description": "Android Q Beta4, AS 3.5 Beta4, Kotlin Coroutines 1.3.0-M1, Kotlin FlowのContext, AndroidXライブラリのバージョン一覧, など。",
+  "closedAt": "2019-06-09T10:46:13Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAA-fOGw2cqw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGu4XSg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/864",
+        "title": "Kotlin FlowのContext",
+        "body": "https://medium.com/@elizarov/execution-context-of-kotlin-flows-b8c151c9309b\r\n\r\nRxJavaとちがって、`collector`（最後に消費するところ）のContextが常に適用されるようです。処理自体のContextを変えたいときは`subscribeOn`に相当するオペレータがあるようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/863",
+        "title": "外部ストレージの死: 物語の終わり？",
+        "body": "https://commonsware.com/blog/2019/06/07/death-external-storage-end-saga.html\r\nhttps://www.reddit.com/r/androiddev/comments/bxvk5a/the_commonsblog_the_death_of_external_storage_the/\r\n\r\nBeta 4でAPIがフィックスしたということで、外部ストレージAPIが最終的にどうなったのかまとめられています。\r\n\r\n今まではアプリ毎にサンドボックスを作るという話でしたが、最終的にサンドボックスはなくなり、「アプリが触れないファイル/ディレクトリをフィルタリングした実際の外部ストレージ」がアプリに公開されるようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHdBhdw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHdBhdw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "記事内でも述べられていますが、Scoped Storageの制約はRで復活する予定なので、File APIをつかっているアプリは早めにStorage Access Frameworkへ移行したほうがよさそうです。",
+              "publishedAt": "2019-06-09T08:34:09Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/862",
+        "title": "Android Studio 3.6 canary 3",
+        "body": "https://androidstudio.googleblog.com/2019/06/android-studio-36-canary-3-available.html\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/bxxkjb/android_studio_36_canary_3_available/\r\n\r\nViewBindingはまだのようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/861",
+        "title": "Android Studio 3.5 beta 4",
+        "body": "https://androidstudio.googleblog.com/2019/06/android-studio-35-beta-4-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/bxxkjo/android_studio_35_beta_4_available/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/860",
+        "title": "Kotlin Coroutines 1.3.0-M1",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/blob/master/CHANGES.md#version-130-m1\r\n\r\nflow APIがpreviewを卒業してexperimentalになっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/859",
+        "title": "Retrofit 2.6.0で待望のKotlin coroutineサポート",
+        "body": "https://github.com/square/retrofit/blob/master/CHANGELOG.md#version-260-2019-06-05\r\n\r\n半年ぶりのリリースですが、ようやく正式にKotlin coroutineがサポートされました。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/858",
+        "title": "AndroidXライブラリバージョンの一覧テーブル",
+        "body": "https://developer.android.com/jetpack/androidx/versions\r\n\r\nAndroidXのページにライブラリのバージョン一覧のページができたようです。どれがアルファでどれがベータといったこともわかって便利そうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/857",
+        "title": "Android Q Beta 4 and Final APIs!",
+        "body": "https://android-developers.googleblog.com/2019/06/android-q-beta-4-and-final-apis.html\r\n\r\nAndroid Q Beta 4が出ました。公式APIも確定のようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHcK3Mw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHcOaPw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自分はまだ確認していませんが、バックグラウンドからのActivityの起動もSYSTEM_ALERT_WINDOWパーミッションがあればOKになったようです。\r\nhttps://twitter.com/chrismlacy/status/1136414618362847232",
+              "publishedAt": "2019-06-06T00:06:56Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "Beta 4に不具合があったようで、現在配信は停止しているようです……\r\nhttps://jetstream.bz/archives/85301",
+              "publishedAt": "2019-06-06T05:52:07Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/856",
+        "title": "6月5日のJetpackリリース",
+        "body": "https://developer.android.com/jetpack/androidx/releases#june_5_2019\r\n\r\nだいぶ色々なものがbetaやrcになっているようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/855",
+        "title": "Google Play ServicesとFirebaseがAndroidXに移行",
+        "body": "https://android-developers.googleblog.com/2019/06/google-play-services-and-firebase.html\r\nhttps://www.reddit.com/r/androiddev/comments/bwfkgo/google_play_services_and_firebase_migrating_to/\r\n\r\nタイトルからはちょっと分かりづらいかもしれませんが、Supportライブラリへの依存がなくなり、AndroidXを使うようになります。Google Play ServicesとFirebaseがandroidxパッケージになるわけではなりません。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

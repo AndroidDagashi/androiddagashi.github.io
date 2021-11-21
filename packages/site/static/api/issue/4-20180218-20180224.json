@@ -1,0 +1,405 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzIxMTE5MA==",
+  "number": 4,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/4",
+  "title": "4-20180218-20180224",
+  "description": "",
+  "closedAt": "2018-03-24T13:10:29Z",
+  "issues": {
+    "totalCount": 16,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABj_OElsBQA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOElr2-w==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/56",
+        "title": "Rxでmapオペレータを使う場面ってそんなに多くないよね、という話",
+        "body": "http://blog.danlew.net/2018/02/20/when-you-dont-need-a-map/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/55",
+        "title": "Chris BanesによるFragmentのshared elementを使ったトランジション。すばらしい！👏",
+        "body": "https://medium.com/@chrisbanes/fragment-transitions-ea2726c3f36f",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/54",
+        "title": "Build awesome animations with 7 lines of code using ConstraintLayou",
+        "body": "https://android.jlelse.eu/build-awesome-animations-with-7-lines-of-code-using-constraintlayout-854e8fd3ad93",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/53",
+        "title": "Android Pはバックグラウンドで待機状態のアプリがカメラを使うことを禁止",
+        "body": "https://www.xda-developers.com/android-p-background-apps-camera/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/52",
+        "title": "Androidのライブラリを作るときの心得",
+        "body": "https://android.jlelse.eu/things-i-wish-i-knew-when-i-started-building-android-sdk-libraries-dba1a524d619",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/51",
+        "title": "Gradleのキャッシュをサーバーに保存してローカルビルドでそれを使う話",
+        "body": "https://proandroiddev.com/speed-up-your-build-with-gradle-remote-build-cache-2ee9bfa4e1",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/50",
+        "title": "Runtime Permission のライブラリ。まだ新しいものが出てくることがちょっと驚き。",
+        "body": "https://github.com/QuickPermissions/QuickPermissions",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/49",
+        "title": "android-blueprintにSingleLiveEventというのがあるのだけれど、そのアプローチがいいか悪いかというのが議論になっている",
+        "body": "googlesamples/android-architecture-components#63",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFmMOEw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFmMOEw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "私はPublishSubject使うことが多いですねー。で、View側でそのままsubscribeするか、あるいは毎回LiveDataに変換する",
+              "publishedAt": "2018-03-23T09:19:26Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/48",
+        "title": "coroutineを使ってリアクティブMVP。”Presenter as a Function”らしい",
+        "body": "https://medium.com/@rocketwagon/presenter-as-a-function-reactive-mvp-for-android-using-kotlin-coroutines-442fc4c77119",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/47",
+        "title": "Kotlinのsealed classはJavaのenumとどう違うのか、どういうときに便利かという話",
+        "body": "https://proandroiddev.com/kotlin-sealed-classes-enums-with-swag-d3c4b799bcd4",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/46",
+        "title": "Migrating todo-mvp-kotlin to coroutines",
+        "body": "https://proandroiddev.com/migrating-todo-mvp-kotlin-to-coroutines-d71f6f815e44",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/45",
+        "title": "数年前の「状態をシングルトンで持つべきかApplicationクラスに持つべきか」という議論を元に、今だったらどうだろう？というスレッド",
+        "body": "https://www.reddit.com/r/androiddev/comments/7zf0pp/where_does_android_community_stands_with_respect/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFmMLnQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFmMLnQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "コア開発者の一人がApplicationクラスはそもそも存在するべきではなかった、と後悔しているという話はちょっと驚きだった",
+              "publishedAt": "2018-03-23T09:16:40Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/44",
+        "title": "IntelliJの最新のEAPでチャンク単位でのコミットができるようになるらしい",
+        "body": "https://www.reddit.com/r/androiddev/comments/7z0et1/intellij_have_added_support_for_chunked_git/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/43",
+        "title": "Bad Android AdviceというツイッターアカウントのAMA",
+        "body": "https://www.reddit.com/r/androiddev/comments/7x1s6g/ama_were_bad_android_advice_ask_us_anything/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/42",
+        "title": "Flutterが良さそうかどうか、という議論",
+        "body": "https://www.reddit.com/r/androiddev/comments/7y9ouw/flutter_its_easy_to_get_started/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFmMKGA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFmMKGA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Flutter、だいぶ話題に上がるようになってきた印象",
+              "publishedAt": "2018-03-23T09:15:01Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/41",
+        "title": "tools:title=”LayoutPreview” – ProAndroidDev ",
+        "body": "https://www.reddit.com/r/androiddev/comments/7ydvvx/toolstitlelayoutpreview_proandroiddev/\r\n\r\ntools属性とサンプルデータを使ってレイアウトxmlファイルのプレビューをリッチにする話",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOFmMI1w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOFmMI1w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "​​コメントで参照されているリンクもかなり有益",
+              "publishedAt": "2018-03-23T09:13:50Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

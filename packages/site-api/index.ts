@@ -1,4 +1,4 @@
-import { rmdir, mkdirp, rename } from 'site-common/file'
+import { rmdir, mkdirp } from 'site-common/file'
 import { Config } from './src/config'
 import path from 'path'
 import TopDigestsGenerator from './src/generator/TopDigestsGenerator'
@@ -6,6 +6,11 @@ import IssueGenerator from './src/generator/IssueGenerator'
 import { GitHubClient, GitHubConfig } from 'site-api-github'
 import { chunk } from './src/utils'
 import { siteConfig } from 'site-config'
+import { promisify } from 'util'
+import rimraf from 'rimraf'
+import {copy} from 'fs-extra'
+
+const rimrafp = promisify(rimraf)
 
 async function generateApi(): Promise<void> {
   const config = new Config(
@@ -16,7 +21,7 @@ async function generateApi(): Promise<void> {
     path.normalize(`${__dirname}/../site/static/api`)
   )
 
-  await rmdir(config.tempOutputDirs.root)
+  await rmdir(config.tempOutputDirs.root, true)
 
   const ghClient = await GitHubClient.init(
     new GitHubConfig(config.repoOwner, config.repoName, config.token)
@@ -44,9 +49,10 @@ async function generateApi(): Promise<void> {
     })
   )
 
-  await rmdir(config.outputDirs.root)
+  await rimrafp(path.join(config.outputDirs.root, '*.json'))
   await mkdirp(config.outputDirs.root)
-  await rename(config.tempOutputDirs.root, config.outputDirs.root)
+
+  await copy(config.tempOutputDirs.root, config.outputDirs.root, { overwrite: true })
 }
 
 generateApi()

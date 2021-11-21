@@ -1,0 +1,200 @@
+{
+  "id": "MI_kwDOB4jhdM4AbAbw",
+  "number": 187,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/187",
+  "title": "187 2021-08-29",
+  "description": "Kotlin 1.5.30, Android 12 beta 4.1, Google Playのレビューの改善, Slack社でのBubbles対応, など",
+  "closedAt": "2021-08-29T10:54:14Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOOoPDDA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OOokhVw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2047",
+        "title": "Android Studio - Bumblebee | 2021.1.1 Canary 10",
+        "body": "https://androidstudio.googleblog.com/2021/08/android-studio-bumblebee-canary-10.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2048",
+        "title": "Android 12 Beta 4.1",
+        "body": "https://developer.android.com/about/versions/12/release-notes#beta-4.1\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2049",
+        "title": "Kotlin 1.5.30",
+        "body": "https://blog.jetbrains.com/kotlin/2021/08/kotlin-1-5-30-released/\r\n\r\nKotlin 1.6に向けて、sealed classのwhenステートメントの改善やsuspend関数のサブクラス作成可能などが試せるようになっています。\r\nKotlin/NativeではApple siliconのサポート、JSのIRバックエンドがBeta、などのいくつかの改善が含まれています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2050",
+        "title": "Google Playのレビューの改善",
+        "body": "https://android-developers.googleblog.com/2021/08/making-ratings-and-reviews-better-for.html\r\n\r\nGoogle Playのレビューに関しての変更が行われます。\r\n2021年11月からレビューが国ごとになり、日本の場合だと日本から送信されたレビューが表示されるようになります。2022年にはタブレットやChromeOSなどのデバイスの種類が反映されるようになります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2051",
+        "title": "ZOZOTOWN AndroidへのJetpack Compose導入の取り組み",
+        "body": "https://techblog.zozo.com/entry/zozotown-android-jetpack-compose",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHONhq4ww==",
+            "endCursor": "Y3Vyc29yOnYyOpHONnrYhA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "記事中の\r\n\r\n> AACのViewModelはComposableのライフサイクルと対応していません\r\n\r\nについて、GDE の Yuki Anzai さんが navigation-compose を利用したアプローチについてツイートをしていました\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"ja\" dir=\"ltr\">ViewModel が Compose のライフサイクルと対応してないって言ってる正確な意味はわからないけど、SingleActivity + full Compose で、Compose で作った1画面を今までの Activity や Fragment のように使いたいなら navigation-compose 使うのがいいと思う。<a href=\"https://t.co/fYTMoZqTLm\">https://t.co/fYTMoZqTLm</a></p>&mdash; Yuki Anzai (@ yanzm) <a href=\"https://twitter.com/yanzm/status/1431034085061718016?ref_src=twsrc%5Etfw\">August 26, 2021</a></blockquote>",
+              "publishedAt": "2021-08-29T03:01:45Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "上記ツイートについて解説記事が出ていました\r\nhttps://y-anz-m.blogspot.com/2021/08/navigation-compose-viewmodel.html",
+              "publishedAt": "2021-09-07T06:11:35Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2052",
+        "title": "Slack社でのBubbles対応",
+        "body": "https://slack.engineering/building-android-conversation-bubbles/\r\n\r\nSlack社でのBubbles API対応への取り組みについて、詳細に説明しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2053",
+        "title": "ViewModel内におけるFlowとLiveDataの比較",
+        "body": "https://bladecoder.medium.com/kotlins-flow-in-viewmodels-it-s-complicated-556b472e281a\r\n\r\nViewModel（UI層）で使うFlowはLiveDataに比べ複雑になることを説明しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2054",
+        "title": "DuolingoがアプリアーキテクチャをMVVMに移行した事例",
+        "body": "https://android-developers.googleblog.com/2021/08/android-app-excellence-duolingo.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

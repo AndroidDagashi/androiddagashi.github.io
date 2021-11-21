@@ -1,0 +1,324 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDE2Njk1Nw==",
+  "number": 61,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/61",
+  "title": "61 2019-03-31",
+  "description": "Google I/O 2019のスケジュールが公開、お気に入りのAndroid Studioプラグイン、Android Qにおける外部ストレージの死、など。",
+  "closedAt": "2019-03-31T11:09:21Z",
+  "issues": {
+    "totalCount": 13,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABRPOGXkbPw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGU7eLg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/745",
+        "title": "Kotlin拡張関数を使った設計",
+        "body": "https://medium.com/@elizarov/extension-oriented-design-13f4f27deaee\r\n\r\nKotlinの拡張関数によって、自分達で定義したユーティリティメソッドがあたかも標準で提供されたインスタンスメソッドのように使えるだけではなく、たとえばinterfaceを定義するときにも有用である、という話のようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/744",
+        "title": "Emulator 29.0.0 Canary",
+        "body": "https://androidstudio.googleblog.com/2019/03/emulator-2900-canary.html\r\n\r\nAR用に事前に記録したモーションを実行できるようになったようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/743",
+        "title": "一時的なLogメソッドを書かずにデバッグする方法",
+        "body": "https://medium.com/@elye.project/debug-without-using-temporary-log-in-android-studio-91d9394a1e94\r\n\r\nAndroid Studioの機能（正確にはIntelliJの機能ですが）でブレークポイントにヒットしてもスレッドを止めず、かわりに任意のコードを実行する機能があるそうです。いちいちコンパイルし直すのも面倒、しかしブレークポイントで止めると再現しない、という場合に便利そうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/742",
+        "title": "AS 3.5 Canary 8, 9リリース",
+        "body": "https://androidstudio.googleblog.com/2019/03/android-studio-35-canary-8-available.html\r\nhttps://androidstudio.googleblog.com/2019/03/android-studio-35-canary-9-available.html\r\n\r\n[canary 8はKotlin Pluginが動かないバグ](https://issuetracker.google.com/issues/129260858)があったらしく立て続けのリリースです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/741",
+        "title": "Android 8+でUIスレッド以外からViewを触れたバグ",
+        "body": "https://medium.com/@dimezis/how-android-8-lets-you-get-away-with-touching-views-from-any-thread-906419b368fa\r\n\r\nすでに修正されたようですが、Android 8で入った変更により `View#invalidate()` がUIスレッド以外から実行されても例外を起こさないケースがあったようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/740",
+        "title": "Kotlin推しだったGroovyのコミッタがプロジェクトを降りる",
+        "body": "https://melix.github.io/blog/2019/03/goodbye-groovy.html\r\n\r\nややゴシップめいた情報ですが、Kotlin推しでGradleチームのGroovy PMCだったソフトウェエンジニアが、Groovyコミュニティからの批判を受けてGroovyプロジェクトを降りたそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/739",
+        "title": "書きやすいエディタのUIデザイン",
+        "body": "https://techlife.cookpad.com/entry/2019/03/29/115500\r\n\r\niOSの事例ですが、サジェストやUIの見せ方などでレシピ入力の簡素化をしており、参考になりました。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/738",
+        "title": "Google I/O 2019のスケジュールが公開",
+        "body": "https://events.google.com/io/schedule/events/\r\n\r\n今後も随時追加されていくそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/737",
+        "title": "お気に入りのAndroid Studioプラグイン",
+        "body": "https://www.reddit.com/r/androiddev/comments/b61fkr/whats_your_favorite_android_studio_plugin/\r\n\r\nADB IdeaやAndroid Drawable Importerに混じってnyan-progressbarやRainbow Bracketなどが挙げられています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHHSTpA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHHSTpA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "61歳の方がnyan-progressbarを入れて、なんでこんなのが人気なのか分からないと言っているのが微笑ましかったです",
+              "publishedAt": "2019-03-28T00:57:19Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/736",
+        "title": "経済的なコード生成",
+        "body": "https://jakewharton.com/the-economics-of-generated-code/\r\n\r\nコード生成時のメソッドカウントやdexサイズを減らすための工夫について書かれています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHHR8VQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHHR8VQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "なお、economicsの訳語としてこのタイトルが適当か自信がありませんが、たまたま日本語の「節約」に近い感じがしておもしろかったので「経済的」と訳しました。英語の単語としては「系」に近い意味もあるので、ちょっと乱暴な訳かもしれません :bowing_man: ",
+              "publishedAt": "2019-03-28T00:23:59Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/735",
+        "title": "Android Qにおける外部ストレージの死",
+        "body": "https://commonsware.com/blog/2019/03/25/death-external-storage-what-now.html\r\nhttps://commonsware.com/blog/2019/03/26/death-external-storage-can-haz-file.html\r\nhttps://commonsware.com/blog/2019/03/27/death-external-storage-stay-away-files.html\r\nhttps://commonsware.com/blog/2019/03/28/death-external-storage-why.html\r\nhttps://commonsware.com/blog/2019/03/29/death-external-storage-where-google.html\r\n\r\nやや過激なタイトルですが、安定のThe Commons BlogがAndroid Qにおける外部ストレージの権限まわりの変更と、それへの対応、さらになぜこういう変更が入ったと思われるか、についてまとめてくれています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHIKJXQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHIKJXQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自分の理解が及んでいないのかもしれませんが、だいたいのユースケースでは `MediaStore` 経由で共有の写真/動画フォルダにファイルを読み書きできそうに思えました。",
+              "publishedAt": "2019-03-31T06:51:13Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/734",
+        "title": "ObservableFieldからLiveDataへ移行する",
+        "body": "https://medium.com/androiddevelopers/android-data-binding-library-from-observable-fields-to-livedata-in-two-steps-690a384218f2\r\n\r\nLiveDataが[`Transformations`](https://developer.android.com/reference/android/arch/lifecycle/Transformations)をサポートしていること、RoomやWorkManagerなど多くのArchitecture Componentsがサポートしていることなどから、ObservableFieldからLiveDataへの移行が推奨されているようです。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/733",
+        "title": "なぜKotlin Nativeが必要なのか",
+        "body": "https://medium.com/android-things/why-we-need-kotlin-native-adacc03e988c\r\n\r\nFlutter, React Native, Kotlin Nativeを比較して、著者はKotlin Nativeが既存のSDKを補完しコードを共通化するための一番良い方法であると結論づけているようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

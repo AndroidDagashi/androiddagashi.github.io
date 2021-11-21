@@ -1,0 +1,542 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDI0NjQ2Mg==",
+  "number": 65,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/65",
+  "title": "65 2019-04-28",
+  "description": "Kotlin 1.3.31, LeakCanary 2.0, ConstrainLayout2にFlexBox的な機能が追加, メタプログラミングのメカニズム, Daggerのベストプラクティス, など",
+  "closedAt": "2019-04-28T10:28:21Z",
+  "issues": {
+    "totalCount": 16,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABj_OGhvU1w==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGfY_Nw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/795",
+        "title": "React Native開発チームが開発者の苦情調査を実施",
+        "body": "https://www.infoq.com/jp/news/2019/04/react-native-survey-pain-point\r\n\r\n実際の調査が行われたのは数ヶ月前のようで、この記事は結果のまとめです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHQyBPg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHQyr6Q==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Androidが二級市民扱いされている、というのも挙がっていました。\r\nこれを機にDXがあがってくれればいいのですが。",
+              "publishedAt": "2019-04-28T08:46:13Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "Androidまわりは辛いですね。正直、標準のライブラリですらAndroidのサポートはけっこう適当な気がします……",
+              "publishedAt": "2019-04-28T11:17:08Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/794",
+        "title": "メタプログラミングのメカニズム",
+        "body": "https://jakewharton.com/mechanisms-of-metaprogramming/\r\n\r\nJakeがChicago Robotで発表したものです。Androidにおけるメタプログラミングとして取れる手段とそれぞれのメリット/デメリット、そしてその応用の具体例について説明しているようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHQxsiQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHQxsiQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "後半は動画がないとどういうこと分かりませんでした 😇",
+              "publishedAt": "2019-04-28T07:32:36Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/793",
+        "title": "Kotlin Flowのシンプルなデザイン",
+        "body": "https://medium.com/@elizarov/simple-design-of-kotlin-flow-4725e7398c4c\r\n\r\n[前回](https://github.com/AndroidDagashi/AndroidDagashi/issues/759)に引き続き、具体的なKotlin Flowの説明をしています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 5,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHQxqBw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHW7M6w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自分のオペレータが拡張関数で定義できるのはとてもよさそうです。また、バックプレッシャーの説明については、suspend関数だから同等のことが自然にできるという説明のようですが、まだ自分は理解しきれた気がしません（たとえばユーザーの入力のように制御できない場合はどうするのでしょうか？）",
+              "publishedAt": "2019-04-28T07:24:05Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "ちょっとソースが見つけられなかったのですが、ユーザ入力的なものはどちらかといえばhot streamなのでChannelで表現しよう、と言うようなことをJBの方が言っていた覚えがあります。\r\n\r\n似たようなものだとこの辺とか\r\nhttps://github.com/Kotlin/kotlinx.coroutines/issues/254#issuecomment-410390684",
+              "publishedAt": "2019-04-28T10:20:21Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "おお、なるほど。ありがとうございます。しかし、そうなるとユーザー入力とネットワーク通信を組み合わせたいみたいな場合はChannelで頑張るしかなさそうですね……。",
+              "publishedAt": "2019-04-28T11:13:41Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "こんにちは。多分flowViaChannelを使うと入力を待ちつつ更新があったらemitみたいなことができそうですがどうでしょう? \r\nhttps://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/flow-via-channel.html",
+              "publishedAt": "2019-05-16T10:45:43Z",
+              "author": {
+                "login": "sys1yagi",
+                "url": "https://github.com/sys1yagi",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/749051?u=24f5cceb958b01df1ff89733c66de0b11388d1ae&v=4"
+              }
+            },
+            {
+              "body": "どうもありがとうございます。この関数は知りませんでした。こちらの記事も参考にさせていただきます。\r\nhttp://sys1yagi.hatenablog.com/entry/2019/05/17/110232",
+              "publishedAt": "2019-05-19T23:20:04Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/792",
+        "title": "Play Storeで5億インストールのアプリを持つ会社がバンされる",
+        "body": "https://www.reddit.com/r/androiddev/comments/bhnwxf/google_is_banning_a_play_store_developer_with/\r\n\r\nDO Globalという名前の中国の企業がバンされ、そのアプリすべてが姿を消したそうです。記事によればAdMobでの違反行為（ユーザーがアプリを開いていなくても広告がクリックされる）があったようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/791",
+        "title": "AndroidX Activity 1.0.0-alpha07",
+        "body": "https://developer.android.com/jetpack/androidx/releases/activity#1.0.0-alpha07\r\n\r\nAcitivityのBackボタンを押されたときのハンドリング方法が変わったようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHQxf_g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHQxf_g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://developer.android.com/guide/navigation/navigation-custom-back に詳しい説明があります。\r\n\r\nいままでは `handleOnBackPressed()` で `true` を返すかどうかで誰がハンドルするかが決まっていましたが、こんどからは `OnBackPressedCallback` のうち最後に追加されたものからenabledがどうかを調べ、最初にenabledだったものが呼ばれるようです。",
+              "publishedAt": "2019-04-28T06:46:29Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/790",
+        "title": "AndroidX Fragment 1.1.0-alpha07",
+        "body": "https://developer.android.com/jetpack/androidx/releases/fragment#1.1.0-alpha07\r\n\r\n`setMaxLifecycle` というメソッドが追加されたようです。たとえば `FragmentStatePagerAdapter` などをつかっていると、隣の見えていないページのFragmentも `onResume` が呼ばれてしまいますが、これを使うと見えていないページについては、たとえば `onStart` までしか呼ばれないようにすることができるようです。それによって、いま使われている `setUserVisibleHint` のハックが不要になるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHQxdmQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHQxdmQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Redditのスレはこちら。\r\nhttps://www.reddit.com/r/androiddev/comments/bhxp4k/fragment_version_110alpha07_setmaxlifecycle/",
+              "publishedAt": "2019-04-28T06:37:35Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/789",
+        "title": "ConstraintLayout 2.0.0 alpha 5",
+        "body": "https://androidstudio.googleblog.com/2019/04/constraintlayout-200-alpha-5.html\r\n\r\nFlowという名前のFlexbox Layoutのような機能とMotion Layoutへの機能追加が入ったようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHQxPtw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHQxPtw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Redditのスレはこちら\r\nhttps://www.reddit.com/r/androiddev/comments/bhqppb/constraintlayout_200_alpha_5/",
+              "publishedAt": "2019-04-28T05:43:43Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/788",
+        "title": "Daggerのベストプラクティス",
+        "body": "https://developer.squareup.com/blog/keeping-the-daggers-sharp-%EF%B8%8F/\r\n\r\nField injectionを避けよう、`@Binds` を使おう、 `@Provides` でマークするメソッドは `static` にしよう、などのベストプラクティスが並んでいます",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/787",
+        "title": "Instrumentation TestでLeakCanaryをつかってメモリリークを見つける",
+        "body": "https://proandroiddev.com/detecting-memory-leaks-in-your-instrumentation-tests-using-leakcanary-1268e911d5ce\r\n\r\nInstrumentation TestにLeak Canaryを組み込んでリークがあったらレポートする方法について説明しています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/786",
+        "title": "Leak Canary 2.0",
+        "body": "https://github.com/square/leakcanary/blob/master/CHANGELOG.md#version-20-alpha-1-2019-04-23\r\nhttps://speakerdeck.com/pyricau/leakcanary-2-leaner-better-faster-kotliner\r\n\r\nAndroid Makersでの発表に合わせてLeak Canary 2.0のアルファ版が公開されました。Heap Dumpを毎回行わないようにすることでアプリが頻繁にフリーズするのを防いだり、複数の同じ原因のリークを1つにまとめたりといったことが行われているようです。\r\n\r\n機能については、このツイートのスレッドが分かりやすいです。\r\n<blockquote class=\"twitter-tweet\" data-lang=\"en\"><p lang=\"en\" dir=\"ltr\">🆕 LeakCanary 2 Alpha 1 was just released for <a href=\"https://twitter.com/AndroidMakersFR?ref_src=twsrc%5Etfw\">@AndroidMakersFR</a> 🐤<br><br>Please try it out and file bugs and feature requests!<br><br>A lot has changed, here&#39;s the TL;DR: <a href=\"https://t.co/ZKoxaK4g6n\">pic.twitter.com/ZKoxaK4g6n</a></p>&mdash; Py ⚔ (@Piwai) <a href=\"https://twitter.com/Piwai/status/1120681920835276800?ref_src=twsrc%5Etfw\">April 23, 2019</a></blockquote>\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHQxNmg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHQxNmg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "マイグレーションガイドはこちら\r\nhttps://github.com/square/leakcanary/wiki/Migrating-to-LeakCanary-2.0",
+              "publishedAt": "2019-04-28T05:32:06Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/785",
+        "title": "Android向けjava.nio.fileバックポートライブラリ",
+        "body": "https://github.com/henrik-lindqvist/safs\r\n\r\n古いAndroid OS向けのJava標準ライブラリのバックポートライブラリというのはよくあるのですが、さいきんのAndroid QのScoped Storageもあって注目を浴びているようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHQxLoA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHQxLoA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "しかし、この実装はかなり辛そうです……",
+              "publishedAt": "2019-04-28T05:21:24Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/784",
+        "title": "Kotlin Xcode Plugin",
+        "body": "https://hackernoon.com/kotlin-xcode-plugin-64f52ff8dc2a\r\nhttps://github.com/touchlab/xcode-kotlin\r\n\r\nKotlin/NativeなコードをXcodeでデバッグできるようにするプラグインです。シンタックスハイライトもしてくれます。\r\nKotlinのコードにブレークポイントはったり、変数のインスペクションができます。\r\n\r\n今までも[LLDB等を使えばできた](https://github.com/JetBrains/kotlin-native/blob/master/DEBUGGING.md)ようですが、プラグインとして提供されると簡単でいいですね。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHQtRzQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHQxK4w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "touchlabは今週squareとKotlin Multiplatform分野での協力を発表していました\r\nhttps://touchlab.co/touchlab-square-kotlin-multiplatform-collaboration/\r\n\r\nこの二社は今までもKotlin Multiplatformの分野でコラボしていて、 [square/sqldelight](https://github.com/square/sqldelight)はKotlin/NativeでのSQLite実装として[touchlab/sqliter](https://github.com/touchlab/sqliter)を利用しています。",
+              "publishedAt": "2019-04-27T12:13:04Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "Touchlab自体もKotlin Multiplatformにピボットするんですね。ブログ記事に述べられているように、iOS開発者に受け入れられるかが鍵な気がします。",
+              "publishedAt": "2019-04-28T05:17:02Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/783",
+        "title": "Kotlin 1.3.31リリース",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.3.31\r\n\r\n1.3.30のバグフィックスです\r\n\r\n以前触れた[1.3.30でDagger2のコード生成がうまくいかない問題](https://github.com/AndroidDagashi/AndroidDagashi/issues/761)も解消しているようです。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/782",
+        "title": "Android Q Scoped Storageベストプラクティス",
+        "body": "https://android-developers.googleblog.com/2019/04/android-q-scoped-storage-best-practices.html\r\n\r\n基本的にはいままでと何も変わらないようですが、targetSdkVersionがQ未満のアプリはしばらく影響を受けないようです。ただし、次のOS（R?）上で動くアプリは問答無用で制限を受けるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHQVXow==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHQVXow==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Redditのスレはこちら。\r\nhttps://www.reddit.com/r/androiddev/comments/bhdcdy/android_q_scoped_storage_best_practices_and/",
+              "publishedAt": "2019-04-26T01:07:08Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/781",
+        "title": "RealmがMongoDBに買収される",
+        "body": "https://www.reddit.com/r/androiddev/comments/bgv2be/realm_is_to_be_acquired_by_mongodb_the/\r\n\r\n日本でも一世を風靡したRealmですが、この度MongoDBに買収されることになったようです。\r\n買収はされたものの、ひとまず開発は継続されます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHP9a-A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHQx-hg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "つぎの1年でどうなるか気になりますね ;-) なお、「Realmってどうやってマネタイズしていたの？」という質問に Jake が「カンファレンスで撮影して動画を作っていたみたいだよ」と答えていて笑ってしまいました。\r\nhttps://www.reddit.com/r/androiddev/comments/bgv2be/realm_is_to_be_acquired_by_mongodb_the/elo0tfd/",
+              "publishedAt": "2019-04-25T02:32:18Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "😇\r\nDroidKaigiでもRealmが動画スポンサーしてくれたことがありましたねｗ",
+              "publishedAt": "2019-04-28T08:36:14Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/780",
+        "title": "MacでFind Actionをするとターミナルが開く問題",
+        "body": "https://www.reddit.com/r/androiddev/comments/bfnugq/this_was_really_starting_to_annoy_me_glad_i_was/\r\n\r\nあるバージョンのmacOSからCmd + Shift + Aでターミナルが開くようになってしまい、Android Studioのデフォルトショートカットと被るそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHO0SUg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHO0SUg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "なお、自分は他のキーバインドに割り当てているので、大丈夫でした😇",
+              "publishedAt": "2019-04-22T01:29:01Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

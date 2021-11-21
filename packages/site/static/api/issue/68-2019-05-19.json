@@ -1,0 +1,292 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDMwNTk2Mg==",
+  "number": 68,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/68",
+  "title": "68 2019-05-19",
+  "description": "Android Studio 3.4.1, OkHttpのKotln化, Kotlin FlowとCoroutine, 詳細なFabricのFirebase移行プラン, Jetpack Composeのバックグラウンド, など",
+  "closedAt": "2019-05-19T10:16:37Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABEvOGpJOLA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGmtnTQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/830",
+        "title": "ML Kitを使ってWordSearchゲームを解く",
+        "body": "https://proandroiddev.com/solve-wordsearch-games-with-android-and-ml-kit-34cf9a9ee30e\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">We&#39;re looking to hire Developer Advocates and Developer Programs Engineers for the <a href=\"https://twitter.com/AndroidDev?ref_src=twsrc%5Etfw\">@AndroidDev</a> team. I&#39;d be more than happy to put in a referral for anyone who managed to make this app real... <a href=\"https://t.co/C30WBRMkt0\">https://t.co/C30WBRMkt0</a></p>&mdash; Reto Meier (@ retomeier) <a href=\"https://twitter.com/retomeier/status/1062406014329188352?ref_src=twsrc%5Etfw\">November 13, 2018</a></blockquote>\r\n\r\n発端はこのツイート。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/829",
+        "title": "Jetpack Composeのバックグラウンド",
+        "body": "http://intelligiblebabble.com/content-on-declarative-ui/\r\n\r\nJetpack Composeのベースとなる宣言的UIのプログラミングモデルについて、Reactの記事や動画のリンクを挙げながら解説しています。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/828",
+        "title": "Pinterestがktlintのオーナーになる",
+        "body": "https://medium.com/@Pinterest_Engineering/pinterest-ktlint-35391a1a162f\r\n\r\nタイトルですべてですが、ktlintのオーナーシップをPinterestが引き継いだそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHW2qYQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHW2qYQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "個人でなく企業が引き取ってくれると、ちょっと安心しますね :-)",
+              "publishedAt": "2019-05-19T04:34:13Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/827",
+        "title": "より詳細なFabricのFirebase移行プラン",
+        "body": "https://fabric.io/blog/updates-to-migration-roadmap-and-timeline\r\n\r\nすこし前の記事ですが、Fabricのシャットダウンが2020年の3月末に決まったようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/826",
+        "title": "WorkManager 2.1.0-alpha02",
+        "body": "https://developer.android.com/jetpack/androidx/releases/work#2.1.0-alpha02\r\n\r\n`PeriodicWorkRequest`に`initialDelay`が設定できるようになったようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/825",
+        "title": "Zomatoのビルド時間を95%減らした話",
+        "body": "https://medium.com/@championswimmer/bringing-android-app-build-times-down-by-95-at-zomato-a505d938e9b8\r\n\r\nモジュール間の依存を正しく書き、BuildConfigにタイムスタンプを含めないようにすることで2分のビルドを6秒にしたそうです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHW2m_w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHW2m_w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "もともとモジュール分割されていたのが重要な気はします",
+              "publishedAt": "2019-05-19T04:11:16Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/824",
+        "title": "スイッチアクセス用のデバイスを自作する",
+        "body": "https://ataulm.wordpress.com/2019/05/16/building-custom-switch-devices-for-android/\r\n\r\nスイッチアクセスはアクセシビリティの機能で、利用するとタッチスクリーンの代わりにスイッチを使ってAndroid端末を操作することができます。\r\n\r\n細かい作業が苦手な方向けの機能ですが、単純に電子工作としてもおもしろそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/823",
+        "title": "Android Studio 3.4.1",
+        "body": "https://androidstudio.googleblog.com/2019/05/android-studio-341-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/bp0wxv/android_studio_341_available/\r\n\r\nDataBindingやD8、R8などの不具合が修正されています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/822",
+        "title": "Kotlin FlowとCoroutine",
+        "body": "https://medium.com/@elizarov/kotlin-flows-and-coroutines-256260fb3bdb\r\n\r\n恒例のRomanさんによるKotlinのFlowとCoroutine channelを組み合わせる手法についての説明です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHVZ0bA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHVZ0bA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Goのようにchannelを直接扱うと問題が起きやすいので`buffer`のようなオペレータを用意するとのことですが、最終的にRxのオペレータのように数多のオペレータの使いこなす方向になるのでしょうか。",
+              "publishedAt": "2019-05-14T11:51:25Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/821",
+        "title": "外部ストレージの死：Beta 3の現状",
+        "body": "https://commonsware.com/blog/2019/05/13/death-external-storage-beta-3.html\r\n\r\n安定のThe Commons BlogによるScoped Storageについてのまとめ最新版です。[Android Developers Blog](https://android-developers.googleblog.com/2019/04/android-q-scoped-storage-best-practices.html)でも案内されていましたが、`targetSdkVersion` が `Q` 未満なら影響はないし、さらにフラグでサンドボックス化をオフにする手段も提供されるそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/820",
+        "title": "OkHttpのKotlin化がほぼ完了",
+        "body": "https://publicobject.com/2019/05/13/metrics-for-okhttps-kotlin-upgrade/\r\n\r\nコード行数は7%減り、ビルド時間は2秒→10秒、バイナリサイズも415KiB→670KiBとなったようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHU7gRg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHU7gRg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ある程度のオーバーヘッドはやむをえないと思いますが、ビルド時間が5倍になるのはちょっと辛いものがありますね。",
+              "publishedAt": "2019-05-13T07:32:35Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

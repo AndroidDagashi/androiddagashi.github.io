@@ -1,0 +1,335 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDA4MjEyOA==",
+  "number": 57,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/57",
+  "title": "57 2019-03-03",
+  "description": "Flutter 1.2、Android StudioチームのAMA、AndroidXのCIビルドが見れるページが公開、マルチモジュールについてのアンケート結果、など。",
+  "closedAt": "2019-03-03T10:53:35Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABEvOGNNScg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGLKIBg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/699",
+        "title": "Android×MVI×Coroutineなアーキテクチャを提供するライブラリ、Owl",
+        "body": "https://github.com/itome/owl\r\nhttps://medium.com/@itometeam/android-mvi-coroutine%E3%82%92%E6%8F%90%E4%BE%9B%E3%81%99%E3%82%8B%E3%83%A9%E3%82%A4%E3%83%96%E3%83%A9%E3%83%AA%E3%81%AE%E7%B4%B9%E4%BB%8B-81aa7de9781",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG_SMuA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG_SMuA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "少し前の記事ですが、MVIの実装の中でもかなりスッキリまとまっている感じです",
+              "publishedAt": "2019-03-03T11:00:20Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/698",
+        "title": "Material Components 1.1.0-alpha04",
+        "body": "https://github.com/material-components/material-components-android/releases/tag/1.1.0-alpha04\r\nhttps://www.reddit.com/r/androiddev/comments/avtxnr/material_components_110alpha04_released_new/\r\n\r\nExtended FABが追加されました",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/697",
+        "title": "マルチモジュールについてのアンケート結果",
+        "body": "https://medium.com/@emmaguy/android-modularisation-the-results-58a4bf17602e\r\nhttps://www.reddit.com/r/androiddev/comments/aw9940/android_modularisation_the_results/\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG_QYlA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG_RzIg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "最大で800モジュールに分割しているプロジェクトがあったみたいですが、さすがに入力間違いを疑いますねｗ",
+              "publishedAt": "2019-03-03T02:47:02Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "モジュールの分け方は参考になりますね。「境界付けられたコンテキストで分ける」というのはよさそうです。余談ですが、そのうちマルチモジュール向けのナビゲーションはGoogle側から提供されそうですね。",
+              "publishedAt": "2019-03-03T09:34:11Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/696",
+        "title": "5KB以下のDartコードでFlutterアプリを作るコンテスト、Flutter Create",
+        "body": "https://developers-jp.googleblog.com/2019/02/flutter-create-is-live-with-over-10-000-in-prizes.html\r\n\r\n締切は4月7日午後11時59分（太平洋夏時間: GMT -7）だそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/695",
+        "title": "AndroidXのCIビルドが見れるページが公開",
+        "body": "https://www.reddit.com/r/androiddev/comments/avggt9/androidx_ci_builds_are_now_public_you_can_see_our/\r\n\r\nその気になれば、リリース前のビルドも試せるそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/694",
+        "title": "FBの画像処理ライブラリSpectrum 1.0.0 が公開",
+        "body": "https://code.fb.com/developer-tools/spectrum/\r\n\r\nC++ベースのようですが、機能がミニマムでよさそうです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG-099A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG-099A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "FacebookはC++好きなんですかね。\r\nクロスプラットフォームにするため、ってのが大きいかもですが結構C++で書かれたライブラリ多い印象があります。",
+              "publishedAt": "2019-03-01T03:51:01Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/693",
+        "title": "Android StudioチームのAMA",
+        "body": "https://www.reddit.com/r/androiddev/comments/av3lhx/were_on_the_engineering_team_for_android_studio\r\n\r\nAndroid Studio開発チームによるAMAが2/28に開催されます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG_MhSw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG_MhSw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "トップが「なんでストップボタンは何も止めないの？」という質問でちょっと笑ってしまいました。\r\n\r\n個人的には「なぜLintをキャッシュできないの？」という質問が興味深かったです。\r\nhttps://www.reddit.com/r/androiddev/comments/av3lhx/were_on_the_engineering_team_for_android_studio/ehi40p7/?context=8&depth=9",
+              "publishedAt": "2019-03-02T13:02:11Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/692",
+        "title": "Flutter 1.2",
+        "body": "https://developers.googleblog.com/2019/02/launching-flutter-12-at-mobile-world.html\r\nhttps://www.reddit.com/r/FlutterDev/comments/av1sml/launching_flutter_12_at_mobile_world_congress/\r\n\r\nMWC2019での発表です。\r\nDartも2.2になったようです。\r\n種々の改善の他に、Webベースの開発ツールが発表されたりしました。\r\n[In-App Purchaseのプラグインもリリースが近そうです](https://github.com/flutter/plugins/tree/master/packages/in_app_purchase)。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/691",
+        "title": "ダークモードを実装するには",
+        "body": "https://medium.com/androiddevelopers/appcompat-v23-2-daynight-d10f90c83e94\r\n\r\nもとは2016年の記事ですが、2019年2月時点の情報で更新されたようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/690",
+        "title": "Fragment APIへの提言",
+        "body": "https://willowtreeapps.com/ideas/advocating-for-better-android-fragments\r\n\r\nFragmentをより使いやすくするための提案です。どちらも説得力があり、すでにIssue Trackerに上がっているようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/689",
+        "title": "Kotlinx Serializationを使ったJAX-RSのReader/Writer",
+        "body": "https://github.com/JakeWharton/jax-rs-kotlinx-serialization\r\n\r\nあまりAndroidに関係ないですが、Kotlinをサーバーサイドで使うなら有用そうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

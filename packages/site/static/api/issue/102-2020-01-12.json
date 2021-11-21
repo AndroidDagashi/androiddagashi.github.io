@@ -1,0 +1,168 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDk3MzY5MQ==",
+  "number": 102,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/102",
+  "title": "102 2020-01-12",
+  "description": "Android Studio 4.0 Canary 8、2020年1月のAndroidXリリース、Now in Android エピソード10、Material Designの最新のリリース、など",
+  "closedAt": "2020-01-12T10:48:29Z",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOIJ9eew==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOILBAsQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1209",
+        "title": "Android Studio 4.0 Canary 8",
+        "body": "https://androidstudio.googleblog.com/2020/01/android-studio-40-canary-8-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1210",
+        "title": "2020年1月のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#january_8_2020\r\n\r\nSQLite 1.2.0とWorkManager 2.3.0がRCになりました",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1211",
+        "title": "Now in Android エピソード10",
+        "body": "https://medium.com/androiddevelopers/now-in-android-january-8-2020-23ae439e70f1\r\n\r\nKTXのドキュメント、Room 2.2.0の話題、KotlinConfなどのカンファレンス動画についてまとめています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1212",
+        "title": "Material Designの最新のリリース",
+        "body": "https://twitter.com/materialdesign/status/1215334683032129537\r\n\r\nアクセシビリティ、クロスプラットフォームにおける違いなど\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1213",
+        "title": "WorkManagerのUnique work使用時の注意",
+        "body": "https://blog.danlew.net/2020/01/07/when-workmanager-stops-working/\r\n\r\nWorkManagerのUnique workをAPPENDポリシーで使用してる際の注意が書かれています。失敗すると後続の処理が自動で失敗するようです。使用する場合は確認しておいたほうが良さそうですね。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1214",
+        "title": "Android のアプリ開発でも Visual Regression Testing を始めましょう",
+        "body": "https://blog.ca-tech.studio/2020/visual-regression-testing-with-android/\r\n\r\nVisual Regression Testingとは、UIに関するコード変更を行ったときに、変更前後の画像比較をするテストです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1215",
+        "title": "EinkデバイスとReact Native",
+        "body": "https://medium.com/sanctuary-computer-inc/building-lightos-with-react-native-4b6e4ad1cd7f\r\n\r\nLight OSというAndroidベースのカスタムOSはReact Nativeを使ってシステムアプリを開発しているそうです。\r\nこのOSはLight Phone 2というEinkディスプレイを搭載した端末上で動作するもので、Einkディスプレイの特性とReact Nativeの相性が良かったようです。\r\n\r\nシステムアプリをどうやってビルドするか、みたいなあまり見かけない情報もあり、なかなか読み応えがあります",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

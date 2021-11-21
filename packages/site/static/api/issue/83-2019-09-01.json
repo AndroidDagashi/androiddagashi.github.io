@@ -1,0 +1,281 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDYwMDg5NQ==",
+  "number": 83,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/83",
+  "title": "83 2019-09-01",
+  "description": "Android Studio 3.6 Canary9, CameraXの開発方針, Square製レイアウトライブラリContour, Google Playの脆弱性報奨金制度, 未使用リソースの定期削除, など",
+  "closedAt": "2019-09-01T10:08:12Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABEvOHRQ89w==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOHPKo6A==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1005",
+        "title": "宣言的UI",
+        "body": "https://speakerdeck.com/sonatard/xuan-yan-de-ui\r\n\r\n今後Androidにも本格的にやってくる「宣言的UI」、というパラダイムの解説スライドです。  \r\n特にAndroidに限った内容ではありませんが、とてもわかりやすくまとまっています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1004",
+        "title": "Square製のレイアウトライブラリ、Contour",
+        "body": "https://github.com/cashapp/contour\r\nhttps://www.reddit.com/r/androiddev/comments/cxq8n0/square_contour_layouts_with_lambdas/\r\n\r\nConstraintLayoutと同様のことをコードのみで実現しようというライブラリのようです。\r\n\"Deprecating XML\"を謳っています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOH2fNaA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOH2fNaA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "これもともとは [square/contour](https://github.com/square/contour) だったんですが、 [cashapp/contour](https://github.com/cashapp/contour) に移動していました。",
+              "publishedAt": "2019-09-01T07:55:59Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1003",
+        "title": "Google Playの脆弱性報奨金制度の拡充",
+        "body": "https://android-developers.googleblog.com/2019/08/expanding-bug-bounties-on-google-play.html\r\n\r\n主な変更点は次の二点です\r\n\r\n- 1億インストール以上の(Google製でない)アプリがGoogle Play Security Reward Programの対象に追加\r\n- アプリ内での個人データの不正利用への報奨金制度、Developer Data Protection Reward Programが新たに設立",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1002",
+        "title": "CameraXの開発方針",
+        "body": "https://medium.com/androiddevelopers/core-principles-behind-camerax-jetpack-library-8e8380f7604c",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1001",
+        "title": "Using Kotlin/JS and Kotlin/Native on Android",
+        "body": "https://jakewharton.com/using-kotlin-js-and-native-on-android/\r\n\r\nJake Wharton氏によるDroidcon NYC 2019での発表のスライドです。\r\nスライドだけでは内容掴みづらいですが、Kotlin/JSやKotlin/Nativeを利用して、Android上で動的なコードの差し替えを実現しています。\r\n\r\nセッション動画の公開が待ち遠しい…",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1000",
+        "title": "AndroidライブラリをMavenCentralに上げる方法 2019",
+        "body": "http://blog.autsoft.hu/publishing-an-android-library-to-mavencentral-in-2019/\r\n\r\n時間とともに以前の方法が使えなくなるので最新版をまとめてくれたようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOH1UPFg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOH1UPFg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Redditはこちら\r\nhttps://www.reddit.com/r/androiddev/comments/cw6lw9/publishing_an_android_library_to_mavencentral_in/",
+              "publishedAt": "2019-08-28T09:44:49Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/999",
+        "title": "Androidプロジェクトの未使用のリソースを定期的に削除する",
+        "body": "https://blog.kyash.co/entry/2019/08/28/123630\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/998",
+        "title": "Now in Androidエピソード3",
+        "body": "https://link.medium.com/5G1QAYDVvZ\r\n\r\n恒例のChetによる最新のAndroid開発の動向です。今回はみなさんお馴染みの日本オフィスのDevRelのメンバーも登場しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/997",
+        "title": "Android Studio 3.6 Canary 7, 8, 9",
+        "body": "https://androidstudio.googleblog.com/2019/08/android-studio-36-canary-7-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/cufyym/android_studio_36_canary_7_available/\r\n\r\nCanary7でMaven Publish Pluginがサポートされました\r\n\r\nドキュメントはこちら\r\nhttps://developer.android.com/studio/preview/features#maven-publish\r\n\r\n\r\nhttps://androidstudio.googleblog.com/2019/08/android-studio-36-canary-8-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/cw7ego/android_studio_36_canary_8_available/\r\n\r\nCanary8は7のquickfixのようです\r\n\r\n---\r\nなどとやっているうちにCanary9も出ました\r\n\r\nhttps://androidstudio.googleblog.com/2019/08/android-studio-36-canary-9-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/cx3zok/android_studio_36_canary_9_available/\r\n\r\nアプリのデバッグビルド時に使われるパッケージングツールが`zipflinger`というものに変わりました。ビルドスピードが向上しているようです。\r\n\r\nKotlin Multiplatform Project対応も改善している、というレポートも見かけます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOH2batg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOH2batg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "8/23(金)からの一週間で3つもCanary版が出るとは思いませんでした",
+              "publishedAt": "2019-08-31T14:21:46Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/996",
+        "title": "Kotlin/Nativeのメモリーモデルに対する不満と解決案",
+        "body": "https://itnext.io/why-the-kotlin-native-memory-model-cannot-hold-ae1631d80cf6\r\nhttps://medium.com/@timelzayus/designing-a-kotlin-memory-safe-mode-c76c06317c3e\r\n\r\nKotlin/Nativeにはスレッドをまたいで共有したいオブジェクトはimmutableでなければならない、という制約があります。ただこれはランタイムに決定する特性で、コンパイル時チェックができません。\r\n\r\nこの特性に対する不満と、それを打開するための案として`const class`が提案されています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/995",
+        "title": "Android cookpadLiveで採用してる技術 2019夏",
+        "body": "https://techlife.cookpad.com/entry/2019/08/26/160000",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

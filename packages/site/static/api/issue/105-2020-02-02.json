@@ -1,0 +1,236 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTA0MjczMg==",
+  "number": 105,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/105",
+  "title": "105 2020-02-02",
+  "description": "SynchronizedとCoroutineは一緒に使わない, View Bindingのサンプルが公開, React NativeとShopify, Square製のRecyclerViewのライブラリ, など",
+  "closedAt": "2020-02-02T10:15:13Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOISkd7Q==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfOIUyWLQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1236",
+        "title": "SynchronizedとCoroutineは一緒に使わない",
+        "body": "https://blog.danlew.net/2020/01/28/coroutines-and-java-synchronization-dont-mix/\r\n\r\nsuspend関数に `@Synchronized` を付けても期待した挙動にはならないという話です。考えたら当たり前なのですが、何も考えずにKotlinへmigrateすると起きそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1237",
+        "title": "View Bindingのサンプルが公開",
+        "body": "https://github.com/android/architecture-components-samples/tree/master/ViewBindingSample\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1238",
+        "title": "FragmentContainerViewの使い方",
+        "body": "https://proandroiddev.com/android-fragments-fragmentcontainerview-292f393f9ccf\r\n\r\nfragmentタグやFrameLayoutを使ったときの比較や、簡単な使い方が紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1239",
+        "title": "Dagger 2.26",
+        "body": "https://github.com/google/dagger/releases/tag/dagger-2.26\r\n\r\ndagger-androidがついにAndroidXに移行しました。\r\n他、Kotlinで`companion object`を`@Module`でアノテートするワークアラウンドが不必要になったりしています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIppgVA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIppgVA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "これで、Jetifier消せるプロジェクトも割とありそうですね。\r\nチェックできるライブラリがあるので、確認して見るのも良さそうです。\r\nhttps://github.com/plnice/can-i-drop-jetifier",
+              "publishedAt": "2020-01-31T01:37:05Z",
+              "author": {
+                "login": "satoshun",
+                "url": "https://github.com/satoshun",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/1389835?u=d8608066a7664dbdf0fb8f67fb6db98560232fbe&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1240",
+        "title": "2020年1月29日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#january_29_2020\r\n\r\nAppCompat 1.2.0-alpha02とCore 1.3.0-alpha01が来ています。\r\nAPI23でTextViewのCompound Drawableのtintがかからない件や、WebViewがAPI23以下でクラッシュする件などが修正されています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1241",
+        "title": "Fragmentのmultiple back stacksの計画",
+        "body": "https://issuetracker.google.com/issues/80029773#comment77\r\n\r\nコメントによると、Navigation:2.4.0-alpha01 と Fragment:1.4.0-alpha01 で入る予定です。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1242",
+        "title": "Android Studio 3.6 RC 2",
+        "body": "https://androidstudio.googleblog.com/2020/01/android-studio-36-release-candidate-2.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1243",
+        "title": "Now in AndroidのYoutube、ポッドキャスト",
+        "body": "http://nowinandroid.googledevelopers.libsynpro.com/\r\nhttps://www.youtube.com/playlist?list=PLWz5rJ2EKKc9AtgKMBBdphI-mrx8XzW56\r\n\r\nmediumの記事以外にも、Youtube、Podcastで配信してくれるそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1244",
+        "title": "React NativeとShopify",
+        "body": "https://engineering.shopify.com/blogs/engineering/react-native-future-mobile-shopify\r\n\r\nReact Nativeに強い会社を買収したこともあり、React Nativeでのモバイルアプリ開発に舵を切ったそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIqMbfg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIqMbfg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Shopifyの開発者の話をmeetupで聞いてきた方が話をまとめてくださってました\r\n\r\niOS NativeからReact Native に乗り換えた Shopify の話聞いてきた\r\nhttp://tomoima525.hatenablog.com/entry/2020/01/30/171013",
+              "publishedAt": "2020-02-02T09:16:48Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1245",
+        "title": "Square製のRecyclerViewのライブラリ、Cycler",
+        "body": "https://github.com/square/cycler\r\nhttps://www.reddit.com/r/androiddev/comments/exbfzl/squarecycler_the_square_cycler_api_allows_you_to/\r\n\r\nまだ開発途中ですが、宣言的、簡潔に書くことを目指しているようです。Epoxy、Groupieなどのライブラリの対抗馬になるかもしれません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

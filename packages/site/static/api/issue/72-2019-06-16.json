@@ -1,0 +1,347 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDM5Mzc0MQ==",
+  "number": 72,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/72",
+  "title": "72 2019-06-16",
+  "description": "Dynamic Feature Module内のコードにアクセスする、WorkManagerと定期処理、AndroidXとJUnit5、32bit版Android Studioのサポート終了、SignIn with Apple、など",
+  "closedAt": "2019-06-16T10:52:07Z",
+  "issues": {
+    "totalCount": 13,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABRPOGzdjYQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGxc5CA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/877",
+        "title": "Reactive StreamsとKotlin Flow",
+        "body": "https://medium.com/@elizarov/reactive-streams-and-kotlin-flows-bfd12772cda4\r\n\r\nKotlin FlowがRxやAkkaが準拠しているReactive Streamsの考え方をどう取り入れたか解説されています。またKotlin Flowが必要とあらばReactive StreamsのPublisherと相互変換することができることについても説明されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHfJ8aw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHfJ8aw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "穿った見方かもしれませんがWWWDCで発表された[Combine](https://developer.apple.com/documentation/combine)を意識して書かれたのかもしれません。",
+              "publishedAt": "2019-06-16T08:09:46Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/876",
+        "title": "既存アプリにFlutterを段階的に導入していく",
+        "body": "https://hackernoon.com/how-to-use-flutter-for-hybrid-development-alibabas-open-source-code-instance-302bf2273485\r\n\r\nAlibabaがどのようにFlutterを既存の資産を活かしつつ使っているか、を解説しています。\r\nOSSとして公開もしています\r\nhttps://github.com/alibaba/flutter_boost",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/875",
+        "title": "最近の面接のトレンド",
+        "body": "https://www.reddit.com/r/androiddev/comments/c0brs9/interview_chills/\r\n\r\nスレ主の周りでは最近ラピッドプロトタイピングがコーディング面接のトレンドのようです。\r\n\r\nコーディング面接の話よりは「そもそもシニアエンジニアとは？」というところでスレは盛り上がっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/874",
+        "title": "Dynamic Feature Module内のコードにアクセスする方法",
+        "body": "https://medium.com/androiddevelopers/patterns-for-accessing-code-from-dynamic-feature-modules-7e5dca6f9123",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/873",
+        "title": "WorkManagerと定期処理",
+        "body": "https://medium.com/androiddevelopers/workmanager-periodicity-ff35185ff006\r\n\r\nWorkManagerの使い方シリーズその3です。\r\n今回は定期処理についてまとまっています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/872",
+        "title": "AndroidX x JUnit5でUIテスト",
+        "body": "https://swet.dena.com/entry/2019/06/12/170000\r\n\r\n公式ではまだ対応していおらず、 [mannodermaus/android-junit5](https://github.com/mannodermaus/android-junit5)というライブラリを利用するようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/871",
+        "title": "WorkManagerとKotlin",
+        "body": "https://medium.com/androiddevelopers/workmanager-meets-kotlin-b9ad02f7405e",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHfJ5HQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHfJ5HQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Coroutineが使えるとアプリ部とロジックを共有しやすくていいですね",
+              "publishedAt": "2019-06-16T07:56:08Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/870",
+        "title": "Sign In with AppleについてのQ&A",
+        "body": "https://techcrunch.com/2019/06/07/answers-to-your-burning-questions-about-how-sign-in-with-apple-works/\r\nhttps://jp.techcrunch.com/2019/06/11/2019-06-07-answers-to-your-burning-questions-about-how-sign-in-with-apple-works/\r\n\r\nAndroidでの対応はWebViewになるようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/869",
+        "title": "全部アプリのせいにされることもある",
+        "body": "https://www.reddit.com/r/androiddev/comments/bz9tj9/sometimes_you_get_blamed_for_everything/\r\n\r\n理不尽なストアレビューシリーズ",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/868",
+        "title": "Hello, world! - Android@Microsoft",
+        "body": "https://medium.com/android-microsoft/hello-world-57fc0630d47c\r\nhttps://www.reddit.com/r/androiddev/comments/bzrmrv/hello_world_androidmicrosoft/\r\n\r\nMicrosoftのAndroidチームがどのように、何を使って働いているか、という紹介記事のようです。\r\n技術選定についてはかなり自由度がありそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHfJ4Wg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHfJ4Wg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "むかし、ぜんぶReact Nativeだという話があった気がしますが、そんなことないんですね。",
+              "publishedAt": "2019-06-16T07:52:27Z",
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/867",
+        "title": "参考になるイケてるデザインのアプリ教えて",
+        "body": "https://www.reddit.com/r/androiddev/comments/bzoivu/what_are_some_beautiful_and_well_designed_apps_we/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/866",
+        "title": "32bit版Android Studio/エミュレータのサポート終了",
+        "body": "https://android-developers.googleblog.com/2019/06/moving-android-studio-and-android.html\r\nhttps://www.reddit.com/r/androiddev/comments/bzh238/moving_android_studio_and_android_emulator_to/\r\n\r\nまず今年中に非推奨になり、2020年の末日にサポート終了になります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/865",
+        "title": "Value Objects, Service Objects, and Glue",
+        "body": "https://publicobject.com/2019/06/10/value-objects-service-objects-and-glue/\r\n\r\n必要なオブジェクトを3種類に分ける考え方です。シンプルですが、わかりやすく納得のいくものでした。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
