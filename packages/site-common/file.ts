@@ -5,7 +5,10 @@ export async function mkdirp(path: fs.PathLike): Promise<void> {
   await promisify(fs.mkdir)(path, { recursive: true })
 }
 
-export async function rmdir(path: fs.PathLike, recursive: boolean): Promise<void> {
+export async function rmdir(
+  path: fs.PathLike,
+  recursive: boolean
+): Promise<void> {
   await promisify(fs.rmdir)(path, { recursive })
 }
 

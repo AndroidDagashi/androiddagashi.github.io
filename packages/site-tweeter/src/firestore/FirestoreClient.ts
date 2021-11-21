@@ -1,4 +1,3 @@
-
 import { Firestore, getFirestore } from 'firebase-admin/firestore'
 import { initializeApp, cert, App, ServiceAccount } from 'firebase-admin/app'
 import Milestone from './Milestone'

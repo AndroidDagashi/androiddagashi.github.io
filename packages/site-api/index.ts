@@ -8,7 +8,7 @@ import { chunk } from './src/utils'
 import { siteConfig } from 'site-config'
 import { promisify } from 'util'
 import rimraf from 'rimraf'
-import {copy} from 'fs-extra'
+import { copy } from 'fs-extra'
 
 const rimrafp = promisify(rimraf)
 
@@ -52,7 +52,9 @@ async function generateApi(): Promise<void> {
   await rimrafp(path.join(config.outputDirs.root, '*.json'))
   await mkdirp(config.outputDirs.root)
 
-  await copy(config.tempOutputDirs.root, config.outputDirs.root, { overwrite: true })
+  await copy(config.tempOutputDirs.root, config.outputDirs.root, {
+    overwrite: true,
+  })
 }
 
 generateApi()
