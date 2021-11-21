@@ -4,6 +4,17 @@
   "masterIssue": true,
   "packageRules": [
     {
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
+    },
+    {
       "matchSourceUrlPrefixes": ["https://github.com/nuxt/eslint-config"],
       "groupName": "@nuxtjs/eslint-config"
     }
