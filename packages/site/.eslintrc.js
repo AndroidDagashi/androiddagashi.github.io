@@ -16,4 +16,12 @@ module.exports = {
     'no-unused-vars': 'off',
     'import/no-named-as-default-member': 'off',
   },
+  overrides: [
+    {
+      files: ['pages/**/*.vue', 'layouts/**/*.vue'],
+      rules: {
+        'vue/multi-word-component-names': 'off',
+      },
+    },
+  ],
 }
