@@ -67,9 +67,7 @@ export const mutations: MutationTree<RootState> = {
     state: RootState,
     authors: ContactInfo[]
   ): void {
-    state.authors = authors.sort((a, b) =>
-      a.name.toLowerCase() > b.name.toLowerCase() ? 1 : -1
-    )
+    state.authors = authors
   },
   [MutationTypes.UPDATE_DIGEST](
     state: RootState,
