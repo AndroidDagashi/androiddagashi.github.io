@@ -18,5 +18,6 @@ export const siteConfig = {
     { name: 'hydrakecat' },
     { name: 'STAR_ZERO' },
     { name: 'stsn_jp' },
+    { name: 'new_runnable' },
   ],
 } as NuxtRuntimeConfig & SiteConfig
