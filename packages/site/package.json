@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development nuxt",
-    "build": "cross-env NODE_ENV=production nuxt build",
-    "start": "cross-env NODE_ENV=production nuxt start",
-    "generate": "cross-env NODE_ENV=production nuxt generate"
+    "dev": "NODE_ENV=development nuxt",
+    "build": "NODE_ENV=production nuxt build",
+    "start": "NODE_ENV=production nuxt start",
+    "generate": "NODE_ENV=production nuxt generate"
   },
   "dependencies": {
     "axios": "^0.25.0",
@@ -32,7 +32,6 @@
     "@types/twitter-text": "3.1.1",
     "@typescript-eslint/eslint-plugin": "5.9.1",
     "@typescript-eslint/parser": "5.9.1",
-    "cross-env": "7.0.3",
     "eslint": "8.6.0",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-nuxt": "3.1.0",
