@@ -1,7 +1,6 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
 import { NuxtConfig } from '@nuxt/types'
 import nodeExternals from 'webpack-node-externals'
-import parseArgs from 'minimist'
 import { siteConfig } from 'site-config'
 import { renderOGPMeta } from './utils/ogp'
 
@@ -16,25 +15,8 @@ while (pageInfo.hasNextPage) {
   pageInfo = next.milestones.pageInfo
 }
 
-const argv = parseArgs(process.argv.slice(2), {
-  alias: {
-    H: 'hostname',
-    p: 'port',
-  },
-  string: ['H'],
-  unknown: () => false,
-})
-
-const port =
-  argv.port ||
-  process.env.PORT ||
-  process.env.npm_package_config_nuxt_port ||
-  '3000'
-const host =
-  argv.hostname ||
-  process.env.HOST ||
-  process.env.npm_package_config_nuxt_host ||
-  'localhost'
+const port = process.env.PORT || process.env.npm_package_config_nuxt_port || '3000'
+const host = process.env.HOST || process.env.npm_package_config_nuxt_host || 'localhost'
 
 const isDev = process.env.NODE_ENV === 'development'
 // const isProd = process.env.NODE_ENV === 'production'

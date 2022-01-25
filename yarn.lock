@@ -2481,13 +2481,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/minimist@npm:1.2.2":
-  version: 1.2.2
-  resolution: "@types/minimist@npm:1.2.2"
-  checksum: b8da83c66eb4aac0440e64674b19564d9d86c80ae273144db9681e5eeff66f238ade9515f5006ffbfa955ceff8b89ad2bd8ec577d7caee74ba101431fb07045d
-  languageName: node
-  linkType: hard
-
 "@types/node-sass@npm:*":
   version: 4.11.2
   resolution: "@types/node-sass@npm:4.11.2"
@@ -4901,18 +4894,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-env@npm:7.0.3":
-  version: 7.0.3
-  resolution: "cross-env@npm:7.0.3"
-  dependencies:
-    cross-spawn: ^7.0.1
-  bin:
-    cross-env: src/bin/cross-env.js
-    cross-env-shell: src/bin/cross-env-shell.js
-  checksum: 26f2f3ea2ab32617f57effb70d329c2070d2f5630adc800985d8b30b56e8bf7f5f439dd3a0358b79cee6f930afc23cf8e23515f17ccfb30092c6b62c6b630a79
-  languageName: node
-  linkType: hard
-
 "cross-fetch@npm:3.1.4":
   version: 3.1.4
   resolution: "cross-fetch@npm:3.1.4"
@@ -4922,7 +4903,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"cross-spawn@npm:^7.0.1, cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
+"cross-spawn@npm:^7.0.2, cross-spawn@npm:^7.0.3":
   version: 7.0.3
   resolution: "cross-spawn@npm:7.0.3"
   dependencies:
@@ -9091,7 +9072,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimist@npm:1.2.5, minimist@npm:^1.2.0, minimist@npm:^1.2.5":
+"minimist@npm:^1.2.0, minimist@npm:^1.2.5":
   version: 1.2.5
   resolution: "minimist@npm:1.2.5"
   checksum: 86706ce5b36c16bfc35c5fe3dbb01d5acdc9a22f2b6cc810b6680656a1d2c0e44a0159c9a3ba51fb072bb5c203e49e10b51dcd0eec39c481f4c42086719bae52
@@ -12194,20 +12175,17 @@ __metadata:
     "@nuxtjs/vuetify": 1.12.3
     "@types/lodash": 4.14.178
     "@types/markdown-it": 12.2.3
-    "@types/minimist": 1.2.2
     "@types/node": 14.18.5
     "@types/twitter-text": 3.1.1
     "@typescript-eslint/eslint-plugin": 5.9.1
     "@typescript-eslint/parser": 5.9.1
     axios: ^0.25.0
-    cross-env: 7.0.3
     date-fns: 2.28.0
     eslint: 8.6.0
     eslint-config-prettier: 8.3.0
     eslint-plugin-nuxt: 3.1.0
     lodash.flatmap: 4.5.0
     markdown-it: 12.3.2
-    minimist: 1.2.5
     modern-normalize: 1.1.0
     nuxt: 2.15.8
     prettier: 2.5.1
