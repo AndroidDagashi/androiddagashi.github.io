@@ -49,7 +49,10 @@ const issueIds = indexJson.milestones.nodes.map(
 
 const config: NuxtConfig = {
   target: 'static',
-  publicRuntimeConfig: siteConfig,
+  publicRuntimeConfig: {
+    ...siteConfig,
+    apiEndpoint: baseUrl,
+  },
   head: {
     title: siteConfig.title,
     meta: [
@@ -114,7 +117,7 @@ const config: NuxtConfig = {
     fallback: true,
     routes: issueIds,
   },
-  modules: ['@nuxtjs/axios'],
+  modules: [],
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/vuetify'],
   plugins: [
     '~/plugins/api',
@@ -122,9 +125,6 @@ const config: NuxtConfig = {
     { src: '~/plugins/ga.js', ssr: false },
     { src: '~/plugins/init.client.ts', mode: 'client' },
   ],
-  axios: {
-    baseURL: baseUrl,
-  },
   vuetify: {
     treeShake: true,
     optionsPath: './vuetify.options.ts',
