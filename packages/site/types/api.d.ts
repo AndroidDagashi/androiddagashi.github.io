@@ -4,7 +4,9 @@ import { ApiClient } from '~/plugins/api'
 
 declare module '@nuxt/types/config/runtime' {
   // eslint-disable-next-line @typescript-eslint/no-empty-interface
-  interface NuxtRuntimeConfig extends SiteConfig {}
+  interface NuxtRuntimeConfig extends SiteConfig {
+    apiEndpoint: string
+  }
 }
 declare module '@nuxt/types' {
   interface Context {

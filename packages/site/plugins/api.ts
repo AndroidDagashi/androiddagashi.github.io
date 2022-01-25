@@ -1,12 +1,10 @@
 import { Context } from '@nuxt/types'
-// eslint-disable-next-line import/named
-import { NuxtAxiosInstance } from '@nuxtjs/axios'
-import { AxiosRequestConfig } from 'axios'
+import axios, { AxiosRequestConfig, AxiosInstance } from 'axios'
 
 export class ApiClient {
-  private readonly axios: NuxtAxiosInstance
+  private readonly axios: AxiosInstance
 
-  constructor(axios: NuxtAxiosInstance) {
+  constructor(axios: AxiosInstance) {
     this.axios = axios
   }
 
@@ -30,7 +28,9 @@ export default (
   context: Context,
   inject: (key: string, value: unknown) => void
 ): Promise<void> | void => {
-  const client = new ApiClient(context.$axios)
+  const client = new ApiClient(
+    axios.create({ baseURL: context.$config.apiEndpoint })
+  )
 
   context.$api = client
   inject('api', client)
