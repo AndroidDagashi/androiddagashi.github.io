@@ -38,6 +38,9 @@ const config: NuxtConfig = {
   },
   head: {
     title: siteConfig.title,
+    htmlAttrs: {
+      lang: 'ja'
+    },
     meta: [
       { charset: 'utf-8' },
       {
