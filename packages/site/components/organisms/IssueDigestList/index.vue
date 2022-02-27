@@ -2,7 +2,7 @@
   <div class="IssueDigestList bg-white border border-gray-200 sm:rounded-md">
     <ul>
       <template v-for="(item, index) in milestones">
-        <li :key="index" class="IssueDigestList__item hover:bg-green-50">
+        <li :key="index" class="IssueDigestList__item hover:bg-gray-100">
           <IssueDigest :milestone="item" :index="index" class=""/>
         </li>
       </template>
