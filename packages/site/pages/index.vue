@@ -4,7 +4,12 @@
     <IssueDigestList class="mt-3" :milestones="milestones">
       <template v-if="pageInfo.hasNextPage" #bottom>
         <button class="LoadNextButton" @click="onLoadNext">
-          <Icon icon="ic:baseline-expand-more" width="24"/>
+          <client-only>
+            <Icon icon="ic:baseline-expand-more" width="24"/>
+            <template #placeholder>
+              <span class="inline-block w-6 h-6"></span>
+            </template>
+          </client-only>
         </button>
       </template>
     </IssueDigestList>
