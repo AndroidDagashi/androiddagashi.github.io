@@ -15,6 +15,7 @@
             <client-only>
               <Icon :icon="link.icon" width="24" />
             </client-only>
+            <span class="sr-only">{{ link.name }}</span>
           </a>
         </li>
       </ul>

@@ -5,11 +5,12 @@
       <template v-if="pageInfo.hasNextPage" #bottom>
         <button class="LoadNextButton" @click="onLoadNext">
           <client-only>
-            <Icon icon="ic:baseline-expand-more" width="24"/>
+            <Icon icon="ic:baseline-expand-more" width="24" />
             <template #placeholder>
               <span class="inline-block w-6 h-6"></span>
             </template>
           </client-only>
+          <span class="sr-only">次の記事を読み込む</span>
         </button>
       </template>
     </IssueDigestList>
@@ -30,7 +31,7 @@ export default defineComponent({
   name: 'Index',
   components: {
     IssueDigestList,
-    Icon
+    Icon,
   },
   head(): Record<string, unknown> {
     return {
