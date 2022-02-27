@@ -1,6 +1,5 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
 import { NuxtConfig } from '@nuxt/types'
-import nodeExternals from 'webpack-node-externals'
 import { siteConfig } from 'site-config'
 import { renderOGPMeta } from './utils/ogp'
 
@@ -15,8 +14,10 @@ while (pageInfo.hasNextPage) {
   pageInfo = next.milestones.pageInfo
 }
 
-const port = process.env.PORT || process.env.npm_package_config_nuxt_port || '3000'
-const host = process.env.HOST || process.env.npm_package_config_nuxt_host || 'localhost'
+const port =
+  process.env.PORT || process.env.npm_package_config_nuxt_port || '3000'
+const host =
+  process.env.HOST || process.env.npm_package_config_nuxt_host || 'localhost'
 
 const isDev = process.env.NODE_ENV === 'development'
 // const isProd = process.env.NODE_ENV === 'production'
@@ -62,7 +63,7 @@ const config: NuxtConfig = {
         href: '/favicon.ico',
       },
       {
-        rel: 'styleSheet',
+        rel: 'stylesheet',
         type: 'text/css',
         href: 'https://cdn.materialdesignicons.com/2.1.19/css/materialdesignicons.min.css',
       },
@@ -71,28 +72,38 @@ const config: NuxtConfig = {
         type: 'text/css',
         href: 'https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons',
       },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.googleapis.com',
+      },
+      {
+        rel: 'preconnect',
+        href: 'https://fonts.gstatic.com',
+        crossorigin: true,
+      },
+      {
+        rel: 'stylesheet',
+        href: 'https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap',
+      },
     ],
   },
   /*
    * Customize the progress-bar color
    */
   loading: { color: '#3B8070' },
+
+  css: [],
+
   /*
    * Build configuration
    */
-  css: ['~assets/css/main.css'],
   build: {
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     extend(configs, ctx): void {
-      if (ctx.isServer) {
-        configs.externals = [
-          nodeExternals({
-            allowlist: [/^vuetify/],
-          }),
-        ]
+      if (ctx.isClient) {
+        configs.node = configs.node || {}
+        configs.node.fs = 'empty'
       }
-      configs.node = configs.node || {}
-      configs.node.fs = 'empty'
     },
   },
   generate: {
@@ -100,16 +111,19 @@ const config: NuxtConfig = {
     routes: issueIds,
   },
   modules: [],
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/vuetify'],
+  buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
   plugins: [
+    '~/plugins/composition-api.ts',
     '~/plugins/api',
     '~/plugins/markdownit.ts',
     { src: '~/plugins/ga.js', ssr: false },
     { src: '~/plugins/init.client.ts', mode: 'client' },
   ],
-  vuetify: {
-    treeShake: true,
-    optionsPath: './vuetify.options.ts',
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  // @ts-ignore
+  tailwindcss: {
+    viewer: false,
+    configPath: '~/tailwind.config.cjs',
   },
   // https://github.com/nuxt/telemetry
   telemetry: true,

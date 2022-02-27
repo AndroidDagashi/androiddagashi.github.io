@@ -1,8 +1,7 @@
-import { NuxtRuntimeConfig } from '@nuxt/types/config/runtime'
 import { SiteConfig } from 'site-types/SiteConfig'
 
-export const siteConfig = {
-  title: 'Android Dagashi',
+export const siteConfig: SiteConfig = {
+  title: 'AndroidDagashi',
   description: 'Weekly Android developer news digest in Japanese',
   baseUrl: 'https://androiddagashi.github.io',
   issueRepository: {
@@ -20,4 +19,26 @@ export const siteConfig = {
     { name: 'stsn_jp' },
     { name: 'new_runnable' },
   ],
-} as NuxtRuntimeConfig & SiteConfig
+  links: [
+    {
+      name: 'twitter',
+      url: 'https://twitter.com/AndroidDagashi',
+      icon: 'ant-design:twitter-circle-filled',
+    },
+    {
+      name: 'github',
+      url: 'https://github.com/AndroidDagashi',
+      icon: 'akar-icons:github-fill',
+    },
+    {
+      name: 'mail',
+      url: 'mailto:android-dagashi@googlegroups.com',
+      icon: 'fluent:mail-16-filled',
+    },
+    {
+      name: 'rss',
+      url: 'http://feeds.feedburner.com/AndroidDagashi',
+      icon: 'fluent:rss-24-filled'
+    }
+  ],
+}

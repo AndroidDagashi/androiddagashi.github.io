@@ -1,52 +1,29 @@
 <template>
-  <div>
-    <v-layout justify-center align-center>
-      <v-flex xs12 sm12 md8 xl6>
-        <div class="text-center">
-          <img :alt="title" src="/image/logo.jpg" width="200" class="mb-5" />
-        </div>
-
-        <!-- description -->
-        <SiteDescription
-          :authors="authors"
-          :contact="contact"
-          :site-name="title"
-        />
-      </v-flex>
-    </v-layout>
-    <v-layout justify-center align-center>
-      <!-- Issue list -->
-      <v-flex xs12 sm12 md8 xl6 class="mt-2">
-        <v-card>
-          <IssueDigestList :milestones="milestones" />
-          <template v-if="pageInfo.hasNextPage">
-            <v-divider />
-            <LoadMoreListItem @click="onLoadNext" />
-          </template>
-        </v-card>
-      </v-flex>
-    </v-layout>
-  </div>
+  <main class="max-w-2xl mx-auto pt-10 pb-12 px-0 lg:pb-16">
+    <h2 class="text-2xl font-semibold font-roboto px-3">ISSUES</h2>
+    <IssueDigestList class="mt-3" :milestones="milestones">
+      <template v-if="pageInfo.hasNextPage" #bottom>
+        <button class="LoadNextButton" @click="onLoadNext">
+          <span class="material-icons">expand_more</span>
+        </button>
+      </template>
+    </IssueDigestList>
+  </main>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { mapState, mapGetters, mapActions } from 'vuex'
+import { mapState, mapActions } from 'vuex'
 import { GHDigestMilestone, GHPageInfo } from 'site-types/GitHubApi'
+import { defineComponent } from '@vue/composition-api'
 import { renderOGPMeta } from '~/utils/ogp'
 import IssueDigestList from '~/components/organisms/IssueDigestList/index.vue'
-import LoadMoreListItem from '~/components/molecules/LoadMoreListItem/index.vue'
-import SiteDescription from '~/components/organisms/SiteDescription/index.vue'
 
 import * as ActionTypes from '~/store/ActionTypes'
-import * as GetterTypes from '~/store/GetterTypes'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'Index',
   components: {
     IssueDigestList,
-    LoadMoreListItem,
-    SiteDescription,
   },
   head(): Record<string, unknown> {
     return {
@@ -60,8 +37,7 @@ export default Vue.extend({
     }
   },
   computed: {
-    ...mapState(['title', 'description', 'baseUrl', 'contact', 'digest']),
-    ...mapGetters({ authors: GetterTypes.GET_AUTHORS }),
+    ...mapState(['baseUrl', 'digest']),
     milestones(): GHDigestMilestone[] {
       return this.digest.milestones.nodes
     },
@@ -77,3 +53,21 @@ export default Vue.extend({
   },
 })
 </script>
+
+<style lang="postcss" scoped>
+.LoadNextButton {
+  @apply relative flex flex-row items-center justify-center w-full h-12 hover:bg-green-50;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: calc(100% - 3rem);
+    height: 1px;
+    margin-right: 0.5em;
+    margin-left: 0.5em;
+
+    @apply bg-gray-200;
+  }
+}
+</style>

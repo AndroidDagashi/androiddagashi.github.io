@@ -1,0 +1,33 @@
+<template>
+  <component
+    :is="tag"
+    class="card bg-white overflow-hidden sm:rounded-lg"
+    :class="{ shadow: shadow }"
+    v-bind="$attrs"
+  >
+    <div class="px-4 py-5 sm:p-6">
+      <slot />
+    </div>
+  </component>
+</template>
+
+<script lang="ts">
+import { defineComponent } from '@vue/composition-api'
+
+export default defineComponent({
+  name: 'ADCard',
+  inheritAttrs: false,
+  props: {
+    tag: {
+      type: String,
+      required: false,
+      default: 'div',
+    },
+    shadow: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+  },
+})
+</script>

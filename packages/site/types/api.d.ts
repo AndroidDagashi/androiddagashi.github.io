@@ -1,5 +1,5 @@
 import { NuxtRuntimeConfig } from '@nuxt/types/config/runtime'
-import { SiteConfig } from '~/../site-types/SiteConfig'
+import { SiteConfig } from 'site-types/SiteConfig'
 import { ApiClient } from '~/plugins/api'
 
 declare module '@nuxt/types/config/runtime' {
