@@ -1,52 +1,74 @@
 <template>
-  <v-container>
-    <v-row justify="center" class="mb-8">
-      <v-col cols="12" sm="8">
-        <h2>Tweet Composer</h2>
-      </v-col>
-    </v-row>
-    <v-row no-gutters justify="center" class="mb-8">
-      <v-col cols="12" sm="8">
-        <v-card class="mx-auto" raised>
-          <v-card-text
-            style="white-space: pre-wrap; word-wrap: break-word"
-            v-text="tweet"
-          />
-          <v-card-subtitle
-            :class="{ 'red--text': !isValidTweet, 'green--text': isValidTweet }"
-          >
-            Tweet Length: {{ tweetLength }}
-          </v-card-subtitle>
-        </v-card>
-      </v-col>
-    </v-row>
-    <v-row no-gutters justify="center">
-      <v-col cols="12" sm="8">
-        <v-textarea
+  <main class="max-w-lg mx-auto pt-10 pb-12 px-4 lg:pb-16">
+    <h2 class="text-xl font-semibold">Tweet Composer</h2>
+
+    <div class="mt-4">
+      <label class="block text-sm font-medium text-gray-700"
+        >Tweet Preview</label
+      >
+      <ADCard class="mt-3" shadow>
+        <p
+          class="whitespace-pre-wrap"
+          style="word-wrap: break-word"
+          v-text="tweet"
+        />
+        <p
+          class="mt-5"
+          :class="{
+            'text-red-500': !isValidTweet,
+            'text-green-500': isValidTweet,
+          }"
+        >
+          Tweet Length: {{ tweetLength }}
+        </p>
+      </ADCard>
+    </div>
+
+    <div class="mt-4">
+      <label
+        for="midlestone-summary"
+        class="block text-sm font-medium text-gray-700"
+        >Milestone Summary</label
+      >
+      <div class="mt-1">
+        <textarea
           v-model="summary"
-          outlined
-          label="Milestone Summary"
+          rows="5"
+          name="milestone-summary"
+          class="block w-full shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm border-gray-300 rounded-md bg-white"
           @input="onInput"
         />
-        <v-text-field
+      </div>
+    </div>
+
+    <div class="mt-4">
+      <label
+        for="midlestone-number"
+        class="block text-sm font-medium text-gray-700"
+        >Milestone Number</label
+      >
+      <div class="mt-1">
+        <input
           v-model="milestoneNumber"
           type="number"
-          outlined
-          label="Milestone Number"
+          name="milestone-number"
+          class="block w-full shadow-sm focus:ring-sky-500 focus:border-sky-500 sm:text-sm border-gray-300 rounded-md bg-white"
           @input="onInput"
         />
-      </v-col>
-    </v-row>
-  </v-container>
+      </div>
+    </div>
+  </main>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
 import { mapState } from 'vuex'
+// eslint-disable-next-line import/default
 import twitter from 'twitter-text'
+import { defineComponent } from '@vue/composition-api'
+import ADCard from '~/components/molecules/ADCard/index.vue'
 
-export default Vue.extend({
-  name: 'Tweetcomposer',
+export default defineComponent({
+  components: { ADCard },
   data() {
     return {
       summary: '',

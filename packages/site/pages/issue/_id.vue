@@ -1,72 +1,43 @@
 <template>
-  <v-layout justify-center align-center>
-    <v-flex xs12 sm12 md8 xl6>
-      <v-card>
-        <v-card-title class="headline"> #{{ milestone.title }} </v-card-title>
-        <v-card-text v-if="milestone.description" class="text--primary">
-          <MarkdownText :text="milestone.description" />
-        </v-card-text>
-        <v-card-text>
-          <ShareWidgets />
-          <div>
-            <template v-for="(item, index) in issuesWithDivider">
-              <v-divider v-if="item.isDivider" :key="index" />
-              <article v-else :key="item.id" class="mt-3">
-                <div>
-                  <h1 class="mb-1" v-html="item.title" />
-                  <div class="text-left mb-2">
-                    <IssueLabel
-                      v-for="(label, index2) in item.labels.nodes"
-                      :key="index2"
-                      :label-info="label"
-                      :index="index2"
-                    />
-                  </div>
-                  <MarkdownText
-                    class="issue-body text--primary"
-                    :text="item.body"
-                  />
-                  <v-container class="px-0">
-                    <v-layout v-if="item.comments.totalCount">
-                      <IssueComments :issue="item" />
-                    </v-layout>
-                    <v-layout justify-end>
-                      <v-btn :href="item.url" class="mr-0" text target="_blank">
-                        GitHubで見る
-                      </v-btn>
-                    </v-layout>
-                  </v-container>
-                </div>
-              </article>
-            </template>
-          </div>
-        </v-card-text>
-      </v-card>
-    </v-flex>
-  </v-layout>
+  <main class="max-w-2xl mx-auto pt-10 pb-12 px-0 lg:pb-16">
+    <div class="px-3">
+      <h2 class="text-2xl font-semibold font-roboto">#{{ milestoneTitle }}</h2>
+      <div v-if="milestoneDescription" class="mt-3">
+        <MarkdownText :text="milestoneDescription" />
+      </div>
+
+      <div class="mt-3">
+        <ShareWidgets />
+      </div>
+    </div>
+    <section class="">
+      <ul class="LinkList">
+        <template v-for="(item, index) in issues">
+          <LinkItem :key="index" :issue="item" class="LinkList__item" />
+        </template>
+      </ul>
+    </section>
+  </main>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
 import { mapState } from 'vuex'
 import { GHMilestone, GHIssue } from 'site-types/GitHubApi'
-import flatmap from 'lodash.flatmap'
-import { Divider } from '../../store'
+import { defineComponent } from '@vue/composition-api'
 import { renderOGPMeta } from '../../utils/ogp'
-import IssueLabel from '~/components/IssueLabel.vue'
 import ShareWidgets from '~/components/ShareWidgets.vue'
-import IssueComments from '~/components/IssueComments.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
+import LinkItem from '~/components/organisms/LinkItem/index.vue'
 
 interface IssueData {
   milestone: GHMilestone | null
   title: string
 }
 
-export default Vue.extend({
+export default defineComponent({
   name: 'Issue',
-  components: { IssueLabel, IssueComments, ShareWidgets, MarkdownText },
+  components: { ShareWidgets, MarkdownText, LinkItem },
   async asyncData({ route, $api }): Promise<IssueData> {
     const data = await $api.get<GHMilestone>(
       `/api/issue/${route.params.id}.json`
@@ -103,17 +74,20 @@ export default Vue.extend({
   computed: {
     ...mapState({
       siteTitle: 'title',
-      description: 'description',
+      description: 'siteDescription',
       baseUrl: 'baseUrl',
     }),
     milestoneId(): string {
       return this.$route.params.id
     },
-    issuesWithDivider(): (GHIssue | Divider)[] {
-      return flatmap(this.milestone.issues.nodes, (value) => [
-        { isDivider: true },
-        value,
-      ])
+    milestoneTitle(): string {
+      return this.milestone?.title ?? ''
+    },
+    milestoneDescription(): string {
+      return this.milestone?.description ?? ''
+    },
+    issues(): GHIssue[] {
+      return this.milestone?.issues?.nodes ?? []
     },
   },
   mounted() {
@@ -121,5 +95,3 @@ export default Vue.extend({
   },
 })
 </script>
-
-<style lang="postcss" scoped></style>

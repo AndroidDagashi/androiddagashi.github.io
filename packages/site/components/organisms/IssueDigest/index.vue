@@ -1,32 +1,37 @@
 <template>
-  <v-list-item class="issue-digest" :to="`issue/${milestone.path}/`" nuxt>
-    <v-list-item-content>
-      <v-list-item-title v-html="title" />
-      <v-list-item-subtitle class="issue-summary" v-html="summary" />
-    </v-list-item-content>
-  </v-list-item>
+  <nuxt-link class="IssueDigest flex p-4" :to="`issue/${milestone.path}/`">
+    <div>
+      <div class="flex sm:flex-row flex-col items-baseline">
+        <p class="text-xl font-medium font-roboto" v-html="title" />
+        <p class="sm:ml-2 ml-0 text-gray-500 text-sm" v-text="subtitle" />
+      </div>
+      <p
+        class="IssueDigest__summary mt-1 line-clamp-2 text-gray-500"
+        v-html="summary"
+      />
+    </div>
+  </nuxt-link>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import type { PropType } from 'vue'
+import type { PropType } from '@vue/composition-api'
 import { GHDigestMilestone } from 'site-types/GitHubApi'
+import { defineComponent } from '@vue/composition-api'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'IssueDigest',
   props: {
     milestone: {
       type: Object as PropType<GHDigestMilestone>,
       required: true,
     },
-    index: {
-      type: Number,
-      required: true,
-    },
   },
   computed: {
     title(): string {
-      return `#${this.milestone.title} (${this.milestone.issues.totalCount}件のリンク)`
+      return `#${this.milestone.title}`
+    },
+    subtitle(): string {
+      return `${this.milestone.issues.totalCount}件のリンク`
     },
     summary(): string {
       const issues = this.milestone.issues
@@ -35,9 +40,3 @@ export default Vue.extend({
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.issue-summary {
-  line-height: 1.5 !important;
-}
-</style>

@@ -1,23 +1,22 @@
 <template>
-  <v-chip :key="index" :style="chipColorStyle" class="text-caption" small>
+  <span
+    :style="chipColorStyle"
+    class="text-white text-xs py-1 px-3 rounded-full font-bold"
+  >
     <a :href="githubLabelLink" target="_blank">{{ labelInfo.name }}</a>
-  </v-chip>
+  </span>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import type { PropType } from 'vue'
+import type { PropType } from '@vue/composition-api'
+import { defineComponent } from '@vue/composition-api'
 import { GHLabel } from 'site-types/GitHubApi'
 import { mapState } from 'vuex'
 import { RootState } from '../store'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'IssueLabel',
   props: {
-    index: {
-      type: Number,
-      required: true,
-    },
     labelInfo: {
       type: Object as PropType<GHLabel>,
       required: true,

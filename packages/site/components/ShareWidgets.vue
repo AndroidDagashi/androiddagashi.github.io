@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="h-5">
     <client-only placeholder="loading share widgets...">
-      <div>
-        <span class="mr-2">
+      <div class="flex flex-row">
+        <span>
           <a
             href="https://twitter.com/share?ref_src=twsrc%5Etfw"
             class="twitter-share-button"
@@ -11,7 +11,7 @@
             >Tweet</a
           >
         </span>
-        <span>
+        <span class="ml-2">
           <a
             href="http://b.hatena.ne.jp/entry/"
             class="hatena-bookmark-button"
@@ -33,9 +33,9 @@
   </div>
 </template>
 <script lang="ts">
-import Vue from 'vue'
+import { defineComponent } from '@vue/composition-api'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'ShareWidgets',
 })
 </script>

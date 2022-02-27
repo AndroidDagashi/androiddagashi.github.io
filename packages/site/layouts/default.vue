@@ -1,26 +1,29 @@
 <template>
-  <v-app>
+  <div class="min-h-screen flex flex-col bg-gray-50">
     <AppHeader :title="title" :rss-url="rssUrl" />
-    <v-main class="primary--text">
-      <v-container fluid fill-height justify-center>
-        <nuxt />
-      </v-container>
-    </v-main>
-    <AppFooter :title="title" />
-  </v-app>
+    <nuxt class="flex-grow" />
+    <AppFooter
+      :title="title"
+      :authors="authors"
+      :contact="contact"
+      :links="$config.links"
+    />
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { mapState } from 'vuex'
+import { mapState, mapGetters } from 'vuex'
+import { defineComponent } from '@vue/composition-api'
 import AppHeader from '~/components/organisms/AppHeader/index.vue'
 import AppFooter from '~/components/organisms/AppFooter/index.vue'
 
-export default Vue.extend({
-  name: 'DefaultLayout',
+import * as GetterTypes from '~/store/GetterTypes'
+
+export default defineComponent({
   components: { AppHeader, AppFooter },
   computed: {
-    ...mapState(['title', 'rssUrl']),
+    ...mapState(['title', 'rssUrl', 'description', 'contact']),
+    ...mapGetters({ authors: GetterTypes.GET_AUTHORS }),
   },
 })
 </script>

@@ -1,22 +1,27 @@
-<template functional>
-  <a
-    class="twitter-link"
-    :href="`https://twitter.com/${props.screenName}`"
-    target="_blank"
-    >@{{ props.screenName }}</a
+<template>
+  <a class="twitter-link underline" :href="url" target="_blank"
+    >@{{ screenName }}</a
   >
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import { computed, defineComponent } from '@vue/composition-api'
+import { twitterUrl } from '~/utils/urls'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'TwitterLink',
   props: {
     screenName: {
       type: String,
       required: true,
     },
+  },
+  setup(props) {
+    const url = computed(() => twitterUrl(props.screenName))
+
+    return {
+      url,
+    }
   },
 })
 </script>

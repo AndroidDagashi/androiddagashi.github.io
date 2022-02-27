@@ -1,35 +1,45 @@
 <template>
-  <v-app-bar color="indigo" dark fixed app>
-    <v-toolbar-title>
-      <nuxt-link
-        class="text-h6 white--text"
-        style="text-decoration: none"
-        to="/"
+  <header class="bg-white text-gray-800 font-roboto">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div
+        class="w-full py-3 flex items-center justify-between lg:borrder-none border-b border-gray-200"
       >
-        {{ title }}
-      </nuxt-link>
-    </v-toolbar-title>
-    <v-spacer />
-    <v-toolbar-items>
-      <v-btn :href="rssUrl" text target="_blank"> RSS </v-btn>
-    </v-toolbar-items>
-  </v-app-bar>
+        <h1>
+          <nuxt-link to="/" class="flex items-center">
+            <ADAvatar
+              image-url="/image/logo.jpg"
+              class="border border-gray-200"
+            />
+            <span class="ml-3 text-2xl font-medium">{{ title }}</span>
+          </nuxt-link>
+        </h1>
+
+        <!-- TODO: hamburger on smaller device -->
+        <div class="ml-10 space-x-4 font-semibold">
+          <a href="#footer" class="hidden sm:inline">ABOUT</a>
+          <a :href="rssUrl" target="_blank" class="">RSS</a>
+        </div>
+      </div>
+    </nav>
+  </header>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
-import { mapState } from 'vuex'
+import { defineComponent } from '@vue/composition-api'
+import ADAvatar from '~/components/atoms/ADAvatar/index.vue'
 
-export default Vue.extend({
+export default defineComponent({
   name: 'AppHeader',
-  computed: {
-    ...mapState(['title', 'rssUrl']),
+  components: { ADAvatar },
+  props: {
+    title: {
+      type: String,
+      required: true,
+    },
+    rssUrl: {
+      type: String,
+      required: true,
+    },
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.title {
-  padding-left: 20px;
-}
-</style>

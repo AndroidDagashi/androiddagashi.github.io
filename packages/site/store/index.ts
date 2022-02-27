@@ -1,7 +1,7 @@
 import type { ActionTree, MutationTree, GetterTree } from 'vuex'
 
 import { GHDigest } from 'site-types/GitHubApi'
-import { ContactInfo, RepositoryConfig } from 'site-types/SiteConfig'
+import { TwitterInfo, RepositoryConfig } from 'site-types/SiteConfig'
 
 import * as GetterTypes from '~/store/GetterTypes'
 import * as MutationTypes from '~/store/MutationTypes'
@@ -25,15 +25,15 @@ export const state = () => ({
   contact: {
     name: '',
     link: '',
-  } as ContactInfo,
-  authors: [] as ContactInfo[],
+  } as TwitterInfo,
+  authors: [] as TwitterInfo[],
   digest: null as GHDigest | null,
 })
 
 export type RootState = ReturnType<typeof state>
 
 export const getters: GetterTree<RootState, RootState> = {
-  [GetterTypes.GET_AUTHORS](state: RootState): ContactInfo[] {
+  [GetterTypes.GET_AUTHORS](state: RootState): TwitterInfo[] {
     return state.authors
   },
 }
@@ -60,12 +60,12 @@ export const mutations: MutationTree<RootState> = {
   ): void {
     state.issueRepository = repo
   },
-  [MutationTypes.UPDATE_CONTACT](state: RootState, contact: ContactInfo): void {
+  [MutationTypes.UPDATE_CONTACT](state: RootState, contact: TwitterInfo): void {
     state.contact = contact
   },
   [MutationTypes.UPDATE_AUTHORS](
     state: RootState,
-    authors: ContactInfo[]
+    authors: TwitterInfo[]
   ): void {
     state.authors = authors
   },
