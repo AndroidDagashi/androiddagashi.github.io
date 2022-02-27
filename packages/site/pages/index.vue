@@ -56,7 +56,8 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
 .LoadNextButton {
-  @apply relative flex flex-row items-center justify-center w-full h-12 hover:bg-green-50;
+  @apply relative flex flex-row items-center justify-center w-full h-12;
+  @apply hover:bg-gray-100;
 
   &::before {
     content: '';
