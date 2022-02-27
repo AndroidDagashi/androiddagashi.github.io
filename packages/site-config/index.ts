@@ -38,7 +38,7 @@ export const siteConfig: SiteConfig = {
     {
       name: 'rss',
       url: 'http://feeds.feedburner.com/AndroidDagashi',
-      icon: 'fluent:rss-24-filled'
-    }
+      icon: 'fluent:rss-24-filled',
+    },
   ],
 }

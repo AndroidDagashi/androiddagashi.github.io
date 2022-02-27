@@ -3,7 +3,7 @@
     <ul>
       <template v-for="(item, index) in milestones">
         <li :key="index" class="IssueDigestList__item hover:bg-gray-100">
-          <IssueDigest :milestone="item" :index="index" class=""/>
+          <IssueDigest :milestone="item" :index="index" class="" />
         </li>
       </template>
     </ul>
