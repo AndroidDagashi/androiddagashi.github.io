@@ -1,6 +1,6 @@
 <template>
   <ADCard :tag="tag" class="LinkItem mt-3 border border-gray-200">
-    <h3 class="text-lg font-semibold mt-3 text-gray-600">{{ issue.title }}</h3>
+    <h3 class="text-lg font-semibold text-gray-600">{{ issue.title }}</h3>
     <div v-if="hasLabels" class="py-2">
       <IssueLabel
         v-for="(label, index2) in labels"
