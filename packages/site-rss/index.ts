@@ -18,9 +18,7 @@ async function generateRss(): Promise<void> {
     id: rootUrl,
     link: rootUrl,
     favicon: `${rootUrl}favicon.ico`,
-    copyright: `All rights reserved ${today.getUTCFullYear()}, ${
-      siteConfig.title
-    }`,
+    copyright: `All rights reserved ${today.getUTCFullYear()}, ${siteConfig.title}`,
     updated: new Date(digest.milestones.nodes[0].closedAt),
     feedLinks: {
       atom: `${rootUrl}feed.xml`,
@@ -35,9 +33,7 @@ async function generateRss(): Promise<void> {
 
   // create feed items from milestones
   digest.milestones.nodes.forEach((milestone) => {
-    const descriptions = milestone.issues.nodes.map((issue) => issue.title)
-    const description =
-      md.render(milestone.description) + descriptions.join('/')
+    const description = md.render(milestone.description)
     const url = `${rootUrl}issue/${milestone.path}`
     feed.addItem({
       title: `#${milestone.title}`,
