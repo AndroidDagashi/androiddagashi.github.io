@@ -12886,7 +12886,7 @@ __metadata:
     graphql: 15.8.0
     site-common: ^1.0.0
     site-types: ^1.0.0
-    ts-node: 10.6.0
+    ts-node: 10.7.0
     typescript: 4.6.2
   languageName: unknown
   linkType: soft
@@ -12904,7 +12904,7 @@ __metadata:
     site-common: ^1.0.0
     site-config: ^1.0.0
     site-types: ^1.0.0
-    ts-node: 10.6.0
+    ts-node: 10.7.0
     typescript: 4.6.2
   languageName: unknown
   linkType: soft
@@ -12940,7 +12940,7 @@ __metadata:
     site-common: ^1.0.0
     site-config: ^1.0.0
     site-types: ^1.0.0
-    ts-node: 10.6.0
+    ts-node: 10.7.0
     typescript: 4.6.2
   languageName: unknown
   linkType: soft
@@ -12955,7 +12955,7 @@ __metadata:
     site-common: ^1.0.0
     site-config: ^1.0.0
     site-types: ^1.0.0
-    ts-node: 10.6.0
+    ts-node: 10.7.0
     typescript: 4.6.2
   languageName: unknown
   linkType: soft
@@ -13910,9 +13910,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:10.6.0":
-  version: 10.6.0
-  resolution: "ts-node@npm:10.6.0"
+"ts-node@npm:10.7.0":
+  version: 10.7.0
+  resolution: "ts-node@npm:10.7.0"
   dependencies:
     "@cspotcode/source-map-support": 0.7.0
     "@tsconfig/node10": ^1.0.7
@@ -13940,10 +13940,11 @@ __metadata:
   bin:
     ts-node: dist/bin.js
     ts-node-cwd: dist/bin-cwd.js
+    ts-node-esm: dist/bin-esm.js
     ts-node-script: dist/bin-script.js
     ts-node-transpile-only: dist/bin-transpile.js
     ts-script: dist/bin-script-deprecated.js
-  checksum: bc7589d8c38dc75a2a6f832ac43faaac7edd3d0ef4643f46a9deeaabcdd35722e8c89e729fcd39a16069b30d09e297c2fb3eec917a82dd3f1e7da8b352bbd447
+  checksum: 2a379e43f7478d0b79e1e63af91fe222d83857727957df4bd3bdf3c0a884de5097b12feb9bbf530074526b8874c0338b0e6328cf334f3a5e2c49c71e837273f7
   languageName: node
   linkType: hard
 
