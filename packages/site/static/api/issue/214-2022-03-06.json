@@ -1,0 +1,217 @@
+{
+  "id": "MI_kwDOB4jhdM4AdcNB",
+  "number": 214,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/214",
+  "title": "214 2022-03-06",
+  "description": "paparazziを使ったJetpack Composeスクリーンショットテスト、2022年のGoogle Playを安全に保つ取り組み、認証フォームをJetpack Composeで構築、など",
+  "closedAt": "2022-03-06T10:45:38Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vORLvS7A==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_ORSzy1A==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2304",
+        "title": "DataStoreライブラリとDI",
+        "body": "https://medium.com/androiddevelopers/datastore-and-dependency-injection-ea32b95704e3\r\n\r\nDataStoreを、Dagger HiltでDIする際に必要となる基本的な部分を解説しています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2307",
+        "title": "2022年のGoogle Playを安全に保つ取り組み",
+        "body": "https://android-developers.googleblog.com/2022/03/privacy-and-security-direction.html\r\n\r\nData safety section、Privacy Sandbox、Play Integrity APIなどの2022年のGoogle Playを安全に保つための取り組みについて紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2309",
+        "title": "認証フォームをJetpack Composeで構築する",
+        "body": "https://joebirch.co/android/building-an-authentication-form-using-jetpack-compose/\r\n\r\n認証フォーム画面のモデリングから、UIまで、細かい部分まで解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2310",
+        "title": "cashapp/paparazziを使ったJetpack Composeのスクリーンショットテストの導入事例",
+        "body": "エミュレーターやデバイス無しで、JVM上でスクリーンショットテストを行うことができるライブラリ[cashapp/paparazzi](https://github.com/cashapp/paparazzi)が0.9.0でJetpack Composeへ対応しています。その機能を利用しているコードなどを紹介しています。\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">This week is hack week at <a href=\"https://twitter.com/TwitterEng?ref_src=twsrc%5Etfw\">@TwitterEng</a>, so I&#39;ve spent the week integrating <a href=\"https://twitter.com/CashApp?ref_src=twsrc%5Etfw\">@CashApp</a>&#39;s Paparazzi to screenshot test our <a href=\"https://twitter.com/hashtag/JetpackCompose?src=hash&amp;ref_src=twsrc%5Etfw\">#JetpackCompose</a> components on CI 💫. No devices necessary.<a href=\"https://t.co/SKltside7J\">https://t.co/SKltside7J</a></p>&mdash; Chris Banes 🇺🇦 (@ chrisbanes) <a href=\"https://twitter.com/chrisbanes/status/1499695941925969926?ref_src=twsrc%5Etfw\">March 4, 2022</a></blockquote>",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2311",
+        "title": "PWA, Flutter, React Native, ネイティブアプリ の比較",
+        "body": "https://medium.com/neoxia/pwa-vs-flutter-vs-react-native-vs-native-dc06a17ebf1a\r\n\r\n　開発速度、セキュリティ、パフォーマンスなど、様々な観点からの比較です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2312",
+        "title": "Android Studio - Dolphin | 2021.3.1 Canary 5",
+        "body": "https://androidstudio.googleblog.com/2022/03/android-studio-dolphin-canary-5-now.html\r\n\r\nKotlin Coroutines のデバッグ機能が追加されました",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOPy1Rqg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOPy1Rqg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/t6rgy7/android_studio_dolphin_canary_5_now_available/",
+              "publishedAt": "2022-03-06T10:23:42Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2313",
+        "title": "Android Studio - Chipmunk | 2021.2.1 Beta 3 ",
+        "body": "https://androidstudio.googleblog.com/2022/03/android-studio-chipmunk-beta-3-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2314",
+        "title": "テキストレンダリングで使用されるアルゴリズムについて",
+        "body": "https://proandroiddev.com/android-13-and-text-rendering-algorithms-f622386025b\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
