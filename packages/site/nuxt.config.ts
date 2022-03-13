@@ -91,6 +91,7 @@ const config: NuxtConfig = {
    * Build configuration
    */
   build: {
+    // analyze: true,
     postcss: {
       order: ['tailwindcss/nesting', 'tailwindcss'],
       plugins: {
