@@ -10,21 +10,22 @@ async function generateRss(): Promise<void> {
   const digest = JSON.parse(
     await readFile('../site/static/api/index.json')
   ) as GHDigest
+  const title = siteConfig.title
 
   // create feed xml root
   const feed = new Feed({
-    title: siteConfig.title,
+    title,
     description: siteConfig.description,
     id: rootUrl,
     link: rootUrl,
     favicon: `${rootUrl}favicon.ico`,
-    copyright: `All rights reserved ${today.getUTCFullYear()}, ${siteConfig.title}`,
+    copyright: `All rights reserved ${today.getUTCFullYear()}, ${title}`,
     updated: new Date(digest.milestones.nodes[0].closedAt),
     feedLinks: {
       atom: `${rootUrl}feed.xml`,
     },
     author: {
-      name: siteConfig.title,
+      name: title,
       link: rootUrl,
     },
   })
