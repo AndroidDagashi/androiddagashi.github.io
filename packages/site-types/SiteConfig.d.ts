@@ -9,7 +9,7 @@ export interface SiteConfig {
   links: LinkInfo[]
 }
 
-export const LinkType = 'github' | 'twitter' | 'mail'
+export type LinkType = 'github' | 'twitter' | 'mail' | 'rss'
 
 export interface RepositoryConfig {
   owner: string

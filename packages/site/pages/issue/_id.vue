@@ -13,7 +13,7 @@
     <section class="">
       <ul class="LinkList">
         <template v-for="(item, index) in issues">
-          <LinkItem :key="index" :issue="item" class="LinkList__item" />
+          <LinkItem :key="index" :issue="item" :issue-repository="issueRepository" class="LinkList__item" />
         </template>
       </ul>
     </section>
@@ -30,15 +30,11 @@ import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
 import LinkItem from '~/components/organisms/LinkItem/index.vue'
 
-interface IssueData {
-  milestone: GHMilestone | null
-  title: string
-}
 
 export default defineComponent({
   name: 'Issue',
   components: { ShareWidgets, MarkdownText, LinkItem },
-  async asyncData({ route, $api }): Promise<IssueData> {
+  async asyncData({ route, $api }) {
     const data = await $api.get<GHMilestone>(
       `/api/issue/${route.params.id}.json`
     )
@@ -47,9 +43,12 @@ export default defineComponent({
       title: `#${data.title}`,
     }
   },
-  data(): IssueData {
+  data() {
     return {
+      siteTitle: this.$config.title,
       milestone: null,
+      issueRepository: this.$config.issueRepository,
+      siteDescription: this.$config.description,
       title: '',
     }
   },
@@ -65,7 +64,7 @@ export default defineComponent({
       meta: [
         ...renderOGPMeta({
           title,
-          description: this.milestone.description || this.description,
+          description: this.milestone.description || this.siteDescription,
           url: `${this.baseUrl}${this.$route.fullPath}`,
         }),
       ],
@@ -73,8 +72,6 @@ export default defineComponent({
   },
   computed: {
     ...mapState({
-      siteTitle: 'title',
-      description: 'siteDescription',
       baseUrl: 'baseUrl',
     }),
     milestoneId(): string {

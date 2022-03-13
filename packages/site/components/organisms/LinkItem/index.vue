@@ -7,6 +7,7 @@
         :key="index2"
         class="mr-1"
         :label-info="label"
+        :issue-repository="issueRepository"
       />
     </div>
     <MarkdownText class="mt-3 pb-3" :text="issue.body" />
@@ -25,6 +26,7 @@
 <script lang="ts">
 import { PropType, defineComponent, computed } from '@vue/composition-api'
 import { GHIssue } from 'site-types/GitHubApi'
+import { RepositoryConfig } from 'site-types/SiteConfig'
 import LinkItemComment from './LinkItemComment.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import IssueLabel from '~/components/IssueLabel.vue'
@@ -43,6 +45,10 @@ export default defineComponent({
       required: false,
       default: 'li',
     },
+    issueRepository: {
+      type: Object as PropType<RepositoryConfig>,
+      required: true
+    }
   },
   setup(props) {
     const hasLabels = computed(() => props.issue.labels.nodes.length > 0)
