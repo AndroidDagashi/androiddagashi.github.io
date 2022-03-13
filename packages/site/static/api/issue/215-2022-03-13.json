@@ -1,0 +1,178 @@
+{
+  "id": "MI_kwDOB4jhdM4Adhn5",
+  "number": 215,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/215",
+  "title": "215 2022-03-13",
+  "description": "TheAndroidShow: TabletsとJetpack ComposeとAndroid 13について、Google Play StoreのJetpack Compose移行、Freeing up 60% of storage for apps、など",
+  "closedAt": "2022-03-13T10:04:03Z",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vORVeX6A==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPORZdVWg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2316",
+        "title": "Freeing up 60% of storage for apps",
+        "body": "https://android-developers.googleblog.com/2022/03/freeing-up-60-of-storage-for-apps.html\r\nアンインストールの理由は容量確保が多いのでアプリのアーカイブ機能を提供、AGP 7.3以上のapkビルドが必要（Android Studio Dolphinから）。\r\n\r\n>  While we will start creating archived APKs now, they won’t be functional until the archiving functionality is launched to consumers later in the year.\r\n\r\n年内ロールアウト予定とのこと。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2317",
+        "title": "Google Play StoreのJetpack Compose移行",
+        "body": "https://android-developers.googleblog.com/2022/03/play-time-with-jetpack-compose.html\r\n\r\nGoogle Play StoreがJetpack Composeに移行で行ったことを紹介しています。Jetpack Composeチームとの連携や、パフォーマンスの課題について書かれています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2318",
+        "title": "GraphicsLayer Modifierを使ったアニメーション",
+        "body": "https://medium.com/mobile-app-development-publication/have-fun-with-jetpack-compose-graphicslayer-modifier-e39c12a4791f\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2319",
+        "title": "TheAndroidShow: TabletsとJetpack ComposeとAndroid 13について",
+        "body": "https://android-developers.googleblog.com/2022/03/happening-now-theandroidshow.html\r\nTabletsとJetpack ComposeとAndroid 13についての話題と、#AskAndroidで寄せられた質問へ回答しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2320",
+        "title": "Gradleのビルド時間を改善する10個のアイデア",
+        "body": "https://blog.dipien.com/10-ideas-to-improve-your-gradle-build-times-part-iii-db06392f253\r\n\r\n過去のブログ記事を合わせて、30個のアイデア（テクニック）が紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2321",
+        "title": "Jetpack ComposeはXMLでのレイアウトを置き換えるか",
+        "body": "https://www.reddit.com/r/androiddev/comments/t95xag/will_jetpack_compose_take_over_xml/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2322",
+        "title": "2022年3月9日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#march_9_2022\r\n\r\nCompose Foundation 1.2.0-alpha05 では `LazyVerticalGrid` と `LazyHorizontalGrid` が stable になりました",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOP4sEhw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOP4sEhw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏の紹介ツイートはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">With just a single bug fix release in Paging 3.1.1, Jetpack releases today are more for those who are interested in trying out the new features in alphas across Lifecycle, Wear, and Compose.<a href=\"https://t.co/lzkOFLWiyH\">https://t.co/lzkOFLWiyH</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1501630845110554624?ref_src=twsrc%5Etfw\">March 9, 2022</a></blockquote>",
+              "publishedAt": "2022-03-13T10:52:16Z",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
