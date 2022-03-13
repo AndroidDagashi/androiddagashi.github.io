@@ -91,6 +91,12 @@ const config: NuxtConfig = {
    * Build configuration
    */
   build: {
+    postcss: {
+      order: ['tailwindcss/nesting', 'tailwindcss'],
+      plugins: {
+        'postcss-nested': false,
+      },
+    },
     // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     extend(configs, ctx): void {
       if (ctx.isClient) {
