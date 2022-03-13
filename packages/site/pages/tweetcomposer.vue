@@ -76,9 +76,9 @@ export default defineComponent({
       tweet: '',
       isValidTweet: false,
       tweetLength: 0,
+      baseUrl: this.$config.baseUrl,
     }
   },
-  computed: { ...mapState(['baseUrl']) },
   mounted(): void {
     // initial calculation
     this.onInput()

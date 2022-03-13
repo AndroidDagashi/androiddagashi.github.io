@@ -33,6 +33,11 @@ export default defineComponent({
     IssueDigestList,
     Icon,
   },
+  data() {
+    return {
+      baseUrl: this.$config.baseUrl
+    }
+  },
   head(): Record<string, unknown> {
     return {
       meta: [
@@ -45,7 +50,7 @@ export default defineComponent({
     }
   },
   computed: {
-    ...mapState(['baseUrl', 'digest']),
+    ...mapState(['digest']),
     milestones(): GHDigestMilestone[] {
       return this.digest.milestones.nodes
     },

@@ -11,8 +11,7 @@
 import type { PropType } from '@vue/composition-api'
 import { defineComponent } from '@vue/composition-api'
 import { GHLabel } from 'site-types/GitHubApi'
-import { mapState } from 'vuex'
-import { RootState } from '../store'
+import { RepositoryConfig } from 'site-types/SiteConfig'
 
 export default defineComponent({
   name: 'IssueLabel',
@@ -21,9 +20,12 @@ export default defineComponent({
       type: Object as PropType<GHLabel>,
       required: true,
     },
+    issueRepository:{
+      type: Object as PropType<RepositoryConfig>,
+       required:true
+    }
   },
   computed: {
-    ...mapState<RootState>(['issueRepository']),
     chipColorStyle(): string {
       const color = `#${this.labelInfo.color}`
       return `background-color: ${color}; border-color: ${color};`
