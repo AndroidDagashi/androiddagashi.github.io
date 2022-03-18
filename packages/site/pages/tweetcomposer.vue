@@ -61,7 +61,6 @@
 </template>
 
 <script lang="ts">
-import { mapState } from 'vuex'
 // eslint-disable-next-line import/default
 import twitter from 'twitter-text'
 import { defineComponent } from '@vue/composition-api'
