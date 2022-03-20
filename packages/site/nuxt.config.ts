@@ -99,6 +99,7 @@ const config: NuxtConfig = {
         configs.node.fs = 'empty'
       }
     },
+    transpile: ['@iconify/vue2'],
   },
   generate: {
     fallback: true,
