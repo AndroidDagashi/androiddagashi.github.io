@@ -1,4 +1,4 @@
-import { rmdir, mkdirp } from 'site-common/file'
+import { rm, mkdirp } from 'site-common/file'
 import { Config } from './src/config'
 import path from 'path'
 import TopDigestsGenerator from './src/generator/TopDigestsGenerator'
@@ -21,7 +21,7 @@ async function generateApi(): Promise<void> {
     path.normalize(`${__dirname}/../site/static/api`)
   )
 
-  await rmdir(config.tempOutputDirs.root, true)
+  await rm(config.tempOutputDirs.root, true)
 
   const ghClient = await GitHubClient.init(
     new GitHubConfig(config.repoOwner, config.repoName, config.token)
