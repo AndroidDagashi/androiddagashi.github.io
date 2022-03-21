@@ -9,6 +9,7 @@ import { siteConfig } from 'site-config'
 import { promisify } from 'util'
 import rimraf from 'rimraf'
 import { copy } from 'fs-extra'
+import { existsSync } from 'fs'
 
 const rimrafp = promisify(rimraf)
 
@@ -21,7 +22,9 @@ async function generateApi(): Promise<void> {
     path.normalize(`${__dirname}/../site/static/api`)
   )
 
-  await rm(config.tempOutputDirs.root, true)
+  if (existsSync(config.tempOutputDirs.root)) {
+    await rm(config.tempOutputDirs.root, true)
+  }
 
   const ghClient = await GitHubClient.init(
     new GitHubConfig(config.repoOwner, config.repoName, config.token)
