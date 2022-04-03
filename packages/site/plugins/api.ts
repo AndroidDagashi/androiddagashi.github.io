@@ -1,6 +1,5 @@
 import { Context } from '@nuxt/types'
 
-
 interface Config {
   baseURL: string
 }

@@ -20,10 +20,10 @@ export default defineComponent({
       type: Object as PropType<GHLabel>,
       required: true,
     },
-    issueRepository:{
+    issueRepository: {
       type: Object as PropType<RepositoryConfig>,
-       required:true
-    }
+      required: true,
+    },
   },
   computed: {
     chipColorStyle(): string {
