@@ -21,8 +21,8 @@
 </template>
 
 <script lang="ts">
-import { mapState } from 'vuex'
-import { GHMilestone, GHIssue } from 'site-types/GitHubApi'
+import { mapState, createNamespacedHelpers } from 'vuex'
+import { GHIssue } from 'site-types/GitHubApi'
 import { defineComponent } from '@vue/composition-api'
 import { renderOGPMeta } from '../../utils/ogp'
 import ShareWidgets from '~/components/ShareWidgets.vue'
@@ -30,61 +30,56 @@ import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
 import LinkItem from '~/components/organisms/LinkItem/index.vue'
 
+const {mapGetters:mapIssueGetters, mapActions: mapIssueActions} = createNamespacedHelpers('issue')
 
 export default defineComponent({
   name: 'Issue',
   components: { ShareWidgets, MarkdownText, LinkItem },
-  async asyncData({ route, $api }) {
-    const data = await $api.get<GHMilestone>(
-      `/api/issue/${route.params.id}.json`
-    )
-    return {
-      milestone: data,
-      title: `#${data.title}`,
-    }
+  async asyncData({ route, store }) {
+    await store.dispatch('issue/fetchById', { milestoneId: route.params.id })
   },
   data() {
     return {
       siteTitle: this.$config.title,
-      milestone: null,
       issueRepository: this.$config.issueRepository,
       siteDescription: this.$config.description,
-      title: '',
     }
   },
   head(): Record<string, unknown> {
+    const { title, description } = this.currentMilestone ?? {}
+
     let titleDescription = ''
-    if (this.milestone.description) {
-      titleDescription = `: ${this.milestone.description}`
+    if (this.description) {
+      titleDescription = `: ${description}`
     }
-    const title = `${this.title}${titleDescription} - ${this.siteTitle}`
+    const newTitle = `${title}${titleDescription} - ${this.siteTitle}`
 
     return {
-      title,
+      title: newTitle,
       meta: [
         ...renderOGPMeta({
-          title,
-          description: this.milestone.description || this.siteDescription,
+          title: newTitle,
+          description: description || this.siteDescription,
           url: `${this.baseUrl}${this.$route.fullPath}`,
         }),
       ],
     }
   },
   computed: {
-    ...mapState({
-      baseUrl: 'baseUrl',
-    }),
+    ...mapState(['baseUrl']),
+    ...mapIssueActions(['fetchById']),
+    ...mapIssueGetters(['currentMilestone']),
     milestoneId(): string {
       return this.$route.params.id
     },
     milestoneTitle(): string {
-      return this.milestone?.title ?? ''
+      return this.currentMilestone?.title ?? ''
     },
     milestoneDescription(): string {
-      return this.milestone?.description ?? ''
+      return this.currentMilestone?.description ?? ''
     },
     issues(): GHIssue[] {
-      return this.milestone?.issues?.nodes ?? []
+      return this.currentMilestone?.issues?.nodes ?? []
     },
   },
   mounted() {
