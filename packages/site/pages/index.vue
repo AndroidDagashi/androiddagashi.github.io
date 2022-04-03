@@ -25,8 +25,6 @@ import { Icon } from '@iconify/vue2'
 import { renderOGPMeta } from '~/utils/ogp'
 import IssueDigestList from '~/components/organisms/IssueDigestList/index.vue'
 
-import * as ActionTypes from '~/store/ActionTypes'
-
 export default defineComponent({
   name: 'Index',
   components: {
@@ -59,9 +57,9 @@ export default defineComponent({
     },
   },
   methods: {
-    ...mapActions({ fetchDigest: ActionTypes.FETCH_DIGEST }),
+    ...mapActions(['fetchNextDigests']),
     async onLoadNext(): Promise<void> {
-      await this.fetchDigest({ cursor: this.pageInfo.endCursor })
+      await this.fetchNextDigests({ cursor: this.pageInfo.endCursor })
     },
   },
 })
