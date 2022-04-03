@@ -12,10 +12,7 @@ export type RootState = ReturnType<typeof state>
 export const getters: GetterTree<RootState, RootState> = {}
 
 export const mutations: MutationTree<RootState> = {
-  UPDATE_DIGEST(
-    state: RootState,
-    { digest }: { digest: GHDigest }
-  ): void {
+  UPDATE_DIGEST(state: RootState, { digest }: { digest: GHDigest }): void {
     if (state.digest == null) {
       state.digest = digest
     } else {

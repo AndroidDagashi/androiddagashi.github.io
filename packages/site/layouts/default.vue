@@ -24,7 +24,7 @@ export default defineComponent({
       description: this.$config.description,
       rssUrl: this.$config.rssUrl,
       contact: this.$config.contact,
-      authors: this.$config.authors
+      authors: this.$config.authors,
     }
   },
 })

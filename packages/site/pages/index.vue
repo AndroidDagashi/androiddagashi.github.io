@@ -33,7 +33,7 @@ export default defineComponent({
   },
   data() {
     return {
-      baseUrl: this.$config.baseUrl
+      baseUrl: this.$config.baseUrl,
     }
   },
   head(): Record<string, unknown> {

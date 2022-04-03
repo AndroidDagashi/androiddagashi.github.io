@@ -13,7 +13,12 @@
     <section class="">
       <ul class="LinkList">
         <template v-for="(item, index) in issues">
-          <LinkItem :key="index" :issue="item" :issue-repository="issueRepository" class="LinkList__item" />
+          <LinkItem
+            :key="index"
+            :issue="item"
+            :issue-repository="issueRepository"
+            class="LinkList__item"
+          />
         </template>
       </ul>
     </section>
@@ -30,7 +35,8 @@ import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
 import LinkItem from '~/components/organisms/LinkItem/index.vue'
 
-const {mapGetters:mapIssueGetters, mapActions: mapIssueActions} = createNamespacedHelpers('issue')
+const { mapGetters: mapIssueGetters, mapActions: mapIssueActions } =
+  createNamespacedHelpers('issue')
 
 export default defineComponent({
   name: 'Issue',

@@ -47,8 +47,8 @@ export default defineComponent({
     },
     issueRepository: {
       type: Object as PropType<RepositoryConfig>,
-      required: true
-    }
+      required: true,
+    },
   },
   setup(props) {
     const hasLabels = computed(() => props.issue.labels.nodes.length > 0)
