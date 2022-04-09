@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "dev": "NODE_ENV=development nuxt",
-    "build": "NODE_ENV=production nuxt build",
-    "start": "NODE_ENV=production nuxt start",
-    "generate": "NODE_ENV=production nuxt generate"
+    "dev": "NODE_ENV=development nuxi dev",
+    "build": "NODE_ENV=production nuxi build",
+    "start": "NODE_ENV=production nuxi preview",
+    "generate": "NODE_ENV=production nuxi generate",
+    "postinstall": "nuxi prepare"
   },
   "dependencies": {
     "@iconify/vue2": "1.2.1",
@@ -17,16 +18,17 @@
     "lodash.flatmap": "4.5.0",
     "markdown-it": "12.3.2",
     "modern-normalize": "1.1.0",
-    "nuxt": "2.15.8",
+    "nuxt-edge": "latest",
     "site-config": "^1.0.0",
     "twitter-text": "3.1.0"
   },
   "devDependencies": {
+    "@nuxt/bridge": "npm:@nuxt/bridge-edge@latest",
     "@nuxt/types": "2.15.8",
-    "@nuxt/typescript-build": "2.1.0",
     "@nuxtjs/eslint-config": "9.0.0",
     "@nuxtjs/eslint-config-typescript": "9.0.0",
     "@nuxtjs/tailwindcss": "5.0.2",
+    "@types/gtag.js": "0.0.8",
     "@types/lodash": "4.14.181",
     "@types/markdown-it": "12.2.3",
     "@types/node": "16.11.26",

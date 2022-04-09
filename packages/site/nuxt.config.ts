@@ -1,5 +1,5 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
-import { NuxtConfig } from '@nuxt/types'
+import { defineNuxtConfig } from '@nuxt/bridge'
 import { siteConfig } from 'site-config'
 import { renderOGPMeta } from './utils/ogp'
 
@@ -30,7 +30,7 @@ const issueIds = indexJson.milestones.nodes.map(
   (milestone) => `/issue/${milestone.path}`
 )
 
-const config: NuxtConfig = {
+const config = defineNuxtConfig({
   target: 'static',
   publicRuntimeConfig: {
     ...siteConfig,
@@ -87,31 +87,58 @@ const config: NuxtConfig = {
 
   css: [],
 
+  hooks: {
+    'webpack:config'(configs): void {
+      configs.forEach((config) => {
+        if (config.name === 'client') {
+          config.node = config.node || {}
+          config.node.fs = 'empty'
+        }
+      })
+    }
+  },
+
   /*
    * Build configuration
    */
   build: {
     // analyze: true,
-    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
-    extend(configs, ctx): void {
-      if (ctx.isClient) {
-        configs.node = configs.node || {}
-        configs.node.fs = 'empty'
+    transpile: [
+      'twitter-text'
+    ],
+    // "webpackHotUpdate is not defined" workaround
+    // https://github.com/nuxt/framework/issues/1309
+    optimization: {
+      // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+      // @ts-ignore
+      runtimeChunk: true,
+      splitChunks: {
+        // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+        // @ts-ignore
+        name: true,
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
       }
     },
-    transpile: ['@iconify/vue2'],
+    // transpile: ['@iconify/vue2'],
   },
   generate: {
-    fallback: true,
+    fallback: '404.html',
     routes: issueIds,
   },
   modules: [],
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss'],
   plugins: [
     '~/plugins/composition-api.ts',
     '~/plugins/api',
     '~/plugins/markdownit.ts',
-    { src: '~/plugins/ga.js', ssr: false },
+    { src: '~/plugins/ga.ts', ssr: false },
     { src: '~/plugins/init.client.ts', mode: 'client' },
   ],
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -122,6 +149,6 @@ const config: NuxtConfig = {
   },
   // https://github.com/nuxt/telemetry
   telemetry: true,
-}
+})
 
 export default config

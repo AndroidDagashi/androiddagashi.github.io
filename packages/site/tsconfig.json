@@ -1,29 +1,24 @@
 {
+  "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
-    "target": "esnext",
-    "module": "esnext",
-    "moduleResolution": "node",
-    "lib": ["esnext", "esnext.asynciterable", "dom"],
-    "esModuleInterop": true,
+    "lib": [
+      "esnext",
+      "esnext.asynciterable",
+      "dom"
+    ],
     "experimentalDecorators": true,
-    "allowJs": true,
     "sourceMap": true,
-    "strict": true,
     "noImplicitAny": false,
     "suppressImplicitAnyIndexErrors": true,
     "noImplicitThis": false,
-    "noEmit": true,
     "noUnusedParameters": false,
     "removeComments": true,
     "strictNullChecks": true,
-    "baseUrl": ".",
-    "paths": {
-      "~/*": ["./*"],
-      "@/*": ["./*"]
-    },
-    "types": ["@types/node", "@nuxt/types"]
+    "types": [
+      "@types/node",
+      "@types/gtag.js"
+    ]
   },
-  "exclude": ["node_modules", ".nuxt", "dist"],
   "vueCompilerOptions": {
     "experimentalCompatMode": 2,
     "experimentalTemplateCompilerOptions": {

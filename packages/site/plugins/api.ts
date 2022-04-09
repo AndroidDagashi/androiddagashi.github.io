@@ -1,5 +1,3 @@
-import { Context } from '@nuxt/types'
-
 interface Config {
   baseURL: string
 }
@@ -23,12 +21,9 @@ export class ApiClient {
   }
 }
 
-export default (
-  context: Context,
-  inject: (key: string, value: unknown) => void
-): Promise<void> | void => {
-  const client = new ApiClient({ baseURL: context.$config.apiEndpoint })
+export default defineNuxtPlugin((nuxtApp) => {
+  const { apiEndpoint } = useRuntimeConfig()
+  const client = new ApiClient({ baseURL: apiEndpoint })
 
-  context.$api = client
-  inject('api', client)
-}
+  nuxtApp.provide('api', client)
+})

@@ -1,10 +1,6 @@
-import { Context } from '@nuxt/types'
 import MarkdownIt from 'markdown-it'
 
-export default (
-  _: Context,
-  inject: (key: string, value: unknown) => void
-): Promise<void> | void => {
+export default defineNuxtPlugin((nuxtApp) => {
   const md = new MarkdownIt({
     html: true,
     breaks: true,
@@ -46,5 +42,5 @@ export default (
     return defaultStyleRenderer(tokens, idx, options, env, self)
   }
 
-  inject('md', md)
-}
+  nuxtApp.provide('md', md)
+})
