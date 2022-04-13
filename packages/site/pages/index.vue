@@ -18,8 +18,7 @@
 </template>
 
 <script lang="ts">
-import { mapState, mapActions } from 'vuex'
-import { GHDigestMilestone, GHPageInfo } from 'site-types/GitHubApi'
+import { mapActions, mapGetters } from 'vuex'
 import { defineComponent } from '@vue/composition-api'
 import { Icon } from '@iconify/vue2'
 import { renderOGPMeta } from '~/utils/ogp'
@@ -48,13 +47,7 @@ export default defineComponent({
     }
   },
   computed: {
-    ...mapState(['digest']),
-    milestones(): GHDigestMilestone[] {
-      return this.digest.milestones.nodes
-    },
-    pageInfo(): GHPageInfo {
-      return this.digest.milestones.pageInfo
-    },
+    ...mapGetters({ milestones: 'digests', pageInfo: 'pageInfo' }),
   },
   methods: {
     ...mapActions(['fetchNextDigests']),

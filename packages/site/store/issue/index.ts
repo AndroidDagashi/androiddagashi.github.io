@@ -56,11 +56,13 @@ export const actions: ActionTree<IssueState, RootState> = {
             ...issue,
             comments: {
               ...issue.comments,
-              nodes: issue.comments.nodes.filter((comment) => !comment.isMinimized)
-            }
+              nodes: issue.comments.nodes.filter(
+                (comment) => !comment.isMinimized
+              ),
+            },
           }
-        })
-      }
+        }),
+      },
     }
 
     commit('ADD_MILESTONE', { milestoneId, milestone })

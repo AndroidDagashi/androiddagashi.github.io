@@ -35,8 +35,7 @@ import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
 import LinkItem from '~/components/organisms/LinkItem/index.vue'
 
-const { mapGetters: mapIssueGetters, mapActions: mapIssueActions } =
-  createNamespacedHelpers('issue')
+const { mapGetters: mapIssueGetters } = createNamespacedHelpers('issue')
 
 export default defineComponent({
   name: 'Issue',
@@ -73,7 +72,6 @@ export default defineComponent({
   },
   computed: {
     ...mapState(['baseUrl']),
-    ...mapIssueActions(['fetchById']),
     ...mapIssueGetters(['currentMilestone']),
     milestoneId(): string {
       return this.$route.params.id

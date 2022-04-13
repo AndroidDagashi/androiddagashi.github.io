@@ -1,28 +1,34 @@
 import type { ActionTree, MutationTree, GetterTree } from 'vuex'
 
-import { GHDigest } from 'site-types/GitHubApi'
+import { GHDigest, GHDigestMilestone, GHPageInfo } from 'site-types/GitHubApi'
 
 export const state = () => ({
   initialized: false,
-  digest: null as GHDigest | null,
+  digests: [] as GHDigestMilestone[],
+  // pageInfo for digests
+  pageInfo: null as GHPageInfo | null,
 })
 
 export type RootState = ReturnType<typeof state>
 
-export const getters: GetterTree<RootState, RootState> = {}
+export const getters: GetterTree<RootState, RootState> = {
+  digests: (state) => state.digests,
+  pageInfo: (state) => state.pageInfo,
+}
 
 export const mutations: MutationTree<RootState> = {
-  UPDATE_DIGEST(state: RootState, { digest }: { digest: GHDigest }): void {
-    if (state.digest == null) {
-      state.digest = digest
-    } else {
-      state.digest.milestones.nodes = state.digest.milestones.nodes.concat(
-        digest.milestones.nodes
-      )
+  UPDATE_DIGESTS(state: RootState, { digest }: { digest: GHDigest }): void {
+    state.digests = [...state.digests, ...digest.milestones.nodes]
 
-      const pageInfo = digest.milestones.pageInfo
-      state.digest.milestones.pageInfo.hasNextPage = pageInfo.hasNextPage
-      state.digest.milestones.pageInfo.endCursor = pageInfo.endCursor
+    const newPageInfo = digest.milestones.pageInfo
+    if (state.pageInfo) {
+      state.pageInfo = {
+        ...state.pageInfo,
+        hasNextPage: newPageInfo.hasNextPage,
+        endCursor: newPageInfo.endCursor,
+      }
+    } else {
+      state.pageInfo = newPageInfo
     }
   },
   UPDATE_INITIALIZED(state: RootState, initialized: boolean) {
@@ -39,11 +45,11 @@ export const actions: ActionTree<RootState, RootState> = {
 
   async fetchInitialDigests({ commit }) {
     const data = await this.$api.get<GHDigest>('/api/index.json')
-    commit('UPDATE_DIGEST', { digest: data })
+    commit('UPDATE_DIGESTS', { digest: data })
   },
 
   async fetchNextDigests({ commit }, payload: { cursor: string }) {
     const data = await this.$api.get<GHDigest>(`/api/${payload.cursor}.json`)
-    commit('UPDATE_DIGEST', { digest: data })
+    commit('UPDATE_DIGESTS', { digest: data })
   },
 }
