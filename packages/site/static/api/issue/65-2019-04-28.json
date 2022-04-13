@@ -44,6 +44,8 @@
             {
               "body": "Androidが二級市民扱いされている、というのも挙がっていました。\r\nこれを機にDXがあがってくれればいいのですが。",
               "publishedAt": "2019-04-28T08:46:13Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -53,6 +55,8 @@
             {
               "body": "Androidまわりは辛いですね。正直、標準のライブラリですらAndroidのサポートはけっこう適当な気がします……",
               "publishedAt": "2019-04-28T11:17:08Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -81,6 +85,8 @@
             {
               "body": "後半は動画がないとどういうこと分かりませんでした 😇",
               "publishedAt": "2019-04-28T07:32:36Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -115,6 +121,8 @@
             {
               "body": "自分のオペレータが拡張関数で定義できるのはとてもよさそうです。また、バックプレッシャーの説明については、suspend関数だから同等のことが自然にできるという説明のようですが、まだ自分は理解しきれた気がしません（たとえばユーザーの入力のように制御できない場合はどうするのでしょうか？）",
               "publishedAt": "2019-04-28T07:24:05Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -124,6 +132,8 @@
             {
               "body": "ちょっとソースが見つけられなかったのですが、ユーザ入力的なものはどちらかといえばhot streamなのでChannelで表現しよう、と言うようなことをJBの方が言っていた覚えがあります。\r\n\r\n似たようなものだとこの辺とか\r\nhttps://github.com/Kotlin/kotlinx.coroutines/issues/254#issuecomment-410390684",
               "publishedAt": "2019-04-28T10:20:21Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -133,6 +143,8 @@
             {
               "body": "おお、なるほど。ありがとうございます。しかし、そうなるとユーザー入力とネットワーク通信を組み合わせたいみたいな場合はChannelで頑張るしかなさそうですね……。",
               "publishedAt": "2019-04-28T11:13:41Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -142,6 +154,8 @@
             {
               "body": "こんにちは。多分flowViaChannelを使うと入力を待ちつつ更新があったらemitみたいなことができそうですがどうでしょう? \r\nhttps://kotlin.github.io/kotlinx.coroutines/kotlinx-coroutines-core/kotlinx.coroutines.flow/flow-via-channel.html",
               "publishedAt": "2019-05-16T10:45:43Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "sys1yagi",
                 "url": "https://github.com/sys1yagi",
@@ -151,6 +165,8 @@
             {
               "body": "どうもありがとうございます。この関数は知りませんでした。こちらの記事も参考にさせていただきます。\r\nhttp://sys1yagi.hatenablog.com/entry/2019/05/17/110232",
               "publishedAt": "2019-05-19T23:20:04Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -203,6 +219,8 @@
             {
               "body": "https://developer.android.com/guide/navigation/navigation-custom-back に詳しい説明があります。\r\n\r\nいままでは `handleOnBackPressed()` で `true` を返すかどうかで誰がハンドルするかが決まっていましたが、こんどからは `OnBackPressedCallback` のうち最後に追加されたものからenabledがどうかを調べ、最初にenabledだったものが呼ばれるようです。",
               "publishedAt": "2019-04-28T06:46:29Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -231,6 +249,8 @@
             {
               "body": "Redditのスレはこちら。\r\nhttps://www.reddit.com/r/androiddev/comments/bhxp4k/fragment_version_110alpha07_setmaxlifecycle/",
               "publishedAt": "2019-04-28T06:37:35Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -259,6 +279,8 @@
             {
               "body": "Redditのスレはこちら\r\nhttps://www.reddit.com/r/androiddev/comments/bhqppb/constraintlayout_200_alpha_5/",
               "publishedAt": "2019-04-28T05:43:43Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -323,6 +345,8 @@
             {
               "body": "マイグレーションガイドはこちら\r\nhttps://github.com/square/leakcanary/wiki/Migrating-to-LeakCanary-2.0",
               "publishedAt": "2019-04-28T05:32:06Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -351,6 +375,8 @@
             {
               "body": "しかし、この実装はかなり辛そうです……",
               "publishedAt": "2019-04-28T05:21:24Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -385,6 +411,8 @@
             {
               "body": "touchlabは今週squareとKotlin Multiplatform分野での協力を発表していました\r\nhttps://touchlab.co/touchlab-square-kotlin-multiplatform-collaboration/\r\n\r\nこの二社は今までもKotlin Multiplatformの分野でコラボしていて、 [square/sqldelight](https://github.com/square/sqldelight)はKotlin/NativeでのSQLite実装として[touchlab/sqliter](https://github.com/touchlab/sqliter)を利用しています。",
               "publishedAt": "2019-04-27T12:13:04Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -394,6 +422,8 @@
             {
               "body": "Touchlab自体もKotlin Multiplatformにピボットするんですね。ブログ記事に述べられているように、iOS開発者に受け入れられるかが鍵な気がします。",
               "publishedAt": "2019-04-28T05:17:02Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -446,6 +476,8 @@
             {
               "body": "Redditのスレはこちら。\r\nhttps://www.reddit.com/r/androiddev/comments/bhdcdy/android_q_scoped_storage_best_practices_and/",
               "publishedAt": "2019-04-26T01:07:08Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -480,6 +512,8 @@
             {
               "body": "つぎの1年でどうなるか気になりますね ;-) なお、「Realmってどうやってマネタイズしていたの？」という質問に Jake が「カンファレンスで撮影して動画を作っていたみたいだよ」と答えていて笑ってしまいました。\r\nhttps://www.reddit.com/r/androiddev/comments/bgv2be/realm_is_to_be_acquired_by_mongodb_the/elo0tfd/",
               "publishedAt": "2019-04-25T02:32:18Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -489,6 +523,8 @@
             {
               "body": "😇\r\nDroidKaigiでもRealmが動画スポンサーしてくれたことがありましたねｗ",
               "publishedAt": "2019-04-28T08:36:14Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -528,6 +564,8 @@
             {
               "body": "なお、自分は他のキーバインドに割り当てているので、大丈夫でした😇",
               "publishedAt": "2019-04-22T01:29:01Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",

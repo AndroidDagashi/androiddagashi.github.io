@@ -14,6 +14,8 @@ export interface GHAuthor {
 export interface GHComment {
   body: string
   publishedAt: string
+  isMinimized: boolean
+  minimizedReason: string | null
   author: GHAuthor
 }
 

@@ -57,6 +57,8 @@
             {
               "body": "記事内でも指摘されていますが、実際に開発者に負担をかけないで変換する仕組みを提供するのはかなり難しそうですね。自分も筆者が言うように「まずは中国国内のアプリ開発者に向けてHarnomy OSでアプリを出すように説得する」というのがもっともありそうなシナリオに思いました。",
               "publishedAt": "2019-08-11T09:30:55Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -132,6 +134,8 @@
             {
               "body": "手持ちのPixel 3をQ Betaにしてからジェスチャーナビゲーションを使っていますが、たしかにたまに誤動作はあるものの、たいへん快適です。",
               "publishedAt": "2019-08-09T14:44:17Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -160,6 +164,8 @@
             {
               "body": "いろいろありますが、この辺が気になりました。\r\n\r\n- RoomがFlowに対応\r\n- Lifecycleの`ViewModelProviders.of()`が非推奨に\r\n  - `ViewModelProvider(ViewModelStoreOwner)`コンストラクタが代替\r\n  - Kotlinならby viewModels()`も使える\r\n- `SavedStateViewModelFactory`がActivity/Fragment/Navigationのデフォルトに\r\n- Fragmentが、動的にFragmentを切り替える際のコンテナViewとして`FragmentContainerView`を追加\r\n  - FrameLayoutからの移行が強く推奨されています\r\n- RecyclerViewのデフォルトのスタイル設定用アトリビュート、`recyclerViewStyle`が追加",
               "publishedAt": "2019-08-08T09:30:29Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -248,6 +254,8 @@
             {
               "body": "実際のコードを見てみるとまだ[こんな状態](https://github.com/square/okio/blob/a93f96c0dc2b1256f209ec719dc96b6c121bba45/okio/src/nativeMain/kotlin/okio/Okio.kt)だったりします。\r\n\r\n新しいプラットフォームのサポートは結構考えることも多いので、とりあえずインターフェースだけ先に用意しておく、という方針なのかもしれません。",
               "publishedAt": "2019-08-09T08:06:25Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",

@@ -128,6 +128,8 @@
             {
               "body": "なお、個人的にはread onlyなプロパティに見せかける利点はほぼない気がするのですが、どうなのでしょうか。",
               "publishedAt": "2018-06-16T04:55:27Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -137,6 +139,8 @@
             {
               "body": "私は基本メソッドで書いてしまいますね…\r\nあとはふじたくさんの挙げているリンク参考にしています",
               "publishedAt": "2018-06-17T11:04:51Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -219,6 +223,8 @@
             {
               "body": "ちなみに、現状マルチモジュールなプロジェクトで`kapt.use.worker.api=true`記述すると下記リンクのエラーでビルドできません。(シングルモジュールなプロジェクトに関しては未検証)\r\n\r\nhttps://youtrack.jetbrains.net/issue/KT-24919\r\n\r\nAGP3.2系でDataBinding使っていると下記のエラーも発生しています\r\nhttps://youtrack.jetbrains.net/issue/KT-24915",
               "publishedAt": "2018-06-14T08:01:07Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -228,6 +234,8 @@
             {
               "body": "今確認したら `kapt.use.worker.api` に関する記述消えてますね 🤔 \r\n\r\nなおDataBindingでのエラーは下記対応で回避できそうです\r\nhttps://github.com/googlesamples/android-sunflower/pull/52\r\n\r\n",
               "publishedAt": "2018-06-16T09:18:03Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -310,6 +318,8 @@
             {
               "body": "Publickey でも取り上げられていたのでリンク置いておきます。\r\nhttps://www.publickey1.jp/blog/18/iosandroidsonarfacebook.html",
               "publishedAt": "2018-06-12T23:46:33Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",

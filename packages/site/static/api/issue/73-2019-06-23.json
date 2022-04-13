@@ -99,6 +99,8 @@
             {
               "body": "新しいモジュールを作成するときにモジュール名を`features:newmodule`にすると`./features/newmodule`に新モジュールが作られるの、今まで知らなかったんですがすごく捗りそうです。",
               "publishedAt": "2019-06-23T06:13:38Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -169,6 +171,8 @@
             {
               "body": "redditの反応はこちら。\r\nhttps://www.reddit.com/r/androiddev/comments/c2j2yp/release_1340_jetbrainskotlin_github/\r\n\r\nGitHubのリリースページを見るとParcelizeがexperimentalを卒業したようです。\r\nただビルド設定から`androidExtensions.experimental = true`を外すと、IDEではエラーになってしまうとか🤔",
               "publishedAt": "2019-06-21T01:43:32Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -178,6 +182,8 @@
             {
               "body": "Kotlin Multiplatform周りでも、Kotlin/Nativeのジェネリクスサポートが改善されたりアウトプットフォーマットの古い指定方法が使えなくなったりしています。\r\n\r\n```gradle\r\n// 旧記法\r\nkotlin {\r\n  iosX64 {\r\n    compilations.main.outputKinds(\"framework\")\r\n  }\r\n}\r\n```\r\n↓\r\n```gradle\r\n// 新記法\r\nkotlin {\r\n  iosX64 {\r\n    binaries {\r\n      framework()\r\n    }\r\n  }\r\n}\r\n```",
               "publishedAt": "2019-06-23T10:35:44Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "yshrsmz",
                 "url": "https://github.com/yshrsmz",
@@ -206,6 +212,8 @@
             {
               "body": "自分の理解が中途半端なのですが、gRPCベースで独自のプロトコルで通信するようです。Publickeyによる記事はこちら。\r\nhttps://www.publickey1.jp/blog/19/envoy_mobile.html",
               "publishedAt": "2019-06-20T01:11:41Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
@@ -276,6 +284,8 @@
             {
               "body": "Redditのスレはこちら\r\nhttps://www.reddit.com/r/androiddev/comments/c1o1gu/constraintlayout_200_beta_2/\r\n\r\nConstraintLayoutのチームからBetaでAPIを変えるのはこれで最後（でもみんなよくそう言うけれど）というコメントがついています。",
               "publishedAt": "2019-06-18T01:32:02Z",
+              "isMinimized": false,
+              "minimizedReason": null,
               "author": {
                 "login": "hkurokawa",
                 "url": "https://github.com/hkurokawa",
