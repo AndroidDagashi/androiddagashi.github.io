@@ -41,9 +41,28 @@ export const mutations: MutationTree<IssueState> = {
 export const actions: ActionTree<IssueState, RootState> = {
   async fetchById({ commit }, { milestoneId }: { milestoneId: string }) {
     commit('UPDATE_CURRENT_MILESTONE', { milestoneId })
-    const milestone = await this.$api.get<GHMilestone>(
+
+    let milestone = await this.$api.get<GHMilestone>(
       `/api/issue/${milestoneId}.json`
     )
+
+    // exclude minimized comments
+    milestone = {
+      ...milestone,
+      issues: {
+        ...milestone.issues,
+        nodes: milestone.issues.nodes.map((issue) => {
+          return {
+            ...issue,
+            comments: {
+              ...issue.comments,
+              nodes: issue.comments.nodes.filter((comment) => !comment.isMinimized)
+            }
+          }
+        })
+      }
+    }
+
     commit('ADD_MILESTONE', { milestoneId, milestone })
   },
 }
