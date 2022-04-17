@@ -6,10 +6,10 @@
   "description": "アーキテクチャBlueprintをJetpack Compose対応させる, Composeのメトリクスレポート, Ktor 2.0, Now in Android 59, など",
   "closedAt": "2022-04-17T10:37:57Z",
   "issues": {
-    "totalCount": 5,
+    "totalCount": 6,
     "pageInfo": {
       "startCursor": "Y3Vyc29yOnYyOpLPf________5vOR-XkZA==",
-      "endCursor": "Y3Vyc29yOnYyOpLPf________gvOR-dbSQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afOR-dkiA==",
       "hasPreviousPage": false,
       "hasNextPage": false
     },
@@ -43,7 +43,18 @@
         "title": "Ktor 2.0",
         "body": "https://blog.jetbrains.com/ktor/2022/04/11/ktor-2-0-released/\r\n\r\nより直感的に使うために、いくつかのAPIが変更されました。ただ、マイグレーションガイドが充実しているので、そこまで苦労せずにアップデートすることが出来そうです。",
         "labels": {
-          "nodes": []
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
         },
         "comments": {
           "totalCount": 0,
@@ -61,7 +72,13 @@
         "title": "アーキテクチャBlueprintをJetpack Compose対応させる",
         "body": "https://medium.com/androiddevelopers/migrating-architecture-blueprints-to-jetpack-compose-8ffa6615ede3\r\n\r\nアーキテクチャBlueprintの「XML + Fragment Navigation」を、どのようなプロセスで「Jetpack Compose + Compose Navigation」に置き換えたかを紹介しています。",
         "labels": {
-          "nodes": []
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
         },
         "comments": {
           "totalCount": 0,
@@ -117,6 +134,42 @@
             {
               "body": "(このスレッドで [jetc.dev](https://jetc.dev) のことを初めて知りました)",
               "publishedAt": "2022-04-17T11:01:43Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2368",
+        "title": "CIで Androidアプリのライブラリ更新を楽にする",
+        "body": "https://inside.pixiv.blog/2021/03/09/111100",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI",
+              "description": "Continuous Integration",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOQZ21uQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOQZ21uQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ライブラリ更新まわりだと、 [renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/) という選択肢もあります",
+              "publishedAt": "2022-04-17T11:11:02Z",
               "isMinimized": false,
               "minimizedReason": null,
               "author": {
