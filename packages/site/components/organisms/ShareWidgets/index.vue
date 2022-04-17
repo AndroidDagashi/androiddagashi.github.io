@@ -1,5 +1,5 @@
 <template>
-  <div class="h-5">
+  <div class="ShareWidgets h-5">
     <client-only placeholder="loading share widgets...">
       <div class="flex flex-row">
         <span>

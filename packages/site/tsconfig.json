@@ -21,7 +21,8 @@
       "~/*": ["./*"],
       "@/*": ["./*"]
     },
-    "types": ["@types/node", "@nuxt/types"]
+    "types": ["@types/node", "@nuxt/types"],
+    "jsx": "preserve"
   },
   "exclude": ["node_modules", ".nuxt", "dist"],
   "vueCompilerOptions": {

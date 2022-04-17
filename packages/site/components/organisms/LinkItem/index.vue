@@ -29,7 +29,7 @@ import { GHIssue } from 'site-types/GitHubApi'
 import { RepositoryConfig } from 'site-types/SiteConfig'
 import LinkItemComment from './LinkItemComment.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
-import IssueLabel from '~/components/IssueLabel.vue'
+import IssueLabel from '~/components/organisms/IssueLabel/index.vue'
 import ADCard from '~/components/molecules/ADCard/index.vue'
 
 export default defineComponent({
