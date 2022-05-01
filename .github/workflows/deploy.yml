@@ -16,6 +16,7 @@ jobs:
       GH_READONLY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PROJECT_USER_NAME: AndroidDagashi
       PROJECT_REPO_NAME: androiddagashi.github.io
+
     steps:
       - uses: actions/checkout@v3
         with:
@@ -36,8 +37,18 @@ jobs:
       - name: Generate website
         run: yarn site:generate
 
-      - name: Push website
-        run: sh ./.github/push-website.sh
+      # - name: Push website
+      #   run: sh ./.github/push-website.sh
+
+      - name: Deploy website
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./packages/site/dist
+          publish_branch: master
+          force_orphan: true
+          user_name: 'AndroidDagashi store staff'
+          user_email: 'androiddagashi-bot@users.noreply.github.com'
 
       - name: Print debug info
         if: failure()
