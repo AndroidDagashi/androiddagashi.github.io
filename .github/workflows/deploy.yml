@@ -43,7 +43,7 @@ jobs:
       - name: Deploy website
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.PUSH_ACCESS_TOKEN }}
           publish_dir: ./packages/site/dist
           publish_branch: master
           force_orphan: true
