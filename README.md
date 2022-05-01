@@ -28,9 +28,6 @@ $ yarn site:dev
 
 # generate static project
 $ yarn site:generate
-
-# deploy to GitHub Pages
-$ yarn deploy
 ```
 
 ## Workspaces

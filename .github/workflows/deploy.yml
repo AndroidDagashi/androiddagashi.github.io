@@ -11,8 +11,6 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TZ: Asia/Tokyo
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      PUSH_ACCESS_TOKEN: ${{ secrets.PUSH_ACCESS_TOKEN }}
       GH_READONLY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PROJECT_USER_NAME: AndroidDagashi
       PROJECT_REPO_NAME: androiddagashi.github.io
@@ -28,17 +26,11 @@ jobs:
           node-version-file: '.node-version'
           cache: 'yarn'
 
-      - name: Setup git config
-        run: sh ./.github/setup-git-config.sh
-
       - name: yarn install
         run: yarn install
 
       - name: Generate website
         run: yarn site:generate
-
-      # - name: Push website
-      #   run: sh ./.github/push-website.sh
 
       - name: Deploy website
         uses: peaceiris/actions-gh-pages@v3
