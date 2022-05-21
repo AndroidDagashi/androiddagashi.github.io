@@ -21,7 +21,7 @@
       </ul>
       <div class="mt-8 md:mt-0 md:order-1 text-center md:text-left font-medium">
         <p>
-          &copy;{{ new Date().getUTCFullYear() }} — <span>{{ title }}</span>
+          &copy; 2018-{{ new Date().getUTCFullYear() }} <span>{{ title }}</span>
         </p>
       </div>
     </div>
