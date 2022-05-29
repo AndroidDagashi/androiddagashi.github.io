@@ -1,0 +1,179 @@
+{
+  "id": "MI_kwDOB4jhdM4AeizH",
+  "number": 226,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/226",
+  "title": "226 2022-05-29",
+  "description": "ChromeのDynamic Color実装、Jetpack Compose でスネークゲームをつくる、Xcode上でKotlin Nativeのデバッグをするプラグイン、など",
+  "closedAt": "2022-05-29T10:35:50Z",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOSpxetw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afOSp2_eg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2418",
+        "title": "ChromeのDynamic Color実装",
+        "body": "https://android-developers.googleblog.com/2022/05/implementing-dynamic-color-lessons-from.html\r\n\r\nChromeがDynamic Colorを実装すために行ったことが紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2419",
+        "title": "Android Studio Chipmunk | 2021.2.1 Patch 1",
+        "body": "https://androidstudio.googleblog.com/2022/05/android-studio-chipmunk-202121-patch-1.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOQ_icBg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOQ_icBg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/uxn3du/android_studio_chipmunk_202121_patch_1_now/\r\n\r\n`stable` なのに全然安定してないという文句が多いようです",
+              "publishedAt": "2022-05-29T02:49:32Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2420",
+        "title": "ユースケースとレポジトリ",
+        "body": "https://www.reddit.com/r/androiddev/comments/uwkj2w/usecase_vs_repository/\r\n\r\nユースケースがレポジトリの各メソッドの単なるラッパーのとき、果たしてユースケースは必要なのか。また、ViewModelがたくさんのユースケースを持つことはOKなのか、など。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2421",
+        "title": "Jetpack Compose でスネークゲームをつくる",
+        "body": "https://proandroiddev.com/classic-snake-game-with-jetpack-compose-2b78f4892ca",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2422",
+        "title": "Xcode上でKotlin Nativeのデバッグをするプラグイン",
+        "body": "https://github.com/touchlab/xcode-kotlin\r\n\r\niOS側のデバッグをサポートするプラグインです。XcodeからKotlinのコードをデバッグすることが出来ます。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2423",
+        "title": "ComposeのState Objectの仕組み",
+        "body": "Linked ListによるSnapshotの状態管理の仕組みが書かれています。\r\nhttps://dev.to/zachklipp/implementing-snapshot-aware-data-structures-3pi8",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
