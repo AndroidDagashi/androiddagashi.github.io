@@ -1336,6 +1336,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@fastify/busboy@npm:^1.1.0":
+  version: 1.1.0
+  resolution: "@fastify/busboy@npm:1.1.0"
+  dependencies:
+    text-decoding: ^1.0.0
+  checksum: 8ef01870c5e2ddae787fb8775c844b26e54c366732565287d5f7fb7d8c3c746bd4f0ad8f8695f4006e4b63af2fdd9a206ca74b2bc6c5d3c96d88abc07daa16f5
+  languageName: node
+  linkType: hard
+
 "@firebase/app-types@npm:0.7.0":
   version: 0.7.0
   resolution: "@firebase/app-types@npm:0.7.0"
@@ -1353,90 +1362,69 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@firebase/component@npm:0.5.13":
-  version: 0.5.13
-  resolution: "@firebase/component@npm:0.5.13"
+"@firebase/component@npm:0.5.17":
+  version: 0.5.17
+  resolution: "@firebase/component@npm:0.5.17"
   dependencies:
-    "@firebase/util": 1.5.2
+    "@firebase/util": 1.6.3
     tslib: ^2.1.0
-  checksum: dcfa540abaaf0242c2eb96936315aa4988192ec5e248128469d7c19baf45c4470bcfa1c1b5b9b9c7a1ec326c1f1009aa096a286ae4b78daebece606748fa1f8f
+  checksum: 5f9a98bb2bd795fd7a211c9c3b95b893e0e4e83fbae6678995dc730f750fb5c2e76b730dd60790c6fafe4c8323dc8da8d885bf69f99da6cbda5ab28c3a005eef
   languageName: node
   linkType: hard
 
-"@firebase/database-compat@npm:^0.1.8":
-  version: 0.1.8
-  resolution: "@firebase/database-compat@npm:0.1.8"
+"@firebase/database-compat@npm:^0.2.0":
+  version: 0.2.3
+  resolution: "@firebase/database-compat@npm:0.2.3"
   dependencies:
-    "@firebase/component": 0.5.13
-    "@firebase/database": 0.12.8
-    "@firebase/database-types": 0.9.7
-    "@firebase/logger": 0.3.2
-    "@firebase/util": 1.5.2
+    "@firebase/component": 0.5.17
+    "@firebase/database": 0.13.3
+    "@firebase/database-types": 0.9.11
+    "@firebase/logger": 0.3.3
+    "@firebase/util": 1.6.3
     tslib: ^2.1.0
-  peerDependencies:
-    "@firebase/app-compat": 0.x
-  checksum: 94c74de1f419d4a921f6e22c89a59b5c4f052da2c1f0d0bcbe3a7e098fc9e71f51e1fd20c40ed3aa2ea48e66765d0f3ded9f40a2eea0175ddcbb453719fb0de8
+  checksum: b731a4328d1305595195706ac824fc2d886ae288e18b5af12f7a3ced8ec9fae4e7437c39f759d9b16df9ff00ae82a1d405c1c9f6d13f6220414aec5b4e780cd1
   languageName: node
   linkType: hard
 
-"@firebase/database-types@npm:0.9.7":
-  version: 0.9.7
-  resolution: "@firebase/database-types@npm:0.9.7"
+"@firebase/database-types@npm:0.9.11, @firebase/database-types@npm:^0.9.7":
+  version: 0.9.11
+  resolution: "@firebase/database-types@npm:0.9.11"
   dependencies:
     "@firebase/app-types": 0.7.0
-    "@firebase/util": 1.5.2
-  checksum: bfc4e711c3f812b6255ee8f95d4c56fc26c738d3a5e92413e356f94dda5710c731f66ecde7813b09e2b10cec5f993287178c4ba09b9ca2b5ad41c434953aada5
+    "@firebase/util": 1.6.3
+  checksum: b9331787991ce897d25baa09c05c1ae3a47c236a6fe1f756785822cbfa7dbd6459912041e56abb456ba8b3f761fb06c4261ec12c01f081d5cae70c88affcb396
   languageName: node
   linkType: hard
 
-"@firebase/database-types@npm:^0.9.7":
-  version: 0.9.8
-  resolution: "@firebase/database-types@npm:0.9.8"
-  dependencies:
-    "@firebase/app-types": 0.7.0
-    "@firebase/util": 1.6.0
-  checksum: 602bedde0baa4a04a07f24138a527a52eabdd56be9ddadcde634df995fb739b7166bfd19f25014472408a5d2ac0dee922eec89c47f24fb51d4399a8a0332ef20
-  languageName: node
-  linkType: hard
-
-"@firebase/database@npm:0.12.8":
-  version: 0.12.8
-  resolution: "@firebase/database@npm:0.12.8"
+"@firebase/database@npm:0.13.3":
+  version: 0.13.3
+  resolution: "@firebase/database@npm:0.13.3"
   dependencies:
     "@firebase/auth-interop-types": 0.1.6
-    "@firebase/component": 0.5.13
-    "@firebase/logger": 0.3.2
-    "@firebase/util": 1.5.2
+    "@firebase/component": 0.5.17
+    "@firebase/logger": 0.3.3
+    "@firebase/util": 1.6.3
     faye-websocket: 0.11.4
     tslib: ^2.1.0
-  checksum: 27885efcd6ecfa918f0d53e8f41346ab25a70887a9afdad60ab5a351b2626b48a8e232a1df81d68841b8179e2d075ca35a7a49ca9594741b5eb8818128d382fd
+  checksum: fd574de1ec15dac01eda199ce9225777ec07ebedfe743fe632793636a0aa0cdd54bd07b1b4bb871a07ecefc726c033549773520ac3583395b74e25351024c7c6
   languageName: node
   linkType: hard
 
-"@firebase/logger@npm:0.3.2":
-  version: 0.3.2
-  resolution: "@firebase/logger@npm:0.3.2"
+"@firebase/logger@npm:0.3.3":
+  version: 0.3.3
+  resolution: "@firebase/logger@npm:0.3.3"
   dependencies:
     tslib: ^2.1.0
-  checksum: 1a51de912d24e05081bee84adc33665c5f198b261ddf87b41035f3af0fee035d021b3839d739d24ee07b96e7b190846e21fb1cdf3645c404a7cdde3a23765c1b
+  checksum: 34c20c50db125b904e231c10e9f00868fad91dcdba6981c8a296c86036d49ab4a0aa9a367b6472f6321562f8d07d858eac155597d271351279e8aba825d7f77c
   languageName: node
   linkType: hard
 
-"@firebase/util@npm:1.5.2":
-  version: 1.5.2
-  resolution: "@firebase/util@npm:1.5.2"
+"@firebase/util@npm:1.6.3":
+  version: 1.6.3
+  resolution: "@firebase/util@npm:1.6.3"
   dependencies:
     tslib: ^2.1.0
-  checksum: 68c68b470c65fdf6cbf5a98c6254d9f3284d77afce407499d80b04d783eafd60c1d54a6d848f4f5f280eaba498d55a8a0ab9115b2c637df527e97ec122d39766
-  languageName: node
-  linkType: hard
-
-"@firebase/util@npm:1.6.0":
-  version: 1.6.0
-  resolution: "@firebase/util@npm:1.6.0"
-  dependencies:
-    tslib: ^2.1.0
-  checksum: 9bdd4cc5b2964639bd5f519bbeba4ad101d86cde53f8fe16a285c8ffacd6266186b343674cef886d1949a5e1069b642380758886c81f53c5a9c0145ac4f38363
+  checksum: ccdbb1993f0316c511672025fde5d2d0b52dd4d209040e8d375eda673b8a7ec21ebaa231b05a8663c53daec2c9a65174c6c2615d7ff18a9e8577be958906abb6
   languageName: node
   linkType: hard
 
@@ -1447,15 +1435,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@google-cloud/firestore@npm:^4.15.1":
-  version: 4.15.1
-  resolution: "@google-cloud/firestore@npm:4.15.1"
+"@google-cloud/firestore@npm:^5.0.2":
+  version: 5.0.2
+  resolution: "@google-cloud/firestore@npm:5.0.2"
   dependencies:
     fast-deep-equal: ^3.1.1
     functional-red-black-tree: ^1.0.1
     google-gax: ^2.24.1
     protobufjs: ^6.8.6
-  checksum: 1f833420c2667101c7a8f25519bd1daa000e8efc0e8d56ed5e6a98ca64c5ffb95f3ca8f8bf805774be37b9c6e17e66b625f0d8cb4a1d9a8cf79f37b01c8f7cf9
+  checksum: 4b669f54a7da2287d0559435586bcf9792a3e240d1b75868a6557c4c1a7265aae335ab24d0d1458ed32320ee258c107802f9650ed24f86b0d03ff49f202ee530
   languageName: node
   linkType: hard
 
@@ -1469,47 +1457,45 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@google-cloud/projectify@npm:^2.0.0":
-  version: 2.1.1
-  resolution: "@google-cloud/projectify@npm:2.1.1"
-  checksum: 4e773269b773068e86df9b4f9119948d9bda770a1be33eeda77a9034d795d8e07718c1f6ee048e1f2329f40f8d2eee7149d7a4692436cfbd3fbea4363fdac05b
+"@google-cloud/projectify@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@google-cloud/projectify@npm:3.0.0"
+  checksum: 4fa7ad689422b0b9c152fb00260e54e39d81678f9c51518bdb34bc57ee00604524fcdd5837fa97eb2f8ff4811afee3f345b1b0993bc4a2fa1b803bdd6554839a
   languageName: node
   linkType: hard
 
-"@google-cloud/promisify@npm:^2.0.0":
-  version: 2.0.4
-  resolution: "@google-cloud/promisify@npm:2.0.4"
-  checksum: 51a9fb6c43e5342d995435b3660afe8d7a498ed65e6f5fef6492cc2ac2b494c1ec89e8f220b8a8e23f1c90334b7db5169c292f0a317e971d57366426a2420247
+"@google-cloud/promisify@npm:^3.0.0":
+  version: 3.0.0
+  resolution: "@google-cloud/promisify@npm:3.0.0"
+  checksum: 5339e36bd5bc7957ae72b959e21c5d50fe028ad8eae9affb6e8e172aab715f3bf6a7b3c01720d6b4b67ea080d91dd30ac00f0dc88d455620c8bb10df263385a2
   languageName: node
   linkType: hard
 
-"@google-cloud/storage@npm:^5.18.3":
-  version: 5.20.4
-  resolution: "@google-cloud/storage@npm:5.20.4"
+"@google-cloud/storage@npm:^6.1.0":
+  version: 6.2.3
+  resolution: "@google-cloud/storage@npm:6.2.3"
   dependencies:
     "@google-cloud/paginator": ^3.0.7
-    "@google-cloud/projectify": ^2.0.0
-    "@google-cloud/promisify": ^2.0.0
+    "@google-cloud/projectify": ^3.0.0
+    "@google-cloud/promisify": ^3.0.0
     abort-controller: ^3.0.0
     arrify: ^2.0.0
     async-retry: ^1.3.3
     compressible: ^2.0.12
-    configstore: ^5.0.0
     duplexify: ^4.0.0
     ent: ^2.2.0
     extend: ^3.0.2
-    gaxios: ^4.0.0
-    google-auth-library: ^7.14.1
-    hash-stream-validation: ^0.2.2
+    gaxios: ^5.0.0
+    google-auth-library: ^8.0.1
     mime: ^3.0.0
     mime-types: ^2.0.8
     p-limit: ^3.0.1
     pumpify: ^2.0.0
-    retry-request: ^4.2.2
+    retry-request: ^5.0.0
     stream-events: ^1.0.4
-    teeny-request: ^7.1.3
-    xdg-basedir: ^4.0.0
-  checksum: 4cac5ce478738b1b41fcac2c82a7d83a5339a2769021e29e5468574dfaed4d3adc4a395181c9b69fb26f976b964106bc9d53ac4da41c7e8679d591f5d1af2dd7
+    teeny-request: ^8.0.0
+    uuid: ^8.0.0
+  checksum: 2f231f62022e89e5e91b6475b9a94c374af894cff60f62d2d4817bd3eb16ab43ed9106238cdb55e9dd704363cdb5575b61d249d8f0addb08e201387e8d6cbd9e
   languageName: node
   linkType: hard
 
@@ -5059,20 +5045,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"configstore@npm:^5.0.0":
-  version: 5.0.1
-  resolution: "configstore@npm:5.0.1"
-  dependencies:
-    dot-prop: ^5.2.0
-    graceful-fs: ^4.1.2
-    make-dir: ^3.0.0
-    unique-string: ^2.0.0
-    write-file-atomic: ^3.0.0
-    xdg-basedir: ^4.0.0
-  checksum: 60ef65d493b63f96e14b11ba7ec072fdbf3d40110a94fb7199d1c287761bdea5c5244e76b2596325f30c1b652213aa75de96ea20afd4a5f82065e61ea090988e
-  languageName: node
-  linkType: hard
-
 "connect@npm:^3.7.0":
   version: 3.7.0
   resolution: "connect@npm:3.7.0"
@@ -5336,13 +5308,6 @@ __metadata:
     randombytes: ^2.0.0
     randomfill: ^1.0.3
   checksum: c1609af82605474262f3eaa07daa0b2140026bd264ab316d4bf1170272570dbe02f0c49e29407fe0d3634f96c507c27a19a6765fb856fed854a625f9d15618e2
-  languageName: node
-  linkType: hard
-
-"crypto-random-string@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "crypto-random-string@npm:2.0.0"
-  checksum: 0283879f55e7c16fdceacc181f87a0a65c53bc16ffe1d58b9d19a6277adcd71900d02bb2c4843dd55e78c51e30e89b0fec618a7f170ebcc95b33182c28f05fd6
   languageName: node
   linkType: hard
 
@@ -5854,15 +5819,6 @@ __metadata:
   version: 2.0.1
   resolution: "devalue@npm:2.0.1"
   checksum: 94bedfba0311b3404ca3281180c56baf0259481b8411eae1cae8ffd5741e1add47092d560c2ea9091086c9eef940a887a3ce86c63128d9c310b7486002762a08
-  languageName: node
-  linkType: hard
-
-"dicer@npm:^0.3.0":
-  version: 0.3.1
-  resolution: "dicer@npm:0.3.1"
-  dependencies:
-    streamsearch: ^1.1.0
-  checksum: 9f3b11f8b7965f47624a9b09f96ba05e3bad2a0f3957a7ede07ae032eda16739ffa665c260e3eba20bd9751abf83202803e29df0f30ef4cbb164eef749a2a84d
   languageName: node
   linkType: hard
 
@@ -7058,16 +7014,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-admin@npm:^10.0.0":
-  version: 10.2.0
-  resolution: "firebase-admin@npm:10.2.0"
+"firebase-admin@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "firebase-admin@npm:11.0.0"
   dependencies:
-    "@firebase/database-compat": ^0.1.8
+    "@fastify/busboy": ^1.1.0
+    "@firebase/database-compat": ^0.2.0
     "@firebase/database-types": ^0.9.7
-    "@google-cloud/firestore": ^4.15.1
-    "@google-cloud/storage": ^5.18.3
+    "@google-cloud/firestore": ^5.0.2
+    "@google-cloud/storage": ^6.1.0
     "@types/node": ">=12.12.47"
-    dicer: ^0.3.0
     jsonwebtoken: ^8.5.1
     jwks-rsa: ^2.0.2
     node-forge: ^1.3.1
@@ -7077,7 +7033,7 @@ __metadata:
       optional: true
     "@google-cloud/storage":
       optional: true
-  checksum: 8737d4c49a74ae8af635b3f428722eb675d02b17cf371421485ed1d008e7714731a7e56b509d4179e094d6491b9a03374cbc5770f37e448c51aad2a9af38fa30
+  checksum: d971631f4fd479daef71f73c493e1cef7fe1d3c8303780bbfcaa1fd78aa76997cfb058f241eefaf4fb007701398de1aa3e84b54e3d4de6ff99e766cf8e4fb180
   languageName: node
   linkType: hard
 
@@ -7382,6 +7338,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"gaxios@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "gaxios@npm:5.0.1"
+  dependencies:
+    extend: ^3.0.2
+    https-proxy-agent: ^5.0.0
+    is-stream: ^2.0.0
+    node-fetch: ^2.6.7
+  checksum: 65464122a5be72084d07947536d18a0dcebd115b28cbcd19da8a98763a67c8c8fde995bf2f358251397c939df9d2ff84f54628a94f634a98a16c7b7553cdb4a5
+  languageName: node
+  linkType: hard
+
 "gcp-metadata@npm:^4.2.0":
   version: 4.3.1
   resolution: "gcp-metadata@npm:4.3.1"
@@ -7389,6 +7357,16 @@ __metadata:
     gaxios: ^4.0.0
     json-bigint: ^1.0.0
   checksum: b0b1b85ea2efee1d640a1d4ead0937fdcceffd43ab4cacfdd66fd086fcfe5c3d09ad850ee14f43f2dc73244b2617b166adfa09a2a85e0652a8c56bed194f01fe
+  languageName: node
+  linkType: hard
+
+"gcp-metadata@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "gcp-metadata@npm:5.0.0"
+  dependencies:
+    gaxios: ^5.0.0
+    json-bigint: ^1.0.0
+  checksum: b75635e564a39ef0a6ebbff0daa97cea37382c3d6f0d7a6a0406e03a275de804a74e3f3d410d5313a6c9dd3496023e96bc81474917fa8369974398eb069d9645
   languageName: node
   linkType: hard
 
@@ -7584,7 +7562,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-auth-library@npm:^7.14.0, google-auth-library@npm:^7.14.1":
+"google-auth-library@npm:^7.14.0":
   version: 7.14.1
   resolution: "google-auth-library@npm:7.14.1"
   dependencies:
@@ -7598,6 +7576,23 @@ __metadata:
     jws: ^4.0.0
     lru-cache: ^6.0.0
   checksum: 78376eb2d424151dea7e3e162e20e06c11f0133451dd5ee3ea759dcb514d946acf2e0238ff08f002bdb3bf9d43c619793939feff9bc1d92025206ee836a641cf
+  languageName: node
+  linkType: hard
+
+"google-auth-library@npm:^8.0.1":
+  version: 8.1.1
+  resolution: "google-auth-library@npm:8.1.1"
+  dependencies:
+    arrify: ^2.0.0
+    base64-js: ^1.3.0
+    ecdsa-sig-formatter: ^1.0.11
+    fast-text-encoding: ^1.0.0
+    gaxios: ^5.0.0
+    gcp-metadata: ^5.0.0
+    gtoken: ^6.0.0
+    jws: ^4.0.0
+    lru-cache: ^6.0.0
+  checksum: 581badf70974b900cdf6fa1749a14f8a42885cfab8ce5731101e40de286d977e30845e6815f58ea329eaf7ee4678262415ab1ea13aa29bce3609131be967787c
   languageName: node
   linkType: hard
 
@@ -7635,6 +7630,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"google-p12-pem@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "google-p12-pem@npm:4.0.0"
+  dependencies:
+    node-forge: ^1.3.1
+  bin:
+    gp12-pem: build/src/bin/gp12-pem.js
+  checksum: f41a88d339e9fe633dc915bc0f3335c0196fa318f994dcd5dfaa0f3f7aa2d99f6122e2c80bd0f4bb22f2b61ff645b7cc782a74e12ceaf6c9ad9e08cdeb4d615e
+  languageName: node
+  linkType: hard
+
 "graceful-fs@npm:^4.1.11, graceful-fs@npm:^4.1.15, graceful-fs@npm:^4.1.2, graceful-fs@npm:^4.1.6, graceful-fs@npm:^4.2.0, graceful-fs@npm:^4.2.4, graceful-fs@npm:^4.2.6":
   version: 4.2.10
   resolution: "graceful-fs@npm:4.2.10"
@@ -7668,6 +7674,17 @@ __metadata:
     google-p12-pem: ^3.1.3
     jws: ^4.0.0
   checksum: 1fd640e98afcb3d5c77026fd4ff0671dce724acad11169e5b63701a853e1f5a03f4c76fe6eb95500db80f8444753ce212701d396186ef006088d08be4174f2d7
+  languageName: node
+  linkType: hard
+
+"gtoken@npm:^6.0.0":
+  version: 6.1.0
+  resolution: "gtoken@npm:6.1.0"
+  dependencies:
+    gaxios: ^4.0.0
+    google-p12-pem: ^4.0.0
+    jws: ^4.0.0
+  checksum: 23a1d954e0644fb42127cf3fc70f73dab984de3667c9b0952f50be36b52840eb6e953d5051de92cc9ae71ecfcfa310d1d086b578e3609b2ed3cd9dd61a194baa
   languageName: node
   linkType: hard
 
@@ -7828,13 +7845,6 @@ __metadata:
     readable-stream: ^3.6.0
     safe-buffer: ^5.2.0
   checksum: 26b7e97ac3de13cb23fc3145e7e3450b0530274a9562144fc2bf5c1e2983afd0e09ed7cc3b20974ba66039fad316db463da80eb452e7373e780cbee9a0d2f2dc
-  languageName: node
-  linkType: hard
-
-"hash-stream-validation@npm:^0.2.2":
-  version: 0.2.4
-  resolution: "hash-stream-validation@npm:0.2.4"
-  checksum: a5633e6ece2f729729d7061274900b10b035d6b011bfffc9503440c4279cacb53eb461ad96c8c90bb6b5368d896833a06b924a7a1abdbad46a8a5434e0c17a64
   languageName: node
   linkType: hard
 
@@ -8668,13 +8678,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-typedarray@npm:^1.0.0":
-  version: 1.0.0
-  resolution: "is-typedarray@npm:1.0.0"
-  checksum: 3508c6cd0a9ee2e0df2fa2e9baabcdc89e911c7bd5cf64604586697212feec525aa21050e48affb5ffc3df20f0f5d2e2cf79b08caa64e1ccc9578e251763aef7
-  languageName: node
-  linkType: hard
-
 "is-weakref@npm:^1.0.2":
   version: 1.0.2
   resolution: "is-weakref@npm:1.0.2"
@@ -9492,7 +9495,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"make-dir@npm:^3.0.0, make-dir@npm:^3.0.2, make-dir@npm:^3.1.0, make-dir@npm:~3.1.0":
+"make-dir@npm:^3.0.2, make-dir@npm:^3.1.0, make-dir@npm:~3.1.0":
   version: 3.1.0
   resolution: "make-dir@npm:3.1.0"
   dependencies:
@@ -12652,13 +12655,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"retry-request@npm:^4.0.0, retry-request@npm:^4.2.2":
+"retry-request@npm:^4.0.0":
   version: 4.2.2
   resolution: "retry-request@npm:4.2.2"
   dependencies:
     debug: ^4.1.1
     extend: ^3.0.2
   checksum: 392b6bcb3b5b15868cb67fbdf7cfa365ec9d4b5f2034f194598b1aa4f05bf815e5a331a5b58d70deef69b7d0d61803ea3c2733153be6262142e43523499e0135
+  languageName: node
+  linkType: hard
+
+"retry-request@npm:^5.0.0":
+  version: 5.0.1
+  resolution: "retry-request@npm:5.0.1"
+  dependencies:
+    debug: ^4.1.1
+    extend: ^3.0.2
+  checksum: 8da06c4d0ae59bd48ba38f2a69235f90fd87001a195fcde2fcf91614e3bc16704d0dada8e790a55ff902522e733db0d7bd3bf3c2f26be8b943a7062cd06f1b91
   languageName: node
   linkType: hard
 
@@ -13185,7 +13198,7 @@ __metadata:
   resolution: "site-tweeter@workspace:packages/site-tweeter"
   dependencies:
     "@types/oauth": 0.9.1
-    firebase-admin: ^10.0.0
+    firebase-admin: ^11.0.0
     oauth: ^0.10.0
     site-common: ^1.0.0
     site-config: ^1.0.0
@@ -13616,13 +13629,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"streamsearch@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "streamsearch@npm:1.1.0"
-  checksum: 1cce16cea8405d7a233d32ca5e00a00169cc0e19fbc02aa839959985f267335d435c07f96e5e0edd0eadc6d39c98d5435fb5bbbdefc62c41834eadc5622ad942
-  languageName: node
-  linkType: hard
-
 "strict-uri-encode@npm:^1.0.0":
   version: 1.1.0
   resolution: "strict-uri-encode@npm:1.1.0"
@@ -13938,16 +13944,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"teeny-request@npm:^7.1.3":
-  version: 7.2.0
-  resolution: "teeny-request@npm:7.2.0"
+"teeny-request@npm:^8.0.0":
+  version: 8.0.0
+  resolution: "teeny-request@npm:8.0.0"
   dependencies:
     http-proxy-agent: ^5.0.0
     https-proxy-agent: ^5.0.0
     node-fetch: ^2.6.1
     stream-events: ^1.0.5
     uuid: ^8.0.0
-  checksum: 26d096799eac7ef98b2777db277f5d5b2e9739eaaed8f4cd333d3ce7281f1396e172c1fd17404af702d2c372fe104e5f4cc430618c80eae8ac8b4b036e527d88
+  checksum: a867fb58406308e3ee8415f6b6612471a78af136971575bb51eb3ecf4b76d2ea363936da5eb68bbc28ef3d3af59e24dcf0803f1e80c8eb658c73cc9a53881c52
   languageName: node
   linkType: hard
 
@@ -14013,6 +14019,13 @@ __metadata:
   bin:
     terser: bin/terser
   checksum: 0b1f5043cf5c3973005fe2ae4ff3be82511c336a6430599dacd4e2acf77c974d4474b0f1eec4823977c1f33823147e736ff712ca8e098bee3db25946480fa29d
+  languageName: node
+  linkType: hard
+
+"text-decoding@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "text-decoding@npm:1.0.0"
+  checksum: 4b2359d8efdabea72ac470304e991913e9b82a55b1c33ab5204f115d11305ac5900add80aee5f7d22b2bcf0faebaf35b193d28a10b74adf175d9ac9d63604445
   languageName: node
   linkType: hard
 
@@ -14363,15 +14376,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typedarray-to-buffer@npm:^3.1.5":
-  version: 3.1.5
-  resolution: "typedarray-to-buffer@npm:3.1.5"
-  dependencies:
-    is-typedarray: ^1.0.0
-  checksum: 99c11aaa8f45189fcfba6b8a4825fd684a321caa9bd7a76a27cf0c7732c174d198b99f449c52c3818107430b5f41c0ccbbfb75cb2ee3ca4a9451710986d61a60
-  languageName: node
-  linkType: hard
-
 "typedarray@npm:^0.0.6":
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
@@ -14577,15 +14581,6 @@ __metadata:
   dependencies:
     imurmurhash: ^0.1.4
   checksum: 5b6876a645da08d505dedb970d1571f6cebdf87044cb6b740c8dbb24f0d6e1dc8bdbf46825fd09f994d7cf50760e6f6e063cfa197d51c5902c00a861702eb75a
-  languageName: node
-  linkType: hard
-
-"unique-string@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "unique-string@npm:2.0.0"
-  dependencies:
-    crypto-random-string: ^2.0.0
-  checksum: ef68f639136bcfe040cf7e3cd7a8dff076a665288122855148a6f7134092e6ed33bf83a7f3a9185e46c98dddc445a0da6ac25612afa1a7c38b8b654d6c02498e
   languageName: node
   linkType: hard
 
@@ -15321,18 +15316,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"write-file-atomic@npm:^3.0.0":
-  version: 3.0.3
-  resolution: "write-file-atomic@npm:3.0.3"
-  dependencies:
-    imurmurhash: ^0.1.4
-    is-typedarray: ^1.0.0
-    signal-exit: ^3.0.2
-    typedarray-to-buffer: ^3.1.5
-  checksum: c55b24617cc61c3a4379f425fc62a386cc51916a9b9d993f39734d005a09d5a4bb748bc251f1304e7abd71d0a26d339996c275955f527a131b1dcded67878280
-  languageName: node
-  linkType: hard
-
 "write-json-file@npm:^2.3.0":
   version: 2.3.0
   resolution: "write-json-file@npm:2.3.0"
@@ -15359,13 +15342,6 @@ __metadata:
     utf-8-validate:
       optional: true
   checksum: 5c1f669a166fb57560b4e07f201375137fa31d9186afde78b1508926345ce546332f109081574ddc4e38cc474c5406b5fc71c18d71eb75f6e2d2245576976cba
-  languageName: node
-  linkType: hard
-
-"xdg-basedir@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "xdg-basedir@npm:4.0.0"
-  checksum: 0073d5b59a37224ed3a5ac0dd2ec1d36f09c49f0afd769008a6e9cd3cd666bd6317bd1c7ce2eab47e1de285a286bad11a9b038196413cd753b79770361855f3c
   languageName: node
   linkType: hard
 
