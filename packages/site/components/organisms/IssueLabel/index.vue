@@ -8,7 +8,7 @@
 </template>
 
 <script lang="ts">
-import { computed, PropType , defineComponent } from '@vue/composition-api'
+import { computed, PropType, defineComponent } from '@vue/composition-api'
 import { GHLabel } from 'site-types/GitHubApi'
 import { RepositoryConfig } from 'site-types/SiteConfig'
 
@@ -36,7 +36,7 @@ export default defineComponent({
 
     return {
       chipColorStyle,
-      githubLabelLink
+      githubLabelLink,
     }
   },
 })
