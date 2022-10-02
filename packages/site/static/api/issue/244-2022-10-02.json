@@ -1,0 +1,175 @@
+{
+  "id": "MI_kwDOB4jhdM4AgQh8",
+  "number": 244,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/244",
+  "title": "244 2022-10-02",
+  "description": "Kotlin 1.7.20, Text to Speechのアップデート, Android Go向けへの最適化, MockではなくFakeを使う理由, DroidKaigi 2022 Day.3について, など",
+  "closedAt": "2022-10-02T10:23:23Z",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOUxDcPg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOUxJOSw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2567",
+        "title": "Kotlin 1.7.20",
+        "body": "https://blog.jetbrains.com/kotlin/2022/09/kotlin-1-7-20-released/\r\n\r\nKotlin/Nativeの新しいメモリマネージャーがデフォルトになりました。他にもExperimentalとしてして新しい機能が追加されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2568",
+        "title": "Go edition向けに最適化 Part2",
+        "body": "https://android-developers.googleblog.com/2022/09/optimize-for-android-go-lessons-from-google-apps-part-2.html\r\n\r\nGo edition向けに最適化する方法として、アプリ起動時間の改善とアプリサイズ最適化の方法が紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2569",
+        "title": "Text to Speechのアップデート",
+        "body": "https://android-developers.googleblog.com/2022/09/listen-to-our-major-text-to-speech-upgrades-for-64-bit-devices.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2570",
+        "title": "MAD Skills: Compose Toolkit",
+        "body": "https://medium.com/androiddevelopers/compose-toolkit-8d3651228764\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2571",
+        "title": "DroidKaigi 2022 Day.3について",
+        "body": "https://medium.com/droidkaigi/droidkaigi-2022-day-3%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6-6d576c73f182",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOS2AZ1g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOS2AZ1g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "3日目は1日目、2日目と異なり会場がベルサール飯田橋ファーストなので、オフライン参加される方はご注意ください。",
+              "publishedAt": "2022-10-02T09:00:09Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "takahirom",
+                "url": "https://github.com/takahirom",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/1386930?u=ded0546028d0c2993d504475d0de5f34d8cafc24&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2572",
+        "title": "MockではなくFakeを使う理由",
+        "body": "https://www.billjings.com/posts/title/fakes-are-great-but-mocks-i-hate/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2573",
+        "title": "アーキテクチャ、ライブラリの変化",
+        "body": "https://getstream.io/blog/design-patterns-and-architecture-the-android-developer-roadmap-part-4/\r\n\r\nこの記事ではAndroidのアーキテクチャ、DI、ネットワークなどのエコシステムがどのように変化したかについて解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
