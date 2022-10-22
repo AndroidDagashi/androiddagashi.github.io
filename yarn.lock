@@ -1564,12 +1564,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/vue2@npm:1.2.1":
-  version: 1.2.1
-  resolution: "@iconify/vue2@npm:1.2.1"
+"@iconify/types@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@iconify/types@npm:2.0.0"
+  checksum: 029f58542c160e9d4a746869cf2e475b603424d3adf3994c5cc8d0406c47e6e04a3b898b2707840c1c5b9bd5563a1660a34b110d89fce43923baca5222f4e597
+  languageName: node
+  linkType: hard
+
+"@iconify/vue2@npm:2.0.0":
+  version: 2.0.0
+  resolution: "@iconify/vue2@npm:2.0.0"
+  dependencies:
+    "@iconify/types": ^2.0.0
   peerDependencies:
     vue: 2.x
-  checksum: ecd386ec19cf5493280588c0398b244029bbe3d60593b9d49e50e1f47e88a6084dc37825f73f4f19f75d90f7821793428d6e9c0d4f92cbd1c9852016853d4da2
+  checksum: 414012c1e2886ae4fa31da293d84462f715ba0088313c00b2f2d32e436042a75c3132e6633ee1013397957ef0f883fb4851a841f7ad01cdd720c7f710080f9f5
   languageName: node
   linkType: hard
 
@@ -13448,7 +13457,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site@workspace:packages/site"
   dependencies:
-    "@iconify/vue2": 1.2.1
+    "@iconify/vue2": 2.0.0
     "@nuxt/types": 2.15.8
     "@nuxt/typescript-build": 2.1.0
     "@nuxtjs/eslint-config": 11.0.0
