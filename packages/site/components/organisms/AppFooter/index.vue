@@ -12,9 +12,7 @@
       <ul class="flex justify-center space-x-6 md:order-2">
         <li v-for="(link, index) in links" :key="index">
           <a :href="link.url" target="_blank" class="inline-block h-6 w-6">
-            <client-only>
-              <Icon :icon="link.icon" width="24" />
-            </client-only>
+            <iconify-icon :icon="link.icon" width="24"/>
             <span class="sr-only">{{ link.name }}</span>
           </a>
         </li>
@@ -30,13 +28,12 @@
 <script lang="ts">
 import { LinkInfo, TwitterInfo } from 'site-types/SiteConfig'
 import type { PropType } from '@vue/composition-api'
-import { Icon } from '@iconify/vue2'
 import { defineComponent } from '@vue/composition-api'
 import SiteDescription from '~/components/organisms/SiteDescription/index.vue'
 
 export default defineComponent({
   name: 'AppFooter',
-  components: { Icon, SiteDescription },
+  components: { SiteDescription },
   props: {
     title: {
       type: String,

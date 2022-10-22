@@ -17,12 +17,7 @@
     <p>おおよそ毎週日曜夜の更新です。</p>
     <div class="mt-6">
       <a class="FollowOnTwitter" :href="dagashiTwitterUrl" target="_blank">
-        <client-only>
-          <Icon icon="akar-icons:twitter-fill" width="24" />
-          <template #placeholder>
-            <span class="inline-block w-6 h-6"></span>
-          </template>
-        </client-only>
+          <iconify-icon icon="akar-icons:twitter-fill" width="24" />
         <span class="font-bold">Follow @{{ contact.name }}</span>
       </a>
     </div>
@@ -32,7 +27,6 @@
 <script lang="ts">
 import { TwitterInfo } from 'site-types/SiteConfig'
 import { PropType, defineComponent, computed } from '@vue/composition-api'
-import { Icon } from '@iconify/vue2'
 import TwitterLink from '~/components/atoms/TwitterLink/index.vue'
 import ADCard from '~/components/molecules/ADCard/index.vue'
 import ADAvatar from '~/components/atoms/ADAvatar/index.vue'
@@ -40,7 +34,7 @@ import { twitterUrl } from '~/utils/urls'
 
 export default defineComponent({
   name: 'SiteDescription',
-  components: { ADCard, ADAvatar, TwitterLink, Icon },
+  components: { ADCard, ADAvatar, TwitterLink },
   props: {
     title: {
       type: String,
