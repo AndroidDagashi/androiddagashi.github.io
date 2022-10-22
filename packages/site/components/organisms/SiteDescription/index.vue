@@ -17,12 +17,7 @@
     <p>おおよそ毎週日曜夜の更新です。</p>
     <div class="mt-6">
       <a class="FollowOnTwitter" :href="dagashiTwitterUrl" target="_blank">
-        <client-only>
           <iconify-icon icon="akar-icons:twitter-fill" width="24" />
-          <template #placeholder>
-            <span class="inline-block w-6 h-6"></span>
-          </template>
-        </client-only>
         <span class="font-bold">Follow @{{ contact.name }}</span>
       </a>
     </div>
