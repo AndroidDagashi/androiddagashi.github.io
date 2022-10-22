@@ -98,8 +98,24 @@ const config: NuxtConfig = {
         configs.node = configs.node || {}
         configs.node.fs = 'empty'
       }
+
+      // .cjs seems not to be transpiled(and iconify-icon failed to load).
+      // https://github.com/nuxt/nuxt.js/issues/10339
+      // https://github.com/nuxt-community/i18n-module/issues/1443
+      // PR(https://github.com/nuxt/nuxt.js/pull/10340) has already been merged, so should be fixed in next release(2.16.0).
+      configs.resolve?.extensions?.push('.cjs')
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      const orig = configs.module!.rules![2]!.exclude! as ((path: string) => boolean)
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      configs.module!.rules[2].test = /\.(m|c)?jsx?$/i;
+      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      configs.module!.rules[2].exclude = function (file) {
+        const res = orig(file);
+        if (res) return !/ufo/.test(file);
+        return res;
+      };
     },
-    transpile: ['@iconify/vue2'],
+    transpile: ['iconify-icon'],
   },
   generate: {
     fallback: true,
@@ -111,6 +127,7 @@ const config: NuxtConfig = {
     '~/plugins/composition-api.ts',
     '~/plugins/api',
     '~/plugins/markdownit.ts',
+    '~/plugins/iconify-icon.ts',
     { src: '~/plugins/ga.js', ssr: false },
     { src: '~/plugins/init.client.ts', mode: 'client' },
   ],

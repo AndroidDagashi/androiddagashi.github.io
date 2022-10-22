@@ -1571,17 +1571,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@iconify/vue2@npm:2.0.0":
-  version: 2.0.0
-  resolution: "@iconify/vue2@npm:2.0.0"
-  dependencies:
-    "@iconify/types": ^2.0.0
-  peerDependencies:
-    vue: 2.x
-  checksum: 414012c1e2886ae4fa31da293d84462f715ba0088313c00b2f2d32e436042a75c3132e6633ee1013397957ef0f883fb4851a841f7ad01cdd720c7f710080f9f5
-  languageName: node
-  linkType: hard
-
 "@jridgewell/gen-mapping@npm:^0.1.0":
   version: 0.1.1
   resolution: "@jridgewell/gen-mapping@npm:0.1.1"
@@ -8233,6 +8222,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"iconify-icon@npm:^1.0.1":
+  version: 1.0.1
+  resolution: "iconify-icon@npm:1.0.1"
+  dependencies:
+    "@iconify/types": ^2.0.0
+  checksum: a90d9c76492fcd5738ff916697d5c170ab1e26b2f88c9cacc164aa6d321569f89ddb72d344912600a265f0f577e53aac3dbbc009690bc036d0c9b39b5c610b97
+  languageName: node
+  linkType: hard
+
 "iconv-lite@npm:^0.4.24":
   version: 0.4.24
   resolution: "iconv-lite@npm:0.4.24"
@@ -13457,7 +13455,6 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site@workspace:packages/site"
   dependencies:
-    "@iconify/vue2": 2.0.0
     "@nuxt/types": 2.15.8
     "@nuxt/typescript-build": 2.1.0
     "@nuxtjs/eslint-config": 11.0.0
@@ -13477,6 +13474,7 @@ __metadata:
     eslint: 8.26.0
     eslint-config-prettier: 8.5.0
     eslint-plugin-nuxt: 4.0.0
+    iconify-icon: ^1.0.1
     lodash.flatmap: 4.5.0
     markdown-it: 13.0.1
     modern-normalize: 1.1.0

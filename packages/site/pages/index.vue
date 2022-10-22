@@ -4,12 +4,7 @@
     <IssueDigestList class="mt-3" :milestones="milestones">
       <template v-if="pageInfo.hasNextPage" #bottom>
         <button class="LoadNextButton" @click="onLoadNext">
-          <client-only>
-            <Icon icon="ic:baseline-expand-more" width="24" />
-            <template #placeholder>
-              <span class="inline-block w-6 h-6"></span>
-            </template>
-          </client-only>
+            <iconify-icon icon="ic:baseline-expand-more" width="24" />
           <span class="sr-only">次の記事を読み込む</span>
         </button>
       </template>
@@ -20,7 +15,6 @@
 <script lang="ts">
 import { mapActions, mapGetters } from 'vuex'
 import { defineComponent } from '@vue/composition-api'
-import { Icon } from '@iconify/vue2'
 import { renderOGPMeta } from '~/utils/ogp'
 import IssueDigestList from '~/components/organisms/IssueDigestList/index.vue'
 
@@ -28,7 +22,6 @@ export default defineComponent({
   name: 'Index',
   components: {
     IssueDigestList,
-    Icon,
   },
   data() {
     return {
