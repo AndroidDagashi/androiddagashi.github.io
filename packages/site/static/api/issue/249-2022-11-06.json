@@ -1,0 +1,259 @@
+{
+  "id": "MI_kwDOB4jhdM4AgynE",
+  "number": 249,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/249",
+  "title": "249 2022-11-06",
+  "description": "Profileableタグを使ったパフォーマンス計測, Google Playの技術的品質の基準, Android Studio Electric Eel Beta 4, NIA アプリの Material3 について, など",
+  "closedAt": "2022-11-06T10:41:06Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOVaq7Bg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-7POVaxeFw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2615",
+        "title": "Profileableタグを使ってパフォーマンス計測",
+        "body": "https://android-developers.googleblog.com/2022/10/accurately-measure-android-app-performance-with-profileable-builds.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2616",
+        "title": "Google Play Games betaの対象国が拡大",
+        "body": "https://android-developers.googleblog.com/2022/10/google-play-games-beta-on-pc-continues-global-expansion.html\r\n\r\nGoogle Play Games betaの対象国が拡大されています。残念ながら日本はまだ入っていません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2617",
+        "title": "Google Playの購入の改善",
+        "body": "https://android-developers.googleblog.com/2022/11/optimization-flexibility-and-growth-with-play-commerce.html\r\n\r\n複数購入、保護者による購入承認、サブスクリプションの改善などについて紹介しています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2618",
+        "title": "Google Playの掲載情報サポート",
+        "body": "https://android-developers.googleblog.com/2022/11/supporting-and-rewarding-great-apps-and-games-on-google-play.html\r\n\r\n高品質なアプリやゲームのGoogle Playの掲載情報をサポートしてユーザーを獲得しやすくなるプログラムについて紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2619",
+        "title": "Google Playの技術的品質の基準",
+        "body": "https://android-developers.googleblog.com/2022/10/raising-bar-on-technical-quality-on-google-play.html\r\n\r\n2022年11月30日より、クラッシュ率とANR率がしきい値を超えている場合はGoogle Playで警告がユーザーに表示されるようになります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOTcT8jg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOTcT8jg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit での反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/ykbn5e/raising_the_bar_on_technical_quality_on_google/",
+              "publishedAt": "2022-11-06T09:24:04Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2620",
+        "title": "Google Playの安全への取り組み",
+        "body": "https://android-developers.googleblog.com/2022/11/keeping-google-play-safe.html\r\n\r\nPlay Integrity API、不正なレビューの対応、, Privacy Sandboxなどが紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2621",
+        "title": "Android Studio - Electric Eel | 2022.1.1 Beta 4",
+        "body": "https://androidstudio.googleblog.com/2022/10/android-studio-electric-eel-beta-4-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2622",
+        "title": "Now in Android 71",
+        "body": "https://medium.com/androiddevelopers/now-in-android-71-248cd926bf7c",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2623",
+        "title": "Now in AndroidアプリのMaterial3について",
+        "body": "https://medium.com/androiddevelopers/now-in-android-a-material-3-case-study-21e44bdfd2bc\r\n\r\nNow in AndroidアプリはMaterial 3で構築されており、どのようにしてMaterial 3を適用したかについて解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2624",
+        "title": "Jetpack Compose v1.3.0に気になったAPIのまとめ",
+        "body": "https://goodpatch-tech.hatenablog.com/entry/2022/10/31/164723",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOTcU2IA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOTcU2IA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Modifier.Node の件についてはこちらの記事も\r\nhttps://proandroiddev.com/whats-new-in-modifiers-notes-from-ads-22-e7ace5a85138",
+              "publishedAt": "2022-11-06T10:38:14Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2625",
+        "title": "マルチモジュールでのリソース整理",
+        "body": "https://tech.mirrativ.stream/entry/2022/11/02/145822",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
