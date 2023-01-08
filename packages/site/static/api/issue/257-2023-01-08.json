@@ -1,0 +1,247 @@
+{
+  "id": "MI_kwDOB4jhdM4Ahjd_",
+  "number": 257,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/257",
+  "title": "257 2023-01-08",
+  "description": "Kotlin 1.8.0, Android Studio Electric Eel RC3, JDKバージョンによるビルド速度の比較, Jetpack Composeに移行する上でのベストプラクティスと戦略, など",
+  "closedAt": "2023-01-08T10:56:56Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOWlOERw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfOWt1dLg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2681",
+        "title": "Kotlin 1.8.0",
+        "body": "https://kotlinlang.org/docs/whatsnew18.html\r\nhttps://github.com/JetBrains/kotlin/releases/tag/v1.8.0",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOUZAYgg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOUZAYgg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "KMPでは、Android の SourceSet ディレクトリの新しいレイアウトがサポートされています。これは Android 向けユニットテストのディレクトリが `androidTest` だったり、Android 標準とコンフリクトしてた点の解消が目的です",
+              "publishedAt": "2023-01-01T09:31:33Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2682",
+        "title": "Android Studio - Electric Eel | 2022.1.1 RC3",
+        "body": "https://androidstudio.googleblog.com/2022/12/android-studio-electric-eel-rc3-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2683",
+        "title": "NavigationコンポーネントのMultiple Back Stackを自前実装する",
+        "body": "https://proandroiddev.com/jetpack-navigation-component-manual-implementation-of-multiple-back-stacks-62b33e95795c",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2684",
+        "title": "Jetpack Composeに移行する上でのベストプラクティスと戦略",
+        "body": "https://proandroiddev.com/migration-to-jetpack-compose-for-a-legacy-application-3bf256df2ebe",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2685",
+        "title": "Now in AndroidでDomainレイヤーを追加",
+        "body": "https://medium.com/androiddevelopers/adding-a-domain-layer-bc5a708a96da\r\n\r\nNow in AndroidのサンプルアプリにおいてDomainレイヤーを追加した手順について紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2686",
+        "title": "ioschedのリポジトリがアーカイブ",
+        "body": "https://twitter.com/ppvi/status/1611113768859074560\r\nhttps://github.com/google/iosched\r\n\r\nこれまでサンプルとして公開されていたioschedのリポジトリがアーカイブされています。今後のサンプルとしてはNow in Androidになります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2687",
+        "title": "JDKバージョンの違いによるビルド速度の比較",
+        "body": "https://dev.to/cdsap/measuring-jdk-updates-for-local-builds-in-android-projects-3m4g\r\n\r\nJDK 11、17、19でビルド速度の比較をしています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2688",
+        "title": "Android Studio - Flamingo | 2022.2.1 Canary 11",
+        "body": "https://androidstudio.googleblog.com/2023/01/android-studio-flamingo-canary-11-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2689",
+        "title": "Jetpack Compose でのナビゲーションにどのライブラリを使っている？",
+        "body": "https://www.reddit.com/r/androiddev/comments/101bbvu/which_navigation_library_for_compose_do_you/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2690",
+        "title": "Compose開発で知っているとちょっとだけ幸せになれるかもしれないTips",
+        "body": "https://qiita.com/ymshun/items/724c2e41bbf6723fb50b",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
