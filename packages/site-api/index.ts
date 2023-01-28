@@ -6,12 +6,9 @@ import IssueGenerator from './src/generator/IssueGenerator'
 import { GitHubClient, GitHubConfig } from 'site-api-github'
 import { chunk } from './src/utils'
 import { siteConfig } from 'site-config'
-import { promisify } from 'util'
 import rimraf from 'rimraf'
 import { copy } from 'fs-extra'
 import { existsSync } from 'fs'
-
-const rimrafp = promisify(rimraf)
 
 async function generateApi(): Promise<void> {
   const config = new Config(
@@ -52,7 +49,7 @@ async function generateApi(): Promise<void> {
     })
   )
 
-  await rimrafp(config.outputDirs.root)
+  await rimraf(config.outputDirs.root)
   await mkdirp(config.outputDirs.root)
 
   await copy(config.tempOutputDirs.root, config.outputDirs.root, {
