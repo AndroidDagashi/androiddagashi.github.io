@@ -8,7 +8,7 @@ import { chunk } from './src/utils'
 import { siteConfig } from 'site-config'
 import rimraf from 'rimraf'
 import { copy } from 'fs-extra'
-import { existsSync } from 'fs'
+import { existsSync, readdirSync } from 'fs'
 
 async function generateApi(): Promise<void> {
   const config = new Config(
@@ -49,7 +49,13 @@ async function generateApi(): Promise<void> {
     })
   )
 
-  await rimraf(config.outputDirs.root)
+  // remove files in outputDirs.root, but preserves files in issue directory
+  const entries = readdirSync(config.outputDirs.root, { withFileTypes: true })
+  const filesToDelete = entries
+    .filter((v) => v.isFile() && v.name.endsWith('.json'))
+    .map((v) => path.resolve(config.outputDirs.root, v.name))
+
+  await rimraf(filesToDelete)
   await mkdirp(config.outputDirs.root)
 
   await copy(config.tempOutputDirs.root, config.outputDirs.root, {
