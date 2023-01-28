@@ -52,7 +52,7 @@ async function generateApi(): Promise<void> {
     })
   )
 
-  await rimrafp(path.join(config.outputDirs.root, '*.json'))
+  await rimrafp(config.outputDirs.root)
   await mkdirp(config.outputDirs.root)
 
   await copy(config.tempOutputDirs.root, config.outputDirs.root, {
