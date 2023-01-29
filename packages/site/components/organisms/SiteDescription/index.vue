@@ -11,13 +11,13 @@
     <p class="mt-4 text-lg">
       <template v-for="(author, index) in authors">
         <TwitterLink :key="index" :screen-name="author.name" />
-        {{ getAuthorConnector(index) }}</template
+        {{ getAuthorConnector(index) }} </template
       >が、一週間の間に気になったAndroid関連のニュースをざっくりまとめています。
     </p>
     <p>おおよそ毎週日曜夜の更新です。</p>
     <div class="mt-6">
       <a class="FollowOnTwitter" :href="dagashiTwitterUrl" target="_blank">
-          <iconify-icon icon="akar-icons:twitter-fill" width="24" />
+        <iconify-icon icon="akar-icons:twitter-fill" width="24" />
         <span class="font-bold">Follow @{{ contact.name }}</span>
       </a>
     </div>
