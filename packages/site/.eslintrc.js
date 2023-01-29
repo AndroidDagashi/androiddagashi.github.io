@@ -3,15 +3,16 @@ module.exports = {
   env: {
     browser: true,
     node: true,
+    'jest/globals': true,
   },
+  plugins: ['import'],
   extends: [
-    '../../.eslintrc.js',
     '@nuxtjs/eslint-config-typescript',
+    'plugin:import/typescript',
     'prettier',
+    'plugin:prettier/recommended',
     'plugin:nuxt/recommended',
   ],
-  plugins: [],
-  // add your custom rules here
   rules: {
     'vue/no-v-html': 'off',
     'no-unused-vars': 'off',

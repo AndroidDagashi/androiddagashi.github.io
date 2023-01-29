@@ -92,7 +92,6 @@ const config: NuxtConfig = {
    */
   build: {
     // analyze: true,
-    // eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
     extend(configs, ctx): void {
       if (ctx.isClient) {
         configs.node = configs.node || {}
@@ -104,16 +103,15 @@ const config: NuxtConfig = {
       // https://github.com/nuxt-community/i18n-module/issues/1443
       // PR(https://github.com/nuxt/nuxt.js/pull/10340) has already been merged, so should be fixed in next release(2.16.0).
       configs.resolve?.extensions?.push('.cjs')
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      const orig = configs.module!.rules![2]!.exclude! as ((path: string) => boolean)
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      configs.module!.rules[2].test = /\.(m|c)?jsx?$/i;
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+      const orig = configs.module!.rules![2]!.exclude! as (
+        path: string
+      ) => boolean
+      configs.module!.rules[2].test = /\.(m|c)?jsx?$/i
       configs.module!.rules[2].exclude = function (file) {
-        const res = orig(file);
-        if (res) return !/ufo/.test(file);
-        return res;
-      };
+        const res = orig(file)
+        if (res) return !/ufo/.test(file)
+        return res
+      }
     },
     transpile: ['iconify-icon'],
   },
@@ -131,8 +129,6 @@ const config: NuxtConfig = {
     { src: '~/plugins/ga.js', ssr: false },
     { src: '~/plugins/init.client.ts', mode: 'client' },
   ],
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  // @ts-ignore
   tailwindcss: {
     viewer: false,
     configPath: '~/tailwind.config.cjs',

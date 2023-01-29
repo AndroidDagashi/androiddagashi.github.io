@@ -29,7 +29,6 @@ export default (
     if (aIndex < 0) {
       tokens[idx].attrPush(['target', '_blank'])
     } else {
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
       tokens[idx].attrs![aIndex][1] = '_blank'
     }
 

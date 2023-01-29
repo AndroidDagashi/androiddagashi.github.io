@@ -4,8 +4,8 @@
     <IssueDigestList class="mt-3" :milestones="milestones">
       <template v-if="pageInfo.hasNextPage" #bottom>
         <button class="LoadNextButton" @click="onLoadNext">
-            <iconify-icon icon="ic:baseline-expand-more" width="24" />
-          <span class="sr-only">次の記事を読み込む</span>
+          <iconify-icon icon="ic:baseline-expand-more" width="24" />
+          <span class="sr-only"> 次の記事を読み込む </span>
         </button>
       </template>
     </IssueDigestList>

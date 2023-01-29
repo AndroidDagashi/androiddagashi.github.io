@@ -3,6 +3,8 @@ module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
   env: {
+    node: true,
+    browser: true,
     'jest/globals': true,
   },
   plugins: ['@typescript-eslint', 'jest'],
@@ -10,6 +12,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
     'prettier',
+    'plugin:prettier/recommended',
   ],
   rules: {
     'import/no-named-as-default-member': 'off',

@@ -1,20 +1,13 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "lockFileMaintenance": {
     "enabled": true
   },
   "masterIssue": true,
   "packageRules": [
     {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor", "patch"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
       "excludePackageNames": [
@@ -24,15 +17,11 @@
       ]
     },
     {
-      "matchSourceUrlPrefixes": [
-        "https://github.com/nuxt/eslint-config"
-      ],
+      "matchSourceUrlPrefixes": ["https://github.com/nuxt/eslint-config"],
       "groupName": "@nuxtjs/eslint-config"
     },
     {
-      "packageNames": [
-        "sass"
-      ],
+      "packageNames": ["sass"],
       "enabled": false
     },
     {
@@ -48,12 +37,8 @@
       "groupName": "Vue.js"
     },
     {
-      "packageNames": [
-        "@nuxt/kit"
-      ]
+      "packageNames": ["@nuxt/kit"]
     }
   ],
-  "postUpdateOptions": [
-    "yarnDedupeHighest"
-  ]
+  "postUpdateOptions": ["yarnDedupeHighest"]
 }

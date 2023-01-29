@@ -12,7 +12,7 @@
       <ul class="flex justify-center space-x-6 md:order-2">
         <li v-for="(link, index) in links" :key="index">
           <a :href="link.url" target="_blank" class="inline-block h-6 w-6">
-            <iconify-icon :icon="link.icon" width="24"/>
+            <iconify-icon :icon="link.icon" width="24" />
             <span class="sr-only">{{ link.name }}</span>
           </a>
         </li>

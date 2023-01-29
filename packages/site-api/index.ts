@@ -6,7 +6,7 @@ import IssueGenerator from './src/generator/IssueGenerator'
 import { GitHubClient, GitHubConfig } from 'site-api-github'
 import { chunk } from './src/utils'
 import { siteConfig } from 'site-config'
-import rimraf from 'rimraf'
+import { rimraf } from 'rimraf'
 import { copy } from 'fs-extra'
 import { existsSync, readdirSync } from 'fs'
 
