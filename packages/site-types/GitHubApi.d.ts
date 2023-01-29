@@ -1,6 +1,6 @@
 export interface GHPageInfo {
-  startCursor: string | null
-  endCursor: string | null
+  startCursor?: string | null
+  endCursor?: string | null
   hasPreviousPage: boolean
   hasNextPage: boolean
 }
@@ -54,8 +54,8 @@ export interface GHMilestone {
   number: number
   url: string
   title: string
-  closedAt: string
-  description: string | null
+  closedAt?: string | null
+  description?: string | null
   issues: GHIssues
 }
 

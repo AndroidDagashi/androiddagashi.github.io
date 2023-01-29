@@ -1,0 +1,5 @@
+projects:
+  site-api-github:
+    schema: packages/site-api-github/graphql.schema.json
+    documents:
+      - packages/site-api-github/graphql/**/*.graphql

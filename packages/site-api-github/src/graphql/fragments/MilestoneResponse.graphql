@@ -1,0 +1,33 @@
+fragment MilestoneResponse on Milestone {
+  id
+  number
+  url
+  title
+  description
+  closedAt
+  issues(first: 50) {
+    totalCount
+    pageInfo {
+      ...PageInfoResponse
+    }
+    nodes {
+      url
+      title
+      body
+      labels(first: 10) {
+        nodes {
+          ...LabelResponse
+        }
+      }
+      comments(first: 10) {
+        totalCount
+        pageInfo {
+          ...PageInfoResponse
+        }
+        nodes {
+          ...IssueCommentResponse
+        }
+      }
+    }
+  }
+}

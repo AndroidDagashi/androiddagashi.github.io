@@ -1,8 +1,0 @@
-query getRateLimit {
-  rateLimit {
-    limit
-    cost
-    remaining
-    resetAt
-  }
-}

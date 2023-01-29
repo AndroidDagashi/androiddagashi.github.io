@@ -1,0 +1,36 @@
+query getMilestoneDigests(
+  $repoOwner: String!
+  $repoName: String!
+  $after: String = null
+) {
+  repository(owner: $repoOwner, name: $repoName) {
+    name
+    url
+    milestones(
+      first: 50
+      states: [CLOSED]
+      orderBy: { field: DUE_DATE, direction: DESC }
+      after: $after
+    ) {
+      totalCount
+      nodes {
+        ...MilestoneDigestResponse
+      }
+      pageInfo {
+        ...PageInfoResponse
+      }
+    }
+  }
+}
+
+query getMilestoneByNumber(
+  $repoOwner: String!
+  $repoName: String!
+  $milestoneNumber: Int!
+) {
+  repository(owner: $repoOwner, name: $repoName) {
+    milestone(number: $milestoneNumber) {
+      ...MilestoneResponse
+    }
+  }
+}
