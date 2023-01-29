@@ -1,0 +1,19 @@
+fragment IssueResponse on Issue {
+  url
+  title
+  body
+  labels {
+    nodes {
+      ...LabelResponse
+    }
+  }
+  comments {
+    totalCount
+    pageInfo {
+      ...PageInfoResponse
+    }
+    nodes {
+      ...IssueCommentResponse
+    }
+  }
+}

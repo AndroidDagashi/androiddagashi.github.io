@@ -1,0 +1,9 @@
+fragment IssueCommentResponse on IssueComment {
+  body
+  publishedAt
+  isMinimized
+  minimizedReason
+  author {
+    ...AuthorResponse
+  }
+}

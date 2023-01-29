@@ -45,7 +45,7 @@ export default class TopDigestsGenerator {
 
       const pageInfo = repo.milestones.pageInfo
       hasNext = pageInfo.hasNextPage
-      nextCursor = pageInfo.endCursor
+      nextCursor = pageInfo.endCursor ?? null
       if (hasNext && nextCursor) {
         fileName = nextCursor
       }

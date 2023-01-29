@@ -17,6 +17,8 @@ export default class IssueGenerator {
       milestoneNumber
     )
 
+    if (!milestone) return
+
     await writeFile(
       `${this.outputDirs.issues}/${normalizeIssuePath(milestone)}.json`,
       JSON.stringify(milestone, null, '  ')

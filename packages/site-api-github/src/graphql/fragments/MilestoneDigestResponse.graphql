@@ -1,0 +1,14 @@
+fragment MilestoneDigestResponse on Milestone {
+  id
+  number
+  url
+  title
+  description
+  closedAt
+  issues(first: 20) {
+    totalCount
+    nodes {
+      title
+    }
+  }
+}
