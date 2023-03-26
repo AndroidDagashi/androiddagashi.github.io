@@ -1,0 +1,169 @@
+{
+  "id": "MI_kwDOB4jhdM4AjAh8",
+  "number": 268,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/268",
+  "title": "268 2023-03-26",
+  "closedAt": "2023-03-26T12:22:36Z",
+  "description": "Media3のStableリリース, Jetpack Compose v1.4.0のAPIのまとめ, R8/D8でのSoft Verificationエラー, イベントの引数増加問題への対応, など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOYcXMkQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOYc34dg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2764",
+        "title": "R8/D8においてSoft Verificationエラーの対応",
+        "body": "https://medium.com/androiddevelopers/mitigating-soft-verification-issues-in-r8-and-d8-7e9e06827dfd\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2765",
+        "title": "Jetpack Compose v1.4.0に気になったAPIのまとめ",
+        "body": "https://goodpatch-tech.hatenablog.com/entry/compose-1-4-0",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2766",
+        "title": "Media3のStableリリース",
+        "body": "https://android-developers.googleblog.com/2023/03/media3-is-ready-to-play.html\r\n\r\nMedia3 1.0.0のStableバージョンがリリースされています。また、Standalone版のExoPlayerはDeprecatedとなるためMedia3がへのマイグレーションが必要となってきます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2767",
+        "title": "機能の事前読み込みによるアプリ起動時間への影響とそれをどのように管理するか",
+        "body": "https://medium.com/androiddevelopers/dont-prewarm-app-features-118e0a2d4bb1",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2768",
+        "title": "Composeでイベントの引数が増える問題をCommand Patternを使って対応する",
+        "body": "https://proandroiddev.com/streamlining-user-actions-with-the-command-pattern-a-practical-guide-72e2064b4ce7",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2769",
+        "title": "24時間時計のデザインについて",
+        "body": "https://material.io/blog/24-hour-clock-design-research\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2770",
+        "title": "2023年3月22日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#march_22_2023\r\n\r\nCompose 1.4.0, Activity 1.7.0 を始め、多くの安定版リリースがあります",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOWHVFcA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOWHVFcA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake 氏によるまとめツイートはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Compose 1.4.0, Activity 1.7.0, and DrawerLayout 1.2.0 headline today&#39;s <a href=\"https://twitter.com/hashtag/JetpackReleaseNotes?src=hash&amp;ref_src=twsrc%5Etfw\">#JetpackReleaseNotes</a>, but there were also bug fix releases in Fragment 1.5.6, Lifecycle 2.6.1, Room 2.5.1, WorkManager 2.8.1, and Camera 1.2.2. And that&#39;s just stable releases!<a href=\"https://t.co/DkVMpu7Hrc\">https://t.co/DkVMpu7Hrc</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1638630475811139588?ref_src=twsrc%5Etfw\">March 22, 2023</a></blockquote>",
+              "publishedAt": "2023-03-26T12:21:51Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -2,8 +2,43 @@
   "name": "AndroidDagashi",
   "url": "https://github.com/AndroidDagashi/AndroidDagashi",
   "milestones": {
-    "totalCount": 267,
+    "totalCount": 268,
     "nodes": [
+      {
+        "id": "MI_kwDOB4jhdM4AjAh8",
+        "number": 268,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/268",
+        "path": "268-2023-03-26",
+        "title": "268 2023-03-26",
+        "description": "Media3のStableリリース, Jetpack Compose v1.4.0のAPIのまとめ, R8/D8でのSoft Verificationエラー, イベントの引数増加問題への対応, など",
+        "closedAt": "2023-03-26T12:22:36Z",
+        "issues": {
+          "totalCount": 7,
+          "nodes": [
+            {
+              "title": "R8/D8においてSoft Verificationエラーの対応"
+            },
+            {
+              "title": "Jetpack Compose v1.4.0に気になったAPIのまとめ"
+            },
+            {
+              "title": "Media3のStableリリース"
+            },
+            {
+              "title": "機能の事前読み込みによるアプリ起動時間への影響とそれをどのように管理するか"
+            },
+            {
+              "title": "Composeでイベントの引数が増える問題をCommand Patternを使って対応する"
+            },
+            {
+              "title": "24時間時計のデザインについて"
+            },
+            {
+              "title": "2023年3月22日のAndroidXリリース"
+            }
+          ]
+        }
+      },
       {
         "id": "MI_kwDOB4jhdM4Ai5ik",
         "number": 267,
@@ -1826,49 +1861,11 @@
             }
           ]
         }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4AdyNV",
-        "number": 218,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/218",
-        "path": "218-2022-04-03",
-        "title": "218 2022-04-03",
-        "description": "通知を利用してWidgetのインストールを10倍にする方法、Now in Android #58、SYSTEM_ALERT_WINDOWの歴史、など",
-        "closedAt": "2022-04-03T10:24:03Z",
-        "issues": {
-          "totalCount": 8,
-          "nodes": [
-            {
-              "title": "通知を利用してWidgetのインストールを10倍にする方法"
-            },
-            {
-              "title": "Focus Gradleプラグインの紹介"
-            },
-            {
-              "title": "Jetpack Composeを使ったリアルタイムで動作するアプリ"
-            },
-            {
-              "title": "Now in Android #58"
-            },
-            {
-              "title": "Gradle 7.4.2 is out!"
-            },
-            {
-              "title": "AppCode の KMM プラグインが他プラットフォームの開発をサポート"
-            },
-            {
-              "title": "SYSTEM_ALERT_WINDOW の歴史"
-            },
-            {
-              "title": "iOS 関連のニュースを日本語でまとめる iOS Osushi が始動"
-            }
-          ]
-        }
       }
     ],
     "pageInfo": {
-      "startCursor": "Y3Vyc29yOnYyOpK0MjAyMy0wMy0xOVQwMDowMDowMFrOAIuYpA==",
-      "endCursor": "Y3Vyc29yOnYyOpK0MjAyMi0wNC0wM1QwMDowMDowMFrOAHcjVQ==",
+      "startCursor": "Y3Vyc29yOnYyOpK0MjAyMy0wMy0yNlQwMDowMDowMFrOAIwIfA==",
+      "endCursor": "Y3Vyc29yOnYyOpK0MjAyMi0wNC0xMFQwMDowMDowMFrOAHeEcg==",
       "hasPreviousPage": false,
       "hasNextPage": true
     }
