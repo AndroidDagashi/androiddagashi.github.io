@@ -6,10 +6,10 @@
   "closedAt": "2023-03-26T12:22:36Z",
   "description": "Media3のStableリリース, Jetpack Compose v1.4.0のAPIのまとめ, R8/D8でのSoft Verificationエラー, イベントの引数増加問題への対応, など",
   "issues": {
-    "totalCount": 7,
+    "totalCount": 8,
     "pageInfo": {
       "startCursor": "Y3Vyc29yOnYyOpLPf________5vOYcXMkQ==",
-      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOYc34dg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OYc38dA==",
       "hasPreviousPage": false,
       "hasNextPage": false
     },
@@ -162,6 +162,40 @@
               }
             }
           ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2771",
+        "title": "Jetpack ComposeやFlutterのようなUIの作り方はXMLより優れているのだろうか、という議論",
+        "body": "https://www.reddit.com/r/androiddev/comments/121g90o/is_jetpack_composeflutter_way_of_building_ui/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
         }
       }
     ]
