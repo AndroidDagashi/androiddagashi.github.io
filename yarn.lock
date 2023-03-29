@@ -3568,10 +3568,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0":
-  version: 18.11.18
-  resolution: "@types/node@npm:18.11.18"
-  checksum: 03f17f9480f8d775c8a72da5ea7e9383db5f6d85aa5fefde90dd953a1449bd5e4ffde376f139da4f3744b4c83942166d2a7603969a6f8ea826edfb16e6e3b49d
+"@types/node@npm:*, @types/node@npm:18.15.11, @types/node@npm:>=12.12.47, @types/node@npm:>=13.7.0":
+  version: 18.15.11
+  resolution: "@types/node@npm:18.15.11"
+  checksum: 977b4ad04708897ff0eb049ecf82246d210939c82461922d20f7d2dcfd81bbc661582ba3af28869210f7e8b1934529dcd46bff7d448551400f9d48b9d3bddec3
   languageName: node
   linkType: hard
 
@@ -3579,13 +3579,6 @@ __metadata:
   version: 12.20.12
   resolution: "@types/node@npm:12.20.12"
   checksum: 9e4ef12f52bbf6c1df7534e750c28edd7b49ac0793e2a8cf0ddfe02fcdc68740ebc349a727b8c584e60006ec63e6c9fa5123210ab52898e69b91835f1ac38afd
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:16.18.11":
-  version: 16.18.11
-  resolution: "@types/node@npm:16.18.11"
-  checksum: 2a3b1da13063debe6e26f732defb5f03ef4ef732c3e08daba838d8850433bd00e537ce1a97ce9bcfc4b15db5218d701d1265fae94e0d6926906bec157e6b46e0
   languageName: node
   linkType: hard
 
@@ -15153,7 +15146,7 @@ __metadata:
     "@graphql-codegen/typescript": 2.8.7
     "@graphql-codegen/typescript-graphql-request": 4.5.8
     "@graphql-codegen/typescript-operations": 2.5.12
-    "@types/node": 16.18.11
+    "@types/node": 18.15.11
     cross-fetch: 3.1.5
     graphql: 15.8.0
     graphql-request: ^5.1.0
@@ -15169,7 +15162,7 @@ __metadata:
   resolution: "site-api@workspace:packages/site-api"
   dependencies:
     "@types/fs-extra": 11.0.1
-    "@types/node": 16.18.11
+    "@types/node": 18.15.11
     "@types/rimraf": 3.0.2
     fs-extra: 11.1.0
     rimraf: 4.1.2
@@ -15186,7 +15179,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site-common@workspace:packages/site-common"
   dependencies:
-    "@types/node": 16.18.11
+    "@types/node": 18.15.11
     typescript: 4.9.4
   languageName: unknown
   linkType: soft
@@ -15196,7 +15189,7 @@ __metadata:
   resolution: "site-config@workspace:packages/site-config"
   dependencies:
     "@nuxt/types": 2.15.8
-    "@types/node": 16.18.11
+    "@types/node": 18.15.11
     site-types: 1.0.0
     typescript: 4.9.4
   languageName: unknown
@@ -15207,7 +15200,7 @@ __metadata:
   resolution: "site-rss@workspace:packages/site-rss"
   dependencies:
     "@types/markdown-it": 12.2.3
-    "@types/node": 16.18.11
+    "@types/node": 18.15.11
     feed: 4.2.2
     markdown-it: 13.0.1
     site-common: 1.0.0
@@ -15252,7 +15245,7 @@ __metadata:
     "@tailwindcss/line-clamp": 0.4.2
     "@types/lodash": 4.14.191
     "@types/markdown-it": 12.2.3
-    "@types/node": 16.18.11
+    "@types/node": 18.15.11
     "@types/twitter-text": 3.1.5
     "@typescript-eslint/eslint-plugin": 5.49.0
     "@typescript-eslint/parser": 5.49.0
