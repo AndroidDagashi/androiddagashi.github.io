@@ -33,11 +33,12 @@
         "vue-server-renderer",
         "vue-template-compiler",
         "@nuxt/kit",
-        "@nuxt"
+        "@nuxt/types",
+        "nuxt"
       ],
       "allowedVersions": "<=2",
       "enabled": true,
-      "groupName": "Vue.js"
+      "groupName": "Vue.js/Nuxt.js"
     },
     {
       "matchPackageNames": ["graphql-request"],
