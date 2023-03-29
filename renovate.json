@@ -38,6 +38,11 @@
       "allowedVersions": "<=2",
       "enabled": true,
       "groupName": "Vue.js"
+    },
+    {
+      "matchPackageNames": ["graphql-request"],
+      "allowedVersions": "<=5.1",
+      "enabled": true
     }
   ],
   "postUpdateOptions": ["yarnDedupeHighest"]
