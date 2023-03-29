@@ -13,7 +13,10 @@
       "excludePackageNames": [
         "vue",
         "vue-server-renderer",
-        "vue-template-compiler"
+        "vue-template-compiler",
+        "@nuxt/kit",
+        "@nuxt/types",
+        "nuxt"
       ]
     },
     {
@@ -35,9 +38,6 @@
       "allowedVersions": "<=2",
       "enabled": true,
       "groupName": "Vue.js"
-    },
-    {
-      "packageNames": ["@nuxt/kit"]
     }
   ],
   "postUpdateOptions": ["yarnDedupeHighest"]
