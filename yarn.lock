@@ -3951,12 +3951,15 @@ __metadata:
   linkType: hard
 
 "@volar-plugins/prettier@npm:^1.1.5":
-  version: 1.1.5
-  resolution: "@volar-plugins/prettier@npm:1.1.5"
-  dependencies:
-    prettier: ^2.7.1
-    vscode-uri: ^3.0.6
-  checksum: 3cfcb38724debde5fc6fa7cbfecbd33d200d82a9880b578b559691cf6733957ac0f938348e67d28d18603cc383f90124516d5de212b1cc91c719b2096b6ea574
+  version: 1.2.0
+  resolution: "@volar-plugins/prettier@npm:1.2.0"
+  peerDependencies:
+    "@volar/language-service": "*"
+    prettier: "*"
+  peerDependenciesMeta:
+    "@volar/language-service":
+      optional: true
+  checksum: e88c10d0394bfc29a2c58bb8dd959a574be81b28f4cdfae0e593358bdfac13528e82a0822a2ec04bb4e95d8c87bbe8775227d3d38f7a30c91d386f974993da83
   languageName: node
   linkType: hard
 
@@ -13913,7 +13916,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.8.3, prettier@npm:^1.18.2 || ^2.0.0, prettier@npm:^2.7.1":
+"prettier@npm:2.8.3, prettier@npm:^1.18.2 || ^2.0.0":
   version: 2.8.3
   resolution: "prettier@npm:2.8.3"
   bin:
@@ -16533,11 +16536,11 @@ __metadata:
 
 "typescript@patch:typescript@4.9.4#~builtin<compat/typescript>":
   version: 4.9.4
-  resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"
+  resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=23ec76"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 1caaea6cb7f813e64345190fddc4e6c924d0b698ab81189b503763c4a18f7f5501c69362979d36e19c042d89d936443e768a78b0675690b35eb663d19e0eae71
+  checksum: 3e2ab0772908676d9b9cb83398c70003a3b08e1c6b3b122409df9f4b520f2fdaefa20c3d7d57dce283fed760ac94b3ce94d4a7fa875127b67852904425a1f0dc
   languageName: node
   linkType: hard
 
@@ -17072,13 +17075,6 @@ __metadata:
   version: 1.1.2
   resolution: "vm-browserify@npm:1.1.2"
   checksum: 10a1c50aab54ff8b4c9042c15fc64aefccce8d2fb90c0640403242db0ee7fb269f9b102bdb69cfb435d7ef3180d61fd4fb004a043a12709abaf9056cfd7e039d
-  languageName: node
-  linkType: hard
-
-"vscode-uri@npm:^3.0.6":
-  version: 3.0.7
-  resolution: "vscode-uri@npm:3.0.7"
-  checksum: c899a0334f9f6ba53021328e083f6307978c09b94407d7e5fe86fcd8fcb8f1da0cb344123a335e55769055007a46d51aff83f9ee1dfc0296ee54b78f34ef0e4f
   languageName: node
   linkType: hard
 
