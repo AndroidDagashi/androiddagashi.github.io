@@ -6,18 +6,18 @@
     "generate": "ts-node ./index.ts"
   },
   "dependencies": {
-    "fs-extra": "11.1.0",
-    "rimraf": "4.1.2",
+    "fs-extra": "11.1.1",
+    "rimraf": "4.4.1",
     "site-api-github": "1.0.0",
     "site-common": "1.0.0",
     "site-config": "1.0.0"
   },
   "devDependencies": {
     "@types/fs-extra": "11.0.1",
-    "@types/node": "16.18.11",
+    "@types/node": "16.18.23",
     "@types/rimraf": "3.0.2",
     "site-types": "1.0.0",
     "ts-node": "10.9.1",
-    "typescript": "4.9.4"
+    "typescript": "4.9.5"
   }
 }
