@@ -7,6 +7,7 @@ const config: CodegenConfig = {
       'https://api.github.com/graphql': {
         headers: {
           Authorization: `bearer ${process.env.GH_READONLY_TOKEN}`,
+          'User-Agent': 'AndroidDagashi App',
         },
       },
     },
@@ -15,6 +16,9 @@ const config: CodegenConfig = {
   generates: {
     './graphql.schema.json': {
       plugins: ['introspection'],
+      hooks: {
+        afterOneFileWrite: ['yarn dlx prettier --write'],
+      },
     },
   },
 }
