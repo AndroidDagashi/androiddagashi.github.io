@@ -1,4 +1,3 @@
-import fetch from 'cross-fetch'
 import GitHubConfig from './GitHubConfig'
 import { GHMilestone, GHDigest } from 'site-types/GitHubApi'
 import { GraphQLClient } from 'graphql-request'
