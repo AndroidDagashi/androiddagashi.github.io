@@ -28,17 +28,16 @@
       "enabled": false
     },
     {
-      "packageNames": [
-        "vue",
-        "vue-server-renderer",
-        "vue-template-compiler",
-        "@nuxt/kit",
-        "@nuxt/types",
-        "nuxt"
-      ],
+      "packageNames": ["vue", "vue-server-renderer", "vue-template-compiler"],
       "allowedVersions": "<=2",
       "enabled": true,
-      "groupName": "Vue.js/Nuxt.js"
+      "groupName": "Nuxt.js"
+    },
+    {
+      "packageNames": ["@nuxt/kit", "@nuxt/types", "nuxt"],
+      "allowedVersions": "<=2",
+      "enabled": true,
+      "groupName": "Nuxt.js"
     },
     {
       "matchPackageNames": ["graphql-request"],
