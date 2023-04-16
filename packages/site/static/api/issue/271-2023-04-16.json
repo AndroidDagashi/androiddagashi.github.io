@@ -1,0 +1,192 @@
+{
+  "id": "MI_kwDOB4jhdM4AjU1d",
+  "number": 271,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/271",
+  "title": "271 2023-04-16",
+  "closedAt": "2023-04-16T10:16:51Z",
+  "description": "Android 14 Beta 1、otlinConf 2023が開催 、Android Studio Flamingo Stable、Kotlin DSLがデフォルトに、Gradle 8.1、など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOY3zVSw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOY4eHKw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2791",
+        "title": "KotlinConf 2023が開催",
+        "body": "https://blog.jetbrains.com/kotlin/2023/04/kotlinconf-2023-opening-keynote/\r\n\r\nKotlinConf 2023が開催されました。KeynoteではKotlin 2.0の新機能やCompose for iOS alphaなどについての発表がありました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2792",
+        "title": "Kotlin DSLがデフォルトに",
+        "body": "https://android-developers.googleblog.com/2023/04/kotlin-dsl-is-now-default-for-new-gradle-builds.html\r\n\r\nGradleのデフォルトがGroovyからKotlin DSLになり、Android Studio Giraffeから新規プロジェクトではKotlin DSLがデフォルトになります。またGroovyについては非推奨になる予定はなく引き続き利用できます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2793",
+        "title": "Android 14 Beta 1",
+        "body": "https://android-developers.googleblog.com/2023/04/android-14-beta-1.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2794",
+        "title": "Android Studio Flamingo Stable",
+        "body": "https://android-developers.googleblog.com/2023/04/android-studio-flamingo-is-stable.html\r\n\r\nAndroid Studio FlamingoがStableになりました。Live Edit、Themed app iconのプレビュー、Build Analyzer、などの新機能が入っています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOWgU2cg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOWgU2cg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/12l30le/android_studio_flamingo_is_stable/",
+              "publishedAt": "2023-04-16T10:53:56Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2795",
+        "title": "Jetpack AnnotationがKotlin Multiplatformで利用可能に",
+        "body": "https://android-developers.googleblog.com/2023/04/whats-new-in-jetpack-multiplatform.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2796",
+        "title": "Google Playのauto-archive",
+        "body": "https://android-developers.googleblog.com/2023/04/reduce-uninstalls-for-your-app-with-auto-archive.html\r\n\r\nアプリをアンインストールする代わりに使用頻度の低いアプリを部分的に削除して容量を増やすことが可能になります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2797",
+        "title": "Gradle 8.1",
+        "body": "https://docs.gradle.org/8.1/release-notes.html\r\n\r\nconfiguration cacheがstableになるなど、ビルド周りに改善が行われています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOWgU5PQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOWgU5PQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/12jtsq9/gradle_81_released/\r\n\r\n`@file:Suppress(\"DSL_SCOPE_VIOLATION\")` が不要になったようですね\r\n",
+              "publishedAt": "2023-04-16T10:56:55Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
