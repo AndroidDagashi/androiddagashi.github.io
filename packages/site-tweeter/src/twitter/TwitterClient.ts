@@ -22,11 +22,11 @@ export default class TwitterClient {
   tweet(message: string): Promise<TweetResponse> {
     return new Promise<TweetResponse>((resolve, reject) => {
       this.oauth.post(
-        `${TwitterConfig.URL_UPDATE}?status=${this.escapeMessage(message)}`,
+        TwitterConfig.URL_UPDATE,
         this.config.accessToken,
         this.config.accessTokenSecret,
-        null,
-        'text/plain',
+        JSON.stringify({ text: message }),
+        'application/json',
         (err, result) => {
           if (err) {
             reject(err)
@@ -48,6 +48,6 @@ export default class TwitterClient {
   }
 
   getTweetUrl(tweet: TweetResponse): string {
-    return `https://twitter.com/${tweet.user.screen_name}/${tweet.id_str}`
+    return `https://twitter.com/${this.config.screenName}/${tweet.data.id}`
   }
 }
