@@ -1,0 +1,186 @@
+{
+  "id": "MI_kwDOB4jhdM4AjbpN",
+  "number": 272,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/272",
+  "title": "272 2023-04-23",
+  "closedAt": "2023-04-23T13:46:28Z",
+  "description": "アプリ更新を促す機能, Google Play Games Betaが日本で利用可能に, Compose Textの高さを揃える, Modifier.pointerInputの改善, ComposeのtestTag()の活用, など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOY__e5w==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOZCG4UQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2799",
+        "title": "Android Studio - Giraffe | 2022.3.1 Beta 1",
+        "body": "https://androidstudio.googleblog.com/2023/04/android-studio-giraffe-beta-1-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOWm6q8g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOWm6q8g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/12taekx/android_studio_giraffe_beta_1_now_available/",
+              "publishedAt": "2023-04-21T03:18:33Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2798",
+        "title": "User interactionのログをComposeのtestTag()だけで取得する",
+        "body": "https://proandroiddev.com/how-we-built-user-interaction-tracking-for-jetpack-compose-e3b1dd24f0ae",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2801",
+        "title": "Modifier.pointerInputの改善と変更",
+        "body": "https://medium.com/androiddevelopers/improvements-and-changes-to-composes-pointer-input-6026904ac972\r\n\r\nModifier.pointerInputが1.5.0-alpha02よりModifier.Nodeを使った実装になり、その変更について簡単に説明しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2802",
+        "title": "Compose Textの高さを揃える方法",
+        "body": "https://medium.com/androiddevelopers/problem-solving-in-compose-text-d1dd1feafe4a\r\n\r\nTextを2つ並べて2行の高さで中央揃えにする方法をProsとConsを含めていくつか紹介しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2803",
+        "title": "Google Play Games Betaが日本で利用可能に",
+        "body": "https://japan.googleblog.com/2023/04/Google-Play-Games-beta.html\r\n\r\n米国などではすでに利用可能だったGoogle Play Gamesが日本でもBetaとして利用可能になっています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2804",
+        "title": "クラッシュしたときにアップデートを促すダイアログ",
+        "body": "https://android-developers.googleblog.com/2023/04/automatic-update-prompts-for-crashing-apps.html\r\n\r\nAndroid 7.0以降でアプリがクラッシュした時、利用可能なアプリのアップデートがある場合は、更新を促すダイアログが表示されるようになります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2805",
+        "title": "Now in Android 81",
+        "body": "https://medium.com/androiddevelopers/now-in-android-81-5e05923c1644",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
