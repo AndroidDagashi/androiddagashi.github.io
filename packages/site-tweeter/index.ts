@@ -6,6 +6,7 @@ import DagashiClient from './src/dagashi/DagashiClient'
 import { readFile } from 'site-common/file'
 import path from 'path'
 import DagashiConfig from './src/dagashi/DagashiConfig'
+import { format } from 'date-fns'
 
 function createDagashiClient(): DagashiClient {
   const apiDirectory = path.resolve(__dirname, '../site/static/api')
@@ -18,7 +19,8 @@ function createTwitterClient(): TwitterClient {
     process.env.TWITTER_API_KEY as string,
     process.env.TWITTER_API_KEY_SECRET as string,
     process.env.TWITTER_ACCESS_TOKEN as string,
-    process.env.TWITTER_ACCESS_TOKEN_SECRET as string
+    process.env.TWITTER_ACCESS_TOKEN_SECRET as string,
+    process.env.TWITTER_SCREEN_NAME as string
   )
 
   return new TwitterClient(config)
@@ -70,12 +72,13 @@ async function main(): Promise<void> {
     const twitterClient = createTwitterClient()
     const message = generateTweetMessage(latestClosedMilestone)
     const response = await twitterClient.tweet(message)
+    const createdAt = format(new Date(), 'EEE MMM dd kk:mm:ss xxxx yyyy')
 
     await firestoreClient.addMilestone({
       title: latestClosedMilestone.title,
       number: latestClosedMilestone.number,
       tweetUrl: twitterClient.getTweetUrl(response),
-      createdAt: response.created_at,
+      createdAt: createdAt,
     })
 
     console.log('tweeted and saved')
