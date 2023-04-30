@@ -7,6 +7,11 @@ import { readFile } from 'site-common/file'
 import path from 'path'
 import DagashiConfig from './src/dagashi/DagashiConfig'
 import { format } from 'date-fns'
+import {
+  MilestoneMeta,
+  createMilestoneMeta,
+  generateTweetMessage,
+} from './src/message'
 
 function createDagashiClient(): DagashiClient {
   const apiDirectory = path.resolve(__dirname, '../site/static/api')
@@ -36,14 +41,14 @@ async function createFirestoreClient(): Promise<FirestoreClient> {
   return new FirestoreClient(serviceAccount)
 }
 
-function generateTweetMessage(milestone: GHDigestMilestone): string {
-  return (
-    `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestone.number}回を公開しました！ #Androidjp \n\n` +
-    `${milestone.description}\n\n` +
-    `https://androiddagashi.github.io/issue/${milestone.title
-      .trim()
-      .replace(/\s/g, '-')}`
-  )
+async function makeTwitterPost(meta: MilestoneMeta): Promise<{ url: string }> {
+  const twitterClient = createTwitterClient()
+  const message = generateTweetMessage(meta)
+  const response = await twitterClient.tweet(message)
+
+  return {
+    url: twitterClient.getTweetUrl(response),
+  }
 }
 
 async function main(): Promise<void> {
@@ -69,15 +74,16 @@ async function main(): Promise<void> {
       return
     }
 
-    const twitterClient = createTwitterClient()
-    const message = generateTweetMessage(latestClosedMilestone)
-    const response = await twitterClient.tweet(message)
+    const meta = createMilestoneMeta(latestClosedMilestone)
+
+    const { url: tweetUrl } = await makeTwitterPost(meta)
+
     const createdAt = format(new Date(), 'EEE MMM dd kk:mm:ss xxxx yyyy')
 
     await firestoreClient.addMilestone({
-      title: latestClosedMilestone.title,
-      number: latestClosedMilestone.number,
-      tweetUrl: twitterClient.getTweetUrl(response),
+      title: meta.title,
+      number: meta.number,
+      tweetUrl,
       createdAt: createdAt,
     })
 
