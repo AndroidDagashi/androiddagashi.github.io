@@ -1,8 +1,8 @@
-name: Tweet new release
+name: Post new release on SNS accounts
 on: page_build
 
 jobs:
-  tweet_release:
+  update:
     name: Tweet new release
     runs-on: ubuntu-latest
     env:
@@ -31,5 +31,5 @@ jobs:
       - name: yarn install
         run: yarn install
 
-      - name: tweet if not already
-        run: yarn tweeter:tweet
+      - name: update SNS if not already
+        run: yarn sns:update

@@ -1,11 +1,11 @@
 {
-  "name": "site-tweeter",
+  "name": "sns-updater",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
-  "repository": "git@github.com:yshrsmz/androiddagashi.git",
+  "repository": "git@github.com:androiddagashi/androiddagashi.git",
   "scripts": {
-    "tweet": "ts-node ./index.ts"
+    "update": "ts-node ./index.ts"
   },
   "devDependencies": {
     "@types/oauth": "0.9.1",
