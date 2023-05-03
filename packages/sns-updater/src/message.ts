@@ -33,7 +33,7 @@ export function generateTweetMessage(meta: MilestoneMeta): string {
 
 export function generateBlueskyMessage(meta: MilestoneMeta): string {
   return (
-    `一週間の AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${meta.number}回を公開しました！ \n\n` +
+    `一週間の Android 開発関連ニュースをお届けする AndroidDagashi、第${meta.number}回を公開しました！ \n\n` +
     `${meta.description}\n\n` +
     meta.url
   )

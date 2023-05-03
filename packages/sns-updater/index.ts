@@ -10,8 +10,11 @@ import { format } from 'date-fns'
 import {
   MilestoneMeta,
   createMilestoneMeta,
+  generateBlueskyMessage,
   generateTweetMessage,
 } from './src/message'
+import { BlueskyClient } from './src/bluesky/BlueskyClient'
+import BlueskyConfig from './src/bluesky/BlueskyConfig'
 
 function createDagashiClient(): DagashiClient {
   const apiDirectory = path.resolve(__dirname, '../site/static/api')
@@ -31,6 +34,15 @@ function createTwitterClient(): TwitterClient {
   return new TwitterClient(config)
 }
 
+function createBlueskyClient(): BlueskyClient {
+  const config = new BlueskyConfig(
+    process.env.BLUESKY_IDENTIFIER as string,
+    process.env.BLUESKY_PASSWORD as string
+  )
+
+  return new BlueskyClient(config)
+}
+
 async function createFirestoreClient(): Promise<FirestoreClient> {
   const jsonPath = path.resolve(
     __dirname,
@@ -48,6 +60,18 @@ async function makeTwitterPost(meta: MilestoneMeta): Promise<{ url: string }> {
 
   return {
     url: twitterClient.getTweetUrl(response),
+  }
+}
+
+async function makeBlueskyPost(meta: MilestoneMeta): Promise<{ url: string }> {
+  const client = createBlueskyClient()
+  const message = generateBlueskyMessage(meta)
+
+  await client.login()
+  const response = await client.post(message, meta)
+
+  return {
+    url: response.uri,
   }
 }
 
@@ -76,14 +100,19 @@ async function main(): Promise<void> {
 
     const meta = createMilestoneMeta(latestClosedMilestone)
 
-    const { url: tweetUrl } = await makeTwitterPost(meta)
+    const [twitterRes, blueskyRes] = await Promise.all([
+      makeTwitterPost(meta),
+      makeBlueskyPost(meta),
+    ])
 
     const createdAt = format(new Date(), 'EEE MMM dd kk:mm:ss xxxx yyyy')
+
+    console.log('posts:', twitterRes, blueskyRes, createdAt)
 
     await firestoreClient.addMilestone({
       title: meta.title,
       number: meta.number,
-      tweetUrl,
+      tweetUrl: twitterRes.url,
       createdAt: createdAt,
     })
 
