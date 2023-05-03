@@ -7,6 +7,14 @@ import { readFile } from 'site-common/file'
 import path from 'path'
 import DagashiConfig from './src/dagashi/DagashiConfig'
 import { format } from 'date-fns'
+import {
+  MilestoneMeta,
+  createMilestoneMeta,
+  generateBlueskyMessage,
+  generateTweetMessage,
+} from './src/message'
+import { BlueskyClient } from './src/bluesky/BlueskyClient'
+import BlueskyConfig from './src/bluesky/BlueskyConfig'
 
 function createDagashiClient(): DagashiClient {
   const apiDirectory = path.resolve(__dirname, '../site/static/api')
@@ -26,6 +34,15 @@ function createTwitterClient(): TwitterClient {
   return new TwitterClient(config)
 }
 
+function createBlueskyClient(): BlueskyClient {
+  const config = new BlueskyConfig(
+    process.env.BLUESKY_IDENTIFIER as string,
+    process.env.BLUESKY_PASSWORD as string
+  )
+
+  return new BlueskyClient(config)
+}
+
 async function createFirestoreClient(): Promise<FirestoreClient> {
   const jsonPath = path.resolve(
     __dirname,
@@ -36,14 +53,26 @@ async function createFirestoreClient(): Promise<FirestoreClient> {
   return new FirestoreClient(serviceAccount)
 }
 
-function generateTweetMessage(milestone: GHDigestMilestone): string {
-  return (
-    `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestone.number}回を公開しました！ #Androidjp \n\n` +
-    `${milestone.description}\n\n` +
-    `https://androiddagashi.github.io/issue/${milestone.title
-      .trim()
-      .replace(/\s/g, '-')}`
-  )
+async function makeTwitterPost(meta: MilestoneMeta): Promise<{ url: string }> {
+  const twitterClient = createTwitterClient()
+  const message = generateTweetMessage(meta)
+  const response = await twitterClient.tweet(message)
+
+  return {
+    url: twitterClient.getTweetUrl(response),
+  }
+}
+
+async function makeBlueskyPost(meta: MilestoneMeta): Promise<{ url: string }> {
+  const client = createBlueskyClient()
+  const message = generateBlueskyMessage(meta)
+
+  await client.login()
+  const response = await client.post(message, meta)
+
+  return {
+    url: response.uri,
+  }
 }
 
 async function main(): Promise<void> {
@@ -69,15 +98,21 @@ async function main(): Promise<void> {
       return
     }
 
-    const twitterClient = createTwitterClient()
-    const message = generateTweetMessage(latestClosedMilestone)
-    const response = await twitterClient.tweet(message)
+    const meta = createMilestoneMeta(latestClosedMilestone)
+
+    const [twitterRes, blueskyRes] = await Promise.all([
+      makeTwitterPost(meta),
+      makeBlueskyPost(meta),
+    ])
+
     const createdAt = format(new Date(), 'EEE MMM dd kk:mm:ss xxxx yyyy')
 
+    console.log('posts:', twitterRes, blueskyRes, createdAt)
+
     await firestoreClient.addMilestone({
-      title: latestClosedMilestone.title,
-      number: latestClosedMilestone.number,
-      tweetUrl: twitterClient.getTweetUrl(response),
+      title: meta.title,
+      number: meta.number,
+      tweetUrl: twitterRes.url,
       createdAt: createdAt,
     })
 
