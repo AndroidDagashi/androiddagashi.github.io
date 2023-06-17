@@ -4306,16 +4306,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@volar-plugins/prettier@npm:^1.1.5":
-  version: 1.2.0
-  resolution: "@volar-plugins/prettier@npm:1.2.0"
+"@volar-plugins/prettier@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@volar-plugins/prettier@npm:2.0.0"
   peerDependencies:
     "@volar/language-service": "*"
     prettier: "*"
   peerDependenciesMeta:
     "@volar/language-service":
       optional: true
-  checksum: e88c10d0394bfc29a2c58bb8dd959a574be81b28f4cdfae0e593358bdfac13528e82a0822a2ec04bb4e95d8c87bbe8775227d3d38f7a30c91d386f974993da83
+  checksum: 6e4212b138eca6a35d94af8740184450fdba9fd85aad75be92dfffaf44b94c771b3230bea71585fc8c1b1babf88ac8cc634f30ce2090159fd456c00e68734419
   languageName: node
   linkType: hard
 
@@ -4894,7 +4894,7 @@ __metadata:
   dependencies:
     "@typescript-eslint/eslint-plugin": 5.59.2
     "@typescript-eslint/parser": 5.59.2
-    "@volar-plugins/prettier": ^1.1.5
+    "@volar-plugins/prettier": ^2.0.0
     eslint: 8.40.0
     eslint-config-prettier: 8.8.0
     eslint-plugin-import: 2.27.5
