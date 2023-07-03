@@ -16,13 +16,13 @@
     "lint": "eslint . --ext .js,.ts,.vue --ignore-path .gitignore"
   },
   "devDependencies": {
-    "@typescript-eslint/eslint-plugin": "5.59.11",
-    "@typescript-eslint/parser": "5.59.11",
+    "@typescript-eslint/eslint-plugin": "5.60.1",
+    "@typescript-eslint/parser": "5.60.1",
     "@volar-plugins/prettier": "^2.0.0",
-    "eslint": "8.43.0",
+    "eslint": "8.44.0",
     "eslint-config-prettier": "8.8.0",
     "eslint-plugin-import": "2.27.5",
-    "eslint-plugin-jest": "27.2.1",
+    "eslint-plugin-jest": "27.2.2",
     "eslint-plugin-prettier": "4.2.1",
     "prettier": "2.8.8"
   },
@@ -35,5 +35,5 @@
     "vue-server-renderer": "2.6.14",
     "vue-template-compiler": "2.6.14"
   },
-  "packageManager": "yarn@3.6.0"
+  "packageManager": "yarn@3.6.1"
 }
