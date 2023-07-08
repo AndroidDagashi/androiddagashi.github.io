@@ -1,7 +1,6 @@
 import TwitterClient from './src/twitter/TwitterClient'
 import FirestoreClient from './src/firestore/FirestoreClient'
 import TwitterConfig from './src/twitter/TwitterConfig'
-import { GHDigestMilestone } from 'site-types/GitHubApi'
 import DagashiClient from './src/dagashi/DagashiClient'
 import { readFile } from 'site-common/file'
 import path from 'path'
