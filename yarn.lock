@@ -4249,7 +4249,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:16.18.38, @types/node@npm:^16":
+"@types/node@npm:18.16.19":
+  version: 18.16.19
+  resolution: "@types/node@npm:18.16.19"
+  checksum: 63c31f09616508aa7135380a4c79470a897b75f9ff3a70eb069e534dfabdec3f32fb0f9df5939127f1086614d980ddea0fa5e8cc29a49103c4f74cd687618aaf
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^16":
   version: 16.18.38
   resolution: "@types/node@npm:16.18.38"
   checksum: a3baa141e49ce94486f083eea1240cf38479a73ba663e1bf3f52f85b466125821b6e3ea85ded38fde3901530aca4601291395a50eefcea533a4f3b45171bda28
@@ -16065,7 +16072,7 @@ __metadata:
     "@graphql-codegen/typescript": 3.0.4
     "@graphql-codegen/typescript-graphql-request": 4.5.9
     "@graphql-codegen/typescript-operations": 3.0.4
-    "@types/node": 16.18.38
+    "@types/node": 18.16.19
     cross-fetch: 4.0.0
     graphql: 16.7.1
     graphql-request: 5.1.0
@@ -16081,7 +16088,7 @@ __metadata:
   resolution: "site-api@workspace:packages/site-api"
   dependencies:
     "@types/fs-extra": 11.0.1
-    "@types/node": 16.18.38
+    "@types/node": 18.16.19
     "@types/rimraf": 3.0.2
     fs-extra: 11.1.1
     rimraf: 5.0.1
@@ -16098,7 +16105,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site-common@workspace:packages/site-common"
   dependencies:
-    "@types/node": 16.18.38
+    "@types/node": 18.16.19
     typescript: 5.1.6
   languageName: unknown
   linkType: soft
@@ -16108,7 +16115,7 @@ __metadata:
   resolution: "site-config@workspace:packages/site-config"
   dependencies:
     "@nuxt/types": 2.17.0
-    "@types/node": 16.18.38
+    "@types/node": 18.16.19
     site-types: 1.0.0
     typescript: 5.1.6
   languageName: unknown
@@ -16119,7 +16126,7 @@ __metadata:
   resolution: "site-rss@workspace:packages/site-rss"
   dependencies:
     "@types/markdown-it": 12.2.3
-    "@types/node": 16.18.38
+    "@types/node": 18.16.19
     feed: 4.2.2
     markdown-it: 13.0.1
     site-common: 1.0.0
@@ -16149,7 +16156,7 @@ __metadata:
     "@tailwindcss/line-clamp": 0.4.4
     "@types/lodash": 4.14.195
     "@types/markdown-it": 12.2.3
-    "@types/node": 16.18.38
+    "@types/node": 18.16.19
     "@types/twitter-text": 3.1.5
     "@typescript-eslint/eslint-plugin": 5.61.0
     "@typescript-eslint/parser": 5.61.0
