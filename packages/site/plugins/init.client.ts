@@ -1,5 +1,5 @@
-import { Context } from '@nuxt/types'
-import { RootState } from '~/store'
+import type { Context } from '@nuxt/types'
+import type { RootState } from '~/store'
 
 /**
  * dispatch `nuxtServerInit` manually if state is not initialized

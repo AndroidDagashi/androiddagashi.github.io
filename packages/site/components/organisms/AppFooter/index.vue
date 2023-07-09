@@ -26,7 +26,7 @@
   </footer>
 </template>
 <script lang="ts">
-import { LinkInfo, TwitterInfo } from 'site-types/SiteConfig'
+import type { LinkInfo, TwitterInfo } from 'site-types/SiteConfig'
 import type { PropType } from '@vue/composition-api'
 import { defineComponent } from '@vue/composition-api'
 import SiteDescription from '~/components/organisms/SiteDescription/index.vue'

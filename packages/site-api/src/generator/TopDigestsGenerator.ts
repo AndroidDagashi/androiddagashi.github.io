@@ -1,7 +1,7 @@
-import { GitHubClient } from 'site-api-github'
-import { GHDigest } from 'site-types/GitHubApi'
+import type { GitHubClient } from 'site-api-github'
+import type { GHDigest } from 'site-types/GitHubApi'
 import { writeFile } from 'site-common/file'
-import { OutputDirs } from '../config'
+import type { OutputDirs } from '../config'
 import { normalizeIssuePath } from '../utils'
 
 export default class TopDigestsGenerator {

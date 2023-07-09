@@ -1,7 +1,7 @@
 import fs from 'fs'
-import DagashiConfig from './DagashiConfig'
+import type DagashiConfig from './DagashiConfig'
 import { readFile } from 'site-common/file'
-import { GHDigest, GHDigestMilestone } from 'site-types/GitHubApi'
+import type { GHDigest, GHDigestMilestone } from 'site-types/GitHubApi'
 
 export default class DagashiClient {
   readonly config: DagashiConfig

@@ -1,5 +1,5 @@
 import GitHubConfig from './GitHubConfig'
-import { GHMilestone, GHDigest } from 'site-types/GitHubApi'
+import type { GHMilestone, GHDigest } from 'site-types/GitHubApi'
 import { GraphQLClient } from 'graphql-request'
 import { getSdk } from './graphql/documents/index.generated'
 import { GraphQLError } from 'graphql'

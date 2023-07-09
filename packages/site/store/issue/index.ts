@@ -1,6 +1,6 @@
 import type { ActionTree, MutationTree, GetterTree } from 'vuex'
-import { GHMilestone } from 'site-types/GitHubApi'
-import { RootState } from '..'
+import type { GHMilestone } from 'site-types/GitHubApi'
+import type { RootState } from '..'
 
 export const state = () => ({
   currentMilestoneId: null as string | null,

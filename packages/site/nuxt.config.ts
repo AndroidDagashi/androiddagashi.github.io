@@ -1,5 +1,5 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
-import { NuxtConfig } from '@nuxt/types'
+import type { NuxtConfig } from '@nuxt/types'
 import { siteConfig } from 'site-config'
 import { renderOGPMeta } from './utils/ogp'
 

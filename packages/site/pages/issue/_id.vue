@@ -27,7 +27,7 @@
 
 <script lang="ts">
 import { mapState, createNamespacedHelpers } from 'vuex'
-import { GHIssue } from 'site-types/GitHubApi'
+import type { GHIssue } from 'site-types/GitHubApi'
 import { defineComponent } from '@vue/composition-api'
 import { renderOGPMeta } from '../../utils/ogp'
 import ShareWidgets from '~/components/organisms/ShareWidgets/index.vue'

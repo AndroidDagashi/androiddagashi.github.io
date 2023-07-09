@@ -1,4 +1,4 @@
-import { SiteConfig } from 'site-types/SiteConfig'
+import type { SiteConfig } from 'site-types/SiteConfig'
 
 export const siteConfig: SiteConfig = {
   title: 'AndroidDagashi',

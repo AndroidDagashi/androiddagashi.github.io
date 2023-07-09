@@ -1,6 +1,8 @@
-import { Firestore, getFirestore } from 'firebase-admin/firestore'
-import { initializeApp, cert, App, ServiceAccount } from 'firebase-admin/app'
-import Milestone from './Milestone'
+import type { Firestore } from 'firebase-admin/firestore'
+import { getFirestore } from 'firebase-admin/firestore'
+import type { App, ServiceAccount } from 'firebase-admin/app'
+import { initializeApp, cert } from 'firebase-admin/app'
+import type Milestone from './Milestone'
 
 const COLLECTION_MILESTONES = 'milestones'
 

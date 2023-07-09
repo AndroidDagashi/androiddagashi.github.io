@@ -24,9 +24,10 @@
   </ADCard>
 </template>
 <script lang="ts">
-import { PropType, defineComponent, computed } from '@vue/composition-api'
-import { GHIssue } from 'site-types/GitHubApi'
-import { RepositoryConfig } from 'site-types/SiteConfig'
+import type { PropType } from '@vue/composition-api'
+import { defineComponent, computed } from '@vue/composition-api'
+import type { GHIssue } from 'site-types/GitHubApi'
+import type { RepositoryConfig } from 'site-types/SiteConfig'
 import LinkItemComment from './LinkItemComment.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import IssueLabel from '~/components/organisms/IssueLabel/index.vue'

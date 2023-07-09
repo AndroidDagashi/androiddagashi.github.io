@@ -1,4 +1,4 @@
-import { GHDigestMilestone } from 'site-types/GitHubApi'
+import type { GHDigestMilestone } from 'site-types/GitHubApi'
 
 export interface MilestoneMeta {
   title: string

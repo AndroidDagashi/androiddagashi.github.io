@@ -17,9 +17,10 @@
 </template>
 
 <script lang="ts">
-import { PropType, defineComponent, computed } from '@vue/composition-api'
+import type { PropType } from '@vue/composition-api'
+import { defineComponent, computed } from '@vue/composition-api'
 import { format, parseISO } from 'date-fns'
-import { GHComment } from 'site-types/GitHubApi'
+import type { GHComment } from 'site-types/GitHubApi'
 import ADAvatar from '~/components/atoms/ADAvatar/index.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 

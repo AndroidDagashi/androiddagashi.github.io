@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'site-common/file'
 import { Feed } from 'feed'
-import { GHDigest } from 'site-types/GitHubApi'
+import type { GHDigest } from 'site-types/GitHubApi'
 import { siteConfig } from 'site-config'
 import MarkdownIt from 'markdown-it'
 

@@ -6,8 +6,8 @@ import { readFile } from 'site-common/file'
 import path from 'path'
 import DagashiConfig from './src/dagashi/DagashiConfig'
 import { format } from 'date-fns'
+import type { MilestoneMeta } from './src/message'
 import {
-  MilestoneMeta,
   createMilestoneMeta,
   generateBlueskyMessage,
   generateTweetMessage,

@@ -1,9 +1,9 @@
-import {
+import type {
   GHDigest,
   GHDigestIssue,
   GHDigestMilestone,
 } from 'site-types/GitHubApi'
-import { GetMilestoneDigests } from '../graphql/documents/index.generated'
+import type { GetMilestoneDigests } from '../graphql/documents/index.generated'
 
 type MilestoneDigestResponse = NonNullable<
   NonNullable<

@@ -13,7 +13,7 @@
 
 <script lang="ts">
 import type { PropType } from '@vue/composition-api'
-import { GHDigestMilestone } from 'site-types/GitHubApi'
+import type { GHDigestMilestone } from 'site-types/GitHubApi'
 import { defineComponent } from '@vue/composition-api'
 import IssueDigest from '~/components/organisms/IssueDigest/index.vue'
 

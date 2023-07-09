@@ -1,6 +1,10 @@
 import type { ActionTree, MutationTree, GetterTree } from 'vuex'
 
-import { GHDigest, GHDigestMilestone, GHPageInfo } from 'site-types/GitHubApi'
+import type {
+  GHDigest,
+  GHDigestMilestone,
+  GHPageInfo,
+} from 'site-types/GitHubApi'
 
 export const state = () => ({
   initialized: false,

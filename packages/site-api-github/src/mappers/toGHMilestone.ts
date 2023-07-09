@@ -1,8 +1,13 @@
-import { GHComment, GHIssue, GHLabel, GHMilestone } from 'site-types/GitHubApi'
-import { GetMilestoneByNumber } from '../graphql/documents/index.generated'
-import { IssueCommentResponse } from '../graphql/fragments/IssueCommentResponse.generated'
-import { IssueResponse } from '../graphql/fragments/IssueResponse.generated'
-import { LabelResponse } from '../graphql/fragments/LabelResponse.generated'
+import type {
+  GHComment,
+  GHIssue,
+  GHLabel,
+  GHMilestone,
+} from 'site-types/GitHubApi'
+import type { GetMilestoneByNumber } from '../graphql/documents/index.generated'
+import type { IssueCommentResponse } from '../graphql/fragments/IssueCommentResponse.generated'
+import type { IssueResponse } from '../graphql/fragments/IssueResponse.generated'
+import type { LabelResponse } from '../graphql/fragments/LabelResponse.generated'
 
 const toGHComment = (comment: IssueCommentResponse): GHComment => {
   return {

@@ -25,8 +25,9 @@
 </template>
 
 <script lang="ts">
-import { TwitterInfo } from 'site-types/SiteConfig'
-import { PropType, defineComponent, computed } from '@vue/composition-api'
+import type { TwitterInfo } from 'site-types/SiteConfig'
+import type { PropType } from '@vue/composition-api'
+import { defineComponent, computed } from '@vue/composition-api'
 import TwitterLink from '~/components/atoms/TwitterLink/index.vue'
 import ADCard from '~/components/molecules/ADCard/index.vue'
 import ADAvatar from '~/components/atoms/ADAvatar/index.vue'

@@ -1,6 +1,6 @@
 import { OAuth } from 'oauth'
 import TwitterConfig from './TwitterConfig'
-import TweetResponse from './TweetResponse'
+import type TweetResponse from './TweetResponse'
 
 export default class TwitterClient {
   private readonly config: TwitterConfig

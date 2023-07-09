@@ -8,9 +8,10 @@
 </template>
 
 <script lang="ts">
-import { computed, PropType, defineComponent } from '@vue/composition-api'
-import { GHLabel } from 'site-types/GitHubApi'
-import { RepositoryConfig } from 'site-types/SiteConfig'
+import type { PropType } from '@vue/composition-api'
+import { computed, defineComponent } from '@vue/composition-api'
+import type { GHLabel } from 'site-types/GitHubApi'
+import type { RepositoryConfig } from 'site-types/SiteConfig'
 
 export default defineComponent({
   name: 'IssueLabel',

@@ -1,5 +1,5 @@
-import { GitHubClient } from 'site-api-github'
-import { OutputDirs } from '../config'
+import type { GitHubClient } from 'site-api-github'
+import type { OutputDirs } from '../config'
 import { writeFile } from 'site-common/file'
 import { normalizeIssuePath } from '../utils'
 

@@ -8,12 +8,8 @@
 </template>
 
 <script lang="ts">
-import {
-  PropType,
-  defineComponent,
-  toRefs,
-  computed,
-} from '@vue/composition-api'
+import type { PropType } from '@vue/composition-api'
+import { defineComponent, toRefs, computed } from '@vue/composition-api'
 
 type AvatarSize = 'ss' | 's' | 'm' | 'l' | 'll'
 

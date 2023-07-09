@@ -1,4 +1,4 @@
-import { GHMilestone, GHDigestMilestone } from 'site-types/GitHubApi'
+import type { GHMilestone, GHDigestMilestone } from 'site-types/GitHubApi'
 
 /**
  * create Android Dagashi issue page path from GitHub's milestone title

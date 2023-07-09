@@ -1,10 +1,6 @@
-import {
-  AtpAgentFetchHandlerResponse,
-  BskyAgent,
-  RichText,
-  stringifyLex,
-} from '@atproto/api'
-import BlueskyConfig from './BlueskyConfig'
+import type { AtpAgentFetchHandlerResponse } from '@atproto/api'
+import { BskyAgent, RichText, stringifyLex } from '@atproto/api'
+import type BlueskyConfig from './BlueskyConfig'
 import fetch from 'node-fetch'
 
 function configureBlueskyFetch() {
