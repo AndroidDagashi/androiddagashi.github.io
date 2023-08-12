@@ -2,8 +2,148 @@
   "name": "AndroidDagashi",
   "url": "https://github.com/AndroidDagashi/AndroidDagashi",
   "milestones": {
-    "totalCount": 283,
+    "totalCount": 287,
     "nodes": [
+      {
+        "id": "MI_kwDOB4jhdM4AfkeL",
+        "number": 237,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/237",
+        "path": "237-2022-08-14",
+        "title": "237 2022-08-14",
+        "description": "モジュール分割の公式ガイド, Composeで安全にFlowをcollectする, 2022/08/10のAndroidXリリース, mobsfscanによる継続的セキュリティチェック, など",
+        "closedAt": "2022-08-14T10:31:18Z",
+        "issues": {
+          "totalCount": 8,
+          "nodes": [
+            {
+              "title": "Zipline 0.9"
+            },
+            {
+              "title": "Composeで安全にFlowをcollectする"
+            },
+            {
+              "title": "モジュール分割の公式ガイド"
+            },
+            {
+              "title": "重要なパフォーマンスメトリック"
+            },
+            {
+              "title": "2022年08月10日のAndroidXリリース"
+            },
+            {
+              "title": "なぜ Jetpack Compose でアプリを書き直すのか"
+            },
+            {
+              "title": "mobsfscanとGithub Actionsによるモバイルアプリの継続的セキュリティチェック"
+            },
+            {
+              "title": "SubcomposeLayout の解釈"
+            }
+          ]
+        }
+      },
+      {
+        "id": "MI_kwDOB4jhdM4AffJ9",
+        "number": 236,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/236",
+        "path": "236-2022-08-07",
+        "title": "236 2022-08-07",
+        "description": "Kotlin 1.7.20-Beta, droidcon Berlinのセッション動画, Electric Eel Canary 9, Chipmunk Patch 2, なぜネイティブアプリを作るのか, など",
+        "closedAt": "2022-08-07T10:55:13Z",
+        "issues": {
+          "totalCount": 7,
+          "nodes": [
+            {
+              "title": "Kotlin 1.7.20-Beta"
+            },
+            {
+              "title": "droidcon Berlinのセッション動画が公開"
+            },
+            {
+              "title": "Android Studio - Electric Eel | 2022.1.1 Canary 9"
+            },
+            {
+              "title": "Android Studio - Chipmunk | 2021.2.1 Patch 2"
+            },
+            {
+              "title": "なぜマルチプラットフォームアプリではなく、Androidネイティブアプリを作るのか"
+            },
+            {
+              "title": "ひとり体制から始める Android アプリ開発"
+            },
+            {
+              "title": "6 年にわたる Android アプリの開発環境改善への取り組み"
+            }
+          ]
+        }
+      },
+      {
+        "id": "MI_kwDOB4jhdM4AfZhZ",
+        "number": 235,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/235",
+        "path": "235-2022-07-31",
+        "title": "235 2022-07-31",
+        "description": "Predictive back gesture、Jetpack Compose 1.2 Stable、datastoreライブラリの一部がiOSサポートされる 、など",
+        "closedAt": "2022-07-31T10:13:56Z",
+        "issues": {
+          "totalCount": 7,
+          "nodes": [
+            {
+              "title": "Predictive back gesture"
+            },
+            {
+              "title": "Jetpack Compose 1.2 Stable"
+            },
+            {
+              "title": "datastoreライブラリの一部がiOSサポートされる"
+            },
+            {
+              "title": "Compose for Wear OSが1.0 stableに"
+            },
+            {
+              "title": "アプリをMaterial Designのガイドラインに準拠させるための取り組み"
+            },
+            {
+              "title": "Gradle: Composite Build で build.gradle.kts の設定を共通化する"
+            },
+            {
+              "title": "Jetpack Composeを使った複雑なアニメーション事例"
+            }
+          ]
+        }
+      },
+      {
+        "id": "MI_kwDOB4jhdM4AfTa_",
+        "number": 234,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/234",
+        "path": "234-2022-07-24",
+        "title": "234 2022-07-24",
+        "description": "Now in Androidの解説、RecyclerViewとComposeの相互運用の改善、2022年のAndroidプロジェクトセットアップ、など",
+        "closedAt": "2022-07-24T10:27:37Z",
+        "issues": {
+          "totalCount": 6,
+          "nodes": [
+            {
+              "title": "Wear OS 3 エミュレータの紹介"
+            },
+            {
+              "title": "RecyclerViewとComposeの相互運用の改善"
+            },
+            {
+              "title": "Now in Androidの解説"
+            },
+            {
+              "title": "2022年のAndroidプロジェクトセットアップ"
+            },
+            {
+              "title": "Yenta Android版のJetpack Compose導入事例"
+            },
+            {
+              "title": "Dagger 2.43"
+            }
+          ]
+        }
+      },
       {
         "id": "MI_kwDOB4jhdM4AfNdn",
         "number": 233,
@@ -1736,151 +1876,11 @@
             }
           ]
         }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4AbAbw",
-        "number": 187,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/187",
-        "path": "187-2021-08-29",
-        "title": "187 2021-08-29",
-        "description": "Kotlin 1.5.30, Android 12 beta 4.1, Google Playのレビューの改善, Slack社でのBubbles対応, など",
-        "closedAt": "2021-08-29T10:54:14Z",
-        "issues": {
-          "totalCount": 8,
-          "nodes": [
-            {
-              "title": "Android Studio - Bumblebee | 2021.1.1 Canary 10"
-            },
-            {
-              "title": "Android 12 Beta 4.1"
-            },
-            {
-              "title": "Kotlin 1.5.30"
-            },
-            {
-              "title": "Google Playのレビューの改善"
-            },
-            {
-              "title": "ZOZOTOWN AndroidへのJetpack Compose導入の取り組み"
-            },
-            {
-              "title": "Slack社でのBubbles対応"
-            },
-            {
-              "title": "ViewModel内におけるFlowとLiveDataの比較"
-            },
-            {
-              "title": "DuolingoがアプリアーキテクチャをMVVMに移行した事例"
-            }
-          ]
-        }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4Aa7kp",
-        "number": 186,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/186",
-        "path": "186-2021-08-22",
-        "title": "186 2021-08-22",
-        "description": "Block Storeでアカウント情報の保存と復元、Jetpack Composeのパフォーマンスを計測する、Android Studio Arctic Fox | 2020.3.1 Patch 1、など",
-        "closedAt": "2021-08-22T10:31:02Z",
-        "issues": {
-          "totalCount": 6,
-          "nodes": [
-            {
-              "title": "Block Storeでアカウント情報の保存と復元"
-            },
-            {
-              "title": "Jetpack WindowManagerでFoldableなどに対応する"
-            },
-            {
-              "title": "Jetpack Composeのパフォーマンスを計測する"
-            },
-            {
-              "title": "Android Studio Arctic Fox | 2020.3.1 Patch 1"
-            },
-            {
-              "title": "React Native 0.6.5"
-            },
-            {
-              "title": "Now in Android エピソード45"
-            }
-          ]
-        }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4Aa3Me",
-        "number": 185,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/185",
-        "path": "185-2021-08-15",
-        "title": "185 2021-08-15",
-        "description": "Jetpack ComposeのButtonのAPI設計、Android 12 Beta 4、The Future of Kotlin、Timber 5.0、など",
-        "closedAt": "2021-08-15T10:31:33Z",
-        "issues": {
-          "totalCount": 6,
-          "nodes": [
-            {
-              "title": "Android 12 Beta 4"
-            },
-            {
-              "title": "Timber 5.0"
-            },
-            {
-              "title": "Jetpack ComposeのButtonのAPI設計"
-            },
-            {
-              "title": "Kotlin 1.5.30-RC"
-            },
-            {
-              "title": "WorkflowのCompose対応の詳細"
-            },
-            {
-              "title": "The Future of Kotlin"
-            }
-          ]
-        }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4AayK5",
-        "number": 184,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/184",
-        "path": "184-2021-08-08",
-        "title": "184 2021-08-08",
-        "description": "Pixel 6が秋に発売予定、Compose for DesktopとWebがAlphaに、Compose Materialカタログアプリ、アプリのコールド起動時間を70%削減した話、など。",
-        "closedAt": "2021-08-08T10:26:34Z",
-        "issues": {
-          "totalCount": 8,
-          "nodes": [
-            {
-              "title": "Navigation Composeのアニメーション"
-            },
-            {
-              "title": "Pixel 6が秋に発売予定"
-            },
-            {
-              "title": "Compose Materialカタログアプリ"
-            },
-            {
-              "title": "Compose for DesktopとWebがAlphaに"
-            },
-            {
-              "title": "Now in Android エピソード44"
-            },
-            {
-              "title": "Google I/Oアプリの large-screen 対応"
-            },
-            {
-              "title": "アプリのコールド起動時間を70%削減した話"
-            },
-            {
-              "title": "Kotlin/Nativeの新しいメモリモデル(実験的)を試す"
-            }
-          ]
-        }
       }
     ],
     "pageInfo": {
-      "startCursor": "Y3Vyc29yOnYyOpK0MjAyMi0wNy0xN1QwMDowMDowMFrOAHzXZw==",
-      "endCursor": "Y3Vyc29yOnYyOpK0MjAyMS0wOC0wOFQwMDowMDowMFrOAGsiuQ==",
+      "startCursor": "Y3Vyc29yOnYyOpK0MjAyMi0wOC0xNFQwMDowMDowMFrOAH5Hiw==",
+      "endCursor": "Y3Vyc29yOnYyOpK0MjAyMS0wOS0wNVQwMDowMDowMFrOAGxadQ==",
       "hasPreviousPage": true,
       "hasNextPage": true
     }
