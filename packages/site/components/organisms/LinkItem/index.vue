@@ -69,7 +69,7 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
 .LinkItem__GitHubLink {
-  @apply text-sm text-gray-400 font-semibold inline-flex items-center mt-1 px-5 h-8 border-solid border border-gray-300 rounded-full;
+  @apply mt-1 inline-flex h-8 items-center rounded-full border border-solid border-gray-300 px-5 text-sm font-semibold text-gray-400;
   @apply hover:bg-gray-100;
 }
 </style>

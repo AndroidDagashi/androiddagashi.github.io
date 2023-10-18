@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen flex flex-col bg-gray-50">
+  <div class="flex min-h-screen flex-col bg-gray-50">
     <AppHeader :title="title" :rss-url="rssUrl" />
     <nuxt class="flex-grow" />
     <AppFooter

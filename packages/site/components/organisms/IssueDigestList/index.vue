@@ -1,5 +1,5 @@
 <template>
-  <div class="IssueDigestList bg-white border border-gray-200 sm:rounded-md">
+  <div class="IssueDigestList border border-gray-200 bg-white sm:rounded-md">
     <ul>
       <template v-for="(item, index) in milestones">
         <li :key="index" class="IssueDigestList__item hover:bg-gray-100">

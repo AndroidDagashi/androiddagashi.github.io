@@ -1,6 +1,6 @@
 <template>
-  <main class="max-w-2xl mx-auto pt-10 pb-12 px-0 lg:pb-16">
-    <h2 class="text-2xl font-semibold font-roboto px-3">ISSUES</h2>
+  <main class="mx-auto max-w-2xl px-0 pb-12 pt-10 lg:pb-16">
+    <h2 class="px-3 font-roboto text-2xl font-semibold">ISSUES</h2>
     <IssueDigestList class="mt-3" :milestones="milestones">
       <template v-if="pageInfo.hasNextPage" #bottom>
         <button class="LoadNextButton" @click="onLoadNext">
@@ -53,7 +53,7 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
 .LoadNextButton {
-  @apply relative flex flex-row items-center justify-center w-full h-12;
+  @apply relative flex h-12 w-full flex-row items-center justify-center;
   @apply hover:bg-gray-100;
 
   &::before {

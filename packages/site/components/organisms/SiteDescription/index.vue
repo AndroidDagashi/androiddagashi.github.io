@@ -74,7 +74,7 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
 .FollowOnTwitter {
-  @apply inline-flex items-center space-x-3 px-6 h-12 rounded-md shadow-md text-white;
+  @apply inline-flex h-12 items-center space-x-3 rounded-md px-6 text-white shadow-md;
 
   background-color: #1d9bf0;
 }

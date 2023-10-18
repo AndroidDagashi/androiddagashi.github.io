@@ -5,7 +5,7 @@
         <ADAvatar
           :image-url="comment.author.avatarUrl"
           size="m"
-          class="border-solid border-2 border-gray-300"
+          class="border-2 border-solid border-gray-300"
           :alt="comment.author.login"
         />
         <span class="ml-2 font-medium">{{ comment.author.login }}</span>
