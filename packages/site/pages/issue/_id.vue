@@ -1,7 +1,7 @@
 <template>
-  <main class="max-w-2xl mx-auto pt-10 pb-12 px-0 lg:pb-16">
+  <main class="mx-auto max-w-2xl px-0 pb-12 pt-10 lg:pb-16">
     <div class="px-3">
-      <h2 class="text-2xl font-semibold font-roboto">#{{ milestoneTitle }}</h2>
+      <h2 class="font-roboto text-2xl font-semibold">#{{ milestoneTitle }}</h2>
       <div v-if="milestoneDescription" class="mt-3">
         <MarkdownText :text="milestoneDescription" />
       </div>

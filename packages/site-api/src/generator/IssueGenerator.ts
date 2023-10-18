@@ -13,9 +13,8 @@ export default class IssueGenerator {
   }
 
   async generate(milestoneNumber: number): Promise<void> {
-    const milestone = await this.githubClient.getMilestoneByNumber(
-      milestoneNumber
-    )
+    const milestone =
+      await this.githubClient.getMilestoneByNumber(milestoneNumber)
 
     if (!milestone) return
 

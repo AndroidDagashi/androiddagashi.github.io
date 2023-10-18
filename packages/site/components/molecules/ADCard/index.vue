@@ -1,7 +1,7 @@
 <template>
   <component
     :is="tag"
-    class="card bg-white overflow-hidden sm:rounded-lg"
+    class="card overflow-hidden bg-white sm:rounded-lg"
     :class="{ shadow: shadow }"
     v-bind="$attrs"
   >

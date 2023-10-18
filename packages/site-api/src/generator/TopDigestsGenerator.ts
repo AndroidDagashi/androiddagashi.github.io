@@ -26,9 +26,8 @@ export default class TopDigestsGenerator {
     let milestoneNumbers: number[] = []
 
     while (hasNext) {
-      const repo: GHDigest = await this.githubClient.getMilestoneDigests(
-        nextCursor
-      )
+      const repo: GHDigest =
+        await this.githubClient.getMilestoneDigests(nextCursor)
 
       repo.milestones.nodes.forEach((milestone) => {
         milestone.path = normalizeIssuePath(milestone)

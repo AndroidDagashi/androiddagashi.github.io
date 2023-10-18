@@ -1,14 +1,14 @@
 <template>
   <nuxt-link class="IssueDigest flex p-4" :to="`issue/${milestone.path}/`">
     <div>
-      <div class="flex sm:flex-row flex-col items-baseline">
-        <p class="text-xl font-medium font-roboto">#{{ milestone.title }}</p>
-        <p class="sm:ml-2 ml-0 text-gray-500 text-sm">
+      <div class="flex flex-col items-baseline sm:flex-row">
+        <p class="font-roboto text-xl font-medium">#{{ milestone.title }}</p>
+        <p class="ml-0 text-sm text-gray-500 sm:ml-2">
           {{ milestone.issues.totalCount }}件のリンク
         </p>
       </div>
       <p
-        class="IssueDigest__summary mt-1 line-clamp-2 text-gray-500"
+        class="IssueDigest__summary mt-1 text-gray-500 line-clamp-2"
         v-html="milestone.description"
       />
     </div>
