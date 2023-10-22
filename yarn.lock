@@ -8905,13 +8905,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"extract-files@npm:^9.0.0":
-  version: 9.0.0
-  resolution: "extract-files@npm:9.0.0"
-  checksum: c31781d090f8d8f62cc541f1023b39ea863f24bd6fb3d4011922d71cbded70cef8191f2b70b43ec6cb5c5907cdad1dc5e9f29f78228936c10adc239091d8ab64
-  languageName: node
-  linkType: hard
-
 "fast-decode-uri-component@npm:^1.0.1":
   version: 1.0.1
   resolution: "fast-decode-uri-component@npm:1.0.1"
@@ -9299,17 +9292,6 @@ __metadata:
     vue-template-compiler:
       optional: true
   checksum: 9732a49bfeed8fc23e6e8a59795fa7c238edeba91040a9b520db54b4d316dda27f9f1893d360e296fd0ad8930627d364417d28a8c7007fba60cc730ebfce4956
-  languageName: node
-  linkType: hard
-
-"form-data@npm:^3.0.0":
-  version: 3.0.1
-  resolution: "form-data@npm:3.0.1"
-  dependencies:
-    asynckit: ^0.4.0
-    combined-stream: ^1.0.8
-    mime-types: ^2.1.12
-  checksum: b019e8d35c8afc14a2bd8a7a92fa4f525a4726b6d5a9740e8d2623c30e308fbb58dc8469f90415a856698933c8479b01646a9dff33c87cc4e76d72aedbbf860d
   languageName: node
   linkType: hard
 
@@ -9920,21 +9902,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-request@npm:5.1.0":
-  version: 5.1.0
-  resolution: "graphql-request@npm:5.1.0"
-  dependencies:
-    "@graphql-typed-document-node/core": ^3.1.1
-    cross-fetch: ^3.1.5
-    extract-files: ^9.0.0
-    form-data: ^3.0.0
-  peerDependencies:
-    graphql: 14 - 16
-  checksum: 8b65d5c1b0cad8996a843b52305b2712ffbf842c700487d4cee1ed719f22baacaacfddafb65572bcddd67d57fd1d2d389dee2430ffba4b34c3ab542d079446c7
-  languageName: node
-  linkType: hard
-
-"graphql-request@npm:^6.0.0":
+"graphql-request@npm:6.1.0, graphql-request@npm:^6.0.0":
   version: 6.1.0
   resolution: "graphql-request@npm:6.1.0"
   dependencies:
@@ -16409,7 +16377,7 @@ __metadata:
     "@types/node": 18.18.6
     cross-fetch: 4.0.0
     graphql: 16.8.1
-    graphql-request: 5.1.0
+    graphql-request: 6.1.0
     site-common: 1.0.0
     site-types: 1.0.0
     ts-node: 10.9.1
