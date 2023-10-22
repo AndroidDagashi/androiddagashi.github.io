@@ -53,6 +53,12 @@ const config: NuxtConfig = {
         content: siteConfig.title,
       },
       { property: 'og:type', hid: 'og:type', content: 'website' },
+      { property: 'twitter:card', hid: 'twitter:card', content: 'summary' },
+      {
+        property: 'twitter:site',
+        hid: 'twitter:site',
+        content: `@${siteConfig.contact.name}`,
+      },
       ...renderOGPMeta({
         title: siteConfig.title,
         description: siteConfig.description,
