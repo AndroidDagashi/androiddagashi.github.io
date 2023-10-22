@@ -13,12 +13,7 @@
     <section class="">
       <ul class="LinkList">
         <template v-for="(item, index) in issues">
-          <LinkItem
-            :key="index"
-            :issue="item"
-            :issue-repository="issueRepository"
-            class="LinkList__item"
-          />
+          <LinkItem :key="index" :issue="item" :issue-repository="issueRepository" class="LinkList__item" />
         </template>
       </ul>
     </section>
@@ -65,13 +60,12 @@ export default defineComponent({
         ...renderOGPMeta({
           title: newTitle,
           description: description || this.siteDescription,
-          url: `${this.baseUrl}${this.$route.fullPath}`,
+          url: `${this.$config.baseUrl}${this.$route.fullPath}`,
         }),
       ],
     }
   },
   computed: {
-    ...mapState(['baseUrl']),
     ...mapIssueGetters(['currentMilestone']),
     milestoneId(): string {
       return this.$route.params.id
