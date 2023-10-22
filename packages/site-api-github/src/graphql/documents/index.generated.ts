@@ -1,8 +1,9 @@
 /* eslint-disable */
 import * as Types from '../globals'
 
+import type { GraphQLError } from 'graphql'
 import { GraphQLClient } from 'graphql-request'
-import * as Dom from 'graphql-request/dist/types.dom'
+import { GraphQLClientRequestHeaders } from 'graphql-request/build/cjs/types'
 import { print } from 'graphql'
 import gql from 'graphql-tag'
 import { MilestoneDigestResponse } from '../fragments/MilestoneDigestResponse.generated'
@@ -12,9 +13,9 @@ import { LabelResponse } from '../fragments/LabelResponse.generated'
 import { IssueCommentResponse } from '../fragments/IssueCommentResponse.generated'
 import { AuthorResponse } from '../fragments/AuthorResponse.generated'
 export type GetMilestoneDigestsVariables = Types.Exact<{
-  repoOwner: Types.Scalars['String']
-  repoName: Types.Scalars['String']
-  after?: Types.InputMaybe<Types.Scalars['String']>
+  repoOwner: Types.Scalars['String']['input']
+  repoName: Types.Scalars['String']['input']
+  after?: Types.InputMaybe<Types.Scalars['String']['input']>
 }>
 
 export type GetMilestoneDigests = {
@@ -51,9 +52,9 @@ export type GetMilestoneDigests = {
 }
 
 export type GetMilestoneByNumberVariables = Types.Exact<{
-  repoOwner: Types.Scalars['String']
-  repoName: Types.Scalars['String']
-  milestoneNumber: Types.Scalars['Int']
+  repoOwner: Types.Scalars['String']['input']
+  repoName: Types.Scalars['String']['input']
+  milestoneNumber: Types.Scalars['Int']['input']
 }>
 
 export type GetMilestoneByNumber = {
@@ -214,11 +215,12 @@ export function getSdk(
   return {
     getMilestoneDigests(
       variables: GetMilestoneDigestsVariables,
-      requestHeaders?: Dom.RequestInit['headers']
+      requestHeaders?: GraphQLClientRequestHeaders
     ): Promise<{
       data: GetMilestoneDigests
+      errors?: GraphQLError[]
       extensions?: unknown
-      headers: Dom.Headers
+      headers: Headers
       status: number
     }> {
       return withWrapper(
@@ -234,11 +236,12 @@ export function getSdk(
     },
     getMilestoneByNumber(
       variables: GetMilestoneByNumberVariables,
-      requestHeaders?: Dom.RequestInit['headers']
+      requestHeaders?: GraphQLClientRequestHeaders
     ): Promise<{
       data: GetMilestoneByNumber
+      errors?: GraphQLError[]
       extensions?: unknown
-      headers: Dom.Headers
+      headers: Headers
       status: number
     }> {
       return withWrapper(

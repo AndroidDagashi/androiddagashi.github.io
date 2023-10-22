@@ -1,8 +1,9 @@
 /* eslint-disable */
 import * as Types from '../globals'
 
+import type { GraphQLError } from 'graphql'
 import { GraphQLClient } from 'graphql-request'
-import * as Dom from 'graphql-request/dist/types.dom'
+import { GraphQLClientRequestHeaders } from 'graphql-request/build/cjs/types'
 import { print } from 'graphql'
 import gql from 'graphql-tag'
 import { LabelResponse } from './LabelResponse.generated'

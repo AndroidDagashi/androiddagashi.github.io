@@ -1,8 +1,9 @@
 /* eslint-disable */
 import * as Types from '../globals'
 
+import type { GraphQLError } from 'graphql'
 import { GraphQLClient } from 'graphql-request'
-import * as Dom from 'graphql-request/dist/types.dom'
+import { GraphQLClientRequestHeaders } from 'graphql-request/build/cjs/types'
 import { print } from 'graphql'
 import gql from 'graphql-tag'
 export type GetRateLimitVariables = Types.Exact<{ [key: string]: never }>
@@ -47,11 +48,12 @@ export function getSdk(
   return {
     getRateLimit(
       variables?: GetRateLimitVariables,
-      requestHeaders?: Dom.RequestInit['headers']
+      requestHeaders?: GraphQLClientRequestHeaders
     ): Promise<{
       data: GetRateLimit
+      errors?: GraphQLError[]
       extensions?: unknown
-      headers: Dom.Headers
+      headers: Headers
       status: number
     }> {
       return withWrapper(
