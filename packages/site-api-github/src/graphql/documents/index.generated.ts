@@ -1,10 +1,9 @@
 /* eslint-disable */
 import * as Types from '../globals'
 
-import type { GraphQLError } from 'graphql'
 import { GraphQLClient } from 'graphql-request'
 import { GraphQLClientRequestHeaders } from 'graphql-request/build/cjs/types'
-import { print } from 'graphql'
+import { GraphQLError, print } from 'graphql'
 import gql from 'graphql-tag'
 import { MilestoneDigestResponse } from '../fragments/MilestoneDigestResponse.generated'
 import { PageInfoResponse } from '../fragments/PageInfoResponse.generated'
