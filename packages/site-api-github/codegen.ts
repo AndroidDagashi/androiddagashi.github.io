@@ -16,11 +16,7 @@ const config: CodegenConfig = {
         'typescript-graphql-request',
         {
           add: {
-            content: [
-              '/* eslint-disable */',
-              // https://github.com/dotansimha/graphql-code-generator-community/issues/458
-              `import type { GraphQLError } from 'graphql'`,
-            ],
+            content: ['/* eslint-disable */'],
           },
         },
       ],
