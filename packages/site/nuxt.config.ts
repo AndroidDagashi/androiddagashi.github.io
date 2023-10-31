@@ -26,8 +26,11 @@ const baseUrl = isDev
   ? `http://${host}:${port}`
   : siteConfig.baseUrl || `http://${host}:${port}`
 
-const issueIds = indexJson.milestones.nodes.map(
-  (milestone) => `/issue/${milestone.path}`
+// dedupe via Set
+const issueIds = Array.from(
+  new Set<string>(
+    indexJson.milestones.nodes.map((milestone) => `/issue/${milestone.path}`)
+  )
 )
 
 const config: NuxtConfig = {
