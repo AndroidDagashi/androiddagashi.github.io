@@ -13,7 +13,12 @@
     <section class="">
       <ul class="LinkList">
         <template v-for="(item, index) in issues">
-          <LinkItem :key="index" :issue="item" :issue-repository="issueRepository" class="LinkList__item" />
+          <LinkItem
+            :key="index"
+            :issue="item"
+            :issue-repository="issueRepository"
+            class="LinkList__item"
+          />
         </template>
       </ul>
     </section>
@@ -21,7 +26,7 @@
 </template>
 
 <script lang="ts">
-import { mapState, createNamespacedHelpers } from 'vuex'
+import { createNamespacedHelpers } from 'vuex'
 import type { GHIssue } from 'site-types/GitHubApi'
 import { defineComponent } from '@vue/composition-api'
 import { renderOGPMeta } from '../../utils/ogp'
