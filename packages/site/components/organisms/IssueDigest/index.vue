@@ -8,7 +8,7 @@
         </p>
       </div>
       <p
-        class="IssueDigest__summary mt-1 text-gray-500 line-clamp-2"
+        class="IssueDigest__summary mt-1 line-clamp-2 text-gray-500"
         v-html="milestone.description"
       />
     </div>
