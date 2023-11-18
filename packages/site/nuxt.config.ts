@@ -106,21 +106,6 @@ const config: NuxtConfig = {
         configs.node = configs.node || {}
         configs.node.fs = 'empty'
       }
-
-      // .cjs seems not to be transpiled(and iconify-icon failed to load).
-      // https://github.com/nuxt/nuxt.js/issues/10339
-      // https://github.com/nuxt-community/i18n-module/issues/1443
-      // PR(https://github.com/nuxt/nuxt.js/pull/10340) has already been merged, so should be fixed in next release(2.16.0).
-      configs.resolve?.extensions?.push('.cjs')
-      const orig = configs.module!.rules![2]!.exclude! as (
-        path: string
-      ) => boolean
-      configs.module!.rules[2].test = /\.(m|c)?jsx?$/i
-      configs.module!.rules[2].exclude = function (file) {
-        const res = orig(file)
-        if (res) return !/ufo/.test(file)
-        return res
-      }
     },
     transpile: ['iconify-icon'],
   },
