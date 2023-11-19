@@ -1,8 +1,4 @@
-import type {
-  GHDigest,
-  GHDigestIssue,
-  GHDigestMilestone,
-} from 'site-types/GitHubApi'
+import type { GitHubApi } from 'site-types'
 import type { GetMilestoneDigests } from '../graphql/documents/index.generated'
 
 type MilestoneDigestResponse = NonNullable<
@@ -17,7 +13,9 @@ type DigestIssueResponse = NonNullable<
   NonNullable<MilestoneDigestResponse['issues']['nodes']>[number]
 >
 
-export const toGHDigestIssue = (issue: DigestIssueResponse): GHDigestIssue => {
+export const toGHDigestIssue = (
+  issue: DigestIssueResponse
+): GitHubApi.GHDigestIssue => {
   return {
     title: issue.title,
   }
@@ -25,7 +23,7 @@ export const toGHDigestIssue = (issue: DigestIssueResponse): GHDigestIssue => {
 
 export const toGHDigestMilestone = (
   milestone: MilestoneDigestResponse
-): GHDigestMilestone => {
+): GitHubApi.GHDigestMilestone => {
   return {
     id: milestone.id,
     number: milestone.number,
@@ -44,7 +42,9 @@ export const toGHDigestMilestone = (
   }
 }
 
-export const toGHDigest = (data: GetMilestoneDigests): GHDigest | null => {
+export const toGHDigest = (
+  data: GetMilestoneDigests
+): GitHubApi.GHDigest | null => {
   const { repository } = data
   if (!repository) {
     return null

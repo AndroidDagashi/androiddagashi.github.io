@@ -1,4 +1,4 @@
-import type { GHDigestMilestone } from 'site-types/GitHubApi'
+import type { GitHubApi } from 'site-types'
 
 export interface MilestoneMeta {
   title: string
@@ -8,7 +8,7 @@ export interface MilestoneMeta {
 }
 
 export function createMilestoneMeta(
-  milestone: GHDigestMilestone
+  milestone: GitHubApi.GHDigestMilestone
 ): MilestoneMeta {
   return {
     title: milestone.title,
@@ -18,7 +18,7 @@ export function createMilestoneMeta(
   }
 }
 
-function generateMilestoneUrl(milestone: GHDigestMilestone): string {
+function generateMilestoneUrl(milestone: GitHubApi.GHDigestMilestone): string {
   const milestonePath = milestone.title.trim().replace(/\s/g, '-')
   return `https://androiddagashi.github.io/issue/${milestonePath}`
 }

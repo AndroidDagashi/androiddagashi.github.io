@@ -12,9 +12,9 @@
 </template>
 
 <script lang="ts">
-import type { PropType } from '@vue/composition-api'
-import type { GHDigestMilestone } from 'site-types/GitHubApi'
-import { defineComponent } from '@vue/composition-api'
+import type { PropType } from 'vue'
+import type { GitHubApi } from 'site-types'
+import { defineComponent } from 'vue'
 import IssueDigest from '~/components/organisms/IssueDigest/index.vue'
 
 export default defineComponent({
@@ -22,7 +22,7 @@ export default defineComponent({
   components: { IssueDigest },
   props: {
     milestones: {
-      type: Array as PropType<GHDigestMilestone[]>,
+      type: Array as PropType<GitHubApi.GHDigestMilestone[]>,
       required: true,
     },
   },

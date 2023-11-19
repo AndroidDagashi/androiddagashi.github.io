@@ -1,7 +1,7 @@
 import fs from 'fs'
 import type DagashiConfig from './DagashiConfig'
 import { readFile } from 'site-common/file'
-import type { GHDigest, GHDigestMilestone } from 'site-types/GitHubApi'
+import type { GitHubApi } from 'site-types'
 
 export default class DagashiClient {
   readonly config: DagashiConfig
@@ -10,10 +10,10 @@ export default class DagashiClient {
     this.config = config
   }
 
-  async getLatestMilestone(): Promise<GHDigestMilestone | null> {
+  async getLatestMilestone(): Promise<GitHubApi.GHDigestMilestone | null> {
     if (fs.existsSync(this.config.apiDirectory)) {
       const json = await readFile(`${this.config.apiDirectory}/index.json`)
-      const index = JSON.parse(json) as GHDigest
+      const index = JSON.parse(json) as GitHubApi.GHDigest
       if (index.milestones.nodes.length > 0) {
         return index.milestones.nodes[0]
       } else {

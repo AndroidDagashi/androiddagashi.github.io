@@ -8,20 +8,19 @@
 </template>
 
 <script lang="ts">
-import type { PropType } from '@vue/composition-api'
-import { computed, defineComponent } from '@vue/composition-api'
-import type { GHLabel } from 'site-types/GitHubApi'
-import type { RepositoryConfig } from 'site-types/SiteConfig'
+import type { PropType } from 'vue'
+import { computed, defineComponent } from 'vue'
+import type { GitHubApi, SiteConfig } from 'site-types'
 
 export default defineComponent({
   name: 'IssueLabel',
   props: {
     labelInfo: {
-      type: Object as PropType<GHLabel>,
+      type: Object as PropType<GitHubApi.GHLabel>,
       required: true,
     },
     issueRepository: {
-      type: Object as PropType<RepositoryConfig>,
+      type: Object as PropType<SiteConfig.RepositoryConfig>,
       required: true,
     },
   },

@@ -1,5 +1,5 @@
 import type { GitHubClient } from 'site-api-github'
-import type { GHDigest } from 'site-types/GitHubApi'
+import type { GitHubApi } from 'site-types'
 import { writeFile } from 'site-common/file'
 import type { OutputDirs } from '../config'
 import { normalizeIssuePath } from '../utils'
@@ -26,7 +26,7 @@ export default class TopDigestsGenerator {
     let milestoneNumbers: number[] = []
 
     while (hasNext) {
-      const repo: GHDigest =
+      const repo: GitHubApi.GHDigest =
         await this.githubClient.getMilestoneDigests(nextCursor)
 
       repo.milestones.nodes.forEach((milestone) => {

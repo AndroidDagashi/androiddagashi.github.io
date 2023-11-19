@@ -16,7 +16,7 @@
           <LinkItem
             :key="index"
             :issue="item"
-            :issue-repository="issueRepository"
+            :issue-repository="$config.public.issueRepository"
             class="LinkList__item"
           />
         </template>
@@ -26,67 +26,66 @@
 </template>
 
 <script lang="ts">
-import { createNamespacedHelpers } from 'vuex'
-import type { GHIssue } from 'site-types/GitHubApi'
-import { defineComponent } from '@vue/composition-api'
+import type { ReactiveHead } from '@unhead/vue'
+import { createNamespacedHelpers } from 'vuex-composition-helpers'
+import { defineComponent, computed, onMounted } from 'vue'
 import { renderOGPMeta } from '../../utils/ogp'
 import ShareWidgets from '~/components/organisms/ShareWidgets/index.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
 import LinkItem from '~/components/organisms/LinkItem/index.vue'
+import type { IssueState, IssueGetters } from '~~/store/issue'
 
-const { mapGetters: mapIssueGetters } = createNamespacedHelpers('issue')
+const { useGetters: useIssueGetters } = createNamespacedHelpers<
+  IssueState,
+  IssueGetters
+>('issue')
 
 export default defineComponent({
   name: 'Issue',
   components: { ShareWidgets, MarkdownText, LinkItem },
+  setup() {
+    const route = useRoute()
+    const { $config } = useNuxtApp()
+    const { currentMilestone } = useIssueGetters(['currentMilestone'])
+
+    const milestoneId = computed(() => route.params.id)
+    const milestoneTitle = computed(() => currentMilestone.value?.title ?? '')
+    const milestoneDescription = computed(
+      () => currentMilestone.value?.description ?? ''
+    )
+    const issues = computed(() => currentMilestone.value?.issues?.nodes ?? [])
+
+    useHead(
+      computed<ReactiveHead>(() => {
+        const title = `${milestoneTitle.value} - ${$config.public.title}`
+        return {
+          title,
+          meta: [
+            ...renderOGPMeta({
+              title,
+              description: milestoneDescription.value,
+              url: `${$config.public.baseUrl}${route.fullPath}`,
+            }),
+          ],
+        }
+      })
+    )
+
+    onMounted(() => {
+      loadScripts(document)
+    })
+
+    return {
+      currentMilestone,
+      milestoneId,
+      milestoneTitle,
+      milestoneDescription,
+      issues,
+    }
+  },
   async asyncData({ route, store }) {
     await store.dispatch('issue/fetchById', { milestoneId: route.params.id })
-  },
-  data() {
-    return {
-      siteTitle: this.$config.title,
-      issueRepository: this.$config.issueRepository,
-      siteDescription: this.$config.description,
-    }
-  },
-  head(): Record<string, unknown> {
-    const { title, description } = this.currentMilestone ?? {}
-
-    let titleDescription = ''
-    if (this.description) {
-      titleDescription = `: ${description}`
-    }
-    const newTitle = `${title}${titleDescription} - ${this.siteTitle}`
-
-    return {
-      title: newTitle,
-      meta: [
-        ...renderOGPMeta({
-          title: newTitle,
-          description: description || this.siteDescription,
-          url: `${this.$config.baseUrl}${this.$route.fullPath}`,
-        }),
-      ],
-    }
-  },
-  computed: {
-    ...mapIssueGetters(['currentMilestone']),
-    milestoneId(): string {
-      return this.$route.params.id
-    },
-    milestoneTitle(): string {
-      return this.currentMilestone?.title ?? ''
-    },
-    milestoneDescription(): string {
-      return this.currentMilestone?.description ?? ''
-    },
-    issues(): GHIssue[] {
-      return this.currentMilestone?.issues?.nodes ?? []
-    },
-  },
-  mounted() {
-    loadScripts(document)
   },
 })
 </script>

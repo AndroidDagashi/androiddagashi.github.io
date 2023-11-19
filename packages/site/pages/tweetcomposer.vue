@@ -62,40 +62,57 @@
 
 <script lang="ts">
 import twitter from 'twitter-text'
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, ref, onMounted } from 'vue'
 import ADCard from '~/components/molecules/ADCard/index.vue'
+
+const generateTweet = (
+  baseUrl: string,
+  milestoneNumber: number,
+  summary: string
+): string => {
+  return (
+    `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestoneNumber}回を公開しました！ #Androidjp \n\n` +
+    `${summary}\n\n` +
+    `${baseUrl}/issue/${milestoneNumber}-9999-99-99`
+  )
+}
 
 export default defineComponent({
   components: { ADCard },
-  data() {
-    return {
-      summary: '',
-      milestoneNumber: 100,
-      tweet: '',
-      isValidTweet: false,
-      tweetLength: 0,
-      baseUrl: this.$config.baseUrl,
-    }
-  },
-  mounted(): void {
-    // initial calculation
-    this.onInput()
-  },
-  methods: {
-    generateTweet(milestoneNumber: number, summary: string): string {
-      return (
-        `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestoneNumber}回を公開しました！ #Androidjp \n\n` +
-        `${summary}\n\n` +
-        `${this.baseUrl}/issue/${milestoneNumber}-9999-99-99`
-      )
-    },
-    onInput(): void {
-      this.tweet = this.generateTweet(this.milestoneNumber, this.summary)
-      const parseResult = twitter.parseTweet(this.tweet)
+  setup() {
+    const { $config } = useNuxtApp()
 
-      this.tweetLength = parseResult.weightedLength
-      this.isValidTweet = parseResult.valid
-    },
+    const summary = ref('')
+    const milestoneNumber = ref(100)
+    const tweet = ref('')
+    const isValidTweet = ref(false)
+    const tweetLength = ref(0)
+
+    const onInput = () => {
+      tweet.value = generateTweet(
+        $config.public.baseUrl,
+        milestoneNumber.value,
+        summary.value
+      )
+      const parseResult = twitter.parseTweet(tweet.value)
+
+      tweetLength.value = parseResult.weightedLength
+      isValidTweet.value = parseResult.valid
+    }
+
+    onMounted(() => {
+      // initial calculation
+      onInput()
+    })
+
+    return {
+      summary,
+      milestoneNumber,
+      tweet,
+      isValidTweet,
+      tweetLength,
+      onInput,
+    }
   },
 })
 </script>
