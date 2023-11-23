@@ -3318,29 +3318,29 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^3.8.0":
-  version: 3.8.1
-  resolution: "@nuxt/kit@npm:3.8.1"
+"@nuxt/kit@npm:^3.8.2":
+  version: 3.8.2
+  resolution: "@nuxt/kit@npm:3.8.2"
   dependencies:
-    "@nuxt/schema": 3.8.1
+    "@nuxt/schema": 3.8.2
     c12: ^1.5.1
     consola: ^3.2.3
     defu: ^6.1.3
-    globby: ^13.2.2
+    globby: ^14.0.0
     hash-sum: ^2.0.0
-    ignore: ^5.2.4
+    ignore: ^5.3.0
     jiti: ^1.21.0
     knitwork: ^1.0.0
     mlly: ^1.4.2
     pathe: ^1.1.1
     pkg-types: ^1.0.3
-    scule: ^1.0.0
+    scule: ^1.1.0
     semver: ^7.5.4
-    ufo: ^1.3.1
+    ufo: ^1.3.2
     unctx: ^2.3.1
-    unimport: ^3.4.0
+    unimport: ^3.5.0
     untyped: ^1.4.0
-  checksum: ccd15d9402d831d1c1e0a55f079c42a8daf25ac90f5f5e8430a62b9c4f73ebc382f1b9a378a54b9fb0db18b015b8d7d74018cd027ae7777dbffdc1d91466873e
+  checksum: 4b6e799272cad502ded23cd89576e3c5e26dcba4e59d5bd2666066246a0af7f21956312a37bc1aa86b051786a1a4c7386939bba48b8efa55e570cf820d635d01
   languageName: node
   linkType: hard
 
@@ -3370,25 +3370,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/postcss8@npm:^1.1.3":
-  version: 1.1.3
-  resolution: "@nuxt/postcss8@npm:1.1.3"
-  dependencies:
-    autoprefixer: ^10.2.5
-    css-loader: ^5.0.0
-    defu: ^3.2.2
-    postcss: ^8.1.10
-    postcss-import: ^13.0.0
-    postcss-loader: ^4.1.0
-    postcss-url: ^10.1.1
-    semver: ^7.3.4
-  checksum: e2846ad1383200ea3fe4d1146717f1c4ac06afb74997cc2ea0ba91210b6225f201fbd43af5d6bd5a03a86c7a53b95aae555f7d67a63a549d2d1036f0fe4b50fb
-  languageName: node
-  linkType: hard
-
-"@nuxt/schema@npm:3.8.1":
-  version: 3.8.1
-  resolution: "@nuxt/schema@npm:3.8.1"
+"@nuxt/schema@npm:3.8.2":
+  version: 3.8.2
+  resolution: "@nuxt/schema@npm:3.8.2"
   dependencies:
     "@nuxt/ui-templates": ^1.3.1
     consola: ^3.2.3
@@ -3396,11 +3380,12 @@ __metadata:
     hookable: ^5.5.3
     pathe: ^1.1.1
     pkg-types: ^1.0.3
-    std-env: ^3.4.3
-    ufo: ^1.3.1
-    unimport: ^3.4.0
+    scule: ^1.1.0
+    std-env: ^3.5.0
+    ufo: ^1.3.2
+    unimport: ^3.5.0
     untyped: ^1.4.0
-  checksum: 4d6362ab2ac06ea4db106683ab245b947ec105117fad1a05c5692511cd19619442b26fe248ca41b7cd0f88b3ce4b7e9382a7099281349ec5a50a6a7f0340d56a
+  checksum: 13f5e271c4629d2aaa37fa41c12d5fcb528ee9f3d7d86cf00b3030990d8a59dfa09cf04498337b9e119c21fe0de6d6d6082ad6838e2229fcbf7729f006ab9ee0
   languageName: node
   linkType: hard
 
@@ -3647,12 +3632,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxtjs/tailwindcss@npm:6.9.5":
-  version: 6.9.5
-  resolution: "@nuxtjs/tailwindcss@npm:6.9.5"
+"@nuxtjs/tailwindcss@npm:6.10.1":
+  version: 6.10.1
+  resolution: "@nuxtjs/tailwindcss@npm:6.10.1"
   dependencies:
-    "@nuxt/kit": ^3.8.0
-    "@nuxt/postcss8": ^1.1.3
+    "@nuxt/kit": ^3.8.2
     autoprefixer: ^10.4.16
     chokidar: ^3.5.3
     clear-module: ^4.1.2
@@ -3660,7 +3644,7 @@ __metadata:
     cookie-es: ^1.0.0
     defu: ^6.1.3
     destr: ^2.0.2
-    h3: ^1.8.2
+    h3: ^1.9.0
     iron-webcrypto: ^1.0.0
     micromatch: ^4.0.5
     pathe: ^1.1.1
@@ -3670,9 +3654,9 @@ __metadata:
     radix3: ^1.1.0
     tailwind-config-viewer: ^1.7.3
     tailwindcss: ~3.3.5
-    ufo: ^1.3.1
+    ufo: ^1.3.2
     uncrypto: ^0.1.3
-  checksum: 4a986c9fc5198491f2c5e2ca3c8802876b2a824aa64e3d4fc1ce4289693d7414e89823d1c7433a0673a966377ba357f9a658b79a837b4b8d73c7facfe0a7e40b
+  checksum: 8bfa474797866d6a286170e502fac993f74265df6e71acb090121fd6ef8f33635632670d213412cd264060d1a4955ad7f67a5afe9813ad4ed5e2de28fa8290e7
   languageName: node
   linkType: hard
 
@@ -3841,6 +3825,13 @@ __metadata:
     rollup:
       optional: true
   checksum: dcd4d6e3cb6047f18c465a5f2bcd29995c565f083fb6ca5505bcf2018ae0c16634fd38d99538fbb7dcef4e1b491cf4b4465f8845b5666778a925a27e9202dbab
+  languageName: node
+  linkType: hard
+
+"@sindresorhus/merge-streams@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@sindresorhus/merge-streams@npm:1.0.0"
+  checksum: 453c2a28164113a5ec4fd23ba636e291a4112f6ee9e91cd5476b9a96e0fc9ee5ff40d405fe81bbf284c9773b7ed718a3a0f31df7895a0efd413b1f9775d154fe
   languageName: node
   linkType: hard
 
@@ -5640,7 +5631,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"autoprefixer@npm:^10.2.5, autoprefixer@npm:^10.4.16":
+"autoprefixer@npm:^10.4.16":
   version: 10.4.16
   resolution: "autoprefixer@npm:10.4.16"
   dependencies:
@@ -7176,7 +7167,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"css-loader@npm:^5.0.0, css-loader@npm:^5.2.7":
+"css-loader@npm:^5.2.7":
   version: 5.2.7
   resolution: "css-loader@npm:5.2.7"
   dependencies:
@@ -7624,13 +7615,6 @@ __metadata:
     is-descriptor: ^1.0.2
     isobject: ^3.0.1
   checksum: 3217ed53fc9eed06ba8da6f4d33e28c68a82e2f2a8ab4d562c4920d8169a166fe7271453675e6c69301466f36a65d7f47edf0cf7f474b9aa52a5ead9c1b13c99
-  languageName: node
-  linkType: hard
-
-"defu@npm:^3.2.2":
-  version: 3.2.2
-  resolution: "defu@npm:3.2.2"
-  checksum: 60e0a5b849bdd9ebf527d65ef721edc144a0570579115fcfd0c3c8d8b5df41304c8a7b9fe82e739f4baccf6fc637cae3e800d16132fc968369786555d4f33621
   languageName: node
   linkType: hard
 
@@ -9761,16 +9745,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"globby@npm:^13.2.2":
-  version: 13.2.2
-  resolution: "globby@npm:13.2.2"
+"globby@npm:^14.0.0":
+  version: 14.0.0
+  resolution: "globby@npm:14.0.0"
   dependencies:
-    dir-glob: ^3.0.1
-    fast-glob: ^3.3.0
+    "@sindresorhus/merge-streams": ^1.0.0
+    fast-glob: ^3.3.2
     ignore: ^5.2.4
-    merge2: ^1.4.1
-    slash: ^4.0.0
-  checksum: f3d84ced58a901b4fcc29c846983108c426631fe47e94872868b65565495f7bee7b3defd68923bd480582771fd4bbe819217803a164a618ad76f1d22f666f41e
+    path-type: ^5.0.0
+    slash: ^5.1.0
+    unicorn-magic: ^0.1.0
+  checksum: f331b42993e420c8f2b61a6ca062276977ea6d95f181640ff018f00200f4fe5b50f1fae7540903483e6570ca626fe16234ab88e848d43381a2529220548a9d39
   languageName: node
   linkType: hard
 
@@ -9935,19 +9920,19 @@ __metadata:
   languageName: node
   linkType: hard
 
-"h3@npm:^1.8.2":
-  version: 1.8.2
-  resolution: "h3@npm:1.8.2"
+"h3@npm:^1.9.0":
+  version: 1.9.0
+  resolution: "h3@npm:1.9.0"
   dependencies:
     cookie-es: ^1.0.0
-    defu: ^6.1.2
-    destr: ^2.0.1
-    iron-webcrypto: ^0.10.1
+    defu: ^6.1.3
+    destr: ^2.0.2
+    iron-webcrypto: ^1.0.0
     radix3: ^1.1.0
-    ufo: ^1.3.0
+    ufo: ^1.3.2
     uncrypto: ^0.1.3
     unenv: ^1.7.4
-  checksum: 9e57860d54b17d48439242992b9cc5b7f2cf220c2a9d22cabec8ef3e17a5bfef1ffa9bf681891dbcabbef40a35143965908cb01eb51b760705b3dfbae9366abf
+  checksum: 7305163b6fa4ecd7d14fce85e6372fae3580728957c8c021fa6b18176ce5e0cbfcc07c523bafcf7b34e895d2dab3ba731a11af43282faee4f2c8a331ec144f51
   languageName: node
   linkType: hard
 
@@ -10430,7 +10415,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ignore@npm:^5.1.1, ignore@npm:^5.2.0, ignore@npm:^5.2.4":
+"ignore@npm:^5.1.1, ignore@npm:^5.2.0, ignore@npm:^5.2.4, ignore@npm:^5.3.0":
   version: 5.3.0
   resolution: "ignore@npm:5.3.0"
   checksum: 2736da6621f14ced652785cb05d86301a66d70248597537176612bd0c8630893564bd5f6421f8806b09e8472e75c591ef01672ab8059c07c6eb2c09cefe04bf9
@@ -10588,13 +10573,6 @@ __metadata:
   version: 2.0.0
   resolution: "ip@npm:2.0.0"
   checksum: cfcfac6b873b701996d71ec82a7dd27ba92450afdb421e356f44044ed688df04567344c36cbacea7d01b1c39a4c732dc012570ebe9bebfb06f27314bca625349
-  languageName: node
-  linkType: hard
-
-"iron-webcrypto@npm:^0.10.1":
-  version: 0.10.1
-  resolution: "iron-webcrypto@npm:0.10.1"
-  checksum: a473820d5ab5cb1dfbf00ee06f9b3a48b99fb2bb3058485ab13b153e7cd71dd63af74e6df6a5a4fb6b09d6041d049583913e4c6fff3bd5301087472ea78372ce
   languageName: node
   linkType: hard
 
@@ -13627,6 +13605,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"path-type@npm:^5.0.0":
+  version: 5.0.0
+  resolution: "path-type@npm:5.0.0"
+  checksum: 15ec24050e8932c2c98d085b72cfa0d6b4eeb4cbde151a0a05726d8afae85784fc5544f733d8dfc68536587d5143d29c0bd793623fad03d7e61cc00067291cd5
+  languageName: node
+  linkType: hard
+
 "pathe@npm:^1.1.0, pathe@npm:^1.1.1":
   version: 1.1.1
   resolution: "pathe@npm:1.1.1"
@@ -14102,19 +14087,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-import@npm:^13.0.0":
-  version: 13.0.0
-  resolution: "postcss-import@npm:13.0.0"
-  dependencies:
-    postcss-value-parser: ^4.0.0
-    read-cache: ^1.0.0
-    resolve: ^1.1.7
-  peerDependencies:
-    postcss: ^8.0.0
-  checksum: 80bb279482b78048faaadfde2ba98771299d8bbcb2b94d6a1de4dcdc7c5844d506f7f3f8e2b090c311ddb30d38a0da560b44ec9c3009cc22ae1527bfcb8550f4
-  languageName: node
-  linkType: hard
-
 "postcss-import@npm:^15.1.0":
   version: 15.1.0
   resolution: "postcss-import@npm:15.1.0"
@@ -14171,7 +14143,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-loader@npm:^4.1.0, postcss-loader@npm:^4.3.0":
+"postcss-loader@npm:^4.3.0":
   version: 4.3.0
   resolution: "postcss-loader@npm:4.3.0"
   dependencies:
@@ -14877,7 +14849,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-url@npm:^10.1.1, postcss-url@npm:^10.1.3":
+"postcss-url@npm:^10.1.3":
   version: 10.1.3
   resolution: "postcss-url@npm:10.1.3"
   dependencies:
@@ -14908,7 +14880,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:^8.1.10, postcss@npm:^8.2.1, postcss@npm:^8.2.15, postcss@npm:^8.4.23, postcss@npm:^8.4.31":
+"postcss@npm:^8.2.1, postcss@npm:^8.2.15, postcss@npm:^8.4.23, postcss@npm:^8.4.31":
   version: 8.4.31
   resolution: "postcss@npm:8.4.31"
   dependencies:
@@ -15981,7 +15953,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"scule@npm:^1.0.0":
+"scule@npm:^1.0.0, scule@npm:^1.1.0":
   version: 1.1.0
   resolution: "scule@npm:1.1.0"
   checksum: 3a3393f97255a0ea5e2a8cf2eef19a13078b23c77a0d30beef2a52a4a3fd73ee40906a6f0f8deee1e026e6360da6a55757379a2552008c7c3c99a52c772caa81
@@ -16344,7 +16316,7 @@ __metadata:
     "@nuxt/typescript-build": 3.0.2
     "@nuxtjs/eslint-config": 12.0.0
     "@nuxtjs/eslint-config-typescript": 12.1.0
-    "@nuxtjs/tailwindcss": 6.9.5
+    "@nuxtjs/tailwindcss": 6.10.1
     "@tailwindcss/forms": 0.5.7
     "@tailwindcss/line-clamp": 0.4.4
     "@types/lodash": 4.14.201
@@ -16380,10 +16352,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"slash@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "slash@npm:4.0.0"
-  checksum: da8e4af73712253acd21b7853b7e0dbba776b786e82b010a5bfc8b5051a1db38ed8aba8e1e8f400dd2c9f373be91eb1c42b66e91abb407ff42b10feece5e1d2d
+"slash@npm:^5.1.0":
+  version: 5.1.0
+  resolution: "slash@npm:5.1.0"
+  checksum: 70434b34c50eb21b741d37d455110258c42d2cf18c01e6518aeb7299f3c6e626330c889c0c552b5ca2ef54a8f5a74213ab48895f0640717cacefeef6830a1ba4
   languageName: node
   linkType: hard
 
@@ -16716,7 +16688,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"std-env@npm:^3.0.1, std-env@npm:^3.3.1, std-env@npm:^3.4.3":
+"std-env@npm:^3.0.1, std-env@npm:^3.3.1, std-env@npm:^3.4.3, std-env@npm:^3.5.0":
   version: 3.5.0
   resolution: "std-env@npm:3.5.0"
   checksum: 8eba87eab2d6933e0575f13a65a359952a2e3e8c4d24eb55beac5500fe0403b3482c7b59a5de8d035ae13d390c76dd6c677772f9d2a89ea7cf39ae267b71bdd3
@@ -17787,7 +17759,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ufo@npm:^1.3.0, ufo@npm:^1.3.1":
+"ufo@npm:^1.3.0, ufo@npm:^1.3.1, ufo@npm:^1.3.2":
   version: 1.3.2
   resolution: "ufo@npm:1.3.2"
   checksum: f1180bb715ff4dd46152fd4dec41c731e84d7b9eaf1432548a0210b2f7e0cd29de125ac88e582c6a079d8ae5bc9ab04ef2bdbafe125086480b10c1006b81bfce
@@ -17915,9 +17887,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unimport@npm:^3.4.0":
-  version: 3.5.0
-  resolution: "unimport@npm:3.5.0"
+"unicorn-magic@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "unicorn-magic@npm:0.1.0"
+  checksum: 48c5882ca3378f380318c0b4eb1d73b7e3c5b728859b060276e0a490051d4180966beeb48962d850fd0c6816543bcdfc28629dcd030bb62a286a2ae2acb5acb6
+  languageName: node
+  linkType: hard
+
+"unimport@npm:^3.5.0":
+  version: 3.6.0
+  resolution: "unimport@npm:3.6.0"
   dependencies:
     "@rollup/pluginutils": ^5.0.5
     escape-string-regexp: ^5.0.0
@@ -17927,10 +17906,10 @@ __metadata:
     mlly: ^1.4.2
     pathe: ^1.1.1
     pkg-types: ^1.0.3
-    scule: ^1.0.0
+    scule: ^1.1.0
     strip-literal: ^1.3.0
-    unplugin: ^1.5.0
-  checksum: fa9470f0ff7e0f12e529a3dfadf78fb8b47e57edcba110f8c84364568b1394c23f908b0384b3c7fc4bbd14c4532c869632d884c9178e934c82915dc9b3e0306f
+    unplugin: ^1.5.1
+  checksum: f5c2d64f6e600ab2afbe5dbc2482ea41ff31df0b3915518a67a7d4090a9dc73eb540b7d9f894229110d5d779205ab47c6fc0df98a0a3882939dbf787b2274416
   languageName: node
   linkType: hard
 
@@ -18012,7 +17991,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unplugin@npm:^1.3.1, unplugin@npm:^1.5.0":
+"unplugin@npm:^1.3.1, unplugin@npm:^1.5.1":
   version: 1.5.1
   resolution: "unplugin@npm:1.5.1"
   dependencies:
