@@ -14,8 +14,6 @@
         "vue",
         "vue-server-renderer",
         "vue-template-compiler",
-        "@nuxt/kit",
-        "@nuxt/types",
         "nuxt",
         "@nuxtjs/tailwindcss"
       ]
@@ -29,14 +27,8 @@
       "enabled": false
     },
     {
-      "packageNames": ["vue", "vue-server-renderer", "vue-template-compiler"],
-      "allowedVersions": "<=2",
-      "enabled": true,
-      "groupName": "Vue.js"
-    },
-    {
-      "packageNames": ["@nuxt/kit", "@nuxt/types", "nuxt"],
-      "allowedVersions": "<=2",
+      "packageNames": ["nuxt", "nuxi"],
+      "matchPackagePrefixes": ["@nuxt/", "@nuxtjs/"],
       "enabled": true,
       "groupName": "Nuxt.js"
     },
