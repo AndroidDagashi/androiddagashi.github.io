@@ -16,15 +16,15 @@
 </template>
 
 <script lang="ts">
-import type { PropType } from '@vue/composition-api'
-import type { GHDigestMilestone } from 'site-types/GitHubApi'
-import { defineComponent } from '@vue/composition-api'
+import type { PropType } from 'vue'
+import type { GitHubApi } from 'site-types'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'IssueDigest',
   props: {
     milestone: {
-      type: Object as PropType<GHDigestMilestone>,
+      type: Object as PropType<GitHubApi.GHDigestMilestone>,
       required: true,
     },
   },

@@ -15,7 +15,6 @@ export function renderOGPMeta(
   if (properties.title) {
     results.push({
       property: 'og:title',
-      hid: 'og:title',
       content: properties.title,
     })
   }
@@ -23,12 +22,10 @@ export function renderOGPMeta(
   if (properties.description) {
     results.push({
       name: 'description',
-      hid: 'description',
       content: properties.description,
     })
     results.push({
       property: 'og:description',
-      hid: 'og:description',
       content: properties.description,
     })
   }
@@ -36,7 +33,6 @@ export function renderOGPMeta(
   if (properties.url) {
     results.push({
       property: 'og:url',
-      hid: 'og:url',
       content: properties.url,
     })
   }
@@ -44,7 +40,6 @@ export function renderOGPMeta(
   if (properties.image) {
     results.push({
       property: 'og:image',
-      hid: 'og:image',
       content: properties.image,
     })
   }

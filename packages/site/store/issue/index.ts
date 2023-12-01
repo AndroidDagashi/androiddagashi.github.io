@@ -1,15 +1,25 @@
-import type { ActionTree, MutationTree, GetterTree } from 'vuex'
-import type { GHMilestone } from 'site-types/GitHubApi'
+import type {
+  ActionTree,
+  MutationTree,
+  GetterTree,
+  Store,
+  ActionContext,
+} from 'vuex'
+import type { GitHubApi } from 'site-types'
 import type { RootState } from '..'
 
 export const state = () => ({
   currentMilestoneId: null as string | null,
-  milestones: {} as { [milestoneId: string]: GHMilestone },
+  milestones: {} as { [milestoneId: string]: GitHubApi.GHMilestone },
 })
 
 export type IssueState = ReturnType<typeof state>
 
-export const getters: GetterTree<IssueState, RootState> = {
+export interface IssueGetters extends GetterTree<IssueState, RootState> {
+  currentMilestone: (state: IssueState) => GitHubApi.GHMilestone | null
+}
+
+export const getters: IssueGetters = {
   currentMilestone: (state) => {
     const milestoneId = state.currentMilestoneId
     if (milestoneId) {
@@ -29,7 +39,10 @@ export const mutations: MutationTree<IssueState> = {
   },
   ADD_MILESTONE(
     state: IssueState,
-    { milestoneId, milestone }: { milestoneId: string; milestone: GHMilestone }
+    {
+      milestoneId,
+      milestone,
+    }: { milestoneId: string; milestone: GitHubApi.GHMilestone }
   ) {
     state.milestones = {
       ...state.milestones,
@@ -38,11 +51,19 @@ export const mutations: MutationTree<IssueState> = {
   },
 }
 
+export interface IssueActions extends ActionTree<IssueState, RootState> {
+  fetchById: (
+    this: Store<RootState>,
+    context: ActionContext<IssueState, RootState>,
+    payload: { milestoneId: string }
+  ) => Promise<void>
+}
+
 export const actions: ActionTree<IssueState, RootState> = {
   async fetchById({ commit }, { milestoneId }: { milestoneId: string }) {
     commit('UPDATE_CURRENT_MILESTONE', { milestoneId })
 
-    let milestone = await this.$api.get<GHMilestone>(
+    let milestone = await this.$api.get<GitHubApi.GHMilestone>(
       `/api/issue/${milestoneId}.json`
     )
 

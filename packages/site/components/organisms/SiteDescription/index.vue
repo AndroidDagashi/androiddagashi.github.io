@@ -25,9 +25,9 @@
 </template>
 
 <script lang="ts">
-import type { TwitterInfo } from 'site-types/SiteConfig'
-import type { PropType } from '@vue/composition-api'
-import { defineComponent, computed } from '@vue/composition-api'
+import type { SiteConfig } from 'site-types'
+import type { PropType } from 'vue'
+import { defineComponent, computed } from 'vue'
 import TwitterLink from '~/components/atoms/TwitterLink/index.vue'
 import ADCard from '~/components/molecules/ADCard/index.vue'
 import ADAvatar from '~/components/atoms/ADAvatar/index.vue'
@@ -42,11 +42,11 @@ export default defineComponent({
       required: true,
     },
     authors: {
-      type: Array as PropType<TwitterInfo[]>,
+      type: Array as PropType<SiteConfig.TwitterInfo[]>,
       required: true,
     },
     contact: {
-      type: Object as PropType<TwitterInfo>,
+      type: Object as PropType<SiteConfig.TwitterInfo>,
       required: true,
     },
   },

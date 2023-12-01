@@ -1,6 +1,6 @@
-import type { SiteConfig } from 'site-types/SiteConfig'
+import type { SiteConfig } from 'site-types'
 
-export const siteConfig: SiteConfig = {
+export const siteConfig: SiteConfig.SiteConfig = {
   title: 'AndroidDagashi',
   description: 'Weekly Android developer news digest in Japanese',
   baseUrl: 'https://androiddagashi.github.io',

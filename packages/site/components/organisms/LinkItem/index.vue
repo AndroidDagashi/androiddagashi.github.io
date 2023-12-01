@@ -24,10 +24,9 @@
   </ADCard>
 </template>
 <script lang="ts">
-import type { PropType } from '@vue/composition-api'
-import { defineComponent, computed } from '@vue/composition-api'
-import type { GHIssue } from 'site-types/GitHubApi'
-import type { RepositoryConfig } from 'site-types/SiteConfig'
+import type { PropType } from 'vue'
+import { defineComponent, computed } from 'vue'
+import type { GitHubApi, SiteConfig } from 'site-types'
 import LinkItemComment from './LinkItemComment.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import IssueLabel from '~/components/organisms/IssueLabel/index.vue'
@@ -38,7 +37,7 @@ export default defineComponent({
   components: { IssueLabel, MarkdownText, LinkItemComment, ADCard },
   props: {
     issue: {
-      type: Object as PropType<GHIssue>,
+      type: Object as PropType<GitHubApi.GHIssue>,
       required: true,
     },
     tag: {
@@ -47,7 +46,7 @@ export default defineComponent({
       default: 'li',
     },
     issueRepository: {
-      type: Object as PropType<RepositoryConfig>,
+      type: Object as PropType<SiteConfig.RepositoryConfig>,
       required: true,
     },
   },

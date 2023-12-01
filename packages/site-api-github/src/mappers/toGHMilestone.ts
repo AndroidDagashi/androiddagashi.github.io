@@ -1,15 +1,10 @@
-import type {
-  GHComment,
-  GHIssue,
-  GHLabel,
-  GHMilestone,
-} from 'site-types/GitHubApi'
+import type { GitHubApi } from 'site-types'
 import type { GetMilestoneByNumber } from '../graphql/documents/index.generated'
 import type { IssueCommentResponse } from '../graphql/fragments/IssueCommentResponse.generated'
 import type { IssueResponse } from '../graphql/fragments/IssueResponse.generated'
 import type { LabelResponse } from '../graphql/fragments/LabelResponse.generated'
 
-const toGHComment = (comment: IssueCommentResponse): GHComment => {
+const toGHComment = (comment: IssueCommentResponse): GitHubApi.GHComment => {
   return {
     body: comment.body,
     publishedAt: comment.publishedAt ?? '',
@@ -23,7 +18,7 @@ const toGHComment = (comment: IssueCommentResponse): GHComment => {
   }
 }
 
-const toGHLabel = (label: LabelResponse): GHLabel => {
+const toGHLabel = (label: LabelResponse): GitHubApi.GHLabel => {
   return {
     name: label.name,
     description: label.description ?? null,
@@ -31,7 +26,7 @@ const toGHLabel = (label: LabelResponse): GHLabel => {
   }
 }
 
-export const toGHIssue = (issue: IssueResponse): GHIssue => {
+export const toGHIssue = (issue: IssueResponse): GitHubApi.GHIssue => {
   return {
     url: issue.url,
     title: issue.title,
@@ -55,7 +50,7 @@ export const toGHIssue = (issue: IssueResponse): GHIssue => {
 
 export const toGHMilestone = (
   data: GetMilestoneByNumber
-): GHMilestone | null => {
+): GitHubApi.GHMilestone | null => {
   const { repository } = data
   if (!repository) return null
 

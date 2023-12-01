@@ -1,5 +1,5 @@
 import GitHubConfig from './GitHubConfig'
-import type { GHMilestone, GHDigest } from 'site-types/GitHubApi'
+import type { GitHubApi } from 'site-types'
 import { GraphQLClient } from 'graphql-request'
 import { getSdk } from './graphql/documents/index.generated'
 import { GraphQLError } from 'graphql'
@@ -27,7 +27,7 @@ export default class GitHubClient {
 
   async getMilestoneByNumber(
     milestoneNumber: number
-  ): Promise<GHMilestone | null> {
+  ): Promise<GitHubApi.GHMilestone | null> {
     try {
       const result = await getSdk(this.client).getMilestoneByNumber({
         repoOwner: this.config.repoOwner,
@@ -51,7 +51,9 @@ export default class GitHubClient {
     }
   }
 
-  async getMilestoneDigests(cursor: string | null): Promise<GHDigest> {
+  async getMilestoneDigests(
+    cursor: string | null
+  ): Promise<GitHubApi.GHDigest> {
     try {
       const result = await getSdk(this.client).getMilestoneDigests({
         repoOwner: this.config.repoOwner,

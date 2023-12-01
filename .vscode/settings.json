@@ -2,12 +2,12 @@
   "[markdown]": {
     "files.trimTrailingWhitespace": false
   },
-  "liveServer.settings.root": "packages/site/dist/",
+  "liveServer.settings.root": "packages/site/.output/public/",
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "eslint.format.enable": true,
-  "editor.formatOnSave": true,
+  // "editor.formatOnSave": true,
   "yaml.schemas": {
     "https://json.schemastore.org/github-workflow.json": ".github/workflows/deploy.yml"
   },
@@ -17,10 +17,15 @@
   "css.lint.unknownAtRules": "ignore",
   "[css]": {
     "editor.formatOnSave": true,
-    "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
+    // "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
+    "diffEditor.codeLens": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[json]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "Vue.volar"
+  },
 }

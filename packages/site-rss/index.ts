@@ -1,6 +1,6 @@
 import { readFile, writeFile } from 'site-common/file'
 import { Feed } from 'feed'
-import type { GHDigest } from 'site-types/GitHubApi'
+import type { GitHubApi } from 'site-types'
 import { siteConfig } from 'site-config'
 import MarkdownIt from 'markdown-it'
 
@@ -9,7 +9,7 @@ async function generateRss(): Promise<void> {
   const today = new Date()
   const digest = JSON.parse(
     await readFile('../site/static/api/index.json')
-  ) as GHDigest
+  ) as GitHubApi.GHDigest
   const title = siteConfig.title
 
   // create feed xml root

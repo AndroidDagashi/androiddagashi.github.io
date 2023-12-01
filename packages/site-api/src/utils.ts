@@ -1,4 +1,4 @@
-import type { GHMilestone, GHDigestMilestone } from 'site-types/GitHubApi'
+import type { GitHubApi } from 'site-types'
 
 /**
  * create Android Dagashi issue page path from GitHub's milestone title
@@ -10,7 +10,7 @@ import type { GHMilestone, GHDigestMilestone } from 'site-types/GitHubApi'
  * @returns {string} path
  */
 export function normalizeIssuePath(
-  milestone: GHMilestone | GHDigestMilestone
+  milestone: GitHubApi.GHMilestone | GitHubApi.GHDigestMilestone
 ): string {
   return milestone.title.trim().replace(/\s/g, '-')
 }

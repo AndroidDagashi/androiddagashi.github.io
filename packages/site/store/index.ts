@@ -1,27 +1,37 @@
-import type { ActionTree, MutationTree, GetterTree } from 'vuex'
-
 import type {
-  GHDigest,
-  GHDigestMilestone,
-  GHPageInfo,
-} from 'site-types/GitHubApi'
+  ActionTree,
+  MutationTree,
+  GetterTree,
+  ActionContext,
+  Store,
+} from 'vuex'
+
+import type { GitHubApi } from 'site-types'
 
 export const state = () => ({
   initialized: false,
-  digests: [] as GHDigestMilestone[],
+  digests: [] as GitHubApi.GHDigestMilestone[],
   // pageInfo for digests
-  pageInfo: null as GHPageInfo | null,
+  pageInfo: null as GitHubApi.GHPageInfo | null,
 })
 
 export type RootState = ReturnType<typeof state>
 
-export const getters: GetterTree<RootState, RootState> = {
+export interface RootGetters extends GetterTree<RootState, RootState> {
+  digests: (state: RootState) => GitHubApi.GHDigestMilestone[]
+  pageInfo: (state: RootState) => GitHubApi.GHPageInfo | null
+}
+
+export const getters: RootGetters = {
   digests: (state) => state.digests,
   pageInfo: (state) => state.pageInfo,
 }
 
 export const mutations: MutationTree<RootState> = {
-  UPDATE_DIGESTS(state: RootState, { digest }: { digest: GHDigest }): void {
+  UPDATE_DIGESTS(
+    state: RootState,
+    { digest }: { digest: GitHubApi.GHDigest }
+  ): void {
     state.digests = [...state.digests, ...digest.milestones.nodes]
 
     const newPageInfo = digest.milestones.pageInfo
@@ -40,7 +50,23 @@ export const mutations: MutationTree<RootState> = {
   },
 }
 
-export const actions: ActionTree<RootState, RootState> = {
+export interface RootActions extends ActionTree<RootState, RootState> {
+  nuxtServerInit: (
+    this: Store<RootState>,
+    context: ActionContext<RootState, RootState>
+  ) => Promise<void>
+  fetchInitialDigests: (
+    this: Store<RootState>,
+    context: ActionContext<RootState, RootState>
+  ) => Promise<void>
+  fetchNextDigests: (
+    this: Store<RootState>,
+    context: ActionContext<RootState, RootState>,
+    payload: { cursor: string }
+  ) => Promise<void>
+}
+
+export const actions: RootActions = {
   async nuxtServerInit({ commit, dispatch }) {
     await dispatch('fetchInitialDigests')
 
@@ -48,12 +74,14 @@ export const actions: ActionTree<RootState, RootState> = {
   },
 
   async fetchInitialDigests({ commit }) {
-    const data = await this.$api.get<GHDigest>('/api/index.json')
+    const data = await this.$api.get<GitHubApi.GHDigest>('/api/index.json')
     commit('UPDATE_DIGESTS', { digest: data })
   },
 
   async fetchNextDigests({ commit }, payload: { cursor: string }) {
-    const data = await this.$api.get<GHDigest>(`/api/${payload.cursor}.json`)
+    const data = await this.$api.get<GitHubApi.GHDigest>(
+      `/api/${payload.cursor}.json`
+    )
     commit('UPDATE_DIGESTS', { digest: data })
   },
 }

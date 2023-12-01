@@ -3,7 +3,7 @@
     <h2 class="px-3 font-roboto text-2xl font-semibold">ISSUES</h2>
     <IssueDigestList class="mt-3" :milestones="milestones">
       <template v-if="pageInfo.hasNextPage" #bottom>
-        <button class="LoadNextButton" @click="onLoadNext">
+        <button :class="[$style.LoadNextButton]" @click="onLoadNext">
           <iconify-icon icon="ic:baseline-expand-more" width="24" />
           <span class="sr-only"> 次の記事を読み込む </span>
         </button>
@@ -13,45 +13,60 @@
 </template>
 
 <script lang="ts">
-import { mapActions, mapGetters } from 'vuex'
-import { defineComponent } from '@vue/composition-api'
+import type { ReactiveHead } from '@unhead/vue'
+import { useActions, useGetters } from 'vuex-composition-helpers'
+import { defineComponent, computed } from 'vue'
 import { renderOGPMeta } from '~/utils/ogp'
 import IssueDigestList from '~/components/organisms/IssueDigestList/index.vue'
+import type { RootGetters, RootActions } from '~~/store'
 
 export default defineComponent({
   name: 'Index',
   components: {
     IssueDigestList,
   },
-  data() {
-    return {
-      baseUrl: this.$config.baseUrl,
+  setup() {
+    const { $config } = useNuxtApp()
+    const route = useRoute()
+
+    const { fetchNextDigests } = useActions<RootActions>(['fetchNextDigests'])
+    const { digests: milestones, pageInfo } = useGetters<RootGetters>([
+      'digests',
+      'pageInfo',
+    ])
+
+    useHead(
+      computed<ReactiveHead>(() => {
+        return {
+          meta: [
+            ...renderOGPMeta({
+              title: $config.public.title,
+              description: $config.public.description,
+              url: `${$config.public.baseUrl}${route.fullPath}`,
+            }),
+          ],
+        }
+      })
+    )
+
+    const onLoadNext = async function onLoadNext() {
+      const current = pageInfo.value
+      if (!current?.hasNextPage) {
+        return
+      }
+      await fetchNextDigests({ cursor: current!.endCursor! })
     }
-  },
-  head(): Record<string, unknown> {
+
     return {
-      meta: [
-        ...renderOGPMeta({
-          title: this.title,
-          description: this.description,
-          url: `${this.baseUrl}${this.$route.fullPath}`,
-        }),
-      ],
+      milestones,
+      pageInfo,
+      onLoadNext,
     }
-  },
-  computed: {
-    ...mapGetters({ milestones: 'digests', pageInfo: 'pageInfo' }),
-  },
-  methods: {
-    ...mapActions(['fetchNextDigests']),
-    async onLoadNext(): Promise<void> {
-      await this.fetchNextDigests({ cursor: this.pageInfo.endCursor })
-    },
   },
 })
 </script>
 
-<style lang="postcss" scoped>
+<style lang="postcss" module>
 .LoadNextButton {
   @apply relative flex h-12 w-full flex-row items-center justify-center;
   @apply hover:bg-gray-100;
