@@ -22,13 +22,14 @@ jobs:
         with:
           ref: development
 
+      # run corepack before setup-node
+      # https://github.com/actions/setup-node/issues/899
+      - run: corepack enable yarn
+
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
           cache: 'yarn'
-
-      - name: Corepack
-        run: corepack enable yarn
 
       - name: setup Firebase
         run: echo ${{ secrets.FIREBASE_JSON }} | base64 -d > ./androiddagashi-serviceaccount.json

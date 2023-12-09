@@ -26,13 +26,14 @@ jobs:
           ref: development
           persist-credentials: false
 
+      # run corepack before setup-node
+      # https://github.com/actions/setup-node/issues/899
+      - run: corepack enable yarn
+
       - uses: actions/setup-node@v4
         with:
           node-version-file: '.node-version'
           cache: 'yarn'
-
-      - name: Corepack
-        run: corepack enable yarn
 
       - name: Setup git config
         run: sh ./.github/setup-git-config.sh
