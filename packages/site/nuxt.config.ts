@@ -101,12 +101,6 @@ const config: NuxtConfig = {
    */
   build: {
     // analyze: true,
-    extend(configs, ctx): void {
-      if (ctx.isClient) {
-        configs.node = configs.node || {}
-        configs.node.fs = 'empty'
-      }
-    },
     transpile: ['iconify-icon'],
   },
   generate: {
