@@ -101,12 +101,6 @@ const config: NuxtConfig = {
    */
   build: {
     // analyze: true,
-    extend(configs, ctx): void {
-      if (ctx.isClient) {
-        configs.node = configs.node || {}
-        configs.node.fs = 'empty'
-      }
-    },
     transpile: ['iconify-icon'],
   },
   generate: {
@@ -117,7 +111,8 @@ const config: NuxtConfig = {
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
   plugins: [
     '~/plugins/composition-api.ts',
-    '~/plugins/api',
+    { src: '~/plugins/api.server.ts', mode: 'server' },
+    { src: '~/plugins/api.client.ts', mode: 'client' },
     '~/plugins/markdownit.ts',
     '~/plugins/iconify-icon.ts',
     { src: '~/plugins/ga.js', ssr: false },
