@@ -1,0 +1,241 @@
+{
+  "id": "MI_kwDOB4jhdM4Aojz2",
+  "number": 317,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/317",
+  "title": "317 2024-03-10",
+  "closedAt": "2024-03-10T10:49:17Z",
+  "description": "Kotlin 1.9.23, 端末の向きを判定する新API, Media3での動画編集, AndroidでBLEのL2CAP通信を行う方法, など",
+  "issues": {
+    "totalCount": 9,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOgcnHVQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________HvOgcw5Dg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3114",
+        "title": "Wear OSにText-To-Speechが導入",
+        "body": "https://android-developers.googleblog.com/2024/03/introducing-new-text-to-speech-engine-wear-os.html\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Wear OS",
+              "description": "",
+              "color": "FBCA04"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3115",
+        "title": "端末の向きを判定する新API、Fused Orientation Provider",
+        "body": "https://android-developers.googleblog.com/2024/03/introducing-fused-orientation-provider-api.html\r\n\r\nGoogle Play services 経由で提供されます",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOdnFzQQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOdnFzQQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/1b9tgu9/android_developers_blog_introducing_the_fused/",
+              "publishedAt": "2024-03-10T08:45:38Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3116",
+        "title": "Kotlin 1.9.23",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.9.23\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3117",
+        "title": "タイムゾーンデータの更新頻度改善について",
+        "body": "https://android-developers.googleblog.com/2024/03/better-faster-stronger-time-zone-updates-on-android.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOdnF-3Q==",
+            "endCursor": "Y3Vyc29yOnYyOpHOdnF-3Q==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/1b9nzhz/better_faster_stronger_time_zone_updates_on/",
+              "publishedAt": "2024-03-10T08:58:38Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3118",
+        "title": "Media3の動画編集",
+        "body": "https://medium.com/google-exoplayer/trim-transcode-concatenate-your-guide-to-media3-editing-libraries-668b4e4c2f97\r\n\r\nMedia 3での動画の変換、クリッピング、エフェクト、結合などの方法を紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3119",
+        "title": "ネイティブのAndroid開発はクロスプラットフォームフレームワークと比べてどれくらい難しい？",
+        "body": "https://www.reddit.com/r/androiddev/comments/1bamkms/how_much_more_complicated_is_native_android/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3120",
+        "title": "Android Jetpack Compose 独自 TextField 実装まとめ",
+        "body": "https://tech.gunosy.io/entry/android_compose_text_field",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3121",
+        "title": "AndroidでBluetooth Low EnergyのL2CAP通信を行う方法と開発で得た知見",
+        "body": "https://buildersbox.corp-sansan.com/entry/2024/03/06/110000",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3122",
+        "title": "Now in Android #100",
+        "body": "https://medium.com/androiddevelopers/now-in-android-100-46422a7fefe8",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
