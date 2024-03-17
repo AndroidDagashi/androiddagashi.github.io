@@ -1,0 +1,97 @@
+{
+  "id": "MI_kwDOB4jhdM4AorFS",
+  "number": 318,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/318",
+  "title": "318 2024-03-17",
+  "closedAt": "2024-03-17T10:20:17Z",
+  "description": "5月24日にGoogle I/Oが開催、Jetpack Composeのパフォーマンス最適化、Composable Modifierとcomposed factory関数の比較、など",
+  "issues": {
+    "totalCount": 4,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOgpF8Ug==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_OgpGpag==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3123",
+        "title": "5月24日にGoogle I/Oが開催",
+        "body": "https://android-developers.googleblog.com/2024/03/google-io-24-save-the-date.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3124",
+        "title": "Jetpack Composeのパフォーマンス最適化",
+        "body": "https://getstream.io/blog/jetpack-compose-stability/\r\n\r\nStable、Unstableの基本的なところや、Compose Compiler Metrics、Strong Skipping Modeなどの話など、幅広く解説しています。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3125",
+        "title": "Composable Modifierとcomposed factory関数の比較",
+        "body": "https://engineering.teknasyon.com/composable-modifier-vs-composed-factory-in-jetpack-compose-6cbb675b0e7b\r\n\r\ncomposed関数はパフォーマンスの理由でdeprecatedになり、今後置き換える必要があるのですが、微妙に挙動が違うので注意点を解説をしています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3126",
+        "title": "Flowを理解する7つのレシピ",
+        "body": "https://proandroiddev.com/seven-recipes-to-understand-flows-and-asynchrony-in-kotlin-1bd7fe041480\r\n\r\nサンプルコードを例にFlowの挙動、コンセプトを解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
