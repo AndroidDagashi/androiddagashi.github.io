@@ -101,7 +101,7 @@ const config: NuxtConfig = {
    */
   build: {
     // analyze: true,
-    transpile: ['iconify-icon'],
+    transpile: ['iconify-icon', 'date-fns'],
   },
   generate: {
     fallback: true,

@@ -1569,7 +1569,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.21.0, @babel/runtime@npm:^7.23.8, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.8.4":
+"@babel/runtime@npm:^7.0.0, @babel/runtime@npm:^7.23.8, @babel/runtime@npm:^7.3.1, @babel/runtime@npm:^7.8.4":
   version: 7.24.4
   resolution: "@babel/runtime@npm:7.24.4"
   dependencies:
@@ -7512,12 +7512,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"date-fns@npm:2.30.0, date-fns@npm:^2.29.3":
-  version: 2.30.0
-  resolution: "date-fns@npm:2.30.0"
-  dependencies:
-    "@babel/runtime": "npm:^7.21.0"
-  checksum: 10c0/e4b521fbf22bc8c3db332bbfb7b094fd3e7627de0259a9d17c7551e2d2702608a7307a449206065916538e384f37b181565447ce2637ae09828427aed9cb5581
+"date-fns@npm:3.6.0":
+  version: 3.6.0
+  resolution: "date-fns@npm:3.6.0"
+  checksum: 10c0/0b5fb981590ef2f8e5a3ba6cd6d77faece0ea7f7158948f2eaae7bbb7c80a8f63ae30b01236c2923cf89bb3719c33aeb150c715ea4fe4e86e37dcf06bed42fb6
   languageName: node
   linkType: hard
 
@@ -16058,7 +16056,7 @@ __metadata:
     "@typescript-eslint/parser": "npm:6.21.0"
     "@vue/composition-api": "npm:1.7.2"
     "@vue/runtime-dom": "npm:3.4.21"
-    date-fns: "npm:2.30.0"
+    date-fns: "npm:3.6.0"
     eslint: "npm:8.57.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-nuxt: "npm:4.0.0"
@@ -16172,7 +16170,7 @@ __metadata:
     "@atproto/api": "npm:0.12.2"
     "@types/node-fetch": "npm:^2.6.3"
     "@types/oauth": "npm:0.9.4"
-    date-fns: "npm:^2.29.3"
+    date-fns: "npm:3.6.0"
     firebase-admin: "npm:12.0.0"
     node-fetch: "npm:2.7.0"
     oauth: "npm:0.10.0"
