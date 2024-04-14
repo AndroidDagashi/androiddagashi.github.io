@@ -35,6 +35,7 @@ export default defineComponent({
 }
 
 .markdown-text >>> ul {
+  list-style: disc;
   padding-left: 16px;
   padding-right: 16px;
 }
