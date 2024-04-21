@@ -6,10 +6,10 @@
   "closedAt": "2024-04-21T10:51:25Z",
   "description": "消費電力をA/Bテストする、Android StudioのGemini 1.0 Proのサポート、マスターViewModel part2、など",
   "issues": {
-    "totalCount": 3,
+    "totalCount": 5,
     "pageInfo": {
       "startCursor": "Y3Vyc29yOnYyOpLPf________5vOhmcsiQ==",
-      "endCursor": "Y3Vyc29yOnYyOpLPf________tPOhmiUXg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvOhmjsZA==",
       "hasPreviousPage": false,
       "hasNextPage": false
     },
@@ -62,6 +62,54 @@
         "body": "https://proandroiddev.com/mastering-android-viewmodels-essential-dos-and-donts-part-2-%EF%B8%8F-2b49281f0029\r\n\r\nmutable stateをpublicにするのは止めよう、stateの更新にはupdate拡張関数を使おう、などが紹介されています。",
         "labels": {
           "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3155",
+        "title": "K2 Compiler への移行ガイド",
+        "body": "https://kotlinlang.org/docs/k2-compiler-guide.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3156",
+        "title": "ELSA Speak アプリの Time Picker を Jetpack Compose で作ってみる",
+        "body": "https://proandroiddev.com/creating-a-time-picker-based-on-the-elsa-speak-app-using-jetpack-compose-de931876acac",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
         },
         "comments": {
           "totalCount": 0,
