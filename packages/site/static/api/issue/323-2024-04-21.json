@@ -1,0 +1,79 @@
+{
+  "id": "MI_kwDOB4jhdM4ApQ0q",
+  "number": 323,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/323",
+  "title": "323 2024-04-21",
+  "closedAt": "2024-04-21T10:51:25Z",
+  "description": "消費電力をA/Bテストする、Android StudioのGemini 1.0 Proのサポート、マスターViewModel part2、など",
+  "issues": {
+    "totalCount": 3,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOhmcsiQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________tPOhmiUXg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3152",
+        "title": "消費電力をA/Bテストする",
+        "body": "https://android-developers.googleblog.com/2024/04/how-to-effectively-ab-test-power-consumption-for-your-android-app-features.html\r\n\r\nAndroid StudioのPower Profilerを使って消費電力をA/Bテストする方法が紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3153",
+        "title": "Android StudioのGemini 1.0 Proのサポート",
+        "body": "https://android-developers.googleblog.com/2024/04/android-studio-uses-gemini-pro.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3154",
+        "title": "マスターViewModel part2",
+        "body": "https://proandroiddev.com/mastering-android-viewmodels-essential-dos-and-donts-part-2-%EF%B8%8F-2b49281f0029\r\n\r\nmutable stateをpublicにするのは止めよう、stateの更新にはupdate拡張関数を使おう、などが紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
