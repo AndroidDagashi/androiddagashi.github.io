@@ -1,5 +1,5 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
-import type { NuxtConfig } from '@nuxt/types'
+import { defineNuxtConfig } from '@nuxt/bridge'
 import { siteConfig } from 'site-config'
 import { renderOGPMeta } from './utils/ogp'
 
@@ -33,7 +33,8 @@ const issueIds = Array.from(
   )
 )
 
-const config: NuxtConfig = {
+export default defineNuxtConfig({
+  bridge: false,
   target: 'static',
   publicRuntimeConfig: {
     ...siteConfig,
@@ -104,7 +105,8 @@ const config: NuxtConfig = {
     transpile: ['iconify-icon', 'date-fns', 'markdown-it'],
   },
   generate: {
-    fallback: true,
+    fallback: '404.html',
+    // @ts-ignore
     routes: issueIds,
   },
   modules: [],
@@ -124,6 +126,4 @@ const config: NuxtConfig = {
   },
   // https://github.com/nuxt/telemetry
   telemetry: true,
-}
-
-export default config
+})
