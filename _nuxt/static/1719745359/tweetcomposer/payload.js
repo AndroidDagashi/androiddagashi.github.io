@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/tweetcomposer", {data:[{}],fetch:{},mutations:[]});
