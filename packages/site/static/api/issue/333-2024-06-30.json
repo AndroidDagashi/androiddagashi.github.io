@@ -1,0 +1,209 @@
+{
+  "id": "MI_kwDOB4jhdM4AqzZv",
+  "number": 333,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/333",
+  "title": "333 2024-06-30",
+  "closedAt": "2024-06-30T10:05:11Z",
+  "description": "Android Studio Koala Canary 8, 2024/06/26 の AndroidX リリース, Kotlinに導入検討されているUnion型について, など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOjfzR3g==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOjf0rcw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3211",
+        "title": "Kotlinに導入検討されているUnion型について",
+        "body": "https://kt.academy/article/union-types-into\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3212",
+        "title": "Jetpack Compose による堅牢な MVI 実装",
+        "body": "https://proandroiddev.com/a-robust-mvi-with-jetpack-compose-e08882d2c4ff",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3213",
+        "title": "Compose MultiplatformでクロスプラットフォームUI開発の可能性を探る",
+        "body": "https://proandroiddev.com/exploring-the-viability-of-cross-platform-ui-development-with-compose-multiplatform-c5be0608b69d",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3214",
+        "title": "Google Play Billing Library 7 で queryPurchaseHistory が非推奨になる",
+        "body": "Google Play Billing Library 7: queryPurchaseHistory to be deprecated : r/androiddev  \r\nhttps://www.reddit.com/r/androiddev/comments/1dqfqni/google_play_billing_library_7/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOgwpbVA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOgwpbVA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "購入履歴を管理したい場合は、アプリ側が個別にバックエンドを用意する必要があるそうです",
+              "publishedAt": "2024-06-30T09:18:58Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3215",
+        "title": "2024年06月26日の AndroidX リリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#june_26_2024",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOgwptxg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOgwptxg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake 氏によるまとめはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">After some back to back larger Jetpack releases, today&#39;s <a href=\"https://twitter.com/hashtag/JetpackReleaseNotes?src=hash&amp;ref_src=twsrc%5Etfw\">#JetpackReleaseNotes</a> is much more manageable: Fragment 1.8.1 is out with a Predictive Back fix, Compose 1.7.0-beta04 is out, Navigation 2.8.0-beta04 has lots of fixes, and more!<a href=\"https://t.co/w6Q6kpf5S3\">https://t.co/w6Q6kpf5S3</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1806109481484648753?ref_src=twsrc%5Etfw\">June 26, 2024</a></blockquote>",
+              "publishedAt": "2024-06-30T09:38:23Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3216",
+        "title": "Now in Android 108",
+        "body": "https://medium.com/androiddevelopers/now-in-android-108-42291f14ba37",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3217",
+        "title": "Android Studio Koala | 2024.1.2 Canary 8",
+        "body": "https://androidstudio.googleblog.com/2024/06/android-studio-koala-feature-drop_27.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
