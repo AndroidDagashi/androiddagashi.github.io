@@ -1,15 +1,10 @@
 <template>
-  <img
-    class="inline-block rounded-full"
-    :class="avatarSizeClasses"
-    :src="imageUrl"
-    :alt="alt"
-  />
+  <img class="inline-block rounded-full" :class="avatarSizeClasses" :src="imageUrl" :alt="alt" />
 </template>
 
 <script lang="ts">
-import type { PropType } from '@vue/composition-api'
-import { defineComponent, toRefs, computed } from '@vue/composition-api'
+import type { PropType } from 'vue'
+import { defineComponent, toRefs, computed } from 'vue'
 
 type AvatarSize = 'ss' | 's' | 'm' | 'l' | 'll'
 

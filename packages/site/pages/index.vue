@@ -14,7 +14,7 @@
 
 <script lang="ts">
 import { mapActions, mapGetters } from 'vuex'
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from 'vue'
 import { renderOGPMeta } from '~/utils/ogp'
 import IssueDigestList from '~/components/organisms/IssueDigestList/index.vue'
 

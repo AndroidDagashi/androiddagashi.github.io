@@ -7,18 +7,15 @@
           {{ milestone.issues.totalCount }}件のリンク
         </p>
       </div>
-      <p
-        class="IssueDigest__summary mt-1 line-clamp-2 text-gray-500"
-        v-html="milestone.description"
-      />
+      <p class="IssueDigest__summary mt-1 line-clamp-2 text-gray-500" v-html="milestone.description" />
     </div>
   </nuxt-link>
 </template>
 
 <script lang="ts">
-import type { PropType } from '@vue/composition-api'
+import type { PropType } from 'vue'
 import type { GHDigestMilestone } from 'site-types/GitHubApi'
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
   name: 'IssueDigest',

@@ -112,7 +112,6 @@ export default defineNuxtConfig({
   modules: [],
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
   plugins: [
-    '~/plugins/composition-api.ts',
     { src: '~/plugins/api.server.ts', mode: 'server' },
     { src: '~/plugins/api.client.ts', mode: 'client' },
     '~/plugins/markdownit.ts',

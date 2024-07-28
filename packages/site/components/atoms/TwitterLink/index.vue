@@ -1,11 +1,9 @@
 <template>
-  <a class="twitter-link underline" :href="url" target="_blank"
-    >@{{ screenName }}</a
-  >
+  <a class="twitter-link underline" :href="url" target="_blank">@{{ screenName }}</a>
 </template>
 
 <script lang="ts">
-import { computed, defineComponent } from '@vue/composition-api'
+import { computed, defineComponent } from 'vue'
 import { twitterUrl } from '~/utils/urls'
 
 export default defineComponent({
