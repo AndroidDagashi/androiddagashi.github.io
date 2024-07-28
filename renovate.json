@@ -17,8 +17,15 @@
         "@nuxt/kit",
         "@nuxt/types",
         "nuxt",
-        "@nuxtjs/tailwindcss"
+        "@nuxtjs/tailwindcss",
+        "node",
+        "@types/node"
       ]
+    },
+    {
+      "packageNames": ["node", "@types/node"],
+      "allowedVersions": "<=18",
+      "groupName": "Node.js"
     },
     {
       "matchSourceUrlPrefixes": ["https://github.com/nuxt/eslint-config"],
