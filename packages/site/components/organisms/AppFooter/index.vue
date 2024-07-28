@@ -1,13 +1,9 @@
 <template>
   <footer id="footer" class="bg-gray-100 text-gray-800">
-    <div
-      class="mx-auto max-w-4xl px-4 py-12 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
-    >
+    <div class="mx-auto max-w-4xl px-4 py-12 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
       <SiteDescription :title="title" :authors="authors" :contact="contact" />
     </div>
-    <div
-      class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:flex md:items-center md:justify-between lg:px-8"
-    >
+    <div class="mx-auto max-w-7xl px-4 py-12 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
       <!-- links -->
       <ul class="flex justify-center space-x-6 md:order-2">
         <li v-for="(link, index) in links" :key="index">
@@ -27,8 +23,8 @@
 </template>
 <script lang="ts">
 import type { LinkInfo, TwitterInfo } from 'site-types/SiteConfig'
-import type { PropType } from '@vue/composition-api'
-import { defineComponent } from '@vue/composition-api'
+import type { PropType } from 'vue'
+import { defineComponent } from 'vue'
 import SiteDescription from '~/components/organisms/SiteDescription/index.vue'
 
 export default defineComponent({

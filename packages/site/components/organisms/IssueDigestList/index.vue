@@ -12,9 +12,9 @@
 </template>
 
 <script lang="ts">
-import type { PropType } from '@vue/composition-api'
+import type { PropType } from 'vue'
 import type { GHDigestMilestone } from 'site-types/GitHubApi'
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent } from 'vue'
 import IssueDigest from '~/components/organisms/IssueDigest/index.vue'
 
 export default defineComponent({

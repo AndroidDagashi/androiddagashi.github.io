@@ -2,13 +2,8 @@
   <ADCard :tag="tag" class="LinkItem mt-3 border border-gray-200">
     <h3 class="text-lg font-semibold text-gray-600">{{ issue.title }}</h3>
     <div v-if="hasLabels" class="py-2">
-      <IssueLabel
-        v-for="(label, index2) in labels"
-        :key="index2"
-        class="mr-1"
-        :label-info="label"
-        :issue-repository="issueRepository"
-      />
+      <IssueLabel v-for="(label, index2) in labels" :key="index2" class="mr-1" :label-info="label"
+        :issue-repository="issueRepository" />
     </div>
     <MarkdownText class="mt-3 pb-3" :text="issue.body" />
     <div v-if="hasComments" class="LinkItem__comments border-t border-gray-300">
@@ -24,8 +19,8 @@
   </ADCard>
 </template>
 <script lang="ts">
-import type { PropType } from '@vue/composition-api'
-import { defineComponent, computed } from '@vue/composition-api'
+import type { PropType } from 'vue'
+import { defineComponent, computed } from 'vue'
 import type { GHIssue } from 'site-types/GitHubApi'
 import type { RepositoryConfig } from 'site-types/SiteConfig'
 import LinkItemComment from './LinkItemComment.vue'
