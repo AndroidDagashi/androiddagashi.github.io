@@ -4,7 +4,8 @@
   },
   "liveServer.settings.root": "packages/site/dist/",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": "explicit",
+    "source.fixAll.stylelint": "explicit"
   },
   "eslint.format.enable": true,
   "editor.formatOnSave": true,
@@ -19,8 +20,5 @@
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "bradlc.vscode-tailwindcss"
   },
-  "[json]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  "html.format.enable": false
 }

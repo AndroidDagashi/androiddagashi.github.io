@@ -1,10 +1,15 @@
 <template>
   <header class="bg-white font-roboto text-gray-800">
     <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="lg:borrder-none flex w-full items-center justify-between border-b border-gray-200 py-3">
+      <div
+        class="lg:borrder-none flex w-full items-center justify-between border-b border-gray-200 py-3"
+      >
         <h1>
           <nuxt-link to="/" class="flex items-center">
-            <ADAvatar image-url="/image/logo.jpg" class="border border-gray-200" />
+            <ADAvatar
+              image-url="/image/logo.jpg"
+              class="border border-gray-200"
+            />
             <span class="ml-3 text-2xl font-medium">{{ title }}</span>
           </nuxt-link>
         </h1>

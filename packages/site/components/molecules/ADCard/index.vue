@@ -1,5 +1,10 @@
 <template>
-  <component :is="tag" class="card overflow-hidden bg-white sm:rounded-lg" :class="{ shadow: shadow }" v-bind="$attrs">
+  <component
+    :is="tag"
+    class="card overflow-hidden bg-white sm:rounded-lg"
+    :class="{ shadow: shadow }"
+    v-bind="$attrs"
+  >
     <div class="px-4 py-5 sm:p-6">
       <slot />
     </div>

@@ -1,14 +1,18 @@
 <template>
   <ADCard class="text-gray-900">
     <p class="flex items-center text-2xl font-semibold">
-      <ADAvatar size="s" image-url="/image/logo.jpg" class="border-2 border-gray-300" />
+      <ADAvatar
+        size="s"
+        image-url="/image/logo.jpg"
+        class="border-2 border-gray-300"
+      />
       <span class="ml-2">{{ title }}とは？</span>
     </p>
     <p class="mt-4 text-lg">
       <template v-for="(author, index) in authors">
         <TwitterLink :key="index" :screen-name="author.name" />
-        {{ getAuthorConnector(index) }}
-      </template>が、一週間の間に気になったAndroid関連のニュースをざっくりまとめています。
+        {{ getAuthorConnector(index) }} </template
+      >が、一週間の間に気になったAndroid関連のニュースをざっくりまとめています。
     </p>
     <p>おおよそ毎週日曜夜の更新です。</p>
     <div class="mt-6">

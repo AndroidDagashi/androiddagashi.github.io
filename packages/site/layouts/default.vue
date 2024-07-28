@@ -2,7 +2,12 @@
   <div class="flex min-h-screen flex-col bg-gray-50">
     <AppHeader :title="title" :rss-url="rssUrl" />
     <nuxt class="flex-grow" />
-    <AppFooter :title="title" :authors="authors" :contact="contact" :links="$config.links" />
+    <AppFooter
+      :title="title"
+      :authors="authors"
+      :contact="contact"
+      :links="$config.links"
+    />
   </div>
 </template>
 

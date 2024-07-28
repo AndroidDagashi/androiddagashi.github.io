@@ -1,5 +1,8 @@
 <template>
-  <span :style="chipColorStyle" class="IssueLabel rounded-full px-3 py-1 text-xs font-bold text-white">
+  <span
+    :style="chipColorStyle"
+    class="IssueLabel rounded-full px-3 py-1 text-xs font-bold text-white"
+  >
     <a :href="githubLabelLink" target="_blank">{{ labelInfo.name }}</a>
   </span>
 </template>

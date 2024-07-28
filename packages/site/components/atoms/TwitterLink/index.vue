@@ -1,5 +1,7 @@
 <template>
-  <a class="twitter-link underline" :href="url" target="_blank">@{{ screenName }}</a>
+  <a class="twitter-link underline" :href="url" target="_blank"
+    >@{{ screenName }}</a
+  >
 </template>
 
 <script lang="ts">

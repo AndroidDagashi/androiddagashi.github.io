@@ -6142,19 +6142,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@volar-plugins/prettier@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@volar-plugins/prettier@npm:2.0.0"
-  peerDependencies:
-    "@volar/language-service": "*"
-    prettier: "*"
-  peerDependenciesMeta:
-    "@volar/language-service":
-      optional: true
-  checksum: 10c0/828f6e4d321bc3122908f315d6851f66096c8246448dfaf953a624ae73a68721ecf043e18e99d2ee4e8145cc749446606a95b80aea449de76aeb03e8cf100524
-  languageName: node
-  linkType: hard
-
 "@vue/babel-helper-vue-jsx-merge-props@npm:^1.4.0":
   version: 1.4.0
   resolution: "@vue/babel-helper-vue-jsx-merge-props@npm:1.4.0"
@@ -6745,7 +6732,6 @@ __metadata:
   dependencies:
     "@typescript-eslint/eslint-plugin": "npm:6.21.0"
     "@typescript-eslint/parser": "npm:6.21.0"
-    "@volar-plugins/prettier": "npm:^2.0.0"
     eslint: "npm:8.57.0"
     eslint-config-prettier: "npm:9.1.0"
     eslint-plugin-import: "npm:2.29.1"
@@ -6753,6 +6739,7 @@ __metadata:
     eslint-plugin-prettier: "npm:5.2.1"
     prettier: "npm:3.3.3"
     prettier-plugin-tailwindcss: "npm:0.6.5"
+    volar-service-prettier: "npm:0.0.54"
   languageName: unknown
   linkType: soft
 
@@ -21279,6 +21266,30 @@ __metadata:
   version: 1.1.2
   resolution: "vm-browserify@npm:1.1.2"
   checksum: 10c0/0cc1af6e0d880deb58bc974921320c187f9e0a94f25570fca6b1bd64e798ce454ab87dfd797551b1b0cc1849307421aae0193cedf5f06bdb5680476780ee344b
+  languageName: node
+  linkType: hard
+
+"volar-service-prettier@npm:0.0.54":
+  version: 0.0.54
+  resolution: "volar-service-prettier@npm:0.0.54"
+  dependencies:
+    vscode-uri: "npm:^3.0.8"
+  peerDependencies:
+    "@volar/language-service": ~2.3.1
+    prettier: ^2.2 || ^3.0
+  peerDependenciesMeta:
+    "@volar/language-service":
+      optional: true
+    prettier:
+      optional: true
+  checksum: 10c0/b8b6352a309d3bf2f35335fdde2d7255d5fb5d7eb9dbf5cdce06cefa09c4bb681b84cc1c26cb90cbe868df542c1dc4cf472be382266111e359c5576d1b5b9c64
+  languageName: node
+  linkType: hard
+
+"vscode-uri@npm:^3.0.8":
+  version: 3.0.8
+  resolution: "vscode-uri@npm:3.0.8"
+  checksum: 10c0/f7f217f526bf109589969fe6e66b71e70b937de1385a1d7bb577ca3ee7c5e820d3856a86e9ff2fa9b7a0bc56a3dd8c3a9a557d3fedd7df414bc618d5e6b567f9
   languageName: node
   linkType: hard
 
