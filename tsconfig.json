@@ -1,6 +1,15 @@
 {
-  // https://github.com/vuejs/vetur/issues/815
-  // https://github.com/vuejs/vetur/issues/815#issuecomment-450545705
-  // Veturが子ディレクトリのtsconfigを読み込んでくれない件の暫定対応
-  "extends": "./packages/site/tsconfig.json"
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "Node",
+    "lib": ["esnext", "esnext.asynciterable", "dom"],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": true,
+    "noEmit": true,
+    "experimentalDecorators": true
+  },
+  "exclude": ["node_modules"]
 }
