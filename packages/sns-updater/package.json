@@ -5,13 +5,13 @@
   "license": "MIT",
   "repository": "git@github.com:androiddagashi/androiddagashi.git",
   "scripts": {
-    "update": "ts-node ./index.ts"
+    "update": "tsx ./index.ts"
   },
   "devDependencies": {
     "@types/node-fetch": "^2.6.3",
     "@types/oauth": "0.9.5",
     "site-types": "^1.0.0",
-    "ts-node": "10.9.2",
+    "tsx": "4.17.0",
     "typescript": "5.5.4"
   },
   "dependencies": {

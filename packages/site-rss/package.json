@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "generate": "ts-node ./index.ts"
+    "generate": "tsx ./index.ts"
   },
   "dependencies": {
     "feed": "4.2.2",
@@ -15,7 +15,7 @@
     "@types/markdown-it": "14.1.2",
     "@types/node": "18.19.42",
     "site-types": "1.0.0",
-    "ts-node": "10.9.2",
+    "tsx": "4.17.0",
     "typescript": "5.5.4"
   }
 }
