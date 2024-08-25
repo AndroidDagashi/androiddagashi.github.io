@@ -1,0 +1,145 @@
+{
+  "id": "MI_kwDOB4jhdM4ArtF2",
+  "number": 341,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/341",
+  "title": "341 2024-08-25",
+  "closedAt": "2024-08-25T10:56:24Z",
+  "description": "Kotlin 2.0.20, Jetpack Compose の Preview の TIPS, マルチモジュールアプリにおける収斂, 大規模なAndroidアプリの実装を紐解いていくアプローチ, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOlB3-HQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afOlCDL0w==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3253",
+        "title": "16KBページサイズをサポート",
+        "body": "https://android-developers.googleblog.com/2024/08/adding-16-kb-page-size-to-android.html\r\n\r\nこれまで4KBページサイズで実行されていましたが、16KBページサイズもサポートされ、これによりパフォーマンスが向上することになります。サポートするために対応が必要な場合があります。まだ実機の発売の予定はないですが、開発向けオプションから切り替えることができるようになるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3254",
+        "title": "Kotlin 2.0.20",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v2.0.20\r\n\r\nCompose CompilerでStrong skippingがデフォルトで有効になっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3255",
+        "title": "Jetpack ComposeのPreviewのtips",
+        "body": "https://getstream.io/blog/effective-compose-preview/\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3256",
+        "title": "マルチモジュールアプリケーションにおける収斂",
+        "body": "https://proandroiddev.com/convergence-in-a-multi-module-application-b9298182060c",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3257",
+        "title": "ModifierLocal を使って分析/ログ用の modifier をつくる",
+        "body": "https://proandroiddev.com/add-powerful-analytics-modifiers-in-jetpack-compose-with-modifierlocal-399e3f8b7914",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3258",
+        "title": "大規模なAndroidアプリの実装を紐解いていくアプローチ",
+        "body": "https://techblog.zozo.com/entry/approach-to-understanding-android-applications",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
