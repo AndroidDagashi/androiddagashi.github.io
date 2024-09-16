@@ -34,7 +34,10 @@ const issueIds = Array.from(
 )
 
 export default defineNuxtConfig({
-  bridge: false,
+  bridge: {
+    typescript: true,
+    nitro: false,
+  },
   target: 'static',
   publicRuntimeConfig: {
     ...siteConfig,
@@ -102,7 +105,7 @@ export default defineNuxtConfig({
    */
   build: {
     // analyze: true,
-    transpile: ['iconify-icon', 'date-fns', 'markdown-it'],
+    transpile: ['iconify-icon', 'date-fns', 'markdown-it', 'cookie-es'],
   },
   generate: {
     fallback: '404.html',
@@ -110,7 +113,7 @@ export default defineNuxtConfig({
     routes: issueIds,
   },
   modules: [],
-  buildModules: ['@nuxt/typescript-build', '@nuxtjs/tailwindcss'],
+  buildModules: ['@nuxtjs/tailwindcss'],
   plugins: [
     { src: '~/plugins/api.server.ts', mode: 'server' },
     { src: '~/plugins/api.client.ts', mode: 'client' },
