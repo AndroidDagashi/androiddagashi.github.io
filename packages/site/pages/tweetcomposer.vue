@@ -62,40 +62,55 @@
 
 <script lang="ts">
 import twitter from 'twitter-text'
-import { defineComponent } from 'vue'
+import { defineComponent, ref } from 'vue'
+import { useNuxtApp } from '#imports'
 import ADCard from '~/components/molecules/ADCard/index.vue'
 
 export default defineComponent({
   components: { ADCard },
-  data() {
-    return {
-      summary: '',
-      milestoneNumber: 100,
-      tweet: '',
-      isValidTweet: false,
-      tweetLength: 0,
-      baseUrl: this.$config.baseUrl,
-    }
-  },
-  mounted(): void {
-    // initial calculation
-    this.onInput()
-  },
-  methods: {
-    generateTweet(milestoneNumber: number, summary: string): string {
+  setup() {
+    const app = useNuxtApp()
+
+    const summary = ref('')
+    const tweet = ref('')
+    const milestoneNumber = ref(100)
+    const tweetLength = ref(0)
+    const isValidTweet = ref(false)
+
+    const generateTweet = (
+      milestoneNumber: number,
+      summary: string
+    ): string => {
       return (
         `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestoneNumber}回を公開しました！ #Androidjp \n\n` +
         `${summary}\n\n` +
-        `${this.baseUrl}/issue/${milestoneNumber}-9999-99-99`
+        `${app.$config.baseUrl}/issue/${milestoneNumber}-9999-99-99`
       )
-    },
-    onInput(): void {
-      this.tweet = this.generateTweet(this.milestoneNumber, this.summary)
-      const parseResult = twitter.parseTweet(this.tweet)
+    }
 
-      this.tweetLength = parseResult.weightedLength
-      this.isValidTweet = parseResult.valid
-    },
+    const onInput = () => {
+      tweet.value = generateTweet(milestoneNumber.value, summary.value)
+      const parseResult = twitter.parseTweet(tweet.value)
+
+      tweetLength.value = parseResult.weightedLength
+      isValidTweet.value = parseResult.valid
+    }
+
+    onMounted(() => {
+      // initial calculation
+      onInput()
+    })
+
+    return {
+      summary,
+      milestoneNumber,
+      tweet,
+      isValidTweet,
+      tweetLength,
+      baseUrl: app.$config.baseUrl,
+      generateTweet,
+      onInput,
+    }
   },
 })
 </script>

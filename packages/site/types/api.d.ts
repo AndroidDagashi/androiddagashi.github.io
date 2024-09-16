@@ -27,7 +27,7 @@ declare module 'vue/types/vue' {
   }
 }
 
-declare module 'vuex/types/index' {
+declare module 'vuex' {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   interface Store<S> {
     $api: ApiClient

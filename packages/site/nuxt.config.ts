@@ -36,6 +36,7 @@ const issueIds = Array.from(
 export default defineNuxtConfig({
   bridge: {
     typescript: true,
+    capi: true,
     nitro: false,
   },
   target: 'static',
@@ -105,7 +106,13 @@ export default defineNuxtConfig({
    */
   build: {
     // analyze: true,
-    transpile: ['iconify-icon', 'date-fns', 'markdown-it', 'cookie-es'],
+    transpile: [
+      'iconify-icon',
+      'date-fns',
+      'markdown-it',
+      'cookie-es',
+      'vuex-composition-helpers',
+    ],
   },
   generate: {
     fallback: '404.html',
