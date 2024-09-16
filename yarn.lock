@@ -18994,7 +18994,7 @@ __metadata:
     ts-loader: "npm:8.4.0"
     twitter-text: "npm:3.1.0"
     typescript: "npm:5.5.4"
-    vuex-composition-helpers: "npm:1.2.0"
+    vuex-composition-helpers: "npm:2.0.3"
   languageName: unknown
   linkType: soft
 
@@ -21296,12 +21296,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vuex-composition-helpers@npm:1.2.0":
-  version: 1.2.0
-  resolution: "vuex-composition-helpers@npm:1.2.0"
+"vuex-composition-helpers@npm:2.0.3":
+  version: 2.0.3
+  resolution: "vuex-composition-helpers@npm:2.0.3"
   peerDependencies:
-    vue: ^2.7.0
-  checksum: 10c0/0039b6d903c6d6392a03c7fece70155cb368d4e098fb132fd11f4828d7456bc2ec6215a07881265d5eed86aed0dfad8a5b5e6c004083c4d10f5fedf303f92c78
+    vue: ">= 3.0.5"
+    vuex: ">= 4.0.0"
+  checksum: 10c0/34d4805ea9ad8a70429b60de8fa5e72d534d3f823ccda76625bde67713d0ef9ba6fabaf7d5c9da094fe1d73cc193b5de0975d7fea232d299271e87817f3bc908
   languageName: node
   linkType: hard
 
@@ -21816,21 +21817,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"yaml@npm:^2.2.2":
+"yaml@npm:^2.2.2, yaml@npm:^2.3.1, yaml@npm:^2.3.4":
   version: 2.5.1
   resolution: "yaml@npm:2.5.1"
   bin:
     yaml: bin.mjs
   checksum: 10c0/40fba5682898dbeeb3319e358a968fe886509fab6f58725732a15f8dda3abac509f91e76817c708c9959a15f786f38ff863c1b88062d7c1162c5334a7d09cb4a
-  languageName: node
-  linkType: hard
-
-"yaml@npm:^2.3.1, yaml@npm:^2.3.4":
-  version: 2.5.0
-  resolution: "yaml@npm:2.5.0"
-  bin:
-    yaml: bin.mjs
-  checksum: 10c0/771a1df083c8217cf04ef49f87244ae2dd7d7457094425e793b8f056159f167602ce172aa32d6bca21f787d24ec724aee3cecde938f6643564117bd151452631
   languageName: node
   linkType: hard
 
