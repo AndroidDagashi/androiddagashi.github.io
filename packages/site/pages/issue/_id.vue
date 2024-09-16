@@ -26,35 +26,54 @@
 </template>
 
 <script lang="ts">
-import { createNamespacedHelpers } from 'vuex'
-import type { GHIssue } from 'site-types/GitHubApi'
-import { defineComponent } from 'vue'
+import { defineComponent, computed, onMounted } from 'vue'
+import { useGetters } from 'vuex-composition-helpers'
 import { renderOGPMeta } from '../../utils/ogp'
+import { useNuxtApp } from '#imports'
 import ShareWidgets from '~/components/organisms/ShareWidgets/index.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
 import LinkItem from '~/components/organisms/LinkItem/index.vue'
-
-const { mapGetters: mapIssueGetters } = createNamespacedHelpers('issue')
+import type { IssueGetters } from '~~/store/issue'
 
 export default defineComponent({
   name: 'Issue',
   components: { ShareWidgets, MarkdownText, LinkItem },
+  setup() {
+    const app = useNuxtApp()
+
+    const { currentMilestone } = useGetters<IssueGetters>('issue', [
+      'currentMilestone',
+    ])
+
+    const milestoneTitle = computed(() => currentMilestone.value?.title ?? '')
+    const milestoneDescription = computed(
+      () => currentMilestone.value?.description ?? ''
+    )
+    const issues = computed(() => currentMilestone.value?.issues?.nodes ?? [])
+
+    onMounted(() => {
+      loadScripts(document)
+    })
+
+    return {
+      currentMilestone,
+      milestoneTitle,
+      milestoneDescription,
+      issues,
+      siteTitle: app.$config.title,
+      issueRepository: app.$config.issueRepository,
+      siteDescription: app.$config.description,
+    }
+  },
   async asyncData({ route, store }) {
     await store.dispatch('issue/fetchById', { milestoneId: route.params.id })
-  },
-  data() {
-    return {
-      siteTitle: this.$config.title,
-      issueRepository: this.$config.issueRepository,
-      siteDescription: this.$config.description,
-    }
   },
   head(): Record<string, unknown> {
     const { title, description } = this.currentMilestone ?? {}
 
     let titleDescription = ''
-    if (this.description) {
+    if (description) {
       titleDescription = `: ${description}`
     }
     const newTitle = `${title}${titleDescription} - ${this.siteTitle}`
@@ -69,24 +88,6 @@ export default defineComponent({
         }),
       ],
     }
-  },
-  computed: {
-    ...mapIssueGetters(['currentMilestone']),
-    milestoneId(): string {
-      return this.$route.params.id
-    },
-    milestoneTitle(): string {
-      return this.currentMilestone?.title ?? ''
-    },
-    milestoneDescription(): string {
-      return this.currentMilestone?.description ?? ''
-    },
-    issues(): GHIssue[] {
-      return this.currentMilestone?.issues?.nodes ?? []
-    },
-  },
-  mounted() {
-    loadScripts(document)
   },
 })
 </script>

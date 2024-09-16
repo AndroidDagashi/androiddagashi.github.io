@@ -13,40 +13,51 @@
 </template>
 
 <script lang="ts">
-import { mapActions, mapGetters } from 'vuex'
 import { defineComponent } from 'vue'
+import { useActions, useGetters } from 'vuex-composition-helpers'
 import { renderOGPMeta } from '~/utils/ogp'
 import IssueDigestList from '~/components/organisms/IssueDigestList/index.vue'
+import type { RootGetters } from '~~/store'
 
 export default defineComponent({
   name: 'Index',
   components: {
     IssueDigestList,
   },
-  data() {
+  setup() {
+    const app = useNuxtApp()
+
+    const { digests: milestones, pageInfo } = useGetters<RootGetters>([
+      'digests',
+      'pageInfo',
+    ])
+
+    const { fetchNextDigests } = useActions(['fetchNextDigests'])
+
+    const onLoadNext = async () => {
+      await fetchNextDigests({ cursor: pageInfo.value?.endCursor })
+    }
+
     return {
-      baseUrl: this.$config.baseUrl,
+      baseUrl: app.$config.baseUrl,
+      siteTitle: app.$config.title,
+      siteDescription: app.$config.description,
+      milestones,
+      pageInfo,
+      fetchNextDigests,
+      onLoadNext,
     }
   },
   head(): Record<string, unknown> {
     return {
       meta: [
         ...renderOGPMeta({
-          title: this.title,
-          description: this.description,
+          title: this.siteTitle,
+          description: this.siteDescription,
           url: `${this.baseUrl}${this.$route.fullPath}`,
         }),
       ],
     }
-  },
-  computed: {
-    ...mapGetters({ milestones: 'digests', pageInfo: 'pageInfo' }),
-  },
-  methods: {
-    ...mapActions(['fetchNextDigests']),
-    async onLoadNext(): Promise<void> {
-      await this.fetchNextDigests({ cursor: this.pageInfo.endCursor })
-    },
   },
 })
 </script>

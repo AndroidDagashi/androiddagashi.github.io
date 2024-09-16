@@ -15,7 +15,12 @@ export const state = () => ({
 
 export type RootState = ReturnType<typeof state>
 
-export const getters: GetterTree<RootState, RootState> = {
+export interface RootGetters extends GetterTree<RootState, RootState> {
+  digests: (state: RootState) => GHDigestMilestone[]
+  pageInfo: (state: RootState) => GHPageInfo | null
+}
+
+export const getters: RootGetters = {
   digests: (state) => state.digests,
   pageInfo: (state) => state.pageInfo,
 }

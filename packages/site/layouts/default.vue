@@ -6,25 +6,30 @@
       :title="title"
       :authors="authors"
       :contact="contact"
-      :links="$config.links"
+      :links="links"
     />
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
+import type { LinkInfo, TwitterInfo } from 'site-types/SiteConfig'
+import { useNuxtApp } from '#imports'
 import AppHeader from '~/components/organisms/AppHeader/index.vue'
 import AppFooter from '~/components/organisms/AppFooter/index.vue'
 
 export default defineComponent({
   components: { AppHeader, AppFooter },
-  data() {
+  setup() {
+    const app = useNuxtApp()
+
     return {
-      title: this.$config.title,
-      description: this.$config.description,
-      rssUrl: this.$config.rssUrl,
-      contact: this.$config.contact,
-      authors: this.$config.authors,
+      title: app.$config.title,
+      description: app.$config.description,
+      rssUrl: app.$config.rssUrl,
+      contact: app.$config.contact,
+      authors: app.$config.authors as TwitterInfo[],
+      links: app.$config.links as LinkInfo[],
     }
   },
 })

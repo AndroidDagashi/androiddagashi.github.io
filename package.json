@@ -13,7 +13,8 @@
     "format:eslint": "eslint --fix . --ext .js,.ts,.vue --ignore-path .gitignore",
     "format:prettier": "prettier --write .",
     "format": "yarn format:eslint && yarn format:prettier",
-    "lint": "eslint . --ext .js,.ts,.vue --ignore-path .gitignore"
+    "lint": "eslint . --ext .js,.ts,.vue --ignore-path .gitignore",
+    "postinstall": "patch-package"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "6.21.0",
@@ -23,6 +24,7 @@
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-jest": "28.8.0",
     "eslint-plugin-prettier": "5.2.1",
+    "patch-package": "8.0.0",
     "prettier": "3.3.3",
     "prettier-plugin-tailwindcss": "0.6.6",
     "volar-service-prettier": "0.0.61"

@@ -4,7 +4,9 @@
     "noImplicitAny": false,
     "noUnusedParameters": false,
     "strictNullChecks": true,
-    "baseUrl": ".",
-    "types": ["@types/node", "@nuxt/types"],
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+    ]
   }
 }
