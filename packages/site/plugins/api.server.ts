@@ -1,6 +1,6 @@
 import fs from 'fs'
-import type { Context } from '@nuxt/types'
 import type { ApiClient, Options } from '../data/api'
+import { defineNuxtPlugin } from '#imports'
 
 class ServerApiClient implements ApiClient {
   private readonly options: Options
@@ -15,13 +15,10 @@ class ServerApiClient implements ApiClient {
   }
 }
 
-export default (
-  context: Context,
-  inject: (key: string, value: unknown) => void
-): Promise<void> | void => {
-  const client = new ServerApiClient({ baseURL: context.$config.apiEndpoint })
+export default defineNuxtPlugin((nuxtApp) => {
+  const client = new ServerApiClient({
+    baseURL: nuxtApp.$config.apiEndpoint,
+  })
 
-  context.$api = client
-
-  inject('api', client)
-}
+  nuxtApp.provide('api', client)
+})
