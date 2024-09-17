@@ -126,7 +126,7 @@ export default defineNuxtConfig({
     { src: '~/plugins/api.client.ts', mode: 'client' },
     '~/plugins/markdownit.ts',
     '~/plugins/iconify-icon.ts',
-    { src: '~/plugins/ga.js', ssr: false },
+    { src: '~/plugins/gtag.ts', ssr: false },
     { src: '~/plugins/init.client.ts', mode: 'client' },
   ],
   tailwindcss: {
