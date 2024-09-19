@@ -37,6 +37,7 @@ export default defineNuxtConfig({
   bridge: {
     typescript: true,
     capi: true,
+    meta: true,
     nitro: false,
   },
   target: 'static',

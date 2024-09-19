@@ -2,7 +2,7 @@
   <main class="mx-auto max-w-2xl px-0 pb-12 pt-10 lg:pb-16">
     <h2 class="px-3 font-roboto text-2xl font-semibold">ISSUES</h2>
     <IssueDigestList class="mt-3" :milestones="milestones">
-      <template v-if="pageInfo.hasNextPage" #bottom>
+      <template v-if="pageInfo?.hasNextPage" #bottom>
         <button class="LoadNextButton" @click="onLoadNext">
           <iconify-icon icon="ic:baseline-expand-more" width="24" />
           <span class="sr-only"> 次の記事を読み込む </span>
@@ -13,8 +13,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent, computed } from 'vue'
 import { useActions, useGetters } from 'vuex-composition-helpers'
+import { useHead } from '#imports'
 import { renderOGPMeta } from '~/utils/ogp'
 import IssueDigestList from '~/components/organisms/IssueDigestList/index.vue'
 import type { RootGetters } from '~~/store'
@@ -38,6 +39,19 @@ export default defineComponent({
       await fetchNextDigests({ cursor: pageInfo.value?.endCursor })
     }
 
+    useHead(
+      computed(() => ({
+        title: app.$config.title,
+        meta: [
+          ...renderOGPMeta({
+            title: app.$config.title,
+            description: app.$config.description,
+            url: `${app.$config.baseUrl}${app.$route.fullPath}`,
+          }),
+        ],
+      }))
+    )
+
     return {
       baseUrl: app.$config.baseUrl,
       siteTitle: app.$config.title,
@@ -46,17 +60,6 @@ export default defineComponent({
       pageInfo,
       fetchNextDigests,
       onLoadNext,
-    }
-  },
-  head(): Record<string, unknown> {
-    return {
-      meta: [
-        ...renderOGPMeta({
-          title: this.siteTitle,
-          description: this.siteDescription,
-          url: `${this.baseUrl}${this.$route.fullPath}`,
-        }),
-      ],
     }
   },
 })

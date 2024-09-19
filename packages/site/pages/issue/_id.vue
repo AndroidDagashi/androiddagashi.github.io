@@ -52,9 +52,25 @@ export default defineComponent({
     )
     const issues = computed(() => currentMilestone.value?.issues?.nodes ?? [])
 
-    onMounted(() => {
-      loadScripts(document)
-    })
+    onMounted(() => loadScripts(document))
+
+    useHead(
+      computed(() => {
+        const newTitle = `${milestoneTitle.value}: ${milestoneDescription.value} - ${app.$config.title}`
+
+        return {
+          title: newTitle,
+          meta: [
+            ...renderOGPMeta({
+              title: newTitle,
+              description:
+                milestoneDescription.value || app.$config.description,
+              url: `${app.$config.baseUrl}${app.$route.fullPath}`,
+            }),
+          ],
+        }
+      })
+    )
 
     return {
       currentMilestone,
@@ -68,26 +84,6 @@ export default defineComponent({
   },
   async asyncData({ route, store }) {
     await store.dispatch('issue/fetchById', { milestoneId: route.params.id })
-  },
-  head(): Record<string, unknown> {
-    const { title, description } = this.currentMilestone ?? {}
-
-    let titleDescription = ''
-    if (description) {
-      titleDescription = `: ${description}`
-    }
-    const newTitle = `${title}${titleDescription} - ${this.siteTitle}`
-
-    return {
-      title: newTitle,
-      meta: [
-        ...renderOGPMeta({
-          title: newTitle,
-          description: description || this.siteDescription,
-          url: `${this.$config.baseUrl}${this.$route.fullPath}`,
-        }),
-      ],
-    }
   },
 })
 </script>
