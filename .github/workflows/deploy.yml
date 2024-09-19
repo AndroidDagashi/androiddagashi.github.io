@@ -40,7 +40,7 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           personal_token: ${{ secrets.PUSH_ACCESS_TOKEN }}
-          publish_dir: ./packages/site/dist
+          publish_dir: ./packages/site/.output/public
           publish_branch: master
           force_orphan: true
           user_name: 'AndroidDagashi store staff'

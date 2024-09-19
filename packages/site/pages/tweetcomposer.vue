@@ -84,7 +84,7 @@ export default defineComponent({
       return (
         `一週間の #AndroidDev 開発関連ニュースをお届けする #AndroidDagashi、第${milestoneNumber}回を公開しました！ #Androidjp \n\n` +
         `${summary}\n\n` +
-        `${app.$config.baseUrl}/issue/${milestoneNumber}-9999-99-99`
+        `${app.$config.public.baseUrl}/issue/${milestoneNumber}-9999-99-99`
       )
     }
 
@@ -107,7 +107,7 @@ export default defineComponent({
       tweet,
       isValidTweet,
       tweetLength,
-      baseUrl: app.$config.baseUrl,
+      baseUrl: app.$config.public.baseUrl,
       generateTweet,
       onInput,
     }

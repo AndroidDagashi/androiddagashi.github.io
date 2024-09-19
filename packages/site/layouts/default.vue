@@ -24,12 +24,12 @@ export default defineComponent({
     const app = useNuxtApp()
 
     return {
-      title: app.$config.title,
-      description: app.$config.description,
-      rssUrl: app.$config.rssUrl,
-      contact: app.$config.contact,
-      authors: app.$config.authors as TwitterInfo[],
-      links: app.$config.links as LinkInfo[],
+      title: app.$config.public.title,
+      description: app.$config.public.description,
+      rssUrl: app.$config.public.rssUrl,
+      contact: app.$config.public.contact,
+      authors: app.$config.public.authors as TwitterInfo[],
+      links: app.$config.public.links as LinkInfo[],
     }
   },
 })

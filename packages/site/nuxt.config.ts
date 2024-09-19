@@ -38,12 +38,15 @@ export default defineNuxtConfig({
     typescript: true,
     capi: true,
     meta: true,
-    nitro: false,
+    nitro: true,
+    vite: true,
   },
-  target: 'static',
-  publicRuntimeConfig: {
-    ...siteConfig,
-    apiEndpoint: baseUrl,
+  ssr: true,
+  runtimeConfig: {
+    public: {
+      ...siteConfig,
+      apiEndpoint: baseUrl,
+    },
   },
   head: {
     title: siteConfig.title,
@@ -115,10 +118,15 @@ export default defineNuxtConfig({
       'vuex-composition-helpers',
     ],
   },
-  generate: {
-    fallback: '404.html',
-    // @ts-ignore
-    routes: issueIds,
+  // generate: {
+  //   fallback: '404.html',
+  //   // @ts-ignore
+  //   // routes: issueIds,
+  // },
+  nitro: {
+    prerender: {
+      routes: issueIds,
+    },
   },
   modules: [],
   buildModules: ['@nuxtjs/tailwindcss'],
