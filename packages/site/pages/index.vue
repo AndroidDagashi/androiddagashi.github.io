@@ -41,21 +41,21 @@ export default defineComponent({
 
     useHead(
       computed(() => ({
-        title: app.$config.title,
+        title: app.$config.public.title,
         meta: [
           ...renderOGPMeta({
-            title: app.$config.title,
-            description: app.$config.description,
-            url: `${app.$config.baseUrl}${app.$route.fullPath}`,
+            title: app.$config.public.title,
+            description: app.$config.public.description,
+            url: `${app.$config.public.baseUrl}${app.$route.fullPath}`,
           }),
         ],
       }))
     )
 
     return {
-      baseUrl: app.$config.baseUrl,
-      siteTitle: app.$config.title,
-      siteDescription: app.$config.description,
+      baseUrl: app.$config.public.baseUrl,
+      siteTitle: app.$config.public.title,
+      siteDescription: app.$config.public.description,
       milestones,
       pageInfo,
       fetchNextDigests,

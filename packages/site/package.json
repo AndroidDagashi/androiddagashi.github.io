@@ -4,10 +4,10 @@
   "license": "MIT",
   "scripts": {
     "nuxt:prepare": "nuxi prepare",
-    "dev": "NODE_ENV=development nuxt2",
-    "build": "NODE_ENV=production nuxt2 build",
-    "start": "NODE_ENV=production nuxt2 start",
-    "generate": "NODE_ENV=production nuxt2 generate"
+    "dev": "NODE_ENV=development nuxi dev",
+    "build": "NODE_ENV=production nuxi build",
+    "start": "NODE_ENV=production nuxi start",
+    "generate": "NODE_ENV=production nuxi generate"
   },
   "dependencies": {
     "@tailwindcss/forms": "0.5.9",

@@ -56,7 +56,7 @@ export default defineComponent({
 
     useHead(
       computed(() => {
-        const newTitle = `${milestoneTitle.value}: ${milestoneDescription.value} - ${app.$config.title}`
+        const newTitle = `${milestoneTitle.value}: ${milestoneDescription.value} - ${app.$config.public.title}`
 
         return {
           title: newTitle,
@@ -64,8 +64,8 @@ export default defineComponent({
             ...renderOGPMeta({
               title: newTitle,
               description:
-                milestoneDescription.value || app.$config.description,
-              url: `${app.$config.baseUrl}${app.$route.fullPath}`,
+                milestoneDescription.value || app.$config.public.description,
+              url: `${app.$config.public.baseUrl}${app.$route.fullPath}`,
             }),
           ],
         }
@@ -77,9 +77,9 @@ export default defineComponent({
       milestoneTitle,
       milestoneDescription,
       issues,
-      siteTitle: app.$config.title,
-      issueRepository: app.$config.issueRepository,
-      siteDescription: app.$config.description,
+      siteTitle: app.$config.public.title,
+      issueRepository: app.$config.public.issueRepository,
+      siteDescription: app.$config.public.description,
     }
   },
   async asyncData({ route, store }) {

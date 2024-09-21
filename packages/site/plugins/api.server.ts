@@ -17,7 +17,7 @@ class ServerApiClient implements ApiClient {
 
 export default defineNuxtPlugin((nuxtApp) => {
   const client = new ServerApiClient({
-    baseURL: nuxtApp.$config.apiEndpoint,
+    baseURL: nuxtApp.$config.public.apiEndpoint,
   })
 
   nuxtApp.provide('api', client)
