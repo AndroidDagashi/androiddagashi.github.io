@@ -39,7 +39,7 @@ export default defineNuxtConfig({
     capi: true,
     meta: true,
     nitro: true,
-    vite: true,
+    vite: false,
   },
   ssr: true,
   runtimeConfig: {
@@ -128,8 +128,7 @@ export default defineNuxtConfig({
       routes: issueIds,
     },
   },
-  modules: [],
-  buildModules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss'],
   plugins: [
     { src: '~/plugins/api.server.ts', mode: 'server' },
     { src: '~/plugins/api.client.ts', mode: 'client' },
