@@ -1,0 +1,291 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTY5Nzg2OQ==",
+  "number": 130,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/130",
+  "title": "130 2020-07-26",
+  "description": "GitHubでJetpackの開発が行われるように、11 Weeks of Android: Jetpack、Kotlin/Nativeがメモリ管理方法の変更を予告、Android StudioチームによるAMA、など",
+  "closedAt": "2020-07-26T10:43:48Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOJ6q2GA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-7POJ66izg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1478",
+        "title": "GitHubでJetpackの開発が行われるように",
+        "body": "https://medium.com/androiddevelopers/introducing-jetpack-on-github-c2c9f12e62a9\r\n\r\nまだ始まったばかりですが、Jetpackへのコントリビュートの敷居が下がりそうな取り組みです。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1479",
+        "title": "11 Weeks of Android: Jetpack",
+        "body": "https://android-developers.googleblog.com/2020/07/11-weeks-of-android-jetpack.html\r\n\r\n#11WeeksOfAndroid 6週目はJetpackについてです。Hilt, Paging3などのコンテンツが公開されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1480",
+        "title": "Android StudioチームによるAMA",
+        "body": "https://www.reddit.com/r/androiddev/comments/hwiffd/were_on_the_engineering_team_for_android_studio/\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1481",
+        "title": "Kotlin/Nativeがメモリ管理方法の変更を予告",
+        "body": "https://blog.jetbrains.com/kotlin/2020/07/kotlin-native-memory-management-roadmap/\r\n\r\nKotlin/Native向けkotlinx.coroutinesのマルチスレッド対応で現状のメモリ管理モデルの限界が見えてきたようです。\r\n新しいモデルではスレッド間でのオブジェクトの共有が容易になり、またパフォーマンスの向上やメモリリークの発生しない並列処理基盤を提供できるそうです。\r\n\r\n大規模な改修になるので時間はかかりそうですが、リリースがたのしみです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJ5LkpQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJ5Ll7A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/hvorvh/kotlinnative_memory_management_roadmap/",
+              "publishedAt": "2020-07-26T05:35:59Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "touchlabのKevin Galligan氏による所感と解説\r\n\r\nhttps://dev.to/touchlab/kotlin-native-concurrency-changes-p3e",
+              "publishedAt": "2020-07-26T05:41:27Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1482",
+        "title": "React Native Team Principles",
+        "body": "https://reactnative.dev/blog/2020/07/17/react-native-principles\r\n\r\nReactNativeの開発チームがどのような原則のもと開発方針を決定しているか、という話。\r\n各プラットフォームのユーザが期待する挙動をすること、大規模なアプリ開発に耐えうること、開発者の体験、などなど",
+        "labels": {
+          "nodes": [
+            {
+              "name": "React Native",
+              "description": "",
+              "color": "38D9FA"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1483",
+        "title": "詳細CoroutineContext",
+        "body": "https://medium.com/@star_zero/%E8%A9%B3%E7%B4%B0coroutinecontext-c9a055bdd52c",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1484",
+        "title": "WebViewでintentスキームを扱う実装の脆弱性",
+        "body": "https://www.m3tech.blog/entry/android-webview-intent-scheme",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1485",
+        "title": "Material Components 1.3.0-alpha02",
+        "body": "https://github.com/material-components/material-components-android/releases/tag/1.3.0-alpha02\r\n\r\nMaterialTimePickerが実装されました。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1487",
+        "title": "Okio 2.7のパフォーマンス向上について",
+        "body": "https://publicobject.com/2020/07/26/optimizing-new-byte/\r\nhttps://github.com/square/okio/pull/717\r\n\r\n異なるスレッド間の同期周り(synchronized)を見直してパフォーマンスを向上した話です。実際のPRを見るのも良さそうです。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1488",
+        "title": "Android Studio 4.2 Canary 5",
+        "body": "https://androidstudio.googleblog.com/2020/07/android-studio-42-canary-5-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1489",
+        "title": "Android Studio 4.1 Beta 5",
+        "body": "https://androidstudio.googleblog.com/2020/07/android-studio-41-beta-5-available.html\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
