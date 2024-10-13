@@ -1,0 +1,211 @@
+{
+  "id": "MI_kwDOB4jhdM4AiyWK",
+  "number": 266,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/266",
+  "title": "266 2023-03-12",
+  "closedAt": "2023-03-12T10:37:32Z",
+  "description": "依存関係の自動更新、Google I/O 2023の開催、Android 14 Developer Preview 2、Kotlin 1.8.20-RC、など",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOYIzhJw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OYJPauA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2748",
+        "title": "依存関係の自動更新",
+        "body": "https://medium.com/androiddevelopers/automating-dependency-updates-in-a-compose-project-168ef5e89ac5\r\n\r\n依存関係を自動で更新する方法についてRenovateを中心に紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2749",
+        "title": "Android 14 Developer Preview 2",
+        "body": "https://android-developers.googleblog.com/2023/03/android-14-developer-preview-2.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2750",
+        "title": "Kotlinのデータクラスのサイズを最適化する",
+        "body": "https://github.com/facebookincubator/dataclassgenerate\r\n\r\n状況に合わせて、hashCode、toStringメソッドなどの自動生成を抑制することで、apkサイズへの影響を少なくすることが出来ます。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2751",
+        "title": "Google I/O 2023の開催",
+        "body": "https://android-developers.googleblog.com/2023/03/lets-go-its-google-io-2023.html\r\n\r\n5/10に開催されるようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOV1Q77g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOV1Q77g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/11lfzng/lets_go_its_google_io_2023/\r\n\r\nオフラインイベントがないのは残念ですね",
+              "publishedAt": "2023-03-12T09:29:37Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2752",
+        "title": "Android Studio - Giraffe | 2022.3.1 Canary 8",
+        "body": "https://androidstudio.googleblog.com/2023/03/android-studio-giraffe-canary-8-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2753",
+        "title": "2023年3月8日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel?hl=en#march_8_2023\r\n\r\nRecyclerView の中で Jetpack Compose を使っている場合は、マイグレーションが必要かもしれません",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOV1RBxA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOV1RBxA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake 氏によるリリースまとめはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">In addition to today&#39;s release of Android 14 Dev Preview 2, <a href=\"https://twitter.com/hashtag/JetpackReleaseNotes?src=hash&amp;ref_src=twsrc%5Etfw\">#JetpackReleaseNotes</a> also include the release of Lifecycle 2.6.0, RecyclerView 1.3.0, plus rc01 releases for Compose 1.4, Activity, Core, DrawerLayout, Emoji2, and ProfileInstaller!<a href=\"https://t.co/HudJXSsOOg\">https://t.co/HudJXSsOOg</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1633626643913916418?ref_src=twsrc%5Etfw\">March 9, 2023</a></blockquote>",
+              "publishedAt": "2023-03-12T09:36:12Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2754",
+        "title": "スギサポwalkへのJetPack Compose導入の取り組み",
+        "body": "https://tech.medpeer.co.jp/entry/2023/03/07/100000\r\n\r\nメドピアのスギサポwalkアプリへのJetPack Compose導入事例です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2755",
+        "title": "Kotlin 1.8.20-RC",
+        "body": "https://kotlinlang.org/docs/whatsnew-eap.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

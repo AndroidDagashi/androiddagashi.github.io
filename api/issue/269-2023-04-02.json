@@ -1,0 +1,247 @@
+{
+  "id": "MI_kwDOB4jhdM4AjH-1",
+  "number": 269,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/269",
+  "title": "269 2023-04-02",
+  "closedAt": "2023-04-02T10:52:31Z",
+  "description": "Android Studio Flamingo RC 1, Kotlin 1.8.20-RC2, Credential Manager APIを使ったPasskey認証, メルカリアプリでのJetpack Compose採用事例, など",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOYmVxzw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfOYmaXiQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2772",
+        "title": "Credential Manager APIを使ったPasskey認証",
+        "body": "https://medium.com/androiddevelopers/bringing-seamless-authentication-to-your-apps-using-credential-manager-api-b3f0d09e0093\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2773",
+        "title": "Eight Androidアプリにおける状態管理の見直し",
+        "body": "https://buildersbox.corp-sansan.com/entry/2023/03/30/110000",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2774",
+        "title": "STORES 予約 における予約者さま向けアプリリニューアルの裏側 Androidアプリ編",
+        "body": "https://product.st.inc/entry/2023/03/31/110652\r\n\r\nAndroid Developers のアーキテクチャガイドを参考に構成したようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOWQGJqg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOWQGJqg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "(ちなみに、Android Developers の[アーキテクチャガイド](https://developer.android.com/topic/architecture)では「MVVM」という言葉は使ってないので注意が必要です)",
+              "publishedAt": "2023-04-02T09:05:52Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2775",
+        "title": "メルカリアプリでのJetpack Compose採用事例",
+        "body": "https://android-developers.googleblog.com/2023/03/mercari-reduces-lines-of-code-by-rebuilding-with-jetpack-compose.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2776",
+        "title": "3/23リリースしたJetpack Composeの変更点",
+        "body": "https://android-developers.googleblog.com/2023/03/whats-new-in-jetpack-compose-march-23-release.html\r\n\r\nAccompanistライブラリから、Pager系のライブラリが移植されるなどの変更点があります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2777",
+        "title": "Android開発にまつわる基本的な疑問 8選 ",
+        "body": "https://zenn.dev/ataka/articles/4f0d866cdd41eb",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2778",
+        "title": "Interfaceとその実装クラスの命名に関する議論",
+        "body": "https://www.reddit.com/r/androiddev/comments/127excb/concrete_implementation_vs_interface_naming/\r\n\r\n`interface UserRepository` で `class UserRepositoryImpl : UserRepository` にするか、あるいは `interface IUserRepository` で `class UserRepository : IUserRepositry` にするか、とかそんな話題です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOWQGUrQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOWQGUrQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "実装が基本的に一つしかない場合は\r\n\r\n- そもそも interface がいるのか\r\n- 必要なら実装クラスは `Default` prefix つける\r\n\r\n的なやりかたもあります",
+              "publishedAt": "2023-04-02T09:17:56Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2779",
+        "title": "Android Studio - Flamingo | 2022.2.1 RC 1",
+        "body": "https://androidstudio.googleblog.com/2023/03/android-studio-flamingo-rc-1-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2780",
+        "title": "Android Studio - Giraffe | 2022.3.1 Canary 11",
+        "body": "https://androidstudio.googleblog.com/2023/03/android-studio-giraffe-canary-11-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2781",
+        "title": "What's new in Kotlin 1.8.20-RC2",
+        "body": "https://kotlinlang.org/docs/whatsnew-eap.html#0",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
