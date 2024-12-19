@@ -1,0 +1,173 @@
+{
+  "id": "MI_kwDOB4jhdM4AtBcl",
+  "number": 351,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/351",
+  "title": "351 2024-11-03",
+  "closedAt": "2024-11-03T10:21:54Z",
+  "description": "Android SDKのリリース頻度が変更、Android StudioのGeminiが開発全体をサポート、Kotlinの型システムの美しさ、など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOnNE6tQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvOnNPN_A==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3312",
+        "title": "Android SDKのリリース頻度が変更",
+        "body": "https://android-developers.googleblog.com/2024/10/android-sdk-release-update.html\r\n\r\nAndroid SDKのリリース頻度が変更され、2025年はQ2とQ4にリリースが計画されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 3,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOkjps2w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOkjuPlA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "URLは https://android-developers.googleblog.com/2024/10/android-sdk-release-update.html が正しいでしょうか",
+              "publishedAt": "2024-11-03T05:24:59Z",
+              "isMinimized": true,
+              "minimizedReason": "RESOLVED",
+              "author": {
+                "login": "takke",
+                "url": "https://github.com/takke",
+                "avatarUrl": "https://private-avatars.githubusercontent.com/u/73930?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTAwNDAsIm5iZiI6MTczNDY0ODg0MCwicGF0aCI6Ii91LzczOTMwIn0.1nObam9G6dCBVfotthgxR9aVE90rK1_oanAscuksJcg&v=4"
+              }
+            },
+            {
+              "body": "@takke ありがとうございます、差し替えました 🙇 ",
+              "publishedAt": "2024-11-03T10:26:05Z",
+              "isMinimized": true,
+              "minimizedReason": "RESOLVED",
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://private-avatars.githubusercontent.com/u/654889?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTA4MjAsIm5iZiI6MTczNDY0OTYyMCwicGF0aCI6Ii91LzY1NDg4OSJ9.gJm_BgKVD-5XhHcq8-boDMbd8OFRtAJ7S9M6hNNkFB4&v=4"
+              }
+            },
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/1ggjqa3/android_developers_blog_more_frequent_android_sdk/",
+              "publishedAt": "2024-11-03T10:33:22Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://private-avatars.githubusercontent.com/u/654889?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTEiLCJleHAiOjE3MzQ2NTA4MjAsIm5iZiI6MTczNDY0OTYyMCwicGF0aCI6Ii91LzY1NDg4OSJ9.gJm_BgKVD-5XhHcq8-boDMbd8OFRtAJ7S9M6hNNkFB4&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3313",
+        "title": "Android StudioのGeminiが開発全体をサポート",
+        "body": "https://android-developers.googleblog.com/2024/10/whats-new-in-gemini-in-android.html\r\n\r\nGeminiを使ってコード記述、リファクタリング、テストコード生成など、開発全体をサポートするようになります。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3314",
+        "title": "Kotlinの型システムの美しさ",
+        "body": "https://proandroiddev.com/the-beauty-of-kotlin-type-system-25d0a187b130\r\n\r\nNothing型、Any型などメリットについて解説をしています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3315",
+        "title": "Jetpack Compose が Text の Autosize をサポート",
+        "body": "https://qiita.com/Nabe1216/items/8cbc9529116288d4784a\r\nhttps://issuetracker.google.com/issues/139320827\r\n\r\n1.8.0-alpha05 から入ったようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3316",
+        "title": "Compose-driven architectureとは？  ",
+        "body": "https://zenn.dev/rockname/articles/2a7db5ac4bb516\r\n\r\nUI 以外でも Composable 関数をつかっていくアプリアーキテクチャについて",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
