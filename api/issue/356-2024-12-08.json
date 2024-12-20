@@ -1,0 +1,139 @@
+{
+  "id": "MI_kwDOB4jhdM4Atr62",
+  "number": 356,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/356",
+  "title": "356 2024-12-08",
+  "closedAt": "2024-12-08T11:18:33Z",
+  "description": "DevFest Tokyo 2024, Google デベロッパー プログラムにプレミアム会員が追加, WebViewのUserAgentへの変更, data classにlambdaをもたせるべきか, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOomxEmA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afOom2EWg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3336",
+        "title": "WebViewのUserAgentへの変更",
+        "body": "https://android-developers.googleblog.com/2024/12/user-agent-reduction-on-android-webview.html\r\n\r\nChrome 107でのUserAgentの変更と同様に、Android 16からUserAgentに変更が入るようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3337",
+        "title": "Compose Previewの仕組みを利用したハック",
+        "body": "https://qiita.com/RyuNen344/items/a1dfb12e6519a860447a\r\n\r\nComposable PreviewがPreviewActivityというActivityを利用していることを利用したPreviewで様々なことを行うハックを紹介されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3338",
+        "title": "Google デベロッパー プログラムにプレミアム会員が追加",
+        "body": "https://developers.googleblog.com/ja/introducing-the-google-developer-program-premium/\r\n\r\n現状、プレミアム会員の特典はGoogle Cloud クレジットなどクラウド向けの特典が多いようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3339",
+        "title": "DevFest Tokyo 2024",
+        "body": "https://gdg-tokyo.connpass.com/event/335192/\r\n2024/11/30にDevFest Tokyo 2024が行われ、資料がConnpassにアップされています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3340",
+        "title": "data classにlambdaを持たせるべきではないという話",
+        "body": "https://marcellogalhardo.dev/posts/function-properties-in-data-classes-are-code-smells/\r\n意図せずequalsがfalseを返してしまうためということでした。Composeを利用する場合はstrong skipping modeでlambdaを保持してくれるため問題ないという話も補足にありました。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3341",
+        "title": "Kotlin2.1.0で追加されたGuard conditions",
+        "body": "https://tomsabel.com/kotlin-2-1-0-smarter-when-with-guard-conditions-4541160d67a0\r\nhttps://kotlinlang.org/docs/control-flow.html#guard-conditions-in-when-expressions\r\n\r\n実験的な機能としてGuard conditionsが導入されました。whenの評価式をより柔軟に書くことが出来ます\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
