@@ -1,0 +1,292 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDgwOTE4Mg==",
+  "number": 93,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/93",
+  "title": "93 2019-11-10",
+  "description": "Android Studio 3.5.2, 3.6 Beta3, 4.0 Canary2, AsynctaskがAndroid11で非推奨に, OkHttpクライアントの初期化を遅らせるテクニック, など",
+  "closedAt": "2019-11-10T10:21:41Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOHtm7Pw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-7POHwLrZQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1106",
+        "title": "Android Studio 3.5.2",
+        "body": "https://androidstudio.googleblog.com/2019/11/android-studio-352-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/drlo7z/android_studio_352_available/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1107",
+        "title": "Envoy Mobile v0.2がリリース",
+        "body": "https://eng.lyft.com/envoy-mobile-v0-2-ready-for-donuts-a8aa852a900b\r\n\r\nLyftアプリのpre-releaseバージョンでテストされてるようです。次のv0.3ではproduction-readyになる予定。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1108",
+        "title": "Fragment.setRetainInstanceがdeprecatedに",
+        "body": "CL: https://android-review.googlesource.com/c/platform/frameworks/support/+/1159084\r\n\r\nreddit: https://www.reddit.com/r/androiddev/comments/dsiiy5/fragmentsetretaininstance_being_deprecated/\r\n\r\nCLのコメントにありますが、今後はViewModelを使うほうが良いですね。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1109",
+        "title": "Gradle 6.0",
+        "body": "https://docs.gradle.org/6.0/release-notes.html\r\nhttps://github.com/gradle/gradle/releases/tag/v6.0.0\r\n\r\nGradleのメジャーリリースが出ました。\r\n個人的に注目している新機能は `Faster incremental Java and Groovy compilation`です。これが入ることで、ビルドが早くなることが期待出来ます。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIOdQ_A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIOdQ_A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "再コンパイルが必要なクラスをかしこく見つけるようですね。期待です。",
+              "publishedAt": "2019-11-08T23:27:32Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1110",
+        "title": "Android Studio 3.6 Beta 3",
+        "body": "https://androidstudio.googleblog.com/2019/11/android-studio-36-beta-3-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/dskblo/android_studio_36_beta_3_available/\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1111",
+        "title": "Kotlin 1.3.60 EAP 3",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.3.60-eap-143\r\n\r\n今までの流れからすると、1.3.60の正式リリースもそろそろです（だいたいEAPが3回出たあとに正式リリースされている)",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1112",
+        "title": "Android Studio 4.0 Canary 2",
+        "body": "https://androidstudio.googleblog.com/2019/11/android-studio-40-canary-2-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/dt1s7w/android_studio_40_canary_2_available/\r\nhttps://developer.android.com/studio/preview/features/#4.0-live-layout-inspector\r\n\r\nDev Summitの動画でも話していた、Live Layout Inspectorが実装されました。3DでViewの階層構造を見ることも出来ます。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1113",
+        "title": "AsyncTaskがAndroid11でdeprecated",
+        "body": "https://www.xda-developers.com/asynctask-deprecate-android-11/\r\nhttps://android-review.googlesource.com/c/platform/frameworks/base/+/1156409\r\n\r\n代わりに java.util.concurrent か coroutines を使うようにコメントに書かれてますね。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIOdHVg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIOdHVg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Redditのスレはこちら。「ちくしょう。この前RxJavaをAsyncTaskで置き換えたばかりだよ」というネタかどうか分からない投稿がトップにありました……。\r\nhttps://www.reddit.com/r/androiddev/comments/dt2kbh/google_is_deprecating_androids_asynctask_api_in/",
+              "publishedAt": "2019-11-08T23:17:40Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1114",
+        "title": "マルチモジュールでDaggerを使うベストプラクティス",
+        "body": "https://developer.android.com/training/dependency-injection/dagger-multi-module\r\n\r\nいつからか分からないのですがAndroid DevelopersにDagger用のページができていたようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1115",
+        "title": "OkHttpクライアントの初期化を遅らせるテクニック",
+        "body": "https://www.zacsweers.dev/dagger-party-tricks-deferred-okhttp-init/\r\n\r\nOkHttpクライアントの初期化はデバイスによっては100msecかかるので、それを遅延させることでアプリケーションの起動を速くするということのようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1116",
+        "title": "Android 10で導入されたアクティビティ認識のパーミッション",
+        "body": "https://android-developers.googleblog.com/2019/11/privacy-protections-for-physical.html\r\n\r\nAndroid 10から、ユーザーのアクティビティを検知するためのランタイムパーミッションが導入されましたが、今年の12月からパーミッション対応をしていないアプリはデータが取れなくなるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
