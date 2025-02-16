@@ -1,0 +1,168 @@
+{
+  "id": "MI_kwDOB4jhdM4AkVBJ",
+  "number": 280,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/280",
+  "title": "280 2023-06-18",
+  "closedAt": "2023-06-18T10:45:47Z",
+  "description": "Jetpack Compose での Accessibility とそのテスト方法, Zipline 1.0, Compose Navigationで重複遷移防止, Now in Android #85, I/O Extended が開催, など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOaQdzcw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOaQlztQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2852",
+        "title": "I/O Extended が日本各地で開催",
+        "body": "https://developers-jp.googleblog.com/2023/06/google-io-extended-2023.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2855",
+        "title": "Zipline 1.0",
+        "body": "https://code.cash.app/zipline\r\n\r\nアプリのアップデート無しでコードをデプロイ出来るライブラリのZiplineが1.0になりました。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2853",
+        "title": "Now in Android #85",
+        "body": "https://medium.com/androiddevelopers/now-in-android-85-8bdb9ce34428",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2854",
+        "title": "どうやってCompose Navigationで重複遷移しないようにするか",
+        "body": "GooglerのIan Lakeさんが `currentState.isAtLeast(Lifecycle.State.RESUMED)` を使ったアプローチを書いています。\r\nhttps://stackoverflow.com/a/76386604/4339442",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2856",
+        "title": "【Flutter】Widget extensions vs Class constructorについてまとめてみた",
+        "body": "https://zenn.dev/3ta/articles/b0b1289d637ba7\r\n\r\nDart の extension method を利用して、 SwiftUI の modifier のような書き方を実現するやり方と、そのメリット/デメリットについて ",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2857",
+        "title": "Jetpack Compose での Accessibility とそのテスト方法",
+        "body": "https://proandroiddev.com/accessibility-testing-in-jetpack-compose-2ecdcc392c52",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2858",
+        "title": "Android Automotive OS完全入門！",
+        "body": "https://zenn.dev/turing_motors/articles/9c18325ffdfb57",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
