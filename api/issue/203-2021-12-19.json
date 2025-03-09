@@ -1,0 +1,264 @@
+{
+  "id": "MI_kwDOB4jhdM4Ach8w",
+  "number": 203,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/203",
+  "title": "203 2021-12-19",
+  "description": "公式アプリアーキテクチャガイド刷新, Kotlin 1.6.10, Jetpack Glance Alpha, B/43アプリの技術スタック, Apollo Kotlin, など",
+  "closedAt": "2021-12-19T10:40:35Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOQGsC7g==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfOQJ1XwA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2214",
+        "title": "Chrome Androidの起動時間を短縮",
+        "body": "https://developers-jp.googleblog.com/2021/12/chrome-android.html\r\n\r\nIsolated Splitsを使い、メモリ使用量、起動時間を短縮などを短縮した話です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2215",
+        "title": "Android Studio - Chipmunk | 2021.2.1 Canary 6",
+        "body": "https://androidstudio.googleblog.com/2021/12/android-studio-chipmunk-canary-6-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2216",
+        "title": "2021年12月15日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#december_15_2021\r\n\r\nRoom 2.4.0 など。\r\nCompose 系のライブラリも 1.1.0-rc01 が来ています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOO3ArKg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOO3ArKg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake 氏の紹介ツイートはこちら\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">It&#39;s the holiday season and that comes with gifts from Jetpack in the form of stable release of Room 2.4.0 and Car App 1.1.0! There&#39;s also new Release Candidates for Compose, Navigation, Hilt Navigation Compose, Preference, SlidingPaneLayout, &amp; Window.<a href=\"https://t.co/FTQdfL5Kgo\">https://t.co/FTQdfL5Kgo</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1471255581650403329?ref_src=twsrc%5Etfw\">December 15, 2021</a></blockquote> ",
+              "publishedAt": "2021-12-18T14:01:46Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2217",
+        "title": "公式のアプリアーキテクチャガイドが刷新される",
+        "body": "https://android-developers.googleblog.com/2021/12/rebuilding-our-guide-to-app-architecture.html\r\n\r\nhttps://developer.android.com/jetpack/guide?hl=en\r\n\r\nUI/Domain/Dataなど、各レイヤーに分けて解説されています。\r\nKotlin Coroutines や Jetpack Compose も考慮した内容となっています。\r\n\r\nちなみに日本語版はまだリリースされていないようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOO3Ay8A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOO3Ay8A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/rgdamo/rebuilding_our_guide_to_app_architecture/",
+              "publishedAt": "2021-12-18T14:17:45Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2218",
+        "title": "B/43 Android アプリの技術スタック",
+        "body": "https://blog.smartbank.co.jp/entry/2021/12/17/090000\r\n\r\nフル Jetpack Compose だそうです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2219",
+        "title": "Kotlin 1.6.10",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.6.10",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2220",
+        "title": "AsyncTask はなぜ非推奨になった？",
+        "body": "https://www.reddit.com/r/androiddev/comments/rgse9u/why_was_asynctask_deprecated/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2221",
+        "title": "Jetpack DragAndDropの紹介",
+        "body": "https://medium.com/androiddevelopers/simplifying-drag-and-drop-3713d6ef526e",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2222",
+        "title": "Jetpack Glance Alpha",
+        "body": "https://android-developers.googleblog.com/2021/12/announcing-jetpack-glance-alpha-for-app.html\r\n\r\nウィジェットをComposeで作成するためのライブラリがAlphaリリースされました",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2223",
+        "title": "Apollo Kotlin",
+        "body": "https://www.apollographql.com/blog/announcement/introducing-apollo-kotlin/\r\n\r\n今まで Apollo Android という名称で提供されていた GraphQL APIクライアントライブラリです。\r\n100% Kotlinになり、Kotlin Multiplatform 対応したこともあり Apollo Kotlin にリネームされました",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
