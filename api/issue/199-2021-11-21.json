@@ -1,0 +1,232 @@
+{
+  "id": "MI_kwDOB4jhdM4AcMCZ",
+  "number": 199,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/199",
+  "title": "199 2021-11-21",
+  "description": "Kotlin 1.6.0, 11/17のAndroidXリリース, Android Dev Summit 2021で発表されたAppWidgetの進化まとめ, Kotlin Multiplatform ProjectのCIビルド時間を短縮, など",
+  "closedAt": "2021-11-21T10:19:03Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOPyNFaw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OPyQ0Iw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2181",
+        "title": "Kotlin 1.6.0",
+        "body": "https://blog.jetbrains.com/kotlin/2021/11/kotlin-1-6-0-is-released/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOOhoOhw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOOhoOhw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Kotlin/Native 周りでは、待望の新しいメモリモデルのプレビュー版を使うことができるようになりました",
+              "publishedAt": "2021-11-21T09:55:32Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2182",
+        "title": "2021年11月17日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#november_17_2021\r\n\r\nAppCompat 1.4.0、Fragment 1.4.0、Emoji2 1.0.0がStableリリースされています。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOOhl4pQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOOhnWkA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏による紹介ツイートはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Jetpack releases today include the stable releases of AppCompat 1.4.0, Emoji2 1.0.0, Fragment 1.4.0, Paging 3.1.0, and a bug fix release in WorkManager 2.7.1. In addition, Hilt Navigation Compose 1.0.0-beta01 and Preference 1.2.0-beta01 are out!<a href=\"https://t.co/Jnn93JrZFp\">https://t.co/Jnn93JrZFp</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1461054808102621185?ref_src=twsrc%5Etfw\">November 17, 2021</a></blockquote>",
+              "publishedAt": "2021-11-21T03:09:59Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "STAR-ZERO",
+                "url": "https://github.com/STAR-ZERO",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/376376?u=c9428e145dea238d8dec3e06ef275be6b59a77b8&v=4"
+              }
+            },
+            {
+              "body": "https://developer.android.com/jetpack/androidx/releases/room#kts\r\n\r\nRoom の kts 版設定ガイドを見ると ksp への言及がありました。\r\nだんだん露出しはじめたようです",
+              "publishedAt": "2021-11-21T08:01:41Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2183",
+        "title": "Android Dev Summit 2021で発表されたAppWidgetの進化まとめ",
+        "body": "https://blog.kyash.co/entry/2021/11/19/125319",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2184",
+        "title": "「minne」はなぜ「MVVM＋UseCase＋Repository」なのか",
+        "body": "https://logmi.jp/tech/articles/325433\r\n\r\n過去の勉強会の書き起こしです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2185",
+        "title": "最新の絵文字の対応",
+        "body": "https://medium.com/androiddevelopers/support-modern-emoji-99f6dea8e57f\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2186",
+        "title": "Android版Chromeアプリで isolatedSplits を利用した最適化の結果",
+        "body": "https://blog.chromium.org/2021/11/chrome-android-faster-launch-times-less-memory.html\r\n\r\nChrome M89は Android O の新機能である [`isolatedSplits`](https://developer.android.com/reference/android/R.attr#isolatedSplits) を有効にして[リリースされました](https://blog.chromium.org/2021/03/advanced-memory-management-and-more.html)。\r\n\r\n半年がたち、データが揃ってきたということでその結果どれくらい起動時間やメモリ使用量が改善したのか述べられています\r\n\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2187",
+        "title": "DIフレームワークって本当に必要？",
+        "body": "https://www.reddit.com/r/androiddev/comments/qtfezl/do_we_really_need_to_use_dependency_injection/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2188",
+        "title": "Kotlin Multiplatform ProjectのCIビルド時間を短縮する",
+        "body": "https://proandroiddev.com/optimising-ci-build-times-of-a-kotlin-multiplatform-project-2a430055f383\r\n\r\nビルドを並列化し、mac や linux など複数のホストOSを活用しましょう、という話。\r\nmacOSでビルドするのが一番簡単ですが、それだと直列で時間もコストもかかるよね、と。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "CI",
+              "description": "Continuous Integration",
+              "color": "006b75"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

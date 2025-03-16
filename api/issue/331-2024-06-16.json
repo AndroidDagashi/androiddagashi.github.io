@@ -1,0 +1,173 @@
+{
+  "id": "MI_kwDOB4jhdM4AqkuO",
+  "number": 331,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/331",
+  "title": "331 2024-06-16",
+  "closedAt": "2024-06-16T10:48:13Z",
+  "description": "Composeサンプルを様々なForm Factorに対応、Now in Android 107、IntelliJ ベースの IDE 向け GitHub プラグインに脆弱性、など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOjGPzVw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afOjGh5bQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3199",
+        "title": "Composeサンプルを様々なForm Factorに対応",
+        "body": "https://medium.com/androiddevelopers/building-jetcaster-on-all-form-factors-8e3418eeac13\r\n\r\nComposeサンプルのJetcasterがTV、Wear、Widgetに対応しました。どのように対応したのかを簡単に紹介しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3200",
+        "title": "dexの比較をするライブラリ",
+        "body": "https://github.com/theapache64/dex-diff\r\n\r\nR8のfullModeなどの効果を確認する時に便利に使うことが出来ます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3201",
+        "title": "Now in Android 107",
+        "body": "https://medium.com/androiddevelopers/now-in-android-107-d334239c7c5b",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3202",
+        "title": "IntelliJ ベースの IDE 向け GitHub プラグインに脆弱性",
+        "body": "https://blog.jetbrains.com/security/2024/06/updates-for-security-issue-affecting-intellij-based-ides-2023-1-and-github-plugin/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOgW0otA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOgW0otA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Android Studio ももちろん影響があるので、修正リリースが出ています\r\n\r\nhttps://androidstudio.googleblog.com/2024/06/android-studio-jellyfish-202331-patch-2_10.html",
+              "publishedAt": "2024-06-16T10:34:37Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3203",
+        "title": "メルカリ ハロ アプリの技術スタックの紹介",
+        "body": "https://engineering.mercari.com/blog/entry/20240606-mercari-hallo-app-tech-stacks/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3204",
+        "title": "Compose Compiler Metricsを使った実践的なコードレビュー",
+        "body": "https://product.st.inc/entry/2024/06/11/085733",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI/CD",
+              "description": "Continuous Integration/Deployment",
+              "color": "006b75"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
