@@ -26,11 +26,3 @@ declare module 'vue/types/vue' {
     $config: NuxtRuntimeConfig
   }
 }
-
-declare module 'vuex' {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  interface Store<S> {
-    $api: ApiClient
-    $config: NuxtRuntimeConfig
-  }
-}
