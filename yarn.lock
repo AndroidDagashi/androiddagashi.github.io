@@ -3806,7 +3806,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:>=13.7.0, @types/node@npm:^22.8.7":
+"@types/node@npm:*, @types/node@npm:22.13.13, @types/node@npm:>=13.7.0, @types/node@npm:^22.0.0, @types/node@npm:^22.8.7":
   version: 22.13.13
   resolution: "@types/node@npm:22.13.13"
   dependencies:
@@ -3815,28 +3815,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:18.19.50":
-  version: 18.19.50
-  resolution: "@types/node@npm:18.19.50"
-  dependencies:
-    undici-types: "npm:~5.26.4"
-  checksum: 10c0/36e6bc9eb47213ce94a868dad9504465ad89fba6af9f7954e22bb27fb17a32ac495f263d0cf4fdaee74becd7b2629609a446ec8c2b59b7a07bd587567c8a4782
-  languageName: node
-  linkType: hard
-
 "@types/node@npm:^16":
   version: 16.18.126
   resolution: "@types/node@npm:16.18.126"
   checksum: 10c0/5c137eb141d33de32b16ff26047ff6d449432b58d0d25f7cced2040c97727d81fe1099a7581eb336d14a6840f5b09e363bdd43d7a6995e8e81eb47aa51e413fc
-  languageName: node
-  linkType: hard
-
-"@types/node@npm:^20":
-  version: 20.17.27
-  resolution: "@types/node@npm:20.17.27"
-  dependencies:
-    undici-types: "npm:~6.19.2"
-  checksum: 10c0/09f30c65e5f2a082eddf26a7ffa859bf2b77e1123829309823e7691227fd5a691b30cd3ac413d65829aa25c1eebd2f717bed80f2f8a7f83aaa6c2c3a047b3504
   languageName: node
   linkType: hard
 
@@ -12255,7 +12237,7 @@ __metadata:
     "@graphql-codegen/typescript": "npm:4.1.5"
     "@graphql-codegen/typescript-graphql-request": "npm:6.2.0"
     "@graphql-codegen/typescript-operations": "npm:4.5.1"
-    "@types/node": "npm:18.19.50"
+    "@types/node": "npm:22.13.13"
     cross-fetch: "npm:4.1.0"
     graphql: "npm:16.10.0"
     graphql-request: "npm:7.1.2"
@@ -12271,7 +12253,7 @@ __metadata:
   resolution: "site-api@workspace:packages/site-api"
   dependencies:
     "@types/fs-extra": "npm:11.0.4"
-    "@types/node": "npm:18.19.50"
+    "@types/node": "npm:22.13.13"
     fs-extra: "npm:11.3.0"
     rimraf: "npm:5.0.10"
     site-api-github: "npm:1.0.0"
@@ -12287,7 +12269,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site-common@workspace:packages/site-common"
   dependencies:
-    "@types/node": "npm:18.19.50"
+    "@types/node": "npm:22.13.13"
     typescript: "npm:5.8.2"
   languageName: unknown
   linkType: soft
@@ -12297,7 +12279,7 @@ __metadata:
   resolution: "site-config@workspace:packages/site-config"
   dependencies:
     "@nuxt/types": "npm:2.18.1"
-    "@types/node": "npm:18.19.50"
+    "@types/node": "npm:22.13.13"
     site-types: "npm:1.0.0"
     typescript: "npm:5.8.2"
   languageName: unknown
@@ -12308,7 +12290,7 @@ __metadata:
   resolution: "site-rss@workspace:packages/site-rss"
   dependencies:
     "@types/markdown-it": "npm:14.1.2"
-    "@types/node": "npm:18.19.50"
+    "@types/node": "npm:22.13.13"
     feed: "npm:4.2.2"
     markdown-it: "npm:14.1.0"
     site-common: "npm:1.0.0"
@@ -12336,7 +12318,7 @@ __metadata:
     "@tailwindcss/forms": "npm:0.5.10"
     "@types/lodash": "npm:4.17.16"
     "@types/markdown-it": "npm:14.1.2"
-    "@types/node": "npm:^20"
+    "@types/node": "npm:^22.0.0"
     "@types/twitter-text": "npm:3.1.10"
     date-fns: "npm:4.1.0"
     eslint: "npm:9.23.0"
@@ -13329,20 +13311,6 @@ __metadata:
     magic-string: "npm:^0.30.17"
     unplugin: "npm:^2.1.0"
   checksum: 10c0/08d334fbe51ad4bad4c7b7cc5efec84e61b39ca44e20cda2750a37f20b8e122ed4ce525d6a152b4c463ca1545c38fb556049d8c4ee0299afba4fdb0057d711ee
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:~5.26.4":
-  version: 5.26.5
-  resolution: "undici-types@npm:5.26.5"
-  checksum: 10c0/bb673d7876c2d411b6eb6c560e0c571eef4a01c1c19925175d16e3a30c4c428181fb8d7ae802a261f283e4166a0ac435e2f505743aa9e45d893f9a3df017b501
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:~6.19.2":
-  version: 6.19.8
-  resolution: "undici-types@npm:6.19.8"
-  checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
   languageName: node
   linkType: hard
 
