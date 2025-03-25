@@ -1,8 +1,7 @@
 /* eslint-disable */
 import * as Types from '../globals'
 
-import { GraphQLClient } from 'graphql-request'
-import { GraphQLClientRequestHeaders } from 'graphql-request/build/cjs/types'
+import { GraphQLClient, RequestOptions } from 'graphql-request'
 import { GraphQLError, print } from 'graphql'
 import gql from 'graphql-tag'
 import { MilestoneDigestResponse } from '../fragments/MilestoneDigestResponse.generated'
@@ -11,6 +10,7 @@ import { MilestoneResponse } from '../fragments/MilestoneResponse.generated'
 import { LabelResponse } from '../fragments/LabelResponse.generated'
 import { IssueCommentResponse } from '../fragments/IssueCommentResponse.generated'
 import { AuthorResponse } from '../fragments/AuthorResponse.generated'
+type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
 export type GetMilestoneDigestsVariables = Types.Exact<{
   repoOwner: Types.Scalars['String']['input']
   repoName: Types.Scalars['String']['input']
@@ -197,13 +197,15 @@ export const GetMilestoneByNumberDocument = gql`
 export type SdkFunctionWrapper = <T>(
   action: (requestHeaders?: Record<string, string>) => Promise<T>,
   operationName: string,
-  operationType?: string
+  operationType?: string,
+  variables?: any
 ) => Promise<T>
 
 const defaultWrapper: SdkFunctionWrapper = (
   action,
   _operationName,
-  _operationType
+  _operationType,
+  _variables
 ) => action()
 const GetMilestoneDigestsDocumentString = print(GetMilestoneDigestsDocument)
 const GetMilestoneByNumberDocumentString = print(GetMilestoneByNumberDocument)
@@ -230,7 +232,8 @@ export function getSdk(
             { ...requestHeaders, ...wrappedRequestHeaders }
           ),
         'getMilestoneDigests',
-        'query'
+        'query',
+        variables
       )
     },
     getMilestoneByNumber(
@@ -251,7 +254,8 @@ export function getSdk(
             { ...requestHeaders, ...wrappedRequestHeaders }
           ),
         'getMilestoneByNumber',
-        'query'
+        'query',
+        variables
       )
     },
   }
