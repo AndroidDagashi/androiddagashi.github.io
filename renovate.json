@@ -1,56 +1,43 @@
 {
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:recommended"],
   "lockFileMaintenance": {
     "enabled": true
   },
-  "masterIssue": true,
+  "dependencyDashboard": true,
   "packageRules": [
     {
-      "matchPackagePatterns": [
-        "*"
-      ],
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
+      "matchUpdateTypes": ["minor", "patch"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
-      "excludePackageNames": [
-        "vue",
-        "vue-server-renderer",
-        "vue-template-compiler",
-        "@nuxt/devtools",
-        "@nuxt/eslint",
-        "@nuxt/kit",
-        "@nuxt/types",
-        "nuxi",
-        "nuxt",
-        "@nuxtjs/tailwindcss",
-        "node",
-        "@types/node"
+      "matchPackageNames": [
+        "*",
+        "!vue",
+        "!vue-server-renderer",
+        "!vue-template-compiler",
+        "!@nuxt/devtools",
+        "!@nuxt/eslint",
+        "!@nuxt/kit",
+        "!@nuxt/types",
+        "!nuxi",
+        "!nuxt",
+        "!@nuxtjs/tailwindcss",
+        "!node",
+        "!@types/node"
       ]
     },
     {
-      "packageNames": [
-        "node",
-        "@types/node"
-      ],
+      "matchPackageNames": ["node", "@types/node"],
       "allowedVersions": "<=22",
       "groupName": "Node.js"
     },
     {
-      "packageNames": [
-        "vue",
-        "vue-tsc"
-      ],
+      "matchPackageNames": ["vue", "vue-tsc"],
       "allowedVersions": "<=3",
       "enabled": true,
       "groupName": "Vue.js"
     },
     {
-      "packageNames": [
+      "matchPackageNames": [
         "@nuxt/devtools",
         "@nuxt/eslint",
         "@nuxt/kit",
@@ -62,13 +49,9 @@
       "groupName": "Nuxt.js"
     },
     {
-      "matchPackageNames": [
-        "graphql-request"
-      ],
+      "matchPackageNames": ["graphql-request"],
       "enabled": true
     }
   ],
-  "postUpdateOptions": [
-    "yarnDedupeHighest"
-  ]
+  "postUpdateOptions": ["yarnDedupeHighest"]
 }
