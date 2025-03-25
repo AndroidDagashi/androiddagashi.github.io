@@ -1,39 +1,39 @@
 /* eslint-disable */
 import * as Types from '../globals'
 
-import { GraphQLClient } from 'graphql-request'
-import { GraphQLClientRequestHeaders } from 'graphql-request/build/cjs/types'
+import { GraphQLClient, RequestOptions } from 'graphql-request'
 import { GraphQLError, print } from 'graphql'
 import gql from 'graphql-tag'
-export type AuthorResponse_Bot_ = {
+type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
+export type AuthorResponse_Bot = {
   __typename?: 'Bot'
   login: string
   url: string
   avatarUrl: string
 }
 
-export type AuthorResponse_EnterpriseUserAccount_ = {
+export type AuthorResponse_EnterpriseUserAccount = {
   __typename?: 'EnterpriseUserAccount'
   login: string
   url: string
   avatarUrl: string
 }
 
-export type AuthorResponse_Mannequin_ = {
+export type AuthorResponse_Mannequin = {
   __typename?: 'Mannequin'
   login: string
   url: string
   avatarUrl: string
 }
 
-export type AuthorResponse_Organization_ = {
+export type AuthorResponse_Organization = {
   __typename?: 'Organization'
   login: string
   url: string
   avatarUrl: string
 }
 
-export type AuthorResponse_User_ = {
+export type AuthorResponse_User = {
   __typename?: 'User'
   login: string
   url: string
@@ -41,11 +41,11 @@ export type AuthorResponse_User_ = {
 }
 
 export type AuthorResponse =
-  | AuthorResponse_Bot_
-  | AuthorResponse_EnterpriseUserAccount_
-  | AuthorResponse_Mannequin_
-  | AuthorResponse_Organization_
-  | AuthorResponse_User_
+  | AuthorResponse_Bot
+  | AuthorResponse_EnterpriseUserAccount
+  | AuthorResponse_Mannequin
+  | AuthorResponse_Organization
+  | AuthorResponse_User
 
 export const AuthorResponse = gql`
   fragment AuthorResponse on Actor {
@@ -58,13 +58,15 @@ export const AuthorResponse = gql`
 export type SdkFunctionWrapper = <T>(
   action: (requestHeaders?: Record<string, string>) => Promise<T>,
   operationName: string,
-  operationType?: string
+  operationType?: string,
+  variables?: any
 ) => Promise<T>
 
 const defaultWrapper: SdkFunctionWrapper = (
   action,
   _operationName,
-  _operationType
+  _operationType,
+  _variables
 ) => action()
 
 export function getSdk(
