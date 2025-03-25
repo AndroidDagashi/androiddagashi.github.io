@@ -14,11 +14,10 @@
 
 <script lang="ts">
 import { defineComponent, computed } from 'vue'
-import { useActions, useGetters } from 'vuex-composition-helpers'
 import { useHead } from '#imports'
 import { renderOGPMeta } from '~/utils/ogp'
 import IssueDigestList from '~/components/organisms/IssueDigestList/index.vue'
-import type { RootGetters } from '~~/store'
+import { useDigestStore } from '~/store/digest'
 
 export default defineComponent({
   name: 'Index',
@@ -27,16 +26,16 @@ export default defineComponent({
   },
   setup() {
     const app = useNuxtApp()
+    const route = useRoute()
 
-    const { digests: milestones, pageInfo } = useGetters<RootGetters>([
-      'digests',
-      'pageInfo',
-    ])
-
-    const { fetchNextDigests } = useActions(['fetchNextDigests'])
+    const digestsStore = useDigestStore()
+    const milestones = computed(() => digestsStore.digests)
+    const pageInfo = computed(() => digestsStore.pageInfo)
 
     const onLoadNext = async () => {
-      await fetchNextDigests({ cursor: pageInfo.value?.endCursor })
+      await digestsStore.fetchNextDigests(
+        pageInfo.value?.endCursor ?? undefined
+      )
     }
 
     useHead(
@@ -46,7 +45,7 @@ export default defineComponent({
           ...renderOGPMeta({
             title: app.$config.public.title,
             description: app.$config.public.description,
-            url: `${app.$config.public.baseUrl}${app.$route.fullPath}`,
+            url: `${app.$config.public.baseUrl}${route.fullPath}`,
           }),
         ],
       }))
@@ -58,7 +57,6 @@ export default defineComponent({
       siteDescription: app.$config.public.description,
       milestones,
       pageInfo,
-      fetchNextDigests,
       onLoadNext,
     }
   },

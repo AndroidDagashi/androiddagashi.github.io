@@ -13,8 +13,8 @@
     <MarkdownText class="mt-3 pb-3" :text="issue.body" />
     <div v-if="hasComments" class="LinkItem__comments border-t border-gray-300">
       <ul class="mt-3">
-        <template v-for="(item, index) in comments">
-          <LinkItemComment :key="index" :comment="item" />
+        <template v-for="(item, index) in comments" :key="index">
+          <LinkItemComment :comment="item" />
         </template>
       </ul>
     </div>

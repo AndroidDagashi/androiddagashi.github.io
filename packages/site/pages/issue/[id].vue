@@ -12,9 +12,8 @@
     </div>
     <section class="">
       <ul class="LinkList">
-        <template v-for="(item, index) in issues">
+        <template :key="index" v-for="(item, index) in issues">
           <LinkItem
-            :key="index"
             :issue="item"
             :issue-repository="issueRepository"
             class="LinkList__item"
@@ -27,32 +26,37 @@
 
 <script lang="ts">
 import { defineComponent, computed, onMounted } from 'vue'
-import { useGetters } from 'vuex-composition-helpers'
 import { renderOGPMeta } from '../../utils/ogp'
 import { useNuxtApp } from '#imports'
 import ShareWidgets from '~/components/organisms/ShareWidgets/index.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
 import LinkItem from '~/components/organisms/LinkItem/index.vue'
-import type { IssueGetters } from '~~/store/issue'
+import { useIssueStore } from '~/store/issue'
 
 export default defineComponent({
   name: 'Issue',
   components: { ShareWidgets, MarkdownText, LinkItem },
-  setup() {
+  async setup() {
     const app = useNuxtApp()
+    const route = useRoute()
 
-    const { currentMilestone } = useGetters<IssueGetters>('issue', [
-      'currentMilestone',
-    ])
+    const issueStore = useIssueStore()
+
+    onMounted(() => loadScripts(document))
+
+    await useAsyncData(async () => {
+      await issueStore.fetchById(route.params.id as string)
+      return issueStore.currentMilestone
+    })
+
+    const currentMilestone = computed(() => issueStore.currentMilestone)
 
     const milestoneTitle = computed(() => currentMilestone.value?.title ?? '')
     const milestoneDescription = computed(
       () => currentMilestone.value?.description ?? ''
     )
     const issues = computed(() => currentMilestone.value?.issues?.nodes ?? [])
-
-    onMounted(() => loadScripts(document))
 
     useHead(
       computed(() => {
@@ -65,7 +69,7 @@ export default defineComponent({
               title: newTitle,
               description:
                 milestoneDescription.value || app.$config.public.description,
-              url: `${app.$config.public.baseUrl}${app.$route.fullPath}`,
+              url: `${app.$config.public.baseUrl}${route.fullPath}`,
             }),
           ],
         }
@@ -81,9 +85,6 @@ export default defineComponent({
       issueRepository: app.$config.public.issueRepository,
       siteDescription: app.$config.public.description,
     }
-  },
-  async asyncData({ route, store }) {
-    await store.dispatch('issue/fetchById', { milestoneId: route.params.id })
   },
 })
 </script>

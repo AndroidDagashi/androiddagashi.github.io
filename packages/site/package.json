@@ -3,43 +3,42 @@
   "version": "1.0.0",
   "license": "MIT",
   "scripts": {
-    "nuxt:prepare": "nuxi prepare",
-    "dev": "NODE_ENV=development nuxi dev",
-    "build": "NODE_ENV=production nuxi build",
-    "start": "NODE_ENV=production nuxi start",
-    "generate": "NODE_ENV=production nuxi generate"
+    "dev": "nuxi dev",
+    "build": "nuxi build",
+    "generate": "nuxi generate",
+    "preview": "nuxi preview",
+    "postinstall": "nuxi prepare"
   },
   "dependencies": {
+    "@pinia/nuxt": "0.10.1",
     "@tailwindcss/forms": "0.5.9",
     "date-fns": "4.1.0",
-    "iconify-icon": "2.1.0",
+    "iconify-icon": "2.3.0",
     "lodash.flatmap": "4.5.0",
     "markdown-it": "14.1.0",
     "modern-normalize": "3.0.1",
-    "nuxt": "2.18.1",
+    "nuxi": "3.23.1",
+    "nuxt": "3.16.1",
+    "pinia": "3.0",
     "site-config": "1.0.0",
-    "twitter-text": "3.1.0",
-    "vuex-composition-helpers": "1.2.0"
+    "twitter-text": "3.1.0"
   },
   "devDependencies": {
-    "@nuxt/bridge": "^3.3.1",
-    "@nuxt/types": "2.18.1",
-    "@nuxtjs/eslint-config": "12.0.0",
+    "@nuxt/devtools": "2.3.1",
     "@nuxtjs/eslint-config-typescript": "12.1.0",
-    "@nuxtjs/tailwindcss": "6.12.1",
+    "@nuxtjs/tailwindcss": "6.13.2",
     "@types/lodash": "4.17.7",
     "@types/markdown-it": "14.1.2",
-    "@types/node": "18.19.50",
+    "@types/node": "^20",
     "@types/twitter-text": "3.1.10",
     "@typescript-eslint/eslint-plugin": "6.21.0",
     "@typescript-eslint/parser": "6.21.0",
     "eslint": "8.57.1",
     "eslint-config-prettier": "9.1.0",
     "eslint-plugin-nuxt": "4.0.0",
-    "nuxi": "^3.12.0",
     "prettier": "3.3.3",
     "site-types": "1.0.0",
-    "ts-loader": "8.4.0",
-    "typescript": "5.6.2"
+    "typescript": "5.6.2",
+    "vue-tsc": "2.2.8"
   }
 }

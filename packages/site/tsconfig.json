@@ -4,9 +4,6 @@
     "noImplicitAny": false,
     "noUnusedParameters": false,
     "strictNullChecks": true,
-    "types": [
-      "@types/node",
-      "@nuxt/types",
-    ]
+    "types": ["@types/node", "@nuxt/types", "@pinia/nuxt"]
   }
 }

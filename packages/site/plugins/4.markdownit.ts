@@ -42,5 +42,9 @@ export default defineNuxtPlugin((nuxtApp) => {
     return defaultStyleRenderer(tokens, idx, options, env, self)
   }
 
-  nuxtApp.provide('md', md)
+  return {
+    provide: {
+      md,
+    },
+  }
 })

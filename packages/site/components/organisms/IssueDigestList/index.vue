@@ -1,8 +1,8 @@
 <template>
   <div class="IssueDigestList border border-gray-200 bg-white sm:rounded-md">
     <ul>
-      <template v-for="(item, index) in milestones">
-        <li :key="index" class="IssueDigestList__item hover:bg-gray-100">
+      <template v-for="(item, index) in milestones" :key="index">
+        <li class="IssueDigestList__item hover:bg-gray-100">
           <IssueDigest :milestone="item" :index="index" class="" />
         </li>
       </template>

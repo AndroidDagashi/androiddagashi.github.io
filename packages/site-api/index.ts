@@ -16,7 +16,7 @@ async function generateApi(): Promise<void> {
     siteConfig.issueRepository.owner,
     siteConfig.issueRepository.name,
     path.normalize(`${__dirname}/../../.temp/api`),
-    path.normalize(`${__dirname}/../site/static/api`)
+    path.normalize(`${__dirname}/../site/public/api`)
   )
 
   if (existsSync(config.tempOutputDirs.root)) {
