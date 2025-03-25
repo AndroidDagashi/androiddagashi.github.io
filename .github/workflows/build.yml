@@ -14,13 +14,13 @@ jobs:
     env:
       TZ: Asia/Tokyo
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
       # run corepack before setup-node
       # https://github.com/actions/setup-node/issues/899
       - run: corepack enable yarn
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@cdca7365b2dadb8aad0a33bc7601856ffabcc48e # v4.3.0
         with:
           node-version-file: '.node-version'
           cache: 'yarn'
