@@ -25,7 +25,7 @@
               width="20"
               height="20"
               style="border: none"
-            />
+            >
           </a>
         </span>
       </div>

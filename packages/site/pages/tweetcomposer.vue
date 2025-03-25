@@ -54,7 +54,7 @@
           name="milestone-number"
           class="block w-full rounded-md border-gray-300 bg-white shadow-sm focus:border-sky-500 focus:ring-sky-500 sm:text-sm"
           @input="onInput"
-        />
+        >
       </div>
     </div>
   </main>

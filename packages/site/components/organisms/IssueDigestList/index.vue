@@ -7,7 +7,7 @@
         </li>
       </template>
     </ul>
-    <slot name="bottom"></slot>
+    <slot name="bottom"/>
   </div>
 </template>
 

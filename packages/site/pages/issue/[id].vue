@@ -12,7 +12,7 @@
     </div>
     <section class="">
       <ul class="LinkList">
-        <template :key="index" v-for="(item, index) in issues">
+        <template v-for="(item, index) in issues" :key="index">
           <LinkItem
             :issue="item"
             :issue-repository="issueRepository"

@@ -4,7 +4,7 @@
     :class="avatarSizeClasses"
     :src="imageUrl"
     :alt="alt"
-  />
+  >
 </template>
 
 <script lang="ts">

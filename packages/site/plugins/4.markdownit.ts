@@ -1,7 +1,7 @@
 import MarkdownIt from 'markdown-it'
 import { defineNuxtPlugin } from '#imports'
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin((_nuxtApp) => {
   const md = new MarkdownIt({
     html: true,
     breaks: true,

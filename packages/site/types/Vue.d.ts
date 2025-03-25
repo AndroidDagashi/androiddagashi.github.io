@@ -1,4 +1,4 @@
-import MarkdownIt from 'markdown-it'
+import type MarkdownIt from 'markdown-it'
 import type { Route } from 'vue-router'
 
 declare module 'vue/types/vue' {

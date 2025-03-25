@@ -2,12 +2,17 @@
 import { defineNuxtConfig } from 'nuxt/config'
 import { siteConfig } from 'site-config'
 import { renderOGPMeta } from './utils/ogp'
+import fs from 'node:fs'
 
-const indexJson = require('./public/api/index.json')
+function readJson(path: string) {
+  return JSON.parse(fs.readFileSync(path, 'utf-8'))
+}
+
+const indexJson = readJson('./public/api/index.json')
 
 let pageInfo = indexJson.milestones.pageInfo
 while (pageInfo.hasNextPage) {
-  const next = require(`./public/api/${pageInfo.endCursor}.json`)
+  const next = readJson(`./public/api/${pageInfo.endCursor}.json`)
   indexJson.milestones.nodes = indexJson.milestones.nodes.concat(
     next.milestones.nodes
   )
@@ -134,7 +139,7 @@ export default defineNuxtConfig({
     },
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxt/eslint'],
 
   tailwindcss: {
     viewer: false,

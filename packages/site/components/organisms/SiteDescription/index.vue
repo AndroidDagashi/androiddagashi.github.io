@@ -9,7 +9,7 @@
       <span class="ml-2">{{ title }}とは？</span>
     </p>
     <p class="mt-4 text-lg">
-      <template :key="index" v-for="(author, index) in authors">
+      <template v-for="(author, index) in authors" :key="index">
         <TwitterLink  :screen-name="author.name" />
         {{ getAuthorConnector(index) }} </template
       >が、一週間の間に気になったAndroid関連のニュースをざっくりまとめています。
