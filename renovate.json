@@ -1,21 +1,31 @@
 {
-  "extends": ["config:base"],
+  "extends": [
+    "config:base"
+  ],
   "lockFileMaintenance": {
     "enabled": true
   },
   "masterIssue": true,
   "packageRules": [
     {
-      "matchPackagePatterns": ["*"],
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchPackagePatterns": [
+        "*"
+      ],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
       "excludePackageNames": [
         "vue",
         "vue-server-renderer",
         "vue-template-compiler",
+        "@nuxt/devtools",
+        "@nuxt/eslint",
         "@nuxt/kit",
         "@nuxt/types",
+        "nuxi",
         "nuxt",
         "@nuxtjs/tailwindcss",
         "node",
@@ -23,34 +33,42 @@
       ]
     },
     {
-      "packageNames": ["node", "@types/node"],
-      "allowedVersions": "<=18",
+      "packageNames": [
+        "node",
+        "@types/node"
+      ],
+      "allowedVersions": "<=22",
       "groupName": "Node.js"
     },
     {
-      "matchSourceUrlPrefixes": ["https://github.com/nuxt/eslint-config"],
-      "groupName": "@nuxtjs/eslint-config"
-    },
-    {
-      "packageNames": ["sass"],
-      "enabled": false
-    },
-    {
-      "packageNames": ["vue", "vue-server-renderer", "vue-template-compiler"],
-      "allowedVersions": "<=2",
+      "packageNames": [
+        "vue",
+        "vue-tsc"
+      ],
+      "allowedVersions": "<=3",
       "enabled": true,
       "groupName": "Vue.js"
     },
     {
-      "packageNames": ["@nuxt/kit", "@nuxt/types", "nuxt"],
-      "allowedVersions": "<=2",
+      "packageNames": [
+        "@nuxt/devtools",
+        "@nuxt/eslint",
+        "@nuxt/kit",
+        "@nuxt/types",
+        "nuxi",
+        "nuxt"
+      ],
       "enabled": true,
       "groupName": "Nuxt.js"
     },
     {
-      "matchPackageNames": ["graphql-request"],
+      "matchPackageNames": [
+        "graphql-request"
+      ],
       "enabled": true
     }
   ],
-  "postUpdateOptions": ["yarnDedupeHighest"]
+  "postUpdateOptions": [
+    "yarnDedupeHighest"
+  ]
 }
