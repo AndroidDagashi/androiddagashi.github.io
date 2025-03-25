@@ -4562,14 +4562,14 @@ __metadata:
   linkType: hard
 
 "@whatwg-node/node-fetch@npm:^0.7.11":
-  version: 0.7.14
-  resolution: "@whatwg-node/node-fetch@npm:0.7.14"
+  version: 0.7.16
+  resolution: "@whatwg-node/node-fetch@npm:0.7.16"
   dependencies:
     "@whatwg-node/disposablestack": "npm:^0.0.6"
     "@whatwg-node/promise-helpers": "npm:^1.2.5"
     busboy: "npm:^1.6.0"
     tslib: "npm:^2.6.3"
-  checksum: 10c0/548f44f7c6a4a04c71457eebd454c246a9060cff1cb50a318e252dafa2960dadabe3286aae7369a067eb6bf6a9aefe308988b170dda77287e0559e8efd7d2eb7
+  checksum: 10c0/fcac1542dc07f5bf8e40748450784ac933b3e1e2a533a66fa81550957cd1df3f721a1dc9445b255c90f0d49fe6e94a8d052c05b763edd16c17d9aaa467f44fcf
   languageName: node
   linkType: hard
 
@@ -6750,8 +6750,8 @@ __metadata:
   linkType: hard
 
 "eslint-plugin-import-x@npm:^4.6.1":
-  version: 4.9.1
-  resolution: "eslint-plugin-import-x@npm:4.9.1"
+  version: 4.9.2
+  resolution: "eslint-plugin-import-x@npm:4.9.2"
   dependencies:
     "@types/doctrine": "npm:^0.0.9"
     "@typescript-eslint/utils": "npm:^8.27.0"
@@ -6767,7 +6767,7 @@ __metadata:
     tslib: "npm:^2.8.1"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
-  checksum: 10c0/07c433b70d264c757c1b8b337bd6c3146df61095bd3e290b07e3feb5b38e2f11aa0ecbe9633229cd942998b2bdeb40a47736128c017682befc030d4b5367c6ff
+  checksum: 10c0/a9731d0aa4e8b5c7798dc394ef0a87e60211c811d5d8c29647fe1b5b0afc786c68dbe3ec4228c31c2167577613651c89bb932078d1139321a53f86ea9fad3aa2
   languageName: node
   linkType: hard
 
@@ -13867,17 +13867,18 @@ __metadata:
   linkType: hard
 
 "vite-plugin-vue-tracer@npm:^0.1.1":
-  version: 0.1.1
-  resolution: "vite-plugin-vue-tracer@npm:0.1.1"
+  version: 0.1.2
+  resolution: "vite-plugin-vue-tracer@npm:0.1.2"
   dependencies:
     estree-walker: "npm:^3.0.3"
+    exsolve: "npm:^1.0.4"
     magic-string: "npm:^0.30.17"
     pathe: "npm:^2.0.3"
     source-map-js: "npm:^1.2.1"
   peerDependencies:
     vite: ^6.0.0
     vue: ^3.5.0
-  checksum: 10c0/7ee5287318afc4942cbaff01d6f72dfc5b21a4cdfd8b8f8c222e5c2d910565505e2f9505ecdaa3da04b2206ec1145915c7883b7cf68db81f7d61bdbcc8b5be20
+  checksum: 10c0/ed76e5e4829a3a2d5ef4ecb624961f7dc1becdfde9e466fde2eed806845adc0a31473b9b89ed23c8f31cda3ea8678488642ca97be68a492942d244185dffef9d
   languageName: node
   linkType: hard
 
