@@ -1,12 +1,20 @@
 {
-  "extends": ["config:recommended"],
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":pinDependencies",
+    ":pinDevDependencies"
+  ],
   "lockFileMaintenance": {
     "enabled": true
   },
   "dependencyDashboard": true,
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
       "matchPackageNames": [
@@ -26,12 +34,18 @@
       ]
     },
     {
-      "matchPackageNames": ["node", "@types/node"],
+      "matchPackageNames": [
+        "node",
+        "@types/node"
+      ],
       "allowedVersions": "<=22",
       "groupName": "Node.js"
     },
     {
-      "matchPackageNames": ["vue", "vue-tsc"],
+      "matchPackageNames": [
+        "vue",
+        "vue-tsc"
+      ],
       "allowedVersions": "<=3",
       "enabled": true,
       "groupName": "Vue.js"
@@ -49,9 +63,13 @@
       "groupName": "Nuxt.js"
     },
     {
-      "matchPackageNames": ["graphql-request"],
+      "matchPackageNames": [
+        "graphql-request"
+      ],
       "enabled": true
     }
   ],
-  "postUpdateOptions": ["yarnDedupeHighest"]
+  "postUpdateOptions": [
+    "yarnDedupeHighest"
+  ]
 }
