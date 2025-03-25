@@ -1,39 +1,40 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base"
+    "config:recommended",
+    ":pinDependencies",
+    ":pinDevDependencies"
   ],
   "lockFileMaintenance": {
     "enabled": true
   },
-  "masterIssue": true,
+  "dependencyDashboard": true,
   "packageRules": [
     {
-      "matchPackagePatterns": [
-        "*"
-      ],
       "matchUpdateTypes": [
         "minor",
         "patch"
       ],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
-      "excludePackageNames": [
-        "vue",
-        "vue-server-renderer",
-        "vue-template-compiler",
-        "@nuxt/devtools",
-        "@nuxt/eslint",
-        "@nuxt/kit",
-        "@nuxt/types",
-        "nuxi",
-        "nuxt",
-        "@nuxtjs/tailwindcss",
-        "node",
-        "@types/node"
+      "matchPackageNames": [
+        "*",
+        "!vue",
+        "!vue-server-renderer",
+        "!vue-template-compiler",
+        "!@nuxt/devtools",
+        "!@nuxt/eslint",
+        "!@nuxt/kit",
+        "!@nuxt/types",
+        "!nuxi",
+        "!nuxt",
+        "!@nuxtjs/tailwindcss",
+        "!node",
+        "!@types/node"
       ]
     },
     {
-      "packageNames": [
+      "matchPackageNames": [
         "node",
         "@types/node"
       ],
@@ -41,7 +42,7 @@
       "groupName": "Node.js"
     },
     {
-      "packageNames": [
+      "matchPackageNames": [
         "vue",
         "vue-tsc"
       ],
@@ -50,7 +51,7 @@
       "groupName": "Vue.js"
     },
     {
-      "packageNames": [
+      "matchPackageNames": [
         "@nuxt/devtools",
         "@nuxt/eslint",
         "@nuxt/kit",
