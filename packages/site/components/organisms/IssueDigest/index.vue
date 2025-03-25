@@ -7,10 +7,12 @@
           {{ milestone.issues.totalCount }}件のリンク
         </p>
       </div>
+      <!-- eslint-disable vue/no-v-html -->
       <p
         class="IssueDigest__summary mt-1 line-clamp-2 text-gray-500"
         v-html="milestone.description"
       />
+      <!-- eslint-enable vue/no-v-html -->
     </div>
   </nuxt-link>
 </template>

@@ -16,7 +16,7 @@ import { BlueskyClient } from './src/bluesky/BlueskyClient'
 import BlueskyConfig from './src/bluesky/BlueskyConfig'
 
 function createDagashiClient(): DagashiClient {
-  const apiDirectory = path.resolve(__dirname, '../site/static/api')
+  const apiDirectory = path.resolve(__dirname, '../site/public/api')
   const config = new DagashiConfig(apiDirectory)
   return new DagashiClient(config)
 }

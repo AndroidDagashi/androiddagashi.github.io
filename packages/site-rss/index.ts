@@ -8,7 +8,7 @@ async function generateRss(): Promise<void> {
   const rootUrl = `${siteConfig.baseUrl}/`
   const today = new Date()
   const digest = JSON.parse(
-    await readFile('../site/static/api/index.json')
+    await readFile('../site/public/api/index.json')
   ) as GHDigest
   const title = siteConfig.title
 
@@ -53,7 +53,7 @@ async function generateRss(): Promise<void> {
     })
   })
 
-  await writeFile('../site/static/feed.xml', feed.atom1())
+  await writeFile('../site/public/feed.xml', feed.atom1())
 }
 
 generateRss()

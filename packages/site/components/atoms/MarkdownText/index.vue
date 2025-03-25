@@ -1,5 +1,6 @@
 <template>
-  <div class="markdown-text" v-html="$md.render(text)" />
+  <!-- eslint-disable-next-line vue/no-v-html -->
+  <div class="markdown-text" v-html="md.render(text)" />
 </template>
 
 <script lang="ts">
@@ -13,6 +14,14 @@ export default defineComponent({
       required: true,
     },
   },
+  setup() {
+    const app = useNuxtApp()
+    const md = app.$md
+
+    return {
+      md,
+    }
+  },
 })
 </script>
 
@@ -21,26 +30,26 @@ export default defineComponent({
   word-break: break-all;
 }
 
-.markdown-text >>> a {
+.markdown-text :deep(a) {
   text-decoration: none;
   color: #0366d6;
 }
 
-.markdown-text >>> a:hover {
+.markdown-text :deep(a:hover) {
   text-decoration: underline;
 }
 
-.markdown-text >>> p {
+.markdown-text :deep(p) {
   margin-bottom: 4px;
 }
 
-.markdown-text >>> ul {
+.markdown-text :deep(ul) {
   list-style: disc;
   padding-left: 16px;
   padding-right: 16px;
 }
 
-.markdown-text >>> blockquote {
+.markdown-text :deep(blockquote) {
   padding: 0 1em;
   color: #6a737d;
   border-left: 0.25em solid #dfe2e5;

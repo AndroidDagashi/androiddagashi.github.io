@@ -2,7 +2,7 @@ import { defineNuxtPlugin, useRouter } from '#imports'
 
 const GA_ID = 'UA-116221691-1'
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin((_nuxtApp) => {
   if (process.env.NODE_ENV !== 'production') {
     return
   }
@@ -14,13 +14,13 @@ export default defineNuxtPlugin((nuxtApp) => {
   const existingTag = document.getElementsByTagName('script')[0]
   existingTag.parentNode!.insertBefore(newTag, existingTag)
 
-  // @ts-ignore
+  // @ts-expect-error: dataLayer is defined in the global scope
   window.dataLayer = window.dataLayer || []
-  function gtag(...args: any[]) {
-    // @ts-ignore
+  function gtag(...args: unknown[]) {
+    // @ts-expect-error: dataLayer is defined in the global scope
     window.dataLayer.push(args)
   }
-  // @ts-ignore
+  // @ts-expect-error: gtag is defined in the global scope
   window.gtag = gtag
 
   gtag('js', new Date())

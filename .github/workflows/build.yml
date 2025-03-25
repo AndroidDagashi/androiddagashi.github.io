@@ -29,4 +29,4 @@ jobs:
         run: yarn install
 
       - name: Generate website
-        run: yarn site:generate
+        run: yarn workspace site exec nuxi build --preset github_pages

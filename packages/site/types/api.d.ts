@@ -1,9 +1,9 @@
-import { NuxtRuntimeConfig } from '@nuxt/types/config/runtime'
-import { SiteConfig } from 'site-types/SiteConfig'
-import { ApiClient } from '../data/api'
+import type { NuxtRuntimeConfig } from '@nuxt/types/config/runtime'
+import type { SiteConfig } from 'site-types/SiteConfig'
+import type { ApiClient } from '../data/api'
 
 declare module '@nuxt/types/config/runtime' {
-  // eslint-disable-next-line @typescript-eslint/no-empty-interface
+   
   interface NuxtRuntimeConfig extends SiteConfig {
     apiEndpoint: string
   }
@@ -22,14 +22,6 @@ declare module '@nuxt/types' {
 
 declare module 'vue/types/vue' {
   interface Vue {
-    $api: ApiClient
-    $config: NuxtRuntimeConfig
-  }
-}
-
-declare module 'vuex' {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  interface Store<S> {
     $api: ApiClient
     $config: NuxtRuntimeConfig
   }

@@ -1,7 +1,7 @@
 import MarkdownIt from 'markdown-it'
 import { defineNuxtPlugin } from '#imports'
 
-export default defineNuxtPlugin((nuxtApp) => {
+export default defineNuxtPlugin((_nuxtApp) => {
   const md = new MarkdownIt({
     html: true,
     breaks: true,
@@ -42,5 +42,9 @@ export default defineNuxtPlugin((nuxtApp) => {
     return defaultStyleRenderer(tokens, idx, options, env, self)
   }
 
-  nuxtApp.provide('md', md)
+  return {
+    provide: {
+      md,
+    },
+  }
 })
