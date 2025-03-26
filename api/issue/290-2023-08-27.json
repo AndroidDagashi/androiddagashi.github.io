@@ -1,0 +1,173 @@
+{
+  "id": "MI_kwDOB4jhdM4Alch9",
+  "number": 290,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/290",
+  "title": "290 2023-08-27",
+  "closedAt": "2023-08-27T10:43:04Z",
+  "description": "2023年8月Accompanistライブラリのアップデート、アーキテクチャをテストできる新ツールKonsist、Composeのアニメーション使用例、など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOb1wzkA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOb144jg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2931",
+        "title": "2023年8月Accompanistライブラリのアップデート",
+        "body": "https://medium.com/androiddevelopers/an-update-on-jetpack-compose-accompanist-libraries-august-2023-ac4cbbf059f1\r\n\r\nWebViewなどのいくつかのライブラリがComposeの公式に取り込まれずに代替えがないままDeprecatedになります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2932",
+        "title": "最新のARTアップデート",
+        "body": "https://android-developers.googleblog.com/2023/08/latest-artwork-on-hundreds-of-millions-of-devices.html\r\n\r\nARTについて解説と、リリース予定のART 14について紹介しています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2933",
+        "title": "マルチプラットフォームに対応したComposeライブラリCalfがリリース",
+        "body": "https://github.com/MohamedRejeb/Calf\r\n\r\nシングルコードで、ダイアログやボトムシートなどを実装することができます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2934",
+        "title": "Composeのアニメーションの使用例",
+        "body": "https://developer.android.com/jetpack/compose/animation/quick-guide\r\n\r\nAnimatedVisibility、animateFloatAsStateなどの基本的な使い方、使用例について紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2935",
+        "title": "McDonald's での KMP 採用事例",
+        "body": "https://medium.com/mcdonalds-technical-blog/mobile-multiplatform-development-at-mcdonalds-3b72c8d44ebc",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2936",
+        "title": "Android公式の「一般的なモジュール化パターン」ページが更新",
+        "body": "https://developer.android.com/topic/modularization/patterns?hl=ja\r\n\r\n英語版は 8/17 に、日本語版は　8/24 に更新されています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2937",
+        "title": "アーキテクチャをテストできる新ツール、 Konsist",
+        "body": "https://blog.kotlin-academy.com/introducing-konsist-a-cutting-edge-kotlin-linter-d3ab916a5461\r\nhttps://github.com/LemonAppDev/konsist\r\n\r\nJava だと [ArchUnit](https://www.archunit.org/) という類似のライブラリがあります",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

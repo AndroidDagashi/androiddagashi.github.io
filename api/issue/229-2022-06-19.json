@@ -1,0 +1,239 @@
+{
+  "id": "MI_kwDOB4jhdM4AezDc",
+  "number": 229,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/229",
+  "title": "229 2022-06-19",
+  "description": "Privacy Sandbox Developer Preview 3,  Jetpack Compose 1.2.0-rc01, Android Studio Dolphin Beta3, ComposeにおけるFont Padding, など",
+  "closedAt": "2022-06-19T10:24:22Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOTAz7Rw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OTA5Vew==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2440",
+        "title": "ComposeにおけるFont Padding",
+        "body": "https://medium.com/androiddevelopers/fixing-font-padding-in-compose-text-768cd232425b\r\n\r\nFont Paddingについての背景やComposeで今後の対応について解説しています。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2441",
+        "title": "Privacy Sandbox Developer Preview 3",
+        "body": "https://android-developers.googleblog.com/2022/06/privacy-sandbox-developer-preview-3.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2442",
+        "title": "WINTICKETが考えたモダンなFlutterアプリ設計",
+        "body": "https://developers.cyberagent.co.jp/blog/archives/36149/\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHORR8SNw==",
+            "endCursor": "Y3Vyc29yOnYyOpHORR8SNw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "記事内で使われている Riverpod は v1 ですが、 v2 ではこの記事で紹介されているアプローチを取らないほうがいいようです。\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"ja\" dir=\"ltr\">会社・チームによってどういうアプローチ取るかはもちろん自由だけど、Riverpodの良さの8割くらい毀損するアプローチに感じてしまって、僕は受け入れ難い。<br>FutureProvider・StreamProvider 禁止してStateNotifierProvider縛りにすると、冗長なコード量産するハメになる。<a href=\"https://t.co/VJ4rwv2FkA\">https://t.co/VJ4rwv2FkA</a></p>&mdash; mono (@ _mono) <a href=\"https://twitter.com/_mono/status/1537430012206678016?ref_src=twsrc%5Etfw\">June 16, 2022</a></blockquote>\r\n\r\n(v2 はまだ stable になっていないので導入を躊躇してしまうチームも多いとは思いますが)",
+              "publishedAt": "2022-06-19T09:16:06Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2443",
+        "title": "2022年6月15日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#june_15_2022\r\n\r\nJetpack Compose 1.2 が RC になっています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHORR8WKA==",
+            "endCursor": "Y3Vyc29yOnYyOpHORR8WKA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake 氏のまとめツイートはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Jetpack releases include Benchmark 1.1.0, Annotation 1.4.0, Wear Watchface 1.1.0, first RC of Wear Compose, Compose 1.2.0-rc01, bug fixes in Lifecycle 2.5.0-rc02 and Navigation 2.5.0-rc02, plus new Android T Beta 3 dependent alphas!<a href=\"https://t.co/j7eiskBrir\">https://t.co/j7eiskBrir</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1537478087662632961?ref_src=twsrc%5Etfw\">June 16, 2022</a></blockquote>",
+              "publishedAt": "2022-06-19T09:19:27Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2444",
+        "title": "Android Studio - Dolphin | 2021.3.1 Beta 3",
+        "body": "https://androidstudio.googleblog.com/2022/06/android-studio-dolphin-beta-3-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHORR8fWA==",
+            "endCursor": "Y3Vyc29yOnYyOpHORR8fWA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/vbi6im/android_studio_dolphin_beta_3_now_available/",
+              "publishedAt": "2022-06-19T09:28:33Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2445",
+        "title": "Android Studio - Electric Eel | 2022.1.1 Canary 5",
+        "body": "https://androidstudio.googleblog.com/2022/06/android-studio-electric-eel-canary-5.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2446",
+        "title": "Jetpack Compose でグラフを描画する",
+        "body": "https://proandroiddev.com/creating-graph-in-jetpack-compose-312957b11b2",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2447",
+        "title": "I/O 2022: Android 13 のセキュリティとプライバシーなど",
+        "body": "https://developers-jp.googleblog.com/2022/06/io-2022-android-13.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
