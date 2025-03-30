@@ -2,8 +2,37 @@
   "name": "AndroidDagashi",
   "url": "https://github.com/AndroidDagashi/AndroidDagashi",
   "milestones": {
-    "totalCount": 369,
+    "totalCount": 370,
     "nodes": [
+      {
+        "id": "MI_kwDOB4jhdM4Ao6RK",
+        "number": 320,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/320",
+        "path": "320-2024-03-31",
+        "title": "320 2024-03-31",
+        "description": "JetpackのViewModelがKMPで利用可能に, MetaのAndroid14 Target SDK 早期対応, Composable関数をBitmapに書き出す, CircuitライブラリにおけるState管理, など",
+        "closedAt": "2024-03-31T11:17:04Z",
+        "issues": {
+          "totalCount": 5,
+          "nodes": [
+            {
+              "title": "CircuitライブラリにおけるState管理"
+            },
+            {
+              "title": "Composable関数の内容をBitmapに書き出すときの注意点"
+            },
+            {
+              "title": "MetaのAndroid14 Target SDK 早期対応について"
+            },
+            {
+              "title": "JetpackのViewModelがKMPで利用可能に"
+            },
+            {
+              "title": "Jetpack Composeでコールバック関数を渡すのをやめよう"
+            }
+          ]
+        }
+      },
       {
         "id": "MI_kwDOB4jhdM4AozHV",
         "number": 319,
@@ -1640,43 +1669,11 @@
             }
           ]
         }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4AjO59",
-        "number": 270,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/270",
-        "path": "270-2023-04-09",
-        "title": "270 2023-04-09",
-        "description": "Kotlin 1.8.20、アプリアカウントの削除要件、Jetpack Composeを活用したRedditアプリ、Android Test Night 8のまとめ、など",
-        "closedAt": "2023-04-09T10:37:10Z",
-        "issues": {
-          "totalCount": 6,
-          "nodes": [
-            {
-              "title": "Kotlin 1.8.20"
-            },
-            {
-              "title": "Compose Pagerのカスタマイズ"
-            },
-            {
-              "title": "アプリアカウントの削除要件"
-            },
-            {
-              "title": "Jetpack Composeを活用したRedditアプリの構築"
-            },
-            {
-              "title": "Now in Android 80"
-            },
-            {
-              "title": "Android Test Night 8のまとめ"
-            }
-          ]
-        }
       }
     ],
     "pageInfo": {
-      "startCursor": "Y3Vyc29yOnYyOpK0MjAyNC0wMy0yNFQwMDowMDowMFrOAKMx1Q==",
-      "endCursor": "Y3Vyc29yOnYyOpK0MjAyMy0wNC0wOVQwMDowMDowMFrOAIzufQ==",
+      "startCursor": "Y3Vyc29yOnYyOpK0MjAyNC0wMy0zMVQwMDowMDowMFrOAKOkSg==",
+      "endCursor": "Y3Vyc29yOnYyOpK0MjAyMy0wNC0xNlQwMDowMDowMFrOAI1NXQ==",
       "hasPreviousPage": true,
       "hasNextPage": true
     }
