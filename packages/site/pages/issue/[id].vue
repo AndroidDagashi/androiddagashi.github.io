@@ -45,7 +45,10 @@ export default defineComponent({
 
     onMounted(() => loadScripts(document))
 
-    await callOnce(async () => issueStore.fetchById(route.params.id as string))
+    await callOnce(
+      async () => issueStore.fetchById(route.params.id as string),
+      { mode: 'navigation' }
+    )
 
     const currentMilestone = computed(() => issueStore.currentMilestone)
 
