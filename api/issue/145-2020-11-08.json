@@ -1,0 +1,208 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjA1NjcwMg==",
+  "number": 145,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/145",
+  "title": "145 2020-11-08",
+  "description": "Android Developers Japan Blog開設、Android App Bundleの利点、Compose for Desktop、など。\r\n",
+  "closedAt": "2020-11-08T10:31:16Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOK8HPQw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OLAOeHw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1617",
+        "title": "Android Developers Japan Blog開設",
+        "body": "https://android-developers-jp.googleblog.com/2020/10/launching-android-developers-japan-blog.html\r\n\r\nいままでは https://developers-jp.googleblog.com に Android 関連のブログ記事が掲載されていたのが、独立したブログ https://android-developers-jp.googleblog.com になったようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1618",
+        "title": "AndroidフレームワークとGoogleのライブラリのソースコードリンク集",
+        "body": "https://androidsrc.dev/\r\n\r\nSquareのAndroidエンジニアの [@Piwai](https://twitter.com/Piwai) さんが作ってくれたようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1619",
+        "title": "Compose for Desktop",
+        "body": "https://blog.jetbrains.com/cross-post/jetpack-compose-for-desktop-milestone-1-released/\r\nhttps://www.jetbrains.com/lp/compose/\r\n\r\nJetpack ComposeをベースにしたDesktop UIツールキットがalphaリリースされました。グラフィックライブラリにはSkiaが使用されています。また、SwingやAWTと相互運用が可能になっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1620",
+        "title": "Android App Bundleの利点",
+        "body": "https://www.youtube.com/watch?v=IPLhLu0kvYw\r\n\r\nMAD Skillsシリーズの動画でApp Bundleについてです。App Bundle利点、作成方法などを紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1621",
+        "title": "Kotlin 1.4 Online Eventのまとめ",
+        "body": "https://blog.jetbrains.com/kotlin/2020/11/kotlin-1-4-online-event-recap-materials-and-quizquest-winners/\r\n\r\n良く見られた動画などが紹介されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1622",
+        "title": "変更が含まれるモジュールとその依存関係のみテストを実行するGradle Plugin",
+        "body": "https://github.com/dropbox/AffectedModuleDetector\r\nhttps://www.reddit.com/r/androiddev/comments/jp4xye/skip_unaffected_jvm_unit_tests_with/\r\n\r\nクレジットにも書かれていますが、AndroidXのレポジトリに含まれるスクリプトをベースにしているようです\r\n\r\nCIの実行時間に悩んでいるプロジェクトは導入を検討してみてもいいかもしれません",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1623",
+        "title": "Android Studio 4.2 Canary 16",
+        "body": "https://androidstudio.googleblog.com/2020/11/android-studio-42-canary-16-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/jonnad/android_studio_42_canary_16_available/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1624",
+        "title": "APIの可視性とKotlin",
+        "body": "https://zsmb.co/mastering-api-visibility-in-kotlin/\r\n\r\nKotlin 1.4で追加されたExplicit API modeも含め、KotlinでAPIの可視性を管理する方法をいろいろ紹介しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "id": "MI_kwDOB4jhdM4Ac_q1",
+  "number": 209,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/209",
+  "title": "209 2022-01-30",
+  "description": "Android 12でのDeepLinkの挙動変更について、Baseline Profilesによるパフォーマンス改善、Android Studio Bumblebee (2021.1.1) Stable、など",
+  "closedAt": "2022-01-30T10:32:08Z",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOQm3Z3w==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOQqqVjw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2261",
+        "title": "Android 12でのDeepLinkの挙動変更について",
+        "body": "https://doordash.engineering/2022/01/25/your-deep-links-might-be-broken-web-intents-and-android-12/\r\n\r\nAndroid 12でApp Linksを使わないとDeepLinkでアプリが起動しなくなったことに対して、どう対応するのかが書かれています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2262",
+        "title": "Baseline Profilesによるパフォーマンス改善",
+        "body": "https://android-developers.googleblog.com/2022/01/improving-app-performance-with-baseline.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2263",
+        "title": "Jetpack GlanceにWear OS Tilesが追加",
+        "body": "https://android-developers.googleblog.com/2022/01/announcing-glance-tiles-for-wear-os.html\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Wear OS",
+              "description": "",
+              "color": "FBCA04"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2264",
+        "title": "Preferences DataStoreの解説",
+        "body": "https://medium.com/androiddevelopers/all-about-preferences-datastore-cc7995679334\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2265",
+        "title": "Android Studio Bumblebee (2021.1.1) Stable",
+        "body": "https://android-developers.googleblog.com/2022/01/android-studio-bumblebee-202111-stable.html\r\n\r\nAndroid StudioのメジャーアップデートとなるBumblebeeのStable版がリリースされました。QRコードを利用したWi-Fi経由のadb接続やプロファイラの充実、プレビュー画面でのUI操作などの機能が追加されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOPRlTAg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOPRnpvA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "公式動画はこちら: https://youtu.be/rIt13HjCRiI",
+              "publishedAt": "2022-01-30T04:52:49Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "AGP 7.1.0 ではいくつか古いAPIを廃止しており、その影響で 2.4.0 以前の Navigation Safe Args が動かなくなっています。\r\n2.5.0-alpha01 では対応が入っており、その修正をバックポートした 2.4.1 がリリースされる予定だそうです。\r\n\r\n\r\nhttps://stackoverflow.com/questions/70857476/unable-to-load-class-androidcomponentsextension-after-upgrading-the-android-grad\r\n\r\n同様の事象がサードパーティのGradle Pluginで起きててもおかしくなさそうですね",
+              "publishedAt": "2022-01-30T09:58:51Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2266",
+        "title": "Perfettoとloggerを使ってメインスレッドのトレースをする",
+        "body": "https://py.hashnode.dev/tracing-main-thread-messages\r\n\r\nPerfettoの基本的な使い方から、Perfettoを見やすくするためのテクニックを紹介しています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2267",
+        "title": "2022年1月26日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel?hl=en#january_26_2022\r\n\r\nNavigation 2.4.0, Hilt-Navigation-Compose 1.0.0, Preference 1.2.0, SlidingPaneLayout 1.2.0, Window 1.0.0 など、安定版リリースが複数あります",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOPRnnXA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOPRnnXA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏によるまとめツイートはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Jetpack releases today include Navigation 2.4.0, Hilt-Navigation-Compose 1.0.0, Preference 1.2.0, SlidingPaneLayout 1.2.0, Window 1.0.0 plus bug fix releases in Fragment 1.4.1, MediaRouter 1.2.6, ResourceInspection 1.0.1, and Wear Tiles 1.0.1!<a href=\"https://t.co/Of0AkPms15\">https://t.co/Of0AkPms15</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1486466837051109379?ref_src=twsrc%5Etfw\">January 26, 2022</a></blockquote>",
+              "publishedAt": "2022-01-30T09:54:38Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
