@@ -2477,22 +2477,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-kit@npm:2.3.2, @nuxt/devtools-kit@npm:^2.3.2":
-  version: 2.3.2
-  resolution: "@nuxt/devtools-kit@npm:2.3.2"
+"@nuxt/devtools-kit@npm:2.4.0, @nuxt/devtools-kit@npm:^2.3.2":
+  version: 2.4.0
+  resolution: "@nuxt/devtools-kit@npm:2.4.0"
   dependencies:
-    "@nuxt/kit": "npm:^3.16.1"
-    "@nuxt/schema": "npm:^3.16.1"
+    "@nuxt/kit": "npm:^3.16.2"
+    "@nuxt/schema": "npm:^3.16.2"
     execa: "npm:^8.0.1"
   peerDependencies:
     vite: ">=6.0"
-  checksum: 10c0/c144251438422dbf7416950ead86aeca58f8662b4c7e025c187a0a15050230f5086027e7f36b358d05d9cf95ef4cbab34597a39705e09c3beab8a2d83e9ceeb5
+  checksum: 10c0/2f0c080d98a3044738af57d3735fa3bb02c0e45a371a4c907a15413c902a891e6596de64d4d99b156f9c7d15cb376a12438f30652f2b4243f84048901cf1e33b
   languageName: node
   linkType: hard
 
-"@nuxt/devtools-wizard@npm:2.3.2":
-  version: 2.3.2
-  resolution: "@nuxt/devtools-wizard@npm:2.3.2"
+"@nuxt/devtools-wizard@npm:2.4.0":
+  version: 2.4.0
+  resolution: "@nuxt/devtools-wizard@npm:2.4.0"
   dependencies:
     consola: "npm:^3.4.2"
     diff: "npm:^7.0.0"
@@ -2504,25 +2504,25 @@ __metadata:
     semver: "npm:^7.7.1"
   bin:
     devtools-wizard: cli.mjs
-  checksum: 10c0/be01633b52fe41783393edce953777a79b66bca83cb509cd39441a1a5d50dceb40af1567231225d1b1f9a5f32ac2aed1dd3f96cff3e8f54e6cd15c68055e51ef
+  checksum: 10c0/079450a9f104c1bd6ac92efea02cb42cb8e44ca64f499418b06bae53ff0122a96456306a54b5d05951aabc8da4827710da555e97a31800cc8a516f4abd6e770a
   languageName: node
   linkType: hard
 
-"@nuxt/devtools@npm:2.3.2, @nuxt/devtools@npm:^2.3.2":
-  version: 2.3.2
-  resolution: "@nuxt/devtools@npm:2.3.2"
+"@nuxt/devtools@npm:2.4.0, @nuxt/devtools@npm:^2.3.2":
+  version: 2.4.0
+  resolution: "@nuxt/devtools@npm:2.4.0"
   dependencies:
-    "@nuxt/devtools-kit": "npm:2.3.2"
-    "@nuxt/devtools-wizard": "npm:2.3.2"
-    "@nuxt/kit": "npm:^3.16.1"
+    "@nuxt/devtools-kit": "npm:2.4.0"
+    "@nuxt/devtools-wizard": "npm:2.4.0"
+    "@nuxt/kit": "npm:^3.16.2"
     "@vue/devtools-core": "npm:^7.7.2"
     "@vue/devtools-kit": "npm:^7.7.2"
     birpc: "npm:^2.3.0"
     consola: "npm:^3.4.2"
-    destr: "npm:^2.0.3"
+    destr: "npm:^2.0.5"
     error-stack-parser-es: "npm:^1.0.5"
     execa: "npm:^8.0.1"
-    fast-npm-meta: "npm:^0.3.1"
+    fast-npm-meta: "npm:^0.4.2"
     get-port-please: "npm:^3.1.2"
     hookable: "npm:^5.5.3"
     image-meta: "npm:^0.2.1"
@@ -2548,7 +2548,7 @@ __metadata:
     vite: ">=6.0"
   bin:
     devtools: cli.mjs
-  checksum: 10c0/4f5b6f8b40089ead70270b579bdb295f486e7af5eea431ab14cbc1049cca1b56cd5fab932dbd598b2f9923c6bd8fae478c080528123f07b82c8fc4cabd4dde3d
+  checksum: 10c0/7d63ffca61b7cfe0d4d248214cbbc451d9822a208d98c54bd3171ef460e14b1de619ee0fa509289aa8d59784d616a72dd36930453179078722ab2312e914bc06
   languageName: node
   linkType: hard
 
@@ -2628,7 +2628,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:3.16.2, @nuxt/kit@npm:^3.15.4, @nuxt/kit@npm:^3.16.1, @nuxt/kit@npm:^3.9.0":
+"@nuxt/kit@npm:3.16.2, @nuxt/kit@npm:^3.15.4, @nuxt/kit@npm:^3.16.1, @nuxt/kit@npm:^3.16.2, @nuxt/kit@npm:^3.9.0":
   version: 3.16.2
   resolution: "@nuxt/kit@npm:3.16.2"
   dependencies:
@@ -2658,7 +2658,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/schema@npm:3.16.2, @nuxt/schema@npm:^3.16.1":
+"@nuxt/schema@npm:3.16.2, @nuxt/schema@npm:^3.16.2":
   version: 3.16.2
   resolution: "@nuxt/schema@npm:3.16.2"
   dependencies:
@@ -6223,7 +6223,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"destr@npm:^2.0.3":
+"destr@npm:^2.0.3, destr@npm:^2.0.5":
   version: 2.0.5
   resolution: "destr@npm:2.0.5"
   checksum: 10c0/efabffe7312a45ad90d79975376be958c50069f1156b94c181199763a7f971e113bd92227c26b94a169c71ca7dbc13583b7e96e5164743969fc79e1ff153e646
@@ -7130,10 +7130,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-npm-meta@npm:^0.3.1":
-  version: 0.3.1
-  resolution: "fast-npm-meta@npm:0.3.1"
-  checksum: 10c0/ff6390cd0e21b1ea6ae3ab6dd96974daaa167160cb3d579044ece3c87a58db2867449091edaa7ed8194df3a4f44ddf21ce3fd0d8b29a0aa0370c30a3c0f49720
+"fast-npm-meta@npm:^0.4.2":
+  version: 0.4.2
+  resolution: "fast-npm-meta@npm:0.4.2"
+  checksum: 10c0/fc5bf25ee810c47724b45d575dab741376ca539d8cc6a72a31d641a35fb12feab200b0ffdb96e65c8db4dc14aed70b6f435687de666a49b73abef955fd81ac67
   languageName: node
   linkType: hard
 
@@ -12257,7 +12257,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site@workspace:packages/site"
   dependencies:
-    "@nuxt/devtools": "npm:2.3.2"
+    "@nuxt/devtools": "npm:2.4.0"
     "@nuxt/eslint": "npm:1.3.0"
     "@nuxtjs/tailwindcss": "npm:6.13.2"
     "@pinia/nuxt": "npm:0.11.0"
