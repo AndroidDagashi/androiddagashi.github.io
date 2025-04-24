@@ -94,9 +94,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.15.0":
-  version: 0.15.0
-  resolution: "@atproto/api@npm:0.15.0"
+"@atproto/api@npm:0.15.4":
+  version: 0.15.4
+  resolution: "@atproto/api@npm:0.15.4"
   dependencies:
     "@atproto/common-web": "npm:^0.4.1"
     "@atproto/lexicon": "npm:^0.4.10"
@@ -106,7 +106,7 @@ __metadata:
     multiformats: "npm:^9.9.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/1eb6e0a60324c3fb8be79de6bb8feb2c20bdb44efe86fdcdbe5b74a99cf25157e752aba3db8d94182e806bc4f9b19f25684258793e6fbf3e9eaa8ffa30803c15
+  checksum: 10c0/83fa2c943ac169c9a5cad4b073fa5b03c0e57d1058857729e2fb9a9606c1dd68988df9a01b40b7124d5bef3465dcab7c70fec032a7637ac013048e2de33bb09c
   languageName: node
   linkType: hard
 
@@ -1283,7 +1283,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/config-helpers@npm:^0.2.0":
+"@eslint/config-helpers@npm:^0.2.1":
   version: 0.2.1
   resolution: "@eslint/config-helpers@npm:0.2.1"
   checksum: 10c0/3e829a78b0bb4f7c44384ba1df3986e5de24b7f440ad5c6bb3cfc366ded773a869ca9ee8d212b5a563ae94596c5940dea6fd2ea1ee53a84c6241ac953dcb8bb7
@@ -1318,15 +1318,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/core@npm:^0.12.0":
-  version: 0.12.0
-  resolution: "@eslint/core@npm:0.12.0"
-  dependencies:
-    "@types/json-schema": "npm:^7.0.15"
-  checksum: 10c0/d032af81195bb28dd800c2b9617548c6c2a09b9490da3c5537fd2a1201501666d06492278bb92cfccac1f7ac249e58601dd87f813ec0d6a423ef0880434fa0c3
-  languageName: node
-  linkType: hard
-
 "@eslint/core@npm:^0.13.0":
   version: 0.13.0
   resolution: "@eslint/core@npm:0.13.0"
@@ -1353,10 +1344,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.24.0, @eslint/js@npm:^9.23.0":
-  version: 9.24.0
-  resolution: "@eslint/js@npm:9.24.0"
-  checksum: 10c0/efe22e29469e4140ac3e2916be8143b1bcfd1084a6edf692b7a58a3e54949d53c67f7f979bc0a811db134d9cc1e7bff8aa71ef1376b47eecd7e226b71206bb36
+"@eslint/js@npm:9.25.1, @eslint/js@npm:^9.23.0":
+  version: 9.25.1
+  resolution: "@eslint/js@npm:9.25.1"
+  checksum: 10c0/87d86b512ab109bfd3b9317ced3220ea3d444ac3bfa7abd853ca7f724d72c36e213062f9def16a632365d97dc29e0094312e3682a9767590ee6f43b3d5d873fd
   languageName: node
   linkType: hard
 
@@ -1367,7 +1358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/plugin-kit@npm:^0.2.7":
+"@eslint/plugin-kit@npm:^0.2.7, @eslint/plugin-kit@npm:^0.2.8":
   version: 0.2.8
   resolution: "@eslint/plugin-kit@npm:0.2.8"
   dependencies:
@@ -7670,18 +7661,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:9.24.0":
-  version: 9.24.0
-  resolution: "eslint@npm:9.24.0"
+"eslint@npm:9.25.1":
+  version: 9.25.1
+  resolution: "eslint@npm:9.25.1"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.2.0"
     "@eslint-community/regexpp": "npm:^4.12.1"
     "@eslint/config-array": "npm:^0.20.0"
-    "@eslint/config-helpers": "npm:^0.2.0"
-    "@eslint/core": "npm:^0.12.0"
+    "@eslint/config-helpers": "npm:^0.2.1"
+    "@eslint/core": "npm:^0.13.0"
     "@eslint/eslintrc": "npm:^3.3.1"
-    "@eslint/js": "npm:9.24.0"
-    "@eslint/plugin-kit": "npm:^0.2.7"
+    "@eslint/js": "npm:9.25.1"
+    "@eslint/plugin-kit": "npm:^0.2.8"
     "@humanfs/node": "npm:^0.16.6"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
     "@humanwhocodes/retry": "npm:^0.4.2"
@@ -7716,7 +7707,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/f758ff1b9d2f2af5335f562f3f40aa8f71607b3edca33f7616840a222ed224555aeb3ac6943cc86e4f9ac5dc124a60bbfde624d054fb235631a8c04447e39ecc
+  checksum: 10c0/3bb1997ae994253d441e56aba2fc64a71b3b8dce32756de3dedae5e85416ba33eb07e19ede94a6fa8ce7ef3a0a3b0dd8b6836f41be46a3ab52e5345ad59a553f
   languageName: node
   linkType: hard
 
@@ -8156,9 +8147,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-admin@npm:13.2.0":
-  version: 13.2.0
-  resolution: "firebase-admin@npm:13.2.0"
+"firebase-admin@npm:13.3.0":
+  version: 13.3.0
+  resolution: "firebase-admin@npm:13.3.0"
   dependencies:
     "@fastify/busboy": "npm:^3.0.0"
     "@firebase/database-compat": "npm:^2.0.0"
@@ -8177,7 +8168,7 @@ __metadata:
       optional: true
     "@google-cloud/storage":
       optional: true
-  checksum: 10c0/92417d5686b55bdc1e447649c155e8e6e7ed2e0088b14465a33f2440125b3ee5fbee651688af5d0c52c4c805979398ba81070574da4556d5d6d1002e52b9a083
+  checksum: 10c0/eb5c82ab8d8d033cf4f77198159c3f8037127ded60a2e4146bd6f38e093c2dd9604eb830d794fc70f35b2fe03bf69e106b02638a76abb1251a3bf89cb441cd27
   languageName: node
   linkType: hard
 
@@ -13685,7 +13676,7 @@ __metadata:
     "@types/node": "npm:22.14.1"
     "@types/twitter-text": "npm:3.1.10"
     date-fns: "npm:4.1.0"
-    eslint: "npm:9.24.0"
+    eslint: "npm:9.25.1"
     iconify-icon: "npm:2.3.0"
     lodash.flatmap: "npm:4.5.0"
     markdown-it: "npm:14.1.0"
@@ -13772,10 +13763,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.15.0"
+    "@atproto/api": "npm:0.15.4"
     "@types/oauth": "npm:0.9.6"
     date-fns: "npm:4.1.0"
-    firebase-admin: "npm:13.2.0"
+    firebase-admin: "npm:13.3.0"
     oauth: "npm:0.10.2"
     site-common: "npm:^1.0.0"
     site-config: "npm:^1.0.0"
