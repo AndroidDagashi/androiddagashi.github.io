@@ -1,0 +1,156 @@
+{
+  "id": "MI_kwDOB4jhdM4AmmZi",
+  "number": 300,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/300",
+  "title": "300 2023-11-05",
+  "closedAt": "2023-11-05T10:41:38Z",
+  "description": "KMPがStableに, Compose Multiplatform for iOSがAlphaに, LazyListのItemの再利用について, Kotlin 1.9.20, runBlocking{}のデッドロック, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOdeDYIQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afOdeD3ZA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3001",
+        "title": "Kotlin MultiplatformがStableでProduction-Readyに",
+        "body": "https://blog.jetbrains.com/kotlin/2023/11/kotlin-multiplatform-stable/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3000",
+        "title": "runBlocking{}を間違ったスレッドで呼ぶことによるデッドロックについて",
+        "body": "https://betterprogramming.pub/how-i-fell-in-kotlins-runblocking-deadlock-trap-and-how-you-can-avoid-it-db9e7c4909f1",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3002",
+        "title": "LazyListのItemの再利用ロジックについて",
+        "body": "内部のLazyLayoutItemReusePolicyまで踏み込んだ説明がされています。\r\nhttps://medium.com/google-developer-experts/the-diffing-dilemma-all-about-diffing-with-lazylists-288847307b8a",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3003",
+        "title": "Compose Multiplatform for iOSがAlphaに",
+        "body": "https://blog.jetbrains.com/ja/kotlin/2023/05/compose-multiplatform-for-ios-is-in-alpha/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3004",
+        "title": "Kotlin 1.9.20",
+        "body": "https://blog.jetbrains.com/kotlin/2023/11/kotlin-1-9-20-released\r\n\r\n2.0に向けて、K2コンパイラーがベータになるなどの変更があります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3005",
+        "title": "Android WebView Media Integrity API",
+        "body": "https://android-developers.googleblog.com/2023/11/increasing-trust-for-embedded-media.html\r\n\r\nWebViewに埋め込まれたメディアプロバイダーに対してアプリとデバイスの整合性を確認することができるAPIについて紹介しています。来年はじめからEary Access Programとして提供していくようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

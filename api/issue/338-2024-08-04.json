@@ -1,0 +1,102 @@
+{
+  "id": "MI_kwDOB4jhdM4ArYE7",
+  "number": 338,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/338",
+  "title": "338 2024-08-04",
+  "closedAt": "2024-08-04T10:32:44Z",
+  "description": "Jetpack ComposeのShared Elementの解説、Jetpack ComposeのShared Elementの解説、スケーラブルなComposeを実装する、など",
+  "issues": {
+    "totalCount": 3,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOkdpICA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________tPOkdtUVA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3241",
+        "title": "Jetpack ComposeのShared Elementの解説",
+        "body": "https://www.youtube.com/watch?v=PR6rz1QUkAM&ab_channel=AndroidDevelopers",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3242",
+        "title": "Snackbarを使いやすくする",
+        "body": "https://www.kborowy.com/blog/easy-compose-snackbar/\r\n\r\nJetpack ComposeのSnackbarは、Scaffoldと組み合わせて使う必要があるため、深いUIなどは少しコードが冗長になってしまいます。そこで、CompositionLocalProviderを使う方法を提案しています。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOhydH8g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOhydH8g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/1eeufz4/hasslefree_snackbar_in_jetpack_compose/",
+              "publishedAt": "2024-08-04T10:53:42Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3243",
+        "title": "スケーラブルなComposeを実装する",
+        "body": "https://blog.devgenius.io/creating-scalable-composables-in-jetpack-compose-a-comprehensive-guide-b83d1b260576\r\n\r\nSlot APIや、命名規則など、コードの一貫性を保つためのテクニックについて解説をしています\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
