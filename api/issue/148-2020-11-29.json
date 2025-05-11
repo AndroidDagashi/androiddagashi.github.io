@@ -1,0 +1,210 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjEzNDgwNQ==",
+  "number": 148,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/148",
+  "title": "148 2020-11-29",
+  "description": "Fragmentの公式ドキュメントが完全刷新される、Kotlin Android Extensionsの今後、アプリ起動時のパフォーマンステスト、など。",
+  "closedAt": "2020-11-29T10:37:13Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOLN8Xbg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OLOAKAg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1642",
+        "title": "Fragmentの公式ドキュメントが完全刷新される",
+        "body": "https://developer.android.com/guide/fragments\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOK9QZWw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOK9QZWw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The fragments of today are not the fragments of even a year ago, much less those of 5+ years ago. This week, the *documentation* for fragments has been effectively rewritten from scratch bringing it up to speed with the best practices of 2020.<a href=\"https://t.co/mmIknhD8Et\">https://t.co/mmIknhD8Et</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1331682563547557888?ref_src=twsrc%5Etfw\">November 25, 2020</a></blockquote>\r\n\r\nIan Lake氏による紹介はこちらから",
+              "publishedAt": "2020-11-29T02:41:22Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1643",
+        "title": "Android 12からARTがMainlineのモジュールに",
+        "body": "https://www.xda-developers.com/google-android-runtime-art-mainline-module-android-12/\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/k0qo3e/google_will_make_the_android_runtime_art_a/\r\n\r\nMainlineのモジュールになるということは、ベンダーによるOSのアップデート配信に依存することなく、Googleが直接更新可能になる、ということです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1644",
+        "title": "Kotlin Android Extensionsの今後",
+        "body": "https://android-developers.googleblog.com/2020/11/the-future-of-kotlin-android-extensions.html\r\n\r\n日本語版はこちら\r\nhttps://developers-jp.googleblog.com/2020/11/the-future-of-kotlin-android-extensions.html\r\n\r\nKotlin 1.4.20で非推奨になったKotlin Android Extensionsについて、Googleからのお知らせです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOK9Qdpw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOK9Qdpw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditでの反応はこちら\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/jzlyh7/the_future_of_kotlin_android_extensions/\r\n",
+              "publishedAt": "2020-11-29T02:59:11Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1645",
+        "title": "アプリ起動時のパフォーマンステスト",
+        "body": "https://medium.com/androiddevelopers/testing-app-startup-performance-36169c27ee55\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1646",
+        "title": "DaggerからHiltへ移行する価値はあるか？",
+        "body": "https://medium.com/androiddevelopers/migrating-from-dagger-to-hilt-is-it-worth-it-4cbbc8c93e33\r\n\r\nすでにDaggerを導入しているAndroidプロジェクトがHiltへ移行するメリットとデメリットを説明しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1647",
+        "title": "App Bundle動画まとめ",
+        "body": "https://android-developers.googleblog.com/2020/11/mad-skills-become-android-app-bundle.html\r\n\r\n一連のMAD SkillsのApp Bundle関連のシリースが完結したようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1648",
+        "title": "マテリアルデザインコンポーネントの解説動画",
+        "body": "https://www.youtube.com/playlist?list=PLWz5rJ2EKKc8SmtMNw34wvYkqj45rV1d3\r\n\r\nマテリアルデザインの解説動画がMAD(Modern Android Development) Skillsに追加されました。まだシリーズは完結していませんが、トランジション、ダークテーマなども取り扱うそうです。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1649",
+        "title": "GitLiveでのKotlin Multiplatform Projectの事例",
+        "body": "https://blog.jetbrains.com/kotlin/2020/11/gitlive-case-study-kotlin-multiplatform-across-desktop-and-mobile/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

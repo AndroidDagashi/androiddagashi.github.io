@@ -1,0 +1,293 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDcwMTcxNA==",
+  "number": 88,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/88",
+  "title": "88 2019-10-06",
+  "description": "Android Studio 3.5.1, Flutter Internals, ストレージを扱う公式サンプル, Android Kotlin codelabの日本語ガイド, など",
+  "closedAt": "2019-10-06T10:42:26Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOHdbcCA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfOHfxsYg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1051",
+        "title": "エミュレータ/実機なしでスクリーンショットを撮るライブラリPaparazziがリリース",
+        "body": "https://cashapp.github.io/paparazzi/\r\n\r\nSquare Cashチームのライブラリのようです。ユニットテストのときに便利かもしれません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOH_9g2A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOH_9g2A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "コードをちらっと見たかんじだと、Android Studioに含まれているレンダリングのAPIを利用しているようです。\r\nhttps://github.com/cashapp/paparazzi/blob/1524f4c50632f22fc4173994b22044af5ed6dea7/paparazzi/src/main/java/app/cash/paparazzi/internal/Renderer.kt#L102",
+              "publishedAt": "2019-10-01T02:18:51Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1052",
+        "title": "Now in Android エピソード5",
+        "body": "https://medium.com/androiddevelopers/now-in-android-5-12ddd1f5e3bd\r\n\r\n今回は、Scoped External Storageのサンプルの紹介、Kotlin Codelabの紹介、Android Dev Summitのライブストリームのお知らせ、でした。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIAz-Aw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIAz-Aw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Scoped External Storageについては、Developer Previewのあいだに様々な議論があって情報が錯綜としていたので、整理してもらえるのはありがたいです。記事にもちらっと書いてありますが公式ドキュメントがけっして分かりやすくはないので、サンプルがあるのも助かります。",
+              "publishedAt": "2019-10-02T23:25:10Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1053",
+        "title": "Androidのストレージをあつかう公式サンプル",
+        "body": "https://github.com/android/storage-samples\r\n\r\nContentResolverだけでなくStorage Access Frameworkのサンプルもあります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1054",
+        "title": "Android Studio 3.5.1",
+        "body": "https://androidstudio.googleblog.com/2019/10/android-studio-351-available.html\r\nhttps://www.reddit.com/r/androiddev/comments/dcetbh/android_studio_351_available/\r\n\r\nメンテナンスリリースです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIBxb4Q==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIBxb4Q==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Kotlin Multiplatformなプロジェクトは3.5.1だとうまく動きません。\r\n引き続き3.5.0かあるいは3.6.0のカナリー版を使う必要があります\r\n\r\nhttps://issuetracker.google.com/issues/142002567\r\nhttps://youtrack.jetbrains.com/issue/KT-34143",
+              "publishedAt": "2019-10-06T09:52:38Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1055",
+        "title": "DEXバージョン040でメソッド名に空白を許可",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The next version of the dex format (40) should allow spaces in method names (and other names). Notably, for Kotlin users, this will enable the use of spaces in test method names which run on Android devices (but only on API 30+, or whatever).<a href=\"https://t.co/pMiGwDtm4T\">https://t.co/pMiGwDtm4T</a></p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/1180151677900464128?ref_src=twsrc%5Etfw\">October 4, 2019</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>\r\n\r\nいままではDEXのフォーマットのメソッド名に空白は許されなかったのですが、新しいバージョンでは許されるようです。ツイートにもあるとおり、実機テストで実行するテストメソッドに空白がつかえて、すこし便利かもしれません。\r\n\r\nなお、公式ドキュメントにも記載があるようです。\r\nhttps://source.android.com/devices/tech/dalvik/dex-format#simplename",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1056",
+        "title": "Material Components 1.1.0-beta01",
+        "body": "https://github.com/material-components/material-components-android/releases/tag/1.1.0-beta01\r\n\r\nついにbeta版になりました",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIBwzHQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIBwzHQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://www.reddit.com/r/androiddev/comments/ddt6bx/material_components_library_110_goes_beta/\r\n\r\nredditはこちら",
+              "publishedAt": "2019-10-06T07:16:48Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1057",
+        "title": "Flutter Internals",
+        "body": "https://www.didierboelens.com/2019/09/flutter-internals/\r\n\r\nFlutterがどういう仕組みで動いているのか、どうやって画面を描画しているのか、解説しています。\r\n初心者向け、と謳っていますが、さて。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1058",
+        "title": "Grokking Coroutines",
+        "body": "https://speakerdeck.com/dlew/grokking-coroutines\r\n\r\nTrelloのDan Lewによるコルーチンの解説です。ちょっと動画でないと分かりにくいかもしれません。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1059",
+        "title": "Kotlinで再帰",
+        "body": "https://proandroiddev.com/kotlin-pearls-8-recursion-tailrecursion-and-ycombinator-in-kotlin-3ec6975e9b6\r\n\r\n再帰の概念と実装方法、そしてKotlinがどのように末尾再帰を最適化しているか解説しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1060",
+        "title": "Android Kotlin codelab coursesの日本語ガイド",
+        "body": "https://qiita.com/takahirom/items/3e75581c6f8d4d31b7fa\r\n\r\n日本語で各コースのかんたんな説明をつけてくれいます",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
