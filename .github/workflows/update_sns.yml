@@ -22,20 +22,21 @@ jobs:
         with:
           ref: development
 
-      # run corepack before setup-node
+      # run corepack before setup mise
       # https://github.com/actions/setup-node/issues/899
       - run: corepack enable yarn
 
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
-        with:
-          node-version-file: '.node-version'
-          cache: 'yarn'
+      - name: Setup mise
+        uses: jdx/mise-action@c94f0bf9e520b150e34c017db785461f7e71c5fb # v2.2.2
+
+      - name: install dependencies
+        run: |
+          node --version
+          corepack enable yarn
+          yarn install
 
       - name: setup Firebase
         run: echo ${{ secrets.FIREBASE_JSON }} | base64 -d > ./androiddagashi-serviceaccount.json
-
-      - name: yarn install
-        run: yarn install
 
       - name: update SNS if not already
         run: yarn sns:update
