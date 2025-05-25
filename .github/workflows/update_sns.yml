@@ -22,6 +22,10 @@ jobs:
         with:
           ref: development
 
+      # run corepack before setup mise
+      # https://github.com/actions/setup-node/issues/899
+      - run: corepack enable yarn
+
       - name: Setup mise
         uses: jdx/mise-action@c94f0bf9e520b150e34c017db785461f7e71c5fb # v2.2.2
 
