@@ -16,17 +16,14 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-      # run corepack before setup-node
-      # https://github.com/actions/setup-node/issues/899
-      - run: corepack enable yarn
+      - name: Setup mise
+        uses: jdx/mise-action@c94f0bf9e520b150e34c017db785461f7e71c5fb # v2.2.2
 
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
-        with:
-          node-version-file: '.node-version'
-          cache: 'yarn'
-
-      - name: yarn install
-        run: yarn install
+      - name: install dependencies
+        run: |
+          node --version
+          corepack enable yarn
+          yarn install
 
       - name: Generate website
         run: yarn workspace site exec nuxi build --preset github_pages

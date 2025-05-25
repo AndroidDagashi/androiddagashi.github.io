@@ -26,20 +26,17 @@ jobs:
           ref: development
           persist-credentials: false
 
-      # run corepack before setup-node
-      # https://github.com/actions/setup-node/issues/899
-      - run: corepack enable yarn
+      - name: Setup mise
+        uses: jdx/mise-action@c94f0bf9e520b150e34c017db785461f7e71c5fb # v2.2.2
 
-      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
-        with:
-          node-version-file: '.node-version'
-          cache: 'yarn'
+      - name: install dependencies
+        run: |
+          node --version
+          corepack enable yarn
+          yarn install
 
       - name: Setup git config
         run: sh ./.github/setup-git-config.sh
-
-      - name: yarn install
-        run: yarn install
 
       - name: Generate json resources
         run: yarn api:generate
