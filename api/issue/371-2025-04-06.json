@@ -1,0 +1,217 @@
+{
+  "id": "MI_kwDOB4jhdM4AwN3W",
+  "number": 371,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/371",
+  "title": "371 2025-04-06",
+  "closedAt": "2025-04-06T11:19:00Z",
+  "description": "PSA: KMP ユーザーは Xcode 16.3 への更新を Kotlin 2.1.21 まで待て, Flutter のロードマップが 2025 年版に更新される, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOsVDACw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afOsVEkfA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3411",
+        "title": "PSA: KMP ユーザーは Xcode 16.3 への更新を Kotlin 2.1.21 まで待つべき",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">⚠️ Attention Kotlin Multiplatform developers!<br><br>If you’re using Kotlin with Xcode, please hold off on updating to Xcode 16.3 until Kotlin 2.1.21 is released. The upcoming Kotlin update includes essential compatibility fixes.<br><br>Thanks for your patience!</p>&mdash; Kotlin by JetBrains (@ kotlin) <a href=\"https://twitter.com/kotlin/status/1907873922152018143?ref_src=twsrc%5Etfw\">April 3, 2025</a></blockquote>\n\nというアナウンスが Kotlin 公式からありました。\nまだ Xcode 16.3 での変更をサポートしきれていないようです。\n\n関連チケットはこちら\n\n- https://youtrack.jetbrains.com/issue/KT-76460\n- https://youtrack.jetbrains.com/issue/KT-75992\n- https://youtrack.jetbrains.com/issue/KT-75805",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOpcgR4w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOpcgR4w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら。\nXcode のダウングレード周りの話題もあります\n\nhttps://www.reddit.com/r/KotlinMultiplatform/comments/1jppvak/psa_dont_upgrade_to_xcode_163_yet/",
+              "publishedAt": "2025-04-06T10:29:20Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3412",
+        "title": "Flutter のロードマップが 2025 年版に更新される",
+        "body": "https://github.com/flutter/flutter/blob/master/docs/roadmap/Roadmap.md\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOpcgcOQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOpcgf2A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\nhttps://www.reddit.com/r/FlutterDev/comments/1jrz4cd/googles_flutter_roadmap_has_been_updated_for_2025/",
+              "publishedAt": "2025-04-06T10:36:23Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "build_runner や Dart analyzer のパフォーマンス向上は捗りそうです",
+              "publishedAt": "2025-04-06T10:39:15Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3413",
+        "title": "AI時代を生き抜く \"人力Multiplatform芸人\" の思索",
+        "body": "https://blog.smartbank.co.jp/entry/2025/03/26/manual-multiplatform",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3414",
+        "title": "Compose Preview Screenshot Testing と AST 解析で Material3 へ完全移行した話",
+        "body": "https://tech.mirrativ.stream/entry/2025/03/27/100000",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3415",
+        "title": "AlarmManagerを利用して特定の時間に処理をスケジューリングする",
+        "body": "https://tech.stmn.co.jp/entry/2025/04/03/114844",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3416",
+        "title": "Android Studio Meerkat Feature Drop | 2024.3.2 RC 1",
+        "body": "https://androidstudio.googleblog.com/2025/04/android-studio-meerkat-feature-drop.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
