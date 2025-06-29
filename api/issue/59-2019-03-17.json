@@ -1,0 +1,282 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDEyNjE1Ng==",
+  "number": 59,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/59",
+  "title": "59 2019-03-17",
+  "description": "Android Q Beta 1リリース、Android Qの新機能や制約、Google Play Storeのアイコン新仕様、Android Jetpack Navigation安定版、など",
+  "closedAt": "2019-03-17T10:49:57Z",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAA-fOGSWv_g==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGRS2CA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/721",
+        "title": "Google Play Storeのアプリアイコン新仕様が公開",
+        "body": "https://android-developers.googleblog.com/2019/03/introducing-new-google-play-app-and.html\r\nhttps://www.reddit.com/r/androiddev/comments/b1iedw/introducing_a_new_google_play_app_and_game_icon/\r\n\r\n新仕様適用のタイムテーブルは下記のとおりです。\r\n\r\n4月初頭: Play Storeにアップロードして新仕様に準拠しているか確認できる。\r\n5月1日: 新仕様に準拠しているアイコンのみがアップロード可能に。アップロード済みのアイコンは今までどおり表示される。\r\n6月24日: アップロード済みの旧仕様アイコンが\"レガシーモード\"で表示されるようになる。\r\n\r\n新仕様はこちらです。\r\nhttps://developer.android.com/google-play/resources/icon-design-specifications",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/720",
+        "title": "Android Qではバックグラウンドからアクティビティが起動できなくなる予定",
+        "body": "https://developer.android.com/preview/privacy/background-activity-starts\r\nhttps://www.reddit.com/r/androiddev/comments/b0t8np/android_q_to_prevent_startactivity_in_service/\r\n\r\n現状のQ Beta 1では警告が表示されるだけのようですが、セキュリティ強化のためにバックグラウンドからアクティビティを起動できなくする変更が入る予定のようです。それを巡って、Issue Trackerにissueを開いたら、privateにされた（Google内部の人しか見れない状態になった）ということでさらに騒ぎになっているようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHDrvlg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHDrvlg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "なお、自分の使っている 1 Password も Autofill のときに警告が出ました。かなりの数のアプリが影響を受けそうです。",
+              "publishedAt": "2019-03-17T07:36:38Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/719",
+        "title": "Android Qに画面を録画する機能が追加",
+        "body": "https://www.androidpolice.com/2019/03/14/android-q-beta-introduces-built-in-screen-recording-but-its-broken-for-now/\r\n\r\n正式にサポートされるか分かりませんが開発者オプションからフラグをオンにすると、スクリーンショットを撮るだけでなく録画もできるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHDruWw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHDruWw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "API diffに`getContentCaptureSession`というAPIが生えているので、それかもしれません\r\nhttps://developer.android.com/sdk/api_diff/q-beta1/changes/android.view.View.html",
+              "publishedAt": "2019-03-17T07:31:21Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/718",
+        "title": "Kotlinのスコープ関数の使い分け公式ガイド",
+        "body": "https://kotlinlang.org/docs/reference/scope-functions.html\r\n\r\n`let`や`apply`などのスコープ関数について、特徴や例を交えて、その使い分け方が解説されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHDkH4w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHDkH4w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "正直に言うと、自分はあまりスコープ関数は使わないので、ピンとはきませんでしたが、どういうときにどのスコープ関数を使うか、という基準をプロジェクト内で定めるときは参考になるかもしれません。",
+              "publishedAt": "2019-03-16T04:51:29Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/717",
+        "title": "Android QのRole機能",
+        "body": "https://medium.com/@lukasz.chromy/android-q-roles-3237d029585d\r\n\r\n詳細は明らかになっていませんが、QではRoleという一種の特権をアプリに与えることができるようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/716",
+        "title": "AAC ViewModelにSaved Stateの仕組みが追加",
+        "body": "https://developer.android.com/topic/libraries/architecture/viewmodel-savedstate\r\n\r\nこれまでViewModelは画面回転時しか生き残りませんでしたが、Activityの再生成やプロセスの再生成も生き残る仕組みが追加されました",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHDj-UQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHDtNuQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "中身は通常のonSaveInstanceStateを使った状態保存なので、TransactionTooLargeExceotionに気を付けましょう",
+              "publishedAt": "2019-03-16T04:08:23Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            },
+            {
+              "body": "https://medium.com/androiddevelopers/viewmodels-persistence-onsaveinstancestate-restoring-ui-state-and-loaders-fc7cc4a6c090#81a0\r\n\r\n以前から推奨されていた、「`onSavedInstanceState`でViewModelの状態復元に必要な最小限の情報を保存しておこう」というのを公式でライブラリ化した感じでしょうかね。",
+              "publishedAt": "2019-03-17T09:29:17Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/715",
+        "title": "Android JetpackのNavigationがついに安定版に",
+        "body": "https://android-developers.googleblog.com/2019/03/android-jetpack-navigation-stable.html\r\n\r\n1.0.0と2.0.0が同時リリースされています。\r\nandroidxに移行していない場合は1.0.0を使いましょう",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/714",
+        "title": "Android関連の質問に対する答えはだいたい「場合による」",
+        "body": "https://handstandsam.com/2019/03/10/it-depends-is-the-answer-to-your-android-question/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/713",
+        "title": "Kotlinのexpressionについて物申す",
+        "body": "https://proandroiddev.com/advocating-against-kotlin-expressions-73acfa819ca7",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/712",
+        "title": "Android Q Beta 1リリース",
+        "body": "https://android-developers.googleblog.com/2019/03/introducing-android-q-beta.html\r\n\r\nAndroid Q Beta 1とPreview SDKがリリースされました。\r\n今の所まだPixel端末へのみ配布しているようです。\r\n初代Pixelにも対応しているのは嬉しいですね。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
