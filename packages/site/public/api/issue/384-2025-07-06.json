@@ -1,0 +1,114 @@
+{
+  "id": "MI_kwDOB4jhdM4AyN2T",
+  "number": 384,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/384",
+  "title": "384 2025-07-06",
+  "closedAt": "2025-07-06T10:30:21Z",
+  "description": "I/OでのAndroid開発者向けアップデート, Fused Library, Jetpack ComposeのプロジェクトをKMP化するKMPify, Kotlin(native)のコンパイルの詳細解説, など",
+  "issues": {
+    "totalCount": 4,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOvx1Blw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_Ovx1oBQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3478",
+        "title": "Android Jetpack ComposeのプロジェクトをKMP化するKMPify",
+        "body": "AndroidのリソースやクラスのimportなどをKMPのものに置き換えてくれたりするようです。\nhttps://github.com/MahmoudRH/kmpify",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3479",
+        "title": "複数のライブラリモジュールを一つにまとめられるFused Library",
+        "body": "依存関係の簡素化やライブラリサイズの縮小をサポートしたり、公開されるモジュールを限定したりすることができるそうです。\nhttps://developer.android.com/build/publish-library/fused-library",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3480",
+        "title": "I/OでのAndroid開発者向けのTop3のアップデート",
+        "body": "https://android-developers.googleblog.com/2025/06/top-3-updates-for-android-developer-productivity-google-io-25.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3481",
+        "title": "Kotlin(native)のコンパイルの詳細解説",
+        "body": "内部ファイルまで詳しく説明しています。\nhttps://medium.com/mateedevs/exploring-kotlin-native-compilation-7d396b0b7fde",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
