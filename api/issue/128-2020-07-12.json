@@ -1,0 +1,361 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTYxODU1MQ==",
+  "number": 128,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/128",
+  "title": "128 2020-07-12",
+  "description": "DroidKaigiがpodcastを開始、Coroutineの様々なユースケース、Android 11 Beta 2、RoomのER図作成ツール、Kotlin 1.4-M3、など。",
+  "closedAt": "2020-07-12T10:38:19Z",
+  "issues": {
+    "totalCount": 14,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOJs7ljQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-ofOJw-hoA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1456",
+        "title": "DroidKaigiがpodcastを開始",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"ja\" dir=\"ltr\">DroidKaigi の新たな取り組みとして、<a href=\"https://t.co/CkKR638Hni\">https://t.co/CkKR638Hni</a> という podcast をはじめました！<a href=\"https://t.co/n1ofMi7A3n\">https://t.co/n1ofMi7A3n</a><br><br>第一回は DroidKaigi On Air の振り返りとして、Android Studio 4.x と Android 11 について話しました。</p>&mdash; DroidKaigi (@ DroidKaigi) <a href=\"https://twitter.com/DroidKaigi/status/1279609054386511872?ref_src=twsrc%5Etfw\">July 5, 2020</a></blockquote>",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJyjKQg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJyjKQg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "第二回も公開されています\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"ja\" dir=\"ltr\"><a href=\"https://t.co/CkKR638Hni\">https://t.co/CkKR638Hni</a> #2 では前回に引き続き、 <a href=\"https://twitter.com/KeithYokoma?ref_src=twsrc%5Etfw\">@KeithYokoma</a>, <a href=\"https://twitter.com/e10dokup?ref_src=twsrc%5Etfw\">@e10dokup</a>, <a href=\"https://twitter.com/ymnd?ref_src=twsrc%5Etfw\">@ymnd</a> の3名で Android 11 Talks で語られた内容について話しました。<a href=\"https://t.co/I7otSiy0wv\">https://t.co/I7otSiy0wv</a><a href=\"https://twitter.com/hashtag/DroidKaigi?src=hash&amp;ref_src=twsrc%5Etfw\">#DroidKaigi</a></p>&mdash; DroidKaigi (@ DroidKaigi) <a href=\"https://twitter.com/DroidKaigi/status/1281093446409703424?ref_src=twsrc%5Etfw\">July 9, 2020</a></blockquote>",
+              "publishedAt": "2020-07-11T04:17:41Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1457",
+        "title": "Android Studio 4.1 Beta 3",
+        "body": "https://androidstudio.googleblog.com/2020/07/android-studio-41-beta-3-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1458",
+        "title": "Android Studio 4.2 Canary 4",
+        "body": "https://androidstudio.googleblog.com/2020/07/android-studio-42-canary-4-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1459",
+        "title": "ConstraintLayout 2.0.0 Beta 8",
+        "body": "https://androidstudio.googleblog.com/2020/07/constraintlayout-200-beta-8.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJxdHCQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJxdHCQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Happy to announce ConstraintLayout 2.0 beta 8 -- note that the next beta is slated to be our last before RC, bug reports very appreciated!<a href=\"https://twitter.com/hashtag/AndroidDev?src=hash&amp;ref_src=twsrc%5Etfw\">#AndroidDev</a> <a href=\"https://twitter.com/hashtag/ConstraintLayout?src=hash&amp;ref_src=twsrc%5Etfw\">#ConstraintLayout</a> <a href=\"https://twitter.com/hashtag/MotionLayout?src=hash&amp;ref_src=twsrc%5Etfw\">#MotionLayout</a><a href=\"https://t.co/pAtwMwojU9\">https://t.co/pAtwMwojU9</a></p>&mdash; Nicolas Roard (@ camaelon) <a href=\"https://twitter.com/camaelon/status/1280635039449968640?ref_src=twsrc%5Etfw\">July 7, 2020</a></blockquote>\r\n\r\n次のBeta(Beta 9)が、RC前の最後のBetaリリースになる予定のようです。ConstraintLayout2もだいぶリリースに近づいてきました",
+              "publishedAt": "2020-07-09T01:11:22Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1460",
+        "title": "Coroutineの様々なユースケース",
+        "body": "https://developer.android.com/courses/pathways/android-coroutines\r\n\r\nCodelab、mediumの記事などを通して、Coroutineを学ぶことが出来ます。WorkManager、Roomなども触れられています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1461",
+        "title": "Hiltでカスタムのコンポーネントを追加する",
+        "body": "https://medium.com/androiddevelopers/hilt-adding-components-to-the-hierarchy-96f207d6d92d\r\n\r\nHiltで、特定のActivity間でのインスタンスの管理をどのようにするかを説明しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1462",
+        "title": "Android 11 Beta 2",
+        "body": "https://android-developers.googleblog.com/2020/07/android-11-beta-2-and-platform-stability.html\r\nhttps://developer.android.com/preview/release-notes#about-beta2",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1463",
+        "title": "Android Gradle Pluginのカスタマイズサンプル集",
+        "body": "https://github.com/android/gradle-recipes\r\n\r\nAndroid Gradle Pluginを使ったビルドをカスタマイズするサンプルが gradle, gradle.kts, buildSrc ごとに公開されてます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1464",
+        "title": "11 Weeks of Android: Android 11 compatibility",
+        "body": "https://android-developers.googleblog.com/2020/07/testing-app-compatibility-Android.html\r\nhttps://www.youtube.com/watch?v=pCtCzPBC5MI&list=PLWz5rJ2EKKc-Rkjav7zN93x4gJPOruB26\r\n\r\n#11WeeksOfAndroid の4週目は、 Android 11の互換性に関するコンテンツが公開されています。\r\n来週はLanguagesです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1465",
+        "title": "RoomのER図作成ツール",
+        "body": "https://julioz.github.io/FloorPlan/\r\n\r\nRoomのSchema JSONを読み込んでER図を作成してくれます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1466",
+        "title": "Kotlin 1.4-M3",
+        "body": "https://blog.jetbrains.com/kotlin/2020/07/kotlin-1-4-m3-is-out-standard-library-changes/\r\n\r\nこのM3が最後のmilestone previewバージョンになるようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJyu0gg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJyu0gg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "コレクション系の標準APIにそこそこ大きい変更が入っているようです。浮動小数のリスト型のメソッドをいくつか廃止する話はなるほどと思いました。",
+              "publishedAt": "2020-07-12T05:02:40Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1467",
+        "title": "Android 11に関するAMAの結果",
+        "body": "[前号で触れた7月10日に開催されたAMA](https://github.com/AndroidDagashi/AndroidDagashi/issues/1450)の結果が見れます。\r\nhttps://www.reddit.com/r/androiddev/comments/hk3hrq/were_on_the_android_engineering_team_ask_us/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJyu3TA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJyu3TA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "一番上にある「マニュファクチャラによるアプリの強制終了をやめてほしい」という要望への回答が興味深かったです。アプリが終了したときの理由が取れるようになったのも、これに関連しているようです。",
+              "publishedAt": "2020-07-12T05:13:48Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1468",
+        "title": "Now in Android エピソード21",
+        "body": "11 Weeks of Androidの話やAsk Me Anything (AMA)、AndroidXのアップデートの話が載っています。\r\n\r\nhttps://medium.com/androiddevelopers/now-in-android-21-209e665554cb",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1469",
+        "title": "Android OSのアップデート高速化の取り組み",
+        "body": "今まで行われてきた最新のAndorid OSが各端末へすみやかに普及するための取り組みとその結果が示されています。Project Treble、Project Mainlineなど様々なプロジェクトがありましたが、おかげでAndroid 10は以前のバージョンよりも28%早く普及しているそうです。\r\n\r\nhttps://android-developers.googleblog.com/2020/07/accelerating-android-updates.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJyu-Kw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJyu-Kw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "COVID-19用のExposure Notification APIがGoogle Play経由でわずか4週間で20億のデバイスにデプロイされた話はおもしろかったです。",
+              "publishedAt": "2020-07-12T05:39:16Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
