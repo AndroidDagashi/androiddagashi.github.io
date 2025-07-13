@@ -1,0 +1,163 @@
+{
+  "id": "MI_kwDOB4jhdM4AyZ45",
+  "number": 385,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/385",
+  "title": "385 2025-07-13",
+  "closedAt": "2025-07-13T10:28:06Z",
+  "description": "NavigationにおけるStateの管理方法, Jetpack ComposeでsnapshotFlowとcollectAsStateを使い分ける, 開発者向け「Canaryチャンネル」発表, など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOwE4P6g==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOwE6FnQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3482",
+        "title": "Android、開発者向け「Canaryチャンネル」を導入",
+        "body": "Android Developers Blog: Evolving Android’s early-access programs: Introducing the Canary channel  \nhttps://android-developers.googleblog.com/2025/07/android-canary.html\n\nAndroidが開発者向けに新しい「Canaryチャンネル」を発表。従来のDeveloper Previewを置き換え、年間を通じて最新の開発中機能をOTAで継続的に提供。バグや変更が多いため開発用デバイスでの利用を推奨。ベータ版は引き続き利用可能。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3483",
+        "title": "NavigationにおけるStateの管理方法",
+        "body": "https://proandroiddev.com/managing-state-across-navigation-in-jetpack-compose-7ff5a9f49864",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3484",
+        "title": "Jetpack ComposeでsnapshotFlowとcollectAsStateを使い分ける",
+        "body": "https://proandroiddev.com/snapshotflow-or-collectasstate-how-to-pick-the-right-tool-for-jetpack-compose-d6f1cc9d2123\n\nJetpack ComposeでStateの変更を監視する際、多くの開発者がcollectAsStateを過度に使用し、パフォーマンス問題に直面しています。本記事では、ViewModelからUIへのデータ表示にはcollectAsState、スクロールやアニメーションなどCompose固有の状態変化への副作用にはsnapshotFlowと、それぞれの適切な使い分けを実例とともに解説。不要な再コンポジションを避け、アプリの応答性を向上させる実践的なテクニックを紹介します",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3485",
+        "title": "Composeのアクセシビリティフォーカスとキーボードフォーカスの使い分け",
+        "body": "https://proandroiddev.com/its-all-about-accessibility-focus-and-compose-de1ec352649a\n\nComposeでフォーカス制御を実装する際、TalkBackなどのスクリーンリーダー向けのアクセシビリティフォーカスと、キーボード操作用のキーボードフォーカスは異なるAPIを使用する必要があります。記事では、focusRequesterがキーボードフォーカス専用であること、アクセシビリティフォーカスにはsemanticsモディファイアを使うこと、それぞれのトラバーサル順序の変更方法などを具体的なコード例と共に解説しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3486",
+        "title": "DevinでAndroidアプリの古いデザインを1日で一括改善",
+        "body": "https://engineer.retty.me/entry/retty_android_devin\n\n\nRettyのAndroidアプリで長年放置されていた古いオレンジ色のTopBar（22画面）を、AI開発ツールDevinを活用して新しいデザインに一括置換した事例。手動で参考となるPRを1つ作成し、それをDevinに渡して残りの画面への適用を依頼。JavaからJetpack Composeへの移行も含め、本来なら数日かかる作業を1日で完了。「改善したいけど費用対効果が低い」タスクにAIが有効であることを実証。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3487",
+        "title": "Google Play Consoleから問題のあるバージョンのユーザーに更新を促す方法",
+        "body": "https://qiita.com/ryo_mm2d/items/e4b4392804a1a0a0a489\n\nGoogle Play Consoleの復元ツールを使って、問題のあるバージョンを利用中のユーザーに更新を求めることができます。国やAndroidバージョンでターゲティングも可能で、内部アプリ共有を使ったテストも行えます。ただし、アプリがクラッシュする状況での動作は未確認で、反映まで半日以上かかるため、緊急時にはIn-App Updateなどの実装も検討すべきとのことです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3488",
+        "title": "Now in Android #119",
+        "body": "https://medium.com/androiddevelopers/now-in-android-119-7b86ad2b3e81\n\nAndroid 16が正式リリースされ、カメラ・メディアAPIの強化、プログレススタイル通知、ランタイムカラーフィルターなどが追加されました。また、外部ディスプレイ接続によるデスクトップ体験の開発者プレビューや、様々なフォームファクターに対応するアダプティブアプリ構築のための新機能、自動テストに関する動画コンテンツ、AndroidXライブラリの最新アップデートなど、Android開発者向けの重要な更新情報が紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
