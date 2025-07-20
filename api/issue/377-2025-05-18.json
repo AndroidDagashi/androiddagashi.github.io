@@ -1,0 +1,174 @@
+{
+  "id": "MI_kwDOB4jhdM4AxHLW",
+  "number": 377,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/377",
+  "title": "377 2025-05-18",
+  "closedAt": "2025-05-18T10:50:36Z",
+  "description": "Kotlin 2.2.0-RC, Material 3 Expressive, Retrofit 3.0 など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOtxCA6w==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOtxWdUw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3436",
+        "title": "永続的なUI要素を管理するための設計",
+        "body": "https://www.tunjid.com/articles/ui-layer-architecture-for-persistent-ui-elements-68248e8ecc8e85f53ce1aa46\n\n\nJetpack Composeにおける永続UI要素（ナビゲーションバー、FABなど）のアーキテクチャを解説しています。rootレベルではなく、**per-screenアプローチを強く推奨**し、**ScaffoldStateとAppState**を用いた手法を提案しています。この手法により、画面ごとの柔軟なカスタマイズ、状態管理の簡素化、テスト容易性の向上を実現しつつ、Shared Element Transitions やアニメーションを用いて永続性の錯覚を作り出します。これにより、複雑さを軽減しながら良好なUXを提供できるとしています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOrC56mA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOrC56mA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\nhttps://www.reddit.com/r/androiddev/comments/1kncbbi/ui_layer_architecture_for_scaffolding_persistent/",
+              "publishedAt": "2025-05-18T02:47:47Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3437",
+        "title": "Passkey 実装ガイド",
+        "body": "https://proandroiddev.com/implementing-passkeys-in-android-a-full-stack-guide-9436744af9ab\n\nバックエンド実装も含む完全ガイドです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3438",
+        "title": "Material 3 Expressiveの発表",
+        "body": "https://m3.material.io/blog/building-with-m3-expressive\n\nM3の拡張版のMaterial 3 Expressiveが発表されました。補足として、M3はdeprecatedになるわけではなく、またM4ではないので、あくまで拡張版（進化版）の立ち位置になっています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3439",
+        "title": "Kotlin 2.2.0-RC",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v2.2.0-RC",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3440",
+        "title": "Retrofit 3.0.0",
+        "body": "https://github.com/square/retrofit/releases/tag/3.0.0",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3441",
+        "title": "The Android Show: I/O Edition",
+        "body": "https://android-developers.googleblog.com/2025/05/the-android-show-io-edition.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3442",
+        "title": "アプリの起動時間を半分にした話",
+        "body": "https://tech.every.tv/entry/2025/05/13/115725",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

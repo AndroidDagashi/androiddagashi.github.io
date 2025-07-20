@@ -1,0 +1,245 @@
+{
+  "id": "MI_kwDOB4jhdM4Ak2X1",
+  "number": 285,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/285",
+  "title": "285 2023-07-23",
+  "closedAt": "2023-07-23T11:03:08Z",
+  "description": "Composable UI の API ガイドライン, Jetpack Compose は modifier の順番が重要, KMP で Swift フレンドリーな API を書く, など",
+  "issues": {
+    "totalCount": 9,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vObExQAg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________HvObE6BRQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2891",
+        "title": "2023年7月18日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#july_18_2023\r\n\r\nCompose CompilerがKoltin 1.9に対応し、ExperimentalとしてK2 compilerのサポートも入っています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2892",
+        "title": "Android Studio - Hedgehog | 2023.1.1 Canary 13",
+        "body": "https://androidstudio.googleblog.com/2023/07/android-studio-hedgehog-canary-13-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2893",
+        "title": "Jetpack Compose は modifier の順番が重要",
+        "body": "https://proandroiddev.com/jetpack-compose-the-order-of-modifiers-does-matter-e9cd447fced5",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2894",
+        "title": "OnBackPressedDispatcher周りをシーケンス図にまとめる",
+        "body": "https://qiita.com/takahirom/items/c7164eed5660d759f371",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2895",
+        "title": "KMP で Swift フレンドリーな API を書く",
+        "body": "https://medium.com/@aoriani/list/writing-swiftfriendly-kotlin-multiplatform-apis-c51c2b317fce\r\n\r\nSwift から使いやすい KMP(Kotlin Multiplatform Project) コードの書き方を紹介するシリーズです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2896",
+        "title": "複数要素を含む Row で ellipsize するには",
+        "body": "https://stackoverflow.com/questions/76677701/android-jetpack-compose-ellipsis-wrap-content-text-when-it-reaches-its-container",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2897",
+        "title": "Jetpack Compose で完全オリジナルなデザインシステムを作る",
+        "body": "https://slack-chats.kotlinlang.org/t/13154456/hello-i-m-looking-for-in-depth-resources-about-compose-mostl\r\n\r\nKotlin Slack のスレッドです。\r\nMaterial Design ベースではないデザインシステムを作るときどうしたの？　という事例など。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2898",
+        "title": "Composable UIのAPIガイドラインの公開",
+        "body": "https://github.com/androidx/androidx/blob/androidx-main/compose/docs/compose-component-api-guidelines.md\r\n\r\n引数など、Composable関数のベストプラクティスについて紹介しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2899",
+        "title": "1.5〜2年くらいの経験があるAndroidエンジニアが知っているべきこと",
+        "body": "https://www.reddit.com/r/androiddev/comments/1563bho/what_should_an_android_developer_with_152_yoe_know/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOYihS1g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOYihS1g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "シニアレベルのエンジニアになるためには、という似たようなスレッドもありました\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/154kpqj/how_to_go_to_the_next_level_and_become_a_senior/",
+              "publishedAt": "2023-07-23T11:01:28Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
