@@ -1,0 +1,138 @@
+{
+  "id": "MI_kwDOB4jhdM4AorFS",
+  "number": 318,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/318",
+  "title": "318 2024-03-17",
+  "closedAt": "2024-03-17T10:20:17Z",
+  "description": "5月14日にGoogle I/Oが開催、Jetpack Composeのパフォーマンス最適化、Composable Modifierとcomposed factory関数の比較、など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOgpF8Ug==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvOgpIEpA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3123",
+        "title": "5月14日にGoogle I/Oが開催",
+        "body": "https://android-developers.googleblog.com/2024/03/google-io-24-save-the-date.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3124",
+        "title": "Jetpack Composeのパフォーマンス最適化",
+        "body": "https://getstream.io/blog/jetpack-compose-stability/\r\n\r\nStable、Unstableの基本的なところや、Compose Compiler Metrics、Strong Skipping Modeなどの話など、幅広く解説しています。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3125",
+        "title": "Composable Modifierとcomposed factory関数の比較",
+        "body": "https://engineering.teknasyon.com/composable-modifier-vs-composed-factory-in-jetpack-compose-6cbb675b0e7b\r\n\r\ncomposed関数はパフォーマンスの理由でdeprecatedになり、今後置き換える必要があるのですが、微妙に挙動が違うので注意点を解説をしています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3126",
+        "title": "Flowを理解する7つのレシピ",
+        "body": "https://proandroiddev.com/seven-recipes-to-understand-flows-and-asynchrony-in-kotlin-1bd7fe041480\r\n\r\nサンプルコードを例にFlowの挙動、コンセプトを解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3127",
+        "title": "注意：macOS 14.4 で JetBrains IDE がクラッシュする問題",
+        "body": "https://blog.jetbrains.com/ja/2024/03/16/macos-14-4-jetbrains-ide/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOd1pezg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOd1pezg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/1bgdbwo/java_users_on_macos_14_running_on_apple_silicon/",
+              "publishedAt": "2024-03-17T11:09:25Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "id": "MI_kwDOB4jhdM4Ac57j",
+  "number": 208,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/208",
+  "title": "208 2022-01-23",
+  "description": "Jetnewsのさまざまなスクリーンサイズへの対応について, ComposeとKotlinのバージョン対応表, KMPの学習曲線について, 公式チュートリアルのアップデート, など",
+  "closedAt": "2022-01-23T10:22:05Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOQfHMDQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-7POQkTTgA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2250",
+        "title": "AndroidXのcore-splashscreenでAPIレベル 21までさかのぼりSplashScreen APIを利用するサンプル",
+        "body": "https://github.com/android/user-interface-samples/tree/main/SplashScreen\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"ja\" dir=\"ltr\">Android 12 (API レベル 31) で導入された SplashScreen API ですが、AndroidX の core-splashscreen を使えば、API レベル 21 までさかのぼって利用できます。サンプルを新しくしました。<a href=\"https://t.co/1xOf0AqqFC\">https://t.co/1xOf0AqqFC</a></p>&mdash; Yuichi Araki (@yuichi_araki) <a href=\"https://twitter.com/yuichi_araki/status/1482906377916141571?ref_src=twsrc%5Etfw\">January 17, 2022</a></blockquote>",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2251",
+        "title": "Jetnewsのさまざまなスクリーンサイズへの対応について",
+        "body": "https://medium.com/androiddevelopers/jetnews-for-every-screen-4d8e7927752\r\n\r\n画面サイズに対応するstateを作成するなど、どのように対応を行ったのかが書かれています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2252",
+        "title": "正しい遷移アニメーションを選ぶ",
+        "body": "https://material.io/blog/motion-research-container-transform\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2253",
+        "title": "Baseline Profiles",
+        "body": "https://developer.android.com/studio/profile/baselineprofiles\r\n\r\nインストール時のAOTコンパイルで使用するプロファイルで、インストール直後の起動時間を改善することができます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2254",
+        "title": "Google Play Games Beta",
+        "body": "https://android-developers.googleblog.com/2022/01/googleplaygames.html\r\n\r\nWindows PCでAndroidのゲームをプレイできるGoogle Play Gamesが韓国、台湾、香港でベータとして公開されています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2255",
+        "title": "ComposeとKotlinのバージョン対応表",
+        "body": "https://developer.android.com/jetpack/androidx/releases/compose-kotlin\r\n\r\nComposeのバージョンごとに必要なKotlinのバージョンが確認できる対応表です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2256",
+        "title": "Android Developers Twitter Community",
+        "body": "Androidアプリ開発者のTwitter Communityができたようです。招待制ですが、投稿はパブリックのようです。\r\nhttps://twitter.com/i/communities/1483910856257818626",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2257",
+        "title": "Android公式チュートリアルについてのアップデート",
+        "body": "https://android-developers.googleblog.com/2022/01/android-basics-and-training-update.html\r\n\r\n\"Android Kotlin Fundamentals\" は \"Android Basics in Kotlin\" でその内容がほとんどカバーされたため、提供が終了するようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2258",
+        "title": "Kotlin Multiplatform 用のモッキングライブラリ、MocKMP",
+        "body": "https://medium.com/kodein-koders/mockmp-a-mocking-processor-for-kotlin-multiplatform-51957c484fe5\r\nhttps://github.com/Kodein-Framework/MocKMP\r\n\r\nKotlin/Native でもモッキングをサポートするために KSP を利用しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2259",
+        "title": "Now in Android エピソード54",
+        "body": "https://medium.com/androiddevelopers/now-in-android-54-f9cbc3119514\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2260",
+        "title": "Kotlinマルチプラットフォームの学習曲線について",
+        "body": "https://medium.com/@callerymatthew/my-kotlin-multiplatform-mobile-learning-curve-c024c9fcfe2\r\n\r\nKotlinマルチプラットフォームを採用したプロジェクトにジョインした際に、必要な技術をどのように習得したかについて紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

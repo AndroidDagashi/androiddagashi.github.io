@@ -1,0 +1,314 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDkxMjUwMQ==",
+  "number": 98,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/98",
+  "title": "98 2019-12-15",
+  "description": "AOSPのコードがウェブ上で検索出来るように, Android 10 on Android TV, Flutter Interact 2019のプロダクトキーノート, Now in Android エピソード9, など",
+  "closedAt": "2019-12-15T10:50:31Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOH-tZgQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-0_OIBGmdA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1168",
+        "title": "Retrofit 2.7.0でminSdkVersionが21(Android5.0)に",
+        "body": "https://github.com/square/retrofit/blob/master/CHANGELOG.md#version-270-2019-12-09\r\n\r\nOkHttpが3.14.4に更新されたのが直接の原因です\r\n\r\nこのへんの決定については下記記事が詳しいです\r\nhttps://cashapp.github.io/2019-02-05/okhttp-3-13-requires-android-5",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1169",
+        "title": "AOSPのコードがウェブ上で検索出来るように",
+        "body": "https://android-developers.googleblog.com/2019/12/code-search-with-cross-references-for-aosp.html\r\nhttps://cs.android.com/\r\n\r\nAndroid、AndroidXのソースコードがウェブ上で検索できるようになりました。Gitのコミットメーセージなども見ることが出来ます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1170",
+        "title": "Android 10 on Android TV",
+        "body": "https://android-developers.googleblog.com/2019/12/android-10-on-android-tv.html\r\n\r\nAndroidTVにAndroid10が来ました。また、ADT-3というAndroidTVの開発者向け端末が発表されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1171",
+        "title": "Jetpack ComposeにBREAKING CHANGE",
+        "body": "https://twitter.com/intelligibabble/status/1205318193960472576\r\n\r\nstateなどで必要だったunary operatorが不要になるようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1172",
+        "title": "Dart 2.7",
+        "body": "https://medium.com/dartlang/dart-2-7-a3710ec54e97\r\nhttps://www.reddit.com/r/FlutterDev/comments/e98pma/announcing_dart_27_a_safer_more_expressive_dart/\r\n\r\n拡張関数(extension methods)がサポートされたり、Null安全(null safety)のプレビュー版が入ってたりします。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1173",
+        "title": "Flutter 1.12",
+        "body": "https://medium.com/flutter/announcing-flutter-1-12-what-a-year-22c256ba525d\r\n\r\n- iOSのダークモードサポートが完了\r\n- Add-to-AppのウィザードがAndroid Studioに追加\r\n- Dart 2.7\r\n- Flutter for Webがベータ版に\r\n- macOSサポートがアルファ版に\r\n\r\nなどなど\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1174",
+        "title": "AndroidX の歩き方 - 最新の AndroidX でアプリ開発",
+        "body": "https://docs.google.com/presentation/d/1wu0P_8T1pbJIEC4Apl6q8pCfqqj63Rae454ecoIZarQ\r\n\r\nDevFest 2019の資料です。AndroidXに追加されたライブラリなどを網羅的に紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1175",
+        "title": "Flutter Interact 2019のプロダクトキーノート",
+        "body": "https://www.youtube.com/watch?v=ukLBCRBlIkk\r\n\r\nFlutter 1.12の発表だけでなく、サードパーティ製を含む様々なツールが発表されました",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIblbOw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIblc3g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Flutter Interact 2019全セッションのプレイリストはこちら\r\nhttps://www.youtube.com/playlist?list=PLjxrf2q8roU0o0wKRJTjyN0pSUA6TI8lg",
+              "publishedAt": "2019-12-15T10:16:34Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "こちらの記事で今回の発表全般についてまとめてくれています\r\nhttps://medium.com/flutter-jp/flutter-interact-a5a1e021eae1",
+              "publishedAt": "2019-12-15T10:22:17Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1176",
+        "title": "touchlabによるKotlinconf 2019リキャップ",
+        "body": "https://touchlab.co/kotlinconf-2019-recap/\r\n\r\ntouchlabのデベロッパ二人による所感付き",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1177",
+        "title": "Airbnbでどのようにテストが行われているか",
+        "body": "https://medium.com/airbnb-engineering/better-android-testing-at-airbnb-3f5b90b9c40a\r\n\r\nAirbnbでどのようにUIテスト、ユニットテスト、リグレッションテストが行われているかについて書かれています。全7本の記事になっており、現在4本目まで公開されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1178",
+        "title": "Android開発におけるUSBのスピードの重要性",
+        "body": "https://medium.com/androiddevelopers/the-importance-of-usb-superspeed-for-android-development-e87534dc8c75\r\n\r\nUSB 3.0にするとUSB 2.0よりもアプリのインストールにかかる時間が25%改善するのでできるだけUSB 3.0を使おうという話です。ちょっと毛色の変わった話ですがおもしろかったです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1179",
+        "title": "Now in Android エピソード9",
+        "body": "https://medium.com/androiddevelopers/now-in-android-december-12-2019-979cabf1f433\r\n\r\n今回はてんこ盛りです。Material Componentsの新しいサンプルやAndroid Developersに新しく追加されたデータストレージの指針などについて触れています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
