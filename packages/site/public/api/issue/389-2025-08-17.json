@@ -1,0 +1,144 @@
+{
+  "id": "MI_kwDOB4jhdM4AzXGj",
+  "number": 389,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/389",
+  "title": "389 2025-08-17",
+  "closedAt": "2025-08-17T11:01:38Z",
+  "description": null,
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOxlswHg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvOxmCyig==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3501",
+        "title": "What’s new in Flutter 3.35",
+        "body": "https://medium.com/flutter/whats-new-in-flutter-3-35-c58ef72e3766\n\nFlutter 3.35がリリースされ、Web開発での状態保持型ホットリロードがデフォルトで有効に。また、実験的機能としてWidget Previewsが導入され、コンポーネントを独立した環境でプレビュー・テストできるようになりました。その他、アクセシビリティの改善、Material/Cupertinoライブラリの機能強化、AndroidのセンシティブコンテンツAPI対応などが追加されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3502",
+        "title": "Jetpack Compose 1.9.0のリリース",
+        "body": "https://android-developers.googleblog.com/2025/08/whats-new-in-jetpack-compose-august-25-release.html\n\n新しいShadow Modifierの追加、LazyLayoutのPrefetch改善などの変更が行われています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3503",
+        "title": "Android StudioのStableが毎月リリース",
+        "body": "https://android-developers.googleblog.com/2025/08/accelerating-development-with-monthly-releases-android-studio-2x-more-than-before.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3504",
+        "title": "Android Partner Device LabsがStableに",
+        "body": "https://android-developers.googleblog.com/2025/08/test-with-android-device-streaming-now-with-android-partner-device-labs.html\n\nAndroid Partner Device LabsがStableになり、Samsung, Xiaomi, OPPO, OnePlusなどの端末をAndroid Device Streamingと同様に使用することができるようになりました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3505",
+        "title": "RetainedEffect：画面遷移を越えて生き残る新サイドエフェクトAPI",
+        "body": "https://proandroiddev.com/previewing-retainedeffect-a-new-side-effect-to-bridge-between-composition-and-retention-lifecycles-685b9e543de7\n\nJetpack Composeの新しいサイドエフェクトAPI「RetainedEffect」が開発中。従来のDisposableEffectやLaunchedEffectはコンポジションのライフサイクルに紐づいていたが、RetainedEffectはretentionライフサイクルに紐づき、画面遷移や設定変更などでUIが一時的に破棄されても生き残る。ViewModelのような永続性を持ちながら、Composeネイティブな方法でリソース管理が可能になる。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
