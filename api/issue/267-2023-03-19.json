@@ -1,0 +1,185 @@
+{
+  "id": "MI_kwDOB4jhdM4Ai5ik",
+  "number": 267,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/267",
+  "title": "267 2023-03-19",
+  "closedAt": "2023-03-19T10:22:44Z",
+  "description": "Robolectric 4.10 Alpha 1でグラフィックス周りのサポートが追加、Android Studio - Giraffe | 2022.3.1 Canary 9、Privacy Week for Android Developers、など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOYTNaSQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOYTUNeQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2756",
+        "title": "Google for Games Developer Summit 2023での主要なアップデート",
+        "body": "https://android-developers.googleblog.com/2023/03/GGDS-recap-blog.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2757",
+        "title": "ユーザーの信頼を高めるためのプライバシー対応",
+        "body": "https://medium.com/androiddevelopers/how-to-leverage-recent-android-privacy-changes-to-increase-user-trust-b3a9648b53bd\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2758",
+        "title": "Privacy Week for Android Developers",
+        "body": "https://android-developers.googleblog.com/2023/03/privacy-week-for-android-developers.html\r\n\r\n開発者が知っておくべきプライバシーの重要なことについて紹介していくようです。また、Cheat SheetやCodelabも公開されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2759",
+        "title": "Carアプリで動画再生",
+        "body": "https://medium.com/androiddevelopers/bring-your-video-app-to-cars-d84366a1f5e9",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2760",
+        "title": "Android Studio - Giraffe | 2022.3.1 Canary 9",
+        "body": "https://androidstudio.googleblog.com/2023/03/android-studio-giraffe-canary-9-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2761",
+        "title": "kotlin-injectを利用したKotlin MultiplatformでのDI",
+        "body": "https://proandroiddev.com/from-dagger-hilt-into-the-multiplatform-world-with-kotlin-inject-647d8e3bddd5\r\nhttps://github.com/evant/kotlin-inject\r\n\r\nkotlin-inject は Dagger と同様にコード生成によってDIを実現するライブラリです。\r\nこの記事では、 Dagger から kotlin-inject へ移行するサンプルコードを通じて　kotlin-inject の特徴を紹介しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOV-0ddw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOV-0llQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Eva Tatarka さんといえば、[evant/gradle-retrolambda](https://github.com/evant/gradle-retrolambda) でお世話になったことのある人も多いはず",
+              "publishedAt": "2023-03-19T08:55:06Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "KMP向けのコード生成するDIコンテナといえば、ついこの間リリースされたばかりの Koject というライブラリもあります\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"ja\" dir=\"ltr\">ついにKotlin Multiplatform向けのDIコンテナ ライブラリ「Koject 1.0.0」のstable versionをリリースしました🎉<br>合わせてKojectの特徴、DIコンテナの役割をまとめたブログ記事を書いたので、ぜひ確認してみてください🏃‍♂️<br><br>▼ Koject 1.0.0を公開しました！<a href=\"https://t.co/2xinaCmwxr\">https://t.co/2xinaCmwxr</a></p>&mdash; Mori Atsushi 📷 (@at_sushi_at) <a href=\"https://twitter.com/at_sushi_at/status/1631807416533655553?ref_src=twsrc%5Etfw\">March 4, 2023</a></blockquote>",
+              "publishedAt": "2023-03-19T08:56:54Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2762",
+        "title": "Robolectric 4.10 Alpha 1でグラフィックス周りのサポートが追加",
+        "body": "https://github.com/robolectric/robolectric/releases/tag/robolectric-4.10-alpha-1\r\n\r\nレイアウトの描画などのシミュレートが可能になるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

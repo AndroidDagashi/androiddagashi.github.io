@@ -1,0 +1,253 @@
+{
+  "id": "MI_kwDOB4jhdM4Ap5zm",
+  "number": 325,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/325",
+  "title": "325 2024-05-05",
+  "closedAt": "2024-05-05T10:33:00Z",
+  "description": "Android Studio Jellyfish, Room が KMP に対応, Navigation Compose の Safe Args が型安全に, Kotlin 2.0.0-RC2",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOh1Lkcw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_Oh93APQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3162",
+        "title": "2024年04月29日の AndroidX リリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel?hl=ja#april_29_2024\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOfNrutA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOfNrutA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake 氏によるサマリはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">With <a href=\"https://twitter.com/hashtag/GoogleIO?src=hash&amp;ref_src=twsrc%5Etfw\">#GoogleIO</a> only two weeks ago, you&#39;d think it would be a quiet <a href=\"https://twitter.com/hashtag/JetpackReleaseNotes?src=hash&amp;ref_src=twsrc%5Etfw\">#JetpackReleaseNotes</a> - nope! Fragment 1.7.0+Transition 1.5.0 (w/ Predictive Back), Core Performance 1.0.0, plus Room 2.7.0-alpha01 (KMP!) and Navigation 2.8.0-alpha08 (Safe Args w/ Compose)<a href=\"https://t.co/OBDn2Ogxqv\">https://t.co/OBDn2Ogxqv</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1785811880554193088?ref_src=twsrc%5Etfw\">May 1, 2024</a></blockquote>",
+              "publishedAt": "2024-05-05T09:56:42Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3163",
+        "title": "Compose Compiler が Kotlin のレポジトリに移動",
+        "body": "https://android-developers.googleblog.com/2024/04/jetpack-compose-compiler-moving-to-kotlin-repository.html\r\n\r\nKotlin2 からは Jetpack Compose Compiler が Kotlin レポジトリで管理されるようになり、 Kotlin 新バージョンリリース時は同時にリリースされるようになります。\r\nアーティファクト ID も変わるので注意が必要です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3164",
+        "title": "Navigation Compose の Safe Args が型安全に",
+        "body": "https://medium.com/androiddevelopers/navigation-compose-meet-type-safety-e081fb3cf2f8\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3165",
+        "title": "Android Studio JellyfishのStableリリース",
+        "body": "https://android-developers.googleblog.com/2024/04/android-studio-jellyfish-is-stable.html\r\n\r\nGeminiの搭載、Android Device Streamingの導入、App Quality Insightsの改善、Embedded Layout Inspectorのデフォルト化、などの機能追加や改善がされています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOfNrzFw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOfNrzFw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/1cgz8ai/android_studio_jellyfish_202331_now_available/",
+              "publishedAt": "2024-05-05T10:00:33Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3166",
+        "title": "Room が KMP に対応",
+        "body": "https://developer.android.com/kotlin/multiplatform/room?hl=ja\r\n\r\nreddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/1chsezm/roomkmp_is_officially_here/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3167",
+        "title": "Now in Android 104",
+        "body": "https://medium.com/androiddevelopers/now-in-android-104-ee3acabae7fe",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3168",
+        "title": "まだ KMP を使ってない人は、どんな理由で試していないのか？",
+        "body": "https://www.reddit.com/r/androiddev/comments/1cgn673/who_hasnt_tried_kotlin_multiplatformkmp_yet_whats/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3169",
+        "title": "Kotlin 2.0.0-RC2",
+        "body": "https://kotlinlang.org/docs/whatsnew-eap.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
