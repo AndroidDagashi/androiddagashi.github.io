@@ -16,7 +16,7 @@ jobs:
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
 
-      - uses: ./.github/actions/test-action
+      - uses: AndroidDagashi/androiddagashi.github.io/.github/actions/test-action@a69ef9c75caa4a1e4c658e8c98c25831a0b75e69
 
       # run corepack before setup mise
       # https://github.com/actions/setup-node/issues/899
