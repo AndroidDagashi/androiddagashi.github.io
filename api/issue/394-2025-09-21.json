@@ -1,0 +1,109 @@
+{
+  "id": "MI_kwDOB4jhdM4A0OYz",
+  "number": 394,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/394",
+  "title": "394 2025-09-21",
+  "closedAt": "2025-09-21T10:34:33Z",
+  "description": "リソース最適化オプションの提供、StepsShare OSS、Navigation Composeで値(result)を戻す方法、など",
+  "issues": {
+    "totalCount": 4,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOzO2QcQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_OzO3MWg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3525",
+        "title": "リソース最適化オプションの提供",
+        "body": "https://android-developers.googleblog.com/2025/09/improve-app-performance-with-optimized-resource-shrinking.html\n\nAndroid Gradle プラグイン 8.12.0 以降で使えるオプションで、さらなる最適化が行えるようです\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3526",
+        "title": "StepsShare OSS",
+        "body": "https://github.com/tamtom/StepsShare-oss\n\nKotlin MultiplatformとCompose Multiplatformを使ったOSSで、見た目も優れているので、コードリーディングなどに良さそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOxaTgZg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOxaTgZg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\n\nhttps://www.reddit.com/r/androiddev/comments/1nhu79y/i_made_a_step_tracker_in_compose_multiplatform/",
+              "publishedAt": "2025-09-21T10:54:59Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3527",
+        "title": "Navigation Composeで値(result)を戻す方法",
+        "body": "https://www.paleblueapps.com/rockandnull/jetpack-compose-navigation-return-results/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3528",
+        "title": "Android 16 QPR2 Beta 2",
+        "body": "https://android-developers.googleblog.com/2025/09/android-16-qpr2-beta-2-is-here.html\n\nAndroid 16 QPR2 Beta 2がPlatform Stabilityに到達。主な新機能として、マルウェア対策のための開発者認証（2026年9月から必須化）、OTPハイジャック防止のSMS遅延配信、新しいGCによるパフォーマンス向上、Health Connectの自動歩数追跡などが追加。また、マイナーSDKバージョンの導入により、年1回の大型リリース以外でもAPIの追加が可能になった。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
