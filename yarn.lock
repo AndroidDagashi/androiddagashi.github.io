@@ -84,9 +84,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.16.9":
-  version: 0.16.9
-  resolution: "@atproto/api@npm:0.16.9"
+"@atproto/api@npm:0.16.11":
+  version: 0.16.11
+  resolution: "@atproto/api@npm:0.16.11"
   dependencies:
     "@atproto/common-web": "npm:^0.4.3"
     "@atproto/lexicon": "npm:^0.5.1"
@@ -96,7 +96,7 @@ __metadata:
     multiformats: "npm:^9.9.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/4449b9b0eb09893ef4009e21007b752416e5ccb8fb803abdb3b399a1cd3015670c338c1ff4b857acf7e355debadbd384e7fdad37ee8858ebd9e294b74c051d3f
+  checksum: 10c0/6deb2c7a10c90ca8707010ac7dd4324d404b57d90933020f07134e8fdd324b7de6871cfaa47b13122c42165b0ffd8fcbea99c9250d367835c9c9f340483228eb
   languageName: node
   linkType: hard
 
@@ -12719,7 +12719,7 @@ __metadata:
     graphql-request: "npm:7.2.0"
     site-common: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.20.5"
+    tsx: "npm:4.20.6"
     typescript: "npm:5.9.2"
   languageName: unknown
   linkType: soft
@@ -12736,7 +12736,7 @@ __metadata:
     site-common: "npm:1.0.0"
     site-config: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.20.5"
+    tsx: "npm:4.20.6"
     typescript: "npm:5.9.2"
   languageName: unknown
   linkType: soft
@@ -12772,7 +12772,7 @@ __metadata:
     site-common: "npm:1.0.0"
     site-config: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.20.5"
+    tsx: "npm:4.20.6"
     typescript: "npm:5.9.2"
   languageName: unknown
   linkType: soft
@@ -12865,7 +12865,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.16.9"
+    "@atproto/api": "npm:0.16.11"
     "@types/oauth": "npm:0.9.6"
     date-fns: "npm:4.1.0"
     firebase-admin: "npm:13.5.0"
@@ -12873,7 +12873,7 @@ __metadata:
     site-common: "npm:^1.0.0"
     site-config: "npm:^1.0.0"
     site-types: "npm:^1.0.0"
-    tsx: "npm:4.20.5"
+    tsx: "npm:4.20.6"
     typescript: "npm:5.9.2"
   languageName: unknown
   linkType: soft
@@ -13573,9 +13573,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:4.20.5":
-  version: 4.20.5
-  resolution: "tsx@npm:4.20.5"
+"tsx@npm:4.20.6":
+  version: 4.20.6
+  resolution: "tsx@npm:4.20.6"
   dependencies:
     esbuild: "npm:~0.25.0"
     fsevents: "npm:~2.3.3"
@@ -13585,7 +13585,7 @@ __metadata:
       optional: true
   bin:
     tsx: dist/cli.mjs
-  checksum: 10c0/70f9bf746be69281312a369c712902dbf9bcbdd9db9184a4859eb4859c36ef0c5a6d79b935c1ec429158ee73fd6584089400ae8790345dae34c5b0222bdb94f3
+  checksum: 10c0/07757a9bf62c271e0a00869b2008c5f2d6e648766536e4faf27d9d8027b7cde1ac8e4871f4bb570c99388bcee0018e6869dad98c07df809b8052f9c549cd216f
   languageName: node
   linkType: hard
 
