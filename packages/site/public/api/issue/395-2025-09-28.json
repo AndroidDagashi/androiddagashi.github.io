@@ -1,0 +1,143 @@
+{
+  "id": "MI_kwDOB4jhdM4A0Y4I",
+  "number": 395,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/395",
+  "title": "395 2025-09-28",
+  "closedAt": "2025-09-28T11:21:09Z",
+  "description": "Compose Multiplatform 1.9.0正式リリース, 何でも見られるAndroidのAPI AccessibilityService, あまり知られていないComposeのコンポーネントたち, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOzgSk0Q==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvOzlSBlQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3530",
+        "title": "Compose Multiplatform 1.9.0正式リリース",
+        "body": "https://www.jetbrains.com/help/kotlin-multiplatform-dev/whats-new-compose-190.html\n\nCompose Multiplatform 1.9.0が正式リリースされました。Web版がベータ段階に到達し、本格的な開発に対応。Material3 Expressiveテーマによる個性的なUIデザイン、カスタマイズ可能なシャドウ機能、@Previewアノテーションの拡張パラメータを追加。iOSでのフレームレート設定やWebのアクセシビリティ初期サポートも実装され、真の統合UIフレームワークとして成熟しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3531",
+        "title": "あまり知られていないComposeのコンポーネントたち",
+        "body": "https://proandroiddev.com/exploring-5-lesser-known-compose-components-9a5cfd5eb354\nあまり知られていないTriStateCheckboxなどについて解説しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3532",
+        "title": "何でも見られるAndroidのAPI AccessibilityService",
+        "body": "https://proandroiddev.com/the-android-api-that-can-see-everything-594e4675b340\nアクセシビリティや自動化などいくつかのユースケースで使われるアクセシビリティのAPIについて解説されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3533",
+        "title": "Compose Runtime Annotationライブラリで外部モジュールのクラスをStable化する方法",
+        "body": "https://www.revenuecat.com/blog/engineering/compose-runtime-annotation/\n\nJetpack Composeでは、別パッケージからのクラスは安定したプロパティのみで構成されていても不安定として扱われ、再コンポジションのパフォーマンスに影響します。新しいcompose-runtime-annotationライブラリを使えば、Compose依存を追加せずに@Immutableや@Stableアノテーションのみを利用でき、マルチモジュール構成やSDK開発でも効率的にクラスを安定化できます。RevenueCat SDKの実装例も紹介されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3535",
+        "title": "Android Studio Otter | 2025.2.1 Canary 3",
+        "body": "https://androidstudio.googleblog.com/2025/09/android-studio-otter-202521-canary-3.html\n\nAndroid Studio Otter 2025.2.1 Canary 3がCanaryチャンネルで利用可能になりました。既にCanaryチャンネルのビルドを使用している場合は、Help > Check for Updatesから更新可能です。このバージョンには、ユーザーからのバグレポートに基づく修正が含まれており、Android Gradle Plugin 9.0.0-alpha08も同時にリリースされています。新機能や変更点の詳細はリリースノートで確認できます",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
