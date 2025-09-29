@@ -1,0 +1,44 @@
+{
+  "name": "Node.js",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "..",
+    "args": {
+      "TZ": "${localEnv:TZ:Japan/Tokyo}"
+    }
+  },
+  "workspaceFolder": "/home/vscode/workspaces/androiddagashi.github.io",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/workspaces/androiddagashi.github.io,type=bind,consistency=cached",
+  "mounts": [
+  {
+      "source": "gh-config-${localWorkspaceFolderBasename}",
+      "target": "/home/vscode/.config/gh",
+      "type": "volume"
+    },
+    {
+      "source": "claude-code-config-${localWorkspaceFolderBasename}",
+      "target": "/home/vscode/.claude",
+      "type": "volume"
+    },
+    {
+      "source": "codex-config-${localWorkspaceFolderBasename}",
+      "target": "/home/vscode/.codex",
+      "type": "volume"
+    },
+    {
+      "source": "github-copilot-cli-config-${localWorkspaceFolderBasename}",
+      "target": "/home/vscode/.copilot",
+      "type": "volume"
+    }
+  ],
+  "features": {
+    "ghcr.io/devcontainers/features/github-cli:1": {
+      "installDirectlyFromGitHubRelease": true,
+      "version": "latest"
+    },
+    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+  },
+  "onCreateCommand": [
+    "/bin/bash", "/home/vscode/workspaces/androiddagashi.github.io/.devcontainer/scripts/on-create.sh"
+  ]
+}
