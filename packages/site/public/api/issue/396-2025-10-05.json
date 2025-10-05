@@ -1,0 +1,150 @@
+{
+  "id": "MI_kwDOB4jhdM4A0jaX",
+  "number": 396,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/396",
+  "title": "396 2025-10-05",
+  "closedAt": "2025-10-05T10:54:29Z",
+  "description": "Jetpack ComposeでカスタムModifierを作成する, シナリオテストをAIで行う, AccessibilityServiceで全てを見る, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOzlR2DQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afOz7Qb8A==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3534",
+        "title": "MVVMはMVIが約束することをすべて実現できる",
+        "body": "https://proandroiddev.com/mvvm-does-everything-mvi-promises-7ed51af56cc2\n\nJetpack Compose時代において、MVIとMVVMの論争が再燃している中、Fernando Prieto氏が両アーキテクチャを比較。MVIは予測可能性を提供すると主張されるが、実際にはMVVMでも単一のStateFlowと単方向データフローを実装することで、MVIと同等の利点を得られることを具体例で解説。シンプルな画面では過度なMVIはオーバーキルで、MVVMで十分対応可能と結論づけている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3539",
+        "title": "Jetpack ComposeでカスタムのModifierを作成するための方法",
+        "body": "https://www.revenuecat.com/blog/engineering/compose-custom-modifier/\n\nModifier.Node、Modifier.then、Modifier.composedでどのようにしてModifierを拡張するかについて解説をしています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3541",
+        "title": "Jetpack Composeでレスポンシブなグリッドレイアウトを実現する方法",
+        "body": "https://slack-chats.kotlinlang.org/t/30241086/hello-i-m-trying-to-be-responsive-in-my-designs-and-trying-t\n\nKotlinlang SlackでJetpack Composeのレスポンシブデザインについての議論。画面幅に応じてアイテムを4つ（各25%幅）または2つ（各50%幅）で配置する実装方法が話題に。Layout.measurePolicyの2回測定制約の回避策として、BoxWithConstraints、FlowRow、maxIntrinsicWidthなどが提案され、最終的にLayout + maxIntrinsicWidthの組み合わせで解決した事例が共有されている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3542",
+        "title": "モバイルアプリのシナリオテストをAIで行う",
+        "body": "https://zenn.dev/genda_jp/articles/ca8ed0d359d832\n\nAIがスクリーンショットを解析してモバイルアプリのシナリオテストを実行するOSSツール「Arbigent」の紹介記事。CLIで簡単に導入でき、OpenAIやGeminiなど複数のAIモデルから選択可能。Android/iOS/Webに対応し、DOM構造に依存しないため、FlutterやUnityアプリでも利用できる。実際のカウントアプリでのテスト例と、安定運用のためのMax Step Countのチューニングポイントも解説している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3543",
+        "title": "AccessibilityServiceで全てを見る：Android最強のAPIを理解する",
+        "body": "https://proandroiddev.com/the-android-api-that-can-see-everything-594e4675b340\n\nAccessibilityServiceは、ユーザーの許可を得て他のアプリのUI階層を読み取り操作できる強力なAndroid APIです。パスワードマネージャーや自動化ツールの基盤技術として使われており、画面上の要素を検出してユーザーの代わりに操作を実行できます。実装には適切な設定と明示的なユーザー許可が必要で、プライバシーとパフォーマンスへの配慮が不可欠です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3544",
+        "title": "Android開発者認証：開発ワークフローへの影響とよくある質問への回答",
+        "body": "https://android-developers.googleblog.com/2025/09/lets-talk-security-answering-your-top.html\n\nAndroid/Googleが発表した開発者認証制度について、開発者からの質問に回答。Android Studioでの開発作業には影響なく、adbを使用したデプロイは今まで通り可能。ただし、APKを配布してテストする場合や、Google Play内部テスト、Firebase App Distributionを使う場合は身元確認が必要となる。2025年10月から早期アクセスの招待開始予定で、実施まで1年以上の準備期間を設けている。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
