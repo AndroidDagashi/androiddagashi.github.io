@@ -1,0 +1,192 @@
+{
+  "id": "MI_kwDOB4jhdM4Ajioj",
+  "number": 273,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/273",
+  "title": "273 2023-04-30",
+  "closedAt": "2023-04-30T12:21:37Z",
+  "description": "Google I/O 2023 のセッション情報が公開, Android Studio Hedgehog Canary 1, Jetpack Compose の Side Effect をマスターする, など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOZLcyyQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOZLeYKg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2807",
+        "title": "Kotlinのマスコットキャラクターの名前がKodeeに決定",
+        "body": "https://blog.jetbrains.com/kotlin/2023/04/the-kotlin-mascot-returns/\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2808",
+        "title": "Google I/O 2023のセッション情報が公開",
+        "body": "https://android-developers.googleblog.com/2023/04/get-ready-for-google-io.html\r\nhttps://io.google/2023/program/\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2809",
+        "title": "あまり知られていない「アプリの立ち上げ時にやるべきこと」",
+        "body": "https://www.reddit.com/r/androiddev/comments/132vq6k/what_is_a_less_known_must_do_while_launching_an/\r\n\r\n様々なフォントサイズで動かしてみる、強制アップデート機能の実装、などなど",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2810",
+        "title": "Material3のカルーセル実装が追加され、挙動が話題に",
+        "body": "https://www.reddit.com/r/androiddev/comments/131n3ec/just_noticed_that_material_3_carousel_made_its/\r\n\r\n\r\n1.9.0-alpha01 で追加されたものです(1.9.0は現在RC01です)\r\nhttps://github.com/material-components/material-components-android/releases/tag/1.9.0-alpha01",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2811",
+        "title": "Android Studio - Hedgehog | 2023.1.1 Canary 1",
+        "body": "https://androidstudio.googleblog.com/2023/04/android-studio-hedgehog-canary-1-now.html\r\nhttps://developer.android.com/studio/preview/features#2023.1.1\r\n\r\nBaseline Profiles の作成ウィザードや、Android Studio をセーフモードで起動するオプションが追加されています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOWyF6rA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOWyF6rA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/12yzlf9/android_studio_hedgehog_canary_1_now_available/",
+              "publishedAt": "2023-04-30T02:12:44Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2812",
+        "title": "Fragment は Jetpack Compose に代わって非推奨になるのか、という議論",
+        "body": "https://www.reddit.com/r/androiddev/comments/12w9v77/are_fragments_in_android_going_to_be_deprecated/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2813",
+        "title": "Jetpack Compose の Side Effect をマスターする",
+        "body": "https://proandroiddev.com/mastering-side-effects-in-jetpack-compose-b7ee46162c01\r\n\r\n各種 Side Effect 系 composable を解説しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
