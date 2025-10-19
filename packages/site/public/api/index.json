@@ -2,8 +2,40 @@
   "name": "AndroidDagashi",
   "url": "https://github.com/AndroidDagashi/AndroidDagashi",
   "milestones": {
-    "totalCount": 397,
+    "totalCount": 398,
     "nodes": [
+      {
+        "id": "MI_kwDOB4jhdM4A07YG",
+        "number": 398,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/398",
+        "path": "398-2025-10-19",
+        "title": "398 2025-10-19",
+        "description": "CameraX 1.5の複数カメラ機能, Firebase AI Logic Imagen編集機能, WindowManager 1.5安定版リリース, CompositionLocalの選び方, Jetpack Compose retain API",
+        "closedAt": "2025-10-19T11:11:15Z",
+        "issues": {
+          "totalCount": 6,
+          "nodes": [
+            {
+              "title": "CameraX 1.5の新機能：複数カメラ機能の組み合わせを保証するFeature Group API"
+            },
+            {
+              "title": "Firebase AI LogicのImagen編集機能とGemini 2.5 Flash Imageでユーザーエンゲージメントを向上"
+            },
+            {
+              "title": "Jetpack WindowManager 1.5が安定版リリース - 大画面向けの新ブレークポイントを追加"
+            },
+            {
+              "title": "Jetpack ComposeのCompositionLocal：staticとdynamicの選び方"
+            },
+            {
+              "title": "Jetpack Composeのretain{} API内部実装を理解する"
+            },
+            {
+              "title": "Navigation2 から 3 への移行ガイド"
+            }
+          ]
+        }
+      },
       {
         "id": "MI_kwDOB4jhdM4A0t3m",
         "number": 397,
@@ -1385,40 +1417,11 @@
             }
           ]
         }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4AskEH",
-        "number": 348,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/348",
-        "path": "348-2024-10-13",
-        "title": "348 2024-10-13",
-        "description": "依存関係の修正を自動で行う, Compose スクリーンショットテストの選択肢, スタイラス用Jetpackライブラリ, ComposeのFlowRowでIndicatorを使う, など",
-        "closedAt": "2024-10-13T10:37:45Z",
-        "issues": {
-          "totalCount": 5,
-          "nodes": [
-            {
-              "title": "スタイラス用の新しいJetpackライブラリ"
-            },
-            {
-              "title": "Jetpack ComposeのFlowRowでIndicatorを使う"
-            },
-            {
-              "title": "DI を自作してみる"
-            },
-            {
-              "title": "Jetpack Compose スクリーンショットテストの選択肢"
-            },
-            {
-              "title": "Gradle依存関係の修正を自動で行う"
-            }
-          ]
-        }
       }
     ],
     "pageInfo": {
-      "startCursor": "Y3Vyc29yOnYyOpK0MjAyNS0xMC0xMlQwMDowMDowMFrOANLd5g==",
-      "endCursor": "Y3Vyc29yOnYyOpK0MjAyNC0xMC0xM1QwMDowMDowMFrOALJBBw==",
+      "startCursor": "Y3Vyc29yOnYyOpK0MjAyNS0xMC0xOVQwMDowMDowMFrOANO2Bg==",
+      "endCursor": "Y3Vyc29yOnYyOpK0MjAyNC0xMC0yMFQwMDowMDowMFrOALLZVg==",
       "hasPreviousPage": false,
       "hasNextPage": true
     }
