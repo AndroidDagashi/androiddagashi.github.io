@@ -2,8 +2,40 @@
   "name": "AndroidDagashi",
   "url": "https://github.com/AndroidDagashi/AndroidDagashi",
   "milestones": {
-    "totalCount": 399,
+    "totalCount": 400,
     "nodes": [
+      {
+        "id": "MI_kwDOB4jhdM4AmmZi",
+        "number": 300,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/300",
+        "path": "300-2023-11-05",
+        "title": "300 2023-11-05",
+        "description": "KMPがStableに, Compose Multiplatform for iOSがAlphaに, LazyListのItemの再利用について, Kotlin 1.9.20, runBlocking{}のデッドロック, など",
+        "closedAt": "2023-11-05T10:41:38Z",
+        "issues": {
+          "totalCount": 6,
+          "nodes": [
+            {
+              "title": "Kotlin MultiplatformがStableでProduction-Readyに"
+            },
+            {
+              "title": "runBlocking{}を間違ったスレッドで呼ぶことによるデッドロックについて"
+            },
+            {
+              "title": "LazyListのItemの再利用ロジックについて"
+            },
+            {
+              "title": "Compose Multiplatform for iOSがAlphaに"
+            },
+            {
+              "title": "Kotlin 1.9.20"
+            },
+            {
+              "title": "Android WebView Media Integrity API"
+            }
+          ]
+        }
+      },
       {
         "id": "MI_kwDOB4jhdM4AmeOZ",
         "number": 299,
@@ -1730,40 +1762,11 @@
             }
           ]
         }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4Ag41_",
-        "number": 250,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/250",
-        "path": "250-2022-11-13",
-        "title": "250 2022-11-13",
-        "description": "CashAppのKMPページングライブラリ、ユーザー選択型決済の試験運用、OSSライブラリで成功するために、Now in Android 72、など",
-        "closedAt": "2022-11-13T10:29:18Z",
-        "issues": {
-          "totalCount": 5,
-          "nodes": [
-            {
-              "title": "Android Dev Summit 2022: Form Factors"
-            },
-            {
-              "title": "ユーザー選択型決済の試験運用"
-            },
-            {
-              "title": "OSSライブラリで成功するために"
-            },
-            {
-              "title": "Now in Android 72"
-            },
-            {
-              "title": "CashAppのKotlin Multiplatform向けページングライブラリ"
-            }
-          ]
-        }
       }
     ],
     "pageInfo": {
-      "startCursor": "Y3Vyc29yOnYyOpK0MjAyMy0xMC0yOVQwMDowMDowMFrOAJnjmQ==",
-      "endCursor": "Y3Vyc29yOnYyOpK0MjAyMi0xMS0xM1QwMDowMDowMFrOAIONfw==",
+      "startCursor": "Y3Vyc29yOnYyOpK0MjAyMy0xMS0wNVQwMDowMDowMFrOAJpmYg==",
+      "endCursor": "Y3Vyc29yOnYyOpK0MjAyMi0xMS0yMFQwMDowMDowMFrOAIP5Jw==",
       "hasPreviousPage": false,
       "hasNextPage": true
     }
