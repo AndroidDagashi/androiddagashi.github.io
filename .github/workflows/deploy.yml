@@ -26,7 +26,7 @@ jobs:
       - run: corepack enable yarn
 
       - name: Setup mise
-        uses: jdx/mise-action@5ac50f778e26fac95da98d50503682459e86d566 # v3.2.0
+        uses: jdx/mise-action@9dc7d5dd454262207dea3ab5a06a3df6afc8ff26 # v3.4.1
 
       - name: install dependencies
         run: |
