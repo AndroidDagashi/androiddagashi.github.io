@@ -1,0 +1,232 @@
+{
+  "id": "MI_kwDOB4jhdM4AxxZC",
+  "number": 381,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/381",
+  "title": "381 2025-06-15",
+  "closedAt": "2025-06-15T11:14:44Z",
+  "description": "Android16リリース, SwiftUIをCMPにつなぎこむ, Androidアプリ開発のUI実装進化, Instant Apps が 2025/12 に廃止予定, など",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOu5IStw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_Ou5kIlQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3463",
+        "title": "Android 16 リリース",
+        "body": "https://android-developers.googleblog.com/2025/06/android-16-is-here.html\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3464",
+        "title": "外部ディスプレイ接続サポートのDeveloper Preview",
+        "body": "https://android-developers.googleblog.com/2025/06/developer-preview-enhanced-android-desktop-experiences-connected-displays.html\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3465",
+        "title": "SwiftUI のコンポーネントを Compose Multiplatform につなぎこむ",
+        "body": "https://medium.com/pink-room-club/bridging-compose-multiplatform-with-swiftui-4c3f19e13f55",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3466",
+        "title": "AndroidでViewModelのUiStateを再設計する",
+        "body": "https://zenn.dev/b4tchkn/articles/f1f11bcf7aa4cb\n\nJetpack Compose の UiState の複雑性を、公式サンプルをベースにしつつ sealed interface/class 化して解決しようというアプローチです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOsT5e-A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOsT5e-A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "これはこれでありだと思いつつ、複数 data source からのデータを読み込まれた順に表示する、みたいな要件にどう対応するのだろう、とかは気になります",
+              "publishedAt": "2025-06-15T10:54:42Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3467",
+        "title": "Androidアプリ開発のUI実装進化：黎明期からMaterial 3 Expressiveまで時系列で徹底解説",
+        "body": "https://design-tech.xtone.co.jp/entry/2025/06/13/192833",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3468",
+        "title": "Instant Apps(Google Play Instant) が 2025/12 に廃止予定",
+        "body": "https://www.androidauthority.com/google-killing-android-instant-apps-3567211/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOsT54iQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOsT54iQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\nhttps://www.reddit.com/r/androiddev/comments/1lablwb/google_play_instant_will_be_discontinued/",
+              "publishedAt": "2025-06-15T11:05:05Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3469",
+        "title": "Androidアプリのメンテ、大変じゃない？",
+        "body": "https://www.reddit.com/r/androiddev/comments/1l5fg40/maintaining_an_android_app_is_a_lot_of_work/\n\nということでアプリの長期メンテについて多くの経験談が集まっています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3470",
+        "title": "Android Studio Narwhal | 2025.1.1 RC 2",
+        "body": "https://androidstudio.googleblog.com/2025/06/android-studio-narwhal-202511-rc-2-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

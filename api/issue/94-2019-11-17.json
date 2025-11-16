@@ -1,0 +1,349 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDgzMTEwMw==",
+  "number": 94,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/94",
+  "title": "94 2019-11-17",
+  "description": "Android Studio 4.0 Canary3, HTTPサーバを端末上で動かす, ADS2019のソースコードが公開, Roomとコルーチン, INSTALL_REFERERが来年３月に廃止予定, など",
+  "closedAt": "2019-11-17T10:53:05Z",
+  "issues": {
+    "totalCount": 15,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOHxEb5Q==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-iPOHzg0ag==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1117",
+        "title": "Android Dev Summit 2019のソースコードがGitHubに公開",
+        "body": "https://github.com/google/iosched/pull/333\r\n\r\nCoroutine Flow、Gesture Support、Dark Mode対応などが入っているそうで、参考になりそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1118",
+        "title": "#AskAndroid at Android Dev Summit 2019 - Architecture Components",
+        "body": "https://www.youtube.com/watch?v=QWHfLvlmBbs\r\n\r\nArchitecture Componentsについて色々質問に答えてくれてます。DataBinding/ViewBinding, Paging3.0, Navigation Component, LiveData, Daggerなどなど。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1119",
+        "title": "11/7のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#november_7_2019\r\n\r\nAnnotation-ExperimentalとBiometricが1.0.0, Webkitが1.1.0など安定版リリースがあります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1120",
+        "title": "デフォルトで動かないAndroid Studioのキーボードショートカット",
+        "body": "https://blog.danlew.net/2019/11/11/fixing-android-studio-keyboard-shortcuts/\r\n\r\nmacOS限定だったりしますが、現状で動かないキーボードショートカットの直しかたを2つ挙げてくれています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1122",
+        "title": "HTTPサーバーをAndroid上で動かす",
+        "body": "https://diamantidis.github.io/2019/11/10/running-an-http-server-on-an-android-app\r\n\r\nKtorを使ってAndroid上でHTTPサーバー動かす方法が紹介されてます。使う機会があるかはわからないですが、シンプルな実装で実現できるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1121",
+        "title": "JitPackでPull RequestからSNAPSHOTを配布可能に",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">New Feature! You can now have a dependency to a Pull Request. It will also update as more commits are pushed to the PR branch. Many thanks to <a href=\"https://twitter.com/bsideup?ref_src=twsrc%5Etfw\">@ bsideup</a> for the suggestion! <a href=\"https://t.co/daWdQ4dxZh\">pic.twitter.com/daWdQ4dxZh</a></p>&mdash; JitPack (@ jitpack) <a href=\"https://twitter.com/jitpack/status/1193811848350633984?ref_src=twsrc%5Etfw\">November 11, 2019</a></blockquote>",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1123",
+        "title": "HTTP in a Hostile World",
+        "body": "https://speakerdeck.com/swankjesse/http-in-a-hostile-world-droidcon-toronto-2019\r\n\r\n[4年前の発表](https://speakerdeck.com/swankjesse/http-in-a-hostile-world-droidcon-mtl-2015)と同じタイトルですが、中身はだいぶ変わっているようです。モバイルアプリに限らずHTTPを取り巻く状況についてまとまっています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1124",
+        "title": "Android Dev Summit 2019で話されたJetpack Composeのアップデート",
+        "body": "https://android-developers.googleblog.com/2019/11/3-things-to-know-about-jetpack-compose.html\r\n\r\nADSで話されたJetpack Composeのアップデートについてまとめてくれています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1125",
+        "title": "Android Dev Summit 2019で話されたKotlinについて",
+        "body": "https://android-developers.googleblog.com/2019/11/3-things-to-know-about-kotlin-from.html\r\n\r\nADSで話されたKotlin関連のトピックについてまとめられています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIQGYiQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIQGYiQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "とはいえ、目新しいのはKotlin Certificateくらいでしょうか。",
+              "publishedAt": "2019-11-14T06:56:01Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1126",
+        "title": "[PSA] Google Play Developerのポリシーが更新",
+        "body": "https://play.google.com/about/updates-resources/updates/\r\n\r\n抵触している場合は30日以内の対応が必須だそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1127",
+        "title": "Android Studio 4.0 Canary 3",
+        "body": "https://androidstudio.googleblog.com/2019/11/android-studio-40-canary-3-available.html\r\n\r\nBuild Speed windowとMulti Previewが新しく追加されました。Build Speed windowは、どのタスクに時間が掛かっているかなど、視覚化することが出来ます。Multi Previewは一度に複数の画面でプレビューを確認することが出来ます。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1130",
+        "title": "Roomとコルーチン",
+        "body": "https://docs.google.com/presentation/d/1AYKOriaW0MhScn6ODBvxaQpbY8k9jTw8ENLudz1f6Tw/edit?usp=sharing\r\n\r\n[Android Dev Summit 2019 Extended Tokyo](https://gdg-tokyo.connpass.com/event/152665/)で発表されたセッションの1つで、最新のRoomのcoroutine対応についてまとめられています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1131",
+        "title": "Diffusing Changes in Your APK",
+        "body": "https://jakewharton.com/diffusing-changes-in-your-apk/\r\nhttps://github.com/JakeWharton/diffuse/\r\n\r\n小さな変更でも、apkのサイズやメソッドカウントに大きな影響を与えることがあるのを、様々なシナリオで見ていく発表です。diffuseライブラリを使うことで、具体的な差分を見ることが出来ます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIQ5kQA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIQ5kQA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "あいかわらず動画がないと分かりにくいですがプロダクション環境にどう組込むかも触れられているのがいいですね。",
+              "publishedAt": "2019-11-16T01:44:36Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1132",
+        "title": "INSTALL_REFERRERが2020年3月に廃止予定",
+        "body": "https://android-developers.googleblog.com/2019/11/still-using-installbroadcast-switch-to.html\r\n\r\nどの経路からアプリがインストールされたかを調べるのによく使われる `INSTALL_REFERRER` ブロードキャストが2020年3月に廃止され、以降はそのインテントが飛ばなくなるそうです。マイグレーションがまだのアプリは[installreferrerライブラリ](https://developer.android.com/google/play/installreferrer/library.html)への移行が必要のようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1133",
+        "title": "クラス名やメソッド名からライブラリを検索するAndroidStudioプラグイン",
+        "body": "https://github.com/yigit/ArtifactFinder\r\nhttps://plugins.jetbrains.com/plugin/13320-artifact-finder\r\n\r\nクラス名やメソッド名からライブラリを検索して、gradleの依存に追加するところもやってくれます。今の所Google MavenとMaven Centralにある一部ライブラリが対象のようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIQ6Yrg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIQ6Yrg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "おお、クラス名で検索できるのはおもしろいですね。ライブラリにあると思って使おうとしたらなかった、というときに重宝しそうです。",
+              "publishedAt": "2019-11-16T04:57:07Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
