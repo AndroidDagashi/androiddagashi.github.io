@@ -3,22 +3,22 @@
   "version": "1.0.0",
   "license": "MIT",
   "devDependencies": {
-    "@graphql-codegen/cli": "6.0.0",
+    "@graphql-codegen/cli": "6.1.0",
     "@graphql-codegen/import-types-preset": "3.0.1",
     "@graphql-codegen/introspection": "5.0.0",
     "@graphql-codegen/near-operation-file-preset": "3.1.0",
-    "@graphql-codegen/typescript": "5.0.0",
+    "@graphql-codegen/typescript": "5.0.5",
     "@graphql-codegen/typescript-graphql-request": "6.3.0",
-    "@graphql-codegen/typescript-operations": "5.0.0",
+    "@graphql-codegen/typescript-operations": "5.0.5",
     "@types/node": "22.19.1",
     "site-types": "1.0.0",
     "tsx": "4.20.6",
-    "typescript": "5.9.2"
+    "typescript": "5.9.3"
   },
   "dependencies": {
     "cross-fetch": "4.1.0",
-    "graphql": "16.11.0",
-    "graphql-request": "7.2.0",
+    "graphql": "16.12.0",
+    "graphql-request": "7.3.5",
     "site-common": "1.0.0"
   },
   "scripts": {
