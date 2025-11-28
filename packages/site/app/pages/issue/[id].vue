@@ -43,13 +43,6 @@ export default defineComponent({
 
     const issueStore = useIssueStore()
 
-    onMounted(() => loadScripts(document))
-
-    await callOnce(
-      async () => issueStore.fetchById(route.params.id as string),
-      { mode: 'navigation' }
-    )
-
     const currentMilestone = computed(() => issueStore.currentMilestone)
 
     const milestoneTitle = computed(() => currentMilestone.value?.title ?? '')
@@ -58,6 +51,7 @@ export default defineComponent({
     )
     const issues = computed(() => currentMilestone.value?.issues?.nodes ?? [])
 
+    // Nuxt 4: composable は await の前に呼ぶ必要がある
     useHead(
       computed(() => {
         const newTitle = `${milestoneTitle.value}: ${milestoneDescription.value} - ${app.$config.public.title}`
@@ -74,6 +68,14 @@ export default defineComponent({
           ],
         }
       })
+    )
+
+    onMounted(() => loadScripts(document))
+
+    // データ取得は composable 呼び出しの後に実行
+    await callOnce(
+      async () => issueStore.fetchById(route.params.id as string),
+      { mode: 'navigation' }
     )
 
     return {

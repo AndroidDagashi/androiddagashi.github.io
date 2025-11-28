@@ -41,10 +41,9 @@ const issueIds = Array.from(
 )
 
 export default defineNuxtConfig({
-  // Nuxt 4 互換性モードは Nuxt 4.x 正式版アップグレード時に有効化
-  // future: {
-  //   compatibilityVersion: 4,
-  // },
+  future: {
+    compatibilityVersion: 4,
+  },
 
   // Nuxt 4 スタイルのディレクトリ構造を使用
   srcDir: 'app',
