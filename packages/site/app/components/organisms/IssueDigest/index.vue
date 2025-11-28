@@ -1,5 +1,5 @@
 <template>
-  <nuxt-link class="IssueDigest flex p-4" :to="`issue/${milestone.path}/`">
+  <nuxt-link class="IssueDigest flex p-4" :to="`/issue/${milestone.path}/`">
     <div>
       <div class="flex flex-col items-baseline sm:flex-row">
         <p class="font-roboto text-xl font-medium">#{{ milestone.title }}</p>

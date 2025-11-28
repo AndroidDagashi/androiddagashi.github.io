@@ -49,6 +49,11 @@ export default defineNuxtConfig({
   // Nuxt 4 スタイルのディレクトリ構造を使用
   srcDir: 'app',
 
+  // public ディレクトリはプロジェクトルートに維持
+  dir: {
+    public: '../public',
+  },
+
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => tag === 'iconify-icon',
