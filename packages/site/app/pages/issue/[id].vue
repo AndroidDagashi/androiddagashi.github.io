@@ -26,7 +26,7 @@
 
 <script lang="ts">
 import { defineComponent, computed, onMounted } from 'vue'
-import { renderOGPMeta } from '../../utils/ogp'
+import { renderOGPMeta } from '~/utils/ogp'
 import { useNuxtApp } from '#imports'
 import ShareWidgets from '~/components/organisms/ShareWidgets/index.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
