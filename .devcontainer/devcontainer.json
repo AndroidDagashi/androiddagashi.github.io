@@ -3,9 +3,7 @@
   "build": {
     "dockerfile": "Dockerfile",
     "context": "..",
-    "args": {
-      "TZ": "${localEnv:TZ:Japan/Tokyo}"
-    }
+    "cacheFrom": "kover-report-action-devcontainer-cache:latest"
   },
   "workspaceFolder": "/home/vscode/workspaces/androiddagashi.github.io",
   "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/workspaces/androiddagashi.github.io,type=bind,consistency=cached",

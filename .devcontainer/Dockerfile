@@ -15,15 +15,28 @@ ENV USER_HOME=/home/${USERNAME}
 ENV USER_LOCAL=${USER_HOME}/.local
 ENV USER_LOCAL_BIN=${USER_LOCAL}/bin
 ENV USER_CONFIG=${USER_HOME}/.config
-ENV WORK_DIR=${USER_HOME}/workspaces/androiddagashi.github.io
+ENV WORK_DIR=${USER_HOME}/workspace
 
-# ✅ XDG（mise/aqua が参照）
+# XDG(referenced by mise/aqua)
 ENV XDG_CACHE_HOME=${USER_HOME}/.cache
 ENV XDG_STATE_HOME=${USER_HOME}/.local/state
+
+# mise
 ENV MISE_CACHE_DIR=${XDG_CACHE_HOME}/mise
 ENV MISE_DATA_DIR=${USER_LOCAL}/share/mise
+ENV MISE_SHIMS_DIR=${MISE_DATA_DIR}/shims
 
-ENV PATH="${MISE_DATA_DIR}}/shims:${USER_LOCAL_BIN}:$PATH"
+# aqua
+ENV AQUA_ROOT_DIR=${USER_HOME}/.local/share/aquaproj-aqua
+ENV AQUA_BIN=${AQUA_ROOT_DIR}/bin
+ENV AQUA_CONFIG=${USER_CONFIG}/aqua/aqua.yaml
+
+# Claude Code
+ENV CLAUDE_CONFIG_DIR=${USER_CONFIG}/claude
+
+ENV PATH=${AQUA_BIN}:${USER_LOCAL_BIN}:$PATH
+
+ENV PATH=${MISE_SHIMS_DIR}:${USER_LOCAL_BIN}:$PATH
 
 USER root
 RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
@@ -32,8 +45,7 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
   echo $TZ > /etc/timezone && \
   apt-get update && \
   apt-get install -y --no-install-recommends \
-  locales sudo gnupg2 iptables ipset dnsutils gh jq vim curl ca-certificates wget \
-  python3 python3-pip pipx && \
+  locales sudo gh jq vim curl ca-certificates wget && \
   sed -i 's/# ja_JP.UTF-8 UTF-8/ja_JP.UTF-8 UTF-8/' /etc/locale.gen && \
   locale-gen ja_JP.UTF-8 && \
   update-locale LANG=$LANG && \
@@ -42,11 +54,11 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
   ${USER_LOCAL_BIN} \
   ${USER_LOCAL}/bash_completion.d \
   ${USER_CONFIG}/.ssh \
-  ${USER_CONFIG}/ksm \
   ${USER_CONFIG}/aqua \
+  $(USER_CONFIG)/gh \
+  ${USER_CONFIG}/claude \
   ${USER_HOME}/.claude \
   ${USER_HOME}/.codex \
-  ${USER_HOME}/.copilot \
   ${XDG_CACHE_HOME} \
   ${XDG_CACHE_HOME}/aquaproj-aqua \
   ${MISE_CACHE_DIR} \
@@ -65,11 +77,18 @@ RUN --mount=type=cache,target=/var/cache/apt,sharing=locked \
   rm -rf /var/lib/apt/lists/*
 
 USER ${USERNAME}
+WORKDIR ${USER_HOME}
 
-COPY --chown=vscode:vscode mise.toml ${USER_CONFIG}/mise/config.toml
+# mise
+COPY --chown=vscode:vscode .devcontainer/mise/config.toml ${USER_CONFIG}/mise/config.toml
+RUN curl https://mise.run | sh
 
-RUN curl https://mise.run | sh && \
-  mise trust "${USER_CONFIG}/mise/config.toml" && \
-  mise install
+# aqua
+COPY --chown=vscode:vscode .devcontainer/aqua/aqua.yaml ${USER_CONFIG}/aqua/aqua.yaml
+RUN curl -sSfL -O https://raw.githubusercontent.com/aquaproj/aqua-installer/v4.0.2/aqua-installer && \
+  echo "98b883756cdd0a6807a8c7623404bfc3bc169275ad9064dc23a6e24ad398f43d  aqua-installer" | sha256sum -c - && \
+  chmod +x aqua-installer && \
+  ./aqua-installer
 
-WORKDIR /workspace
+
+WORKDIR ${WORK_DIR}
