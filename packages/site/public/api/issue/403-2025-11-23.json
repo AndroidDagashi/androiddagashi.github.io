@@ -6,10 +6,10 @@
   "closedAt": "2025-11-23T10:37:31Z",
   "description": "Jetpack Navigation 3が安定版リリース、大規模AndroidアプリでのEdge-to-Edge対応を効率的に進める、パフォーマンススポットライトウィーク、など",
   "issues": {
-    "totalCount": 5,
+    "totalCount": 4,
     "pageInfo": {
       "startCursor": "Y3Vyc29yOnYyOpLPf________5vO2eaMhA==",
-      "endCursor": "Y3Vyc29yOnYyOpLPf________gvO2ecfMw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_O2ecDDQ==",
       "hasPreviousPage": false,
       "hasNextPage": false
     },
@@ -90,24 +90,6 @@
         "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3583",
         "title": "大規模AndroidアプリでのEdge-to-Edge対応を効率的に進める方法",
         "body": "https://buildersbox.corp-sansan.com/entry/2025/11/13/160000\n\nSansanのAndroidチームが100画面以上のアプリでEdge-to-Edge対応を進める実践的な取り組みを紹介。Android 16での必須化に向け、導線別のチケット分割、Material 2/ViewでのWindowInsets実装、DialogFragment対応などの技術的課題と、ドキュメント整備とAI活用による開発効率化、デザイナー向けガイドラインによるレビューコスト削減の工夫を解説。",
-        "labels": {
-          "nodes": []
-        },
-        "comments": {
-          "totalCount": 0,
-          "pageInfo": {
-            "startCursor": null,
-            "endCursor": null,
-            "hasPreviousPage": false,
-            "hasNextPage": false
-          },
-          "nodes": []
-        }
-      },
-      {
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3584",
-        "title": "Android Quick ShareがAirDropと相互運用可能に - Pixel 10から対応開始",
-        "body": "https://security.googleblog.com/2025/11/android-quick-share-support-for-airdrop-security.html\n\nGoogleがAndroid Quick ShareとAirDropの相互運用機能を発表。Pixel 10ファミリーから、AndroidとiOS間で写真や動画などのファイル共有が可能になる。メモリ安全なRust言語で実装され、P2P接続でサーバーを経由しない安全な設計。現在は「Everyone for 10 minutes」モードで動作し、第三者機関の監査でもセキュリティの高さが確認されている。",
         "labels": {
           "nodes": []
         },
