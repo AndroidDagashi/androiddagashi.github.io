@@ -1,7 +1,7 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
 import { defineNuxtConfig } from 'nuxt/config'
 import { siteConfig } from 'site-config'
-import { renderOGPMeta } from './utils/ogp'
+import { renderOGPMeta } from './app/utils/ogp'
 import fs from 'node:fs'
 
 function readJson(path: string) {
@@ -41,6 +41,10 @@ const issueIds = Array.from(
 )
 
 export default defineNuxtConfig({
+  // Nuxt 4 スタイルのディレクトリ構造を使用
+  srcDir: 'app',
+  // Nuxt 4 では public/ はデフォルトで rootDir から解決される
+
   vue: {
     compilerOptions: {
       isCustomElement: (tag) => tag === 'iconify-icon',
@@ -78,14 +82,12 @@ export default defineNuxtConfig({
         },
         {
           property: 'og:site_name',
-          hid: 'og:site_name',
           content: siteConfig.title,
         },
-        { property: 'og:type', hid: 'og:type', content: 'website' },
-        { property: 'twitter:card', hid: 'twitter:card', content: 'summary' },
+        { property: 'og:type', content: 'website' },
+        { property: 'twitter:card', content: 'summary' },
         {
           property: 'twitter:site',
-          hid: 'twitter:site',
           content: `@${siteConfig.contact.name}`,
         },
         ...renderOGPMeta({
@@ -135,19 +137,21 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: false,
-      routes: issueIds,
+      routes: ['/', ...issueIds],
     },
   },
+
 
   modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxt/eslint'],
 
   tailwindcss: {
     viewer: false,
-    configPath: '~/tailwind.config.cjs',
+    configPath: './tailwind.config.cjs',
   },
 
   telemetry: {},
 
   devtools: { enabled: true },
-  compatibilityDate: '2025-03-25',
+  compatibilityDate: '2025-11-29',
+
 })

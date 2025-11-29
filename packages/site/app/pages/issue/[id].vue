@@ -26,8 +26,8 @@
 
 <script lang="ts">
 import { defineComponent, computed, onMounted } from 'vue'
-import { renderOGPMeta } from '../../utils/ogp'
-import { useNuxtApp } from '#imports'
+import { renderOGPMeta } from '~/utils/ogp'
+import { useNuxtApp, useAsyncData } from '#imports'
 import ShareWidgets from '~/components/organisms/ShareWidgets/index.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
@@ -43,13 +43,6 @@ export default defineComponent({
 
     const issueStore = useIssueStore()
 
-    onMounted(() => loadScripts(document))
-
-    await callOnce(
-      async () => issueStore.fetchById(route.params.id as string),
-      { mode: 'navigation' }
-    )
-
     const currentMilestone = computed(() => issueStore.currentMilestone)
 
     const milestoneTitle = computed(() => currentMilestone.value?.title ?? '')
@@ -58,6 +51,7 @@ export default defineComponent({
     )
     const issues = computed(() => currentMilestone.value?.issues?.nodes ?? [])
 
+    // Nuxt 4: composable は await の前に呼ぶ必要がある
     useHead(
       computed(() => {
         const newTitle = `${milestoneTitle.value}: ${milestoneDescription.value} - ${app.$config.public.title}`
@@ -74,6 +68,15 @@ export default defineComponent({
           ],
         }
       })
+    )
+
+    onMounted(() => loadScripts(document))
+
+    // Nuxt 4: useAsyncData で route.params.id を watch してナビゲーション時に再取得
+    await useAsyncData(
+      `issue-${route.params.id}`,
+      () => issueStore.fetchById(route.params.id as string),
+      { watch: [() => route.params.id] }
     )
 
     return {

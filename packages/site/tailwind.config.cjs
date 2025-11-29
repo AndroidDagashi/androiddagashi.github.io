@@ -3,10 +3,10 @@ const colors = require('tailwindcss/colors')
 
 module.exports = {
   content: [
-    './comonents/**/*.{vue,ts}',
-    './layouts/**/*.vue',
-    './pages/**/*.vue',
-    './plugins/**/*.ts',
+    './app/components/**/*.{vue,ts}',
+    './app/layouts/**/*.vue',
+    './app/pages/**/*.vue',
+    './app/plugins/**/*.ts',
     './nuxt.config.ts',
   ],
   theme: {
