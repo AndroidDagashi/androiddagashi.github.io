@@ -41,10 +41,6 @@ const issueIds = Array.from(
 )
 
 export default defineNuxtConfig({
-  future: {
-    compatibilityVersion: 4,
-  },
-
   // Nuxt 4 スタイルのディレクトリ構造を使用
   srcDir: 'app',
   // Nuxt 4 では public/ はデフォルトで rootDir から解決される
