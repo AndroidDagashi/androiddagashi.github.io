@@ -1,3 +1,5 @@
+import type { Meta, DataKeys, SchemaAugmentations } from 'unhead/types'
+
 interface OGPProperties {
   title?: string
   description?: string
@@ -5,11 +7,8 @@ interface OGPProperties {
   image?: string
 }
 
-interface MetaTag {
-  property?: string
-  name?: string
-  content: string
-}
+
+type MetaTag = Meta & DataKeys & SchemaAugmentations['meta']
 
 export function renderOGPMeta(properties: OGPProperties): MetaTag[] {
   const results: MetaTag[] = []
