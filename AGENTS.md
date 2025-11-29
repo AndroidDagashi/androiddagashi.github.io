@@ -4,13 +4,13 @@ This file provides guidance to AI Coding Agents(Claude Code, Codex, etc) when wo
 
 ## Project Overview
 
-Android Dagashi is a Nuxt 3-based static site that aggregates and displays Android development news and resources. The site uses GitHub Issues as a CMS, fetching data via GitHub API and generating static pages.
+Android Dagashi is a Nuxt 4-based static site that aggregates and displays Android development news and resources. The site uses GitHub Issues as a CMS, fetching data via GitHub API and generating static pages.
 
 ## Architecture
 
 ### Monorepo Structure (Yarn Workspaces)
 
-- **packages/site** - Main Nuxt 3 application with Vue 3, Tailwind CSS
+- **packages/site** - Main Nuxt 4 application with Vue 3, Tailwind CSS
 - **packages/site-api** - Generates JSON API files from GitHub Issues
 - **packages/site-api-github** - GitHub API integration layer
 - **packages/site-rss** - RSS feed generation
@@ -21,7 +21,7 @@ Android Dagashi is a Nuxt 3-based static site that aggregates and displays Andro
 
 ### Key Technologies
 
-- **Frontend**: Nuxt 3, Vue 3, Tailwind CSS, Pinia (state management)
+- **Frontend**: Nuxt 4, Vue 3, Tailwind CSS, Pinia (state management)
 - **Build**: Yarn 4 with workspaces, TypeScript, ESLint, Prettier
 - **Deployment**: GitHub Actions → GitHub Pages (master branch)
 
