@@ -27,7 +27,7 @@
 <script lang="ts">
 import { defineComponent, computed, onMounted } from 'vue'
 import { renderOGPMeta } from '~/utils/ogp'
-import { useNuxtApp } from '#imports'
+import { useNuxtApp, useAsyncData } from '#imports'
 import ShareWidgets from '~/components/organisms/ShareWidgets/index.vue'
 import MarkdownText from '~/components/atoms/MarkdownText/index.vue'
 import { loadScripts } from '~/utils/sharewidget-scripts'
@@ -72,10 +72,11 @@ export default defineComponent({
 
     onMounted(() => loadScripts(document))
 
-    // データ取得は composable 呼び出しの後に実行
-    await callOnce(
-      async () => issueStore.fetchById(route.params.id as string),
-      { mode: 'navigation' }
+    // Nuxt 4: useAsyncData で route.params.id を watch してナビゲーション時に再取得
+    await useAsyncData(
+      `issue-${route.params.id}`,
+      () => issueStore.fetchById(route.params.id as string),
+      { watch: [() => route.params.id] }
     )
 
     return {
