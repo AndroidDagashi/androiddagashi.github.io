@@ -5,10 +5,10 @@
     "context": "..",
     "cacheFrom": "kover-report-action-devcontainer-cache:latest"
   },
-  "workspaceFolder": "/home/vscode/workspaces/androiddagashi.github.io",
-  "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/workspaces/androiddagashi.github.io,type=bind,consistency=cached",
+  "workspaceFolder": "/home/vscode/workspace",
+  "workspaceMount": "source=${localWorkspaceFolder},target=/home/vscode/workspace,type=bind,consistency=cached",
   "mounts": [
-  {
+    {
       "source": "gh-config-${localWorkspaceFolderBasename}",
       "target": "/home/vscode/.config/gh",
       "type": "volume"
@@ -19,24 +19,41 @@
       "type": "volume"
     },
     {
-      "source": "codex-config-${localWorkspaceFolderBasename}",
-      "target": "/home/vscode/.codex",
+      "source": "claude-code-user-config-${localWorkspaceFolderBasename}",
+      "target": "/home/vscode/.config/claude",
       "type": "volume"
     },
     {
-      "source": "github-copilot-cli-config-${localWorkspaceFolderBasename}",
-      "target": "/home/vscode/.copilot",
+      "source": "codex-config-${localWorkspaceFolderBasename}",
+      "target": "/home/vscode/.codex",
       "type": "volume"
     }
+  ],
+  "runArgs": [
+    "--env-file",
+    "${localWorkspaceFolder}/.devcontainer/runtime.env"
   ],
   "features": {
     "ghcr.io/devcontainers/features/github-cli:1": {
       "installDirectlyFromGitHubRelease": true,
       "version": "latest"
-    },
-    "ghcr.io/anthropics/devcontainer-features/claude-code:1.0": {}
+    }
   },
+  "initializeCommand": [
+    "/bin/sh",
+    "-c",
+    "cd ${localWorkspaceFolder} && if [ ! -f .devcontainer/runtime.env ]; then cp .devcontainer/runtime.env.template .devcontainer/runtime.env; fi"
+  ],
   "onCreateCommand": [
-    "/bin/bash", "/home/vscode/workspaces/androiddagashi.github.io/.devcontainer/scripts/on-create.sh"
+    "/bin/bash",
+    "/home/vscode/workspace/.devcontainer/scripts/on-create.sh"
+  ],
+  "postCreateCommand": [
+    "/bin/bash",
+    "/home/vscode/workspace/.devcontainer/scripts/on-post-create.sh"
+  ],
+  "postStartCommand": [
+    "/bin/bash",
+    "/home/vscode/workspace/.devcontainer/scripts/on-post-start.sh"
   ]
 }
