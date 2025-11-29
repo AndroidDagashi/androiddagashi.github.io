@@ -1,30 +1,26 @@
-import { defineNuxtPlugin, useRuntimeConfig } from '#app'
+import { defineNuxtPlugin } from '#app'
 
 interface ApiClient {
   get<T>(url: string): Promise<T>
 }
 
 class ClientApiClient implements ApiClient {
-  private readonly baseURL: string
-
-  constructor(baseURL: string) {
-    this.baseURL = baseURL
-  }
-
   async get<T>(url: string): Promise<T> {
-    const res = await fetch(`${this.baseURL}${url}`)
+    // クライアントサイドでは相対パスで十分（同じオリジンへのリクエスト）
+    const res = await fetch(url)
     return await res.json()
   }
 }
 
-export default defineNuxtPlugin(() => {
-  const config = useRuntimeConfig()
+export default defineNuxtPlugin({
+  name: 'api-client',
+  setup() {
+    const client = new ClientApiClient()
 
-  const client = new ClientApiClient(config.public.apiEndpoint)
-
-  return {
-    provide: {
-      api: client,
-    },
-  }
+    return {
+      provide: {
+        api: client,
+      },
+    }
+  },
 })

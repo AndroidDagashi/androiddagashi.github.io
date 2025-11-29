@@ -20,14 +20,17 @@ class ServerApiClient implements ApiClient {
   }
 }
 
-export default defineNuxtPlugin(() => {
-  // packages/site/public からの相対パス
-  const publicDir = resolve(process.cwd(), 'public')
-  const client = new ServerApiClient(publicDir)
+export default defineNuxtPlugin({
+  name: 'api-server',
+  setup() {
+    // packages/site/public からの相対パス
+    const publicDir = resolve(process.cwd(), 'public')
+    const client = new ServerApiClient(publicDir)
 
-  return {
-    provide: {
-      api: client,
-    },
-  }
+    return {
+      provide: {
+        api: client,
+      },
+    }
+  },
 })
