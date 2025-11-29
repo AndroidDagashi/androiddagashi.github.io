@@ -47,11 +47,7 @@ export default defineNuxtConfig({
 
   // Nuxt 4 スタイルのディレクトリ構造を使用
   srcDir: 'app',
-
-  // public ディレクトリはプロジェクトルートに維持
-  dir: {
-    public: '../public',
-  },
+  // Nuxt 4 では public/ はデフォルトで rootDir から解決される
 
   vue: {
     compilerOptions: {
