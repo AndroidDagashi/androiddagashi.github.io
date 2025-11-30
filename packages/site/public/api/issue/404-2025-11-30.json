@@ -1,0 +1,133 @@
+{
+  "id": "MI_kwDOB4jhdM4A2Lcm",
+  "number": 404,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/404",
+  "title": "404 2025-11-30",
+  "closedAt": "2025-11-30T15:09:21Z",
+  "description": "Android Quick ShareがAirDropと運用可能に, CashのMetroの移行, Koinが\"compile-time safety\"に, kotlinx-schema, scrcpyでデスクトップ体験, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO2ecfMw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afO2yNYzw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3584",
+        "title": "Android Quick ShareがAirDropと相互運用可能に - Pixel 10から対応開始",
+        "body": "https://security.googleblog.com/2025/11/android-quick-share-support-for-airdrop-security.html\n\nGoogleがAndroid Quick ShareとAirDropの相互運用機能を発表。Pixel 10ファミリーから、AndroidとiOS間で写真や動画などのファイル共有が可能になる。メモリ安全なRust言語で実装され、P2P接続でサーバーを経由しない安全な設計。現在は「Everyone for 10 minutes」モードで動作し、第三者機関の監査でもセキュリティの高さが確認されている。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3585",
+        "title": "scrcpy --new-displayで様々なAndroid端末でデスクトップ端末のような体験ができる話",
+        "body": "https://proandroiddev.com/enable-a-desktop-style-experience-samsung-dex-on-any-android-device-unlocking-the-power-of-scrcpy-b91d28d685fc",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3586",
+        "title": "kotlinx-schemaが公開",
+        "body": "JSON SchemaやLLM function calling schemaを生成するライブラリが公開されました。\nhttps://github.com/Kotlin/kotlinx-schema/\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3587",
+        "title": "Javaの依存関係管理は呪われているか？",
+        "body": "FatJarやClass.forNameなどで依存関係が壊れて実行時に問題が起きてしまうため、静的解析ツールで監視したり、パッケージリロケーションを利用したり、Service Loaderを使うことを提案しています。\nhttps://dev.to/autonomousapps/is-the-java-ecosystem-cursed-a-dependency-analysis-perspective-53ef",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3588",
+        "title": "Koin AnnotationsがJSR-330をサポートし\"full compile-time safety\"に",
+        "body": "`@Inject` や `@Singleton`などをサポートしたそうです。\nhttps://blog.kotzilla.io/koin-ide-plugin-1-5-1-annotations-2-2-jsr-330-android-kotlin",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3589",
+        "title": "Cash AndroidのAnvil/Dagger -> Metroの移行",
+        "body": "ビルド時間を改善した話が含まれています。\nhttps://code.cash.app/cash-android-moves-to-metro",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
