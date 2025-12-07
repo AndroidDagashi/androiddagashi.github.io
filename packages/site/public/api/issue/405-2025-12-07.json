@@ -1,0 +1,162 @@
+{
+  "id": "MI_kwDOB4jhdM4A2WZV",
+  "number": 405,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/405",
+  "title": "405 2025-12-07",
+  "closedAt": "2025-12-07T11:22:25Z",
+  "description": "Jetpack ViewModelの内部実装を深掘り、androidx.webgpuが公開、Android 15のLinux環境でVM起動、Fused Libraryプラグイン、Navigation 3実践ガイド",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO3Lw7DA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPO3L0XVw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3594",
+        "title": "Jetpack ViewModelの内部実装を深掘り：ライフサイクル管理からマルチプラットフォーム設計まで",
+        "body": "https://skydoves.medium.com/inside-jetpack-viewmodel-internal-mechanisms-and-multiplatform-design-2625671eaef8\n\nJetpack ViewModelの内部機構を詳細に解説した記事。ViewModelStoreによる構成変更時のインスタンス保持の仕組み、ViewModelProviderのスレッドセーフなキャッシュ戦略、CreationExtrasを活用したステートレスなファクトリーパターン、AutoCloseableによるリソース管理、viewModelScopeのコルーチン統合などを網羅。Kotlin Multiplatform対応の設計判断やパフォーマンス特性も解説されており、ViewModelを深く理解したい開発者に有用。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3595",
+        "title": "androidx.webgpuが公開",
+        "body": "androidx.webgpuでWebGPUのAPIで、GPUを扱えるようになり、\n詳細であるOpenGLやVulkanとかのAPIをしらなくてもKotlinのAPIでGPUのAPIが使えるようになったようです。\nhttps://x.com/romainguy/status/1996647019327508572",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3596",
+        "title": "コピペで使えるJetpack Compose UIブロック集「Composables UI Blocks」",
+        "body": "https://www.reddit.com/r/androiddev/comments/1pessfb/made_a_small_collection_of_copypastable_jetpack/\n\nMaterial 3ベースのJetpack Compose UIコンポーネントをコピー＆ペーストで利用できるコレクション。Music Player、各種カード、入力フォームなどの実用的なUIブロックが揃っており、すべて無料・オープンソースで提供されている。composables.com/ui-blocks でライブプレビューを試すことができ、Compose Multiplatformによるウェブ上での動作確認も可能。同作者はcomposeicons.comも運営している。\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3597",
+        "title": "Android 15のLinux開発環境でOpenStackを動かしてVMを起動する",
+        "body": "https://engineers.ntt.com/entry/202512-mobile-openstack/entry\n\nAndroid 15からPixelなどのAndroid端末でLinux環境が利用可能に。NTTドコモビジネスのエンジニアがPixel 8 Pro上でOpenStackをインストールし、VMを起動することに挑戦。メモリ4GB・ストレージ16GBという制約下で、DevStackを最小構成にチューニングし、KVMが使えないためQEMUソフトウェアエミュレーションでCirrOS VMの起動に成功。持ち運べるOpenStack開発環境を実現した。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3598",
+        "title": "Fused Libraryプラグインでマルチモジュール構成のAndroidライブラリを1つのaarに統合する",
+        "body": "https://product.st.inc/entry/2025/12/05/120000\n\nAndroidライブラリ開発において、マルチモジュール構成では各モジュールを個別にMaven Repositoryに公開する必要があり管理が煩雑になる課題があった。今年リリースされたFused Libraryプラグインは複数のGradleモジュールから1つのaarを生成でき、publish周りの手順を簡略化できる。ただし内部モジュールの可視性制御は未解決で、試験的機能として今後の発展に期待",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3599",
+        "title": "Jetpack Compose Navigation 3を本番環境で使うための実践ガイド：Deep LinksとScene Strategy",
+        "body": "https://proandroiddev.com/production-ready-navigation-3-in-jetpack-compose-0ff709d527e4\n\nJetpack Compose Navigation 3が正式リリースされたことを受け、本番アプリで必要となるDeep LinksとMultiple Scene Strategyの実装方法を解説。Deep LinksではViewModelを介した一元管理のアプローチを紹介し、Scene Strategyではthen関数を使って複数の戦略（ListDetail、BottomSheetなど）を組み合わせる方法を説明している。型安全でスケーラブルなナビゲーション設計の実践例として参考になる記事。\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3600",
+        "title": "EncryptedSharedPreferencesからDataStore + Tinkへの移行ガイド",
+        "body": "https://proandroiddev.com/goodbye-encryptedsharedpreferences-a-2026-migration-guide-4b819b4a537a\n\nGoogleがEncryptedSharedPreferencesを正式に非推奨化した。メインスレッドでの同期I/Oによるパフォーマンス問題や、特定OEM端末でのキーセット破損例外が原因。本記事では、後継となるJetpack DataStoreとGoogle Tinkを組み合わせた新アーキテクチャへの移行手順を解説。Proto DataStoreによる型安全なスキーマ定義、TinkのStreamingAeadによるストリーム暗号化、既存データのマイグレーション方法、レガシーコードのクリーンアップまでを網羅している。\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
