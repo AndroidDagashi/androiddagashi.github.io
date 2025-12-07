@@ -35,9 +35,20 @@
       {
         "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3595",
         "title": "androidx.webgpuが公開",
-        "body": "androidx.webgpuでWebGPUのAPIで、GPUを扱えるようになり、\n詳細であるOpenGLやVulkanとかのAPIをしらなくてもKotlinのAPIでGPUのAPIが使えるようになったようです。\nhttps://x.com/romainguy/status/1996647019327508572",
+        "body": "androidx.webgpuでWebGPUのAPIで、GPUを扱えるようになり、\n詳細であるOpenGLやVulkanとかのAPIをしらなくてもKotlinのAPIでGPUのAPIが使えるようになったようです。\n\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">So glad this is finally out! androidx.webgpu brings the WebGPU API to Android developers. Having access to a modern GPU API in Kotlin without dealing with the OpenGL legacy nor the complexity of Vulkan is exciting! <a href=\"https://t.co/F9JtbKA5Ws\">https://t.co/F9JtbKA5Ws</a></p>&mdash; Romain Guy (@romainguy) <a href=\"https://twitter.com/romainguy/status/1996647019327508572?ref_src=twsrc%5Etfw\">December 4, 2025</a></blockquote> <script async src=\"https://platform.twitter.com/widgets.js\" charset=\"utf-8\"></script>",
         "labels": {
-          "nodes": []
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
         },
         "comments": {
           "totalCount": 0,
