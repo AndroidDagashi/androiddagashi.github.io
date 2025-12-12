@@ -1,0 +1,228 @@
+{
+  "id": "MI_kwDOB4jhdM4A1uOJ",
+  "number": 402,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/402",
+  "title": "402 2025-11-16",
+  "closedAt": "2025-11-16T11:42:22Z",
+  "description": "Jetpack Composeのパフォーマンスを向上させる10の実践的テクニック,Android開発者認証の早期アクセスが開始, CameraX 1.5リリース, など",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO2GK3_A==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_O2GPV8A==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3570",
+        "title": "Now in AndroidアプリをDagger HiltからKoin Annotations 2.3へ移行する試み",
+        "body": "https://blog.insert-koin.io/migrating-now-in-android-to-koin-annotations-2-3-67d252dbb97d\n\nGoogleのNow in Androidサンプルアプリ（30モジュール）をDagger HiltからKoin Annotations 2.3へ完全移行した詳細な解説記事。JSR-330互換性により@Inject/@Singletonはそのまま利用可能で、ビジネスロジックの変更は不要。@ComponentScanによる自動検出、koin-dagger-bridgeを使った段階的移行により、アプリを動作させながら低リスクで移行を実現。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHO0ulnZg==",
+            "endCursor": "Y3Vyc29yOnYyOpHO0ulnZg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "この記事は Koin によるデモで、NiA アプリが実際に Koin 移行した、というわけではありません",
+              "publishedAt": "2025-11-16T10:33:05Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3571",
+        "title": "MockK: Under the cover - 内部で使われているKotlin言語機能の解説",
+        "body": "https://medium.com/@jintin/mockk-under-the-cover-93b3ee5bcae4\n\nMockKがKotlinの言語機能を最大限活用してクリーンなAPIを実現する仕組みを解説。mockk()関数ではreified型パラメータとinline関数により.classの指定を不要にし、デフォルト引数で簡潔な記法を実現。every{}ブロックではMockKMatcherScopeのレシーバー付きラムダとフルエントAPIによりany()やeq()を直感的に使える設計を紹介。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3572",
+        "title": "Jetpack Composeの再描画を最適化する：RecompositionとSkippabilityの仕組みを理解する",
+        "body": "https://medium.com/@sjhawar11/a-deep-dive-into-recomposition-composes-engine-room-and-the-secrets-of-skippability-d2986c3ef33a\n\n\nComposeのパフォーマンスの鍵となるRecompositionの仕組みとSkippability（スキップ可能性）について詳説。安定した型パラメータの重要性、通常のKotlinコレクションが不要な再描画を引き起こす問題、kotlinx.collections.immutableや@Immutableアノテーション、LazyColumnでのkey関数を使った最適化手法を解説。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3573",
+        "title": "Jetpack Composeのパフォーマンスを向上させる10の実践的テクニック",
+        "body": "https://medium.com/@ammarsohail321/boosting-jetpack-compose-performance-10-practical-techniques-for-smoother-ui-4528eaf18103\n\nJetpack Composeで効率的なUIを構築するための10の最適化手法を解説。状態読み込みの遅延、@Stable/@Immutableによる安定性の活用、derivedStateOfでの更新最適化、LazyLayoutでの安定キー使用など、不要な再コンポジションを削減する実践的なテクニックを具体的なコード例と共に紹介している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3574",
+        "title": "Android開発者認証の早期アクセスが開始、学生・趣味開発者向けの特別対応も発表",
+        "body": "https://android-developers.googleblog.com/2025/11/android-developer-verification-early.html\n\nAndroidの開発者認証要件の早期アクセスプログラムが開始されました。この新しい認証システムは、マルウェアや詐欺アプリから利用者を守るための重要な防御層として機能します。コミュニティからのフィードバックに基づき、学生や趣味の開発者向けに限定配布用の専用アカウントタイプを導入し、完全な認証要件なしでアプリを配布できるようにします。また、パワーユーザー向けに未認証アプリのインストールを可能にする高度なフロー（いわゆるサイドロード）も開発中です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHO0unoPg==",
+            "endCursor": "Y3Vyc29yOnYyOpHO0unoPg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\n\nhttps://www.reddit.com/r/androiddev/comments/1ovohu6/google_will_allow_users_to_sideload_android_apps/",
+              "publishedAt": "2025-11-16T11:14:36Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3575",
+        "title": "中学生がFlutterでアプリを開発しGoogle Play公開に成功",
+        "body": "中学生がAndroidアプリ開発してGooglePlayで公開した話 #Flutter - Qiita  \nhttps://qiita.com/nekogakure/items/f1accd7aeeec5a3a7cdf\n\n中学2年生の開発者が初めてAndroidアプリ開発に挑戦。Flutter/Dartを独学で習得し、その場で心情を記録できる「ココロノート」を5日で実装。親の許可取得、14人のクローズドテスター確保、初回リジェクト後の再申請など様々な壁を乗り越え、Google Playでの公開を達成した体験談。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3576",
+        "title": "Android Vitals: excessive wake lockメトリクスが正式版へ、2026年3月から品質基準に",
+        "body": "https://android-developers.googleblog.com/2025/11/raising-bar-on-battery-performance.html\n\n24時間で累積2時間以上のpartial wake lockを保持するセッションが過度とみなされ、28日間で5%以上のセッションが該当すると基準違反となる。2026年3月1日以降、基準を満たさないアプリはGoogle Playの推奨表示から除外される可能性があり、バッテリー消費に関する警告が表示される場合もある。Android Vitalsにwake lock名テーブルが追加され、デバッグが容易に。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3577",
+        "title": "CameraX 1.5リリース：スローモーション動画とRAW撮影に対応",
+        "body": "https://android-developers.googleblog.com/2025/11/introducing-camerax-15-powerful-video.html\n\nCameraX 1.5が正式リリースされ、120/240fpsのスローモーション動画記録、複数機能の同時使用を保証するFeature Group API、プロ向けのDNG(RAW)形式での画像キャプチャ、Camera ExtensionsでのUltra HDRサポートなど大幅な機能強化が実現。新しいSessionConfig APIにより、カメラ設定の管理も簡素化された。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

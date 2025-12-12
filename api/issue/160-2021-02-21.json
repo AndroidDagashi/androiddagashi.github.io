@@ -1,0 +1,187 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjQzMDEwNw==",
+  "number": 160,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/160",
+  "title": "160 2021-02-21",
+  "description": "Android 12 Developer Preview 1、RoomがKSPをサポート、Now in Android エピソード34、Jetpack Composeのパッケージ名からandroidxを落とす署名運動、など。",
+  "closedAt": "2021-02-21T10:15:19Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOMGABdw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OMHKaiw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1745",
+        "title": "Android 12 Developer Preview 1",
+        "body": "https://android-developers.googleblog.com/2021/02/android-12-dp1.html\r\nhttps://developer.android.com/about/versions/12\r\n\r\nAndroid 12の最初のDeveloper Previewがリリースされました。変更内容やリリースタイムラインなども公開されています。Pixel 3以降のPixelシリーズで試せるようになっています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1746",
+        "title": "RoomがKSPをサポート",
+        "body": "https://developer.android.com/jetpack/androidx/releases/room#2.3.0-beta02\r\nhttps://twitter.com/yigitboyar/status/1362485913532522498\r\n\r\nRoom 2.3.0-beta02で実験的にKSPをサポートしました。KAPTに比べてビルド速度の向上が期待できます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1747",
+        "title": "Android Studio Arctic Fox Canary 7",
+        "body": "https://androidstudio.googleblog.com/2021/02/android-studio-arctic-fox-canary-7.html\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1748",
+        "title": "Android 12でandroid:exportedの明示的な指定が必要",
+        "body": "https://medium.com/androiddevelopers/lets-be-explicit-about-our-intent-filters-c5dbe2dbdce0\r\n\r\nAndroid 12からAndroidManifestのactivity等に明示的なandroid:exportedの指定が必要になります。Target SDKをAndroid 12にする際には対応が必要になると思います。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1749",
+        "title": "Now in Android エピソード34",
+        "body": "Now in Androidの新着エピソードです。MAD Skillsの紹介、Material Design Components（MDC）ライブラリ1.3.0、Kotlin Symbol Processing（KSP）などについて触れています。\r\n\r\nhttps://medium.com/androiddevelopers/now-in-android-34-c8d2a017a119",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1750",
+        "title": "Jetpack WindowManager alpha02の紹介",
+        "body": "Jetpack WindowManagerのalpha02の解説です。Android 11で導入された WindowMetrics API が使えるようになったようです。\r\nhttps://medium.com/androiddevelopers/jetpack-windowmanager-updates-8bee061aa2fb",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1751",
+        "title": "Jetpack Composeのパッケージ名からandroidxを落とす署名運動",
+        "body": "Jetpack ComposeがAndroidだけでなくデスクトップやiOSでも使えるようにする動きがある中でいまのうちにパッケージ名から `androidx` を落とそうという署名運動があるようです。\r\nhttps://www.change.org/p/google-drop-androidx-from-jetpack-compose-package-name-for-multiplatform-before-1-0-release",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOLqjazg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOLqjazg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "なおJetpack Composeが二つの意味で使われているという指摘は以前Jake Whartonからもなされていました。\r\nhttps://jakewharton.com/a-jetpack-compose-by-any-other-name/",
+              "publishedAt": "2021-02-21T08:10:43Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1752",
+        "title": "Android 12のUnified rich content apiの解説",
+        "body": "https://joebirch.co/android/exploring-android-12-unified-rich-content-api/\r\nhttps://developer.android.com/about/versions/12/features/unified-content-api\r\n\r\nコピーアンドペーストなどでメディア入力が出来るようになるそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
