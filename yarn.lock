@@ -84,9 +84,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.18.7":
-  version: 0.18.7
-  resolution: "@atproto/api@npm:0.18.7"
+"@atproto/api@npm:0.18.8":
+  version: 0.18.8
+  resolution: "@atproto/api@npm:0.18.8"
   dependencies:
     "@atproto/common-web": "npm:^0.4.7"
     "@atproto/lexicon": "npm:^0.6.0"
@@ -96,7 +96,7 @@ __metadata:
     multiformats: "npm:^9.9.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/1eeb9c5e23188b3680bd340a0fa898c9c0c6a7c1d12ba6a98e7f8d8b949e678a181832312326a3f714f06f33e32da305763ab498ec80bad73a88d8c5cded8ed1
+  checksum: 10c0/4a056cb66770f68fe7692727890020307cc0a601c67f3cd3a79874314ef0da175e4ebd642bc10d245e18e35d6150b361a7d0c3d15b282b85b9ee244081010657
   languageName: node
   linkType: hard
 
@@ -1419,10 +1419,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.39.1, @eslint/js@npm:^9.39.1":
-  version: 9.39.1
-  resolution: "@eslint/js@npm:9.39.1"
-  checksum: 10c0/6f7f26f8cdb7ad6327bbf9741973b6278eb946f18f70e35406e88194b0d5c522d0547a34a02f2a208eec95c5d1388cdf7ccb20039efd2e4cb6655615247a50f1
+"@eslint/js@npm:9.39.2, @eslint/js@npm:^9.39.1":
+  version: 9.39.2
+  resolution: "@eslint/js@npm:9.39.2"
+  checksum: 10c0/00f51c52b04ac79faebfaa65a9652b2093b9c924e945479f1f3945473f78aee83cbc76c8d70bbffbf06f7024626575b16d97b66eab16182e1d0d39daff2f26f5
   languageName: node
   linkType: hard
 
@@ -8001,9 +8001,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:9.39.1":
-  version: 9.39.1
-  resolution: "eslint@npm:9.39.1"
+"eslint@npm:9.39.2":
+  version: 9.39.2
+  resolution: "eslint@npm:9.39.2"
   dependencies:
     "@eslint-community/eslint-utils": "npm:^4.8.0"
     "@eslint-community/regexpp": "npm:^4.12.1"
@@ -8011,7 +8011,7 @@ __metadata:
     "@eslint/config-helpers": "npm:^0.4.2"
     "@eslint/core": "npm:^0.17.0"
     "@eslint/eslintrc": "npm:^3.3.1"
-    "@eslint/js": "npm:9.39.1"
+    "@eslint/js": "npm:9.39.2"
     "@eslint/plugin-kit": "npm:^0.4.1"
     "@humanfs/node": "npm:^0.16.6"
     "@humanwhocodes/module-importer": "npm:^1.0.1"
@@ -8046,7 +8046,7 @@ __metadata:
       optional: true
   bin:
     eslint: bin/eslint.js
-  checksum: 10c0/59b2480639404ba24578ca480f973683b87b7aac8aa7e349240474a39067804fd13cd8b9cb22fee074170b8c7c563b57bab703ec0f0d3f81ea017e5d2cad299d
+  checksum: 10c0/bb88ca8fd16bb7e1ac3e13804c54d41c583214460c0faa7b3e7c574e69c5600c7122295500fb4b0c06067831111db740931e98da1340329527658e1cf80073d3
   languageName: node
   linkType: hard
 
@@ -8899,14 +8899,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-request@npm:7.3.5":
-  version: 7.3.5
-  resolution: "graphql-request@npm:7.3.5"
+"graphql-request@npm:7.4.0":
+  version: 7.4.0
+  resolution: "graphql-request@npm:7.4.0"
   dependencies:
     "@graphql-typed-document-node/core": "npm:^3.2.0"
   peerDependencies:
     graphql: 14 - 16
-  checksum: 10c0/97f48d48dd14ccd1e7fd51f3eb4c7c537dfc0aac8c27f01764ec917e7cf5b4c2a17f19369de1f692a26c12476f2432e67220a89941240323edcf75c44895632d
+  checksum: 10c0/066531d70b9c4656251e51c950ce9bee3df05291e12e2b983608d75ac3a70d700efd6488d273b043235dc125658973db38b21eba59e808863831a5a19a6a7b41
   languageName: node
   linkType: hard
 
@@ -13246,7 +13246,7 @@ __metadata:
     "@types/node": "npm:24.10.4"
     cross-fetch: "npm:4.1.0"
     graphql: "npm:16.12.0"
-    graphql-request: "npm:7.3.5"
+    graphql-request: "npm:7.4.0"
     site-common: "npm:1.0.0"
     site-types: "npm:1.0.0"
     tsx: "npm:4.21.0"
@@ -13327,7 +13327,7 @@ __metadata:
     "@types/node": "npm:24.10.4"
     "@types/twitter-text": "npm:3.1.10"
     date-fns: "npm:4.1.0"
-    eslint: "npm:9.39.1"
+    eslint: "npm:9.39.2"
     iconify-icon: "npm:3.0.2"
     lodash.flatmap: "npm:4.5.0"
     markdown-it: "npm:14.1.0"
@@ -13394,7 +13394,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.18.7"
+    "@atproto/api": "npm:0.18.8"
     "@types/oauth": "npm:0.9.6"
     date-fns: "npm:4.1.0"
     firebase-admin: "npm:13.6.0"
