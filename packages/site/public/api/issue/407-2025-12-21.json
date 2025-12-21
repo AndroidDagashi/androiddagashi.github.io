@@ -1,0 +1,209 @@
+{
+  "id": "MI_kwDOB4jhdM4A2vVw",
+  "number": 407,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/407",
+  "title": "407 2025-12-21",
+  "closedAt": "2025-12-21T10:52:00Z",
+  "description": "Kotlin 2.3.0, アダプティブアプリ開発の更新,opentelemetry-kotlinの寄贈, Android 版 Sora をリリースした方法, グローバル企業がKotlinで何を作ったか, など",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO35Mt6g==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_O35QTAQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3607",
+        "title": "Kotlin 2.3.0",
+        "body": "Explicit backing fieldsがExperimental、Swift exportの改善やKotlin Nativeでのビルド速度の改善など嬉しい改善が多く出ているようです。\nhttps://blog.jetbrains.com/kotlin/2025/12/kotlin-2-3-0-released/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3608",
+        "title": "Android Studio Panda 1 Canary 1",
+        "body": "https://androidstudio.googleblog.com/2025/12/android-studio-panda-1-202531-canary-1.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3609",
+        "title": "Android Runtime (ART)のcompile時間の改善",
+        "body": "ARTチームが最適化コンパイラのプロファイル(pprof)を基に、不要な処理のスキップやデータ構造改善、インライン判定の前倒しなどで総コンパイル時間を18%短縮。コード品質とピークメモリは維持し、Android 12+はMainlineで配信、残りは2025年末アップデートへ。\nhttps://android-developers.googleblog.com/2025/12/18-faster-compiles-0-compromises.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3610",
+        "title": "OpenTelemetry Kotlin SDK「opentelemetry-kotlin」の寄贈が正式承認",
+        "body": "embrace.io発のopentelemetry-kotlinがOpenTelemetryへ正式に寄贈され、2025/12/10にOpenTelemetryの運営チーム（ガバナンス／技術の委員会）で受け入れが決定。KotlinらしいAPIとKotlin Multiplatform対応により、複数プラットフォームをまたいだE2Eの計測・トレースがしやすくなり、オブザーバビリティ向上が期待される。\nhttps://zenn.dev/celestial_o11y/articles/20251215-cfc-otel-for-kotlin-blog",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3611",
+        "title": "アダプティブアプリを作る上での2025年の3大更新",
+        "body": "Androidは折りたたみ/タブレット/XR/Chromebookなどに拡大。Android 16は600dp以上で向き・リサイズ制限を無視し全画面化。WindowManager 1.5はLarge/XL幅クラス追加、Navigation 3はCompose向けに分割画面の状態管理を簡素化。\nhttps://android-developers.googleblog.com/2025/12/goodbye-mobile-only-hello-adaptive.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3612",
+        "title": "グローバルブランド(ASW, Duolingo, Google, Meta...など)がKotlinで何を作ったか？",
+        "body": "KotlinConf’25ではMeta、AWS、Duolingo、Google、Uberなどが登壇し、Kotlin/Kotlin Multiplatformの大規模運用事例を共有。Buck2のKotlin対応、KMPによるナビ共通化、AIでのJava→Kotlin移行など実践的な知見がまとまる。\nhttps://blog.jetbrains.com/kotlin/2025/12/industry-leaders-on-the-kotlinconf25-stage/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3613",
+        "title": "OpenAIが28日間で Android 版 Sora をリリースした方法",
+        "body": "OpenAIがSoraのAndroidアプリを28日で開発・公開。4人チームがGPT-5.1-Codex初期版で約50億トークンを使い、18日で社内版→10日後に一般公開。初日Playストア1位、24時間で100万本生成。クラッシュフリー99.9%も達成。\nhttps://openai.com/ja-JP/index/shipping-sora-for-android-with-codex/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3614",
+        "title": "Jetpack ComposeアプリをKotlin Multiplatformに移行するガイド",
+        "body": "https://kotlinlang.org/docs/multiplatform/migrate-from-android.html\n\nJetcasterサンプルを例に、Android専用Composeアプリをマルチプラットフォーム化する手順を解説。移行前チェックリストとして、Javaコードの変換、Android専用ライブラリの置き換え（Dagger→Koin、Coil 2→3、JUnit→kotlin-test等）、モジュール分離を紹介。ビジネスロジックからUIまで段階的に移行し、最終的にAndroid・iOS・デスクトップで動作するアプリを実現する方法をコミット単位で追跡できる。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
