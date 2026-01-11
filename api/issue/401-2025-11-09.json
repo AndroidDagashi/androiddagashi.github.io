@@ -1,0 +1,181 @@
+{
+  "id": "MI_kwDOB4jhdM4A1hWn",
+  "number": 401,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/401",
+  "title": "401 2025-11-09",
+  "closedAt": "2025-11-09T11:30:42Z",
+  "description": "Compose Stability Analyzer, HiltとKoinの比較, ComposeのGapBuffer, Swift SDK for Androidを使って再利用, MVVMは今もアーキテクチャの標準？, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO1tzdaA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afO1t2KtQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3563",
+        "title": "Compose Stability Analyzer",
+        "body": "https://github.com/skydoves/compose-stability-analyzer\nhttps://www.reddit.com/r/androiddev/comments/1omdeqc/compose_stability_analyzer_realtime_analysis_of/\n\nskydovesが開発したAndroid Studio/IntelliJ IDE用プラグイン。Jetpack Composeのcomposable関数の安定性（stability）をリアルタイムで可視化し、IDE内で直接確認できる。すべての関数をskippableにする必要はなく、パフォーマンス問題のデバッグツールとして活用することが推奨されている。Compose の安定性メカニズムの理解と最適化に役立つ開発ツール。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3564",
+        "title": "MVVMは今もAndroidアーキテクチャの標準？",
+        "body": "https://www.reddit.com/r/androiddev/comments/1oqrbb4/out_of_the_loop_is_mvvm_still_the_architecture/\n\n元Android開発者が「MVVMはまだ標準的なアーキテクチャパターンなのか」と質問。多くの現役開発者がMVVMは今も主流だと回答。MVIについては「MVVMに余計なステップを加えたもの」との意見が多く、undo/redo機能が必要な特殊なケース以外では過度に複雑になりがちだと指摘。Composeとの相性や実装の簡潔さから、MVVMが依然として最もコスト効率の良い選択肢という結論に達している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3565",
+        "title": "「ログ入れ忘れた！」で本番デバッグ用に再ビルドする羽目になった経験ある？",
+        "body": "https://www.reddit.com/r/androiddev/comments/1opbv2o/has_anyone_else_been_burned_by_we_forgot_to_add/\n\n本番環境でバグが起きたのに肝心なログがなくて、デバッグ用のログを追加しただけで再ビルドする羽目になる「あるある」話。Firebase CrashlyticsのBreadcrumbs機能やSentryの自動ログ収集、リモートでログレベルを切り替える方法など、みんなが実践している解決策が共有されています。コメント欄では「どこの会社でもある話」と共感の嵐でした。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3566",
+        "title": "Swift SDK for Androidを使ってiOSアプリのロジックをAndroidアプリで再利用する",
+        "body": "https://tech.every.tv/entry/2025/10/31/151237\n\n2025年10月24日にリリースされたSwift SDK for Androidプレビュー版を使用し、iOSアプリの文字列バリデーションロジックをAndroidアプリに移植する手順を解説。swift-javaプラグインによるJavaラッパーの自動生成により、Swiftのトップレベル関数をKotlinから簡単に呼び出せることを、メールアドレスとパスワードのバリデーション実装例で実証している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHO0Rfgmg==",
+            "endCursor": "Y3Vyc29yOnYyOpHO0Rfgmg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Android エンジニアが積極的に Swift SDK for Android を選ぶことは少ないかもしれませんが、iOS/Android それぞれからクロスプラットフォームのソリューションが出てきたのはよいですね。\n\niOS アプリ先行になることが多い日本のスマホアプリ界隈では、成熟してきたらワンチャン選択肢に上がる可能性も… 🤔 ",
+              "publishedAt": "2025-11-09T11:07:35Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3567",
+        "title": "ComposeのGapBufferを理解する",
+        "body": "タイトル的には深堀りする記事なのですが、AnimatedVisibilityでパフォーマンスが改善できるなど興味深い実用的なTipsが入っています。\nhttps://proandroiddev.com/understanding-gap-buffers-in-jetpack-compose-the-60-year-old-algorithm-powering-modern-android-ui-a07ca2013e64",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3568",
+        "title": "HiltとKoinの比較：ランタイム注入の隠れたコストとコンパイル時DIの優位性",
+        "body": "https://proandroiddev.com/hilt-vs-koin-the-hidden-cost-of-runtime-injection-and-why-compile-time-di-wins-3d8c522a073b\n\nAndroid開発での依存性注入フレームワークHiltとKoinを比較。Hiltはコンパイル時に依存関係を解決し、ビルド時間は長くなるものの実行時のパフォーマンスが優れ、エラーを早期発見できる。一方Koinはランタイムでの解決により設定が簡単だが、実行時エラーのリスクとパフォーマンスへの影響がある。大規模プロジェクトや型安全性を重視する場合はHiltが有利。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHO0RhwTg==",
+            "endCursor": "Y3Vyc29yOnYyOpHO0RhwTg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "最近は Metro という新しい選択肢も増えています。こちらは Kotlin Compiler Plugin として動作し、コンパイル時に依存関係を解決します\n\nhttps://zacsweers.github.io/metro/latest/\nhttps://github.com/ZacSweers/metro",
+              "publishedAt": "2025-11-09T11:31:26Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

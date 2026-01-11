@@ -1,0 +1,203 @@
+{
+  "id": "MI_kwDOB4jhdM4Af4Ul",
+  "number": 240,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/240",
+  "title": "240 2022-09-04",
+  "description": "cashapp/redwoodが公開, Google Playがアプリ独自決済の試験運用, WhileSubscribed(5000)を改善する, Gradle Managed Devicesの導入サンプル, など",
+  "closedAt": "2022-09-04T11:06:06Z",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOUR9Ptw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOUSDzng==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2533",
+        "title": "cashapp/redwoodが公開",
+        "body": "Kotlin MultiplatformでJetpack Composeを使って、Android, iOSのNative UIを表示するライブラリのcashapp/redwoodが公開されました。\r\nhttps://github.com/cashapp/redwood",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2534",
+        "title": "android/sunflowerへのGradle Managed Devicesの導入サンプル",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Android sunflower now runs instrumented tests using Gradle Managed Devices on GitHub Actions. The tests should run on any CI platform as long as the host OS has KVM or HAXM enabled as the same way you run your tests locally <a href=\"https://t.co/TROsQKBLbw\">https://t.co/TROsQKBLbw</a></p>&mdash; Takeshi Hagikura (@thagikura) <a href=\"https://twitter.com/thagikura/status/1564529540256346112?ref_src=twsrc%5Etfw\">August 30, 2022</a></blockquote>",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2535",
+        "title": "Google Playがアプリ独自決済の試験運用を開始",
+        "body": "https://support.google.com/googleplay/android-developer/answer/12570971",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2536",
+        "title": "メディア再生サンプルアプリUniversal Android Media Player (UAMP)のComposeやMedia3への移行",
+        "body": "https://medium.com/androiddevelopers/mad-about-media-f536f7d601c",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2537",
+        "title": "WhileSubscribed(5000)を改善する",
+        "body": "https://py.hashnode.dev/whilesubscribed5000\r\n\r\nAndroidにおいて、Flowを購読する際にconfiguration changesに対応するため `WhileSubscribed(5000)` を使うテクニックがあります。この記事では、WhileSubscribed(5000) を改善するための新しい実装を提案しています\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOSbCbqw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOSbCbqw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/x265xa/whilesubscribed5000_trampolining_keeps_the_blood/",
+              "publishedAt": "2022-09-04T10:54:22Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2538",
+        "title": "Flutter 3.3",
+        "body": "https://medium.com/flutter/announcing-flutter-3-3-at-flutter-vikings-6f213e068793\r\nhttps://medium.com/flutter/whats-new-in-flutter-3-3-893c7b9af1ff\r\n\r\nImpeller という次世代のレンダリングレイヤが追加されました。現在はプレビュー版として　iOS で有効にすることができます。\r\n\r\nまた、32-bit iOSのサポートが終了しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOSbCf6w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOSbCf6w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/FlutterDev/comments/x1qzj1/whats_new_in_flutter_33/",
+              "publishedAt": "2022-09-04T11:01:28Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2539",
+        "title": "Gunosyのマルチモジュール化対応とその効果",
+        "body": "https://tech.gunosy.io/entry/android_multi_module_st",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
