@@ -2,8 +2,34 @@
   "name": "AndroidDagashi",
   "url": "https://github.com/AndroidDagashi/AndroidDagashi",
   "milestones": {
-    "totalCount": 409,
+    "totalCount": 410,
     "nodes": [
+      {
+        "id": "MI_kwDOB4jhdM4A3LFg",
+        "number": 410,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/410",
+        "path": "410-2026-01-11",
+        "title": "410 2026-01-11",
+        "description": "AndroidX minSdk=24へ, AOSP公開は26年から年2回(Q2/Q4)へ, CIリリースでR8前Kotlin Daemon停止は効く？, AGSL+Composeでグロー表示, など",
+        "closedAt": "2026-01-11T10:44:23Z",
+        "issues": {
+          "totalCount": 4,
+          "nodes": [
+            {
+              "title": "AGSL Shaderを使って、Composeでグローエフェクトを表示する"
+            },
+            {
+              "title": "AndroidXのデフォルトminSdkVersionが24に引き上げへ"
+            },
+            {
+              "title": "AOSPのソース公開が「年2回（Q2/Q4）」へ（2026年から）"
+            },
+            {
+              "title": "R8前にKotlin Daemonを止めると、CIのリリースビルドは速く・省メモリになるのか"
+            }
+          ]
+        }
+      },
       {
         "id": "MI_kwDOB4jhdM4A3DYl",
         "number": 409,
@@ -1403,37 +1429,11 @@
             }
           ]
         }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4AuXFK",
-        "number": 360,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/360",
-        "path": "360-2025-01-19",
-        "title": "360 2025-01-19",
-        "description": "Dispatchers.UnconfinedとEmptyCoroutineContext, 複数のアプリをモノレポで管理, ViewModelでCompose Navigationのカスタムオブジェクトを受け取り方, など",
-        "closedAt": "2025-01-19T11:41:39Z",
-        "issues": {
-          "totalCount": 4,
-          "nodes": [
-            {
-              "title": "OSロックスクリーンからノートが取れる機能について"
-            },
-            {
-              "title": "どうやってViewModelでCompose Navigationの引数に設定したカスタムオブジェクトを受け取るか"
-            },
-            {
-              "title": "複数のアプリを一つのモノレポで管理するアプローチについての議論"
-            },
-            {
-              "title": "Dispatchers.UnconfinedとEmptyCoroutineContextについて"
-            }
-          ]
-        }
       }
     ],
     "pageInfo": {
-      "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0wMS0wNFQwMDowMDowMFrOANw2JQ==",
-      "endCursor": "Y3Vyc29yOnYyOpK0MjAyNS0wMS0xOVQwMDowMDowMFrOALlxSg==",
+      "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0wMS0xMVQwMDowMDowMFrOANyxYA==",
+      "endCursor": "Y3Vyc29yOnYyOpK0MjAyNS0wMS0yNlQwMDowMDowMFrOALn52Q==",
       "hasPreviousPage": false,
       "hasNextPage": true
     }

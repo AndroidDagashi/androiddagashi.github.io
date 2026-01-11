@@ -2,8 +2,34 @@
   "name": "AndroidDagashi",
   "url": "https://github.com/AndroidDagashi/AndroidDagashi",
   "milestones": {
-    "totalCount": 409,
+    "totalCount": 410,
     "nodes": [
+      {
+        "id": "MI_kwDOB4jhdM4AuXFK",
+        "number": 360,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/360",
+        "path": "360-2025-01-19",
+        "title": "360 2025-01-19",
+        "description": "Dispatchers.UnconfinedとEmptyCoroutineContext, 複数のアプリをモノレポで管理, ViewModelでCompose Navigationのカスタムオブジェクトを受け取り方, など",
+        "closedAt": "2025-01-19T11:41:39Z",
+        "issues": {
+          "totalCount": 4,
+          "nodes": [
+            {
+              "title": "OSロックスクリーンからノートが取れる機能について"
+            },
+            {
+              "title": "どうやってViewModelでCompose Navigationの引数に設定したカスタムオブジェクトを受け取るか"
+            },
+            {
+              "title": "複数のアプリを一つのモノレポで管理するアプローチについての議論"
+            },
+            {
+              "title": "Dispatchers.UnconfinedとEmptyCoroutineContextについて"
+            }
+          ]
+        }
+      },
       {
         "id": "MI_kwDOB4jhdM4AuFpq",
         "number": 359,
@@ -1478,37 +1504,11 @@
             }
           ]
         }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4AnvBx",
-        "number": 310,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/310",
-        "path": "310-2024-01-21",
-        "title": "310 2024-01-21",
-        "description": "起動速度を40%改善した話、Kotlin2.0.0 Beta3、Circle to Search、など",
-        "closedAt": "2024-01-21T10:27:09Z",
-        "issues": {
-          "totalCount": 4,
-          "nodes": [
-            {
-              "title": "DroidKaigi 2023年度の活動報告"
-            },
-            {
-              "title": "Circle to Search"
-            },
-            {
-              "title": "Kotlin2.0.0 Beta3"
-            },
-            {
-              "title": "起動速度を40%改善した話"
-            }
-          ]
-        }
       }
     ],
     "pageInfo": {
-      "startCursor": "Y3Vyc29yOnYyOpK0MjAyNS0wMS0xMlQwMDowMDowMFrOALhaag==",
-      "endCursor": "Y3Vyc29yOnYyOpK0MjAyNC0wMS0yMVQwMDowMDowMFrOAJ7wcQ==",
+      "startCursor": "Y3Vyc29yOnYyOpK0MjAyNS0wMS0xOVQwMDowMDowMFrOALlxSg==",
+      "endCursor": "Y3Vyc29yOnYyOpK0MjAyNC0wMS0yOFQwMDowMDowMFrOAJ9rCA==",
       "hasPreviousPage": false,
       "hasNextPage": true
     }
