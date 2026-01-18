@@ -1,0 +1,184 @@
+{
+  "id": "MI_kwDOB4jhdM4A3YNU",
+  "number": 411,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/411",
+  "title": "411 2026-01-18",
+  "closedAt": "2026-01-18T11:22:04Z",
+  "description": "AGP 9, Roomでスキーマ変更時にクラッシュする理由と対処法, Jetpack Composeのメモリリーク原因とデバッグ手法, Jetpack ComposeのPagerを使いこなす, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO5BXK_A==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afO5BY71g==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3634",
+        "title": "Android Gradle Plugin 9.0.0",
+        "body": "https://developer.android.com/build/releases/agp-9-0-0-release-notes\n\nAGP 9.0はメジャーリリースとして、新しいDSLインターフェースへの完全移行とレガシーVariant APIの削除が行われた。Kotlinサポートが組み込みでデフォルト有効となり、kotlin-androidプラグインが不要に。Gradle 9.1.0、JDK 17が必要。テストフィクスチャのIDE対応、Fused Library Plugin（プレビュー）も追加。Wear OS埋め込みアプリサポートは廃止された。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHO4GwZQQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHO4GwhAg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "JetBrains からは KMP 向けの移行ガイドが出ています\n\nhttps://blog.jetbrains.com/kotlin/2026/01/update-your-projects-for-agp9/",
+              "publishedAt": "2026-01-18T11:13:28Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "実際に移行してみた記録としてはこれが参考になりそうです: [Android Gradle Plugin 9.0 更新対応 #AndroidGradlePlugin - Qiita](https://qiita.com/Nabe1216/items/271b643df47b04f767cd)",
+              "publishedAt": "2026-01-18T11:15:40Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3635",
+        "title": "Roomでスキーマ変更時にクラッシュする理由と対処法",
+        "body": "https://proandroiddev.com/why-room-crashes-when-you-change-your-database-and-how-to-fix-it-ca8e3538bf57\n\nRoomはデータベーススキーマからidentity hashを生成し、room_master_tableに保存して整合性を検証する仕組みを解説。スキーマ変更時にバージョンを更新しないとハッシュ不一致でクラッシュが発生する。適切なMigrationの書き方、fallbackToDestructiveMigrationの使いどころ、Room 2.4+の自動マイグレーション、スキーマエクスポートによるバージョン管理などのベストプラクティスを紹介。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3636",
+        "title": "Jetpack Compose のメモリリーク原因とデバッグ手法",
+        "body": "https://hackernoon.com/jetpack-compose-memory-leaks-a-reference-graph-deep-dive\n\n\nJetpack Compose のメモリリークの大半は、ViewModel やシングルトンなど長寿命のオブジェクトが UI のラムダやコールバックを保持することで発生する。本記事では GlobalScope の誤用、コールバック未解除、remember のキー不足、Fragment 内 ComposeView の破棄戦略不備など典型的なリークパターンとその修正方法、Memory Profiler や LeakCanary を使ったデバッグ手順を解説している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3637",
+        "title": "Jetpack Compose の Pager を使いこなす",
+        "body": "https://proandroiddev.com/mastering-pagers-in-android-jetpack-compose-3595214ee6dc\n\nJetpack Compose の HorizontalPager / VerticalPager を詳細に解説した記事。PagerState の基本から、プログラムによるページ制御、動的コンテンツでの key 活用、PageSize や SnapPosition のカスタマイズ、contentPadding によるピーク表示、Paging 3 との統合、graphicsLayer を使った3Dカルーセル風アニメーション、flingBehavior のカスタマイズまで、実用的なコード例とともに網羅的に紹介している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3638",
+        "title": "Compose Hot Reload 1.0.0 の技術的な仕組みを深掘り",
+        "body": "https://blog.jetbrains.com/kotlin/2026/01/the-journey-to-compose-hot-reload-1-0-0/\n\nCompose Hot Reload 1.0.0 が安定版としてリリースされた。本記事では、JetBrains Runtime の DCEVM による動的コード再読み込みの仕組み、Java Agent を活用したバイトコード解析、Compose グループの無効化による UI 更新、Kotlin コンパイラへの変更（ComposableSingleton のキー命名改善、indy ラムダの安定化）、プロセス間通信のオーケストレーションプロトコルなど、技術的な詳細を解説している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3639",
+        "title": "ModifierのdropShadowは何が新しいのかを考える",
+        "body": "https://tech.mirrativ.stream/entry/2026/01/06/100000\n\nJetpack Compose 1.9で導入された新しいShadow API（dropShadow/innerShadow）について解説。従来のModifier.shadow()やgraphicsLayerでは難しかったblur半径やオフセットの自由な制御が可能になり、FigmaのDropShadow設定値をそのまま再現できる。innerShadowによる凹み表現も実現。Lazy系コンポーネントでのパフォーマンス注意点や、UIの意図に応じた既存手法（shadow/graphicsLayer/drawBehind）との使い分け指針も整理している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
