@@ -84,9 +84,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.18.15":
-  version: 0.18.15
-  resolution: "@atproto/api@npm:0.18.15"
+"@atproto/api@npm:0.18.16":
+  version: 0.18.16
+  resolution: "@atproto/api@npm:0.18.16"
   dependencies:
     "@atproto/common-web": "npm:^0.4.12"
     "@atproto/lexicon": "npm:^0.6.0"
@@ -96,7 +96,7 @@ __metadata:
     multiformats: "npm:^9.9.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/139087ba237bc0496d62833a9b0c1f811079ec83e98c467484d4b187b5c017a4c4d4fb0944402229d8e04d34deb5924475b8a21fd2595992645862454018155c
+  checksum: 10c0/a8ff7e8b1449a5b833b3bc90911a58de3e5f8238c5194ac2db3c3950b1cb8a031752c49d60dabc21315a810a85a48940f0135162967abad4b803b09d4a96ceda
   languageName: node
   linkType: hard
 
@@ -5559,7 +5559,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "androiddagashi.github.io@workspace:."
   dependencies:
-    prettier: "npm:3.7.4"
+    prettier: "npm:3.8.0"
   languageName: unknown
   linkType: soft
 
@@ -8091,12 +8091,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"feed@npm:5.1.0":
-  version: 5.1.0
-  resolution: "feed@npm:5.1.0"
+"feed@npm:5.2.0":
+  version: 5.2.0
+  resolution: "feed@npm:5.2.0"
   dependencies:
     xml-js: "npm:^1.6.11"
-  checksum: 10c0/5aebf994d5d4728b378bfde461f3cf6db335b39a244076ffda97758a271d820acaab436a5fd20538370f953936c5269d443f9fab2cea615e6ce09ccd007cb74f
+  checksum: 10c0/3fabeeb1b5e272cf8a6a6e96605d580ef5af7e9e763d55fa4d610a4198a7c21f04928748e32963f76db37f3510da87effd6614ec0245724aa727305bfd25d42b
   languageName: node
   linkType: hard
 
@@ -12154,12 +12154,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.7.4":
-  version: 3.7.4
-  resolution: "prettier@npm:3.7.4"
+"prettier@npm:3.8.0":
+  version: 3.8.0
+  resolution: "prettier@npm:3.8.0"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/9675d2cd08eacb1faf1d1a2dbfe24bfab6a912b059fc9defdb380a408893d88213e794a40a2700bd29b140eb3172e0b07c852853f6e22f16f3374659a1a13389
+  checksum: 10c0/8926e9c9941a293b76c2d799089d038e9f6d84fb37702fc370bedd03b3c70d7fcf507e2e3c4f151f222d81820a3b74cac5e692c955cfafe34dd0d02616ce8327
   languageName: node
   linkType: hard
 
@@ -13072,7 +13072,7 @@ __metadata:
   dependencies:
     "@types/markdown-it": "npm:14.1.2"
     "@types/node": "npm:24.10.9"
-    feed: "npm:5.1.0"
+    feed: "npm:5.2.0"
     markdown-it: "npm:14.1.0"
     site-common: "npm:1.0.0"
     site-config: "npm:1.0.0"
@@ -13169,7 +13169,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.18.15"
+    "@atproto/api": "npm:0.18.16"
     "@types/oauth": "npm:0.9.6"
     date-fns: "npm:4.1.0"
     firebase-admin: "npm:13.6.0"
