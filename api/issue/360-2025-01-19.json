@@ -1,0 +1,109 @@
+{
+  "id": "MI_kwDOB4jhdM4AuXFK",
+  "number": 360,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/360",
+  "title": "360 2025-01-19",
+  "closedAt": "2025-01-19T11:41:39Z",
+  "description": "Dispatchers.UnconfinedとEmptyCoroutineContext, 複数のアプリをモノレポで管理, ViewModelでCompose Navigationのカスタムオブジェクトを受け取り方, など",
+  "issues": {
+    "totalCount": 4,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOpr3HQA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_Opr8q6Q==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3358",
+        "title": "OSロックスクリーンからノートが取れる機能について",
+        "body": "https://dev.to/tkuenneth/trying-to-take-notes-from-the-lock-screen-4h95\nなぜタブレットだけ使えるのかなどをコードを追いながら解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3359",
+        "title": "どうやってViewModelでCompose Navigationの引数に設定したカスタムオブジェクトを受け取るか",
+        "body": "https://stackoverflow.com/a/79298715/4339442\nsavedState.toRouteを使った方法を解説しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3360",
+        "title": "複数のアプリを一つのモノレポで管理するアプローチについての議論",
+        "body": "https://www.reddit.com/r/androiddev/comments/1i3mgaj/multiple_apps_in_single_monorepo/\n意外とモノレポで管理するのに賛成の方が多いようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3361",
+        "title": "Dispatchers.UnconfinedとEmptyCoroutineContextについて",
+        "body": "https://code.cash.app/dispatchers-unconfined\n\nDispatchers.Unconfinedを使うと予期せぬ動作を引き起こすことがあるので、EmptyCoroutineContext(CoroutineContext)を使うことを提案しています。\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

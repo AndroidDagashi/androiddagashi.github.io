@@ -1,0 +1,232 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTkyMjE5MQ==",
+  "number": 140,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/140",
+  "title": "140 2020-10-04",
+  "description": "パフォーマンス神話の検証、Google Playのフィードバック反映、2020年10月1日のAndroidXリリース、マテリアルデザインから得られる10個のポイント、など。",
+  "closedAt": "2020-10-04T10:30:55Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOKoQgww==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OKpIu4Q==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1572",
+        "title": "Android Studio 4.2 Canary 13",
+        "body": "https://androidstudio.googleblog.com/2020/10/android-studio-42-canary-13-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1573",
+        "title": "パフォーマンス神話の検証",
+        "body": "https://medium.com/androiddevelopers/busting-android-performance-myths-d85ae1d87f22\r\n\r\nいくつかのパフォーマンスについての神話を実際に検証しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1575",
+        "title": "Google Playのフィードバック反映",
+        "body": "https://android-developers.googleblog.com/2020/09/listening-to-developer-feedback-to.html\r\nhttps://android-developers.googleblog.com/2020/09/commerce-update-faqs.html\r\nhttps://developers-jp.googleblog.com/2020/09/listening-to-developer-feedback-to-improve-google-play.html\r\n\r\nGoogle Play以外のストアについて、ポリシーの明確化、Googleのアプリも平等にポリシーに従う、などについて書かれています。\r\nまた、Android 12では他のアプリストアを安全により便利にする仕組みが予定されてるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOKeeMYQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOKeeMYQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "アプリ開発者としてはアプリ内でデジタルコンテンツを販売するときにPlay Storeの課金経由で行う必要があるというポリシーが徹底される点だと思います。またアプリ外での他支払い手段への誘導は認められていますがアプリ内では認められていない点も注意が必要そうです。",
+              "publishedAt": "2020-10-03T03:44:29Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1574",
+        "title": "Android 11 Meetups全8回が終了",
+        "body": "https://developersonair.withgoogle.com/events/a11meetups-jp\r\n\r\n6月から9月まで全8回に渡って開催されたAndroid 11 Meetupsが終了しました。アーカイブもあります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1576",
+        "title": "Now in Android エピソード26",
+        "body": "https://medium.com/androiddevelopers/now-in-android-26-a736107af0ed\r\n\r\n11月2日までにtargetApiを29以上にする必要があること、Playストアのポリシーについて、Play管理コンソールのアップデートなどについて触れられています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1577",
+        "title": "2020年10月1日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#october_1_2020",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOKefiNA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOKefiNA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "恒例のIan Lake氏によるリリース内容紹介ツイートはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Jetpack releases today include Core 1.3.2 (with an important fix to ActivityCompat.recreate()), Biometric 1.1.0-beta01, plus Fragment + Activity + Lifecycle + SavedState also hitting beta01.<a href=\"https://t.co/rQbrhLDpa9\">https://t.co/rQbrhLDpa9</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1311734773841240064?ref_src=twsrc%5Etfw\">October 1, 2020</a></blockquote>",
+              "publishedAt": "2020-10-03T07:41:10Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1578",
+        "title": "Flutter 1.22",
+        "body": "https://medium.com/flutter/announcing-flutter-1-22-44f146009e5f\r\n\r\nAndroid 11とiOS 14に対応したようです。\r\n\r\nその他、Button系Widgetや、i18n/l10nサポート周り、Navigationなどなど、いろいろ変更が入っています。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOKejhwA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOKejkGw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/FlutterDev/comments/j3ao2f/announcing_flutter_122/",
+              "publishedAt": "2020-10-03T16:21:05Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "日本語では[@ntaoo](https://twitter.com/ntaoo)さんがこちらでざっくりまとめてくださってます\r\nhttps://medium.com/@ntaoo/%E9%80%B1%E5%88%8A-dart-flutter-%E3%82%A4%E3%83%B3%E3%83%97%E3%83%83%E3%83%88-38-61c3f4d5f3f",
+              "publishedAt": "2020-10-03T16:25:30Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1579",
+        "title": "マテリアルデザインから得られる10個のポイント",
+        "body": "https://uxdesign.cc/10-key-takeaways-from-googles-material-design-guidelines-3b0867f0465a\r\n\r\nマテリアルデザインのガイドラインの、色、モーションなどの10個の重要なポイントを紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

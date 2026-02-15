@@ -1,0 +1,244 @@
+{
+  "id": "MI_kwDOB4jhdM4Aete8",
+  "number": 228,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/228",
+  "title": "228 2022-06-12",
+  "description": "Kotlin 1.7.0、なぜComposeのパフォーマンスはリリースモードで計測すべきなのか、BazelでAndroidアプリを作る方法、Android 13 Beta3、など",
+  "closedAt": "2022-06-12T12:00:41Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOS5povg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OS5wyhw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2430",
+        "title": "Android 13 Beta3",
+        "body": "https://android-developers.googleblog.com/2022/06/android-13-beta-3-platform-stability.html\r\n\r\nPlatform StabilityとなりAPIとアプリ動作が最終的なものになっています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2431",
+        "title": "Kotlin 1.7.0",
+        "body": "https://blog.jetbrains.com/kotlin/2022/06/kotlin-1-7-0-released/\r\nhttps://kotlinlang.org/docs/whatsnew17.html\r\n\r\nK2 Compiler Alpha、Gradleのincremental compilation﻿の改善、Opt-inがStable、builder関数の型推論など、様々な改善がされています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHORLsXnw==",
+            "endCursor": "Y3Vyc29yOnYyOpHORLsXnw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/v8jcdh/kotlin_170_released/",
+              "publishedAt": "2022-06-12T09:24:36Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2432",
+        "title": "なぜComposeのパフォーマンスはリリースモードで計測すべきなのか",
+        "body": "https://medium.com/androiddevelopers/why-should-you-always-test-compose-performance-in-release-4168dd0f2c71\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2433",
+        "title": "BazelでAndroidアプリを作る方法",
+        "body": "https://devblogs.microsoft.com/surface-duo/bazel-build/\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2434",
+        "title": "2021年Q3-Q4のKotlin Multiplatformユーザアンケートの結果",
+        "body": "https://blog.jetbrains.com/kotlin/2022/06/multiplatform-survey-q3-q4-2021/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHORLsHLQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHORLsHLQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "今Qのアンケートは現在実施中です\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Do you use Kotlin Multiplatform in your projects? The Kotlin Multiplatform User Survey is now open. Don’t miss this chance to shape the future of the technology – share your feedback with us!<br>🎁Special prizes will be raffled off after the survey is closed<a href=\"https://t.co/1eAnbmeQOf\">https://t.co/1eAnbmeQOf</a> <a href=\"https://t.co/HMbUDeSC2i\">pic.twitter.com/HMbUDeSC2i</a></p>&mdash; Kotlin (@ kotlin) <a href=\"https://twitter.com/kotlin/status/1533786623544020992?ref_src=twsrc%5Etfw\">June 6, 2022</a></blockquote>",
+              "publishedAt": "2022-06-12T09:03:55Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2435",
+        "title": "Android Studio - Electric Eel | 2022.1.1 Canary 3",
+        "body": "https://androidstudio.googleblog.com/2022/06/android-studio-electric-eel-canary-3.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHORLsavQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHORLsavQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/v6aqzw/android_studio_electric_eel_canary_3_now_available/",
+              "publishedAt": "2022-06-12T09:27:12Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2436",
+        "title": "Now in Androidアプリのモジュール化のドキュメント",
+        "body": "Now in Androidがなぜ、どうやって、モジュール化するのかが書いてあります。\r\nhttps://github.com/android/nowinandroid/blob/main/docs/ModularizationLearningJourney.md",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2437",
+        "title": "2022年~2023年にKotlinに期待すること",
+        "body": "https://blog.jetbrains.com/kotlin/2022/06/what-to-expect-from-the-kotlin-team-in-202223/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

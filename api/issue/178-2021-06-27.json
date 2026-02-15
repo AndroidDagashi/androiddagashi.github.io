@@ -1,0 +1,161 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjg3MTI5Mw==",
+  "number": 178,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/178",
+  "title": "178 2021-06-27",
+  "description": "Kotlin 1.5.20、Windows 11でAndroidアプリが動作可能に、ksp 1.5.20-1.0.0-beta03、KMM Plugin が AppCode に対応、Flutter HooksとJetpack Compose、など",
+  "closedAt": "2021-06-27T10:41:36Z",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vON3ssvQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afON3wQgg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1956",
+        "title": "Kotlin 1.5.20",
+        "body": "https://blog.jetbrains.com/kotlin/2021/06/kotlin-1-5-20-released/\r\nhttps://www.youtube.com/watch?v=SV8CgSXQe44",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1957",
+        "title": "Windows 11でAndroidアプリが動作可能に",
+        "body": "https://blogs.windows.com/windowsexperience/2021/06/24/introducing-windows-11/\r\n\r\nMicrosoft StoreからAmazon Appstoreを利用してインストール可能になるようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1958",
+        "title": "ksp 1.5.20-1.0.0-beta03",
+        "body": "https://github.com/google/ksp/releases/tag/1.5.20-1.0.0-beta03\r\n\r\nKotlin Multiplatform Project(JSとMetadata(共通コードのこと？))が実験的にサポートされたようです。\r\nKotlin/Native のサポートはまだ入っていません。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1959",
+        "title": "KMM Plugin が AppCode に対応",
+        "body": "https://blog.jetbrains.com/kotlin/2021/06/kmm-for-appcode/\r\n\r\nAppCode は JetBrains が提供する iOS/macOS アプリ開発用の IDE です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1960",
+        "title": "Flutter HooksとJetpack Compose",
+        "body": "https://speakerdeck.com/wasabeef/flutter-hooks-sometimes-jetpack-compose\r\n\r\nFlutter Hooksの解説がメインですが、Jetpack Composeとの比較もあり、各APIの違いなどが学べます。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1961",
+        "title": "直接ViewModelを拡張せずに使用する",
+        "body": "https://medium.com/wriketechclub/view-model-doesnt-have-to-depend-on-viewmodel-27f80808fe78\r\n\r\nJetpackから提供されているViewModelクラスを継承しないために、どのような機能を満たせばよいか、継承しないことで得られるメリットなどを紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

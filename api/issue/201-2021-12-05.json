@@ -1,0 +1,185 @@
+{
+  "id": "MI_kwDOB4jhdM4AcXUH",
+  "number": 201,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/201",
+  "title": "201 2021-12-05",
+  "description": "アプリ内課金でユーザーの意図しない解約を防ぐ、Google Play ベスト オブ 2021、\r\nCompose Multiplatform 1.0、など",
+  "closedAt": "2021-12-05T10:25:15Z",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOP8gHZQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOP9w4lA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2198",
+        "title": "Compose Multiplatform 1.0",
+        "body": "https://blog.jetbrains.com/kotlin/2021/12/compose-multiplatform-1-0-is-going-live/\r\n\r\nCompose for Desktop、Compose for Webの1.0がリリースされています。AndroidのJetpack Composeともコード共有することが可能になっています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2199",
+        "title": "Kotlin 1.5.32",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.5.32\r\n\r\nMultiplatformライブラリでAndroid Gradle Plugin 7.1以降を使用してるときに発生する互換性の問題が修正されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2200",
+        "title": "2021年12月1日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#december_1_2021\r\n\r\nKotlin 1.6に対応したCompose、Wear Watchface 1.0.0などがリリースされています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOOrdRhA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOOrdVgQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏による紹介ツイートはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">First day of December is a Wednesday. That means a new batch of Jetpack releases, today including Wear Watchface 1.0.0! 🎉🎉🎉<br><br>In addition, you&#39;ll find Collection 1.2.0, Annotation 1.2.0-rc01, Room 2.4.0-rc01, and Sqlite 2.2.0-rc01.<a href=\"https://t.co/mXtKNXI00H\">https://t.co/mXtKNXI00H</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1466201911120392195?ref_src=twsrc%5Etfw\">December 2, 2021</a></blockquote>",
+              "publishedAt": "2021-12-02T23:46:06Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "STAR-ZERO",
+                "url": "https://github.com/STAR-ZERO",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/376376?u=c9428e145dea238d8dec3e06ef275be6b59a77b8&v=4"
+              }
+            },
+            {
+              "body": "Yigit Boyar氏がRoomのKSPについてツイートしています\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Room 2.4 RC is available and we are targeting to mark KSP support stable in 2.4. <br>Please give it a try. It is not only faster but also generates better/safer code thanks to the complete nullability information we get from KSP. <a href=\"https://t.co/BvrlNoBQCg\">https://t.co/BvrlNoBQCg</a></p>&mdash; Yigit Boyar (@yigitboyar) <a href=\"https://twitter.com/yigitboyar/status/1466218318298116097?ref_src=twsrc%5Etfw\">December 2, 2021</a></blockquote>",
+              "publishedAt": "2021-12-02T23:48:44Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "STAR-ZERO",
+                "url": "https://github.com/STAR-ZERO",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/376376?u=c9428e145dea238d8dec3e06ef275be6b59a77b8&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2201",
+        "title": "アプリ内課金でユーザーの意図しない解約を防ぐ",
+        "body": "https://hack.nikkei.com/blog/advent20211202/\r\n\r\n定期購入において、非自発的解約を防ぐための施策を紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2202",
+        "title": "Google Play ベスト オブ 2021",
+        "body": "https://japan.googleblog.com/2021/11/google-play-2021.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2203",
+        "title": "Now in Android エピソード52",
+        "body": "https://medium.com/androiddevelopers/now-in-android-52-f5fbd751b35f\r\n\r\nMAD SkillsのPagingが終わってGradleが始まったこと、新しいMediumの記事やアクセシビリティの新しい動画について触れています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2204",
+        "title": "Kotlin DSLの裏側",
+        "body": "https://speakerdeck.com/martinbonnin/everything-you-didnt-want-to-know-about-the-kotlin-dsl\r\n\r\nKotlin DSLを使った際に、Gradle側でどのように解釈されるかについて解説しています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

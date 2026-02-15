@@ -1,0 +1,115 @@
+{
+  "id": "MI_kwDOB4jhdM4A1J46",
+  "number": 399,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/399",
+  "title": "399 2025-10-26",
+  "closedAt": "2025-10-26T11:01:05Z",
+  "description": "Android XRでのアプリ公開で重要なこと, Swift SDK for Androidナイトリープレビュー版, LeakCanaryとYourKitでのメモリリーク調査方法, など",
+  "issues": {
+    "totalCount": 4,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO08oZlw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_O08yvdw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3555",
+        "title": "Android XRでのアプリ公開と配信について知っておくべき5つのこと",
+        "body": "https://android-developers.googleblog.com/2025/10/5-things-you-need-to-know-about.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "XR/AR/VR",
+              "description": "",
+              "color": "d6a0e8"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3556",
+        "title": "LeakCanaryとYourKitを活用したメモリリーク調査方法",
+        "body": "https://engineering.block.xyz/blog/the-leakcanary-method",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3557",
+        "title": "\"Don’t Keep Activities\" ではなく \"Background process limit\" を使ったほうがバグを広く拾える話",
+        "body": "https://medium.com/@paulklauser/is-dont-keep-activities-legit-a3d01f542f93",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3558",
+        "title": "Swift SDK for Androidのナイトリープレビュー版が利用可能に",
+        "body": "https://www.swift.org/blog/nightly-swift-sdk-for-android/\n\nSwiftのAndroidワークグループが、Android向けSwift SDKのナイトリープレビュー版をリリースしました。このSDKにより、開発者はSwiftでネイティブAndroidアプリケーションの開発が可能になります。Windows、Linux、macOSで利用可能で、swift-javaプロジェクトを通じてJavaとSwiftの相互運用も実現。既にSwift Package Indexの25%以上のパッケージがAndroid向けにビルド可能となっており、クロスプラットフォーム開発の新たな可能性を開きます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOzYYLbA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOzYYLbA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "サンプルリポジトリもあります\nhttps://github.com/swiftlang/swift-android-examples",
+              "publishedAt": "2025-10-26T07:50:55Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

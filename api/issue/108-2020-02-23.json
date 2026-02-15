@@ -1,0 +1,211 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTExMDAwNw==",
+  "number": 108,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/108",
+  "title": "108 2020-02-23",
+  "description": "Android 11のプレビューが公開、AsyncTaskがAndroid11からdeprecatedに、Kotlin 1.3.70 EAP3、2020年2月19日のAndroidXリリース、など",
+  "closedAt": "2020-02-23T10:08:06Z",
+  "issues": {
+    "totalCount": 9,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOIcTYEw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________HvOIfGIeA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1266",
+        "title": "JSONのキー順序をランダムにするShimoが公開",
+        "body": "https://github.com/JakeWharton/shimo/\r\n\r\nMoshiのAdapterですが、Serialize/Deserialize時にJSONオブジェクトのキーの順番をランダムに入れ替えることで順番に依存したコードがないか発見するためのライブラリだそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1267",
+        "title": "Android 11のプレビューが公開",
+        "body": "https://android-developers.googleblog.com/2020/02/Android-11-developer-preview.html\r\nhttps://developer.android.com/preview/download\r\n\r\nflushイメージで公開されています。Betaからは数週間以内に出来るようになるそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1268",
+        "title": "AsyncTaskがAndroid11からdeprecatedに",
+        "body": "https://developer.android.com/reference/android/os/AsyncTask.html\r\n\r\n> This class was deprecated in API level R.\r\nUse the standard java.util.concurrent or Kotlin concurrency utilities instead.\r\n\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1269",
+        "title": "Android11でついにキーボードの表示状態をチェックするAPIが追加される",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">One of my favourite changes in <a href=\"https://twitter.com/hashtag/AndroidR?src=hash&amp;ref_src=twsrc%5Etfw\">#AndroidR</a> is the revamp of the WindowInsets API<br><br>For example, we now have way to detect when _and_ where the IME is visible on screen ⌨️📐 <a href=\"https://t.co/Wy95yhGzFK\">pic.twitter.com/Wy95yhGzFK</a></p>&mdash; Chris Banes (@　chrisbanes) <a href=\"https://twitter.com/chrisbanes/status/1230598177511788545?ref_src=twsrc%5Etfw\">February 20, 2020</a></blockquote>\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/f6zs5b/finally_android_r_has_api_to_check_if_keyboard_is/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOIyMjRg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOIyMjRg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "AndroidXでのバックポートも検討しているようです",
+              "publishedAt": "2020-02-21T05:31:23Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1270",
+        "title": "Kotlin 1.3.70 EAP 3",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.3.70-eap-274",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1271",
+        "title": "Android Studio 4.0からNativeライブラリをGradleで追加可能に",
+        "body": "https://android-developers.googleblog.com/2020/02/native-dependencies-in-android-studio-40.html\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1272",
+        "title": "AndroidXのSnapshotビルドを使う",
+        "body": "http://rahulrav.com/blog/using_snapshot_builds.html\r\n\r\nstartupなどのリリースされていないライブラリや、Composeの最新を試すのに便利そうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1273",
+        "title": "2020年2月19日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel?hl=en#february_19_2020\r\n\r\nいろいろなパッチリリースが出ています\r\n\r\n[Navigation 2.3.0-alpha02](https://developer.android.com/jetpack/androidx/releases/navigation?hl=en#2.3.0-alpha02)では、ついに `onActivityResult` の代替となるAPIが実装されています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1274",
+        "title": "Material Motionを実装する",
+        "body": "https://medium.com/google-design/implementing-motion-9f2839002016\r\n\r\nMaterial Components for Android 1.2.0-alpha05で新たに追加されました。\r\nFlutter向けにも同時にリリースされているようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

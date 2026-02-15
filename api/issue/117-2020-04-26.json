@@ -1,0 +1,187 @@
+{
+  "id": "MDk6TWlsZXN0b25lNTMzMTQ4Ng==",
+  "number": 117,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/117",
+  "title": "117 2020-04-26",
+  "description": "Android 11 Developer Preview 3、Android Studio 4.1のDaggerナビゲーション、CoilがDSLからBuilderに移行、One Tapサインインの解説、など。",
+  "closedAt": "2020-04-26T10:33:53Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOI_qeuw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OJC1Qhg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1354",
+        "title": "CoilがDSLからBuilderに移行",
+        "body": "https://medium.com/@colinwhite/prefer-builders-over-dsls-3dc7fc375d47\r\n\r\n画像読み込みライブラリのCoilが従来のDSLをDeprecatedにし、Builderに移行した話です。\r\nreceiverのスコープ、オートコンプリートなどを理由に、CoilプロジェクトではBuilderのほうがマッチしていることを説明しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1355",
+        "title": "Android 11 Developer Preview 3",
+        "body": "https://android-developers.googleblog.com/2020/04/android-11-developer-preview-3.html\r\n\r\nAndroid 11 DP 3が出ました。ワイヤレスデバッグの改善などが入っているようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1356",
+        "title": "Android Studio 4.1のDaggerナビゲーション",
+        "body": "https://medium.com/androiddevelopers/dagger-navigation-support-in-android-studio-49aa5d149ec9\r\n\r\nAndroid Studio 4.1にDaggerの依存関係を定義してる箇所や使用してる箇所に簡単に移動できるツールが導入されました。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1357",
+        "title": "Now in Android エピソード16",
+        "body": "https://medium.com/androiddevelopers/now-in-android-16-9a282ebd3f42\r\nhttps://www.youtube.com/watch?v=C4nursAx-hY\r\n\r\nAccessibilityなど、最近のAndroidニュースがまとめられています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1358",
+        "title": "Androidにおけるシフト演算と除算の比較",
+        "body": "https://jakewharton.com/which-is-better-on-android-divide-by-two-or-shift-by-one/\r\n\r\nシフト演算と除算のどちらがパフォーマンスに優れているかを、ART、Javac、Kotlinc、D8/R8の最適化を見ながら説明しています。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOJOxeNg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOJOxeNg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "後半は符合なし整数のケースについても検証していておもしろいです。記事内にもありますが負数の場合はシフト演算と除算は意味が変わってくることもあるので、本来の意図通りの演算子を使うのがよさそうです。",
+              "publishedAt": "2020-04-26T02:33:46Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1359",
+        "title": "One Tapサインインの解説",
+        "body": "https://medium.com/androiddevelopers/one-tap-sign-in-for-android-apps-2259ce15bc2c\r\n\r\nSmart Lock for PassowrdsとGoogle Sign-Inの機能が統合されたGoogle Identity Serviceというライブラリが開発中でその機能の一部としてOne Tapという機能が利用可能なようです（まだライブラリはリリースできる段階ではないとのこと）。\r\n\r\n正直、このへんのログインまわりはとても複雑になりがちなので利用するのは色々と難しそうですが、ユーザーがログイン/登録する際のフリクションは大きく減らせそうなので、状況が整ったら導入する価値はありそうに感じます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1360",
+        "title": "オンラインでAndroidを学べるAsyncAndroid",
+        "body": "https://twitter.com/AsyncAndroid\r\nhttps://www.youtube.com/channel/UC-qBi3QVQ8ow-QrIBeJi9ig/\r\n\r\nMotionLayoutといった最新のものや、adbコマンドといった比較的ニッチなものなど、Android開発に役立つ動画が公開されています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1361",
+        "title": "JetNewsにアーキテクチャの参考実装が追加",
+        "body": "https://github.com/android/compose-samples/pull/80\r\n\r\nJetpack ComposeのサンプルプロジェクトJetNewsのコードに、Guide to app architectureに則ったアーキテクチャのサンプル実装が追加されました。\r\nまだViewModelは使っていないのですが、Repository、effectなどが説明されています。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

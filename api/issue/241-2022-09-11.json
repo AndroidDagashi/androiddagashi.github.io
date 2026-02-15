@@ -1,0 +1,316 @@
+{
+  "id": "MI_kwDOB4jhdM4Af928",
+  "number": 241,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/241",
+  "title": "241 2022-09-11",
+  "description": "Recomposition のデバッグ, Kotlin 1.7.20-RC, Jetpack Glanceを試してみる, Go Edition向けに最適化する, DroidKaigi 2022公式アプリのレポジトリが公開, など",
+  "closedAt": "2022-09-11T10:39:02Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOUZXEHg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-7POUZfMPA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2540",
+        "title": "Recompositionのデバッグ",
+        "body": "https://medium.com/androiddevelopers/jetpack-compose-debugging-recomposition-bfcf4a6f8d37\r\n\r\nAndroid Studioを使って、Jetpack ComposeのRecompositionをデバッグする方法を紹介しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2541",
+        "title": "MAD Skills Performanceのまとめ",
+        "body": "https://medium.com/androiddevelopers/mad-skills-performance-wrap-up-33688abfc51f",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2542",
+        "title": "Go edition向けに最適化 Part1",
+        "body": "https://android-developers.googleblog.com/2022/09/optimize-for-android-go-lessons-from-google-apps-part-1.html\r\n\r\nアプリを低スペックデバイスのGo edition向けに最適化する方法が紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2543",
+        "title": "Kotlin 1.7.20-RC",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.7.20-RC\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2544",
+        "title": "StateFlowとJetpack Compose",
+        "body": "https://speakerdeck.com/heyitsmohit/building-stateflows-with-jetpack-compose\r\n\r\ncashapp製のMoleculeの使い方なども合わせて解説しています。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2545",
+        "title": "2022年09月07日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#september_7_2022\r\n\r\ncore-ktx 1.9.0, AppCompat 1.5.1, Wear Compose 1.0.2 など。\r\nCompose Foundation 1.3.0-beta02 では、 `StaggeredGrid` が experimental な機能として追加されています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOShWsMw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOShWsMw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake氏によるサマリはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Today&#39;s Jetpack releases include Core 1.9.0 (focused on Android 13 APIs), Annotation-Experimental 1.3.0, bug fix releases in AppCompat 1.5.1, Navigation 2.5.2, and Wear Compose 1.0.2, new RCs in Activity and AppCompat, and Navigation 2.6.0-alpha01.<a href=\"https://t.co/Otqhe76h64\">https://t.co/Otqhe76h64</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1567632097405468673?ref_src=twsrc%5Etfw\">September 7, 2022</a></blockquote>",
+              "publishedAt": "2022-09-11T10:27:08Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2546",
+        "title": "ZOZOTOWN Androidチームにおけるコードメトリクスとビルド時間計測の取り組み",
+        "body": "https://techblog.zozo.com/entry/zozotown-android-metrics-measurement",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI",
+              "description": "Continuous Integration",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2547",
+        "title": "Kotlin を Dart にトランスパイルする dotlin プロジェクト",
+        "body": "https://github.com/dotlin-org/dotlin\r\n\r\nKotlin の IR (Immediate Representation) compiler を利用して Dart コードを生成しています。\r\nまだ大した機能はありませんが、将来的には Flutter を書けるようにしたいようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOShWviw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOShWviw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/x522qu/dotlin_kotlin_to_dart_compiler/",
+              "publishedAt": "2022-09-11T10:33:21Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2548",
+        "title": "Redwoodの紹介スライド",
+        "body": "https://speakerdeck.com/jakewharton/native-ui-with-multiplatform-compose-droidcon-nyc-2022",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2549",
+        "title": "Jetpack Glance を試してみる",
+        "body": "https://medium.com/androiddevelopers/experimenting-with-jetpack-glance-35fbffe520f4",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2550",
+        "title": "DroidKaigi 2022 公式アプリのレポジトリが公開",
+        "body": "https://github.com/DroidKaigi/conference-app-2022",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOShWydw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOShWydw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "スケジュールの公開やチケットの販売も開始されています\r\n\r\nhttps://droidkaigi.jp/2022/timetable/",
+              "publishedAt": "2022-09-11T10:38:14Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

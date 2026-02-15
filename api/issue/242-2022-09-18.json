@@ -1,0 +1,185 @@
+{
+  "id": "MI_kwDOB4jhdM4AgFQA",
+  "number": 242,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/242",
+  "title": "242 2022-09-18",
+  "description": "Compose TextFieldの状態管理について、Android Studio Dolphin Stable、Twitter社のJetpack Composeコーディング規約 、など",
+  "closedAt": "2022-09-18T10:41:06Z",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOUhHYoA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afOUhNz1Q==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2551",
+        "title": "Compose TextFieldの状態管理について",
+        "body": "https://medium.com/androiddevelopers/effective-state-management-for-textfield-in-compose-d6e5b070fbe5\r\n\r\nTextFieldの状態管理に、StateFlow等をDefault Dispatcherでcollectすることは避けるように記載されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOSoTc4g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOSoTc4g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/xexogo/effective_state_management_for_textfield_in/\r\n\r\nStateFlow 使ってもできるよ、という意見があります",
+              "publishedAt": "2022-09-18T08:33:57Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2552",
+        "title": "Android Studio Dolphin Stable",
+        "body": "https://android-developers.googleblog.com/2022/09/android-studio-dolphin.html\r\n\r\nAndroid Studio DolphinがStableリリースされています。Gradle Managed Virtual Devices、Compose Animation Inspector、Compose Recomposition Counts、などの機能が追加されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOSoTb2w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOSoTb2w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/xf4sfn/android_studio_dolphin_available_in_the_stable/",
+              "publishedAt": "2022-09-18T08:32:20Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2553",
+        "title": "Twitter社のJetpack Composeコーディング規約",
+        "body": "https://github.com/twitter/compose-rules\r\nhttps://www.reddit.com/r/androiddev/comments/xcm1c1/twitters_jetpack_compose_rules/\r\n\r\nktlint や detekt 用の実装も用意しているようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2554",
+        "title": "Hilt ViewModelからActivityを使う",
+        "body": "https://py.hashnode.dev/using-an-activity-from-a-hilt-viewmodel\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2555",
+        "title": "Jetpack Compose での Provider パターン",
+        "body": "https://betterprogramming.pub/provider-pattern-in-jetpack-compose-bb4f4e27185e\r\n\r\nFlutter の Provider パターンを CompositionLocalProvider を利用して Jetpack Compose でも実現しよう、という内容",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2556",
+        "title": "Uberにおける開発者の生産性について",
+        "body": "https://speakerdeck.com/tysmith/mobile-developer-productivity-at-uber-scale\r\n\r\nUberにおける、エンジニア組織体制、戦略などを紹介しています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,304 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDE0NzA0Mg==",
+  "number": 60,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/60",
+  "title": "60 2019-03-24",
+  "description": "AppBundleの新機能、Firebase SDKのBoM、Dart 2.3の新機能、DroidKaigi公式アプリのKotlin Multiplatform、Android Studioのビルドパフォーマンスなど",
+  "closedAt": "2019-03-24T10:22:24Z",
+  "issues": {
+    "totalCount": 11,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABEvOGU7MTg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGTDNUA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/732",
+        "title": "Dartの新機能について",
+        "body": "https://medium.com/dartlang/making-dart-a-better-language-for-ui-f1ccaf9f546c\r\n\r\nDart 2.3で追加される予定の新機能について紹介しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHF5T9A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHF5T9A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "配列の宣言時にif文が使えるようになるのは便利そうです。他にもスプレッドオペレータいいですね…\r\n\r\nhttps://gist.github.com/munificent/ddc4e79ace90718643c60837270c409a\r\nちなみにこの記事、Gist版もあるようです。",
+              "publishedAt": "2019-03-24T09:54:39Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/731",
+        "title": "Kotlin/Nativeはもう製品版で使えるのか？",
+        "body": "https://quickbirdstudios.com/blog/is-kotlin-native-production-ready/\r\nhttps://www.reddit.com/r/androiddev/comments/b47bmm/is_kotlinnative_production_ready_why_we_are_not/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/730",
+        "title": "1.3.30でKAPTがインクリメンタルビルドをサポートしそう",
+        "body": "https://youtrack.jetbrains.com/issue/KT-23880\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHF5jPg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHF5jPg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "これでビルド時間がどれくらい速くなるか楽しみですね",
+              "publishedAt": "2019-03-24T10:55:30Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/729",
+        "title": "FlutterがCrashlyticsを公式サポート",
+        "body": "https://medium.com/@guitcastro/flutter-add-official-support-to-firebase-crashlytics-198e9deeae1d\r\nhttps://pub.dartlang.org/packages/firebase_crashlytics\r\n\r\nまだ[制限はある](https://github.com/flutter/flutter/issues/29689)ようですが、公式サポートがあるのは嬉しいですね。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/728",
+        "title": "CanvasのKTX API",
+        "body": "https://medium.com/over-engineering/android-canvas-apis-with-kotlin-and-ktx-d92d4622ce09\r\n\r\n`androidx.core:core-ktx`に入っているCanvas周りのAPIについての解説です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/727",
+        "title": "Room 2.1.0-alpha06",
+        "body": "https://developer.android.com/jetpack/androidx/releases/room#2.1.0-alpha06\r\n\r\n2.1.0最後のアルファリリースになる予定だそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/726",
+        "title": "DroidKaigi 公式アプリのKotlin Multiplatform",
+        "body": "https://qiita.com/takahirom/items/4df7bfca17928a40922e\r\n\r\n[DroidKaigi 2019アプリ](https://github.com/DroidKaigi/conference-app-2019)のKotlin Multiplatform実装について解説されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/725",
+        "title": "AppBundleの新機能",
+        "body": "https://android-developers.googleblog.com/2019/03/the-latest-android-app-bundle-updates.html\r\n\r\n独自に言語の切り替え機能を提供してるアプリ向けに、言語を指定してリソースをダウンロードできる機能が提供されるようです。\r\n\r\n他には一つのAppBundleに通常のアプリとInstantAppを格納できるようになったり、App Signingのフローが改善されたりもしています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/724",
+        "title": "GDC 2019でのGoogleの発表",
+        "body": "https://android-developers.googleblog.com/2019/03/google-mobile-developer-day-at-game.html\r\n\r\n事前登録機能が一般公開されたり、AppBundleのサイズ上限が緩和されたり、いくつか発表がありました",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/723",
+        "title": "Android Studioのビルドパフォーマンス",
+        "body": "https://medium.com/androiddevelopers/improving-build-speed-in-android-studio-3e1425274837\r\n\r\nAndroid Studioチームによるビルドパフォーマンスについてのまとめと今後の改善案や開発者ができることなどがまとめられています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/722",
+        "title": "Firebase SDKのBoMでバージョンを一括管理",
+        "body": "https://firebase.google.com/docs/android/setup?hl=en#firebase-bom\r\n\r\n<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\">Remember when all the <a href=\"https://twitter.com/Firebase?ref_src=twsrc%5Etfw\">@Firebase</a> SDKs for Android had the same version? Now you can have it again with the experimental Firebase BoM (Bill of Materials)! This takes advantage of a new feature in <a href=\"https://twitter.com/gradle?ref_src=twsrc%5Etfw\">@gradle</a> 5.<br><br>Be sure to expand the docs by using the arrow:<a href=\"https://t.co/diJIZAmX1d\">https://t.co/diJIZAmX1d</a> <a href=\"https://t.co/xTHsyviusH\">pic.twitter.com/xTHsyviusH</a></p>&mdash; Doug Stevenson 🔥 (@ CodingDoug) <a href=\"https://twitter.com/CodingDoug/status/1107770327851888640?ref_src=twsrc%5Etfw\">2019年3月18日</a></blockquote>\r\n\r\nExperimentalですが、Firebase SDKのBoM(Bill of Materials)が公開されたようです。\r\n\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOHETCsA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOHETCsA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "BoMについてはDroidKaigi 2019でもセッションがありましたね\r\nhttps://www.youtube.com/watch?v=bm_szoMkzMo",
+              "publishedAt": "2019-03-19T09:38:58Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

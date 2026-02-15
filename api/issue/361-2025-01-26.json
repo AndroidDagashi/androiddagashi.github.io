@@ -1,0 +1,132 @@
+{
+  "id": "MI_kwDOB4jhdM4AufnZ",
+  "number": 361,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/361",
+  "title": "361 2025-01-26",
+  "closedAt": "2025-01-26T11:03:19Z",
+  "description": "Android 16 Beta 1, Android 16の向きとサイズ変更制限の廃止, Jetpack Compose の Stability を理解する, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOp4e7dg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvOp5MSOA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3362",
+        "title": "Android 16 Beta 1",
+        "body": "https://android-developers.googleblog.com/2025/01/first-beta-android16.html\n\nAndroid 16の最初のBetaがリリースされています。大画面でのサイズ変更制限の廃止、テキストの縦書き、Predictive backがデフォルト化、などの変更が入っています。\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3363",
+        "title": "Android 16の向きとサイズ変更制限の廃止",
+        "body": "https://android-developers.googleblog.com/2025/01/orientation-and-resizability-changes-in-android-16.html\n\nAndroid 16から大画面でのアプリの向きとサイズ変更を制限する機能が段階的に廃止されていきます。Android 16ではopt outすることができますが、将来的にはopt outできなくなるので、対応が必要になってきます。\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3364",
+        "title": "KMP iOS ターゲットのビルド時間を改善する",
+        "body": "https://touchlab.co/touchlab-build-only-what-you-need",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3365",
+        "title": "Jetpack Compose の Stability を理解する",
+        "body": "https://getstream.io/blog/jetpack-compose-stability/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3366",
+        "title": "Android 15におけるEdge to Edgeについて",
+        "body": "https://proandroiddev.com/the-elephant-in-the-room-for-android-devs-jetpack-compose-and-edge-to-edge-on-android-15-4776c0cca075\n\nAndroid15では、Edge to Edge周りの挙動が変わったので、気をつけるべき点について解説しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

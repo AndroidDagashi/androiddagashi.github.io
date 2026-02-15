@@ -1,0 +1,174 @@
+{
+  "id": "MI_kwDOB4jhdM4AcSXt",
+  "number": 200,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/200",
+  "title": "200 2021-11-28",
+  "description": "Coroutines 1.6.0-RC、Android Gradle Pluginを書く方法、Kotlin 1.6 x R8でKotlinのメタデータが削除されてしまう不具合が発生中、など",
+  "closedAt": "2021-11-28T10:13:04Z",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOP30zvg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OP374Og==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2190",
+        "title": "Coroutines 1.6.0-RC",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.6.0-RC\r\n\r\ntestライブラリがマルチプラットフォームライブラリになり変更がいくつか入っています。また、Kotlin/Nativeの新しいメモリ管理がサポートされています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2191",
+        "title": "Android Gradle Pluginを書く方法",
+        "body": "https://medium.com/androiddevelopers/gradle-and-agp-build-apis-how-to-write-a-plugin-1695b590e4ec\r\n\r\n基本的なAndroid Gradleプラグインを書く方法が解説されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2192",
+        "title": "Kotlin 1.6 x R8でKotlinのメタデータが削除されてしまう不具合が発生中",
+        "body": "https://www.reddit.com/r/androiddev/comments/r1saya/do_not_update_kotlin_16_on_your_android_project/\r\nhttps://issuetracker.google.com/issues/206855609\r\n\r\nAGP7.0系にバンドルされているR8が Kotlin 1.6 のメタデータに対応していないことが原因だそうです。\r\nIssue Tracker によると、AGP7.1 以降ではこの問題は発生しないそうです。\r\nAGP7.0系でこの問題を解決するには[こちら](https://issuetracker.google.com/issues/207397158#comment9)や[こちら](https://issuetracker.google.com/issues/206855609#comment12)のコメントにあるように R8 の個別バージョンアップが必要です\r\n\r\n\r\nまた、現状AGP7.0系への修正リリースは予定にないようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2193",
+        "title": "Clean Architectureで考えるAndroidのモジュール設計",
+        "body": "https://tech.dely.jp/entry/2021/11/26/170000",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2194",
+        "title": "RomainとChetによるUIフレームワークの作り方",
+        "body": "https://youtu.be/KF_s62vEPGY\r\n\r\nRomain GuyとChet HaaseがJetpack ComposeをUIフレームワークをどう作るかについて語っています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2196",
+        "title": "Dokkaがベータに到達",
+        "body": "https://blog.jetbrains.com/kotlin/2021/11/dokka-beta/\r\n\r\nKotlin のドキュメント生成ツール Dokka がベータ版になりました。\r\n正式リリース時には Kotlin Gradle Plugin にバンドルされるようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2197",
+        "title": "Composeで可変コレクションを使う際の注意点",
+        "body": "https://dev.to/zachklipp/two-mutables-dont-make-a-right-2kgp\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

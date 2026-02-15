@@ -1,0 +1,423 @@
+{
+  "id": "MDk6TWlsZXN0b25lNDA0NDc0OQ==",
+  "number": 55,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/55",
+  "title": "55 2019-02-17",
+  "description": "DroidKaigiのセッション動画が公開、Kotlin/Nativeのスレッドについて、AndroidThingsのサポートデバイスが縮小、Robolectric 4.2、WorkManager1.0.0-rc1、など",
+  "closedAt": "2019-02-17T10:49:45Z",
+  "issues": {
+    "totalCount": 13,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABRPOGIHxeg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOGFqVqA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/676",
+        "title": "DroidKaigi 2019のセッションまとめ",
+        "body": "https://qiita.com/takahirom/items/75a8717f95f778d04b1e\r\nhttps://qiita.com/amay077/items/ed43ef822c34677d2254\r\n\r\nぜんぶは見きれないと思うので、このへんを参考にするのもいいかもしれません",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG666QA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG666QA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "自分もまだ全然見きれていませんが、すこしずつ見ていく予定です :innocent: ",
+              "publishedAt": "2019-02-17T09:51:04Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/670",
+        "title": "WorkManager 1.0.0-rc1リリース",
+        "body": "https://developer.android.com/jetpack/androidx/releases/work\r\n\r\nとうとう RC になったようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/675",
+        "title": "マルチモジュールプロジェクトでの Dagger2を用いた Dependency Injection",
+        "body": "https://speakerdeck.com/kgmyshin/android-multi-module-with-dagger\r\n\r\nDroidKaigiでの発表です。マルチモジュールを考えている人には参考になるのではないでしょうか。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG660zw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG660zw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "動画はまだ上がってないようです。\r\n\r\nhttps://droidkaigi.jp/2019/timetable/68629/",
+              "publishedAt": "2019-02-17T09:36:29Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/674",
+        "title": "OSの分布ダッシュボードが2018年10月から更新されていない件",
+        "body": "https://www.reddit.com/r/androiddev/comments/aqiioa/whats_up_with_android_distribution_charts_no/\r\n\r\nGoogleの中の人を非難する声が多いようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG66zkQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG66zkQ==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "例によってJakeが参戦していますが、内部的に何か理由があるようです。",
+              "publishedAt": "2019-02-17T09:32:55Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/673",
+        "title": "Robolectric 4.2 リリース",
+        "body": "https://github.com/robolectric/robolectric/releases/tag/robolectric-4.2\r\nhttps://www.reddit.com/r/androiddev/comments/aqoxvo/robolectric_42_contains_hundreds_of_sdk_support/\r\n\r\n- 新しいプラグインシステム\r\n- 4.x系でのパフォーマンス劣化の修正\r\n- カスタムShadowのAPI改善\r\n- Android SDKサポートの改善\r\n\r\n今回も盛りだくさんです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/672",
+        "title": "RetrofitにKotlin CoroutinesサポートのPRがマージされる",
+        "body": "https://www.reddit.com/r/androiddev/comments/ar2erx/retrofit_meets_coroutines/\r\n\r\nまだ正式リリースされているわけではなく、SNAPSHOTバージョンで試すことができます(2019/02/16現在)。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG61SPg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG662Ng==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "本筋とは関係ありませんが、Jake氏の赤ん坊についてのレスから始まる掛け合いがとてもおもしろかったです。",
+              "publishedAt": "2019-02-16T12:38:19Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "たのしみですね :-)",
+              "publishedAt": "2019-02-17T09:40:21Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/671",
+        "title": "Kotlin/Nativeのスレッドについて",
+        "body": "https://medium.com/@kpgalligan/kotlin-native-stranger-threads-c0cf0e0fb847\r\nhttps://medium.com/@kpgalligan/kotlin-native-stranger-threads-ep-2-208523d63c8f\r\n\r\n少し前のブログですが、Kotlin/Nativeのスレッド周りについて理解するのにとても参考になりました。\r\nJavaとはかなり異なるので、なれるのに時間がかかりそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/669",
+        "title": "Kotlinスコープ関数を使う時",
+        "body": "https://blog.danlew.net/2019/02/12/when-to-use-kotlins-stdlib-functions/\r\n\r\nKotlin勉強し始めた段階ではまだ気にする必要ないよ、という内容。\r\n混乱しがちなポイントもあるし、従来の書き方の方が可読性高いことも多くない？、とも。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG6CUOg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG66zxg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "用法用量を守って使いましょう💪",
+              "publishedAt": "2019-02-14T06:32:31Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "自分も最初の頃は多用しましたが、いまはあまり使わなくなりました :upside_down_face: ",
+              "publishedAt": "2019-02-17T09:33:38Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/668",
+        "title": "Play Storeのアプリ取り締まりの方針は今後も厳しいまま",
+        "body": "https://android-developers.googleblog.com/2019/02/how-we-fought-bad-apps-and-malicious.html\r\n\r\n去年はSMSと電話履歴のパーミッションで多くのアプリがバンされ騒ぎになったのですが、今年もそのような制限は強くなるようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG5_R1A==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG5_R1A==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Redditの反応はこちら。「本当に人間が見てるのか？」という声が多いようです。\r\nhttps://www.reddit.com/r/androiddev/comments/aq9vec/how_we_fought_bad_apps_and_malicious_developers",
+              "publishedAt": "2019-02-14T02:18:22Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/667",
+        "title": "Android Thingsのサポートデバイスが縮小",
+        "body": "https://android-developers.googleblog.com/2019/02/an-update-on-android-things.html\r\n\r\nこの手の発表の常として、持って回った言いかたなので分かりにくいですが、どうやら一般向けのAndroid Thingsはクローズの方向にあり、今後はメーカーとの協業にフォーカスするようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/666",
+        "title": "DroidKaigi 2019のセッション動画が公開",
+        "body": "一日目: https://www.youtube.com/playlist?list=PLaOdaBFokChwy3K81ejHYU6_HB6ahmOJj\r\n二日目: https://www.youtube.com/playlist?list=PLaOdaBFokChyUB1qav1G_keGbip5eXORy",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOG5kBjA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOG5kBjA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "例年になく早いですね 👍 ",
+              "publishedAt": "2019-02-13T01:11:00Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/665",
+        "title": "中間モジュールを挟んでビルド時間を短縮するテクニック",
+        "body": "https://satoshun.github.io/2019/02/multi-module-speedup/\r\n\r\nモジュールに分割する途中で中間レイヤーを挟むのは実際的で良いかもしれません",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/664",
+        "title": "windowIsTranslucentがtrueでportraitのアクティビティはやめた方がいい",
+        "body": "https://www.reddit.com/r/androiddev/comments/ap5zdm/dont_use_windowistranslucent_together_with/?utm_source=reddit-android\r\n\r\n自分もハマったのですが、Android 8.0でクラッシュするようです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

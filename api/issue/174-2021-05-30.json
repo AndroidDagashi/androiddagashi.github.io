@@ -1,0 +1,225 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjc4NDIwMA==",
+  "number": 174,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/174",
+  "title": "174 2021-05-30",
+  "description": "Kotlin 1.5 Online Event、Jetpack Composeのスナップショットについて、Jetpack Compose を使ったデザインシステムの実装、など",
+  "closedAt": "2021-05-30T10:29:23Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vONgmLcg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_ONgs8sg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1907",
+        "title": "Kotlin 1.5 Online Event",
+        "body": "https://www.youtube.com/watch?v=EbU15SvXlGk\r\n\r\n1.5の新機能の解説や、1.6の計画、QAなどが行われました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1908",
+        "title": "Kotlinの今後の計画",
+        "body": "https://blog.jetbrains.com/kotlin/2021/05/nine-highlights-from-the-kotlin-roadmap/\r\n\r\n9つの注目の計画について紹介されています。Compilerの改善、sealed whenの導入、WebAssemblyについてなど。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1909",
+        "title": "Kotlin Team AMA",
+        "body": "https://www.reddit.com/r/Kotlin/comments/nm2eaf/kotlin_team_ama_3_ask_us_anything/\r\n\r\nRedditにてKotlin AMAが開催されました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1910",
+        "title": "IonicはもはやCordovaではない",
+        "body": "「Ionic は Apache Cordova と Angular を利用したモバイルアプリケーション・フレームワークである」という認識はもはや過去のものである、という記事。\r\n\r\n現在の Ionic は Capacitor という別のランタイムを利用するようになっており、 Angular 以外の Reat や Vue といったライブラリを利用することも可能です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1911",
+        "title": "Jetpack Composeのスナップショットについて",
+        "body": "https://dev.to/zachklipp/introduction-to-the-compose-snapshot-system-19cn\r\n\r\nJetpack Composeのスナップショットについて、詳細に説明しています\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1912",
+        "title": "Jetpack Compose を使ったデザインシステムの実装",
+        "body": "https://android-developers-jp.googleblog.com/2021/05/implementing-design-system-using-jetpack-compose.html\r\n\r\nメルカリでの事例の紹介です",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1913",
+        "title": "Compose CompilerがKotlin/Nativeをサポート",
+        "body": "<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Compose compiler now has support for Kotlin/Native, the final platform, making it (fully?) MPP compatible! (change: <a href=\"https://t.co/UAU3oN5uJY\">https://t.co/UAU3oN5uJY</a>) 🎉🎉🎉<br><br>There&#39;s a lot to be done, however, before you can use it to develop apps yourself: 👇</p>&mdash; Andrei Shikov (@shikasd_) <a href=\"https://twitter.com/shikasd_/status/1398445030419877891?ref_src=twsrc%5Etfw\">May 29, 2021</a></blockquote>\r\n\r\n\r\nリプライツリーで次のステップとして必要なことが述べられています。\r\nCompiler が対応しただけなので、Kotlin/Native の各ターゲットプラットフォーム上で動作するUIツールキットが必要になってきます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1914",
+        "title": "Kotlin Multiplatform Mobileの更新情報まとめ",
+        "body": "https://blog.jetbrains.com/kotlin/2021/05/whats-new-in-kmm-since-going-alpha/\r\n\r\n2020年8月に Alpha リリースされてから2021年5月末までの、 Kotlin Multiplatform Mobile 関連の更新情報がまとまっています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

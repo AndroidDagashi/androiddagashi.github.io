@@ -1,0 +1,108 @@
+{
+  "id": "MI_kwDOB4jhdM4Azr1L",
+  "number": 391,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/391",
+  "title": "391 2025-08-31",
+  "closedAt": "2025-08-31T10:47:24Z",
+  "description": "開発者検証の追加、Wear OS Spotlight Week まとめ、Navigation Event Libraryで作る3つのユニークな予測的バックアニメーション、など",
+  "issues": {
+    "totalCount": 4,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOyN7kTQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_OyN9XIQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3510",
+        "title": "開発者検証の追加",
+        "body": "https://android-developers.googleblog.com/2025/08/elevating-android-security.html\n\nAndroid端末にアプリをインストール際、サイドローディングであっても開発者検証が必要になります。2025年10月に早期アクセスがはじまり、2026年9月にブラジル、インドネシア、シンガポール、タイで施行、2027年以降に全世界に展開されるとのことです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3511",
+        "title": "Android ViewModelのデータ読み込み：ベストプラクティスとFlow-Basedアーキテクチャ",
+        "body": "https://funkymuse.dev/posts/properly-load-data/\n\n多くの Android 開発者が使用する `ViewModel` の `init{}` ブロックでのデータ読み込みには、ナビゲーションバックスタックの問題、 `Dispatcher` の競合状態、データの鮮度問題、テストの困難さという4つの重大な問題があります。本記事では、これらの問題を解決する Flow-based アーキテクチャを提案し、 `StateFlow` と `SharedFlow` を活用した実装例、再利用可能な抽象化、そして適切なテスト手法まで詳しく解説しています。\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3512",
+        "title": "Navigation Event Libraryで作る3つのユニークな予測的バックアニメーション",
+        "body": "Android の Navigation Event Library を活用して、スライドトゥポップ、ドラッグトゥポップ、スティッキー共有要素という3つの独自の予測的バックアニメーションを実装する方法を解説。各アニメーションでは、 `Modifier.draggable` や `Modifier.draggable2D` を使用したジェスチャー制御、 `NavigationEventHandler` によるイベント処理、動的なレイアウト調整などの実装テクニックを詳しく紹介している。\n\nhttps://www.tunjid.com/articles/3-unique-predictive-back-animations-you-can-create-with-the-navigation-events-library-68af812b7c4b054f8bb3e0a3",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3513",
+        "title": "Wear OS Spotlight Week まとめ",
+        "body": "GoogleがWear OS開発者向けの特集週間「Wear OS Spotlight Week」を開催、そのまとめ記事です。\n\nhttps://android-developers.googleblog.com/2025/08/spotlight-week-wear-os.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

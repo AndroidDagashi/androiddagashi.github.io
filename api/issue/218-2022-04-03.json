@@ -1,0 +1,192 @@
+{
+  "id": "MI_kwDOB4jhdM4AdyNV",
+  "number": 218,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/218",
+  "title": "218 2022-04-03",
+  "description": "通知を利用してWidgetのインストールを10倍にする方法、Now in Android #58、SYSTEM_ALERT_WINDOWの歴史、など",
+  "closedAt": "2022-04-03T10:24:03Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vORvpAfw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_ORvtz6A==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2346",
+        "title": "通知を利用してWidgetのインストールを10倍にする方法",
+        "body": "https://android-developers.googleblog.com/2022/04/google-photos-notifs-boot-installs.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2347",
+        "title": "Focus Gradleプラグインの紹介",
+        "body": "https://dropbox.tech/mobile/introducing-focus-a-new-open-source-gradle-plugin\r\n\r\nマルチモジュールを採用した大規模なプロジェクトで、GradleとAndroid Studioの最適化をすることが出来ます。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOQMeisg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOQMeisg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "依存関係解析して、現在開発してるモジュール(とそれに必要なモジュール)以外をgradleのビルド対象から外してくれるようです",
+              "publishedAt": "2022-04-03T09:48:28Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2348",
+        "title": "Jetpack Composeを使ったリアルタイムで動作するアプリ",
+        "body": "https://github.com/getStream/stream-draw-android\r\n\r\nJetpack Composeを使った、ドロー/チャットアプリのOSSです。モダンな技術が使われています。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2349",
+        "title": "Now in Android #58",
+        "body": "https://medium.com/androiddevelopers/now-in-android-58-a8919ba01d45",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2345",
+        "title": "Gradle 7.4.2 is out!",
+        "body": "Gradle 7.4.2がでました。7.4系の2回目のパッチリリースです。\r\nhttps://twitter.com/gradle/status/1509562973630697479\r\n\r\nいくつかの不具合が修正されています。\r\nリリースノートの詳細はこちら https://docs.gradle.org/7.4.2/release-notes.html ",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2350",
+        "title": "AppCode の KMM プラグインが他プラットフォームの開発をサポート",
+        "body": "https://blog.jetbrains.com/kotlin/2022/03/appcode-kmm-update/\r\n\r\n長らく AppCode の KMM プラグインは KMM プロジェクトの iOS/macOS 部分しかサポートしてなかったようですが、Android を始めとした他プラットフォームも AppCode 上で開発できるようになったようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2351",
+        "title": "SYSTEM_ALERT_WINDOW の歴史",
+        "body": "https://aakira.app/blog/2022/03/system-alert-window/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2352",
+        "title": "iOS 関連のニュースを日本語でまとめる iOS Osushi が始動",
+        "body": "https://ios-osushi.github.io/posts/000-first/\r\n\r\nTwitterアカウントはこちら\r\nhttps://twitter.com/ios_osushi",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

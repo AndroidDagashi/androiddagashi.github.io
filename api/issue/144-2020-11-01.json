@@ -1,0 +1,244 @@
+{
+  "id": "MDk6TWlsZXN0b25lNjAyODU2MA==",
+  "number": 144,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/144",
+  "title": "144 2020-11-01",
+  "description": "Kotlin Coroutines 1.4.0、LeakCanaryとAndroid Studioのメモリリーク検知の方法、Navigation componentをサポートするComposeプラグインがリリース、など。",
+  "closedAt": "2020-11-01T10:02:57Z",
+  "issues": {
+    "totalCount": 9,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOK5KwXA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________HvOK73oVw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1608",
+        "title": "Android Studio 4.2 Canary 15",
+        "body": "https://androidstudio.googleblog.com/2020/10/android-studio-42-canary-15-available.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1609",
+        "title": "Kotlin開発チームによるAMA",
+        "body": "https://www.reddit.com/r/Kotlin/comments/ji9z19/kotlin_team_ama_2_ask_us_anything/\r\n\r\n11/26-27にかけて行われていました",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1610",
+        "title": "Kotlin Coroutines 1.4.0",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.4.0\r\n\r\nStateFlowやSharedFlowが安定版にプロモートされています\r\n\r\n\r\nredditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/jikkvp/released_kotlinxcoroutines_140/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOKujAmw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOKujAmw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "公式の説明はこちら\r\n\r\nhttps://blog.jetbrains.com/kotlin/2020/10/kotlinx-coroutines-1-4-0-introducing-stateflow-and-sharedflow/",
+              "publishedAt": "2020-10-31T07:21:20Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "satoshun",
+                "url": "https://github.com/satoshun",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/1389835?u=d8608066a7664dbdf0fb8f67fb6db98560232fbe&v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1611",
+        "title": "LeakCanaryとAndroid Studioのメモリリーク検知の方法",
+        "body": "https://dev.to/pyricau/leak-detection-android-studio-vs-leakcanary-35j5\r\n\r\nAndroid StudioとLeakCanaryにおける、メモリリーク検知の方法を紹介しています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1612",
+        "title": "Navigation componentをサポートするComposeプラグインがリリース",
+        "body": "https://developer.android.com/jetpack/compose/navigation\r\n\r\nNavigation ComponentをJetpack Composeを使ったアプリケーションで動かすためのライブラリです。画面遷移、ディープリンクなど、Navigation Componentで使えた機能を利用することが出来ます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1613",
+        "title": "Now in Android エピソード28",
+        "body": "https://medium.com/androiddevelopers/now-in-android-28-7c7c28008bfb\r\n\r\nModern Android Development Skills、最近リリースされたAndroidXライブラリなどが紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1614",
+        "title": "Navigation Component Q&A",
+        "body": "https://www.youtube.com/watch?v=RC5bwJ4u9T8\r\n\r\nYoutubeにてNavigation ComponentのQAが行われました。 Multiple Back Stack, Compose, 戻り値などに関して話しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1615",
+        "title": "PagingのComposeサポート",
+        "body": "https://developer.android.com/jetpack/androidx/releases/paging#compose-1.0.0-alpha01\r\n\r\nJetpack ComposeにてPagingライブラリを使用可能にするライブラリがalphaリリースされています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/1616",
+        "title": "NetflixがKotlin Multiplatformを採用",
+        "body": "https://netflixtechblog.com/netflix-android-and-ios-studio-apps-kotlin-multiplatform-d6d4d8d25d23\r\n\r\nNetflixがStudio Apps（おそらく一般のアプリではなさそう）にてKotlin Multiplatformを採用したということです。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

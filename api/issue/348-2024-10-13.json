@@ -1,0 +1,138 @@
+{
+  "id": "MI_kwDOB4jhdM4AskEH",
+  "number": 348,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/348",
+  "title": "348 2024-10-13",
+  "closedAt": "2024-10-13T10:37:45Z",
+  "description": "依存関係の修正を自動で行う, Compose スクリーンショットテストの選択肢, スタイラス用Jetpackライブラリ, ComposeのFlowRowでIndicatorを使う, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOmf6eIQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvOmgKUQA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3296",
+        "title": "スタイラス用の新しいJetpackライブラリ",
+        "body": "https://android-developers.googleblog.com/2024/10/introducing-ink-api-jetpack-library.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOj5U2Tw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOj5U2Tw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Android View ベースで作られるのはちょっと意外でした",
+              "publishedAt": "2024-10-13T10:27:20Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3297",
+        "title": "Jetpack ComposeのFlowRowでIndicatorを使う",
+        "body": "https://proandroiddev.com/expandable-flowrow-with-indicator-e6425f267c4c\r\n\r\nJetpack ComposeのContextualFlowRowで、expand可能なUIを作る方法を紹介しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3298",
+        "title": "DI を自作してみる",
+        "body": "https://www.halfbit.de/posts/unplugged-di-part-1/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3299",
+        "title": "Jetpack Compose スクリーンショットテストの選択肢",
+        "body": "https://slack-chats.kotlinlang.org/t/23121514/any-opinions-on-snapshot-testing-for-a-greenfield-project-on\r\n\r\nKotlin Slack のスレッドです\r\n\r\nPaparazzi, Roborazzi, Compose Preview Screenshot Testing の３つを比較しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3300",
+        "title": "Gradle依存関係の修正を自動で行う",
+        "body": "https://dev.to/autonomousapps/one-click-dependencies-fix-191p\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

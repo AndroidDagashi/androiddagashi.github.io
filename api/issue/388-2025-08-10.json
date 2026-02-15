@@ -1,0 +1,138 @@
+{
+  "id": "MI_kwDOB4jhdM4AzLr4",
+  "number": 388,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/388",
+  "title": "388 2025-08-10",
+  "closedAt": "2025-08-10T10:30:52Z",
+  "description": "DroidKaigi 2025 のタイムテーブルが公開, HDR解説, ComposeのLayoutNode解説, Flutterのextension typesで31%改善, Kotlin NotebookでIDE Plugin開発, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOxHWEJg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvOxSNcrA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3495",
+        "title": "Flutter で値オブジェクトに extension types を導入して 31% パフォーマンスが改善した話",
+        "body": "https://zenn.dev/uzu_tech/articles/flutter-extension-types-performance\n\nDart 3.3のextension typesを使って値オブジェクトを再実装した事例。従来の抽象クラスベースではID比較処理がボトルネックだったが、extension typesは型安全性を保ちつつ実行時オーバーヘッドがゼロ。オブジェクト生成コストとメモリアクセスが効率化され、ゲーム状態構築で平均31%高速化を達成。\n\n\n\n\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3496",
+        "title": "LayoutNodeの正体：Composableを書いたとき本当は何が起きているのか",
+        "body": "https://proandroiddev.com/layoutnode-what-actually-happens-when-you-write-composable-05c0275875fa\n\nJetpack ComposeでText()やBox()などのComposableを書くと、内部ではLayoutNodeという永続的なツリー構造が作られます。記事では、ComposableがReusableComposeNode、ComposeUiNode、LayoutNodeの3層構造を通じてどのように実装されているか、LayoutNodeとModifier.Nodeの役割分担、そしてComposition・Layout・Drawingの3フェーズレンダリングパイプラインによる効率的な更新メカニズムについて詳しく解説しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3497",
+        "title": "DroidKaigi 2025 のタイムテーブルが公開",
+        "body": "https://2025.droidkaigi.jp/\n\n<blockquote class=\"twitter-tweet\"><p lang=\"ja\" dir=\"ltr\">DroidKaigi 2025のタイムテーブルが公開されました。公式サイトからご確認ください！🎤<a href=\"https://t.co/36v3MTxY1U\">https://t.co/36v3MTxY1U</a><a href=\"https://twitter.com/hashtag/DroidKaigi?src=hash&amp;ref_src=twsrc%5Etfw\">#DroidKaigi</a></p>&mdash; DroidKaigi (@ DroidKaigi) <a href=\"https://twitter.com/DroidKaigi/status/1953295746028945767?ref_src=twsrc%5Etfw\">August 7, 2025</a></blockquote>",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3498",
+        "title": "HDRとはなにか",
+        "body": "誤解されがちな要素なども含めて話されています。\nhttps://android-developers.googleblog.com/2025/08/what-is-hdr.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3499",
+        "title": "Kotlin NotebookでIDE Plugin開発",
+        "body": "https://blog.jetbrains.com/platform/2025/08/kotlin-notebook-meets-intellij-platform-advancing-ide-plugin-development/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

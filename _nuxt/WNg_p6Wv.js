@@ -1,0 +1,1 @@
+function i(t){const n=[];return t.title&&n.push({property:"og:title",content:t.title}),t.description&&(n.push({name:"description",content:t.description}),n.push({property:"og:description",content:t.description})),t.url&&n.push({property:"og:url",content:t.url}),t.image&&n.push({property:"og:image",content:t.image}),n}export{i as r};

@@ -1,0 +1,145 @@
+{
+  "id": "MI_kwDOB4jhdM4A07YG",
+  "number": 398,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/398",
+  "title": "398 2025-10-19",
+  "closedAt": "2025-10-19T11:11:15Z",
+  "description": "CameraX 1.5の複数カメラ機能, Firebase AI Logic Imagen編集機能, WindowManager 1.5安定版リリース, CompositionLocalの選び方, Jetpack Compose retain API",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO0maXjg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afO0mboFA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3549",
+        "title": "CameraX 1.5の新機能：複数カメラ機能の組み合わせを保証するFeature Group API",
+        "body": "https://android-developers.googleblog.com/2025/10/beyond-single-features-guaranteeing.html\n\nCameraX 1.5で導入されたFeature Group APIは、HDRと60FPS動画、プレビュー手ぶれ補正などの複数のカメラ機能を同時に使用する際の互換性を事前に確認できる新機能。従来は個別機能のサポート確認しかできず、組み合わせると動作が不安定になることがあったが、このAPIにより特定の機能の組み合わせがデバイスでサポートされているか事前にチェックでき、より信頼性の高いカメラアプリの開発が可能になる。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3550",
+        "title": "Firebase AI LogicのImagen編集機能とGemini 2.5 Flash Imageでユーザーエンゲージメントを向上",
+        "body": "https://android-developers.googleblog.com/2025/10/boost-user-engagement-with-ai-image.html\n\nFirebase AI Logicの画像生成機能に2つの新機能が追加されました。Imagen 3.0の編集機能（開発者プレビュー）では、マスクベースのインペインティング・アウトペインティングが可能になり、画像の特定部分のみを編集できます。一方、Gemini 2.5 Flash Imageは会話形式での画像編集や文脈に応じた画像生成が可能で、自然言語での反復的な編集に対応しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3551",
+        "title": "Jetpack WindowManager 1.5が安定版リリース - 大画面向けの新ブレークポイントを追加",
+        "body": "https://android-developers.googleblog.com/2025/10/jetpack-windowmanager-15-is-stable.html\n\nJetpack WindowManager 1.5.0が安定版としてリリースされました。主な新機能として、1200dp以上の大画面向けに「Large」と「Extra-large」の2つの新しい幅ブレークポイントが追加され、外部ディスプレイ接続時などの超大画面での最適なレイアウト設計が可能になりました。また、Activity Embeddingの自動状態保存・復元機能や、ApplicationコンテキストからのWindowMetrics計算にも対応しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3552",
+        "title": "Jetpack ComposeのCompositionLocal：staticとdynamicの選び方",
+        "body": "https://proandroiddev.com/jetpack-compose-static-vs-dynamic-compositionlocals-its-not-about-change-frequency-81f56b3dd991\n\nCompositionLocalの使い分けは「変更頻度」ではなく「読み取り頻度」で判断すべきという考察記事。staticは読み取りコストが安いが書き込み時に全体再構成、dynamicは読み取り追跡コストがあるが書き込み時は該当箇所のみ再構成。多くの場所で読まれる値にはstatic、少数の場所で読まれる値にはdynamicが適切。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3553",
+        "title": "Jetpack Composeのretain{} API内部実装を理解する",
+        "body": "https://proandroiddev.com/understanding-retain-internals-a-new-way-to-preserve-state-in-jetpack-compose-54471a32fd05\n\nJetpack Composeの新しいretain{} APIの内部動作を詳細に解説した記事。remember{}では設定変更やナビゲーション遷移時に状態が失われる問題を解決するため、RetainScopeとRetainObserverを使った状態保持の仕組みを実装。通常モードと保持モード の2つの動作モードを持ち、キーベースでの値の管理とライフサイクルコールバックによる効率的なメモリ管理を実現している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3554",
+        "title": "Navigation2 から 3 への移行ガイド",
+        "body": "\nhttps://github.com/android/nav3-recipes/blob/main/docs/MigratingFromNavigation2.md\n\nステップ・バイ・ステップのガイドを準備しているようです",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

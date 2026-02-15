@@ -1,0 +1,323 @@
+{
+  "id": "MDk6TWlsZXN0b25lMzc5Mzc5Ng==",
+  "number": 41,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/41",
+  "title": "41 2018-11-11",
+  "description": "Android Dev Summit 2018、Foldable、Androidエコシステムのセキュリティレポート、11月のAndroidXリリース、AS3.3 BetaでR8が利用可能、など。",
+  "closedAt": "2018-11-11T10:35:21Z",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPgAAAAAAABK_OFp7LDg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPgAAAAAAAAGPOFnr9Ow==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/514",
+        "title": "Nexus 5Xと6Pの公式サポートが終了",
+        "body": "https://androidcommunity.com/google-ends-support-for-nexus-5x-nexus-6p-20181107/\r\n\r\nこれで全てのNexusシリーズがサポート外になってしまいました。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/513",
+        "title": "GoogleがAndroid エコシステムのセキュリティレポートを公開",
+        "body": "https://www.xda-developers.com/google-android-ecosystem-security-transparency-report/\r\nhttps://transparencyreport.google.com/android-security/overview",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/512",
+        "title": "有機EL時代には積極的にダークモードの採用を",
+        "body": "https://japanese.engadget.com/2018/11/09/el-google/\r\nhttps://www.xda-developers.com/google-wants-developers-to-add-dark-themes-to-save-battery-life/\r\n\r\nAndroid Dev Summitにて、有機ELではダークモードの方が消費電力的に優れているから採用してね、という趣旨のセッションがあったようです。\r\n\r\nマテリアデザインのベースカラーは白ですが、ひょっとしたらこの辺もそのうち改定されるかもしれませんね。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGiXUdA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGiXUdA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "各アプリでもダークモードを実装するのが流行りつつある気がします",
+              "publishedAt": "2018-11-14T14:47:31Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/511",
+        "title": "iOSアプリをKotlin/Nativeで書く",
+        "body": "https://www.raywenderlich.com/7357-ios-app-with-kotlin-native-getting-started",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/510",
+        "title": "Android Dev Summit 2018動画",
+        "body": "https://www.youtube.com/watch?v=ei_5R0CvLm4&list=PLWz5rJ2EKKc8WFYCR9esqGGY0vOZm2l6e\r\n\r\n動画一覧が公開されたようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/509",
+        "title": "Android Dev Summit 2018 KeynoteでFoldableというform factorが発表",
+        "body": "https://android-developers.googleblog.com/2018/11/unfolding-right-now-at-androiddevsummit.html\r\n\r\nPhone <--> Tabletをスムーズに切り替えるFoldableという新しいデバイスタイプが発表されました。開発者側でなにか対応が必要か分かりませんが、Samsungから対応デバイスが来年初めに出るそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGhYL6w==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGhYL6w==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "https://commonsware.com/blog/2018/11/10/foldables-developers.html\r\n\r\nいつものcommonswareさんによる解説はこちら。\r\nガジェットとしてはとても気になります…",
+              "publishedAt": "2018-11-11T08:34:44Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/508",
+        "title": "外部アプリの起動にgetLaunchIntentForPackageを使ってはいけない",
+        "body": "http://shekeenlab.hatenablog.com/entry/2015/09/19/101925\r\n\r\nちょっと刺激的なタイトルなので気になってしまいました。この記事のようにランチャーアプリを作ろうとしている場合は、`getLaunchIntentForPackage` は用途に合わないのかもしれません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/507",
+        "title": "Write Once, Run Everywhere Tests on Android",
+        "body": "https://medium.com/androiddevelopers/write-once-run-everywhere-tests-on-android-88adb2ba20c5",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/506",
+        "title": "flutter.io がリニューアル",
+        "body": "<blockquote class=\"twitter-tweet\" data-lang=\"ja\"><p lang=\"en\" dir=\"ltr\"><a href=\"https://t.co/dtXyeCucnu\">https://t.co/dtXyeCucnu</a> has a new look! <br><br>Visit the site for the latest Flutter news, updates on <a href=\"https://twitter.com/hashtag/FlutterLive?src=hash&amp;ref_src=twsrc%5Etfw\">#FlutterLive</a>, and documentation resources for Flutter developers. <a href=\"https://t.co/SK3VCsc0aa\">pic.twitter.com/SK3VCsc0aa</a></p>&mdash; Flutter (@flutterio) <a href=\"https://twitter.com/flutterio/status/1059477765701783552?ref_src=twsrc%5Etfw\">2018年11月5日</a></blockquote>\r\n\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGf_hiA==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGf_hiA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "シュッとした気がします",
+              "publishedAt": "2018-11-06T10:10:50Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/505",
+        "title": "2018年11月のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/androidx-rn#2018-nov\r\n\r\n- activity-1.0.0-alpha01\r\n- core-1.1.0-alpha01\r\n- fragment-1.1.0-alpha01\r\n  - fragment-testing-1.1.0-alpha01\r\n- preference-1.1.0-alpha01\r\n- versionedparcelable-1.1.0-alpha01\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOGf_WZg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOGgaREA==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ちょっと変更が多いので気になったのをいくつか。\r\n\r\n`ComponentActivity`という新しいActivityが追加されました(以前から存在した`SupportActivity`をリネームしたもののようです)。これは`FragmentActivity`や`AppComatActivity`のベースクラスなようで、アプリ開発者が直接使うものではなさそうです。\r\n`ComponentActivity#addOnBackPressedCallback`という、`onBackPressed`のコールバックを設定できる機能が追加されています。\r\n\r\nFragmentには`FragmentFactory`という、FragmentManagerがFragmentをインスタンス化する挙動をコントロールするためのクラスが追加されています。\r\n\r\n他には`NestedScrollView`が`NestedScrollingChild3`と`NestedScrollingParent3`を実装するようになったりしています。\r\n\r\nとにかく盛り沢山なのでぜひご一読を。",
+              "publishedAt": "2018-11-06T10:01:43Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "- `onRetainCustomNonConfigurationInstance has been deprecated`も一部には影響がありそうです 🙄 \r\n- `fragment-testing` も気になりますね 👀 ",
+              "publishedAt": "2018-11-07T14:20:37Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "hkurokawa",
+                "url": "https://github.com/hkurokawa",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/6446183?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/504",
+        "title": "R8がAndroid Studio 3.3 Betaで利用可能に",
+        "body": "https://android-developers.googleblog.com/2018/11/r8-new-code-shrinker-from-google-is.html\r\n\r\nいままで Canary で利用可能だったR8がBetaで利用可能になったということでしょうか。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/503",
+        "title": "Gradle Play Publisher Plugin 2.2.0-beta2",
+        "body": "https://github.com/Triple-T/gradle-play-publisher/releases/tag/2.0.0-beta2\r\n\r\nGroovyからKotlinに書き換えられたようです。\r\nGradle PluginをKotlinで書く際の参考になりそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

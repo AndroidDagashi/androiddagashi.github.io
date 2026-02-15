@@ -1,0 +1,144 @@
+{
+  "id": "MI_kwDOB4jhdM4AdQ-d",
+  "number": 212,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/212",
+  "title": "212 2022-02-20",
+  "description": "Dagger 2.41、Kotlin syntheticsがKotlin 1.8で削除 、2022年の Flutter のロードマップ、DataStoreのマイグレーションとテスト、など",
+  "closedAt": "2022-02-20T10:33:00Z",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOQ8PoFQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afORD7lew==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2287",
+        "title": "2022年の Flutter のロードマップ",
+        "body": "https://medium.com/flutter/flutter-in-2022-strategy-and-roadmap-8c5eaf7c4275",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2289",
+        "title": "Kotlin syntheticsがKotlin 1.8で削除",
+        "body": "https://android-developers.googleblog.com/2022/02/discontinuing-kotlin-synthetics-for-views.html\r\n\r\nView参照のプロパティを生成してくれるKotlinのプラグインですが、2022年後半にリリース予定のKotlin 1.8で削除されることになります。ViewBindingへの移行が推奨されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2290",
+        "title": "アプリサイズを詳細に計測するGradle Plugin",
+        "body": "https://engineering.atspotify.com/2022/02/introducing-ruler-our-tool-for-measuring-android-app-size/\r\n\r\n各モジュールや依存関係がアプリサイズにどのように影響してるかまで計測してくれるプラグインになります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2291",
+        "title": "DataStoreのマイグレーションとテスト",
+        "body": "https://medium.com/androiddevelopers/datastore-and-data-migration-fdca806eb1aa\r\nhttps://medium.com/androiddevelopers/datastore-and-testing-edf7ae8df3d8\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2292",
+        "title": "Dagger 2.41",
+        "body": "https://github.com/google/dagger/releases/tag/dagger-2.41\r\n\r\nHiltにGradle plugins DSLサポートとCustom injectの新機能が追加されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2293",
+        "title": "Zomatoアプリでの30%のパフォーマンス改善",
+        "body": "https://developer.android.com/stories/apps/zomato\r\n\r\nレガシーなSDKを除く、ViewStubを使うなどして、アプリのパフォーマンス改善を達成した話です。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

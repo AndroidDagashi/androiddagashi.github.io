@@ -1,0 +1,256 @@
+{
+  "id": "MI_kwDOB4jhdM4Acc4d",
+  "number": 202,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/202",
+  "title": "202 2021-12-12",
+  "description": "runTestを使ったCoroutineのテスト、moshiがKSPをサポート、Android 12L Beta1、Kotlin 機能追加に関する調査の結果、Flutter 2.8、など",
+  "closedAt": "2021-12-12T10:04:10Z",
+  "issues": {
+    "totalCount": 9,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOQDwYUw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________HvOQD1-AQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2205",
+        "title": "runTestを使ったCoroutineのテスト",
+        "body": "https://craigrussell.io/2021/12/testing-android-coroutines-using-runtest/\r\n\r\nkotlinx.coroutineのテストライブラリに新しく追加されたrunTestメソッドと使いどころと、Coroutineが絡むテストの勘所について解説をしています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2206",
+        "title": "moshiがKSPをサポート",
+        "body": "https://github.com/square/moshi/blob/master/CHANGELOG.md#version-1130\r\n\r\nmoshi 1.13.0でKSPによるコード生成が可能になりました。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2207",
+        "title": "Android 12L Beta1",
+        "body": "https://android-developers.googleblog.com/2021/12/beta-1-update-for-12l-feature-drop.html\r\n\r\n大画面向けのAndroid 12L Beta1がリリースされています。\r\n大画面向けの機能は使用できませんが、タブレットだけではなくPixelデバイスにもインストール可能です。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2208",
+        "title": "Composeの Slot API pattern",
+        "body": "https://chris.banes.dev/slotting-in-with-compose-ui/\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2209",
+        "title": "Coroutines 1.6.0-RC2",
+        "body": "https://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.6.0-RC2",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2210",
+        "title": "Kotlin 機能追加に関する調査の結果",
+        "body": "https://blog.jetbrains.com/kotlin/2021/12/kotlin-features-survey-2021-results/\r\n\r\n「multicatch と ユニオン型」が一番求められている機能だったそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2211",
+        "title": "Android Studio - Arctic Fox | 2020.3.1 Patch 4",
+        "body": "https://androidstudio.googleblog.com/2021/12/android-studio-arctic-fox-202031-patch.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2212",
+        "title": "Jetpack ComposeでJSONからレイアウトを組み立てる",
+        "body": "https://medium.com/mobile-app-development-publication/jetpack-compose-enables-json-defined-view-layout-b1f8a0d5df8c",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2213",
+        "title": "Flutter 2.8",
+        "body": "https://medium.com/flutter/announcing-flutter-2-8-31d2cb7e19f5\r\nhttps://medium.com/flutter/whats-new-in-flutter-2-8-d085b763d181",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOOx7JzQ==",
+            "endCursor": "Y3Vyc29yOnYyOpHOOx7Kmw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Dart も 2.15 になっています\r\nhttps://medium.com/dartlang/dart-2-15-7e7a598e508a",
+              "publishedAt": "2021-12-12T10:37:07Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "reddit の反応はこちら\r\nhttps://www.reddit.com/r/FlutterDev/comments/rc08ch/announcing_flutter_28/",
+              "publishedAt": "2021-12-12T10:38:43Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

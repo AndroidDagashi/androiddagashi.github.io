@@ -1,0 +1,143 @@
+{
+  "id": "MI_kwDOB4jhdM4A4Q-s",
+  "number": 415,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/415",
+  "title": "415 2026-02-15",
+  "closedAt": "2026-02-15T10:14:19Z",
+  "description": "What’s new in Flutter 3.41、Jetpack Compose移行をAIでサポートする、SharedFlowの様々なオプションの解説、など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO6jk3Dw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvO6xA6iQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3667",
+        "title": "Dart 3.11",
+        "body": "https://blog.dart.dev/announcing-dart-3-11-b6529be4203a\n\nDart 3.11がリリース。解析サーバーが「fine-grained dependencies」により再解析の効率が向上し、IDEセッションの起動も高速化。pub workspaceでglobによるパッケージ指定が可能に。またpub cache gcコマンドが追加され、未使用パッケージを検出・削除してディスク容量を回収できるようになった。MCP Serverにはpackage URIを読み取る新ツールも追加された",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3668",
+        "title": "What’s new in Flutter 3.41",
+        "body": "https://blog.flutter.dev/whats-new-in-flutter-3-41-302ec140e632\n\nFlutter 3.41がリリース。安定版のブランチカットオフ日を公開する「パブリックリリースウィンドウ」を導入。MaterialとCupertinoライブラリを別パッケージに分離する取り組みを継続し、SDK更新を待たずにデザイン変更を適用可能に。CocoaPodsからSwift Package Managerへの移行を推進しプラグイン作者に対応を推奨。フラグメントシェーダーでは同期画像デコードと128bit floatテクスチャをサポート。アセットの対象プラットフォーム指定によるビルドサイズ最適化やUISceneのデフォルト化も含まれる。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3669",
+        "title": "Jetpack Compose移行をAIでサポートする",
+        "body": "https://tech.instacart.com/migrating-to-jetpack-compose-587e912ca858",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3670",
+        "title": "Koinにコンパイラプラグインが導入",
+        "body": "https://blog.insert-koin.io/koin-powered-by-kotlin-compiler-0722f1cc96a4\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3671",
+        "title": "SharedFlowの様々なオプションの解説",
+        "body": "https://medium.com/@yassine.sayah/default-vs-buffered-sharedflow-in-kotlin-a-practical-guide-6abe92aad7d7\n\nデフォルトの場合の挙動、バッファーを使用した場合の挙動など、基本的なSharedFlowの解説をしています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

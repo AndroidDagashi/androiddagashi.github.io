@@ -1,0 +1,179 @@
+{
+  "id": "MI_kwDOB4jhdM4AcnOE",
+  "number": 204,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/204",
+  "title": "204 2021-12-26",
+  "description": "Coroutines 1.6.0、CommonsWare の電子書籍が無料で公開開始、ライブラリが依存するライブラリを最小化するべきかという議論、など",
+  "closedAt": "2021-12-26T11:02:29Z",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOQOP1Uw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPOQOTanA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2224",
+        "title": "Coroutines 1.6.0",
+        "body": "https://blog.jetbrains.com/kotlin/2021/12/introducing-kotlinx-coroutines-1-6-0/\r\nhttps://github.com/Kotlin/kotlinx.coroutines/releases/tag/1.6.0\r\n\r\nKotlin 1.6対応、testライブラリの変更、Kotlin/Nativeの新しいメモリ管理対応、などの変更が入っています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2225",
+        "title": "CommonsWare の電子書籍が無料で公開開始",
+        "body": "https://commonsware.com/blog/2021/12/24/final-books-free-for-all.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2226",
+        "title": "Jetpack Compose Stateのプラクティス",
+        "body": "https://qiita.com/takahirom/items/862f3c607850ce524744",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2227",
+        "title": "ライブラリが依存するライブラリを最小化するべきかという議論",
+        "body": "「ライブラリの依存ライブラリの数はゼロにすべき」という主張に対するJakeの反論です。\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">The hypocrisy of library developers: simultaneously wanting their dependencies to have zero dependencies of their own, but for as many people as possible to depend on what they&#39;re building. <a href=\"https://t.co/cNjc4AtzKG\">https://t.co/cNjc4AtzKG</a></p>&mdash; Jake Wharton (@JakeWharton) <a href=\"https://twitter.com/JakeWharton/status/1474376582156681217?ref_src=twsrc%5Etfw\">December 24, 2021</a></blockquote>",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2228",
+        "title": "CoroutineにおけるCold Flow",
+        "body": "https://code.cash.app/rx-to-coroutines-concepts-cold-flows\r\n\r\n一連のKotlin Coroutineの概念を説明する連載の第4回です。今回は `Flow` について説明しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2229",
+        "title": "ABEMA Androidアプリのリニューアルについて",
+        "body": "https://developers.cyberagent.co.jp/blog/archives/33981/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2230",
+        "title": "JetBrains ToolboxでのCompose Multiplatform採用事例",
+        "body": "https://blog.jetbrains.com/kotlin/2021/12/compose-multiplatform-toolbox-case-study/\r\n\r\nJetBrains Toolbox は Android Studio を含む JetBrains 系 IDE を管理するためのデスクトップアプリケーションです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

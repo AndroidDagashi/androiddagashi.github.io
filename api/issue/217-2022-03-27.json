@@ -1,0 +1,187 @@
+{
+  "id": "MI_kwDOB4jhdM4Adsk5",
+  "number": 217,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/217",
+  "title": "217 2022-03-27",
+  "description": "Kotlin 1.6.20-RC2, Google Play 以外の課金オプション, Kotlin Coruitines の Shared Flow について, SwiftUI と Jetpack Compose の違い, など。",
+  "closedAt": "2022-03-27T10:41:53Z",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vORjQxqw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPORnpP4w==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2335",
+        "title": "Kotlin 1.6.20-RC2",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.6.20-RC2",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOQCRkow==",
+            "endCursor": "Y3Vyc29yOnYyOpHOQCRkow==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "M1: https://github.com/JetBrains/kotlin/releases/tag/v1.6.20-M1\r\nRC1: https://github.com/JetBrains/kotlin/releases/tag/v1.6.20-RC\r\n\r\n上記チェンジログも合わせると全体が見えます",
+              "publishedAt": "2022-03-23T09:11:59Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2336",
+        "title": "Jetpack Core Performance library",
+        "body": "https://android-developers.googleblog.com/2022/03/using-performance-class-to-optimize.html\r\nデバイスごとのメディアのパフォーマンスを見てアプリで挙動を調整可能になるライブラリが追加に。Android 12以上ではMEDIA_PERFORMANCE_CLASSというIntが宣言されていて、12未満にも一部バックポートしてくれるようです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2338",
+        "title": "Google Play以外の課金オプションを導入",
+        "body": "https://android-developers.googleblog.com/2022/03/user-choice-billing.html\r\n\r\nGoogle Play以外の課金オプションをパイロットとして少数の開発者が提供するできるようになります。まずはSpotifyから開始されていきます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2339",
+        "title": "CoroutineのShared Flowsについて",
+        "body": "https://code.cash.app/rx-to-coroutines-shared-flows\r\n\r\nRxのhot observablesと、Coroutineのshared flow(hotのようなもの)の比較を解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2340",
+        "title": "2022年3月23日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel?hl=en#march_23_2022\r\n\r\n今回安定版のリリースはありませんが、 Drag And Drop が 1.0.0-beta01 に、 MediaRouter が 1.3.0-rc01 に到達しています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOQF1rsg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOQF1rsg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake 氏のまとめツイートはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">No stable Jetpack releases today, but that doesn&#39;t mean we can&#39;t talk about MediaRouter 1.3.0-rc01, Drag and Drop hitting 1.0.0-beta01, or any of the new features now available in alpha releases.<a href=\"https://t.co/tP1K0fhDtA\">https://t.co/tP1K0fhDtA</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1506773048967323651?ref_src=twsrc%5Etfw\">March 23, 2022</a></blockquote>",
+              "publishedAt": "2022-03-27T07:18:46Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2341",
+        "title": "Androidエンジニアから見たSwiftUIとJetpack Composeの違い",
+        "body": "https://proandroiddev.com/swiftui-vs-jetpack-compose-by-an-android-engineer-6b48415f36b3",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2342",
+        "title": "ラクマ Androidアプリ開発でのCIを利用した自動化施策",
+        "body": "https://qiita.com/tarumzu/items/9ed6da3646ad7b750ff6",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI",
+              "description": "Continuous Integration",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

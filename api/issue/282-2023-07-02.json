@@ -1,0 +1,163 @@
+{
+  "id": "MI_kwDOB4jhdM4Aki2W",
+  "number": 282,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/282",
+  "title": "282 2023-07-02",
+  "closedAt": "2023-07-02T10:27:10Z",
+  "description": "デバイスタイプを確認する方法、Java RecordをAndroid Studio Flamingoで使用する、Composeでスポットライト機能を実装する、など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOalxUVg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afOal4Fxw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2869",
+        "title": "Java RecordをAndroid Studio Flamingoで使用する",
+        "body": "https://android-developers.googleblog.com/2023/06/records-in-android-studio-flamingo.html\r\n\r\nJava 16で導入されたRecordをAndroidで使用するための解説です。DesugaringとR8についても解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2870",
+        "title": "デバイスタイプを確認する方法",
+        "body": "https://android-developers.googleblog.com/2023/06/detecting-if-device-is-foldable-tablet.html\r\n\r\nデバイスがTabletまたはFoldableなのかを確認する方法をユースケースごとに紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2871",
+        "title": "タイプセーフにString Resourceを扱うためのParaphraseライブラリ",
+        "body": "https://code.cash.app/paraphrase\r\n\r\n実行時エラーを防ぐために、Gradleプラグインを使ってタイプセーフなメソッドを生成してくれます。\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOYFmuxw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOYFmuxw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "ICU Message Format って API 24 から使えたんですね…。しらなかった\r\n\r\nreddit の反応はこちら\r\n\r\nhttps://www.reddit.com/r/androiddev/comments/14kqwop/paraphrase_typesafe_string_resource_formatting/",
+              "publishedAt": "2023-07-02T09:01:16Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2872",
+        "title": "2023年06月28日の AndroidX リリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel#june_28_2023\r\n\r\nKotlin 1.8.22 をサポートした Compose Compiler 1.4.8 がリリースされています。\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOYFnFGw==",
+            "endCursor": "Y3Vyc29yOnYyOpHOYFnFGw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake 氏によるリリースのサマリはこちら\r\n\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">While Compose 1.6.0-alpha01 came out last week, there&#39;s a new Compose 1.5.0-beta03 release, Compose Compiler 1.4.8 (Kotlin 1.8.22 support!), and Navigation 2.7.0-beta02 release in today&#39;s <a href=\"https://twitter.com/hashtag/JetpackReleaseNotes?src=hash&amp;ref_src=twsrc%5Etfw\">#JetpackReleaseNotes</a><a href=\"https://t.co/QSQwid4uIs\">https://t.co/QSQwid4uIs</a></p>&mdash; Ian Lake (@ ianhlake) <a href=\"https://twitter.com/ianhlake/status/1674207469806161921?ref_src=twsrc%5Etfw\">June 29, 2023</a></blockquote>",
+              "publishedAt": "2023-07-02T09:06:17Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2873",
+        "title": "Gradle 8.2",
+        "body": "https://docs.gradle.org/8.2/release-notes.html\r\n\r\nKotlin DSLの改善などの変更が入っています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2874",
+        "title": "Jetpack Composeでスポットライト機能を実装する",
+        "body": "https://blog.studysapuri.jp/entry/2023/6/26/compose-spotlight\r\n\r\nチュートリアル的なやつでよく使うあれです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,240 @@
+{
+  "id": "MI_kwDOB4jhdM4AdKkr",
+  "number": 211,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/211",
+  "title": "211 2022-02-13",
+  "description": "Android 13の最初のDeveloper Previewが公開、Kotlin 1.6.20-M1、Jetpack Compose 1.1、Gradle 7.4、Now in Android エピソード55、など",
+  "closedAt": "2022-02-13T10:08:14Z",
+  "issues": {
+    "totalCount": 9,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOQ5JI-Q==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________HvOQ68aEg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2276",
+        "title": "Android 13の最初のDeveloper Previewが公開",
+        "body": "https://android-developers.googleblog.com/2022/02/first-preview-android-13.html\r\nAndroid 12Lでの変更に加えて、privacyやsecurity、developer productivityなどの取り組みが行われているそうです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 2,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOPc_Zbg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOPeddyw==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Android 13ではJava 11 language supportが行われvarキーワードなどがJavaで利用できるようになり、それがART Mainline Moduleを使ったGoogle Play system updateによってAndroid 12でも利用できるようになることなども話題になっていました。\r\nhttps://developer.android.com/about/versions/13/features#core-libraries",
+              "publishedAt": "2022-02-12T07:03:30Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "takahirom",
+                "url": "https://github.com/takahirom",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/1386930?u=ded0546028d0c2993d504475d0de5f34d8cafc24&v=4"
+              }
+            },
+            {
+              "body": "https://techbooster.org/android/18670/\r\n\r\nTechBooster のまとめ記事はこちら",
+              "publishedAt": "2022-02-14T02:55:22Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2277",
+        "title": "Kotlin 1.6.20-M1",
+        "body": "https://blog.jetbrains.com/kotlin/2022/02/kotlin-1-6-20-m1-released/\r\n\r\n新しい言語機能のContex receiversがPrototypeとして導入されています。他にもJVMのシングルモジュール並列コンパイルや、JSのインクリメンタルコンパイルなどが追加されています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2278",
+        "title": "JankStats Alpha",
+        "body": "https://medium.com/androiddevelopers/jankstats-goes-alpha-8aff942255d5\r\n\r\nパフォーマンス問題の追跡および分析するためのAndroid Xライブラリが新しくAlphaリリースされています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2279",
+        "title": "テストに関するドキュメントが刷新",
+        "body": "https://android-developers.googleblog.com/2022/02/write-better-tests-with-new-testing.html\r\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2280",
+        "title": "DataStoreの実用的な使用方法",
+        "body": "https://medium.com/androiddevelopers/datastore-and-dependency-injection-ea32b95704e3\r\nhttps://medium.com/androiddevelopers/datastore-and-kotlin-serialization-8b25bf0be66c\r\nhttps://medium.com/androiddevelopers/datastore-and-synchronous-work-576f3869ec4c\r\n\r\nDataStoreに関する実用的な使用方法がいくつか紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2281",
+        "title": "2022年2月9日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel?hl=en#february_9_2022\r\n\r\nJetpack Compose 1.1.0, Media 1.5.0 など。\r\nAndroid Studio Bumblebee に対応した Navigation 2.4.1 も出ています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOPd266Q==",
+            "endCursor": "Y3Vyc29yOnYyOpHOPd266Q==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Ian Lake 氏によるまとめはこちら\r\n<blockquote class=\"twitter-tweet\"><p lang=\"en\" dir=\"ltr\">Besides Compose 1.1.0 going stable (🎉!), Media 1.5.0 and bug fix releases in Navigation 2.4.1 (w/ AGP 7.1 compatibility), Lifecycle 2.4.1, Media2 1.2.1, Startup 1.1.1, and Wear Watchface 1.0.1 are out today.<a href=\"https://t.co/HAFiB4O1IF\">https://t.co/HAFiB4O1IF</a></p>&mdash; Ian Lake (@ianhlake) <a href=\"https://twitter.com/ianhlake/status/1491490411776385024?ref_src=twsrc%5Etfw\">February 9, 2022</a></blockquote>",
+              "publishedAt": "2022-02-13T08:58:23Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2282",
+        "title": "Jetpack Compose 1.1",
+        "body": "https://android-developers.googleblog.com/2022/02/jetpack-compose-11-now-stable.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOPd3o8g==",
+            "endCursor": "Y3Vyc29yOnYyOpHOPd3o8g==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "RadioButton をはじめとしたいくつかのコンポーネントでデフォルトのサイズが変わっています。\r\nこれはアクセシビリティを担保するための変更だそうです。",
+              "publishedAt": "2022-02-13T09:17:46Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2283",
+        "title": "Now in Android エピソード55",
+        "body": "https://medium.com/androiddevelopers/now-in-android-55-ff44f10d7d28",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2284",
+        "title": "Gradle 7.4",
+        "body": "https://docs.gradle.org/7.4/release-notes.html\r\n\r\nversion catalogsの正式版、マルチプロジェクトにおけるテストレポートの単一化プラグインなどの変更が入っています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
