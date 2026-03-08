@@ -1,0 +1,115 @@
+{
+  "id": "MI_kwDOB4jhdM4A4hwF",
+  "number": 416,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/416",
+  "title": "416 2026-02-22",
+  "closedAt": "2026-02-22T10:52:54Z",
+  "description": "Android17 Beta1:常設Canary/大画面適応必須,A17大画面:回転固定/リサイズ拒否無効,MessageQueueロックフリー,CIボトルネックはI/O,SnapshotStateList罠, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO7OCDLQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvO7OEmQg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3674",
+        "title": "Android CIのボトルネックはI/Oだった話",
+        "body": "https://medium.com/life360-engineering/android-ci-build-performance-faster-i-o-faster-builds-0cf2e4718e6a\nLife360のAndroid CIはPRごと平均24分。I/Oのみでキャッシュ不可の多数タスクが足かせと判明し、EBSのm8i→SSD搭載r6idnで24%短縮、ストレージ最適化i7iで約4.8分まで改善し40%以上高速化。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI/CD",
+              "description": "Continuous Integration/Deployment",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3675",
+        "title": "Android 17 Beta 1公開：常設Canary移行と大画面“適応必須”(API 37)",
+        "body": "https://android-developers.googleblog.com/2026/02/the-first-beta-of-android-17.html\nAndroid 17 Beta 1を公開。Developer Previewを廃止し常設Canaryへ移行、OTA/CIで早期検証が可能に。API 37では大画面での縦横固定・リサイズ/比率制限が無効化。ロックフリーMessageQueueやART世代別GC、カメラ/メディア(VVC等)、通信/プライバシーも強化。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3676",
+        "title": "Android 17：大画面で回転固定・リサイズ拒否が効かなくなる",
+        "body": "https://android-developers.googleblog.com/2026/02/prepare-your-app-for-resizability-and.html\nAPI 37+をtargetにしたアプリは、sw≥600dpの大画面でscreenOrientation等が無視される。タブレット/折りたたみ/マルチウィンドウでUI崩れが出やすいので、早期の実機・エミュレータ検証が必須。\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3677",
+        "title": "MessageQueueがロックフリー化",
+        "body": "https://android-developers.googleblog.com/2026/02/under-hood-android-17s-lock-free.html\nSDK 37+向けにMessageQueueがロックフリー実装へ。ロック競合を減らしフレーム落ちを抑える一方、privateフィールド/メソッドへのリフレクションアクセスは破壊的変更になり得るため修正が必要。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3678",
+        "title": "SnapshotStateList の toString / equals / hashCode の罠",
+        "body": "https://qiita.com/Daiji256/items/5f3dd1d31f1d635e78a3\nComposeのmutableStateListOfが返すSnapshotStateListは、一般的なListと違いtoString/equals/hashCodeが要素ベースではなく参照ベース寄りの挙動を持つ。==は左辺のequalsを呼ぶため比較結果が非対称になる点に注意。要素比較したい場合はtoList()で通常のListに変換して扱う。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

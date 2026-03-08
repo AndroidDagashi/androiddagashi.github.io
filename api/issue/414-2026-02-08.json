@@ -1,0 +1,121 @@
+{
+  "id": "MI_kwDOB4jhdM4A4BBZ",
+  "number": 414,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/414",
+  "title": "414 2026-02-08",
+  "closedAt": "2026-02-08T10:56:27Z",
+  "description": "折りたたみ・タブレット向けUX最適化, モジュール依存グラフと並列ビルド最大化, 新規アプリのUDF実装の決め方, 証明書ピンニングを超える多層防御戦略",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO6TNqTg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvO6TRoKw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3661",
+        "title": "Android 16以降で利用可能な「Trade-inモード」でデバイス診断を高速化",
+        "body": "https://android-developers.googleblog.com/2026/01/httpsdeveloper.android.comtrade-in-mode-faster-diagnostics-access.html\n\nAndroid 16以降では、工場出荷状態にリセットされた端末に対し、adbコマンドでセットアップウィザードをスキップしてデバイス情報（IMEI、バッテリー健全性、ストレージ寿命、画面・カメラ情報、折りたたみ回数など）を即座に取得できる「Trade-inモード」が導入された。中古端末の査定・流通プロセスを大幅に効率化し、端末の長寿命化とサーキュラーエコノミーを支援する。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3662",
+        "title": "JioHotstarに学ぶ、折りたたみ・タブレット向けUX最適化の実践",
+        "body": "https://android-developers.googleblog.com/2026/01/beyond-smartphone-how-jiohotstar.html\n\nインドの大手ストリーミングサービスJioHotstarが、折りたたみデバイスやタブレット向けにアプリのUXを最適化した事例紹介。WindowSizeClassを活用したアダプティブレイアウトの実装や、Material 3 Adaptiveライブラリによるテーブルトップモード対応などを通じて、大画面向けアプリ品質ガイドラインのTier 1を達成した。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3663",
+        "title": "モジュール依存グラフをフラットにして並列ビルドを最大化する",
+        "body": "https://publicobject.com/2026/02/03/flattening-my-dependency-graph/\n\nKotlinサーバーのモジュール分割において、public/impl/wiringの3モジュール構成パターンを採用し、impl間の依存を排除して並列ビルドを実現する手法を紹介。さらにapi間の依存も解消するため、共有IDクラスをidentifiersモジュールに切り出し、依存グラフをよりフラットにする改善を解説している",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3664",
+        "title": "新規AndroidアプリのUDF実装、どう決めた？",
+        "body": "https://tech-blog.tabelog.com/entry/android-inbound-udf\n\n多言語版食べログアプリの新規開発において、Jetpack Compose向けのUDF実装をどう決めたかを解説。自由設計からMVIに近い構造に収束した経験を踏まえ、Reduxの文脈（Reducer/Action）を状態管理に取り入れ、UseCaseDispatcherでViewModelの責務を分離する構成に落ち着いた。説明コスト・学習コスト・運用コストを判断軸に、既存の国内版アプリのレイヤー構成も活かした実践的な設計事例。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3665",
+        "title": "証明書ピンニングだけでは不十分 ― 現代のMITM攻撃に対抗するための多層防御戦略",
+        "body": "https://proandroiddev.com/why-certificate-pinning-alone-wont-stop-modern-mitm-attacks-469e1d182bea\n\n証明書ピンニングはTLS IDの保護には有効だが、root化端末でのFrida/Xposedによるランタイムフック、セッショントークンの窃取、APKの改竄など現代の攻撃手法には対処できない。本記事では、短寿命トークン・デバイス整合性検証・トランザクション署名・異常検知といった多層防御アプローチの必要性をAndroidの実装例とともに解説する。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "security",
+              "description": "",
+              "color": "2d754b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "id": "MI_kwDOB4jhdM4Az1df",
+  "number": 392,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/392",
+  "title": "392 2025-09-07",
+  "closedAt": "2025-09-07T10:43:38Z",
+  "description": "Media3で動画をプリロードする Part 1, KotlinのContext ParameterとDDD, 強化学習によりGradleビルドを最適化する, BurstのTestInterceptorの紹介, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOyiPh0Q==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvOyiYq9A==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3515",
+        "title": "BurstのTestInterceptorの紹介",
+        "body": "KMPでパラメタライズドテストができるBurstでJUnitのRuleのような機能を紹介しています。\nhttps://code.cash.app/burst-test-interceptors",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3516",
+        "title": "Media3で動画をプリロードする Part 1",
+        "body": "https://android-developers.googleblog.com/2025/09/introducing-preloading-with-media3.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3517",
+        "title": "強化学習によりGradleビルドを最適化する",
+        "body": "Gradleに渡すパラメーターを機械学習により最適化する方法について書かれています。\nhttps://dev.to/cdsap/gradle-learning-day-reinforcement-learning-for-build-optimization-2oh7",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3518",
+        "title": "KotlinのContext ParameterとDDD",
+        "body": "Context Parameterを使って、関数をどこで呼べるのかを制限することで、ドメインの境界をコンパイル時に強制できることが語られています。\nhttps://oguzhansoykan.com/posts/2025/2025-07-21-context-parameters-ddd/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3519",
+        "title": "KMPとCompose Multiplatform の2025年8月ロードマップアップデート",
+        "body": "https://blog.jetbrains.com/kotlin/2025/08/kmp-roadmap-aug-2025/\n\nJetBrainsが今後6〜12ヶ月のKotlin MultiplatformとCompose Multiplatformの開発方針を発表。主要な優先事項は、iOS開発体験の向上（ビルド速度改善、Swift Export機能の開発）、Webターゲットの用途拡大（Compose for WebとKotlin/WasmのBeta版リリース）、IDE開発体験の改善（Windows/Linux向けプラグイン対応、Swift統合の改善）の3つ。その他、Jetpackライブラリの対応拡大、Gradle設定の簡素化、ドキュメント拡充なども計画されている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
