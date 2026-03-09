@@ -1,0 +1,12 @@
+diff --git a/package.json b/package.json
+index 47b32397c413682c9553457ff9d4aea4bb28fd41..bc9c6239eeb48a472ed925f8a322d6fb7c22b142 100644
+--- a/package.json
++++ b/package.json
+@@ -11,6 +11,7 @@
+   "exports": {
+     ".": {
+       "import": "./lib/feed.js",
++      "require": "./lib/feed.js",
+       "types": "./lib/feed.d.ts"
+     }
+   },
