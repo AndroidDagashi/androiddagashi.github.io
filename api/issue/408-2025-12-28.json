@@ -1,0 +1,184 @@
+{
+  "id": "MI_kwDOB4jhdM4A27k9",
+  "number": 408,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/408",
+  "title": "408 2025-12-28",
+  "closedAt": "2025-12-28T11:28:15Z",
+  "description": "Agent SkillsでAndroid UI実装効率化, AIツール活用術, Pagingライブラリ活用術, Composeパフォーマンス改善, Navigation DeepLinkクラッシュ回避",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO4HAkOA==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPO4HI5HA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3617",
+        "title": "Agent Skillsを活用したAndroid UI実装の効率化",
+        "body": "https://blog.kyash.co/entry/agent-skills-android-trial\n\nコンテンツサマリー:\nKyashのAndroidエンジニアがClaude CodeのAgent Skillsを活用し、Figmaデザインから高品質なJetpack Compose UIを生成する取り組みを紹介。「構造化の欠如」と「コンテキストの欠如」という課題に対し、FigmaトークンとTheme実装のマッピングドキュメント化、UI構造設計の知識・ノウハウの言語化をSkillsとしてパッケージング。HITL（Human-in-the-Loop）を組み込み、セクション分割の選択肢を提示することで、保守性の高いコード生成を実現している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3618",
+        "title": "Android Studio Otter 2 Feature Drop | 2025.2.2 Patch 1",
+        "body": "https://androidstudio.googleblog.com/2025/12/android-studio-otter-2-feature-drop_01699200156.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3619",
+        "title": "Android開発者が実践するAIツール活用術",
+        "body": "https://www.reddit.com/r/androiddev/comments/1ptzwnb/what_ai_toolsworkflows_you_do_use_in_android_dev/\n\nr/androiddevでのAndroid開発におけるAIツール活用に関するディスカッション。Firebenderが人気で、Android Studioへの統合度が高くClaude（Sonnet/Opus）を選択可能。Claude Codeも広く利用されている。ベストプラクティスとして「Plan→Iterate→Execute→Verify」のワークフローが推奨され、AIが生成したコードは必ず自分で読んで検証することが重要とされる。一方で技術的負債を懸念しAIを使わない開発者も存在する。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3620",
+        "title": "はてなブログAndroidアプリにおけるPagingライブラリ活用術",
+        "body": "https://developer.hatenastaff.com/entry/2025/12/26/000000\n\n\nはてなブログAndroidアプリのリニューアルで採用されたJetpack Pagingライブラリについて解説。数百件のエントリを効率的に無限スクロール表示するため、RoomをバックエンドにRemoteMediatorでAPI連携する構成を採用。PagingSourceのKeyをIntにする必要性、ソート順にユニークキーを含める重要性、エンティティをモデルに変換するマッパーの実装など、実践的なベストプラクティスが紹介されている。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3621",
+        "title": "Jetpack Compose パフォーマンス改善：Layout Inspector で再コンポーズの問題を特定・解消する実践例",
+        "body": "https://engineering.reiwatravel.co.jp/blog/Advent-Calendar-20251222\n\n令和トラベルのNEWTアプリで、Layout Inspectorを使いComposeの再コンポーズ問題を調査。スクロール時の不要な再コンポーズはgraphicsLayerで描画フェーズに処理を移動、お気に入りトグルの全カード再描画は引数設計の見直し、タイトルバーの連続更新はderivedStateOfで解決。状態の読み取りフェーズを意識することで、大きなリファクタなしにパフォーマンス改善が可能。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3622",
+        "title": "Jetpack Navigation DeepLinkの自動遷移によるCold Startクラッシュを回避する方法",
+        "body": "https://zenn.dev/reality_tech/articles/b9f12578b15d9f\n\nJetpack Navigation ComponentのDeepLink機能を使用する際、Cold Start時にライブラリの自動遷移とアプリ独自の遷移処理が競合してクラッシュする問題について解説。解決策として、NavGraphのDeepLink URIを外部URLとは異なるスキーム（internal://）に変更し、自動遷移を抑止した上でMainActivityから手動でハンドリングする方法を紹介している。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3623",
+        "title": "Android LinuxターミナルでAndroidアプリを開発する",
+        "body": "https://zenn.dev/zaico/articles/40a428cf225ae1\n\nAndroid端末のLinuxターミナル機能を使ってAndroidアプリ開発環境を構築する方法を解説。Android SDKのインストールからAAPT2のARM64対応（qemu-user-staticの活用）、JDK・Git・Claude Codeのセットアップ、ビルドからAPKインストールまでの手順を紹介。RAMの制約やバッテリー消費などの課題もあるが、出先での軽作業には活用可能。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

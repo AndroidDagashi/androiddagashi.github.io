@@ -1,0 +1,97 @@
+{
+  "id": "MI_kwDOB4jhdM4A3LFg",
+  "number": 410,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/410",
+  "title": "410 2026-01-11",
+  "closedAt": "2026-01-11T10:44:23Z",
+  "description": "AndroidX minSdk=24へ, AOSP公開は26年から年2回(Q2/Q4)へ, CIリリースでR8前Kotlin Daemon停止は効く？, AGSL+Composeでグロー表示, など",
+  "issues": {
+    "totalCount": 4,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO4oo9xg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_O4orCAw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3629",
+        "title": "AGSL Shaderを使って、Composeでグローエフェクトを表示する",
+        "body": "AGSL（Android Graphics Shading Language）とComposeのRuntimeShaderを使い、Bottom Navigationに中心から広がるラジアル発光を実装する手順を紹介。uniform（resolution/progress/color）でアニメ連動の光量を制御し、drawWithCacheで効率的に描画。Android 13+のみ発光し、旧端末は安全にフォールバック。\nhttps://proandroiddev.com/building-a-glowing-bottom-navigation-with-agsl-shaders-6a5faa547e09",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3630",
+        "title": "AndroidXのデフォルトminSdkVersionが24に引き上げへ",
+        "body": "AndroidX のデフォルト minSdk を API 24（Android 7.0）へ移行する提案。2026年1月時点のPlay Store分布でAPI24+が99.2%となり、目標サポート率99%を満たすため。変更時期は2026年4月見込み。\nhttps://issuetracker.google.com/issues/474169350",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3631",
+        "title": "AOSPのソース公開が「年2回（Q2/Q4）」へ（2026年から）",
+        "body": "GoogleがAOSPへのソース公開頻度を、2026年からQ2/Q4の年2回に変更。開発・貢献ではaosp-mainよりandroid-latest-releaseの利用を推奨し、trunk stable development modelに揃える方針です。\nhttps://source.android.com/docs/setup/build/feature-flagging",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3632",
+        "title": "R8前にKotlin Daemonを止めると、CIのリリースビルドは速く・省メモリになるのか",
+        "body": "リリースビルドでKotlinCompileDaemonをコンパイル後に強制終了し、R8実行前にOSへメモリを返却。GitHub Actionsで3プロジェクトを100回計測し、最大約15%メモリ削減、R8最大7%短縮、全体も最大3%高速化を確認。単一バリアント前提に注意。\nhttps://dev.to/cdsap/what-happens-when-you-kill-the-kotlin-daemon-before-r8-el7",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

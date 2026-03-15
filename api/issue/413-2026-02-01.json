@@ -1,0 +1,155 @@
+{
+  "id": "MI_kwDOB4jhdM4A3yeu",
+  "number": 413,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/413",
+  "title": "413 2026-02-01",
+  "closedAt": "2026-02-01T10:21:17Z",
+  "description": "Paging KMP対応, QodanaでAndroid Kotlin品質向上, TestFixtures, Play Consoleで収益化推奨アクション, KMP開発体験でモノレポ化, ACP Agent Registry公開, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO5gy9vw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afO51gjRw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3648",
+        "title": "KMP開発体験を改善するためにモノレポ化した話",
+        "body": "https://www.wantedly.com/companies/wantedly/post_articles/1039908#_=_\n\nWantedly Visitアプリで、KMP共通コード・iOS・Androidの3リポジトリをモノレポに統合した事例。従来のGitHub Packages経由の配布では、KMP変更の反映に20分以上かかり、破壊的変更の検知も困難だった。iOS側はXcode pre-actionsでgradlewを実行、Android側はGradle Composite Buildを活用し、本質的には200行程度の変更で移行を実現。KMP変更の即時反映と同一PRでの破壊的変更検知が可能になった。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3650",
+        "title": "Play Console：収益化インサイト/推奨アクションが強化",
+        "body": "収益化の可視化がアップデート。Monetize with Playにインサイト表示が追加され、Cart Conversion RateやARPPU、解約推移などを追いやすく。状況に応じた改善提案やOrders API活用の案内も含まれます。\nhttps://android-developers.googleblog.com/2026/01/accelerating-your-insights-with-faster.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3651",
+        "title": "AndroidプロジェクトでTestFixturesを使用する",
+        "body": "https://star-zero.medium.com/android%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A7testfixtures%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B-d519548cd776\nテスト用のサンプルデータ等を定義して共有するためのTestFixturesというAGPの機能の紹介",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3652",
+        "title": "Paging 3.4.0：KMPターゲット拡充",
+        "body": "https://developer.android.com/jetpack/androidx/releases/paging\nPaging 3.4.0（安定版）。paging-common/testing/composeのKMPターゲットが拡充され、JVM/Native/Webまで広く対応。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3653",
+        "title": "QodanaでAndroidチームのKotlinコード品質向上",
+        "body": "https://blog.jetbrains.com/qodana/2026/01/qodana-for-android-kotlin/\nAndroid特有のLint代替ではなく、Kotlin静的解析をCIに組み込み品質ゲートを作るQodana for Androidを紹介。IDE検査とCI結果を揃え、既存負債はベースラインで段階導入可能。大規模・複数モジュール/共有Kotlin環境での標準化に有効。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3654",
+        "title": "JetBrainsのACP Agent Registry公開、AIエージェントをIDEでカスタマイズ可能に",
+        "body": "オープン標準ACP対応のAIコーディングエージェントを集めた公式レジストリが、JetBrains IDE(2025.3+)とZedに統合。IDE内で発見→インストール→切替まで完結し、ロックインなしで最適なエージェントを選べる。JetBrains AI契約は不要(各エージェント課金は別)。\nhttps://blog.jetbrains.com/ai/2026/01/acp-agent-registry/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
