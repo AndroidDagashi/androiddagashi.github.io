@@ -1,0 +1,132 @@
+{
+  "id": "MI_kwDOB4jhdM4A5ct8",
+  "number": 419,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/419",
+  "title": "419 2026-03-15",
+  "closedAt": "2026-03-15T11:12:49Z",
+  "description": "Room 3.0 alpha01公開, Navigation 3の状態保持と描画分離, Kotlin向けAI観測ライブラリTracy登場, Android Bench公開, WorkManagerでのTTLキャッシュ管理, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO8wo5YQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvO8xKtfg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3694",
+        "title": "Room 3.0 alpha01公開",
+        "body": "Room 3.0 はKotlin Multiplatform重視のメジャー更新です。JavaScript/WASM対応が加わり、SupportSQLite API・Javaコード生成・KAPTを廃止して KSP専用 に。Room 2系ユーザーは移行観点の確認を始めたいタイミングです。\nhttps://android-developers.googleblog.com/2026/03/room-30-modernizing-room.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3695",
+        "title": "Android Bench公開",
+        "body": "Google が Android開発向け公式LLMベンチマーク を公開しました。初回結果ではモデルの成功率が 16〜72% と幅広く、AI支援を使う際は「コード生成できるか」ではなく「Android文脈をどこまで理解しているか」を見極める必要があると分かります。\nhttps://android-developers.googleblog.com/2026/03/elevating-ai-assisted-androi.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3696",
+        "title": "WorkManagerで実現するAndroidローカルキャッシュTTL管理",
+        "body": "Androidのローカル保存にはRedisのようなTTL機能が標準でないため、SharedPreferencesなどの保存先に対してWorkManagerのOneTimeWorkRequestを組み合わせ、キー単位の有効期限管理を実装する手法を紹介。更新時のTTL再設定や、アプリ終了後も効く失効処理、Cache-Control: max-age を使ったバックエンド主導の期限制御まで整理している。\nhttps://proandroiddev.com/implementing-ttl-time-to-live-for-android-local-storage-with-workmanager-73fef3ba95e1",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3697",
+        "title": "Navigation 3は状態保持と描画を分離して設計する",
+        "body": "Jetpack Navigation 3（Nav3）は柔軟な反面、タブ切り替えなどを含む実装では設計が複雑になりやすい。本記事は、rememberDecoratedNavEntries に状態保持したい全バックスタックを渡しつつ、NavDisplay には表示対象だけを渡すことで、非アクティブなタブの ViewModel や状態を保持したまま描画を整理する考え方を解説している。\nhttps://qiita.com/Daiji256/items/c9cb9d8279c9bad687cc",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3698",
+        "title": "Kotlin向けAI可観測性ライブラリ「Tracy」登場",
+        "body": "JetBrainsが、Kotlin製AIアプリに本番レベルの可観測性を簡単に導入できるOSSライブラリ「Tracy」を発表。LLM呼び出しやツール実行、アプリ内部処理を追跡でき、OpenTelemetry経由でLangfuseやJaegerなど各種バックエンドにも接続できる。\nhttps://blog.jetbrains.com/kotlin/2026/03/introducing-tracy-the-ai-observability-library-for-kotlin/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
