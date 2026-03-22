@@ -14,6 +14,7 @@ jobs:
       GH_READONLY_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       PROJECT_USER_NAME: AndroidDagashi
       PROJECT_REPO_NAME: androiddagashi.github.io
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: 'true'
 
     steps:
       - uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8 # v6.0.1
@@ -26,7 +27,7 @@ jobs:
       - run: corepack enable yarn
 
       - name: Setup mise
-        uses: jdx/mise-action@146a28175021df8ca24f8ee1828cc2a60f980bd5 # v3.5.1
+        uses: jdx/mise-action@c1ecc8f748cd28cdeabf76dab3cccde4ce692fe4 # v4.0.0
 
       - name: install dependencies
         run: |
