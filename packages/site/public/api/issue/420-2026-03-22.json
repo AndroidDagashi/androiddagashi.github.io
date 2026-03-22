@@ -1,0 +1,156 @@
+{
+  "id": "MI_kwDOB4jhdM4A50us",
+  "number": 420,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/420",
+  "title": "420 2026-03-22",
+  "closedAt": "2026-03-22T11:22:35Z",
+  "description": "ComposeでExoPlayerプールによる動画プレビュー, Compose状態管理ガイド, Android開発者認証と未検証アプリのサイドロード, Compose HotSwan, Kotlin 2.3.20",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO9VAQWg==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvO9VDteg==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3700",
+        "title": "Jetpack Compose で ExoPlayer をプールしてスムーズな動画プレビューを実現する",
+        "body": "https://proandroiddev.com/pooling-exoplayer-in-jetpack-compose-for-smooth-video-previews-18e51d9bbfdd\n\n\nLazyRow などのスクロール UI でアイテムごとに ExoPlayer を生成・破棄するとジャンクやちらつきが発生する。本記事では、MAX_PLAYERS を上限とするプールを用意し、ビューポート中央に近いアイテムにのみプレーヤーを貸し出す「アクティベーションポリシー」と、返却時に clearVideoSurface() で所有権を厳格に管理する手法を解説。onRenderedFirstFrame() まではプレースホルダーを維持するファーストフレームゲート、解像度・ビットレート制限によるプレーヤー軽量化、ライフサイクル対応も紹介する。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3701",
+        "title": "Compose状態管理ガイド：rememberからrememberNavBackStackまで",
+        "body": "https://proandroiddev.com/jetpack-compose-state-survival-guide-from-remember-to-remembernavbackstack-f24295710278\n\nJetpack Composeの状態管理APIをremember、rememberSaveable、ViewModel、rememberNavBackStackの順に整理し、それぞれの生存範囲（Recomposition・Configuration Change・プロセス死）の違いを解説する記事。Navigation 3で導入されたrememberNavBackStackは内部的にrememberSerializable経由でrememberSaveableを利用しており、ナビゲーション履歴をプロセス死後も安全に復元できる。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3702",
+        "title": "Android開発者認証の詳細と未検証アプリのサイドロード手順",
+        "body": "https://android-developers.googleblog.com/2026/03/android-developer-verification.html\n\nAndroidの開発者認証要件に関する続報。パワーユーザー向けに、未検証開発者のアプリをサイドロードできる「Advanced Flow」が発表された。開発者モード有効化→再起動→1日の待機→生体認証という多段階手順で、詐欺による強制インストールを防ぐ設計。学生・趣味開発者向けには、ID不要・無料で最大20台に配布できる限定配布アカウントも提供予定。いずれも8月に利用可能になる。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHO9Lzxrg==",
+            "endCursor": "Y3Vyc29yOnYyOpHO9Lzxrg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\n\nhttps://www.reddit.com/r/androiddev/comments/1ry6y76/android_developers_blog_android_developer/",
+              "publishedAt": "2026-03-22T11:08:31Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3703",
+        "title": "Compose HotSwan - 実機でCompose Hot Reloadを実現するプラグイン",
+        "body": "https://www.reddit.com/r/androiddev/comments/1ryq1u3/compose_hotswan_compose_hot_reload_on_your_real/\n\nkydoves氏が開発したCompose HotSwanは、実際のAndroidデバイス上でCompose Hot Reloadを可能にするIntelliJ IDEプラグイン。UIの即時反映・状態保持が可能で、リビルドや画面遷移のやり直しが不要になる。Desktop JVMと異なりART上ではHotSwapが困難なため、独自のKotlinコンパイラプラグインとARTランタイムエージェントでこの制約を克服している。KMPプロジェクトにも対応。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3704",
+        "title": "Kotlin 2.3.20 リリース",
+        "body": "https://kotlinlang.org/docs/whatsnew2320.html#new-experimental-features\n\nKotlin 2.3.20がリリースされた。名前ベースの分割代入（Experimental）、Gradle 9.3.0互換、Kotlin/JVMコンパイルでのBuild Tools APIデフォルト化、JPAプラグインのall-open自動適用、LombokプラグインのAlpha昇格、Kotlin/NativeでのC/Objective-Cライブラリ向け新interopモード、Kotlin/Wasmの文字列性能改善、Kotlin/JSでのTypeScriptからのインターフェース実装サポートなどが含まれる。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
