@@ -78,8 +78,7 @@ GitHub Actions workflow (`.github/workflows/deploy.yml`):
 
 - Triggers on push to development branch
 - Builds static site with `nuxi build --preset github_pages`
-- Uploads the built artifact with `actions/upload-pages-artifact`
-- Deploys to GitHub Pages using `actions/deploy-pages` (requires Pages source set to "GitHub Actions" in repo settings)
+- Deploys to master branch for GitHub Pages hosting
 
 ## Important Patterns
 
