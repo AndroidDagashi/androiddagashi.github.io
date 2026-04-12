@@ -1,0 +1,149 @@
+{
+  "id": "MI_kwDOB4jhdM4A61r6",
+  "number": 423,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/423",
+  "title": "423 2026-04-12",
+  "closedAt": "2026-04-12T11:33:27Z",
+  "description": "Android Studio Panda 3, AndroidX リリース, Wear OS 64ビット必須化, Android 16 Edge-to-Edge義務化, Navigation 2→3移行, ZEN Study 10年の変遷, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO_S8qbw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afO_TAShQ==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3717",
+        "title": "Android Studio Panda 3 安定版リリース — Agent Skills とパーミッション管理を強化",
+        "body": "https://android-developers.googleblog.com/2026/04/Increase-Guidance-and-Control-over-Agent-Mode-with-Android-Studio-Panda-3.html\n\nAndroid Studio Panda 3 が安定版としてリリース。プロジェクト固有のワークフローをAIエージェントに学習させる「Agent Skills」（.skills/SKILL.md で定義）と、ファイル読み取り・シェル実行・Web アクセスを細かく制御できる「Agent Permissions」が追加された。承認疲れを防ぐ Always Allow ルールやサンドボックスも利用可能。Android Auto / Automotive OS 向けの「Empty Car App Library App」テンプレートも新たに追加されている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3718",
+        "title": "AndroidX ライブラリ リリースまとめ（2026/4/8）",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel?hl=ja\n\n4月8日のリリースでは、Compose 系が 1.11.0-rc01 に到達（Animation / Foundation / Material / Runtime / UI）。Navigation3 は 1.1.0 安定版と 1.2.0-alpha01 が同時リリース。Credentials 1.6.0、Annotation 1.10.0 / Annotation-experimental 1.6.0 が安定版に。Core UWB が 1.0.0-rc01、Paging 3.5.0-beta01、Room3 3.0.0-alpha03、Wear Compose 1.6.1 安定版、Watchfacepush 1.0.0 安定版なども含む大規模アップデート。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3719",
+        "title": "Wear OS アプリの 64 ビット対応が必須に（2026年9月より）",
+        "body": "https://android-developers.googleblog.com/2026/04/get-your-wear-os-apps-ready-for-64-bit-requirement.html\n\n2026年9月15日より、ネイティブコードを含む Wear OS アプリの新規・更新アップロードには 64 ビット版の提供が必須となる。Kotlin/Java のみのアプリはコード変更不要だが、依存ライブラリが .so ファイルを含む場合は確認が必要。APK Analyzer でネイティブコードの有無を確かめ、32 ビット ABI に対応する 64 ビット .so ファイルの同梱を推奨。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3720",
+        "title": "Android 16 の Edge-to-Edge 義務化——「簡単な修正」が大規模アプリで壊れる理由",
+        "body": "https://proandroiddev.com/android-16s-edge-to-edge-mandate-why-your-simple-fix-will-break-at-scale-7c1e7bcdb22b\n\nAndroid 16（SDK 35 ターゲット）で edge-to-edge が強制適用され、fitsSystemWindows や Modifier.systemBarsPadding() の場当たり的な追加では不十分。Compose Scaffold とレガシー View が混在する大規模コードベースでは insets の「二重消費」によるレイアウト崩れが発生する。CompositionLocal で消費済み insets を一元管理する ProductionGradeScaffold パターンの導入を推奨。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3721",
+        "title": "Navigation 2 → 3 を段階移行する — 共存アーキテクチャの設計と AI による自動化",
+        "body": "https://blog.smartbank.co.jp/entry/2026/04/09/115605\n\n83個のNavGraphを持つAndroidアプリで、公式が非サポートのNav2/Nav3共存を実現する独自ユーティリティ（navBridgeComposable / navDisplayNavGraph）を設計。木構造の葉から根へ1 NavGraphずつ段階移行する戦略を取り、移行パターンをClaude Codeのスキルとして実装することで、構造分析・リライト・統合・コミットまでを自動化。移行のたびにスキルへナレッジを蓄積する好循環を構築している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3722",
+        "title": "ドワンゴのZEN Study（旧N予備校）Androidアプリの10年間の技術変遷を振り返る記事。リリース時のMVP＋RxJavaによる急ピッチ開発から始まり、Kotlin移行、Single Activity化、Jetpack Compose導入、マルチモジュール化を経て、現在はDagger Hilt導入と標準アーキテクチャへの全面刷新に取り組んでいる。",
+        "body": "https://blog.nnn.dev/entry/2026/04/07/110000\n\nドワンゴのZEN Study（旧N予備校）Androidアプリの10年間の技術変遷を振り返る記事。リリース時のMVP＋RxJavaによる急ピッチ開発から始まり、Kotlin移行、Single Activity化、Jetpack Compose導入、マルチモジュール化を経て、現在はDagger Hilt導入と標準アーキテクチャへの全面刷新に取り組んでいる。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
