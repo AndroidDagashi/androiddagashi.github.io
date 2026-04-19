@@ -1,0 +1,121 @@
+{
+  "id": "MI_kwDOB4jhdM4A5IfS",
+  "number": 418,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/418",
+  "title": "418 2026-03-08",
+  "closedAt": "2026-03-08T10:26:20Z",
+  "description": "巨大なGradleモノレポの同期パフォーマンスを改善、Google Playの課金・ストア・手数料を大幅刷新、Jetpack Media3のPreloadManagerの紹介、など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO8Nu6Og==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvO8Nys5Q==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3688",
+        "title": "巨大なGradleモノレポの同期パフォーマンスを改善",
+        "body": "https://autonomousapps.com/blog/shrinking-elephants/post/\n\nIDE Syncを短かくする方法を解説しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3689",
+        "title": "Jetpack ComposeのStyles APIの解説",
+        "body": "https://doveletter.dev/preview/articles/compose-styles\n\nスタイルをModifierではなくて、宣言的なDSLで書けるようになり、よりシンプルなコードでスタイルを表現することができます",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3690",
+        "title": "Jetpack Media3のPreloadManagerの紹介",
+        "body": "https://android-developers.googleblog.com/2026/03/instagram-and-facebook-deliver-instant.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3691",
+        "title": "Google Play、選択肢と開放性の新時代へ——課金・ストア・手数料を大幅刷新",
+        "body": "https://android-developers.googleblog.com/2026/03/a-new-era-for-choice-and-openness.html\n\nGoogleはGoogle Playのビジネスモデルを大幅に更新。開発者が独自の決済システムを使えるようになる課金の選択肢の拡大、品質・安全基準を満たしたサードパーティアプリストアのサイドロードをより簡単にする「Registered App Stores」プログラムの導入、そして手数料の引き下げ（IAP 20%、サブスクリプション 10%など）を発表。Epic Gamesとの世界的な争いも解決済みとして合わせて公表された。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3692",
+        "title": "KMP プロジェクトに AndroidX ViewModel は最適な選択か？",
+        "body": "https://touchlab.co/kmp-view-models\n\nKMP プロジェクトで AndroidX ViewModel を共有する際の課題を考察。Compose Multiplatform では有力な選択肢だが、ネイティブ iOS UI や iOS チームとの協業では、ライフサイクル管理の概念の違いから摩擦が生じやすい。DIY アプローチや SKIE を使った代替案も紹介している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

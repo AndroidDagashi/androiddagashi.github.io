@@ -1,0 +1,232 @@
+{
+  "id": "MI_kwDOB4jhdM4Aecr6",
+  "number": 225,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/225",
+  "title": "225 2022-05-22",
+  "description": "Kotlin 1.7.0-RC, 2022/05/18のAndroidXリリース, Now in Android Google I/Oスペシャルエディション, GPU ProfilerでJankを見つける, など",
+  "closedAt": "2022-05-22T10:56:08Z",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vOSieORQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_OSik-Pw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2409",
+        "title": "Kotlin 1.7.0-RC",
+        "body": "https://github.com/JetBrains/kotlin/releases/tag/v1.7.0-RC\r\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2410",
+        "title": "OkHttpやRetrofitでCronetを使用する",
+        "body": "https://github.com/google/cronet-transport-for-okhttp\r\n\r\nOkHttpやRetrofitでCronet engineを使用することのできるライブラリが公開されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOQ5UfQg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOQ5UfQg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Cronet 自体のドキュメントはこちら\r\nhttps://developer.android.com/guide/topics/connectivity/cronet",
+              "publishedAt": "2022-05-22T08:44:04Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2411",
+        "title": "CPU profilerでJankを見つける",
+        "body": "https://medium.com/androiddevelopers/spot-your-ui-jank-using-cpu-profiler-in-android-studio-9a4c41a54dab\r\n\r\nAndroid StudioのCPU profilerでJankを見つける方法が紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2412",
+        "title": "Now in Android #61  Google I/O 2022スペシャルエディション",
+        "body": "https://medium.com/androiddevelopers/now-in-android-61-special-google-i-o-2022-edition-18b953084650",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2413",
+        "title": "Kotlin Multiplatform での開発サイクルを加速する",
+        "body": "https://medium.com/yazio-engineering/speeding-up-kotlin-multiplatform-61ebf8dae560\r\n\r\n必要ないときは Apple ターゲットを無効にして Gradle Sync にかかる時間を短縮しよう、という話のようです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHOQ5VrTg==",
+            "endCursor": "Y3Vyc29yOnYyOpHOQ5VrTg==",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "redditの反応はこちら\r\nhttps://www.reddit.com/r/androiddev/comments/ut3g5p/speeding_up_kotlin_multiplatform/",
+              "publishedAt": "2022-05-22T10:31:44Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2414",
+        "title": "360LearningでのKotlin Multiplatform採用事例",
+        "body": "https://medium.com/360learning-engineering/key-takeaways-from-our-kotlin-multiplatform-journey-764415e3606f",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2415",
+        "title": "2022年5月18日のAndroidXリリース",
+        "body": "https://developer.android.com/jetpack/androidx/versions/all-channel?hl=en#may_18_2022\r\n\r\nJetpack Compose 1.2.0-beta02が出ています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/2416",
+        "title": "Google I/O で発表されたMaterial Design 3のアップデートへの反応",
+        "body": "https://www.reddit.com/r/androiddev/comments/us5myg/material_design_3_the_third_major_iteration_of/\r\n\r\nFAB が Bottom App Bar に統合されたのがやはり話題になっています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

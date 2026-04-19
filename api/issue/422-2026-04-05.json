@@ -1,0 +1,127 @@
+{
+  "id": "MI_kwDOB4jhdM4A6g1F",
+  "number": 422,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/422",
+  "title": "422 2026-04-05",
+  "closedAt": "2026-04-05T11:38:19Z",
+  "description": "Android Studio/AICore PreviewのGemma 4, App Functionsが拓くアプリの将来, Android Hot Reload, Android KTX, Gradle GitHub Actionの今後, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO-sXYeQ==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afO-sYmfw==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3711",
+        "title": "Gradle GitHub Actionに関する明確化と将来",
+        "body": "https://blog.gradle.org/choice-clarity-future-caching-gradle-actions\ngradle/actions v6 のキャッシュ機構をめぐる混乱への説明と方針修正です。記事では、キャッシュ内容の所有権を主張しない Safe Harbor 条項を明文化し、完全 OSS な basic キャッシュプロバイダを追加して選択肢を戻したと述べています。一方で高機能な Enhanced Caching は今後も既定で育てる方針で、公開リポジトリでは無料、私用でも Basic は無料としています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3712",
+        "title": "App Functionsによるアプリの将来",
+        "body": "https://blog.shreyaspatil.dev/the-future-of-android-apps-with-appfunctions\nAIエージェント時代には、アプリはUIだけでなく中核機能そのものをOSやAIに公開する必要がある、という問題提起です。Android AppFunctions により、関数の説明・引数・戻り値を注釈ベースで定義し、Gemini などが自然言語から発見・実行できるようにします。Android 16 と Jetpack で導入でき、ADB で列挙・実行テストも可能ですが、呼び出しは権限を持つシステムアプリに制限されます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3713",
+        "title": "AndroidでのHot Reloadをどう実現したか",
+        "body": "https://proandroiddev.com/jetpack-compose-hot-reload-on-real-android-devices-with-compose-hotswan-2f5dfccd55bf\nCompose HotSwan という仕組みで、実機 Android 上の Jetpack Compose に近い hot reload を実現する技術解説です。記事では、Kotlin コンパイラ IR レベルの解析、DEX 差分の比較、ART がクラス構造変更を許さない制約の扱い、remember や ViewModel を壊さず状態維持する難しさが説明されます。著者はこれにより再ビルド待ちを大幅短縮できると主張しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3714",
+        "title": "AICore Developer PreviewでのGemma 4告知",
+        "body": "https://android-developers.googleblog.com/2026/04/AI-Core-Developer-Preview.html\nAICore Developer Preview で Gemma 4 を早期利用できる、という発表です。将来の Gemini Nano 4 系につながる位置づけで、140超の言語対応、画像理解を含むマルチモーダル対応、推論・数理・時間理解の改善を説明しています。E2B と E4B の2系統があり、ML Kit Prompt API や Android Studio から試せる流れも紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3715",
+        "title": "Android StudioがGemma 4をサポート",
+        "body": "https://android-developers.googleblog.com/2026/04/android-studio-supports-gemma-4-local.html\nAndroid Studio で Gemma 4 をローカルモデルとして使えるようにし、Agent Mode でのコーディング支援に使うという内容です。ローカル実行なのでコードを外に出さず、API キーやネット接続なしでも基本機能が使える点を強調しています。機能例は新機能実装、複数ファイル横断のリファクタ、ビルド修正で、必要 RAM/容量の目安も載っています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3716",
+        "title": "Android KTXについてのアップデート",
+        "body": "https://jakewharton.com/an-update-on-android-ktx/\nAndroid KTX 系拡張ライブラリは段階的に終了へ、という告知です。理由は失敗ではなく、Kotlin 対応が各本体ライブラリ側に十分取り込まれ、-ktx 側が空または不要になったため。記事では各 KTX モジュールがいつ実質廃止になったかの一覧と、不要依存を Lint で警告したい話が示されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}

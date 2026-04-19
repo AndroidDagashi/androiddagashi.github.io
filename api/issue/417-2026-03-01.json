@@ -1,0 +1,143 @@
+{
+  "id": "MI_kwDOB4jhdM4A40Yc",
+  "number": 417,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/417",
+  "title": "417 2026-03-01",
+  "closedAt": "2026-03-01T11:20:42Z",
+  "description": "AI活用モバイルチームのテスト戦略, Keep Android Open - 開発者認証義務化への反対, Android 17 Beta 2, Androidパスキー実装の罠, Firebase向けAgent Skills",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vO7tSCEw==",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvO7tU1hA==",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3680",
+        "title": "AI活用が進むモバイルチームでテスト戦略はどう変わったか？",
+        "body": "https://www.reddit.com/r/androiddev/comments/1rdzmq0/mobile_teams_using_ai_heavily_has_your_testing/\n\nAI（Cursor/Claude等）を多用するAndroid開発チームにおけるテストワークフロー変化についてのr/androiddev議論スレッド。PMのプロダクトスペック→技術スペック→実装→テストスペックというスペック駆動フローの実践例が紹介される一方、AIがPR差分を肥大化させレビューが困難になる問題、AI生成テストが形式的で実際の動作検証になっていない問題、スクリーンショットテストの活用事例など、実践的な知見が共有されている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3681",
+        "title": "Keep Android Open - Googleの開発者認証義務化に対する反対運動",
+        "body": "https://www.reddit.com/r/androiddev/comments/1renqao/keep_android_open/\n\nGoogleが2026年9月以降、Androidアプリの開発者全員にGoogle への登録・本人確認を義務化する方針に対し、r/androiddev で反対の声が上がっている。F-Droid等の代替ストアやサイドローディングが事実上不可能になる懸念があり、keepandroidopen.org を中心に各国規制当局への通報や不参加の呼びかけが行われている。一方でXDAの報道ではサイドローディング完全禁止ではなく追加警告によるフロー変更との見方もある。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3682",
+        "title": "Android 17 Beta 2リリース",
+        "body": "https://android-developers.googleblog.com/2026/02/the-second-beta-of-android-17.html\n\nAndroid 17の2番目のベータ版が公開。画面上の任意のピクセルから色を取得できるEyeDropper API、プライバシーに配慮した新しいContacts Picker、デバイス間でアプリ状態を引き継ぐHandoff API、UWB DL-TDOAによる屋内ナビゲーション対応、ローカルネットワークアクセス権限の追加、SMS OTP保護の強化などが含まれる。3月にPlatform Stabilityマイルストーンを予定。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3683",
+        "title": "Androidパスキー実装の「甘い罠」",
+        "body": "https://blog.tech-monex.com/entry/2026/02/26/103012\n\nAndroidでWebView経由のパスキー実装を行う際、コード自体よりもDigital Asset Links（assetlinks.json）やApp Linksの検証状態がボトルネックになりやすい点を解説。特にサードパーティSDKのマニフェストマージにより意図しないドメインが混入し、リリースビルドでのみパスキーが動作しなくなるケースと、adbによる検証状態の可視化で原因を特定する手法を紹介している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "security",
+              "description": "",
+              "color": "2d754b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3684",
+        "title": "Firebase向けAgent Skills",
+        "body": "https://developers-jp.googleblog.com/2026/02/the-firebase-blog-firebase-agent-skills.html\n\nGoogleがAIエージェント向けに「Agent Skills for Firebase」をリリース。AIエージェントがFirebaseのドキュメント全体を読み込む代わりに、タスクに必要な情報だけを段階的に取得する「段階的開示」により、トークン消費を削減しつつ正確なコード生成を実現する。認証、Firestore、セキュリティルール、App Hostingなどに対応し、30以上のコーディングエージェントで利用可能。MCP・CLIとの併用が推奨されている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
