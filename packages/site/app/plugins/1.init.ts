@@ -3,7 +3,7 @@ import { useDigestStore } from '~/store/digest'
 
 export default defineNuxtPlugin({
   name: 'init',
-  async setup(nuxtApp) {
+  async setup() {
     // Nuxt 4: setup関数内でcomposableを使用
     const digestStore = useDigestStore()
 
