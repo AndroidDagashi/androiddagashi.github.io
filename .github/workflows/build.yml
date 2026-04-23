@@ -29,5 +29,8 @@ jobs:
           corepack enable yarn
           yarn install
 
+      - name: Lint
+        run: yarn site:lint
+
       - name: Generate website
         run: yarn workspace site exec nuxi build --preset github_pages
