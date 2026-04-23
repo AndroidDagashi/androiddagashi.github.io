@@ -25,13 +25,18 @@
         "!vue-template-compiler",
         "!@nuxt/devtools",
         "!@nuxt/eslint",
+        "!@nuxt/eslint-config",
+        "!@nuxt/eslint-plugin",
         "!@nuxt/kit",
         "!@nuxt/types",
         "!nuxi",
         "!nuxt",
         "!@nuxtjs/tailwindcss",
         "!node",
-        "!@types/node"
+        "!@types/node",
+        "!eslint",
+        "!eslint-config-prettier",
+        "!eslint-plugin-prettier"
       ]
     },
     {
@@ -54,7 +59,6 @@
     {
       "matchPackageNames": [
         "@nuxt/devtools",
-        "@nuxt/eslint",
         "@nuxt/kit",
         "@nuxt/types",
         "nuxi",
@@ -62,6 +66,20 @@
       ],
       "enabled": true,
       "groupName": "Nuxt.js"
+    },
+    {
+      "matchPackageNames": [
+        "eslint",
+        "@nuxt/eslint",
+        "@nuxt/eslint-config",
+        "@nuxt/eslint-plugin",
+        "eslint-config-prettier",
+        "eslint-plugin-prettier"
+      ],
+      "groupName": "ESLint",
+      "groupSlug": "eslint",
+      "separateMajorMinor": false,
+      "separateMultipleMajor": false
     },
     {
       "matchPackageNames": [
