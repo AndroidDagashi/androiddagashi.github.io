@@ -1,0 +1,139 @@
+{
+  "id": "MI_kwDOB4jhdM4A7gsz",
+  "number": 425,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/425",
+  "title": "425 2026-04-26",
+  "closedAt": "2026-04-26T10:21:33Z",
+  "description": "KMP導入材料集, AS Panda 4 Planning Modeなど, Compose 1.11が安定版に, Nav3のMetadataで宣言的にマルチペインUI, Nav 3でViewModelを画面単位にする方法, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAQH4-DA=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvPAAAAAQH5XfE=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3726",
+        "title": "Compose Navigation 3でViewModelのスコープを画面単位にする方法",
+        "body": "https://proandroiddev.com/scope-of-viewmodels-in-compose-navigation-3-fb0de3aa84e5\nCompose Navigation 3では、デフォルトのviewModel()がActivityスコープになり、画面再訪時にViewModelが再生成されず古い状態が残る場合があります。lifecycle-viewmodel-navigation3とrememberViewModelStoreNavEntryDecorator()を使い、Navigation 2相当のNavEntry単位スコープにする方法を解説しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3727",
+        "title": "Nav3のMetadataで宣言的にマルチペインUIを構築",
+        "body": "https://proandroiddev.com/scope-of-viewmodels-in-compose-navigation-3-fb0de3aa84e5\n折りたたみ端末やタブレット対応で重要になるAdaptive Layoutを、Navigation 3のNavEntry metadataとScene/SceneStrategyで実現する方法を解説。画面ごとに表示位置や役割を宣言し、リスト・詳細などのマルチペインUIを端末幅に応じて切り替える設計を紹介しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3728",
+        "title": "Jetpack Compose 2026年4月リリース、Compose 1.11が安定版に",
+        "body": "https://android-developers.googleblog.com/2026/04/jetpack-compose-april-2026-updates.html\nJetpack Compose April ’26では、Compose BOM 2026.04.01とCompose 1.11.0が安定版に。テストAPI v2の標準化、共有要素アニメーションのデバッグ支援、トラックパッド対応改善に加え、Styles、MediaQuery、Grid、FlexBoxなどの実験的APIも紹介されています。\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3729",
+        "title": "Android Studio Panda 4安定版、Planning ModeとNext Edit Predictionを搭載",
+        "body": "https://android-developers.googleblog.com/2026/04/android-studio-panda-4-planning-mode-next-edit-prediction.html\nAndroid Studio Panda 4が安定版として公開されました。AIエージェントが実装前に計画を提示するPlanning Mode、関連する次の修正箇所を予測するNext Edit Predictionに加え、Gemini API Starter TemplateやAgent Web Searchも追加されています。\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3730",
+        "title": "意思決定者にKMP導入を納得してもらうための材料集",
+        "body": "https://blog.jetbrains.com/kotlin/2026/04/helping-decision-makers-say-yes-to-kmp/\nKotlin Multiplatformを技術選定ではなく、重複実装の削減や開発速度向上、品質改善につながる戦略的投資として説明する記事。コード削減率やリリース短縮、導入企業の事例を交え、まずはビジネスロジック共有の小さなパイロットから始めることを提案しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
