@@ -41,7 +41,7 @@
       {
         "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3727",
         "title": "Nav3のMetadataで宣言的にマルチペインUIを構築",
-        "body": "https://proandroiddev.com/scope-of-viewmodels-in-compose-navigation-3-fb0de3aa84e5\n折りたたみ端末やタブレット対応で重要になるAdaptive Layoutを、Navigation 3のNavEntry metadataとScene/SceneStrategyで実現する方法を解説。画面ごとに表示位置や役割を宣言し、リスト・詳細などのマルチペインUIを端末幅に応じて切り替える設計を紹介しています。",
+        "body": "https://proandroiddev.com/declarative-adaptive-layouts-leveraging-nav3-metadata-for-multi-pane-ui-59c029adef83\n折りたたみ端末やタブレット対応で重要になるAdaptive Layoutを、Navigation 3のNavEntry metadataとScene/SceneStrategyで実現する方法を解説。画面ごとに表示位置や役割を宣言し、リスト・詳細などのマルチペインUIを端末幅に応じて切り替える設計を紹介しています。",
         "labels": {
           "nodes": [
             {
@@ -52,14 +52,37 @@
           ]
         },
         "comments": {
-          "totalCount": 0,
+          "totalCount": 2,
           "pageInfo": {
-            "startCursor": null,
-            "endCursor": null,
+            "startCursor": "Y3Vyc29yOnYyOpHPAAAAAQI5PKk=",
+            "endCursor": "Y3Vyc29yOnYyOpHPAAAAAQI6UaQ=",
             "hasPreviousPage": false,
             "hasNextPage": false
           },
-          "nodes": []
+          "nodes": [
+            {
+              "body": "@takahirom \nいつも楽しくAndroid Dagashiを拝見させていただいています。\n\nリンク先についてなのですが、Compose Navigation 3でViewModelのスコープを画面単位にする方法のURLと同じURLが貼られている気がします。\n\nお手隙の際にご確認いただけますと幸いです。",
+              "publishedAt": "2026-04-28T04:04:21Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "Toma-0",
+                "url": "https://github.com/Toma-0",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/69076412?v=4"
+              }
+            },
+            {
+              "body": "@Toma-0 ありがとうございます。修正しました 🙏 ",
+              "publishedAt": "2026-04-28T04:25:49Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "takahirom",
+                "url": "https://github.com/takahirom",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/1386930?u=ded0546028d0c2993d504475d0de5f34d8cafc24&v=4"
+              }
+            }
+          ]
         }
       },
       {
