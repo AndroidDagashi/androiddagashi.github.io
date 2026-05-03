@@ -1,0 +1,173 @@
+{
+  "id": "MI_kwDOB4jhdM4A72yw",
+  "number": 426,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/426",
+  "title": "426 2026-05-03",
+  "closedAt": "2026-05-03T11:38:29Z",
+  "description": "KMPは2026年に使う価値があるか, Composeのstateを置く場所, Compose Nav 3でMulti-BackStack見直し, AI開発エージェントのドキュメント参照をAndroid CLIへ",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAQSQRpM=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afPAAAAAQSR_i0=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3731",
+        "title": "Kotlin Multiplatform（KMP）は2026年、本当に使う価値があるのか？",
+        "body": "https://www.reddit.com/r/androiddev/comments/1sx6qkg/is_kotlin_multiplatform_kmm_actually_worth_using/\n\nKMPを実プロジェクトで使うべきか問うOPに対し、「5年運用していてビジネスロジックの共有がとても楽」「CMPで200k+ LOCを本番で安定稼働中」など肯定的な声が多数。UIは両OSネイティブ構成が主流で少人数チームの恩恵が特に大きい一方、iOSビルドの遅さやFlutter派からの反論もあり。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3732",
+        "title": "Self-hosted runnerにおけるAndroidのGradleキャッシュ運用",
+        "body": "https://developer.hatenastaff.com/entry/2026/04/27/150913\n\nはてなのマンガアプリチームによる、Self-hosted runner上でのAndroid向けGradleキャッシュ運用の知見。GitHub Actions標準キャッシュの10GB制限と削除頻度短縮を受けてAmazon S3バックエンド（runs-on/cache）に移行し `~/.gradle/caches` など4パスを個別保存。デフォルトブランチを起点としたキー設計でアクセス制御を行い、downloadedResources等のcleanup設定で肥大化も抑制している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "CI/CD",
+              "description": "Continuous Integration/Deployment",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3733",
+        "title": "AIと共に技術負債と向き合う。OpenAPI GeneratorへのOSSコントリビュートを果たした記録",
+        "body": "https://buildersbox.corp-sansan.com/entry/2026/04/24/100000\n\nEight AndroidチームによるOpenAPI Generatorへのコントリビュート記録。kotlinx_serializationでdiscriminatorなしoneOfが空クラスとして生成される問題に対し、Claude Codeでコード生成パイプラインを解読しつつ、sealed interface + @JvmInline value classによる型安全な生成を実装し、本体に取り込まれた。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3734",
+        "title": "AI開発エージェントのドキュメント参照をAndroid CLIに置き換えた話 — 何を変えて、何を残したか",
+        "body": "https://zenn.dev/dely_jp/articles/383b2d538fad56\n\nGoogleが公開したAI開発エージェント向け公式ツールAndroid CLIを、Claude Codeベースの開発フロー3系統に導入できるか実測比較。ドキュメント参照はandroid docsでトークン92%削減を達成し採用、一方コード分析はandroid describeがWall-clock約9倍遅く、ビルド検証は該当コマンドなしのため見送った判断過程を記録している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3735",
+        "title": "Composeのstateはどこに置くべきか？ 実践ガイド",
+        "body": "https://proandroiddev.com/where-should-state-live-in-compose-a-practical-guide-90a3e340e8ca\n\nComposeでstateをComposableに置くかViewModelに置くか迷ったときの実践ガイド。「ビジネスロジックに影響するか」を判断軸に、UI stateはComposable内に、business stateはViewModelに置くという原則を、ドラッグ&ドロップの例やライフサイクルの観点から解説。早すぎるViewModelへのstateホイスティングという落とし穴も指摘する。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3736",
+        "title": "Compose Navigation 3でMulti-BackStackを見直す：Segmented Single Stackという選択肢",
+        "body": "https://proandroiddev.com/rethinking-multi-backstack-the-case-for-a-segmented-single-stack-in-compose-navigation-3-fc5f9d747edb\n\nJetpack Compose Navigation 3でBottom Navigationのために複数のバックスタックを使うのは過剰設計ではないかと問題提起する記事。代わりに、単一のNavBackStackで各タブのルートをマーカーとして扱い、タブ切替時にセグメントを先頭へ移動する「Segmented Single Stack」アプローチを提案している。リスト管理の透明性と予測可能性が利点。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
