@@ -1,10 +1,16 @@
 name: Post new release on SNS accounts
-on: page_build
+on:
+  workflow_dispatch:
+  workflow_run:
+    workflows: ["Deploy Website"]
+    types:
+      - completed
 
 jobs:
   update:
     name: Tweet new release
     runs-on: ubuntu-latest
+    if: ${{ github.event_name == 'workflow_dispatch' || github.event.workflow_run.conclusion == 'success' }}
     env:
       TZ: Asia/Tokyo
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
