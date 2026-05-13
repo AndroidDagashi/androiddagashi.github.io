@@ -1,3 +1,11 @@
+/** Internal type. DO NOT USE DIRECTLY. */
+type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] }
+/** Internal type. DO NOT USE DIRECTLY. */
+export type Incremental<T> =
+  | T
+  | {
+      [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never
+    }
 /* eslint-disable */
 import * as Types from '../globals'
 
@@ -5,11 +13,10 @@ import { GraphQLClient, RequestOptions } from 'graphql-request'
 import { GraphQLError, print } from 'graphql'
 import gql from 'graphql-tag'
 type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
-export type GetRateLimitVariables = Types.Exact<{ [key: string]: never }>
+export type GetRateLimitVariables = Exact<{ [key: string]: never }>
 
 export type GetRateLimit = {
-  rateLimit?: {
-    __typename?: 'RateLimit'
+  rateLimit: {
     limit: number
     cost: number
     remaining: number
