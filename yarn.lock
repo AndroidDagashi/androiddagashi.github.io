@@ -1234,18 +1234,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/add@npm:^6.0.0":
-  version: 6.0.1
-  resolution: "@graphql-codegen/add@npm:6.0.1"
-  dependencies:
-    "@graphql-codegen/plugin-helpers": "npm:^6.3.0"
-    tslib: "npm:^2.8.0"
-  peerDependencies:
-    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: 10c0/105278c484e2c767283cc2241956be71798a741d1ada06e6d7cf5905c3d9af0cc5338c23e51179cd82c82868c52d47f171ce3d405e2e99eaec6cc398933960ba
-  languageName: node
-  linkType: hard
-
 "@graphql-codegen/add@npm:^7.0.0":
   version: 7.0.0
   resolution: "@graphql-codegen/add@npm:7.0.0"
@@ -1366,20 +1354,6 @@ __metadata:
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
   checksum: 10c0/a6cf7ac8ae932ae05287c3b3f2383cb9add72adc3005ad7c4bb945b03b0e3f93f6965caac0965d53659898cf6c51194a454fcbbd2aea13a807534ba507126768
-  languageName: node
-  linkType: hard
-
-"@graphql-codegen/import-types-preset@npm:4.0.1":
-  version: 4.0.1
-  resolution: "@graphql-codegen/import-types-preset@npm:4.0.1"
-  dependencies:
-    "@graphql-codegen/add": "npm:^6.0.0"
-    "@graphql-codegen/plugin-helpers": "npm:^6.3.0"
-    "@graphql-codegen/visitor-plugin-common": "npm:^6.3.0"
-    tslib: "npm:^2.8.1"
-  peerDependencies:
-    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0
-  checksum: 10c0/6de09106da538988cf95c318854c3b07ea37ee03b826b704945de6588a88e6fae53b7cf159514c01bc51d8a99c7e5b07edad0e6c360592c79fca437981993789
   languageName: node
   linkType: hard
 
@@ -8423,7 +8397,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"graphql-tag@npm:^2.11.0":
+"graphql-tag@npm:2.12.6, graphql-tag@npm:^2.11.0":
   version: 2.12.6
   resolution: "graphql-tag@npm:2.12.6"
   dependencies:
@@ -12506,7 +12480,6 @@ __metadata:
   resolution: "site-api-github@workspace:packages/site-api-github"
   dependencies:
     "@graphql-codegen/cli": "npm:7.0.0"
-    "@graphql-codegen/import-types-preset": "npm:4.0.1"
     "@graphql-codegen/introspection": "npm:6.0.0"
     "@graphql-codegen/near-operation-file-preset": "npm:5.2.1"
     "@graphql-codegen/typescript": "npm:6.0.1"
@@ -12516,6 +12489,7 @@ __metadata:
     cross-fetch: "npm:4.1.0"
     graphql: "npm:16.13.2"
     graphql-request: "npm:7.4.0"
+    graphql-tag: "npm:2.12.6"
     site-common: "npm:1.0.0"
     site-types: "npm:1.0.0"
     tsx: "npm:4.21.0"
