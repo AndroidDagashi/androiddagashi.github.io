@@ -16,7 +16,7 @@ import { BlueskyClient } from './src/bluesky/BlueskyClient'
 import BlueskyConfig from './src/bluesky/BlueskyConfig'
 
 function createDagashiClient(): DagashiClient {
-  const apiDirectory = path.resolve(__dirname, '../site/public/api')
+  const apiDirectory = path.resolve(import.meta.dirname, '../site/public/api')
   const config = new DagashiConfig(apiDirectory)
   return new DagashiClient(config)
 }
@@ -44,7 +44,7 @@ function createBlueskyClient(): BlueskyClient {
 
 async function createFirestoreClient(): Promise<FirestoreClient> {
   const jsonPath = path.resolve(
-    __dirname,
+    import.meta.dirname,
     '../../androiddagashi-serviceaccount.json'
   )
   const serviceAccount = JSON.parse(await readFile(jsonPath))

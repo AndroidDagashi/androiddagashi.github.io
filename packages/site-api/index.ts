@@ -15,8 +15,8 @@ async function generateApi(): Promise<void> {
     process.env.GH_READONLY_TOKEN || '',
     siteConfig.issueRepository.owner,
     siteConfig.issueRepository.name,
-    path.normalize(`${__dirname}/../../.temp/api`),
-    path.normalize(`${__dirname}/../site/public/api`)
+    path.normalize(`${import.meta.dirname}/../../.temp/api`),
+    path.normalize(`${import.meta.dirname}/../site/public/api`)
   )
 
   if (existsSync(config.tempOutputDirs.root)) {
