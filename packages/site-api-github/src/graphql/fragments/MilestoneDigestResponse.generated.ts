@@ -1,3 +1,9 @@
+/** Internal type. DO NOT USE DIRECTLY. */
+export type Incremental<T> =
+  | T
+  | {
+      [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never
+    }
 /* eslint-disable */
 import * as Types from '../globals'
 
@@ -6,18 +12,13 @@ import { GraphQLError, print } from 'graphql'
 import gql from 'graphql-tag'
 type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
 export type MilestoneDigestResponse = {
-  __typename?: 'Milestone'
   id: string
   number: number
   url: string
   title: string
-  description?: string | null
-  closedAt?: string | null
-  issues: {
-    __typename?: 'IssueConnection'
-    totalCount: number
-    nodes?: Array<{ __typename?: 'Issue'; title: string } | null> | null
-  }
+  description: string | null
+  closedAt: string | null
+  issues: { totalCount: number; nodes: Array<{ title: string } | null> | null }
 }
 
 export const MilestoneDigestResponse = gql`

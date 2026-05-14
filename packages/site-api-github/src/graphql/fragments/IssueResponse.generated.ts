@@ -1,3 +1,9 @@
+/** Internal type. DO NOT USE DIRECTLY. */
+export type Incremental<T> =
+  | T
+  | {
+      [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never
+    }
 /* eslint-disable */
 import * as Types from '../globals'
 
@@ -10,56 +16,35 @@ import { IssueCommentResponse } from './IssueCommentResponse.generated'
 import { AuthorResponse } from './AuthorResponse.generated'
 type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
 export type IssueResponse = {
-  __typename?: 'Issue'
   url: string
   title: string
   body: string
-  labels?: {
-    __typename?: 'LabelConnection'
-    nodes?: Array<{
-      __typename?: 'Label'
+  labels: {
+    nodes: Array<{
       name: string
-      description?: string | null
+      description: string | null
       color: string
     } | null> | null
   } | null
   comments: {
-    __typename?: 'IssueCommentConnection'
     totalCount: number
     pageInfo: {
-      __typename?: 'PageInfo'
-      startCursor?: string | null
-      endCursor?: string | null
+      startCursor: string | null
+      endCursor: string | null
       hasPreviousPage: boolean
       hasNextPage: boolean
     }
-    nodes?: Array<{
-      __typename?: 'IssueComment'
+    nodes: Array<{
       body: string
-      publishedAt?: string | null
+      publishedAt: string | null
       isMinimized: boolean
-      minimizedReason?: string | null
-      author?:
-        | { __typename?: 'Bot'; login: string; url: string; avatarUrl: string }
-        | {
-            __typename?: 'EnterpriseUserAccount'
-            login: string
-            url: string
-            avatarUrl: string
-          }
-        | {
-            __typename?: 'Mannequin'
-            login: string
-            url: string
-            avatarUrl: string
-          }
-        | {
-            __typename?: 'Organization'
-            login: string
-            url: string
-            avatarUrl: string
-          }
-        | { __typename?: 'User'; login: string; url: string; avatarUrl: string }
+      minimizedReason: string | null
+      author:
+        | { login: string; url: string; avatarUrl: string }
+        | { login: string; url: string; avatarUrl: string }
+        | { login: string; url: string; avatarUrl: string }
+        | { login: string; url: string; avatarUrl: string }
+        | { login: string; url: string; avatarUrl: string }
         | null
     } | null> | null
   }
@@ -85,6 +70,9 @@ export const IssueResponse = gql`
       }
     }
   }
+  ${LabelResponse}
+  ${PageInfoResponse}
+  ${IssueCommentResponse}
 `
 
 export type SdkFunctionWrapper = <T>(

@@ -1,3 +1,9 @@
+/** Internal type. DO NOT USE DIRECTLY. */
+export type Incremental<T> =
+  | T
+  | {
+      [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never
+    }
 /* eslint-disable */
 import * as Types from '../globals'
 
@@ -7,32 +13,16 @@ import gql from 'graphql-tag'
 import { AuthorResponse } from './AuthorResponse.generated'
 type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
 export type IssueCommentResponse = {
-  __typename?: 'IssueComment'
   body: string
-  publishedAt?: string | null
+  publishedAt: string | null
   isMinimized: boolean
-  minimizedReason?: string | null
-  author?:
-    | { __typename?: 'Bot'; login: string; url: string; avatarUrl: string }
-    | {
-        __typename?: 'EnterpriseUserAccount'
-        login: string
-        url: string
-        avatarUrl: string
-      }
-    | {
-        __typename?: 'Mannequin'
-        login: string
-        url: string
-        avatarUrl: string
-      }
-    | {
-        __typename?: 'Organization'
-        login: string
-        url: string
-        avatarUrl: string
-      }
-    | { __typename?: 'User'; login: string; url: string; avatarUrl: string }
+  minimizedReason: string | null
+  author:
+    | { login: string; url: string; avatarUrl: string }
+    | { login: string; url: string; avatarUrl: string }
+    | { login: string; url: string; avatarUrl: string }
+    | { login: string; url: string; avatarUrl: string }
+    | { login: string; url: string; avatarUrl: string }
     | null
 }
 
@@ -46,6 +36,7 @@ export const IssueCommentResponse = gql`
       ...AuthorResponse
     }
   }
+  ${AuthorResponse}
 `
 
 export type SdkFunctionWrapper = <T>(

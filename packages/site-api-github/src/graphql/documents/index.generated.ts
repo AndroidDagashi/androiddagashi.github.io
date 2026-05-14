@@ -1,3 +1,11 @@
+/** Internal type. DO NOT USE DIRECTLY. */
+type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] }
+/** Internal type. DO NOT USE DIRECTLY. */
+export type Incremental<T> =
+  | T
+  | {
+      [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never
+    }
 /* eslint-disable */
 import * as Types from '../globals'
 
@@ -11,38 +19,33 @@ import { LabelResponse } from '../fragments/LabelResponse.generated'
 import { IssueCommentResponse } from '../fragments/IssueCommentResponse.generated'
 import { AuthorResponse } from '../fragments/AuthorResponse.generated'
 type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
-export type GetMilestoneDigestsVariables = Types.Exact<{
-  repoOwner: Types.Scalars['String']['input']
-  repoName: Types.Scalars['String']['input']
-  after?: Types.InputMaybe<Types.Scalars['String']['input']>
+export type GetMilestoneDigestsVariables = Exact<{
+  repoOwner: string
+  repoName: string
+  after?: string | null | undefined
 }>
 
 export type GetMilestoneDigests = {
-  repository?: {
-    __typename?: 'Repository'
+  repository: {
     name: string
     url: string
-    milestones?: {
-      __typename?: 'MilestoneConnection'
+    milestones: {
       totalCount: number
-      nodes?: Array<{
-        __typename?: 'Milestone'
+      nodes: Array<{
         id: string
         number: number
         url: string
         title: string
-        description?: string | null
-        closedAt?: string | null
+        description: string | null
+        closedAt: string | null
         issues: {
-          __typename?: 'IssueConnection'
           totalCount: number
-          nodes?: Array<{ __typename?: 'Issue'; title: string } | null> | null
+          nodes: Array<{ title: string } | null> | null
         }
       } | null> | null
       pageInfo: {
-        __typename?: 'PageInfo'
-        startCursor?: string | null
-        endCursor?: string | null
+        startCursor: string | null
+        endCursor: string | null
         hasPreviousPage: boolean
         hasNextPage: boolean
       }
@@ -50,94 +53,59 @@ export type GetMilestoneDigests = {
   } | null
 }
 
-export type GetMilestoneByNumberVariables = Types.Exact<{
-  repoOwner: Types.Scalars['String']['input']
-  repoName: Types.Scalars['String']['input']
-  milestoneNumber: Types.Scalars['Int']['input']
+export type GetMilestoneByNumberVariables = Exact<{
+  repoOwner: string
+  repoName: string
+  milestoneNumber: number
 }>
 
 export type GetMilestoneByNumber = {
-  repository?: {
-    __typename?: 'Repository'
-    milestone?: {
-      __typename?: 'Milestone'
+  repository: {
+    milestone: {
       id: string
       number: number
       url: string
       title: string
-      description?: string | null
-      closedAt?: string | null
+      description: string | null
+      closedAt: string | null
       issues: {
-        __typename?: 'IssueConnection'
         totalCount: number
         pageInfo: {
-          __typename?: 'PageInfo'
-          startCursor?: string | null
-          endCursor?: string | null
+          startCursor: string | null
+          endCursor: string | null
           hasPreviousPage: boolean
           hasNextPage: boolean
         }
-        nodes?: Array<{
-          __typename?: 'Issue'
+        nodes: Array<{
           url: string
           title: string
           body: string
-          labels?: {
-            __typename?: 'LabelConnection'
-            nodes?: Array<{
-              __typename?: 'Label'
+          labels: {
+            nodes: Array<{
               name: string
-              description?: string | null
+              description: string | null
               color: string
             } | null> | null
           } | null
           comments: {
-            __typename?: 'IssueCommentConnection'
             totalCount: number
             pageInfo: {
-              __typename?: 'PageInfo'
-              startCursor?: string | null
-              endCursor?: string | null
+              startCursor: string | null
+              endCursor: string | null
               hasPreviousPage: boolean
               hasNextPage: boolean
             }
-            nodes?: Array<{
-              __typename?: 'IssueComment'
+            nodes: Array<{
               body: string
-              publishedAt?: string | null
+              publishedAt: string | null
               isMinimized: boolean
-              minimizedReason?: string | null
-              author?:
-                | {
-                    __typename?: 'Bot'
-                    login: string
-                    url: string
-                    avatarUrl: string
-                  }
-                | {
-                    __typename?: 'EnterpriseUserAccount'
-                    login: string
-                    url: string
-                    avatarUrl: string
-                  }
-                | {
-                    __typename?: 'Mannequin'
-                    login: string
-                    url: string
-                    avatarUrl: string
-                  }
-                | {
-                    __typename?: 'Organization'
-                    login: string
-                    url: string
-                    avatarUrl: string
-                  }
-                | {
-                    __typename?: 'User'
-                    login: string
-                    url: string
-                    avatarUrl: string
-                  }
+              minimizedReason: string | null
+              author:
+                | { login: string; url: string; avatarUrl: string }
+                | { login: string; url: string; avatarUrl: string }
+                | { login: string; url: string; avatarUrl: string }
+                | { login: string; url: string; avatarUrl: string }
+                | { login: string; url: string; avatarUrl: string }
                 | null
             } | null> | null
           }
@@ -188,10 +156,6 @@ export const GetMilestoneByNumberDocument = gql`
     }
   }
   ${MilestoneResponse}
-  ${PageInfoResponse}
-  ${LabelResponse}
-  ${IssueCommentResponse}
-  ${AuthorResponse}
 `
 
 export type SdkFunctionWrapper = <T>(

@@ -1,3 +1,9 @@
+/** Internal type. DO NOT USE DIRECTLY. */
+export type Incremental<T> =
+  | T
+  | {
+      [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never
+    }
 /* eslint-disable */
 import * as Types from '../globals'
 
@@ -6,9 +12,8 @@ import { GraphQLError, print } from 'graphql'
 import gql from 'graphql-tag'
 type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
 export type LabelResponse = {
-  __typename?: 'Label'
   name: string
-  description?: string | null
+  description: string | null
   color: string
 }
 
