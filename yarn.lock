@@ -6791,7 +6791,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.27.0, esbuild@npm:^0.27.3, esbuild@npm:~0.27.0":
+"esbuild@npm:^0.27.0, esbuild@npm:^0.27.3":
   version: 0.27.7
   resolution: "esbuild@npm:0.27.7"
   dependencies:
@@ -6880,7 +6880,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"esbuild@npm:^0.28.0":
+"esbuild@npm:^0.28.0, esbuild@npm:~0.28.0":
   version: 0.28.0
   resolution: "esbuild@npm:0.28.0"
   dependencies:
@@ -7638,9 +7638,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-admin@npm:13.9.0":
-  version: 13.9.0
-  resolution: "firebase-admin@npm:13.9.0"
+"firebase-admin@npm:13.10.0":
+  version: 13.10.0
+  resolution: "firebase-admin@npm:13.10.0"
   dependencies:
     "@fastify/busboy": "npm:^3.0.0"
     "@firebase/database-compat": "npm:^2.0.0"
@@ -7652,14 +7652,12 @@ __metadata:
     google-auth-library: "npm:^10.6.1"
     jsonwebtoken: "npm:^9.0.0"
     jwks-rsa: "npm:^3.1.0"
-    node-forge: "npm:^1.4.0"
-    uuid: "npm:^11.0.2"
   dependenciesMeta:
     "@google-cloud/firestore":
       optional: true
     "@google-cloud/storage":
       optional: true
-  checksum: 10c0/d824523285b910ddd6797c14803a6374ccef50ba573618179de5c9bc55fe955daaa5dce7bcdf25dc6b2a1404933d1c03e90eea7079c08b447ad5663f640c82e1
+  checksum: 10c0/a647d91f05a644931ec27c217ebf2143841153f220b041ee97fd64bf402c08552f604112694c2597135fd84275144c2f19fc92920f8e01cb0caef4240b1e4974
   languageName: node
   linkType: hard
 
@@ -12273,7 +12271,7 @@ __metadata:
     graphql-tag: "npm:2.12.6"
     site-common: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.21.1"
+    tsx: "npm:4.22.0"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -12290,7 +12288,7 @@ __metadata:
     site-common: "npm:1.0.0"
     site-config: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.21.1"
+    tsx: "npm:4.22.0"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -12325,7 +12323,7 @@ __metadata:
     site-common: "npm:1.0.0"
     site-config: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.21.1"
+    tsx: "npm:4.22.0"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -12423,12 +12421,12 @@ __metadata:
     "@atproto/api": "npm:0.19.18"
     "@types/oauth": "npm:0.9.6"
     date-fns: "npm:4.1.0"
-    firebase-admin: "npm:13.9.0"
+    firebase-admin: "npm:13.10.0"
     oauth: "npm:0.10.2"
     site-common: "npm:^1.0.0"
     site-config: "npm:^1.0.0"
     site-types: "npm:^1.0.0"
-    tsx: "npm:4.21.1"
+    tsx: "npm:4.22.0"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -13100,18 +13098,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:4.21.1":
-  version: 4.21.1
-  resolution: "tsx@npm:4.21.1"
+"tsx@npm:4.22.0":
+  version: 4.22.0
+  resolution: "tsx@npm:4.22.0"
   dependencies:
-    esbuild: "npm:~0.27.0"
+    esbuild: "npm:~0.28.0"
     fsevents: "npm:~2.3.3"
   dependenciesMeta:
     fsevents:
       optional: true
   bin:
     tsx: dist/cli.mjs
-  checksum: 10c0/4d766b05c9d470f903ebe47a6f6049045903c8bae843efb599eac9b9d253a68b7a05dd8cef93db9af8eb207df1cc3fa9a06c6e54e2731bcf4ea233a920519d5f
+  checksum: 10c0/cc7474ac13eebf6bb4d87ce21bdd79213261a37a6e247a74d7920b3e0ce7b704b42e7642e7978e2f3de5762981b3b74ed0ae14cf60934107aa0b1390f25e46ba
   languageName: node
   linkType: hard
 
@@ -13656,15 +13654,6 @@ __metadata:
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
   checksum: 10c0/41a5bdd214df2f6c3ecf8622745e4a366c4adced864bc3c833739791aeeeb1838119af7daed4ba36428114b5c67dcda034a79c882e97e43c03e66a4dd7389942
-  languageName: node
-  linkType: hard
-
-"uuid@npm:^11.0.2":
-  version: 11.1.1
-  resolution: "uuid@npm:11.1.1"
-  bin:
-    uuid: dist/esm/bin/uuid
-  checksum: 10c0/9e3af58eba872ece5a5e76f4773a94fc78a0ef2c2444c38dbe6b42f41dadf76c01850fd783604f27986f6195e6286aef064d45987d401b2a33127b98ddf7c0c5
   languageName: node
   linkType: hard
 
