@@ -1,0 +1,174 @@
+{
+  "id": "MI_kwDOB4jhdM4A8hym",
+  "number": 428,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/428",
+  "title": "428 2026-05-17",
+  "closedAt": "2026-05-17T10:55:52Z",
+  "description": "Androidは「Intelligence System」へ, Googlebook向け最適化ガイド, Navigation 3のResultEventBus, 新しいKMPのプロジェクト構造, など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAQn5JwQ=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPPAAAAAQoHYX4=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3742",
+        "title": "Roomでindexを貼って、クエリを早くする",
+        "body": "https://oguzhanaslann.medium.com/1471f3fee672\nAndroidのRoomでインデックスを使い、テーブルスキャンをB-Tree探索に置き換えて検索性能を高める方法を解説。単一・複合・ユニークインデックスの使い分け、継承や`@Embedded` での注意点、書き込み性能やDBサイズへの影響、マイグレーション対応まで整理しています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3743",
+        "title": "新しいKMPのプロジェクト構造",
+        "body": "https://blog.jetbrains.com/kotlin/2026/05/new-kmp-default-structure/\nKotlin Multiplatformの新規プロジェクト構成が刷新され、共有コードは`shared`、実行可能アプリは`androidApp`や`desktopApp`などの個別モジュールに分離されます。AGP 9.0でAndroidアプリのエントリポイントを共有コードとは別モジュールに置く必要がある点にも対応し、責務の明確化と拡張しやすさを狙った変更です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3744",
+        "title": "Kotlinに名前ベースの分解宣言が導入へ",
+        "body": "https://blog.jetbrains.com/kotlin/2026/05/the-road-to-name-based-destructuring/\nKotlinの分解宣言を、従来の位置ベースからプロパティ名ベースへ移行する計画を解説。`(val name, val age) = person`のような新構文や、位置ベース用の角括弧構文が試験導入されます。Kotlin 2.5.0で安定化、2.7.0で括弧の分解宣言を名前ベース化する予定です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3745",
+        "title": "Navigation 3のResultEventBusで画面間の結果受け渡しを整理",
+        "body": "https://proandroiddev.com/is-eventbus-making-a-comeback-in-navigation-3-679d65931367\nNavigation 3 alpha02で追加された`ResultEventBus`を解説。かつてのEventBusが避けられた理由を振り返りつつ、NavEntry間の結果受け渡しに用途を限定した仕組みとして、`ResultEffect`や`conflateAsState`、公式サンプルを用いた実装例を紹介しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3746",
+        "title": "Googlebook向けAndroidアプリ最適化ガイドが公開",
+        "body": "https://developer.android.com/googlebook\nGooglebookはAndroidアプリを大画面・デスクトップ環境へ展開するための新しい開発対象です。Composeや既存APIを活用し、キーボード・マウス入力、マルチインスタンス、ドラッグ＆ドロップ、ファイル/印刷対応などを整備するための設計・開発ガイドがまとめられています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3747",
+        "title": "Androidは「Intelligence System」へ",
+        "body": "https://android-developers.googleblog.com/2026/05/the-android-show-developers-cut-2026.html\nAndroid Showで、Gemini Intelligence、AppFunctions、RemoteCompose/Glance、Navigation 3、XR/車/Googlebooksなどの開発方針が発表。アプリはOSやAIエージェントから呼び出される“機能単位”の設計がより重要になりそうです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3748",
+        "title": "Compose Multiplatform 1.11.0公開",
+        "body": "https://blog.jetbrains.com/kotlin/2026/05/compose-multiplatform-1-11-0/\niOS向けのネイティブTextField実験実装、iOSのConcurrent renderingデフォルト有効化、Compose UI Test v2、Webスクロール改善が追加。Android/KMPでUI共有しているチームはテストAPI移行も見ておきたい内容です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
