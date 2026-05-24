@@ -1,0 +1,216 @@
+{
+  "id": "MI_kwDOB4jhdM4A849J",
+  "number": 429,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/429",
+  "title": "429 2026-05-24",
+  "closedAt": "2026-05-24T11:01:02Z",
+  "description": "Google I/O 26のAndroid向け発表まとめ, AndroidがCompose-firstに移行, AI利用強制への本音, Vibe Coding時代のFlutter設計, 2時間録音のAndroid実装",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAQzjgsQ=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afPAAAAAQzlHos=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3749",
+        "title": "Google I/O '26、Android開発者向け17の発表まとめ",
+        "body": "https://developer.android.com/blog/posts/17-things-to-know-for-android-developers-at-google-i-o\n\nGoogle I/O '26で発表されたAndroid開発者向けの17項目を紹介。Android CLIのStable化やGoogle AI Studioでのネイティブアプリ生成などエージェント活用、Views保守モード化に伴うCompose First方針、Jetpack Navigation 3、Jetpack GlanceによるWidget統一、Android 17のパフォーマンス改善などを横断的に解説する。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Google I/O",
+              "description": "",
+              "color": "ac03bf"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 3,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHPAAAAAQ3k5bw=",
+            "endCursor": "Y3Vyc29yOnYyOpHPAAAAAQ3mEVI=",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "最近の developer.android.com は blog 記事もAI翻訳された日本語版にリダイレクトするようになってたんですね",
+              "publishedAt": "2026-05-24T10:18:12Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "Google I/O の YouTube 再生リストはこちら: https://www.youtube.com/playlist?list=PL590L5WQmH8coVKyRYxxQo8NG9O5NVLRW",
+              "publishedAt": "2026-05-24T10:25:28Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            },
+            {
+              "body": "reddit には Google 公式からのスレッドがたてられており、ここでもざっとしたダイジェストとユーザーによるコメントが見れます: https://www.reddit.com/r/androiddev/comments/1ti47y8/new_updates_for_android_developers_from_google_io/",
+              "publishedAt": "2026-05-24T10:36:38Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3750",
+        "title": "AndroidがCompose-firstに移行、Viewツールキットはメンテナンスモードへ",
+        "body": "https://developer.android.com/develop/ui/compose/first\nhttps://www.reddit.com/r/androiddev/comments/1ths2jo/android_is_now_composefirst_view_toolkit_is_in/\n\nAndroidのUI開発が公式にCompose-firstとなり、Viewツールキットはメンテナンスモード（新機能の追加なし）に入ったことを伝えるGoogleの発表。ただしViewは引き続きサポートされ、ComposeもView上にホストされるため既存アプリは今後も動作する。RedditではGoogleエンジニアも参加し、スクロールバーやTextFieldのヒント表示など長年の要望機能の対応状況にも触れられている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3751",
+        "title": "職場でのAI利用強制に対する開発者たちの本音",
+        "body": "https://www.reddit.com/r/androiddev/comments/1tlg64l/employers_forcing_ai_usage/\n\n米国のSDK開発企業で働く投稿者が、ここ2ヶ月で「全チケットをまずClaudeに渡せ」というAI利用の強制が強まり疲弊していると吐露。AIコードは冗長で設計が雑、PRレビューも大変だと指摘する。コメント欄では、経験者なら時短になるが複雑な設計は任せられない、仕様駆動の運用なら品質も保てる、といった賛否が交わされている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3752",
+        "title": "「簡単そうで実は地獄」だったAndroidアプリは？",
+        "body": "https://www.reddit.com/r/androiddev/comments/1tgl90w/what_android_app_looked_easy_until_you_actually/\n\n「外から見ると単純そうなのに、作り始めると沼にハマったアプリは？」と問うr/androiddevの雑談スレッド。チャットアプリ（リアルタイム同期・通知・オフライン対応）への共感が最多。ほかにも正確なアラーム（権限やブート時の再設定）、メモアプリのリッチテキスト対応、端末ごとに挙動が違う通知・連絡先・カメラ処理などが「見た目より遥かに大変」と挙がっている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3753",
+        "title": "アーキテクチャを忘れかけていた私が見つけた、Vibe Coding時代のFlutter設計",
+        "body": "https://tech.youtrust.co.jp/entry/2026/05/22/173246\n\nAIによるVibe Codingが広まる中、Flutterのアーキテクチャの役割は「人間が迷わないルール」から「AIが正しく動くための道しるべ」へ変化したと論じる記事。Riverpod + Feature-firstで機能を分離し、再生成してよいDisposable Layer（UI・DI・生成コード）と人間が守る層（ドメインモデル・Router・テスト設計）を明確に分ける設計指針を、自社アプリの構成例とともに紹介する。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3755",
+        "title": "2時間の商談録音を支えるAndroid録音実装の深い話",
+        "body": "https://buildersbox.corp-sansan.com/entry/2026/05/15/150000\n\nSansanのAI音声入力機能で2時間の商談を録音するため、Androidの録音実装で直面した6つの観点を解説。MediaRecorderの採用理由とコーデック・サンプルレート選定、Weber-Fechnerの法則を踏まえたdBFS変換による音量可視化、withFrameMillisでの波形補間、Foreground Serviceによるバックグラウンド継続、AudioRecordingCallbackでのマイク割り込み検知、SystemClock.elapsedRealtimeを用いた経過時間管理を紹介する。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
