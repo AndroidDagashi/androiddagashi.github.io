@@ -6,10 +6,10 @@
   "closedAt": "2026-05-24T11:01:02Z",
   "description": "Google I/O 26のAndroid向け発表まとめ, AndroidがCompose-firstに移行, AI利用強制への本音, Vibe Coding時代のFlutter設計, 2時間録音のAndroid実装",
   "issues": {
-    "totalCount": 6,
+    "totalCount": 7,
     "pageInfo": {
       "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAQzjgsQ=",
-      "endCursor": "Y3Vyc29yOnYyOpLPf________afPAAAAAQzlHos=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPPAAAAAQzuONo=",
       "hasPreviousPage": false,
       "hasNextPage": false
     },
@@ -197,6 +197,24 @@
         "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3755",
         "title": "2時間の商談録音を支えるAndroid録音実装の深い話",
         "body": "https://buildersbox.corp-sansan.com/entry/2026/05/15/150000\n\nSansanのAI音声入力機能で2時間の商談を録音するため、Androidの録音実装で直面した6つの観点を解説。MediaRecorderの採用理由とコーデック・サンプルレート選定、Weber-Fechnerの法則を踏まえたdBFS変換による音量可視化、withFrameMillisでの波形補間、Foreground Serviceによるバックグラウンド継続、AudioRecordingCallbackでのマイク割り込み検知、SystemClock.elapsedRealtimeを用いた経過時間管理を紹介する。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3756",
+        "title": "制限が強まり続けているAndroid Background処理、16年の歴史",
+        "body": "https://buildersbox.corp-sansan.com/entry/2026/05/14/100000\n\nAndroid初期の自由なBackground処理から、Battery Saver・Doze・App Standby Buckets・Foreground Service Type必須化・実行時間制限まで、16年にわたる制限強化の歴史を振り返る記事。後半ではSansanの文字起こし機能を例に、WorkManagerでのスケジューリングやForeground Serviceへの昇格、App Standby Buckets対策など実装上の工夫を解説しています。",
         "labels": {
           "nodes": []
         },
