@@ -1,0 +1,150 @@
+{
+  "id": "MI_kwDOB4jhdM4A9n4u",
+  "number": 431,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/431",
+  "title": "431 2026-06-07",
+  "closedAt": "2026-06-07T13:45:01Z",
+  "description": "Android 17 Beta 4.1, Kotlin stdlib 18か月セキュリティ対応, Kotlin 2.4.0, Android 17のメモリ制限, JetBrainsのLets-Plot Compose, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAARJLezg=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afPAAAAARJM_zo=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3760",
+        "title": "JetBrainsのComposeで使える図を表示できるライブラリ Lets-Plot Compose",
+        "body": "Compose Multiplatformを使っています。残念ながらKotlin Nativeはまだ対応されていなさそうでした。\nhttps://github.com/JetBrains/lets-plot-compose",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3761",
+        "title": "Android 17のメモリ制限に備える",
+        "body": "Android 17では端末RAMに応じたアプリメモリ制限が入り、超過時はスタックトレースなしでプロセス終了される可能性があります。R8最適化、画像読み込み、リーク検出、onTrimMemory、ProfilingManager対応が重要です。\nhttps://android-developers.googleblog.com/2026/06/prioritizing-memory-efficiency-steps-for-android-17.html?utm_source=chatgpt.com",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3762",
+        "title": "Kotlin 2.4.0 Stable",
+        "body": "context parameters、明示的backing fields、annotation use-site targetsが安定化。Android開発では、Kotlin更新に加えてAGP最低8.5.2、Gradle互換、Compose compilerの挙動変更確認が重要です。\nhttps://kotlinlang.org/docs/whatsnew24.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3763",
+        "title": "Kotlin標準ライブラリに18か月のセキュリティサポート",
+        "body": "Kotlin 2.4以降、JVM向けkotlin-stdlib runtimeに18か月のセキュリティ修正ポリシーが導入。修正はサポート中のrelease lineへbackportされます。企業・長期運用アプリでは依存固定方針の見直し対象です。\nhttps://blog.jetbrains.com/kotlin/2026/05/security-support-policy-for-the-kotlin-standard-library/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3764",
+        "title": "Android 17 Beta 4.1",
+        "body": "通信表示、機内モード時のQS表示、外部ディスプレイ、Bluetooth音声、補聴器ペアリング周りを修正。通信・音声・外部画面を使うアプリは、Android 17向け再確認したい内容です。\nhttps://developer.android.com/about/versions/17/release-notes",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3765",
+        "title": "Premium Android Experiences：R8・Widgets・Media強化",
+        "body": "Android 17のメモリ制限を前提に、R8 Configuration Analyzer、Glance/RemoteCompose、CameraX/Media3を軸に高品質体験を作る方向性を整理。性能・マルチデバイス・メディア系アプリは要確認です。\nhttps://developer.android.com/blog/posts/building-premium-android-experiences-at-google-i-o-26",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
