@@ -1,0 +1,194 @@
+{
+  "id": "MI_kwDOB4jhdM4A999k",
+  "number": 432,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/432",
+  "title": "432 2026-06-14",
+  "closedAt": "2026-06-14T11:03:03Z",
+  "description": "Compose Multiplatform と WebView, Booking.com の KMP 活用事例, Android開発で必要以上に時間を食う作業は？, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAARWvKP8=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afPAAAAARWv9LE=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3773",
+        "title": "Compose Navigation Graph — アプリのフロー全体を可視化する Android Studio プラグイン",
+        "body": "https://github.com/skydoves/compose-nav-graph\nhttps://www.reddit.com/r/androiddev/comments/1u3nceh/compose_navigation_graph_plugin_for_android/\n\nskydoves 氏（コメント欄が「また彼か」と沸く多作ぶり）が公開した Android Studio/IntelliJ 向けプラグイン。アプリのフロー全体を、各画面のプレビューサムネイルと遷移の矢印からなるインタラクティブなマップとして可視化する。Navigation 3/2 や他の Compose ナビゲーションライブラリ、素の Activity にも対応した OSS。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3774",
+        "title": "Android開発で「必要以上に時間を食う作業」は？",
+        "body": "https://www.reddit.com/r/androiddev/comments/1u1wprc/what_part_of_android_development_takes_more_time/\n\nReddit の r/androiddev で「Android開発で思った以上に時間を取られる作業は？」と尋ねたスレッド。デザイナーの「iOSっぽくして」要求、AGP/Kotlin/KSP/Composeコンパイラの整合に振り回されるgradle.ktsやバージョンカタログ保守、移り変わるPlay ConsoleのUI探し、ビルド時間（KMPで2〜3倍）、コードレビュー待ちなどが挙がっている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3775",
+        "title": "Booking.com の本番環境における Kotlin Multiplatform 活用 ― 2つの実例",
+        "body": "https://medium.com/booking-com-development/kotlin-multiplatform-in-production-two-real-world-use-cases-from-booking-com-46ffe13a773d\n\nBooking.com が KMP / Compose Multiplatform を本番で活用した2事例を解説。①実験管理ライブラリを Android/iOS で2重実装していたことによるロジックの乖離を、Kotlin の共有モジュールに集約して解消。②Android のデザインシステム「BUI Compose」を Kotlin/JS でブラウザ上に再現し、デザイナーが実機やIDEなしで実コンポーネントを確認できるプレイグラウンドを構築。KMP は全か無かではなく、共有して価値が高いレイヤー（ロジック層・描画層）を見極めて選択的に適用すべきと結論づけている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHPAAAAARg66Bs=",
+            "endCursor": "Y3Vyc29yOnYyOpHPAAAAARg66Bs=",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "reddit の反応はこちら\nhttps://www.reddit.com/r/androiddev/comments/1u16015/we_put_kotlin_multiplatform_into_production_at/",
+              "publishedAt": "2026-06-14T10:35:52Z",
+              "isMinimized": false,
+              "minimizedReason": null,
+              "author": {
+                "login": "yshrsmz",
+                "url": "https://github.com/yshrsmz",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/654889?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3776",
+        "title": "Android Studio Quail 2 Canary 7",
+        "body": "https://androidstudio.googleblog.com/2026/06/android-studio-quail-2-canary-7-now.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3777",
+        "title": "Android CLI と ADB を使って Android 実機 / エミュレータを操ってみる",
+        "body": "https://www.m3tech.blog/entry/2026/06/05/100000\n\n2026年4月に公開された公式の Android CLI と従来の ADB コマンドを AI エージェントに教えるだけで、公式ツールのみでデバイス操作を自動化できる。layout で UI 要素の座標を取得し、取得できなければ screen capture / resolve にフォールバック、adb shell input でタップ・入力・スワイプを実行。android/skills 公開のスキルを日本語訳し、実装～動作確認のループを AI だけで回す手法を紹介する。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3778",
+        "title": "Compose MultiplatformでWebViewを実装する（Android / iOS / Desktop）",
+        "body": "https://medium.com/@rwatson_86305/adding-a-webview-to-compose-multiplatform-android-ios-and-desktop-8f17e91649f4\n\nCompose MultiplatformでWebViewを追加する方法を3プラットフォーム横断で解説。WebViewは共有コンポーネントにできず、AndroidはWebView、iOSはWKWebView、JVM DesktopはJCEFと、それぞれ別エンジンを使う。expect/actualで単一APIにまとめつつ、Kotlin/Wasm向けポリフィル、SPAのpushState同期、AWTのteardownクラッシュ対策など、ドキュメントに載らない実装上の落とし穴を具体的に紹介する。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
