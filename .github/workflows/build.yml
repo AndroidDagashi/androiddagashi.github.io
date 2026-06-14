@@ -32,5 +32,8 @@ jobs:
       - name: Lint
         run: yarn site:lint
 
+      - name: Typecheck
+        run: yarn site:typecheck
+
       - name: Generate website
         run: yarn workspace site exec nuxi build --preset github_pages

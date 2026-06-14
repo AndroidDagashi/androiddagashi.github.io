@@ -10,7 +10,8 @@
     "preview": "nuxi preview",
     "postinstall": "nuxi prepare",
     "lint": "eslint .",
-    "format": "eslint --fix ."
+    "format": "eslint --fix .",
+    "typecheck": "vue-tsc --noEmit"
   },
   "dependencies": {
     "@pinia/nuxt": "0.11.3",

@@ -11,7 +11,8 @@
     "site:generate": "yarn workspace site generate",
     "sns:update": "yarn workspace sns-updater update",
     "site:lint": "yarn workspace site lint",
-    "site:format": "yarn workspace site format"
+    "site:format": "yarn workspace site format",
+    "site:typecheck": "yarn workspace site typecheck"
   },
   "private": true,
   "workspaces": [
