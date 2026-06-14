@@ -4179,12 +4179,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:24.13.1":
-  version: 24.13.1
-  resolution: "@types/node@npm:24.13.1"
+"@types/node@npm:24.13.2":
+  version: 24.13.2
+  resolution: "@types/node@npm:24.13.2"
   dependencies:
     undici-types: "npm:~7.18.0"
-  checksum: 10c0/ef58425ed71c7fefa95f30d370eeb0390f24c9337d66fa6617b5a14b53e2e831aa6a13e95d978d9057237bf257062b8fa60f773380abed1607183fe7065bc26b
+  checksum: 10c0/d7d48a88a4feb0a6aac3cbfaf9ef3b12752b4b09447f88dd0b4c77c03b281e3d4330fe6982a99aedcd63fc16c7540a0c248b91eb2abb0b3edd884d7fe684e9ea
   languageName: node
   linkType: hard
 
@@ -12271,7 +12271,7 @@ __metadata:
     "@graphql-codegen/typescript": "npm:6.0.2"
     "@graphql-codegen/typescript-graphql-request": "npm:7.1.0"
     "@graphql-codegen/typescript-operations": "npm:6.0.3"
-    "@types/node": "npm:24.13.1"
+    "@types/node": "npm:24.13.2"
     cross-fetch: "npm:4.1.0"
     graphql: "npm:16.14.2"
     graphql-request: "npm:7.4.0"
@@ -12288,7 +12288,7 @@ __metadata:
   resolution: "site-api@workspace:packages/site-api"
   dependencies:
     "@types/fs-extra": "npm:11.0.4"
-    "@types/node": "npm:24.13.1"
+    "@types/node": "npm:24.13.2"
     fs-extra: "npm:11.3.5"
     rimraf: "npm:6.1.3"
     site-api-github: "npm:1.0.0"
@@ -12304,7 +12304,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site-common@workspace:packages/site-common"
   dependencies:
-    "@types/node": "npm:24.13.1"
+    "@types/node": "npm:24.13.2"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -12313,7 +12313,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site-config@workspace:packages/site-config"
   dependencies:
-    "@types/node": "npm:24.13.1"
+    "@types/node": "npm:24.13.2"
     site-types: "npm:1.0.0"
     typescript: "npm:6.0.3"
   languageName: unknown
@@ -12324,7 +12324,7 @@ __metadata:
   resolution: "site-rss@workspace:packages/site-rss"
   dependencies:
     "@types/markdown-it": "npm:14.1.2"
-    "@types/node": "npm:24.13.1"
+    "@types/node": "npm:24.13.2"
     feed: "patch:feed@npm%3A5.2.0#~/.yarn/patches/feed-npm-5.2.0-a770610f78.patch"
     markdown-it: "npm:14.2.0"
     site-common: "npm:1.0.0"
@@ -12352,7 +12352,7 @@ __metadata:
     "@tailwindcss/forms": "npm:0.5.11"
     "@types/lodash": "npm:4.17.24"
     "@types/markdown-it": "npm:14.1.2"
-    "@types/node": "npm:24.13.1"
+    "@types/node": "npm:24.13.2"
     "@types/twitter-text": "npm:3.1.10"
     date-fns: "npm:4.4.0"
     eslint: "npm:10.4.1"
