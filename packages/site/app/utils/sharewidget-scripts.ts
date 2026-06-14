@@ -17,7 +17,7 @@ const loadScript = (document: Document, id: string, src: string) => {
   script.id = id
 
   const s = document.getElementsByTagName('script')[0]
-  s.parentNode?.insertBefore(script, s)
+  s?.parentNode?.insertBefore(script, s)
 }
 
 export const loadScripts = (document: Document): void => {

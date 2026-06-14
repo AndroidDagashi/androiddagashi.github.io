@@ -12,7 +12,8 @@ export default defineNuxtPlugin((_nuxtApp) => {
   newTag.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`
 
   const existingTag = document.getElementsByTagName('script')[0]
-  existingTag.parentNode!.insertBefore(newTag, existingTag)
+  if (!existingTag?.parentNode) return
+  existingTag.parentNode.insertBefore(newTag, existingTag)
 
   // @ts-expect-error: dataLayer is defined in the global scope
   window.dataLayer = window.dataLayer || []
