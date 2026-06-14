@@ -43,7 +43,15 @@ export default defineComponent({
 
     const issueStore = useIssueStore()
 
-    const currentMilestone = computed(() => issueStore.currentMilestone)
+    // Nuxt 4: composable (useAsyncData / useHead) は await の前に呼ぶ必要がある。
+    // 描画ソースは useAsyncData が返す data ref。watch によりナビゲーション/
+    // キャッシュ命中時も正しく更新される。
+    const milestoneData = useAsyncData(
+      `issue-${route.params.id}`,
+      () => issueStore.fetchById(route.params.id as string),
+      { watch: [() => route.params.id] }
+    )
+    const currentMilestone = milestoneData.data
 
     const milestoneTitle = computed(() => currentMilestone.value?.title ?? '')
     const milestoneDescription = computed(
@@ -51,7 +59,6 @@ export default defineComponent({
     )
     const issues = computed(() => currentMilestone.value?.issues?.nodes ?? [])
 
-    // Nuxt 4: composable は await の前に呼ぶ必要がある
     useHead(
       computed(() => {
         const newTitle = `${milestoneTitle.value}: ${milestoneDescription.value} - ${app.$config.public.title}`
@@ -72,12 +79,8 @@ export default defineComponent({
 
     onMounted(() => loadScripts(document))
 
-    // Nuxt 4: useAsyncData で route.params.id を watch してナビゲーション時に再取得
-    await useAsyncData(
-      `issue-${route.params.id}`,
-      () => issueStore.fetchById(route.params.id as string),
-      { watch: [() => route.params.id] }
-    )
+    // データ取得完了を待つ (SSR / 初回描画用)
+    await milestoneData
 
     return {
       currentMilestone,

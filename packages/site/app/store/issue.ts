@@ -2,42 +2,11 @@ import { defineStore } from 'pinia'
 import type { GHMilestone } from 'site-types/GitHubApi'
 import { useNuxtApp } from '#app'
 
-interface IssueState {
-  currentMilestoneId: string | null
-  milestones: { [milestoneId: string]: GHMilestone }
-}
-
 export const useIssueStore = defineStore('issue', {
-  state: (): IssueState => ({
-    currentMilestoneId: null,
-    milestones: {},
-  }),
-
-  getters: {
-    currentMilestone: (state): GHMilestone | null => {
-      const milestoneId = state.currentMilestoneId
-      if (milestoneId) {
-        return state.milestones[milestoneId] ?? null
-      }
-      return null
-    },
-  },
-
   actions: {
-    updateCurrentMilestone(milestoneId: string) {
-      this.currentMilestoneId = milestoneId
-    },
-
-    addMilestone(milestoneId: string, milestone: GHMilestone) {
-      this.milestones = {
-        ...this.milestones,
-        [milestoneId]: milestone,
-      }
-    },
-
-    async fetchById(milestoneId: string) {
-      this.updateCurrentMilestone(milestoneId)
-
+    // milestone を取得し minimized コメントを除外して返す純粋な fetch。
+    // キャッシュは呼び出し側の useAsyncData (key 単位) が担うため store では保持しない。
+    async fetchById(milestoneId: string): Promise<GHMilestone> {
       const { $api } = useNuxtApp()
       let milestone = await $api.get<GHMilestone>(
         `/api/issue/${milestoneId}.json`
@@ -62,7 +31,7 @@ export const useIssueStore = defineStore('issue', {
         },
       }
 
-      this.addMilestone(milestoneId, milestone)
+      return milestone
     },
   },
 })
