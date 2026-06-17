@@ -46,9 +46,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.20.14":
-  version: 0.20.14
-  resolution: "@atproto/api@npm:0.20.14"
+"@atproto/api@npm:0.20.15":
+  version: 0.20.15
+  resolution: "@atproto/api@npm:0.20.15"
   dependencies:
     "@atproto/common-web": "npm:^0.5.0"
     "@atproto/lexicon": "npm:^0.7.1"
@@ -58,7 +58,7 @@ __metadata:
     multiformats: "npm:^13.0.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/65ad427b9b5770d1e3678da763082122fca9ae2450413f732c3e387f2368213c4fdd45335922bf341e5baee9d76ec57a65d78539b614aa092c0ef4c470338cfb
+  checksum: 10c0/2c475099df4fc9bec44305f1562626c32acd9995010618eb21f2bec0cbc85b8951cdbcc57b143fb54d60dc379cbb38a5c6d700834b36b2a55cf540ecd1293911
   languageName: node
   linkType: hard
 
@@ -12656,7 +12656,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.20.14"
+    "@atproto/api": "npm:0.20.15"
     "@types/oauth": "npm:0.9.6"
     date-fns: "npm:4.4.0"
     firebase-admin: "npm:14.0.0"
