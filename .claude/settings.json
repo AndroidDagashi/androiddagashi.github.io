@@ -2,5 +2,18 @@
   "permissions": {
     "allow": [],
     "ask": []
+  },
+  "enabledPlugins": {
+    "github@yshrsmz-cc-plugins": true,
+    "meta@yshrsmz-cc-plugins": true
+  },
+  "extraKnownMarketplaces": {
+    "yshrsmz-cc-plugins": {
+      "source": {
+        "source": "github",
+        "repo": "yshrsmz/cc-plugins"
+      },
+      "autoUpdate": true
+    }
   }
 }
