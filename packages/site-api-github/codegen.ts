@@ -13,10 +13,15 @@ const config: CodegenConfig = {
       },
       plugins: [
         'typescript-operations',
-        'typescript-graphql-request',
+        'typescript-document-nodes',
         {
           add: {
-            content: ['/* eslint-disable */'],
+            content: [
+              '/* eslint-disable */',
+              // `documentMode: 'string'` emits `new TypedDocumentString(...)`;
+              // provide the class from a local helper (no graphql runtime dep).
+              "import { TypedDocumentString } from '../TypedDocumentString'",
+            ],
           },
         },
       ],
@@ -29,8 +34,9 @@ const config: CodegenConfig = {
           DateTime: 'string',
           URI: 'string',
         },
-        withHooks: true,
-        rawRequest: true,
+        // Emit operations/fragments as plain strings so they can be passed
+        // directly to @octokit/graphql (no graphql/graphql-tag runtime dep).
+        documentMode: 'string',
         extensionsType: 'unknown',
         exportFragmentSpreadSubTypes: true,
         omitOperationSuffix: true,
