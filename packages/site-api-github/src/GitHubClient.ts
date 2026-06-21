@@ -1,21 +1,25 @@
 import GitHubConfig from './GitHubConfig'
 import type { GHMilestone, GHDigest } from 'site-types/GitHubApi'
-import { GraphQLClient } from 'graphql-request'
-import { getSdk } from './graphql/documents/index.generated'
-import { GraphQLError } from 'graphql'
+import { graphql, GraphqlResponseError } from '@octokit/graphql'
+import {
+  GetMilestoneByNumber,
+  type GetMilestoneByNumberVariables,
+  GetMilestoneDigests,
+  type GetMilestoneDigestsVariables,
+} from './graphql/documents/index.generated'
 import { toGHDigest } from './mappers/toGHDigest'
 import { toGHMilestone } from './mappers/toGHMilestone'
 
 export default class GitHubClient {
   readonly config: GitHubConfig
-  readonly client: GraphQLClient
+  readonly client: typeof graphql
 
   private constructor(config: GitHubConfig) {
     this.config = config
 
-    this.client = new GraphQLClient(GitHubConfig.API_URL, {
+    this.client = graphql.defaults({
       headers: {
-        Authorization: `Bearer ${this.config.apiToken}`,
+        authorization: `bearer ${this.config.apiToken}`,
       },
     })
   }
@@ -29,20 +33,23 @@ export default class GitHubClient {
     milestoneNumber: number
   ): Promise<GHMilestone | null> {
     try {
-      const result = await getSdk(this.client).getMilestoneByNumber({
-        repoOwner: this.config.repoOwner,
-        repoName: this.config.repoName,
-        milestoneNumber,
-      })
+      const data = await this.client<GetMilestoneByNumber>(
+        GetMilestoneByNumber.toString(),
+        {
+          repoOwner: this.config.repoOwner,
+          repoName: this.config.repoName,
+          milestoneNumber,
+        } satisfies GetMilestoneByNumberVariables
+      )
 
-      const milestone = toGHMilestone(result.data)
+      const milestone = toGHMilestone(data)
       if (milestone) {
         return milestone
       } else {
         throw new Error(`failed to load milestone:${milestoneNumber}`)
       }
     } catch (e) {
-      if (e instanceof GraphQLError) {
+      if (e instanceof GraphqlResponseError) {
         console.error(e)
         throw new Error(`failed to load milestone:${milestoneNumber}`)
       } else {
@@ -53,13 +60,16 @@ export default class GitHubClient {
 
   async getMilestoneDigests(cursor: string | null): Promise<GHDigest> {
     try {
-      const result = await getSdk(this.client).getMilestoneDigests({
-        repoOwner: this.config.repoOwner,
-        repoName: this.config.repoName,
-        after: cursor,
-      })
+      const data = await this.client<GetMilestoneDigests>(
+        GetMilestoneDigests.toString(),
+        {
+          repoOwner: this.config.repoOwner,
+          repoName: this.config.repoName,
+          after: cursor,
+        } satisfies GetMilestoneDigestsVariables
+      )
 
-      const digest = toGHDigest(result.data)
+      const digest = toGHDigest(data)
       if (digest) {
         return digest
       } else {

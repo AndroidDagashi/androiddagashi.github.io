@@ -7,14 +7,7 @@ export type Incremental<T> =
 /* eslint-disable */
 import * as Types from '../globals'
 
-import { GraphQLClient, RequestOptions } from 'graphql-request'
-import { GraphQLError, print } from 'graphql'
-import gql from 'graphql-tag'
-import { PageInfoResponse } from './PageInfoResponse.generated'
-import { LabelResponse } from './LabelResponse.generated'
-import { IssueCommentResponse } from './IssueCommentResponse.generated'
-import { AuthorResponse } from './AuthorResponse.generated'
-type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
+import { TypedDocumentString } from '../TypedDocumentString'
 export type MilestoneResponse = {
   id: string
   number: number
@@ -67,63 +60,65 @@ export type MilestoneResponse = {
   }
 }
 
-export const MilestoneResponse = gql`
-  fragment MilestoneResponse on Milestone {
-    id
-    number
-    url
-    title
-    description
-    closedAt
-    issues(first: 50) {
-      totalCount
-      pageInfo {
-        ...PageInfoResponse
-      }
-      nodes {
-        url
-        title
-        body
-        labels(first: 10) {
-          nodes {
-            ...LabelResponse
-          }
+export const MilestoneResponse = new TypedDocumentString(
+  `
+    fragment MilestoneResponse on Milestone {
+  id
+  number
+  url
+  title
+  description
+  closedAt
+  issues(first: 50) {
+    totalCount
+    pageInfo {
+      ...PageInfoResponse
+    }
+    nodes {
+      url
+      title
+      body
+      labels(first: 10) {
+        nodes {
+          ...LabelResponse
         }
-        comments(first: 10) {
-          totalCount
-          pageInfo {
-            ...PageInfoResponse
-          }
-          nodes {
-            ...IssueCommentResponse
-          }
+      }
+      comments(first: 10) {
+        totalCount
+        pageInfo {
+          ...PageInfoResponse
+        }
+        nodes {
+          ...IssueCommentResponse
         }
       }
     }
   }
-  ${PageInfoResponse}
-  ${LabelResponse}
-  ${IssueCommentResponse}
-`
-
-export type SdkFunctionWrapper = <T>(
-  action: (requestHeaders?: Record<string, string>) => Promise<T>,
-  operationName: string,
-  operationType?: string,
-  variables?: any
-) => Promise<T>
-
-const defaultWrapper: SdkFunctionWrapper = (
-  action,
-  _operationName,
-  _operationType,
-  _variables
-) => action()
-
-export function getSdk(
-  client: GraphQLClient,
-  withWrapper: SdkFunctionWrapper = defaultWrapper
-) {
-  return {}
 }
-export type Sdk = ReturnType<typeof getSdk>
+    fragment PageInfoResponse on PageInfo {
+  startCursor
+  endCursor
+  hasPreviousPage
+  hasNextPage
+}
+fragment LabelResponse on Label {
+  name
+  description
+  color
+}
+fragment IssueCommentResponse on IssueComment {
+  body
+  publishedAt
+  isMinimized
+  minimizedReason
+  author {
+    ...AuthorResponse
+  }
+}
+fragment AuthorResponse on Actor {
+  login
+  url
+  avatarUrl
+}`,
+  { fragmentName: 'MilestoneResponse' }
+)

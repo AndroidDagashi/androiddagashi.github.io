@@ -7,10 +7,7 @@ export type Incremental<T> =
 /* eslint-disable */
 import * as Types from '../globals'
 
-import { GraphQLClient, RequestOptions } from 'graphql-request'
-import { GraphQLError, print } from 'graphql'
-import gql from 'graphql-tag'
-type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
+import { TypedDocumentString } from '../TypedDocumentString'
 export type AuthorResponse_Bot = {
   login: string
   url: string
@@ -48,32 +45,13 @@ export type AuthorResponse =
   | AuthorResponse_Organization
   | AuthorResponse_User
 
-export const AuthorResponse = gql`
-  fragment AuthorResponse on Actor {
-    login
-    url
-    avatarUrl
-  }
-`
-
-export type SdkFunctionWrapper = <T>(
-  action: (requestHeaders?: Record<string, string>) => Promise<T>,
-  operationName: string,
-  operationType?: string,
-  variables?: any
-) => Promise<T>
-
-const defaultWrapper: SdkFunctionWrapper = (
-  action,
-  _operationName,
-  _operationType,
-  _variables
-) => action()
-
-export function getSdk(
-  client: GraphQLClient,
-  withWrapper: SdkFunctionWrapper = defaultWrapper
-) {
-  return {}
+export const AuthorResponse = new TypedDocumentString(
+  `
+    fragment AuthorResponse on Actor {
+  login
+  url
+  avatarUrl
 }
-export type Sdk = ReturnType<typeof getSdk>
+    `,
+  { fragmentName: 'AuthorResponse' }
+)

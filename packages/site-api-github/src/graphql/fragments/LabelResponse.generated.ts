@@ -7,42 +7,20 @@ export type Incremental<T> =
 /* eslint-disable */
 import * as Types from '../globals'
 
-import { GraphQLClient, RequestOptions } from 'graphql-request'
-import { GraphQLError, print } from 'graphql'
-import gql from 'graphql-tag'
-type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
+import { TypedDocumentString } from '../TypedDocumentString'
 export type LabelResponse = {
   name: string
   description: string | null
   color: string
 }
 
-export const LabelResponse = gql`
-  fragment LabelResponse on Label {
-    name
-    description
-    color
-  }
-`
-
-export type SdkFunctionWrapper = <T>(
-  action: (requestHeaders?: Record<string, string>) => Promise<T>,
-  operationName: string,
-  operationType?: string,
-  variables?: any
-) => Promise<T>
-
-const defaultWrapper: SdkFunctionWrapper = (
-  action,
-  _operationName,
-  _operationType,
-  _variables
-) => action()
-
-export function getSdk(
-  client: GraphQLClient,
-  withWrapper: SdkFunctionWrapper = defaultWrapper
-) {
-  return {}
+export const LabelResponse = new TypedDocumentString(
+  `
+    fragment LabelResponse on Label {
+  name
+  description
+  color
 }
-export type Sdk = ReturnType<typeof getSdk>
+    `,
+  { fragmentName: 'LabelResponse' }
+)

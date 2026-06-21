@@ -7,14 +7,7 @@ export type Incremental<T> =
 /* eslint-disable */
 import * as Types from '../globals'
 
-import { GraphQLClient, RequestOptions } from 'graphql-request'
-import { GraphQLError, print } from 'graphql'
-import gql from 'graphql-tag'
-import { LabelResponse } from './LabelResponse.generated'
-import { PageInfoResponse } from './PageInfoResponse.generated'
-import { IssueCommentResponse } from './IssueCommentResponse.generated'
-import { AuthorResponse } from './AuthorResponse.generated'
-type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
+import { TypedDocumentString } from '../TypedDocumentString'
 export type IssueResponse = {
   url: string
   title: string
@@ -50,49 +43,51 @@ export type IssueResponse = {
   }
 }
 
-export const IssueResponse = gql`
-  fragment IssueResponse on Issue {
-    url
-    title
-    body
-    labels {
-      nodes {
-        ...LabelResponse
-      }
-    }
-    comments {
-      totalCount
-      pageInfo {
-        ...PageInfoResponse
-      }
-      nodes {
-        ...IssueCommentResponse
-      }
+export const IssueResponse = new TypedDocumentString(
+  `
+    fragment IssueResponse on Issue {
+  url
+  title
+  body
+  labels {
+    nodes {
+      ...LabelResponse
     }
   }
-  ${LabelResponse}
-  ${PageInfoResponse}
-  ${IssueCommentResponse}
-`
-
-export type SdkFunctionWrapper = <T>(
-  action: (requestHeaders?: Record<string, string>) => Promise<T>,
-  operationName: string,
-  operationType?: string,
-  variables?: any
-) => Promise<T>
-
-const defaultWrapper: SdkFunctionWrapper = (
-  action,
-  _operationName,
-  _operationType,
-  _variables
-) => action()
-
-export function getSdk(
-  client: GraphQLClient,
-  withWrapper: SdkFunctionWrapper = defaultWrapper
-) {
-  return {}
+  comments {
+    totalCount
+    pageInfo {
+      ...PageInfoResponse
+    }
+    nodes {
+      ...IssueCommentResponse
+    }
+  }
 }
-export type Sdk = ReturnType<typeof getSdk>
+    fragment LabelResponse on Label {
+  name
+  description
+  color
+}
+fragment PageInfoResponse on PageInfo {
+  startCursor
+  endCursor
+  hasPreviousPage
+  hasNextPage
+}
+fragment IssueCommentResponse on IssueComment {
+  body
+  publishedAt
+  isMinimized
+  minimizedReason
+  author {
+    ...AuthorResponse
+  }
+}
+fragment AuthorResponse on Actor {
+  login
+  url
+  avatarUrl
+}`,
+  { fragmentName: 'IssueResponse' }
+)

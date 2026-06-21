@@ -9,16 +9,7 @@ export type Incremental<T> =
 /* eslint-disable */
 import * as Types from '../globals'
 
-import { GraphQLClient, RequestOptions } from 'graphql-request'
-import { GraphQLError, print } from 'graphql'
-import gql from 'graphql-tag'
-import { MilestoneDigestResponse } from '../fragments/MilestoneDigestResponse.generated'
-import { PageInfoResponse } from '../fragments/PageInfoResponse.generated'
-import { MilestoneResponse } from '../fragments/MilestoneResponse.generated'
-import { LabelResponse } from '../fragments/LabelResponse.generated'
-import { IssueCommentResponse } from '../fragments/IssueCommentResponse.generated'
-import { AuthorResponse } from '../fragments/AuthorResponse.generated'
-type GraphQLClientRequestHeaders = RequestOptions['requestHeaders']
+import { TypedDocumentString } from '../TypedDocumentString'
 export type GetMilestoneDigestsVariables = Exact<{
   repoOwner: string
   repoName: string
@@ -115,113 +106,110 @@ export type GetMilestoneByNumber = {
   } | null
 }
 
-export const GetMilestoneDigestsDocument = gql`
-  query getMilestoneDigests(
-    $repoOwner: String!
-    $repoName: String!
-    $after: String = null
-  ) {
-    repository(owner: $repoOwner, name: $repoName) {
-      name
+export const GetMilestoneDigests = new TypedDocumentString(`
+    query getMilestoneDigests($repoOwner: String!, $repoName: String!, $after: String = null) {
+  repository(owner: $repoOwner, name: $repoName) {
+    name
+    url
+    milestones(
+      first: 50
+      states: [CLOSED]
+      orderBy: {field: DUE_DATE, direction: DESC}
+      after: $after
+    ) {
+      totalCount
+      nodes {
+        ...MilestoneDigestResponse
+      }
+      pageInfo {
+        ...PageInfoResponse
+      }
+    }
+  }
+}
+    fragment MilestoneDigestResponse on Milestone {
+  id
+  number
+  url
+  title
+  description
+  closedAt
+  issues(first: 20) {
+    totalCount
+    nodes {
+      title
+    }
+  }
+}
+fragment PageInfoResponse on PageInfo {
+  startCursor
+  endCursor
+  hasPreviousPage
+  hasNextPage
+}`)
+export const GetMilestoneByNumber = new TypedDocumentString(`
+    query getMilestoneByNumber($repoOwner: String!, $repoName: String!, $milestoneNumber: Int!) {
+  repository(owner: $repoOwner, name: $repoName) {
+    milestone(number: $milestoneNumber) {
+      ...MilestoneResponse
+    }
+  }
+}
+    fragment PageInfoResponse on PageInfo {
+  startCursor
+  endCursor
+  hasPreviousPage
+  hasNextPage
+}
+fragment MilestoneResponse on Milestone {
+  id
+  number
+  url
+  title
+  description
+  closedAt
+  issues(first: 50) {
+    totalCount
+    pageInfo {
+      ...PageInfoResponse
+    }
+    nodes {
       url
-      milestones(
-        first: 50
-        states: [CLOSED]
-        orderBy: { field: DUE_DATE, direction: DESC }
-        after: $after
-      ) {
-        totalCount
+      title
+      body
+      labels(first: 10) {
         nodes {
-          ...MilestoneDigestResponse
+          ...LabelResponse
         }
+      }
+      comments(first: 10) {
+        totalCount
         pageInfo {
           ...PageInfoResponse
         }
+        nodes {
+          ...IssueCommentResponse
+        }
       }
     }
-  }
-  ${MilestoneDigestResponse}
-  ${PageInfoResponse}
-`
-export const GetMilestoneByNumberDocument = gql`
-  query getMilestoneByNumber(
-    $repoOwner: String!
-    $repoName: String!
-    $milestoneNumber: Int!
-  ) {
-    repository(owner: $repoOwner, name: $repoName) {
-      milestone(number: $milestoneNumber) {
-        ...MilestoneResponse
-      }
-    }
-  }
-  ${MilestoneResponse}
-`
-
-export type SdkFunctionWrapper = <T>(
-  action: (requestHeaders?: Record<string, string>) => Promise<T>,
-  operationName: string,
-  operationType?: string,
-  variables?: any
-) => Promise<T>
-
-const defaultWrapper: SdkFunctionWrapper = (
-  action,
-  _operationName,
-  _operationType,
-  _variables
-) => action()
-const GetMilestoneDigestsDocumentString = print(GetMilestoneDigestsDocument)
-const GetMilestoneByNumberDocumentString = print(GetMilestoneByNumberDocument)
-export function getSdk(
-  client: GraphQLClient,
-  withWrapper: SdkFunctionWrapper = defaultWrapper
-) {
-  return {
-    getMilestoneDigests(
-      variables: GetMilestoneDigestsVariables,
-      requestHeaders?: GraphQLClientRequestHeaders
-    ): Promise<{
-      data: GetMilestoneDigests
-      errors?: GraphQLError[]
-      extensions?: unknown
-      headers: Headers
-      status: number
-    }> {
-      return withWrapper(
-        (wrappedRequestHeaders) =>
-          client.rawRequest<GetMilestoneDigests>(
-            GetMilestoneDigestsDocumentString,
-            variables,
-            { ...requestHeaders, ...wrappedRequestHeaders }
-          ),
-        'getMilestoneDigests',
-        'query',
-        variables
-      )
-    },
-    getMilestoneByNumber(
-      variables: GetMilestoneByNumberVariables,
-      requestHeaders?: GraphQLClientRequestHeaders
-    ): Promise<{
-      data: GetMilestoneByNumber
-      errors?: GraphQLError[]
-      extensions?: unknown
-      headers: Headers
-      status: number
-    }> {
-      return withWrapper(
-        (wrappedRequestHeaders) =>
-          client.rawRequest<GetMilestoneByNumber>(
-            GetMilestoneByNumberDocumentString,
-            variables,
-            { ...requestHeaders, ...wrappedRequestHeaders }
-          ),
-        'getMilestoneByNumber',
-        'query',
-        variables
-      )
-    },
   }
 }
-export type Sdk = ReturnType<typeof getSdk>
+fragment LabelResponse on Label {
+  name
+  description
+  color
+}
+fragment IssueCommentResponse on IssueComment {
+  body
+  publishedAt
+  isMinimized
+  minimizedReason
+  author {
+    ...AuthorResponse
+  }
+}
+fragment AuthorResponse on Actor {
+  login
+  url
+  avatarUrl
+}`)
