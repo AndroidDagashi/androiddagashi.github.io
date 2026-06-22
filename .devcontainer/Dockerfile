@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/base:dev-ubuntu24.04@sha256:0245b827f578559d120de7a595b48fd8e90749820adc78aeb4d6cdee7f4c59ed AS base
+FROM mcr.microsoft.com/devcontainers/base:dev-ubuntu24.04@sha256:f855bd9df2b30b1bba86b7f6cdd0b3204686bc9c79678151780fd91e423278db AS base
 
 SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 
