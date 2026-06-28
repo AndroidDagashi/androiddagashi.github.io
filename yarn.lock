@@ -46,9 +46,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.20.19":
-  version: 0.20.19
-  resolution: "@atproto/api@npm:0.20.19"
+"@atproto/api@npm:0.20.21":
+  version: 0.20.21
+  resolution: "@atproto/api@npm:0.20.21"
   dependencies:
     "@atproto/common-web": "npm:^0.5.1"
     "@atproto/lexicon": "npm:^0.7.2"
@@ -58,7 +58,7 @@ __metadata:
     multiformats: "npm:^13.0.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/d96db5f2ac4e2e629266a4f2568ff6614bf90bb5638043d9c1fbcf2efbdd240b9a684cb622ad433f6b0dbdef0ed1e93b7fc5d9113de9909e2ba7c47c5d018d91
+  checksum: 10c0/f2ddb76c3526b631415effa16a8ac7767420bcab6a2014f8eac7da8dc89f05e55a0db63785f4ea38c0b06fce650193493e7cc3a56dbfa3bc6fe75a4eaa12bb3b
   languageName: node
   linkType: hard
 
@@ -7697,9 +7697,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-admin@npm:14.0.0":
-  version: 14.0.0
-  resolution: "firebase-admin@npm:14.0.0"
+"firebase-admin@npm:14.1.0":
+  version: 14.1.0
+  resolution: "firebase-admin@npm:14.1.0"
   dependencies:
     "@fastify/busboy": "npm:^3.0.0"
     "@firebase/database-compat": "npm:^2.1.4"
@@ -7716,7 +7716,7 @@ __metadata:
       optional: true
     "@google-cloud/storage":
       optional: true
-  checksum: 10c0/46588d9d107779c1ca06b6fc99c77265ea2e20cb9975128c4f1ad627d860d13d88afb4fb8c10a47482643f43d287db4e59e5d36a91a26dc070c14e59c0ac8094
+  checksum: 10c0/43716f7d4e9c17a9a752c301b52537a91a26fdb094002c58c7b14c3cade2c18db39c6cd90dbd0fe69541350d539b305f0c55a615565f8c07042de912aeba6271
   languageName: node
   linkType: hard
 
@@ -12486,10 +12486,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.20.19"
+    "@atproto/api": "npm:0.20.21"
     "@types/oauth": "npm:0.9.6"
     date-fns: "npm:4.4.0"
-    firebase-admin: "npm:14.0.0"
+    firebase-admin: "npm:14.1.0"
     oauth: "npm:0.10.2"
     site-common: "npm:^1.0.0"
     site-config: "npm:^1.0.0"
