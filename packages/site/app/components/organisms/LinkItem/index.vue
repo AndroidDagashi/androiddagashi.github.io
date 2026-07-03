@@ -54,7 +54,9 @@ export default defineComponent({
   setup(props) {
     const hasLabels = computed(() => props.issue.labels.nodes.length > 0)
     const labels = computed(() => props.issue.labels.nodes)
-    const hasComments = computed(() => props.issue.comments.totalCount > 0)
+    // totalCount は minimized コメントも含む GitHub 上の総数なので表示判定には使えない
+    // (store 側で minimized コメントを nodes から除外している)
+    const hasComments = computed(() => props.issue.comments.nodes.length > 0)
     const comments = computed(() => props.issue.comments.nodes)
 
     return {
