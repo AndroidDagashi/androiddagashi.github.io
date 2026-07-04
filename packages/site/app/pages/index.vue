@@ -3,7 +3,10 @@
     <h2 class="px-3 font-roboto text-2xl font-semibold">ISSUES</h2>
     <IssueDigestList class="mt-3" :milestones="milestones">
       <template v-if="pageInfo?.hasNextPage" #bottom>
-        <button class="LoadNextButton" @click="onLoadNext">
+        <button
+          class="LoadNextButton relative flex h-12 w-full flex-row items-center justify-center hover:bg-gray-100 before:absolute before:top-0 before:mx-[0.5em] before:h-px before:w-[calc(100%-3rem)] before:bg-gray-200 before:content-['']"
+          @click="onLoadNext"
+        >
           <iconify-icon icon="ic:baseline-expand-more" width="24" />
           <span class="sr-only"> 次の記事を読み込む </span>
         </button>
@@ -62,22 +65,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.LoadNextButton {
-  @apply relative flex h-12 w-full flex-row items-center justify-center;
-  @apply hover:bg-gray-100;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    width: calc(100% - 3rem);
-    height: 1px;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-
-    @apply bg-gray-200;
-  }
-}
-</style>

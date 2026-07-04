@@ -16,7 +16,11 @@
     </p>
     <p>おおよそ毎週日曜夜の更新です。</p>
     <div class="mt-6">
-      <a class="FollowOnTwitter" :href="dagashiTwitterUrl" target="_blank">
+      <a
+        class="FollowOnTwitter inline-flex h-12 items-center space-x-3 rounded-md bg-[#1d9bf0] px-6 text-white shadow-md"
+        :href="dagashiTwitterUrl"
+        target="_blank"
+      >
         <iconify-icon icon="akar-icons:twitter-fill" width="24" />
         <span class="font-bold">Follow @{{ contact.name }}</span>
       </a>
@@ -71,11 +75,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.FollowOnTwitter {
-  @apply inline-flex h-12 items-center space-x-3 rounded-md px-6 text-white shadow-md;
-
-  background-color: #1d9bf0;
-}
-</style>
