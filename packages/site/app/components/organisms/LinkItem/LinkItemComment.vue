@@ -1,5 +1,8 @@
 <template>
-  <component :is="tag" class="LinkItemComment py-1">
+  <component
+    :is="tag"
+    class="LinkItemComment relative py-1 before:absolute before:bottom-0 before:left-[18px] before:top-12 before:w-0.5 before:bg-gray-300 before:content-['']"
+  >
     <aside>
       <a :href="comment.author.url" target="_blank">
         <ADAvatar
@@ -50,19 +53,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.LinkItemComment {
-  @apply relative;
-
-  &::before {
-    @apply absolute bg-gray-300;
-
-    content: '';
-    top: 48px;
-    bottom: 0px;
-    left: 18px;
-    width: 2px;
-  }
-}
-</style>

@@ -18,7 +18,11 @@
         </template>
       </ul>
     </div>
-    <a :href="issue.url" target="_blank" class="LinkItem__GitHubLink">
+    <a
+      :href="issue.url"
+      target="_blank"
+      class="LinkItem__GitHubLink mt-1 inline-flex h-8 items-center rounded-full border border-solid border-gray-300 px-5 text-sm font-semibold text-gray-400 hover:bg-gray-100"
+    >
       <span>GitHubで見る</span>
     </a>
   </ADCard>
@@ -68,10 +72,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.LinkItem__GitHubLink {
-  @apply mt-1 inline-flex h-8 items-center rounded-full border border-solid border-gray-300 px-5 text-sm font-semibold text-gray-400;
-  @apply hover:bg-gray-100;
-}
-</style>

@@ -2,7 +2,9 @@
   <div class="IssueDigestList border border-gray-200 bg-white sm:rounded-md">
     <ul>
       <template v-for="(item, index) in milestones" :key="index">
-        <li class="IssueDigestList__item hover:bg-gray-100">
+        <li
+          class="IssueDigestList__item relative hover:bg-gray-100 after:absolute after:mx-[0.5em] after:h-px after:w-[calc(100%-3rem)] after:bg-gray-200 after:content-[''] last:after:hidden"
+        >
           <IssueDigest :milestone="item" :index="index" class="" />
         </li>
       </template>
@@ -28,20 +30,3 @@ export default defineComponent({
   },
 })
 </script>
-
-<style lang="postcss" scoped>
-.IssueDigestList .IssueDigestList__item {
-  @apply relative;
-
-  &:not(:last-child):after {
-    content: '';
-    position: absolute;
-    width: calc(100% - 3rem);
-    height: 1px;
-    margin-right: 0.5em;
-    margin-left: 0.5em;
-
-    @apply bg-gray-200;
-  }
-}
-</style>
