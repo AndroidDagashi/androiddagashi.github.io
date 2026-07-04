@@ -35,7 +35,7 @@
           v-model="summary"
           rows="5"
           name="milestone-summary"
-          class="block w-full rounded-md border-gray-300 bg-white shadow-sm focus:border-sky-500 focus:ring-sky-500 sm:text-sm"
+          class="block w-full rounded-md border-gray-300 bg-white shadow-xs focus:border-sky-500 focus:ring-sky-500 sm:text-sm"
           @input="onInput"
         />
       </div>
@@ -52,7 +52,7 @@
           v-model="milestoneNumber"
           type="number"
           name="milestone-number"
-          class="block w-full rounded-md border-gray-300 bg-white shadow-sm focus:border-sky-500 focus:ring-sky-500 sm:text-sm"
+          class="block w-full rounded-md border-gray-300 bg-white shadow-xs focus:border-sky-500 focus:ring-sky-500 sm:text-sm"
           @input="onInput"
         >
       </div>

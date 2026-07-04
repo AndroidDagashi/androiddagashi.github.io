@@ -1,4 +1,5 @@
 /* eslint @typescript-eslint/no-var-requires: "off", no-undef: "off" */
+import tailwindcss from '@tailwindcss/vite'
 import { defineNuxtConfig } from 'nuxt/config'
 import { siteConfig } from 'site-config'
 import { renderOGPMeta } from './app/utils/ogp'
@@ -119,7 +120,11 @@ export default defineNuxtConfig({
     },
   },
 
-  css: [],
+  css: ['~/assets/css/main.css'],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 
   /*
    * Build configuration
@@ -142,12 +147,7 @@ export default defineNuxtConfig({
   },
 
 
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxt/eslint'],
-
-  tailwindcss: {
-    viewer: false,
-    configPath: './tailwind.config.cjs',
-  },
+  modules: ['@pinia/nuxt', '@nuxt/eslint'],
 
   telemetry: {},
 

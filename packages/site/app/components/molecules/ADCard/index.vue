@@ -2,7 +2,7 @@
   <component
     :is="tag"
     class="card overflow-hidden bg-white sm:rounded-lg"
-    :class="{ shadow: shadow }"
+    :class="{ 'shadow-sm': shadow }"
     v-bind="$attrs"
   >
     <div class="px-4 py-5 sm:p-6">

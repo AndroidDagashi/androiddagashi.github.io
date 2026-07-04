@@ -1,7 +1,7 @@
 <template>
   <div class="flex min-h-screen flex-col bg-gray-50">
     <AppHeader :title="title" :rss-url="rssUrl" />
-    <slot class="flex-grow" />
+    <slot class="grow" />
     <AppFooter
       :title="title"
       :authors="authors"
