@@ -1,0 +1,143 @@
+{
+  "id": "MI_kwDOB4jhdM4A_L8E",
+  "number": 435,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/435",
+  "title": "435 2026-07-05",
+  "closedAt": "2026-07-05T11:40:07Z",
+  "description": "暗号化・自動リフレッシュ対応のAndroid認証アーキテクチャ, KMPで作った受付アプリをiPadに対応させた話, Compose DesktopはなぜAWT/Swingを使うのか？, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAR7apVI=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvPAAAAAR7bZjI=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3790",
+        "title": "暗号化・自動リフレッシュ対応のAndroid認証アーキテクチャ",
+        "body": "https://proandroiddev.com/an-android-auth-architecture-with-encrypted-tokens-auto-refresh-and-reactive-navigation-b5dcb7704f83\n\n暗号化トークン保存・自動リフレッシュ・リアクティブなナビゲーションを備えたAndroid認証アーキテクチャの解説。DataStore + Tinkによるトークン暗号化、認証状態をFlowとして監視し画面遷移を駆動する設計、KtorのAuthプラグインによる透過的なトークン再取得などを、Compose・Ktor・Koinのリファレンス実装をもとに紹介している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3791",
+        "title": "AndroidでBluetoothプロトコルをリバースエンジニアリングする",
+        "body": "https://proandroiddev.com/reverse-engineering-the-bluetooth-protocol-on-android-680275f129e0\n\nAndroid 9から14へのデバイス更新後、Bluetooth接続の決済端末に繋がらなくなった事例の調査記録。原因はAndroid 10/12で導入されたMACアドレスのランダム化により端末のIPアドレスが毎回変わることだった。APIやARPファイルへのアクセスが制限される中、bt-panインターフェースのサブネットにpingを打ってIPを特定する回避策の実装を紹介。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3792",
+        "title": "設計書から始めるレガシーFragmentのリファクタリング",
+        "body": "https://techblog.zozo.com/entry/doc-first-fragment-refactoring\n\nZOZOTOWN Androidアプリのレガシー画面をKotlin + Jetpack Compose + MVVMへリファクタリングした事例。実装前にAIと協働で仕様調査・設計書・タスク分解を書ききり、UIを仮データで先にCompose化して段階的に接続する工程を採用。sealed interfaceによる型安全な状態設計やClaude Code活用Tipsも紹介されている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3793",
+        "title": "KMPで作った受付アプリをiPadに対応させた話",
+        "body": "https://tech.stmn.co.jp/entry/2026/06/26/152302\n\nスタメンのTUNAG受付アプリがKMPで共通化したロジック資産をそのまま活かし、SwiftUIのUI層を追加するだけでiPad対応を実現した事例。expect/actualによるプラットフォーム差の吸収、SKIEを使ったStateFlowのSwift連携、Xcode CloudでのKMPビルド環境構築など実践的な知見がまとまっている。\n2022年に「将来のiOS展開を見越してKMM採用」した設計判断が今回回収された、という文脈が面白い記事でした",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3794",
+        "title": "Compose DesktopはなぜAWT/Swingを使うのか？GLFWベースの代替実装をめぐる議論",
+        "body": "https://slack-chats.kotlinlang.org/t/34112953/i-ve-been-wondering-for-a-long-time-why-does-compose-desktop\n\nCompose DesktopがAWT/Swingに依存する理由を発端に、GLFWベースの代替ホスト実装が議論されたスレッド。投稿者はWaylandネイティブ対応やタッチ入力を実現するcompose-glfwを公開。Tauriのtaoを使うNucleus 2.0や、JetBrains公式のkotlin-desktop-toolkitによるAWT置き換え計画にも話題が及ぶ。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
