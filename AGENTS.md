@@ -83,6 +83,7 @@ GitHub Actions workflow (`.github/workflows/deploy.yml`):
 ## Important Patterns
 
 - All API data must be generated before running dev server or building
+- `yarn api:generate` fetches live data from the GitHub API, so running it locally produces diffs in `packages/site/public/api/` (e.g. opaque cursor encoding changes) even when nothing meaningful changed. These data updates are owned by the `update_api` cron workflow — do not commit them in unrelated PRs (dependency bumps, refactors, etc.); revert them instead
 - The site uses static generation with pre-rendered routes based on issue IDs
 - Custom OGP meta tag generation for social sharing
 - TypeScript strict mode is enabled across all packages
