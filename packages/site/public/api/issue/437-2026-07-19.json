@@ -1,0 +1,127 @@
+{
+  "id": "MI_kwDOB4jhdM4A__bh",
+  "number": 437,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/437",
+  "title": "437 2026-07-19",
+  "closedAt": "2026-07-19T10:18:26Z",
+  "description": "AS Quail 2が安定版に, Android Benchが参加型へ, DAGPでKMPビルド70％短縮, 50人超開発のマルチモジュール, アーキテクチャをテストするKonture, など",
+  "issues": {
+    "totalCount": 6,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAASVe6TA=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________afPAAAAASVj01c=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3804",
+        "title": "Android Studio Quail 2が安定版に",
+        "body": "https://android-developers.googleblog.com/2026/06/android-studio-quail-2-stable-features.html\n複数のAIエージェントチャットを並行して動かせるようになり、作業ごとに異なるモデルも選択可能になりました。ProfilerにはLeakCanaryが統合され、検出したメモリリークやApp Quality InsightsのクラッシュをAIに解析・修正させる流れも強化されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3805",
+        "title": "Kotlinのアーキテクチャをテストで守るKonture実践編",
+        "body": "https://proandroiddev.com/kotlin-architecture-tests-with-konture-a-practical-guide-part-3-3-1f36ebe685db\nKotlinプロジェクトに専用のアーキテクチャテストモジュールを作り、機能モジュール同士の不正な依存などをKontureで検出する方法を解説。コンパイルや通常のテストでは発見できない構造的な劣化を、チームのルールとして自動検証できます。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3806",
+        "title": "50人超の開発組織を支えるマルチモジュール設計",
+        "body": "https://proandroiddev.com/multi-module-build-economics-designing-api-vs-implementation-boundaries-to-survive-50-dev-teams-464e6ddeabeb\n大規模Androidプロジェクトで、機能モジュールをAPIと実装に分ける理由をビルド時間や依存グラフの観点から解説。安易なモジュール追加ではなく、変更の影響範囲を小さくし、並列ビルドやチーム間の独立性を維持する境界設計が重要だと示しています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3807",
+        "title": "MediaPipe TasksでカスタムオンデバイスAIを構築",
+        "body": "https://proandroiddev.com/on-device-ai-series-part-3-mediapipe-tasks-634bd1fd0692\nML Kitの用意されたモデルでは対応できないケースに向け、MediaPipe Tasksで独自のLiteRTモデルや複数処理のパイプラインを扱う方法を紹介。画像・音声・テキスト処理を端末内で完結させたいAndroidアプリの、次の選択肢を理解できる内容です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3808",
+        "title": "DAGPで大規模KMPのビルド時間を約70％短縮",
+        "body": "https://autonomousapps.com/blog/announcing-dagp-kmp/post/\nDependency Analysis Gradle Plugin（DAGP）がKMPプロジェクトのAndroid／JVMターゲット分析に対応。約600モジュールの事例では、不要・誤分類された依存関係を整理し、平均ビルドを約6分から1分50秒、同期を約5分から45秒へ短縮しました。効果は構成次第ですが、大規模KMPの改善策として有力です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3809",
+        "title": "Android Benchがコミュニティ参加型のAI評価基盤へ",
+        "body": "https://android-developers.googleblog.com/2026/07/android-bench-llm-measurement.html\nAndroid Benchで、独自のAndroid開発タスクをGitHub上のコミュニティデータセットへ提案できる仕組みが追加されました。評価はHarborで実行・公開し、結果へのリンクをGitHub Discussionsで共有できます。投稿タスクはレビューされ、公式データセットへの採用は保証されません。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
