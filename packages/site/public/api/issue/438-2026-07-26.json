@@ -1,0 +1,186 @@
+{
+  "id": "MI_kwDOB4jhdM4BAZjt",
+  "number": 438,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/438",
+  "title": "438 2026-07-26",
+  "closedAt": "2026-07-26T11:21:27Z",
+  "description": "一人でアプリを作って稼げた人はいる？, Android開発は死につつある？, Flutter 3.44でMaterialが外部パッケージ化, Kotlin 15周年, BaseFragmentを葬る",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAASjW9OE=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPPAAAAASjZPHo=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3813",
+        "title": "完全に一人でアプリを作って、実際にお金を稼げた人はいる？",
+        "body": "https://www.reddit.com/r/androiddev/comments/1v3an37/has_anyone_here_made_an_app_completely_solo_and/\n\n個人開発アプリでどれくらい稼げるのかを聞く r/androiddev のスレッド。月20〜100ユーロの小遣い程度なら可能だが家賃を賄うのは難しい、という声が多数。10年前に参入して月500〜2000ドルを継続している例や月5000ドルの例がある一方、1年かけてリリースして収益ゼロという報告も。市場は飽和しており、開発よりも集客・マーケティングの方が大変という意見が目立つ。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3814",
+        "title": "Android開発は死につつある？ 10年選手が語る求人市場の変化",
+        "body": "https://www.reddit.com/r/androiddev/comments/1uq0r3w/android_development_is_dying/\n\nポーランド在住の10年目Android開発者が、ネイティブアプリの求人減少とハイブリッド/KMPへの偏りを嘆き、.NETへの転向を検討していると投稿。コメントでは「死んでいるのではなく変化しているだけ」「KMPもネイティブ開発の延長」という声が多数を占める一方、AI活用による人員削減や、CRUD画面だけを作る仕事の縮小を指摘する意見も目立った。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3815",
+        "title": "AndroidのWebViewでJavascriptInterfaceを使うときの落とし穴",
+        "body": "https://blog.cybozu.io/entry/2026/07/21/180000\n\nkintone Androidチームが、WebViewの addJavascriptInterface で公開したメソッドをWeb側から呼び出せなかった事例。原因はChromiumのレシーバ（this）チェックで、Zodの z.function().parse() を経由するとレシーバがundefinedになり弾かれる。アロー関数でラップするか .bind() でレシーバを固定すれば回避できる。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3816",
+        "title": "Flutter 3.44：Material が \"外部パッケージ\" になる話と、それに向けた準備",
+        "body": "https://zenn.dev/team_soda/articles/d39d62fed00efe\n\nFlutter 3.44 で Material / Cupertino が SDK から分離され、material_ui / cupertino_ui として pub.dev で提供される。必須対応は pubspec.yaml と import の変更のみ。MaterialApp を WidgetsApp へ移行すればデフォルト打ち消しコードを減らせるが、Scaffold の扱いが課題になる。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3817",
+        "title": "Kotlin 15周年 — The Kotlin Effect を祝おう",
+        "body": "https://blog.jetbrains.com/kotlin/2026/07/kotlin-turns-15-celebrate-the-kotlin-effect/\n\nJetBrains が Kotlin の誕生 15 周年を祝う「The Kotlin Effect」キャンペーンを公開。デジタルのバースデーカードを作成してコミュニティに共有したり、Kotlin が実世界のアプリでどう使われているかを見たり、ブラウザで遊べるゲームを楽しんだりできる。あわせて Hyperskill の一部 Kotlin コースが 2026 年 9 月 9 日まで無料開放される。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3818",
+        "title": "Jetpack Compose でゼリーのような FAB メニューを作った",
+        "body": "https://proandroiddev.com/i-built-a-jelly-like-fab-menu-for-jetpack-compose-42e9f65f6576\n\nシェーダーを使わず Canvas と Animatable API だけで、展開するアクションに向かって伸びる FAB を実装した記事。円を36個の点の集合として表現し、展開方向に近い点ほどガウス分布のフォールオフで大きく外へ押し出し、二次ベジェ曲線で滑らかに繋ぐ。影も同じ変形量から描画することで一体感を出している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3819",
+        "title": "BaseFragment を葬る: Jetpack Compose で真に再利用可能な画面を作る方法",
+        "body": "https://hackernoon.com/killing-the-basefragment-how-to-build-truly-reusable-screens-in-jetpack-compose\n\nBaseFragment が担っていたローディング/エラー表示、Scaffold の設定、ワンタイムイベント処理を、継承ではなくコンポジションで置き換える方法を解説。BaseScreen / ScaffoldScreen ラッパー、AppViewModel、CompositionLocal、rememberX による状態ホルダーといったパターンを、対応表とサンプルコード付きで紹介している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
