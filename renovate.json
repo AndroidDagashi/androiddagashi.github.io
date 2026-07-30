@@ -71,6 +71,12 @@
         "graphql-request"
       ],
       "enabled": true
+    },
+    {
+      "matchPackageNames": [
+        "graphql"
+      ],
+      "allowedVersions": "<17"
     }
   ],
   "postUpdateOptions": [
