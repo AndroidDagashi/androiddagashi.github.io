@@ -73,6 +73,10 @@
       "enabled": true
     },
     {
+      "description": [
+        "graphql v17 で追加された検証（interface 実装フィールドの deprecation 整合性チェック）に GitHub GraphQL API の公開スキーマ自体が違反しており（Project.id 等は deprecated だが interface の Node.id は非 deprecated）、graphql:schema / graphql:codegen が失敗するため v16 系に固定する。",
+        "live introspection なのでスキーマ再生成では回避できず、GitHub 側の修正待ち。修正されたらこの allowedVersions を外して v17 へ再挑戦する。"
+      ],
       "matchPackageNames": [
         "graphql"
       ],
