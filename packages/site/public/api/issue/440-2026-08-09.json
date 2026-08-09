@@ -1,0 +1,115 @@
+{
+  "id": "MI_kwDOB4jhdM4BBOLx",
+  "number": 440,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/440",
+  "title": "440 2026-08-09",
+  "closedAt": "2026-08-09T12:50:51Z",
+  "description": "Gradle Syncでは何が起きている？, AIエージェントがデバッグDebroid, Composeの書き方をアップデートする10項目,「Android Skills」の設計思想, など",
+  "issues": {
+    "totalCount": 4,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAATAJEDo=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_PAAAAATAMBKw=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3830",
+        "title": "Googleが説明した「Android Skills」の設計思想",
+        "body": "https://android-developers.googleblog.com/2026/08/android-skills-philosophy.html\nGoogleは8月6日、AIコーディング向けAndroid Skillsの運用思想を解説。AGP 9、Navigation 3、Camera、Perfettoなど、AIモデルが間違えやすい新しい領域だけをSkillで補完し、不要になれば廃止する方針です。AIをAndroid開発に組み込むチームには重要です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3831",
+        "title": "Composeを2024年の書き方からアップデートする10項目",
+        "body": "https://proandroiddev.com/stop-writing-compose-like-its-2024-10-recent-updates-every-android-developer-should-know-302c23b61e36\n最近のJetpack Composeで変わった実装パターンを整理。retain、Navigation 3、TextFieldState、新しいShadow API、Lazy系の最適化など、既存Composeプロジェクトを現代化するときのチェックリストとして使いやすい内容です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3832",
+        "title": "AIエージェントがAndroidアプリを“自分でデバッグ”できるDebroid",
+        "body": "https://github.com/PatilShreyas/debroid\nDebroidは、Claude CodeやCodexなどのAIコーディングエージェントから、実行中のAndroidアプリをCLI経由でデバッグできるツール。ブレークポイント、例外捕捉、変数やメモリの確認・変更、ステップ実行まで扱え、AIが「コードを書く」だけでなく実行時の原因調査まで踏み込めるのが面白いポイントです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3833",
+        "title": "Android Studioの「Gradle Sync」では何が起きている？",
+        "body": "https://www.liutikas.net/2026/08/03/What-Are-You-Syncing-About.html\nAndroid StudioのGradle Syncの仕組みを内部から解説。単にGradleタスクを実行するのではなく、Tooling APIを通じて初期化・設定を行い、IDEに必要なモデルを生成します。タスク実行は基本スキップされ、直列に処理される設定やモデル生成が大規模プロジェクトのSync時間を左右するポイントです。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
