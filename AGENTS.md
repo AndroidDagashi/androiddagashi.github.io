@@ -55,7 +55,7 @@ yarn sns:update               # Update social media with new content
 
 2. **Prerequisites**:
    - Node.js (managed via mise)
-   - Yarn 4 (via corepack)
+   - Yarn 4 (managed via mise; corepack is not bundled with Node 25+)
    - GitHub Personal Access Token (read-only permissions sufficient)
 
 ## Data Flow
@@ -69,8 +69,8 @@ yarn sns:update               # Update social media with new content
 
 - **nuxt.config.ts** - Main Nuxt configuration, defines routes from JSON data
 - **site-config** package - Shared configuration across workspaces
-- **mise.toml** - Node.js version management
-- **.yarnrc.yml** - Yarn 4 configuration with PnP mode
+- **mise.toml** - Node.js and Yarn version management
+- **.yarnrc.yml** - Yarn 4 configuration (`nodeLinker: node-modules`, not PnP)
 
 ## Deployment
 

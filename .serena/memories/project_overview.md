@@ -10,8 +10,8 @@
 ## Tech Stack
 - **Frontend**: Nuxt 4, Vue 3, Tailwind CSS, Pinia (state management)
 - **Language**: TypeScript (strict mode)
-- **Package Manager**: Yarn 4 with workspaces (PnP mode)
-- **Node.js**: v24.14.0 (managed via mise)
+- **Package Manager**: Yarn 4 with workspaces (`nodeLinker: node-modules`, not PnP; installed via mise)
+- **Node.js**: v26.7.0 (managed via mise)
 - **Build/Deploy**: GitHub Actions → GitHub Pages
 - **Code Quality**: ESLint, Prettier
 
