@@ -1,0 +1,191 @@
+{
+  "id": "MI_kwDOB4jhdM4BBqVz",
+  "number": 441,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/441",
+  "title": "441 2026-08-16",
+  "closedAt": "2026-08-16T10:59:08Z",
+  "description": "Jetpack Compose 2026年8月リリース, Compose の Stability, Kotlin 2.4.20-RC, Gradle Isolated Projects, Navigation 3 移行, など",
+  "issues": {
+    "totalCount": 7,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAATPKH8c=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________UPPAAAAATPLYZs=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3840",
+        "title": "Jetpack Compose 2026年8月リリースの新機能",
+        "body": "https://android-developers.googleblog.com/2026/08/jetpack-compose-august-2026-release.html\n\nCompose BOM 2026.08.00（コアモジュール 1.12）が安定版に。MeshGradientPainter、ワイドカラーガマット/HDR 対応、Grid の名前付きエリア、Credential Manager 連携、キー付き SideEffect などを追加。起動時の Time to Initial Display は View と同等に。compileSdk 37 と AGP 9.1.1 が必須。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3841",
+        "title": "Compose の Stability を無視するのをやめよう（Strong Skipping Mode があっても）",
+        "body": "https://blog.shreyaspatil.dev/stop-ignoring-compose-stability-yes-even-with-strong-skipping-mode/\n\n「Strong Skipping Mode があるから `@Stable` も `ImmutableList` も不要」という誤解を正す記事。SSM は Composable をすべて skippable にするが、unstable な引数は参照等価（===）で比較されるため、標準の `List<T>` を持つ data class は再生成のたびに recomposition が走る。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3842",
+        "title": "Kotlin 2.4.20-RC の新機能",
+        "body": "https://kotlinlang.org/docs/whatsnew-eap.html\n\n標準ライブラリにコルーチンのスタックトレース復元 API と allDistinct/allEqual を追加。Swift export は sealed クラスとクロス言語継承に対応。Kotlin/JS は Karma を置き換える新テスト DSL、Kotlin/Wasm は Wasmtime をサポート。BTA が JS/Wasm/metadata 対応、native image も実験公開。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3843",
+        "title": "なぜ新しい JWT ライブラリを書いたのか？",
+        "body": "https://touchlab.co/kjwt-intro\n\nKMP 向け JWT ライブラリ KJWT が生まれた経緯。銀行案件でハードウェアバックの暗号処理が必要だったが、JVM 限定の JJWT は使えず、Signum は minSdk 要件が高すぎた。学習目的の個人プロジェクトを、JJWT に近い記法と Kotlin らしさを併せ持つライブラリとして整備し、Touchlab へ移管して公開した。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3844",
+        "title": "Gradle Isolated Projects の紹介",
+        "body": "https://blog.gradle.org/introducing-isolated-projects\n\nGradle 9.7.0 で Isolated Projects が incubating に昇格。プロジェクトを隔離する制約により設定フェーズを並列化し、IDE 同期や CLI 実行を高速化する。Configuration Cache が前提で、IDE 同期に効かせるには org.gradle.isolated-projects=true の指定が必要。Gradle 自身のビルドでは IDE 同期が約 1.8 倍、5,000 プロジェクト超の Android モノレポでも約 1.9 倍に。Android/Kotlin のプラグインや Now in Android は対応済みだが、タスクグラフ探索は逐次のままで CLI の効果は IDE 同期ほど大きくない。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3845",
+        "title": "はてなブログAndroidアプリでのJetpack Navigation 3移行",
+        "body": "https://developer.hatenastaff.com/entry/2026/08/12/170000\n\nはてなブログAndroidアプリのNav2からNav3への段階的移行事例。タブ選択状態とBackStackの二重管理、アダプティブレイアウトとの相性が課題だった。マルチスタックとDeepLinkは1.0時点で未サポートのためnav3-recipesを参考に自前実装。「Nav2で困っていないなら急ぐ必要はない」が、SceneStrategyという拡張点は魅力と評価。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3846",
+        "title": "Android歴9年・無職3ヶ月、この分野を続けたいのか分からない",
+        "body": "https://www.reddit.com/r/androiddev/comments/1vmcg2u/9_years_into_android_3_months_without_a_job_and/\n\nAndroid歴9年のシニア開発者が、3ヶ月間職が決まらず「そもそもこの分野を続けたいのか」と揺れる胸中を投稿。唯一の面接はプラットフォーム内部の実装経験を問われて終わったという。コメントには10年超の経験を持つ同様の求職者が多数集まり、市場の厳しさを語る一方、車載・AOSPの低レイヤーやオンデバイスMLへの転身、Androidに限定しないエンジニアとしての売り込みを勧める声も。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
