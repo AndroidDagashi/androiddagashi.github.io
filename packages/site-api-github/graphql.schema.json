@@ -24350,6 +24350,18 @@
             "deprecationReason": null
           },
           {
+            "name": "configuration",
+            "description": "The configuration for the view.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ProjectV2ViewConfigurationInput",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "layout",
             "description": "The layout of the view.",
             "type": {
@@ -37894,6 +37906,127 @@
               "ofType": {
                 "name": "ID",
                 "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "innersourceVulnerabilities",
+            "description": "Innersource security vulnerabilities scoped to this enterprise.",
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "ecosystem",
+                "description": "An ecosystem to filter vulnerabilities by.",
+                "type": {
+                  "kind": "ENUM",
+                  "name": "SecurityAdvisoryEcosystem",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "orderBy",
+                "description": "Ordering options for the returned vulnerabilities.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "SecurityVulnerabilityOrder",
+                  "ofType": null
+                },
+                "defaultValue": "{direction: DESC, field: UPDATED_AT}",
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "package",
+                "description": "A package name to filter vulnerabilities by.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "severities",
+                "description": "A list of severities to filter vulnerabilities by.",
+                "type": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "name": null,
+                    "kind": "NON_NULL",
+                    "ofType": {
+                      "name": "SecurityAdvisorySeverity",
+                      "kind": "ENUM",
+                      "ofType": null
+                    }
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "SecurityVulnerabilityConnection",
+                "kind": "OBJECT",
                 "ofType": null
               }
             },
@@ -53238,6 +53371,18 @@
                 "deprecationReason": null
               },
               {
+                "name": "excludeUserLinked",
+                "description": "Exclude manually linked PRs",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                },
+                "defaultValue": "false",
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
                 "name": "first",
                 "description": "Returns the first _n_ elements from the list.",
                 "type": {
@@ -59255,6 +59400,98 @@
         "possibleTypes": null
       },
       {
+        "kind": "INPUT_OBJECT",
+        "name": "IssueFieldUpdateInput",
+        "description": "Updates an issue field using its user-facing name.",
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "fieldName",
+            "description": "The name of the issue field.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "operation",
+            "description": "The operation to perform.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "IssueFieldUpdateOperation",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "value",
+            "description": "The value or comma-separated option names for the operation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "IssueFieldUpdateOperation",
+        "description": "The operation to perform on an issue field value.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "ADD",
+            "description": "Sets a scalar field or adds options to a multi-select field.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "CLEAR",
+            "description": "Clears the field value.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "REMOVE",
+            "description": "Removes options from a multi-select field.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "SET",
+            "description": "Replaces the field value.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
         "kind": "UNION",
         "name": "IssueFieldValue",
         "description": "Issue field values",
@@ -59454,6 +59691,142 @@
         ],
         "inputFields": null,
         "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "IssueFieldValueFilter",
+        "description": "A filter for matching an issue field value. Exactly one value argument should be provided.",
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "dateValue",
+            "description": "Matches a date issue field value (YYYY-MM-DD).",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "fieldId",
+            "description": "The ID of the issue field to filter by. Exactly one of `fieldId` or `fieldName` must be provided.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "fieldName",
+            "description": "The name of the issue field to filter by. Exactly one of `fieldId` or `fieldName` must be provided.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "multiSelectOptionIds",
+            "description": "Matches issues containing all of the multi-select issue field option IDs.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID",
+                  "kind": "SCALAR",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "multiSelectOptionValues",
+            "description": "Matches issues containing all of the multi-select issue field option names.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String",
+                  "kind": "SCALAR",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "numberValue",
+            "description": "Matches a numeric issue field value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Float",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "singleSelectOptionId",
+            "description": "Matches a single-select issue field option by ID.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "ID",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "singleSelectOptionValue",
+            "description": "Matches a single-select issue field option by name.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "textValue",
+            "description": "Matches a text issue field value.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
         "enumValues": null,
         "possibleTypes": null
       },
@@ -59660,6 +60033,26 @@
               "kind": "SCALAR",
               "name": "String",
               "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "issueFieldValues",
+            "description": "List issues where each supplied issue field value filter matches.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "IssueFieldValueFilter",
+                  "kind": "INPUT_OBJECT",
+                  "ofType": null
+                }
+              }
             },
             "defaultValue": null,
             "isDeprecated": false,
@@ -69619,6 +70012,12 @@
             "description": "A GitHub Migration API source.",
             "isDeprecated": false,
             "deprecationReason": null
+          },
+          {
+            "name": "GITLAB",
+            "description": "A GitLab migration source.",
+            "isDeprecated": false,
+            "deprecationReason": null
           }
         ],
         "possibleTypes": null
@@ -75573,7 +75972,7 @@
           },
           {
             "name": "removeEnterpriseMember",
-            "description": "Completely removes a user from the enterprise",
+            "description": "Completely removes a user from the enterprise asynchronously.",
             "args": [
               {
                 "name": "input",
@@ -90331,6 +90730,127 @@
             "deprecationReason": null
           },
           {
+            "name": "innersourceVulnerabilities",
+            "description": "Innersource security vulnerabilities scoped to this organization.",
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "ecosystem",
+                "description": "An ecosystem to filter vulnerabilities by.",
+                "type": {
+                  "kind": "ENUM",
+                  "name": "SecurityAdvisoryEcosystem",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "orderBy",
+                "description": "Ordering options for the returned vulnerabilities.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "SecurityVulnerabilityOrder",
+                  "ofType": null
+                },
+                "defaultValue": "{direction: DESC, field: UPDATED_AT}",
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "package",
+                "description": "A package name to filter vulnerabilities by.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "severities",
+                "description": "A list of severities to filter vulnerabilities by.",
+                "type": {
+                  "kind": "LIST",
+                  "name": null,
+                  "ofType": {
+                    "name": null,
+                    "kind": "NON_NULL",
+                    "ofType": {
+                      "name": "SecurityAdvisorySeverity",
+                      "kind": "ENUM",
+                      "ofType": null
+                    }
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "SecurityVulnerabilityConnection",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "interactionAbility",
             "description": "The interaction ability settings for this organization.",
             "args": [],
@@ -91381,6 +91901,67 @@
                 "kind": "OBJECT",
                 "ofType": null
               }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "pinnedIssueFields",
+            "description": "An ordered list of issue fields pinned to issues when no type is selected.",
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "IssueFieldsConnection",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -105107,6 +105688,34 @@
             "deprecationReason": null
           },
           {
+            "name": "isIssueField",
+            "description": "Returns true if this field is associated with an organization issue field",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "issueField",
+            "description": "The organization issue field associated with this project field, if any",
+            "args": [],
+            "type": {
+              "kind": "UNION",
+              "name": "IssueFields",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "name",
             "description": "The project field's name.",
             "args": [],
@@ -105230,6 +105839,22 @@
               "name": null,
               "ofType": {
                 "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "isIssueField",
+            "description": "Returns true if this field is associated with an organization issue field",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
                 "kind": "SCALAR",
                 "ofType": null
               }
@@ -108624,6 +109249,22 @@
             "deprecationReason": null
           },
           {
+            "name": "isIssueField",
+            "description": "Returns true if this field is associated with an organization issue field",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "name",
             "description": "The project field's name.",
             "args": [],
@@ -109002,6 +109643,34 @@
                 "kind": "SCALAR",
                 "ofType": null
               }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "isIssueField",
+            "description": "Returns true if this field is associated with an organization issue field",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "issueField",
+            "description": "The organization issue field associated with this project field, if any",
+            "args": [],
+            "type": {
+              "kind": "UNION",
+              "name": "IssueFields",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -109776,6 +110445,34 @@
                 "kind": "SCALAR",
                 "ofType": null
               }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "isIssueField",
+            "description": "Returns true if this field is associated with an organization issue field",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "issueField",
+            "description": "The organization issue field associated with this project field, if any",
+            "args": [],
+            "type": {
+              "kind": "UNION",
+              "name": "IssueFields",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -110879,6 +111576,22 @@
         "isOneOf": null,
         "fields": [
           {
+            "name": "configuration",
+            "description": "The view's configuration.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "ProjectV2ViewConfiguration",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "createdAt",
             "description": "Identifies the date and time when the object was created.",
             "args": [],
@@ -111600,6 +112313,115 @@
       },
       {
         "kind": "OBJECT",
+        "name": "ProjectV2ViewConfiguration",
+        "description": "Configuration for a ProjectV2 view.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "visibleFields",
+            "description": "The fields visible in the view, in configured order.",
+            "args": [
+              {
+                "name": "after",
+                "description": "Returns the elements in the list that come after the specified cursor.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "before",
+                "description": "Returns the elements in the list that come before the specified cursor.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "String",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "first",
+                "description": "Returns the first _n_ elements from the list.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "last",
+                "description": "Returns the last _n_ elements from the list.",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Int",
+                  "ofType": null
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "ProjectV2FieldConfigurationConnection",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "ProjectV2ViewConfigurationInput",
+        "description": "Configuration for a ProjectV2 view.",
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "visibleFieldIds",
+            "description": "The ordered IDs of the fields visible in the view.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "ID",
+                  "kind": "SCALAR",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
         "name": "ProjectV2ViewConnection",
         "description": "The connection type for ProjectV2View.",
         "isOneOf": null,
@@ -112268,12 +113090,6 @@
           {
             "name": "REAUTH",
             "description": "Members must complete a fresh re-authentication against the enterprise identity provider.",
-            "isDeprecated": false,
-            "deprecationReason": null
-          },
-          {
-            "name": "SECURITY_KEY",
-            "description": "Members must satisfy a phishing-resistant security key re-authentication (Microsoft Entra only).",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -113139,6 +113955,18 @@
                   "ofType": null
                 },
                 "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "excludeUserLinked",
+                "description": "Exclude manually linked Issues",
+                "type": {
+                  "kind": "SCALAR",
+                  "name": "Boolean",
+                  "ofType": null
+                },
+                "defaultValue": "false",
                 "isDeprecated": false,
                 "deprecationReason": null
               },
@@ -175604,6 +176432,26 @@
             "deprecationReason": null
           },
           {
+            "name": "issueFieldUpdates",
+            "description": "Issue field updates resolved by field and option names.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "IssueFieldUpdateInput",
+                  "kind": "INPUT_OBJECT",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "issueType",
             "description": "The Issue Type to set on this issue, with optional rationale. Mutually exclusive with `issueTypeId`.",
             "type": {
@@ -177831,6 +178679,18 @@
             "type": {
               "kind": "SCALAR",
               "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "configuration",
+            "description": "The new configuration for the view.",
+            "type": {
+              "kind": "INPUT_OBJECT",
+              "name": "ProjectV2ViewConfigurationInput",
               "ofType": null
             },
             "defaultValue": null,
