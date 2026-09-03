@@ -2605,7 +2605,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/endpoint@npm:^11.0.3":
+"@octokit/endpoint@npm:^11.0.5":
   version: 11.0.5
   resolution: "@octokit/endpoint@npm:11.0.5"
   dependencies:
@@ -2615,21 +2615,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/graphql@npm:9.0.4":
-  version: 9.0.4
-  resolution: "@octokit/graphql@npm:9.0.4"
+"@octokit/graphql@npm:9.0.5":
+  version: 9.0.5
+  resolution: "@octokit/graphql@npm:9.0.5"
   dependencies:
-    "@octokit/request": "npm:^10.0.13"
-    "@octokit/types": "npm:^17.0.0"
+    "@octokit/request": "npm:^10.0.16"
+    "@octokit/types": "npm:^18.0.0"
     universal-user-agent: "npm:^7.0.0"
-  checksum: 10c0/569e5e81c09b17cd123d18fa83808feea5647e9a457f41fbe43b3006c5198fbe462ef446d6d91e4d0eb5417d56e719286120219cd37d1f42758fd102d5664568
-  languageName: node
-  linkType: hard
-
-"@octokit/openapi-types@npm:^28.0.0":
-  version: 28.0.0
-  resolution: "@octokit/openapi-types@npm:28.0.0"
-  checksum: 10c0/1cb8d105a4771df98ab3f34809b48ae6fafa516e66b9e6d9e0c5bc5f4fbb98dd209ad25c6e941745841b7bb20a35b799d155ec198028548fab1c4fd4e4f8cf9f
+  checksum: 10c0/3152b815dd15f16df460931f4cdc4bbd534751dec391557600d5215916a60184d1c578a707de165089b9c3607581191ae9ec401f896b04242082882178e69a14
   languageName: node
   linkType: hard
 
@@ -2640,35 +2633,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@octokit/request-error@npm:^7.1.1":
-  version: 7.1.1
-  resolution: "@octokit/request-error@npm:7.1.1"
+"@octokit/request-error@npm:^7.1.2":
+  version: 7.1.2
+  resolution: "@octokit/request-error@npm:7.1.2"
   dependencies:
-    "@octokit/types": "npm:^17.0.0"
-  checksum: 10c0/b851dfd17d95394258a279225ff7e23345d59aca78064fb7dfd4f2a129db328880b4b7fb44c9d873e89dc40a0498e6efa56c3063899efa18bc97fa2f8e0825c1
+    "@octokit/types": "npm:^18.0.0"
+  checksum: 10c0/89bb7005ee1cc7b52d1e4546ae9636d9af1dfcf1bee716d06106a4a58ac605845427b4552de816dee15c82a7bcafc1e36e683186789dfa05485eeb13cb4cc176
   languageName: node
   linkType: hard
 
-"@octokit/request@npm:^10.0.13":
-  version: 10.0.15
-  resolution: "@octokit/request@npm:10.0.15"
+"@octokit/request@npm:^10.0.16":
+  version: 10.0.16
+  resolution: "@octokit/request@npm:10.0.16"
   dependencies:
-    "@octokit/endpoint": "npm:^11.0.3"
-    "@octokit/request-error": "npm:^7.1.1"
-    "@octokit/types": "npm:^17.0.0"
+    "@octokit/endpoint": "npm:^11.0.5"
+    "@octokit/request-error": "npm:^7.1.2"
+    "@octokit/types": "npm:^18.0.0"
     content-type: "npm:^3.0.0"
     json-with-bigint: "npm:^3.5.12"
     universal-user-agent: "npm:^7.0.2"
-  checksum: 10c0/daede4048e4362f5ebe6aec86d64c1d1f6b7ce7ed7950fbe7ca758cf378d5a07f4710c7da0df1af3b08437033b44d767eba68ef4f8e1bd1667fa0141785eaa7c
-  languageName: node
-  linkType: hard
-
-"@octokit/types@npm:^17.0.0":
-  version: 17.0.0
-  resolution: "@octokit/types@npm:17.0.0"
-  dependencies:
-    "@octokit/openapi-types": "npm:^28.0.0"
-  checksum: 10c0/fb190b7ef48dcc974c4178a92b62c76a5c820c120607e1812f2c76adeeab5af4c13b645e37a5f54d66b0222b2a58399cb91fa2fd1d375270f77c7987a9cfd231
+  checksum: 10c0/db3f1d1ab32f2238889c07ac2d0e4d9ec39afa7614a6c19e15136bad12118c4b538ccfb6a013c89ba8d1074da13efe8bb489d0557bce6cc7d5894587a7beded6
   languageName: node
   linkType: hard
 
@@ -10972,12 +10956,12 @@ __metadata:
     "@graphql-codegen/typescript": "npm:6.1.0"
     "@graphql-codegen/typescript-document-nodes": "npm:6.1.0"
     "@graphql-codegen/typescript-operations": "npm:6.1.6"
-    "@octokit/graphql": "npm:9.0.4"
+    "@octokit/graphql": "npm:9.0.5"
     "@types/node": "npm:26.4.0"
     graphql: "npm:16.14.2"
     site-common: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.23.12"
+    tsx: "npm:4.23.13"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -10994,7 +10978,7 @@ __metadata:
     site-common: "npm:1.0.0"
     site-config: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.23.12"
+    tsx: "npm:4.23.13"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -11028,7 +11012,7 @@ __metadata:
     site-common: "npm:1.0.0"
     site-config: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.23.12"
+    tsx: "npm:4.23.13"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -11121,7 +11105,7 @@ __metadata:
     site-common: "npm:^1.0.0"
     site-config: "npm:^1.0.0"
     site-types: "npm:^1.0.0"
-    tsx: "npm:4.23.12"
+    tsx: "npm:4.23.13"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -11703,9 +11687,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:4.23.12":
-  version: 4.23.12
-  resolution: "tsx@npm:4.23.12"
+"tsx@npm:4.23.13":
+  version: 4.23.13
+  resolution: "tsx@npm:4.23.13"
   dependencies:
     esbuild: "npm:~0.28.0"
     fsevents: "npm:~2.3.3"
@@ -11714,7 +11698,7 @@ __metadata:
       optional: true
   bin:
     tsx: dist/cli.mjs
-  checksum: 10c0/cdd7f03754021fb337c13839f25f5f5edee01ed12e1e176da50cc34bc5c5fc4e7b533aeba89127055be969d4ff292c6accdb6b9d977ed022c524349eca6ff841
+  checksum: 10c0/dc99c8988b42ec2443963a0b9051f42d068bc7e2a44e82f3b94b40539a991c5c01ea3ee049cf317d1040b2245711dd4c64ace9ac875f3b07edee29f610702e3c
   languageName: node
   linkType: hard
 
