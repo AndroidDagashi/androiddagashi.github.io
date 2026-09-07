@@ -1,0 +1,386 @@
+{
+  "id": "MI_kwDOB4jhdM4BCgIp",
+  "number": 443,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/443",
+  "title": "443 2026-09-06",
+  "closedAt": "2026-09-07T15:05:58Z",
+  "description": "Android Studio Quail 4、Navigation 2.10.0、Kotlin Toolchain 0.12、Google Play の新ポリシー・品質要件、Android 17 QPR2 Beta 4、DroidKaigi 2026 レポート",
+  "issues": {
+    "totalCount": 16,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAT-8WE4=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-b_PAAAAAT-_A7w=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3855",
+        "title": "Google Play、9/30 までにアプリのパッケージ名登録が必須に",
+        "body": "https://developer.android.com/developer-verification/guides/google-play-console\n\nデベロッパー認証の一環として、Play で配信する全アプリのパッケージ名を Play Console に登録することが必須になった。既存アプリの約99%は自動登録済みだが、2026-09-30 までに残りを登録しないと Google Play から全世界で削除される。署名鍵の所有証明が必要なため、Play Console のホーム画面でステータスを確認しておきたい。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3856",
+        "title": "Google Play のチャージバック費用が開発者負担に",
+        "body": "https://www.reddit.com/r/androiddev/comments/1w78ag5/google_plays_chargebackdispute_changes_cost_you/\n\n2026-08-03 以降の注文から、これまで Google が全額負担していたチャージバック費用が開発者と分担になった。手数料は銀行により $15〜$100 で、$5 のアイテム（手取り $3.50）が争われると約 $28.50 の持ち出しになる。通知から24時間以内に ReviewRefund API へ証拠を投げないと、反論材料なしで敗ける点が要注意。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3857",
+        "title": "AnkiDroid、Open Collective への寄付リンクを理由に Google Play から削除予告",
+        "body": "https://github.com/ankidroid/Anki-Android/issues/21656\n\nAnkiDroid が寄付リンクを支払いポリシー違反と判定され、アップデートがリジェクト、9/11 に削除予定という事態になった。Open Source Collective の IRS 501(c)(6) 認定書を出しても「免税団体ではない」と機械的に却下され、1か月以上明確な説明が得られていない。ポリシー文言の曖昧さと不服申立て手段の不在に批判が集中した。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3858",
+        "title": "Luanti、根拠のない AI 生成 DMCA 通知で Google Play から削除",
+        "body": "https://blog.luanti.org/2026/08/27/luanti-dmca-tracer-ai/\n\nボクセルゲーム基盤 Luanti の Android 版が、Microsoft の代理で Tracer.AI が出した DMCA 通知により Play から削除された。通知は「Minecraft の著作物を無断使用」と主張するだけで該当箇所の提示がなく、2023年にも同種の通知で46日間削除されている。AI による自動 takedown の乱発とカウンター通知手段の不備が論点に。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3859",
+        "title": "Android 17、大画面での画面向き・リサイズ制限が完全に無視される",
+        "body": "https://developer.android.com/about/versions/17/changes/ff-restrictions-ignored\n\ntargetSdk 37 では sw600dp 以上の大画面で screenOrientation / resizeableActivity / minAspectRatio / setRequestedOrientation() がすべて無視され、ウィンドウ全体を埋めることが強制される。Android 16 にあった一時オプトアウト PROPERTY_COMPAT_ALLOW_RESTRICTED_RESIZABILITY はもう尊重されず、例外はゲーム指定のみ。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3860",
+        "title": "Android Studio Quail 4 が安定版に — Gemma 4 のローカル実行と 23 個の Android skills",
+        "body": "https://developer.android.com/blog/posts/leverage-android-skills-and-gemma-4-in-android-studio-quail-4\n\nQuail 系列の最終安定版。AGP 9 アップグレードや Navigation3 など23個の Android skills がプリロードされ、LLM の応答精度が上がった。12GB 以上の RAM があれば Gemma 4 をローカルで動かし、完全オフラインで複数ファイルにまたがるリファクタリング計画をエージェントに実行させられる。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3861",
+        "title": "Compose Multiplatform を Apple TV で動かした話",
+        "body": "https://dev.to/sajidaledev/my-journey-making-compose-multiplatform-work-on-tvos-and-what-i-learned-1mo3\n\nAndroid TV 開発者が、JetBrains 未対応の tvOS ターゲットを Compose Multiplatform のフォークに自分で追加し、androidx.tv:tv-material もマルチプラットフォーム化した記録。既存の tv-material のコード・フォーカス処理・D-pad ロジックがそのまま動き、Siri Remote はキーイベントとして届く。Gradle プラグイン1つで試せる。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3862",
+        "title": "Kotlin Toolchain 0.12 — Gradle なしで KMP ライブラリの publish と Wasm ビルドが可能に",
+        "body": "https://blog.jetbrains.com/kotlin/2026/09/kotlin-toolchain-0-12-multiplatform-library-publishing-wasm-apps-and-more/\n\nGradle を使わない Kotlin Toolchain の 0.12 で、マルチプラットフォームライブラリの publish（common API・プラットフォーム別アーティファクト・module metadata 一式）と Wasm アプリのビルドに対応した。コマンドラインからの Compose Hot Reload も可能。JDK 17 以上・Kotlin 2.2.20 以上が要件になった。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3863",
+        "title": "SideEffect にキーを渡せるようになったので、Compose の Effect API の使い分けを整理する",
+        "body": "https://zenn.dev/uphyca/articles/00f497f365cc1e\n\nCompose 1.12 で SideEffect にキー引数が追加されたのを受け、LaunchedEffect / DisposableEffect / SideEffect(keys) の使い分けを整理した記事。SideEffect(keys) はレイアウト計測「前」に走るため、フォーカス設定や IME 表示を LaunchedEffect から機械的に置き換えると壊れる点を明示している。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3864",
+        "title": "ボスが 10 万ユーザーのネイティブアプリを Flutter に統一しろと言う",
+        "body": "https://www.reddit.com/r/androiddev/comments/1w4ijfm/boss_wants_to_switch_our_100k_user_native_apps_to/\n\nKotlin+Compose / SwiftUI / Next.js で刷新する計画に対し、上司が「6人を1つの Flutter コードベースに乗せれば3倍速く出せる」と主張してきたという相談。Flutter の社内経験は受託のみ、ネイティブの方が体感が良いという反論に「お前がネイティブ出身だからだ」と返され、大規模移行の実体験を募っている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3865",
+        "title": "DroidKaigi 2026 参加レポートまとめ",
+        "body": "https://design-tech.xtone.co.jp/entry/2026/09/03/131240\nhttps://product.st.inc/entry/2026/09/04/121100\nhttps://tech.every.tv/entry/2026/09/03/182410\n\nDroidKaigi 2026 の参加レポート3本。エクストーンは「オンデバイス AI モデルを誰が持つのか」という前月の問題提起に対し、SharedMemory と mmap でテンソルを Java ヒープと物理 RAM から外す手法という答えを得た経緯を書く。STORES は自社登壇「Swift が Android で動く仕組み」に加え、Project Tate・Sony の CMP 統合・Nav2/Nav3 の設計意図など10名分の所感。エブリーは ANR の三大要因、SSE の「沈黙の罠」、WebAssembly による多層防御のセッション要点を扱う。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3866",
+        "title": "Coding Agent に Swift Macro の展開結果を見せる MCP サーバーを作った",
+        "body": "https://techlife.cookpad.com/entry/expand-swift-macro-for-coding-agent\n\nマクロはコンパイル時に展開されるため生成コードがエージェントから見えず、命名規則を445行のガイドラインで説明してもビルドエラーが止まらなかった、というクックパッドの事例。SwiftSyntax で実際に展開し JSON-RPC で結果を返す MacroExpanderMCP を作ったところ、ガイドラインは77行に減った。文章で推測させず実出力を渡す設計は KSP を抱える Android にも効く。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3867",
+        "title": "Google Play、新しいメモリ使用量・端末移行の品質要件を発表",
+        "body": "https://developer.android.com/blog/posts/elevating-app-quality-reducing-memory-usage-and-improving-device-migration\n2027年2月からメモリ使用量・Bitmap・DEX最適化の閾値超過がPlayでの可視性や公開機能に影響し、4月からはログイン対応アプリにRestore Credentials APIを使ったZero-Tap Sign-Inも要求されます。単なる推奨ではなく、今後の開発ロードマップに直結します。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3868",
+        "title": "Navigation 2.10.0 Stableリリース。Deep LinkとPredictive Backに変更",
+        "body": "https://developer.android.com/jetpack/androidx/releases/navigation\nNavigation 2.10.0がStableになり、Predictive Back向けのカスタム遷移やBack Stack Snapshot APIが追加されました。handleDeepLink()の挙動変更やminSdkの引き上げもあり、Navigation更新時は既存のDeep Link処理や対応端末範囲の確認が必要です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3869",
+        "title": "WhatsApp、10億ユーザー規模のPasskey導入事例を公開",
+        "body": "https://android-developers.googleblog.com/2026/08/whatsapp-passkeys-secure-sign-in.html\nWhatsAppがCredential Managerを使ったPasskey導入の実運用事例を公開。例外をrecoverable／terminalに分類したフォールバック設計やOSバージョン差への対応など、大規模サービスでPasskeyを導入する際に必要となる設計上の知見が紹介されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3870",
+        "title": "Android 17 QPR2 Beta 4リリース",
+        "body": "https://developer.android.com/about/versions/17/qpr2/release-notes\nAndroid 17 QPR2 Beta 4が公開され、QPR2はPlatform Stabilityに到達しました。一般アプリへの大きなAPI変更はありませんが、通話転送に使われる一部USSD操作が制限され、対象アプリではACTION_DIALを利用する実装への移行が必要になります。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
