@@ -1,0 +1,109 @@
+{
+  "id": "MI_kwDOB4jhdM4BEAwf",
+  "number": 445,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/445",
+  "title": "445 2026-09-20",
+  "closedAt": "2026-09-20T10:41:44Z",
+  "description": "Play services minSdkが24へ引き上げ, AndroidX Security State Libraries発表, Android Bench 2.0, NativeとRNなどのパフォーマンス, AEPの要求事項, など",
+  "issues": {
+    "totalCount": 5,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAUjYe7I=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________gvPAAAAAUjbW0E=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3885",
+        "title": "Google Play services、minSdkが24へ引き上げ",
+        "body": "https://developers.google.com/android/guides/releases\nplay-services-base 18.11.0 / basement 18.12.0 で minSdkVersionが24 に変更。さらに旧Google Sign-In APIもbaseから削除され、Credential Managerへの移行が明確になりました。古いAndroidをサポートするアプリは依存更新前の確認が必須です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3886",
+        "title": "AndroidX Security State Librariesを正式発表",
+        "body": "https://android-developers.googleblog.com/2026/09/introducing-androidx-security-state-libraries.html\nSecurity State 1.1.0 / Provider 1.0.0のStableをGoogleが正式発表。System、Mainline module、Kernelごとのパッチ状態や更新可能性、特定CVEの修正状況までアプリから確認できます。特に金融、MDM、企業向けアプリで利用価値が高いAPIです。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3887",
+        "title": "Android Bench 2.0、数日規模のAndroid開発タスクをAI評価へ",
+        "body": "https://developer.android.com/blog/posts/android-bench-2-0-pushing-the-frontier-with-challenging-long-horizon-tasks?hl=ja\nAndroid BenchにLong-Horizon TasksとCoding Agent評価が追加。依存更新、Compose移行、新規アプリ構築など、実務に近い長期間タスクを評価します。AIは新規実装よりリファクタリングやruntime validationで苦戦する傾向も示されています。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3888",
+        "title": "Android Experience Program（AEP）の要求事項を整理",
+        "body": "https://qiita.com/Nabe1216/items/5246f1d4f50761826e1f\nAEP参加時に求められる認証、Restore Credentials、Material 3、Predictive Back、Edge-to-Edge、Media3、CameraXなど多数の要件を整理。単なるストア運用ではなく実装方針にも広く影響します。制度要件は変更され得るため、実対応時はリンク先の公式資料確認が前提です。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3889",
+        "title": "Native / Flutter / React Nativeの実機パフォーマンス比較",
+        "body": "アプリ全体をNative、Flutter、React Nativeで構築した場合を比較し、画面遷移、API取得後の描画、メモリ、アプリサイズ、低スペック端末などを検証。単純な「どれが速い」という議論ではなく、ランタイムコストを含めた技術選定材料として読めます。\nhttps://qiita.com/mitsuharu_e/items/4b523b0e2174e0f5b19f\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
