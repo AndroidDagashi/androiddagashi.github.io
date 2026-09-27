@@ -1,0 +1,272 @@
+{
+  "id": "MI_kwDOB4jhdM4BEhEy",
+  "number": 446,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/446",
+  "title": "446 2026-09-27",
+  "closedAt": "2026-09-27T10:55:40Z",
+  "description": "Navigation 3がStableに, Android StudioのBYOA, Android 17のCTで独自CAが使えなくなる, targetSdk 36対応を振り返る, Kotlin 2.5.0-Beta1",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAU3iJMQ=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfPAAAAAU3itYc=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3894",
+        "title": "Navigation 3 1.2.0がStableに",
+        "body": "https://developer.android.com/jetpack/androidx/releases/navigation3\n\nNavigation 3が1.2.0で安定版に到達。NavEntry間で結果を受け渡すResult API、KMP対応のディープリンクAPI、predictive backと連携するNavigationBackHandlerが追加されました。NavEntry.contentKeyの既定値変更とSceneのequals/hashCodeを要求するlintは移行時に要確認です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3895",
+        "title": "Android StudioでAIエージェントを選べるBYOA",
+        "body": "https://android-developers.googleblog.com/2026/09/build-your-way-use-any-ai-agent-in-android-studio.html\n\nAndroid StudioにBring Your Own Agentが導入され、Claude Agent、Codex、AntigravityをIDE内のエージェントウィンドウから選択可能に。エージェントはビルド診断やエミュレータ操作などStudio側のツールを直接呼べます。Rabbit 2のcanaryで試せます。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3896",
+        "title": "Android 17のCertificate Transparency有効化で独自CAが使えなくなる",
+        "body": "https://httptoolkit.com/blog/android-17-certificate-transparency/\n\ntargetSdk 37かつAndroid 17端末では、システム信頼の全証明書にCTログ由来のSCTが要求されるため、ローカル生成の証明書が信頼されなくなります。HTTP ToolkitやCharlesなど独自CAを使うHTTPSデバッグプロキシが動かなくなるので、通信デバッグ環境の見直しが必要です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "security",
+              "description": "",
+              "color": "2d754b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3897",
+        "title": "今年のtargetSdk 36対応を振り返る",
+        "body": "https://tech.yappli.io/entry/droidkaigi-poster-session-targetsdk36\n\nヤプリが約1年4ヶ月かけたtargetSdk 36対応を、37 PR・207ファイル・18アクティビティ個別対応という具体的な数値で振り返ったDroidKaigiポスターセッションの解説。edge-to-edge、16KBページサイズ、予測型「戻る」対応の工数見積もりの参考になります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "DroidKaigi",
+              "description": "",
+              "color": "FDC137"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3898",
+        "title": "Googlebookに向けたアダプティブ開発",
+        "body": "https://android-developers.googleblog.com/2026/09/adaptive-development-scale-app-googlebook.html\n\nHP、Dell、Lenovoなどが出すAndroidベースのノートPC「Googlebook」が登場。専用アプリは不要で、window size class、Navigation 3のマルチペイン、Continue On、キーボードショートカット対応などを既存の適応UIに足していく形になります。最適化アプリはPlayでバッジや特集の対象に。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3899",
+        "title": "Kotlin 2.5.0-Beta1の新機能",
+        "body": "https://kotlinlang.org/docs/whatsnew-eap.html\n\n名前ベースの分解宣言がStable化し、companion objectを宣言せずに拡張を定義できるcompanion extensionsが実験的に追加。klibのモジュール横断インライン化が既定で有効になりビルド時間も改善します。最小JDKを8から17へ引き上げる警告が入ったので、ツールチェーンの棚卸しを。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3900",
+        "title": "Compose Multiplatform 1.12.1の新機能",
+        "body": "https://kotlinlang.org/docs/multiplatform/whats-new-compose-112.html\n\nSkiaがM150に更新されiOSのシンボル重複が解消。iOSではLazyレイアウトのスクロール性能が向上し、WebではNotoフォントのサブセット自動ダウンロードで豆腐表示が解消されます。デスクトップ向けにCompose Hot ReloadのMCPサーバーと実験的なWindow/Dialog API v2も追加。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3901",
+        "title": "Now in AndroidをKMPへ移植したnowinandroid-kmp",
+        "body": "https://github.com/skydoves/nowinandroid-kmp\n\nskydovesがGoogle公式サンプルNow in AndroidをAndroid / iOS / デスクトップ / Wasmの4ターゲットに移植。HiltをMetro、Retrofit/OkHttpをKtor、DBをRoom 3のバンドルSQLite、R.*をCompose Resourcesへ置き換えており、既存アプリをKMP化する際の移行先の具体例になります。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3902",
+        "title": "TypeSafe AIのAPIがtype-safeじゃなかったので、KMPライブラリを作った",
+        "body": "https://zenn.dev/inoma/articles/ca1a18f016d98c\n\nLLM判定APIの結果がStringで返る問題に対し、利用者が定義したenumで選択肢を受け取れるKMPライブラリkojevを実装した記録。複数の質問を1リクエストで評価できる一方、文字列キーでの取得やスコアの丸めはあえて提供せず判断をアプリ側に残す設計方針が明快です。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3903",
+        "title": "Google Playと決別したConversations、無料化へ",
+        "body": "https://gultsch.de/posts/breaking-up-with-google-play/\n\nXMPPクライアントConversationsの作者が、12年続けた有料バイナリ配布をやめてPlayから撤退し、F-Droidのreproducible buildを主配布経路に。審査の遅延や理由不明のリジェクトが決め手で、助成金で収益依存が切れたことが後押しに。HNで630ptsの議論になりました。",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
