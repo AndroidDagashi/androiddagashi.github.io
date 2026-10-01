@@ -39,9 +39,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.20.44":
-  version: 0.20.44
-  resolution: "@atproto/api@npm:0.20.44"
+"@atproto/api@npm:0.21.0":
+  version: 0.21.0
+  resolution: "@atproto/api@npm:0.21.0"
   dependencies:
     "@atproto/common-web": "npm:^0.5.12"
     "@atproto/lexicon": "npm:^0.7.14"
@@ -51,7 +51,7 @@ __metadata:
     multiformats: "npm:^13.0.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/528d3c1af0c417a7486a1c935e4bc0d24984f62d246d50d32f0d777a0ac69db342a9ae4d0451be051b3e0e5ba8bf26c49a44b39739f108579203db32b7f01a81
+  checksum: 10c0/d20a869b3f936e63a8c372347c5f9ae2546c81519e79bb4dfcdb0d138fc55e29cfbd5d27f3a5cf06f06eedae0f37b32893f553a407bebc6226ac08dc889555e0
   languageName: node
   linkType: hard
 
@@ -1141,14 +1141,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/cli@npm:7.4.1":
-  version: 7.4.1
-  resolution: "@graphql-codegen/cli@npm:7.4.1"
+"@graphql-codegen/cli@npm:7.4.3":
+  version: 7.4.3
+  resolution: "@graphql-codegen/cli@npm:7.4.3"
   dependencies:
     "@babel/generator": "npm:^7.18.13"
     "@babel/template": "npm:^7.18.10"
     "@babel/types": "npm:^7.18.13"
-    "@graphql-codegen/client-preset": "npm:^6.1.3"
+    "@graphql-codegen/client-preset": "npm:^6.2.0"
     "@graphql-codegen/core": "npm:^6.2.0"
     "@graphql-codegen/plugin-helpers": "npm:^7.3.0"
     "@graphql-tools/apollo-engine-loader": "npm:^8.0.28"
@@ -1192,11 +1192,11 @@ __metadata:
     graphql-codegen: esm/bin.js
     graphql-codegen-cjs: cjs/bin.js
     graphql-codegen-esm: esm/bin.js
-  checksum: 10c0/ecabd846dbbd7e59c48336b5f654ec0c8a71beeb6ea32a0353adb3b17b347a7befb90dd6ae8058e0d8fcc20353e3a59f01ad9d0baa2897bf0ed090500261c7bb
+  checksum: 10c0/47f7e77e2c309c363f70853a4bc38111a7a2118b66b3aa01170c574acdffb310581ad548a607ea355fcaa51f033773b34efab3416c5ef197e29c7f8c4be59919
   languageName: node
   linkType: hard
 
-"@graphql-codegen/client-preset@npm:^6.1.3":
+"@graphql-codegen/client-preset@npm:^6.2.0":
   version: 6.2.0
   resolution: "@graphql-codegen/client-preset@npm:6.2.0"
   dependencies:
@@ -1338,26 +1338,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript-operations@npm:6.1.6":
-  version: 6.1.6
-  resolution: "@graphql-codegen/typescript-operations@npm:6.1.6"
-  dependencies:
-    "@graphql-codegen/plugin-helpers": "npm:^7.1.0"
-    "@graphql-codegen/schema-ast": "npm:^6.1.0"
-    "@graphql-codegen/visitor-plugin-common": "npm:^7.2.5"
-    auto-bind: "npm:^5.0.0"
-    tslib: "npm:^2.8.0"
-  peerDependencies:
-    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-    graphql-sock: ^1.0.0
-  peerDependenciesMeta:
-    graphql-sock:
-      optional: true
-  checksum: 10c0/81a2f1453c325238cde515683a832fc487f853725caa0545deb0a885927aae991b1168a3776745fbf89c6f182dae03bcc2411a17c7784c968739f7080053ad74
-  languageName: node
-  linkType: hard
-
-"@graphql-codegen/typescript-operations@npm:^6.1.6":
+"@graphql-codegen/typescript-operations@npm:6.1.7, @graphql-codegen/typescript-operations@npm:^6.1.6":
   version: 6.1.7
   resolution: "@graphql-codegen/typescript-operations@npm:6.1.7"
   dependencies:
@@ -4456,7 +4437,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "androiddagashi.github.io@workspace:."
   dependencies:
-    prettier: "npm:3.9.8"
+    prettier: "npm:3.9.9"
   languageName: unknown
   linkType: soft
 
@@ -6679,9 +6660,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-admin@npm:14.4.0":
-  version: 14.4.0
-  resolution: "firebase-admin@npm:14.4.0"
+"firebase-admin@npm:14.5.0":
+  version: 14.5.0
+  resolution: "firebase-admin@npm:14.5.0"
   dependencies:
     "@fastify/busboy": "npm:^3.0.0"
     "@firebase/database-compat": "npm:^2.1.4"
@@ -6689,7 +6670,7 @@ __metadata:
     "@google-cloud/firestore": "npm:^9.1.0"
     "@google-cloud/storage": "npm:^8.1.0"
     fast-deep-equal: "npm:^3.1.1"
-    google-auth-library: "npm:^10.6.2"
+    google-auth-library: "npm:^11.1.0"
     jsonwebtoken: "npm:^9.0.0"
     jwks-rsa: "npm:^4.0.1"
   dependenciesMeta:
@@ -6697,7 +6678,7 @@ __metadata:
       optional: true
     "@google-cloud/storage":
       optional: true
-  checksum: 10c0/d0fd0c2def630ea273a3af3b717eb4bfb2cde8050cd01d8041ef9ef377320c95cf5047b75a38435ed93bfeedf49620521c00068f0ce7ec880df98444fb562b77
+  checksum: 10c0/1fe458a42ed0e12ec62cb04432d3e8b204efe2e9b562f940e4058b946744d673ec47536299e8b55397e5a1ce56cd22496a28668c56a8ddf45931fcfa388728b0
   languageName: node
   linkType: hard
 
@@ -6759,14 +6740,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fs-extra@npm:11.4.0":
-  version: 11.4.0
-  resolution: "fs-extra@npm:11.4.0"
+"fs-extra@npm:11.4.1":
+  version: 11.4.1
+  resolution: "fs-extra@npm:11.4.1"
   dependencies:
     graceful-fs: "npm:^4.2.0"
     jsonfile: "npm:^6.0.1"
     universalify: "npm:^2.0.0"
-  checksum: 10c0/1e311eca820a12d3d795f2043dcd5628d017f4d21e634f3f9ef314ae68bee9979758262fb9cb35ffa6f26454c3fffe8b15558733e91e8fc729b07b10bb98d8b6
+  checksum: 10c0/15fafc34e0b6c1b59f0f92aae90b5fab44129ad7ebc1362cc593f2dec1d8a765b7b70b40e2bc779ee146f6ff13a736a065ddb991e5b597e294919ccb0c8ff834
   languageName: node
   linkType: hard
 
@@ -6857,17 +6838,6 @@ __metadata:
     https-proxy-agent: "npm:^7.0.1"
     node-fetch: "npm:^3.3.2"
   checksum: 10c0/64719a771c5ffa631b33d18b144253596f69d98fa3123c3864f7b66947bb1406fb98a4690bd7e11c651d2ee3f57b60b23814cc4a7dbd62d043eab9fa3df60f96
-  languageName: node
-  linkType: hard
-
-"gcp-metadata@npm:8.1.2":
-  version: 8.1.2
-  resolution: "gcp-metadata@npm:8.1.2"
-  dependencies:
-    gaxios: "npm:^7.0.0"
-    google-logging-utils: "npm:^1.0.0"
-    json-bigint: "npm:^1.0.0"
-  checksum: 10c0/15a61231a9410dc11c2828d2c9fdc8b0a939f1af746195c44edc6f2ffea0acab52cef3a7b9828069a36fd5d68bda730f7328a415fe42a01258f6e249dfba6908
   languageName: node
   linkType: hard
 
@@ -7071,21 +7041,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"google-auth-library@npm:^10.6.2":
-  version: 10.9.1
-  resolution: "google-auth-library@npm:10.9.1"
-  dependencies:
-    base64-js: "npm:^1.3.0"
-    ecdsa-sig-formatter: "npm:^1.0.11"
-    gaxios: "npm:^7.1.4"
-    gcp-metadata: "npm:8.1.2"
-    google-logging-utils: "npm:1.1.3"
-    jws: "npm:^4.0.0"
-  checksum: 10c0/46babe840d295ad94044bdba763bd41b10dc50d60f00e3e7b441465db171dc54c8f33ba44212db40e84aba3a72c23d642fa5a807e778e60049ad7d860d100680
-  languageName: node
-  linkType: hard
-
-"google-auth-library@npm:^11.0.0":
+"google-auth-library@npm:^11.0.0, google-auth-library@npm:^11.1.0":
   version: 11.1.0
   resolution: "google-auth-library@npm:11.1.0"
   dependencies:
@@ -10077,12 +10033,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.9.8":
-  version: 3.9.8
-  resolution: "prettier@npm:3.9.8"
+"prettier@npm:3.9.9":
+  version: 3.9.9
+  resolution: "prettier@npm:3.9.9"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/257e5ef11ba5006d0b0712271705701c065c8003e07763f996ce185d39633902f3fe1f814839eed76f75c97b6d5376d6157bd9f44db18cacb1dbdcb263cc66ae
+  checksum: 10c0/d50ea2537b2ff7dbd5088a214f4d936484e55c665cea2185b477a55b0770be55f3b156a71f63a9a639def6b334667bb327139dc85f2a1041c0a34752cdc74647
   languageName: node
   linkType: hard
 
@@ -10910,18 +10866,18 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site-api-github@workspace:packages/site-api-github"
   dependencies:
-    "@graphql-codegen/cli": "npm:7.4.1"
+    "@graphql-codegen/cli": "npm:7.4.3"
     "@graphql-codegen/introspection": "npm:6.1.0"
     "@graphql-codegen/near-operation-file-preset": "npm:5.2.2"
     "@graphql-codegen/typescript": "npm:6.1.0"
     "@graphql-codegen/typescript-document-nodes": "npm:6.1.0"
-    "@graphql-codegen/typescript-operations": "npm:6.1.6"
+    "@graphql-codegen/typescript-operations": "npm:6.1.7"
     "@octokit/graphql": "npm:9.0.5"
     "@types/node": "npm:26.6.2"
     graphql: "npm:16.14.2"
     site-common: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.23.13"
+    tsx: "npm:4.23.15"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -10932,13 +10888,13 @@ __metadata:
   dependencies:
     "@types/fs-extra": "npm:11.0.4"
     "@types/node": "npm:26.6.2"
-    fs-extra: "npm:11.4.0"
+    fs-extra: "npm:11.4.1"
     rimraf: "npm:6.1.3"
     site-api-github: "npm:1.0.0"
     site-common: "npm:1.0.0"
     site-config: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.23.13"
+    tsx: "npm:4.23.15"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -10972,7 +10928,7 @@ __metadata:
     site-common: "npm:1.0.0"
     site-config: "npm:1.0.0"
     site-types: "npm:1.0.0"
-    tsx: "npm:4.23.13"
+    tsx: "npm:4.23.15"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -11057,15 +11013,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.20.44"
+    "@atproto/api": "npm:0.21.0"
     "@types/oauth": "npm:0.9.6"
     date-fns: "npm:4.4.0"
-    firebase-admin: "npm:14.4.0"
+    firebase-admin: "npm:14.5.0"
     oauth: "npm:0.10.2"
     site-common: "npm:^1.0.0"
     site-config: "npm:^1.0.0"
     site-types: "npm:^1.0.0"
-    tsx: "npm:4.23.13"
+    tsx: "npm:4.23.15"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -11646,9 +11602,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tsx@npm:4.23.13":
-  version: 4.23.13
-  resolution: "tsx@npm:4.23.13"
+"tsx@npm:4.23.15":
+  version: 4.23.15
+  resolution: "tsx@npm:4.23.15"
   dependencies:
     esbuild: "npm:~0.28.0"
     fsevents: "npm:~2.3.3"
@@ -11657,7 +11613,7 @@ __metadata:
       optional: true
   bin:
     tsx: dist/cli.mjs
-  checksum: 10c0/dc99c8988b42ec2443963a0b9051f42d068bc7e2a44e82f3b94b40539a991c5c01ea3ee049cf317d1040b2245711dd4c64ace9ac875f3b07edee29f610702e3c
+  checksum: 10c0/3c5fc53e578da87d3a63565286b1ecbb0e01b9bb646daec1957294ef890d14f22cc67bb4b09b5daffab0e7ce0217b1e7645393feb0f524b1ddf26ae9595d7e75
   languageName: node
   linkType: hard
 
