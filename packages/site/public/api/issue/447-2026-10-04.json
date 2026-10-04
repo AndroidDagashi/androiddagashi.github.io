@@ -1,0 +1,115 @@
+{
+  "id": "MI_kwDOB4jhdM4BFGRB",
+  "number": 447,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/447",
+  "title": "447 2026-10-04",
+  "closedAt": "2026-10-04T10:55:02Z",
+  "description": "AIエージェントのトレンド、Composeのマルチモジュール構成のパフォーマンス、KMPプロジェクトにおける依存ライブラリのバージョン不整合、など",
+  "issues": {
+    "totalCount": 4,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAVOoQK0=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_PAAAAAVOpv28=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3907",
+        "title": "AIエージェントのトレンド",
+        "body": "https://blog.jetbrains.com/research/2026/08/ai-coding-agent-adoption-2026/\n\nClaude Codeが最も普及しているAIコーディングツールとなっているそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3908",
+        "title": "Jetpack Composeのマルチモジュール構成のパフォーマンスについて",
+        "body": "https://proandroiddev.com/jetpack-compose-performance-at-scale-diagnosing-and-fixing-cross-module-stability-leaks-87327d8625c7\n\n様々なツールを比較解説しています。結論として、compose_compiler_config.confを使うことを提案しています。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3909",
+        "title": "KMPプロジェクトにおける依存ライブラリのバージョン不整合について",
+        "body": "https://touchlab.co/gradle-transitive-dependency-resolution\n\n依存ライブラリのバージョン不整合に起因するランタイムクラッシュがなぜ起こるのか、それの解決方法について解説をしています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3910",
+        "title": "ヘッドレス化でAIエージェントの処理をする",
+        "body": "https://ralf-wondratschek.com/blog/headless-app-agents",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
