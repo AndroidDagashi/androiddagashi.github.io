@@ -39,64 +39,64 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.21.0":
-  version: 0.21.0
-  resolution: "@atproto/api@npm:0.21.0"
+"@atproto/api@npm:0.22.0":
+  version: 0.22.0
+  resolution: "@atproto/api@npm:0.22.0"
   dependencies:
-    "@atproto/common-web": "npm:^0.5.12"
-    "@atproto/lexicon": "npm:^0.7.14"
+    "@atproto/common-web": "npm:^0.5.13"
+    "@atproto/lexicon": "npm:^0.7.15"
     "@atproto/syntax": "npm:^0.7.6"
-    "@atproto/xrpc": "npm:^0.8.13"
+    "@atproto/xrpc": "npm:^0.8.14"
     await-lock: "npm:^3.0.0"
     multiformats: "npm:^13.0.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/d20a869b3f936e63a8c372347c5f9ae2546c81519e79bb4dfcdb0d138fc55e29cfbd5d27f3a5cf06f06eedae0f37b32893f553a407bebc6226ac08dc889555e0
+  checksum: 10c0/33164f47f89491fa2695a1b3664f12fa19c643fcfacdc65552e28cfe5d5525ec20a9d93720c970aa47caa5dadb78d9651d4e659fb4ba2eca926b3de253b8a4c8
   languageName: node
   linkType: hard
 
-"@atproto/common-web@npm:^0.5.12":
-  version: 0.5.12
-  resolution: "@atproto/common-web@npm:0.5.12"
+"@atproto/common-web@npm:^0.5.13, @atproto/common-web@npm:^0.5.14":
+  version: 0.5.14
+  resolution: "@atproto/common-web@npm:0.5.14"
   dependencies:
-    "@atproto/lex-data": "npm:^0.1.7"
-    "@atproto/lex-json": "npm:^0.1.6"
+    "@atproto/lex-data": "npm:^0.1.8"
+    "@atproto/lex-json": "npm:^0.1.7"
     "@atproto/syntax": "npm:^0.7.6"
     zod: "npm:^3.23.8"
-  checksum: 10c0/f79e9a98ae1c4fbe1f489fc0c43aa7a53a0c2caae08f794bd2ef11a043e4536b4310c7bdb4e60eff72d3c8515c5b3bbcac893703663b73f68a087ed6ef0e7853
+  checksum: 10c0/d9e51c0f7ebd85134e5ffdb6caf2fe4cf3756e0583035119fa79589b4af52a5a201c0835816a146c0a2c0ab9640166f4825653ed0209dcba9bbe1b4a3516bfe9
   languageName: node
   linkType: hard
 
-"@atproto/lex-data@npm:^0.1.7":
-  version: 0.1.7
-  resolution: "@atproto/lex-data@npm:0.1.7"
+"@atproto/lex-data@npm:^0.1.8":
+  version: 0.1.8
+  resolution: "@atproto/lex-data@npm:0.1.8"
   dependencies:
     multiformats: "npm:^13.0.0"
     tslib: "npm:^2.8.1"
     unicode-segmenter: "npm:^0.14.0"
-  checksum: 10c0/d241fa82c85a3e6850aa3738f2e22919144f85f7ac211ff490ec62253e93d20ed2373018cf8d21e9f1ebca4ecb69274c039674c05b8c0c770ac42b6e532741ac
+  checksum: 10c0/c12ce42f12259138c8c9d776be0fa3a18d0c009b3c99db382c6c3b7193d1cb0c8de44cdec8fdf5b5da00465d75ac7bc7cc17361de0c6033f7286893359a058d5
   languageName: node
   linkType: hard
 
-"@atproto/lex-json@npm:^0.1.6":
-  version: 0.1.6
-  resolution: "@atproto/lex-json@npm:0.1.6"
+"@atproto/lex-json@npm:^0.1.7":
+  version: 0.1.7
+  resolution: "@atproto/lex-json@npm:0.1.7"
   dependencies:
-    "@atproto/lex-data": "npm:^0.1.7"
+    "@atproto/lex-data": "npm:^0.1.8"
     tslib: "npm:^2.8.1"
-  checksum: 10c0/89177f24127abfe9053b732bd31ea29a3d020eddc7fd62c2e4ae354f0cf64501c95afd6f9302217ce1ba647c1abe1edb4f7a7452b20877fdb923ced409de9689
+  checksum: 10c0/014df6a7c37256d2cffbb2c75e11080ffea562edfafc8b526a1f97d8d86e3b601c4eed31d290660f6fcd63e1eb7d7d454a5776178a1a4ba6fa8ab99a6c75f6b2
   languageName: node
   linkType: hard
 
-"@atproto/lexicon@npm:^0.7.14":
-  version: 0.7.14
-  resolution: "@atproto/lexicon@npm:0.7.14"
+"@atproto/lexicon@npm:^0.7.15, @atproto/lexicon@npm:^0.7.16":
+  version: 0.7.16
+  resolution: "@atproto/lexicon@npm:0.7.16"
   dependencies:
-    "@atproto/common-web": "npm:^0.5.12"
+    "@atproto/common-web": "npm:^0.5.14"
     "@atproto/syntax": "npm:^0.7.6"
     multiformats: "npm:^13.0.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/c0d2c4fd2345b870d0d6a7511e8351a685a307bb72e51ba884d3b50b3eb1fa6058a5b5d63501199f38aa503b97c6cf29cdbca0eac1d638c061a6be9c56280f3d
+  checksum: 10c0/8a09dfb48b913a3bae7079e89355921d0a09d676c92e9ed3dfc79e9f47bbbc3c98f4cb1a375ca613810d564fc770c0e57b00f3b4460846c21e778fd30151f41d
   languageName: node
   linkType: hard
 
@@ -110,13 +110,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/xrpc@npm:^0.8.13":
-  version: 0.8.13
-  resolution: "@atproto/xrpc@npm:0.8.13"
+"@atproto/xrpc@npm:^0.8.14":
+  version: 0.8.15
+  resolution: "@atproto/xrpc@npm:0.8.15"
   dependencies:
-    "@atproto/lexicon": "npm:^0.7.14"
+    "@atproto/lexicon": "npm:^0.7.16"
     zod: "npm:^3.23.8"
-  checksum: 10c0/09821ef005c7c4b5c72703989c6ded3759d05cbc84d4754fe8a17b3689860865dc49722c4c9dd649cc00c6e7e076ad284addfe40e2ebf8d8d851ca23bd6a4902
+  checksum: 10c0/43c75dcfab90116166326493e46341f51a2cbf80ce525582b45ddaf908a04b6f4d6d3c686fb54a92256eb6c61db641bf62b9a99d214368bf1bc667a914efc81b
   languageName: node
   linkType: hard
 
@@ -1281,9 +1281,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/plugin-helpers@npm:^7.0.0, @graphql-codegen/plugin-helpers@npm:^7.1.0, @graphql-codegen/plugin-helpers@npm:^7.3.0":
-  version: 7.3.0
-  resolution: "@graphql-codegen/plugin-helpers@npm:7.3.0"
+"@graphql-codegen/plugin-helpers@npm:^7.0.0, @graphql-codegen/plugin-helpers@npm:^7.1.0, @graphql-codegen/plugin-helpers@npm:^7.3.0, @graphql-codegen/plugin-helpers@npm:^7.4.0":
+  version: 7.4.0
+  resolution: "@graphql-codegen/plugin-helpers@npm:7.4.0"
   dependencies:
     "@graphql-tools/utils": "npm:^11.2.0"
     change-case-all: "npm:^2.1.0"
@@ -1292,7 +1292,7 @@ __metadata:
     tslib: "npm:^2.8.0"
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10c0/dff38d72fa5cc34c32d18db601d7a134673bcb38dd68ad8d94ac6dbef2de5e2d5924afbedc27468a0e91de4f91cb8b13cb1e120278edcd07490478b84861db86
+  checksum: 10c0/7ce7d182ccc8bd202f55ce017de1f94c6b67aba878bbc9b87dccfdeec93d271dc772e724ff95bed910c4bd54d368621d22d3e1bbd609cd822bb22d730e218a22
   languageName: node
   linkType: hard
 
@@ -1324,27 +1324,27 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript-document-nodes@npm:6.1.0":
-  version: 6.1.0
-  resolution: "@graphql-codegen/typescript-document-nodes@npm:6.1.0"
+"@graphql-codegen/typescript-document-nodes@npm:6.1.1":
+  version: 6.1.1
+  resolution: "@graphql-codegen/typescript-document-nodes@npm:6.1.1"
   dependencies:
-    "@graphql-codegen/plugin-helpers": "npm:^7.1.0"
-    "@graphql-codegen/visitor-plugin-common": "npm:^7.2.0"
+    "@graphql-codegen/plugin-helpers": "npm:^7.4.0"
+    "@graphql-codegen/visitor-plugin-common": "npm:^7.2.6"
     auto-bind: "npm:^5.0.0"
     tslib: "npm:^2.8.0"
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10c0/8091295bcb54720fea5b71c0f53998a738573ffa1c53644ac8591149e330025feaf5ffcce9ca56828969787ba674372d0f877adefa53ccca18df8c4ce23a6c8e
+  checksum: 10c0/b94301749cca63e8d278fa3e5da0b58a3387e4d381e28355ac3518f5067561b392f0d62f5be77e781a91bca164fd4d786291f00e8cd1d77d338af85e4a466bd2
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript-operations@npm:6.1.7, @graphql-codegen/typescript-operations@npm:^6.1.6":
-  version: 6.1.7
-  resolution: "@graphql-codegen/typescript-operations@npm:6.1.7"
+"@graphql-codegen/typescript-operations@npm:6.1.9, @graphql-codegen/typescript-operations@npm:^6.1.6":
+  version: 6.1.9
+  resolution: "@graphql-codegen/typescript-operations@npm:6.1.9"
   dependencies:
-    "@graphql-codegen/plugin-helpers": "npm:^7.3.0"
+    "@graphql-codegen/plugin-helpers": "npm:^7.4.0"
     "@graphql-codegen/schema-ast": "npm:^6.1.0"
-    "@graphql-codegen/visitor-plugin-common": "npm:^7.2.5"
+    "@graphql-codegen/visitor-plugin-common": "npm:^7.2.7"
     auto-bind: "npm:^5.0.0"
     tslib: "npm:^2.8.0"
   peerDependencies:
@@ -1353,7 +1353,7 @@ __metadata:
   peerDependenciesMeta:
     graphql-sock:
       optional: true
-  checksum: 10c0/5bdd7ebf34f29927e518da4e717c39d0d9bb290dcc6eac4b8f4a556de5817455d2cc72890b6f257e2cf17e18926dcc460a32b63b0d6c84667717fe34d2a6c9e7
+  checksum: 10c0/1b657de90da4cdcf753978082df5af3b7b3af8f309ee97cd8fedb47945928b9dacde391f666c77d1d8e1ec39811fbe24b715471a7a62efc4be274e256d5a3d77
   languageName: node
   linkType: hard
 
@@ -1372,11 +1372,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/visitor-plugin-common@npm:^7.2.0, @graphql-codegen/visitor-plugin-common@npm:^7.2.2, @graphql-codegen/visitor-plugin-common@npm:^7.2.5":
-  version: 7.2.5
-  resolution: "@graphql-codegen/visitor-plugin-common@npm:7.2.5"
+"@graphql-codegen/visitor-plugin-common@npm:^7.2.0, @graphql-codegen/visitor-plugin-common@npm:^7.2.2, @graphql-codegen/visitor-plugin-common@npm:^7.2.5, @graphql-codegen/visitor-plugin-common@npm:^7.2.6, @graphql-codegen/visitor-plugin-common@npm:^7.2.7":
+  version: 7.2.7
+  resolution: "@graphql-codegen/visitor-plugin-common@npm:7.2.7"
   dependencies:
-    "@graphql-codegen/plugin-helpers": "npm:^7.1.0"
+    "@graphql-codegen/plugin-helpers": "npm:^7.4.0"
     "@graphql-tools/optimize": "npm:^2.0.0"
     "@graphql-tools/relay-operation-optimizer": "npm:^7.1.1"
     "@graphql-tools/utils": "npm:^11.2.0"
@@ -1388,7 +1388,7 @@ __metadata:
     tslib: "npm:^2.8.0"
   peerDependencies:
     graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-  checksum: 10c0/da5390c7d10ef1ee2d062d93fd20f5b13570b23fc212cabb06b331e2ea654d32c0bc89088b4d1777d0349b596b1520a4f91e0512debaaf845778f2c7b9e36825
+  checksum: 10c0/9c7be9f16ff8a0f660763864951e5d8b300be128911abf7597db5cb73d64bf2f0e199592bea8fd2dbf2a5334ce1fdcd75b5f2b78ca6cb8f96d25acb491e8a3ce
   languageName: node
   linkType: hard
 
@@ -10861,8 +10861,8 @@ __metadata:
     "@graphql-codegen/introspection": "npm:6.1.0"
     "@graphql-codegen/near-operation-file-preset": "npm:5.2.2"
     "@graphql-codegen/typescript": "npm:6.1.0"
-    "@graphql-codegen/typescript-document-nodes": "npm:6.1.0"
-    "@graphql-codegen/typescript-operations": "npm:6.1.7"
+    "@graphql-codegen/typescript-document-nodes": "npm:6.1.1"
+    "@graphql-codegen/typescript-operations": "npm:6.1.9"
     "@octokit/graphql": "npm:9.0.5"
     "@types/node": "npm:26.6.3"
     graphql: "npm:16.14.2"
@@ -11004,7 +11004,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.21.0"
+    "@atproto/api": "npm:0.22.0"
     "@types/oauth": "npm:0.9.6"
     date-fns: "npm:4.4.0"
     firebase-admin: "npm:14.5.0"
