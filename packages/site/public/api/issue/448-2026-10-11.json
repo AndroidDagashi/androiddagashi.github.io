@@ -1,0 +1,235 @@
+{
+  "id": "MI_kwDOB4jhdM4BFz3t",
+  "number": 448,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/448",
+  "title": "448 2026-10-11",
+  "closedAt": "2026-10-11T10:54:46Z",
+  "description": "A2UIによるAI生成UI、ML Drift、EmbeddingGemma 2、InstagramのCompose移行、Kotlin Toolchain 0.13、Android CLIのDevice Streaming対応、など",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAVkw-Sk=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfPAAAAAVkxhTg=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3912",
+        "title": "A2UIとADKでAIエージェントがAndroidのUIを動的生成",
+        "body": "GoogleがADK、AG-UI、A2UIを組み合わせ、AIエージェントが生成したUIをJetpack Composeでネイティブに描画する方法を解説。AndroidXのA2UI Rendererを利用し、クラウド上のエージェントからインタラクティブな画面を動的に提供する仕組みを紹介しています。\nhttps://android-developers.googleblog.com/2026/09/android-agentic-workflows.html",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3913",
+        "title": "GoogleがオンデバイスAI向けGPUエンジン「ML Drift」をOSS公開",
+        "body": "GoogleがLiteRTのGPUアクセラレーションを担う「ML Drift」をApache 2.0で公開。OpenGL ES、OpenCL、Metal、WebGPUなどに対応し、生成AIを含む端末内推論を高速化します。従来のTensorFlow Lite GPU Delegateからの移行も推奨しています。\nhttps://developers.googleblog.com/en/ml-drift-next-gen-gpu-aiml-inference-at-the-edge/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3914",
+        "title": "Instagram DirectのCompose移行でAIエージェントのコスト33%削減",
+        "body": "MetaがInstagram DirectをJetpack Composeへ移行し、コード量50%削減、AIエージェントの実行時間35%短縮、トークンコスト33%削減を実現。AIによる開発を前提としたUIアーキテクチャの設計や、Composeのパフォーマンス改善について解説しています。\nhttps://developer.android.com/blog/posts/jetpack-compose-ai-native-ui-instagram-direct",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3915",
+        "title": "EmbeddingGemma 2が公開、端末内でマルチモーダル検索が可能に",
+        "body": "Googleが7.4億パラメータのマルチモーダル埋め込みモデル「EmbeddingGemma 2」を公開。テキスト・画像・動画・音声を共通のベクトル空間に変換し、端末内で意味検索などを実現できます。MediaPipe Tasksに対応し、今後ML Kitからも利用可能になる予定です。\nhttps://developers.googleblog.com/google-ai-edge-with-embeddinggemma-2/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3916",
+        "title": "Google Playが従量課金など新しいサブスクリプション機能を発表",
+        "body": "Google Playが従量課金、複数人向けサブスクリプション、サブスクと単発商品の同時購入などを発表。AIアプリ向けには、残高が一定額を下回ると自動チャージするプリペイド型従量課金も用意しています。新機能はテストや段階的な提供が進められています。\nhttps://developer.android.com/blog/posts/driving-growth-on-google-play-the-next-era-of-subscriptions",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3917",
+        "title": "Kotlin Toolchain 0.13が公開、新規KMPプロジェクトでの利用を推奨",
+        "body": "JetBrainsが新規KMPプロジェクトでKotlin Toolchainの利用を推奨すると発表。kotlin newによるプロジェクト作成、Swift Package Managerの依存関係取り込み、Android SDKの自動セットアップなどに対応し、KMP開発の設定を簡素化します。\nhttps://blog.jetbrains.com/kotlin/2026/10/start-your-next-kmp-app-with-kotlin-toolchain-0-13/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3918",
+        "title": "Android CLIがDevice Streamingに対応、Agent Skillsも拡充",
+        "body": "GoogleがAndroid CLIをアップデートし、クラウド上の実機を利用できるDevice Streamingに対応。Android開発向けAgent Skillsも拡充され、Claude CodeやCodexなどのAIエージェントからビルド、テスト、デバイス操作などを実行しやすくなっています。\nhttps://developer.android.com/blog/posts/android-cli-device-streaming-and-skills",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3919",
+        "title": "KMPプラグインでSwiftのIDEサポートが終了へ",
+        "body": "JetBrainsがAndroid Studio Rabbit 2以降のKMPプラグインで、Swiftコードの編集、シンタックスハイライト、ナビゲーション機能を廃止すると発表しました。iOSアプリの実行やKotlinコードのデバッグ、Swift Exportなどは引き続きサポートされます。\nhttps://blog.jetbrains.com/kotlin/2026/10/discontinuing-swift-language-ide-support-in-the-kotlin-multiplatform-plugin/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3920",
+        "title": "IntelliJのKotlin・Java対応LSPがRC版に",
+        "body": "JetBrainsの「Java and Kotlin by IntelliJ IDEA」がRC版に到達。VS CodeやCursorからIntelliJのコード補完、リファクタリング、コード解析などを利用できます。AIエージェントからのセマンティック検索にも対応し、正式版ではUltimateの契約が必要になります。\nhttps://blog.jetbrains.com/idea/2026/10/java-and-kotlin-by-intellij-idea-the-lsp-based-extension-reaches-release-candidate/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3921",
+        "title": "Jetpack Compose 1.13.0-beta01がリリース",
+        "body": "Compose 1.13.0-beta01が公開されました。FoundationではPolygonShapeのAPI変更やBasicTextFieldのフォーカス処理改善などが含まれています。また、ComposeライブラリではKotlinコンパイラの最低バージョンが2.2に引き上げられています。\nhttps://developer.android.com/jetpack/androidx/releases/compose-foundation",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
