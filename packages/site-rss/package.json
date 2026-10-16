@@ -4,7 +4,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "generate": "tsx ./index.ts"
+    "generate": "tsx ./index.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "feed": "patch:feed@npm%3A5.2.0#~/.yarn/patches/feed-npm-5.2.0-a770610f78.patch",

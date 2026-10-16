@@ -12,7 +12,8 @@
     "sns:update": "yarn workspace sns-updater update",
     "site:lint": "yarn workspace site lint",
     "site:format": "yarn workspace site format",
-    "site:typecheck": "yarn workspace site typecheck"
+    "site:typecheck": "yarn workspace site typecheck",
+    "typecheck": "yarn workspaces foreach --all --exclude androiddagashi.github.io --parallel run typecheck"
   },
   "private": true,
   "workspaces": [

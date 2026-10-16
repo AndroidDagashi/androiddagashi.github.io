@@ -22,6 +22,7 @@
   },
   "scripts": {
     "graphql:schema": "graphql-codegen --config codegen.schema.ts",
-    "graphql:codegen": "graphql-codegen --config codegen.ts"
+    "graphql:codegen": "graphql-codegen --config codegen.ts",
+    "typecheck": "tsc --noEmit"
   }
 }
