@@ -4,7 +4,8 @@
   "license": "MIT",
   "type": "module",
   "scripts": {
-    "generate": "tsx ./index.ts"
+    "generate": "tsx ./index.ts",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "fs-extra": "11.4.1",
