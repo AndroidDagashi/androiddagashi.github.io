@@ -7,30 +7,41 @@ on:
       - 'renovate/**'
   pull_request:
 
-env:
-  TZ: Asia/Tokyo
-
 jobs:
-  lint:
-    name: Lint
+  build:
+    name: Build Website
     runs-on: ubuntu-latest
+    env:
+      TZ: Asia/Tokyo
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: ./.github/actions/setup
-      - run: yarn site:lint
 
-  typecheck:
-    name: Typecheck
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: ./.github/actions/setup
-      - run: yarn typecheck
+      - name: Setup mise
+        uses: jdx/mise-action@9b200bcecbfd6303e69a4a261b2e09e3757440a7 # v5.2.0
 
-  generate:
-    name: Generate website
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
-      - uses: ./.github/actions/setup
-      - run: yarn workspace site exec nuxi build --preset github_pages
+      - name: Get yarn cache directory
+        id: yarn-cache-dir
+        run: echo "dir=$(yarn config get cacheFolder)" >> "$GITHUB_OUTPUT"
+
+      - name: Cache yarn packages
+        uses: actions/cache@55cc8345863c7cc4c66a329aec7e433d2d1c52a9 # v6.1.0
+        with:
+          path: ${{ steps.yarn-cache-dir.outputs.dir }}
+          key: yarn-${{ runner.os }}-${{ hashFiles('yarn.lock') }}
+          restore-keys: |
+            yarn-${{ runner.os }}-
+
+      - name: install dependencies
+        run: |
+          node --version
+          yarn install
+
+      - parallel:
+          - name: Lint
+            run: yarn site:lint
+
+          - name: Typecheck
+            run: yarn typecheck
+
+          - name: Generate website
+            run: yarn workspace site exec nuxi build --preset github_pages
