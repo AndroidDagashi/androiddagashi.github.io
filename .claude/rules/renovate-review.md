@@ -2,3 +2,5 @@ Renovate / Dependabot の依存更新 PR をレビューする際、コード生
 
 - ローカルで実際にコード生成（`yarn workspace site-api-github run graphql:codegen`）を実行し、生成コードの差分有無を確認する。
 - introspection schema の更新（`graphql:schema` → `graphql.schema.json` の再生成と、それに伴う `globals.ts` の再生成）も同じ PR に追加コミットとして含める。上流 GitHub API スキーマのドリフトが混ざるが、それも含めて追随する。
+
+レビュー中に問題（型チェックのエラー、壊れた設定など）を見つけたら、更新が原因でなくても、マージする前にその PR へ修正コミットを追加して直すこと。「既存の問題だから」「CI で検出されていないから」として報告だけで済ませたり、別 PR に回したりしない。
