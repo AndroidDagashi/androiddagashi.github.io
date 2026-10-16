@@ -10,7 +10,7 @@ on:
 jobs:
   build:
     name: Build Website
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     env:
       TZ: Asia/Tokyo
     steps:
