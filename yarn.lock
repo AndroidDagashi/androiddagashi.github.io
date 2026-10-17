@@ -39,9 +39,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.25.0":
-  version: 0.25.0
-  resolution: "@atproto/api@npm:0.25.0"
+"@atproto/api@npm:0.26.0":
+  version: 0.26.0
+  resolution: "@atproto/api@npm:0.26.0"
   dependencies:
     "@atproto/common-web": "npm:^0.5.14"
     "@atproto/lexicon": "npm:^0.7.16"
@@ -51,7 +51,7 @@ __metadata:
     multiformats: "npm:^13.0.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/71759b08e53dc4131d9aef6d14c5e50118103ce3c78b0fea55c9d326dda3c08901d60be8ba7b364bb8e4a653fbb33e5da31f421efeec12c3222965e7fbe53454
+  checksum: 10c0/43c1c39019420babf7249379a61be9425ffd54f1e0040b6e1bdc96744c058edb9009e38eebe08059fa9bc686491790ba1f94c0c2566cd4fb16fa7bd24c3d0f87
   languageName: node
   linkType: hard
 
@@ -2594,9 +2594,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@nuxt/kit@npm:^4.4.8, @nuxt/kit@npm:^4.5.1, @nuxt/kit@npm:^4.5.2":
-  version: 4.6.0
-  resolution: "@nuxt/kit@npm:4.6.0"
+"@nuxt/kit@npm:^4.5.1, @nuxt/kit@npm:^4.5.2, @nuxt/kit@npm:^4.6.0":
+  version: 4.6.1
+  resolution: "@nuxt/kit@npm:4.6.1"
   dependencies:
     consola: "npm:^3.4.2"
     defu: "npm:^6.1.7"
@@ -2607,7 +2607,7 @@ __metadata:
     klona: "npm:^2.0.6"
     microdiff: "npm:^1.6.0"
     nostics: "npm:^1.3.0"
-    package-manager-detector: "npm:^1.8.0"
+    package-manager-detector: "npm:^1.9.0"
     pathe: "npm:^2.0.3"
     rc9: "npm:^3.1.0"
     scule: "npm:^1.3.0"
@@ -2642,7 +2642,7 @@ __metadata:
       optional: true
     rolldown:
       optional: true
-  checksum: 10c0/ab1d51d6077f432a1cf891332026bc2944db884d6b90b9a7114f04437015f34cea6343857e4b358bea040757b900035c77ba785ac2fc4b6d8d1f22b8b8cffc1b
+  checksum: 10c0/0b7cb5cc10ccf0ca14937823a240715df2e6cae1d63ce914ff981ffe9c7b573304fdfdb80af6e05102291373d37f55388d0ebd44f3cd2e635bec33ddb44e05ed
   languageName: node
   linkType: hard
 
@@ -2862,14 +2862,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@pinia/nuxt@npm:1.0.2":
-  version: 1.0.2
-  resolution: "@pinia/nuxt@npm:1.0.2"
+"@pinia/nuxt@npm:1.0.3":
+  version: 1.0.3
+  resolution: "@pinia/nuxt@npm:1.0.3"
   dependencies:
-    "@nuxt/kit": "npm:^4.4.8"
+    "@nuxt/kit": "npm:^4.6.0"
   peerDependencies:
-    pinia: ^4.0.3
-  checksum: 10c0/54fda4b9f3f7c3c510690c56e4e41b8b1206829f18e162a4808fc490c12e8ffce7a5fa04466f535153ee41e1c364f27373f1a1d7a0aed7b763333503b110ef32
+    pinia: ^4.1.0
+  checksum: 10c0/f07aefbb9d327bbf2387ee7d1f16299e305f78643d32fb42004a4a25481a53c5293dde352ccec87f004230541f19595e97f052b2cf6f62e5b83d42d6a5dc1925
   languageName: node
   linkType: hard
 
@@ -9209,7 +9209,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"nostics@npm:^1.1.4, nostics@npm:^1.2.0, nostics@npm:^1.3.0":
+"nostics@npm:^1.2.0, nostics@npm:^1.3.0":
   version: 1.3.0
   resolution: "nostics@npm:1.3.0"
   checksum: 10c0/d0bede1e8b27e363844119496b4547b89159fa8ef8135ee03b28bfe98e2542f799b3c2625afa8a18f8e98983441fac27cb619c3d471c0e767fdc4ad623fcc8ab
@@ -9537,7 +9537,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"package-manager-detector@npm:^1.8.0":
+"package-manager-detector@npm:^1.8.0, package-manager-detector@npm:^1.9.0":
   version: 1.9.0
   resolution: "package-manager-detector@npm:1.9.0"
   checksum: 10c0/c901b08e9d284e9b517d27be1783fc279f3e814fac9de4c30441129a3a4b1475b16314ff95b98268daf49e20d5076478c50bc7b1b3ff8a591eb39f03f02dbb16
@@ -9719,13 +9719,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pinia@npm:4.0.3":
-  version: 4.0.3
-  resolution: "pinia@npm:4.0.3"
+"pinia@npm:4.1.0":
+  version: 4.1.0
+  resolution: "pinia@npm:4.1.0"
   dependencies:
-    nostics: "npm:^1.1.4"
+    nostics: "npm:^1.2.0"
   peerDependencies:
-    "@vue/devtools-api": ^8.1.5
+    "@vue/devtools-api": ^8.2.1
     typescript: ">=5.6.0"
     vue: ^3.5.11
   peerDependenciesMeta:
@@ -9733,7 +9733,7 @@ __metadata:
       optional: false
     typescript:
       optional: true
-  checksum: 10c0/6c06c872dd555cb8095a7a9cf3271449b8e88a9908d2cbc9ec6df328ace0d3256848e523c5d30653f7eff2eba7c91dd16f4a9f1cd0a78ff881c7a9dc11096464
+  checksum: 10c0/200965817558a29ddc3f2de22f068d9ed810650fece57cc073bb63281a5fec1736a5282acbd7c91876066be948839801b275aa135d8f6e0e96fcb8cf243886e6
   languageName: node
   linkType: hard
 
@@ -11042,7 +11042,7 @@ __metadata:
   dependencies:
     "@nuxt/devtools": "npm:3.4.2"
     "@nuxt/eslint": "npm:1.17.0"
-    "@pinia/nuxt": "npm:1.0.2"
+    "@pinia/nuxt": "npm:1.0.3"
     "@tailwindcss/forms": "npm:0.5.11"
     "@tailwindcss/vite": "npm:4.3.3"
     "@types/lodash": "npm:4.17.26"
@@ -11055,7 +11055,7 @@ __metadata:
     markdown-it: "npm:15.0.2"
     modern-normalize: "npm:3.0.1"
     nuxt: "npm:4.5.2"
-    pinia: "npm:4.0.3"
+    pinia: "npm:4.1.0"
     site-config: "npm:1.0.0"
     site-types: "npm:1.0.0"
     tailwindcss: "npm:4.3.3"
@@ -11110,7 +11110,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.25.0"
+    "@atproto/api": "npm:0.26.0"
     "@types/node": "npm:26.6.3"
     "@types/oauth": "npm:0.9.6"
     date-fns: "npm:4.4.0"
