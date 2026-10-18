@@ -1,0 +1,266 @@
+{
+  "id": "MI_kwDOB4jhdM4BGhai",
+  "number": 449,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/449",
+  "title": "449 2026-10-18",
+  "closedAt": "2026-10-18T11:29:38Z",
+  "description": "Android Developers Blog移転, Gemini 4 Argonがビルドエラーを自律修復, Playで自分専用アプリを非公開配布, APKクローン被害, SKIEからSwift exportへ, など",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAWAx4s0=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfPAAAAAWAyWJU=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3928",
+        "title": "Android Developers Blogがdeveloper.android.com/blogへ移転",
+        "body": "公式のAndroid Developers BlogがBloggerを離れ、今後の告知やエンジニアリング記事はすべてdeveloper.android.com/blogで公開されます。RSS購読者は新フィード（developer.android.com/static/blog/atom.xml）への切り替えが必要です。旧URLからのリダイレクトについては言及がないため、ブックマークやRSS連携の見直しを。\nhttps://android-developers.googleblog.com/2026/10/android-developers-blog-is-moving.html",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3929",
+        "title": "Gemini 4 ArgonがAndroid開発ツールに登場、ビルドエラーを自律修復",
+        "body": "Googleの最新モデルGemini 4 ArgonがAntigravityやAndroid Studio Canaryで利用可能に。目玉は「自律ビルド修復」で、GradleデーモンやKotlinコンパイラのログからビルドエラーを取り込み、複数回の編集をまたいで根本原因を修正します。AGSLシェーダーを含むComposeコード生成も紹介されています。\nhttps://developer.android.com/blog/posts/bringing-gemini-4-argon-to-android-agentic-engineering-antigravity-cli",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3930",
+        "title": "Google Playで自分専用の「vibe-coded」アプリを非公開配布できるように",
+        "body": "Google AI Studioで作ったアプリを、公開リスティングを作らずにGoogle Play経由で自分のAndroid端末に配布できるようになりました。当初は米国の18歳以上限定で、今後は家族や友人への限定共有や、審査を経た公開ストアへの移行も予定されています。非公開アプリにもPlayポリシーは適用されます。\nhttps://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3931",
+        "title": "自分たちのアプリがAPKをデコンパイルされてクローンされた",
+        "body": "https://www.reddit.com/r/androiddev/comments/1x6phbj/our_app_got_cloned_from_a_decompiled_apk/\n\nPlayストアのAPKをデコンパイルして広告SDKを足した偽物がAPKミラーサイトに出回り、本物のバックエンドに接続していたという報告。R8でクラス名は難読化されていても文字列はそのままで、検索プロバイダの書き込み可能キーや2年前に埋め込まれたステージングAPIの認証情報が露出していた。キーのローテーションとPlay Integrityの導入を進めつつ、バックエンド側の対策を募っている。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "security",
+              "description": "",
+              "color": "2d754b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3932",
+        "title": "KMPプロジェクトでSKIEからSwift exportへ移行する",
+        "body": "John O'Reilly氏がPeopleInSpaceのSwiftUIクライアントを、Obj-Cフレームワーク＋SKIEからKotlin 2.5.0 Beta2のSwift exportへ移行した記録。生成されるSwiftは素直に読め、sealedクラスはsealedType()で扱い、型付きStateFlowもエクスポートされます。エクスポートするAPIを絞る効用など、Swift exportを使わないチームにも役立つ知見があります。\nhttps://johnoreilly.dev/posts/peopleinspace-swift-export/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3933",
+        "title": "KMPでアプリケーションのビジネスロジックを統一し、OSの越境を可能にした話",
+        "body": "LIFULL HOME'SアプリがKotlin Multiplatform導入から2年半かけて、Android/iOSのビジネスロジック共通化に到達した報告。共通コードはdata/domain/commonの3モジュールで構成し、Ktor・SQLDelight・Multiplatform Settingsを採用。AndroidへはAAR、iOSへはXCFrameworkで配布。UIを共有せずドメイン層から始める進め方が参考になります。\nhttps://www.lifull.blog/entry/2026/10/07/120000",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3934",
+        "title": "AIエージェントにテストを「流させて」合否は人が1打鍵で置く（human-in-the-loop QA）",
+        "body": "TSVのテスト仕様書をAIエージェントに実行させ、人間は合格/不合格を1打鍵で置くだけというOSSのQAランナーgit-qaの設計解説。Androidは実機・エミュレータをadb経由で操作でき、Claude Codeから使うMCPサーバも同梱されています。結果をVERIFIED（人が確認）とAUTO_PASS（AIが通しただけ）に分離し、「通ったことになっている」項目を可視化する点が特徴です。\nhttps://zenn.dev/dokokade/articles/8d7756c7056a24",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3935",
+        "title": "Androidエミュレータが8GBもRAMを食うのに嫌気がさしてツールを作った",
+        "body": "https://www.reddit.com/r/androiddev/comments/1x46bnp/got_tired_of_the_android_emulator_taking_8gb_of/\n\nMacでエミュレータを動かすとqemuが7〜8GBまで膨らむ問題に対し、Go製CLI「avdslim」を公開。ソフトウェアレンダリングにフォールバックしがちな点をホストGPU強制＋-lowramで解消し、起動後にadbで約45個の不要なバックグラウンドパッケージを停止する。常駐メモリは約8.5GBから約1.5GBに減り、認証やFCM、WebViewは引き続き動作するとのこと。",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3936",
+        "title": "16KBページサイズ対応ガイドが更新、Android 17での検証手順を追加",
+        "body": "16KBページサイズ対応ガイドが約1か月ぶりに更新されました。期限の2027-02-01は据え置きですが、Android 17で後方互換レイヤを強制的にオフにして非対応バイナリを即abortさせる検証用プロパティ、独自メモリアロケータ向けの実装指針、CuttlefishやSamsung Remote Test Labでの検証方法が追記されています。\nhttps://developer.android.com/guide/practices/page-sizes",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3937",
+        "title": "Google Playの発見性・エンゲージメント・収益まわりの新機能が発表",
+        "body": "Google Playの新機能がまとめて発表されました。Play Consoleに実機不要のディープリンクエミュレータが追加され、Engage SDKは9カテゴリに対応。手数料減免プログラムのApps ExperienceとLevel Up（日本を含む5地域で提供）はPlay Consoleから直接申し込めるようになりました。ゲーム向けにはGame Statsも追加されています。\nhttps://developer.android.com/blog/posts/google-play-discovery-engagement-growth",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
