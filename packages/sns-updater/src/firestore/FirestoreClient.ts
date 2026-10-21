@@ -3,6 +3,8 @@ import { getFirestore } from 'firebase-admin/firestore'
 import type { App, ServiceAccount } from 'firebase-admin/app'
 import { initializeApp, cert } from 'firebase-admin/app'
 import type Milestone from './Milestone'
+import type { Sns, SnsPost } from './Milestone'
+import { toMilestone } from './Milestone'
 
 const COLLECTION_MILESTONES = 'milestones'
 
@@ -33,18 +35,28 @@ export default class FirestoreClient {
     } as ServiceAccount
   }
 
-  async addMilestone(milestone: Milestone): Promise<void> {
+  /**
+   * Records a post on one SNS. The merge keeps the other SNS's post, so each
+   * SNS can be recorded as soon as its own post succeeds.
+   */
+  async savePost(
+    milestone: Pick<Milestone, 'title' | 'number'>,
+    sns: Sns,
+    post: SnsPost
+  ): Promise<void> {
     const result = await this.firestore
       .collection(COLLECTION_MILESTONES)
       .doc(`${milestone.number}`)
-      .set({
-        title: milestone.title,
-        number: milestone.number,
-        tweetUrl: milestone.tweetUrl,
-        createdAt: milestone.createdAt,
-      })
+      .set(
+        {
+          title: milestone.title,
+          number: milestone.number,
+          posts: { [sns]: post },
+        },
+        { merge: true }
+      )
 
-    console.log('added', result)
+    console.log('saved', result)
   }
 
   async getMilestone(milestoneNumber: number): Promise<Milestone | null> {
@@ -52,17 +64,7 @@ export default class FirestoreClient {
       .collection(COLLECTION_MILESTONES)
       .doc(`${milestoneNumber}`)
       .get()
-    if (ref.exists) {
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      const data = ref.data()!
-      return {
-        title: data.title,
-        number: data.number,
-        tweetUrl: data.tweetUrl,
-        createdAt: data.createdAt,
-      } as Milestone
-    } else {
-      return null
-    }
+    const data = ref.data()
+    return data == null ? null : toMilestone(data)
   }
 }

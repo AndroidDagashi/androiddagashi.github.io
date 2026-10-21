@@ -1,17 +1,15 @@
 import TwitterClient from './src/twitter/TwitterClient'
 import FirestoreClient from './src/firestore/FirestoreClient'
+import type Milestone from './src/firestore/Milestone'
 import TwitterConfig from './src/twitter/TwitterConfig'
 import DagashiClient from './src/dagashi/DagashiClient'
 import { readFile } from 'site-common/file'
 import path from 'path'
 import DagashiConfig from './src/dagashi/DagashiConfig'
-import { format } from 'date-fns'
 import type { MilestoneMeta } from './src/message'
-import {
-  createMilestoneMeta,
-  generateBlueskyMessage,
-  generateTweetMessage,
-} from './src/message'
+import { createMilestoneMeta } from './src/message'
+import type { SnsPoster } from './src/posters'
+import { createBlueskyPoster, createTwitterPoster } from './src/posters'
 import { BlueskyClient } from './src/bluesky/BlueskyClient'
 import BlueskyConfig from './src/bluesky/BlueskyConfig'
 
@@ -52,75 +50,75 @@ async function createFirestoreClient(): Promise<FirestoreClient> {
   return new FirestoreClient(serviceAccount)
 }
 
-async function makeTwitterPost(meta: MilestoneMeta): Promise<{ url: string }> {
-  const twitterClient = createTwitterClient()
-  const message = generateTweetMessage(meta)
-  const response = await twitterClient.tweet(message)
-
-  return {
-    url: twitterClient.getTweetUrl(response),
+/**
+ * Posts the milestone to one SNS unless it is already posted there. Returns
+ * false if it failed. Each SNS posts and records on its own, so a failure on
+ * one does not make the other post again on the next run.
+ */
+async function publish(
+  poster: SnsPoster,
+  meta: MilestoneMeta,
+  saved: Milestone | null,
+  firestoreClient: FirestoreClient
+): Promise<boolean> {
+  if (saved?.posts[poster.sns] != null) {
+    console.log(`${poster.name}: Milestone:${meta.number} is already recorded`)
+    return true
   }
-}
 
-async function makeBlueskyPost(meta: MilestoneMeta): Promise<{ url: string }> {
-  const client = createBlueskyClient()
-  const message = generateBlueskyMessage(meta)
-
-  await client.login()
-  const response = await client.post(message, meta)
-
-  return {
-    url: response.uri,
-  }
-}
-
-async function main(): Promise<void> {
   try {
-    const dagashiClient = createDagashiClient()
-    const latestClosedMilestone = await dagashiClient.getLatestMilestone()
-
-    if (latestClosedMilestone == null) {
-      console.log(
-        'Could not fetch latest closed milestone from GitHub. Terminating...'
-      )
-      return
+    const existing = await poster.findExisting(meta)
+    if (existing != null) {
+      console.log(`${poster.name}: already posted`, existing.url)
+      await firestoreClient.savePost(meta, poster.sns, existing)
+      return true
     }
 
-    const firestoreClient = await createFirestoreClient()
-    const savedMilestone = await firestoreClient.getMilestone(
-      latestClosedMilestone.number
-    )
-    if (savedMilestone != null) {
-      console.log(
-        `Milestone:${savedMilestone.number} has already been tweeted. Terminating...`
-      )
-      return
-    }
-
-    const meta = createMilestoneMeta(latestClosedMilestone)
-
-    const [twitterRes, blueskyRes] = await Promise.all([
-      makeTwitterPost(meta),
-      makeBlueskyPost(meta),
-    ])
-
-    const createdAt = format(new Date(), 'EEE MMM dd kk:mm:ss xxxx yyyy')
-
-    console.log('posts:', twitterRes, blueskyRes, createdAt)
-
-    await firestoreClient.addMilestone({
-      title: meta.title,
-      number: meta.number,
-      tweetUrl: twitterRes.url,
-      createdAt: createdAt,
-    })
-
-    console.log('tweeted and saved')
+    const post = await poster.post(meta)
+    console.log(`${poster.name}: posted`, post.url)
+    await firestoreClient.savePost(meta, poster.sns, post)
+    return true
   } catch (err) {
-    console.log('error', err)
+    console.log(`${poster.name}: error`, err)
+    return false
   }
 }
 
-main().then(() => {
-  console.log('finished')
-})
+/** Returns false if posting to any SNS failed. */
+async function main(): Promise<boolean> {
+  const dagashiClient = createDagashiClient()
+  const latestClosedMilestone = await dagashiClient.getLatestMilestone()
+
+  if (latestClosedMilestone == null) {
+    console.log(
+      'Could not fetch latest closed milestone from GitHub. Terminating...'
+    )
+    return true
+  }
+
+  const firestoreClient = await createFirestoreClient()
+  const saved = await firestoreClient.getMilestone(latestClosedMilestone.number)
+  const meta = createMilestoneMeta(latestClosedMilestone)
+
+  const posters = [
+    createTwitterPoster(createTwitterClient()),
+    createBlueskyPoster(createBlueskyClient()),
+  ]
+  const results = await Promise.all(
+    posters.map((poster) => publish(poster, meta, saved, firestoreClient))
+  )
+  return results.every(Boolean)
+}
+
+main().then(
+  (ok) => {
+    if (!ok) {
+      process.exitCode = 1
+    }
+    console.log('finished')
+  },
+  (err) => {
+    console.log('error', err)
+    process.exitCode = 1
+  }
+)

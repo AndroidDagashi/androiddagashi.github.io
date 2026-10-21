@@ -6,6 +6,12 @@ on:
     types:
       - completed
 
+# Runs started close together would each see the milestone as not yet posted
+# and post it twice, so they are serialized.
+concurrency:
+  group: update-sns
+  cancel-in-progress: false
+
 jobs:
   update:
     name: Tweet new release

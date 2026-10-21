@@ -43,5 +43,8 @@ jobs:
           - name: Typecheck
             run: yarn typecheck
 
+          - name: Test sns-updater
+            run: yarn sns:test
+
           - name: Generate website
             run: yarn workspace site exec nuxi build --preset github_pages
