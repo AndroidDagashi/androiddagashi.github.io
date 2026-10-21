@@ -1,22 +1,5 @@
 import { AppBskyEmbedExternal, AppBskyFeedPost } from '@atproto/api'
-import type Milestone from './firestore/Milestone'
-
-export interface PostTargets {
-  twitter: boolean
-  bluesky: boolean
-}
-
-/**
- * Decides which SNS still needs a post for the milestone, based on what has
- * been recorded in Firestore. Each SNS is judged by its own field so that a
- * failure on one SNS does not make the other one post again on the next run.
- */
-export function resolvePostTargets(saved: Milestone | null): PostTargets {
-  return {
-    twitter: !saved?.tweetUrl,
-    bluesky: !saved?.blueskyUri,
-  }
-}
+import type { SnsPost } from './firestore/Milestone'
 
 export interface FeedPost {
   uri: string
@@ -25,16 +8,15 @@ export interface FeedPost {
 
 /**
  * Finds the earliest post in the author's feed that links to `url` through an
- * external embed, and returns its AT URI. When duplicates exist, the earliest
- * one is the original and the one to keep. This reads the record we wrote
- * rather than the AppView's rendered embed, whose shape varies (e.g. article
- * views).
+ * external embed. When duplicates exist, the earliest one is the original and
+ * the one to keep. This reads the record we wrote rather than the AppView's
+ * rendered embed, whose shape varies (e.g. article views).
  */
-export function findPostedUri(
+export function findEarliestPost(
   posts: readonly FeedPost[],
   url: string
-): string | null {
-  let earliest: { uri: string; createdAt: string } | null = null
+): SnsPost | null {
+  let earliest: { post: SnsPost; time: number } | null = null
   for (const post of posts) {
     const record = asPostRecord(post.record)
     if (
@@ -44,11 +26,14 @@ export function findPostedUri(
     ) {
       continue
     }
-    if (earliest == null || record.createdAt < earliest.createdAt) {
-      earliest = { uri: post.uri, createdAt: record.createdAt }
+    // createdAt is set by the client and may carry any offset, so compare it
+    // as a time rather than as a string.
+    const time = Date.parse(record.createdAt)
+    if (earliest == null || time < earliest.time) {
+      earliest = { post: { url: post.uri, postedAt: record.createdAt }, time }
     }
   }
-  return earliest?.uri ?? null
+  return earliest?.post ?? null
 }
 
 function asPostRecord(record: unknown): AppBskyFeedPost.Record | null {

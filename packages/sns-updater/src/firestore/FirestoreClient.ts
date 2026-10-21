@@ -3,6 +3,8 @@ import { getFirestore } from 'firebase-admin/firestore'
 import type { App, ServiceAccount } from 'firebase-admin/app'
 import { initializeApp, cert } from 'firebase-admin/app'
 import type Milestone from './Milestone'
+import type { Sns, SnsPost } from './Milestone'
+import { toMilestone } from './Milestone'
 
 const COLLECTION_MILESTONES = 'milestones'
 
@@ -34,14 +36,25 @@ export default class FirestoreClient {
   }
 
   /**
-   * Merges the given fields into the milestone document, so that each SNS can
-   * record its own post without overwriting the other's.
+   * Records a post on one SNS. The merge keeps the other SNS's post, so each
+   * SNS can be recorded as soon as its own post succeeds.
    */
-  async saveMilestone(milestone: Milestone): Promise<void> {
+  async savePost(
+    milestone: Pick<Milestone, 'title' | 'number'>,
+    sns: Sns,
+    post: SnsPost
+  ): Promise<void> {
     const result = await this.firestore
       .collection(COLLECTION_MILESTONES)
       .doc(`${milestone.number}`)
-      .set(milestone, { merge: true })
+      .set(
+        {
+          title: milestone.title,
+          number: milestone.number,
+          posts: { [sns]: post },
+        },
+        { merge: true }
+      )
 
     console.log('saved', result)
   }
@@ -51,6 +64,7 @@ export default class FirestoreClient {
       .collection(COLLECTION_MILESTONES)
       .doc(`${milestoneNumber}`)
       .get()
-    return ref.exists ? (ref.data() as Milestone) : null
+    const data = ref.data()
+    return data == null ? null : toMilestone(data)
   }
 }

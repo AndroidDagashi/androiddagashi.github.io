@@ -1,4 +1,9 @@
-import AtpAgent, { Agent, CredentialSession, RichText, stringifyLex } from '@atproto/api'
+import AtpAgent, {
+  Agent,
+  CredentialSession,
+  RichText,
+  stringifyLex,
+} from '@atproto/api'
 import type BlueskyConfig from './BlueskyConfig'
 import type { FeedPost } from '../posting'
 
@@ -7,9 +12,7 @@ export class BlueskyClient {
   private readonly agent: Agent
 
   constructor(readonly config: BlueskyConfig) {
-    this.session = new CredentialSession(
-      new URL(this.config.service),
-    )
+    this.session = new CredentialSession(new URL(this.config.service))
     this.agent = new Agent(this.session)
   }
 

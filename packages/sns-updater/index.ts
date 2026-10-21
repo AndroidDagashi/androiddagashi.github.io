@@ -6,14 +6,10 @@ import DagashiClient from './src/dagashi/DagashiClient'
 import { readFile } from 'site-common/file'
 import path from 'path'
 import DagashiConfig from './src/dagashi/DagashiConfig'
-import { format } from 'date-fns'
 import type { MilestoneMeta } from './src/message'
-import {
-  createMilestoneMeta,
-  generateBlueskyMessage,
-  generateTweetMessage,
-} from './src/message'
-import { findPostedUri, resolvePostTargets } from './src/posting'
+import { createMilestoneMeta } from './src/message'
+import type { SnsPoster } from './src/posters'
+import { createBlueskyPoster, createTwitterPoster } from './src/posters'
 import { BlueskyClient } from './src/bluesky/BlueskyClient'
 import BlueskyConfig from './src/bluesky/BlueskyConfig'
 
@@ -54,79 +50,38 @@ async function createFirestoreClient(): Promise<FirestoreClient> {
   return new FirestoreClient(serviceAccount)
 }
 
-// With SNS_DRY_RUN=1, Firestore and the Bluesky feed are read but nothing is
-// posted or saved.
-const dryRun = process.env.SNS_DRY_RUN === '1'
-
-function now(): string {
-  return format(new Date(), 'EEE MMM dd kk:mm:ss xxxx yyyy')
-}
-
-type SnsFields = Omit<Milestone, 'title' | 'number'>
-
-async function record(
-  firestoreClient: FirestoreClient,
+/**
+ * Posts the milestone to one SNS unless it is already posted there. Returns
+ * false if it failed. Each SNS posts and records on its own, so a failure on
+ * one does not make the other post again on the next run.
+ */
+async function publish(
+  poster: SnsPoster,
   meta: MilestoneMeta,
-  fields: SnsFields
-): Promise<void> {
-  if (dryRun) {
-    console.log(`[dry-run] would save Milestone:${meta.number}`, fields)
-    return
-  }
-  await firestoreClient.saveMilestone({
-    title: meta.title,
-    number: meta.number,
-    ...fields,
-  })
-}
-
-async function postToTwitter(
-  meta: MilestoneMeta,
+  saved: Milestone | null,
   firestoreClient: FirestoreClient
-): Promise<void> {
-  if (dryRun) {
-    console.log(`[dry-run] X: would post Milestone:${meta.number}`)
-    return
+): Promise<boolean> {
+  if (saved?.posts[poster.sns] != null) {
+    console.log(`${poster.name}: Milestone:${meta.number} is already recorded`)
+    return true
   }
 
-  const twitterClient = createTwitterClient()
-  const message = generateTweetMessage(meta)
-  const response = await twitterClient.tweet(message)
-  const tweetUrl = twitterClient.getTweetUrl(response)
-  console.log('X: posted', tweetUrl)
+  try {
+    const existing = await poster.findExisting(meta)
+    if (existing != null) {
+      console.log(`${poster.name}: already posted`, existing.url)
+      await firestoreClient.savePost(meta, poster.sns, existing)
+      return true
+    }
 
-  await record(firestoreClient, meta, { tweetUrl, createdAt: now() })
-}
-
-async function postToBluesky(
-  meta: MilestoneMeta,
-  firestoreClient: FirestoreClient
-): Promise<void> {
-  const client = createBlueskyClient()
-  await client.login()
-
-  // Firestore can miss a post that was made when saving failed, so the feed is
-  // the final check against posting the same milestone twice.
-  const existingUri = findPostedUri(await client.getRecentPosts(), meta.url)
-  if (existingUri != null) {
-    console.log('Bluesky: already posted', existingUri)
-    await record(firestoreClient, meta, { blueskyUri: existingUri })
-    return
+    const post = await poster.post(meta)
+    console.log(`${poster.name}: posted`, post.url)
+    await firestoreClient.savePost(meta, poster.sns, post)
+    return true
+  } catch (err) {
+    console.log(`${poster.name}: error`, err)
+    return false
   }
-
-  if (dryRun) {
-    console.log(`[dry-run] Bluesky: would post Milestone:${meta.number}`)
-    return
-  }
-
-  const message = generateBlueskyMessage(meta)
-  const response = await client.post(message, meta)
-  console.log('Bluesky: posted', response.uri)
-
-  await record(firestoreClient, meta, {
-    blueskyUri: response.uri,
-    blueskyPostedAt: now(),
-  })
 }
 
 /** Returns false if posting to any SNS failed. */
@@ -142,33 +97,15 @@ async function main(): Promise<boolean> {
   }
 
   const firestoreClient = await createFirestoreClient()
-  const savedMilestone = await firestoreClient.getMilestone(
-    latestClosedMilestone.number
-  )
-  const targets = resolvePostTargets(savedMilestone)
+  const saved = await firestoreClient.getMilestone(latestClosedMilestone.number)
   const meta = createMilestoneMeta(latestClosedMilestone)
 
   const posters = [
-    { name: 'X', needed: targets.twitter, post: postToTwitter },
-    { name: 'Bluesky', needed: targets.bluesky, post: postToBluesky },
+    createTwitterPoster(createTwitterClient()),
+    createBlueskyPoster(createBlueskyClient()),
   ]
-
-  // Each SNS runs and records independently, so one failing does not cause the
-  // other to post again on the next run.
   const results = await Promise.all(
-    posters.map(async ({ name, needed, post }) => {
-      if (!needed) {
-        console.log(`${name}: Milestone:${meta.number} has already been posted`)
-        return true
-      }
-      try {
-        await post(meta, firestoreClient)
-        return true
-      } catch (err) {
-        console.log(`${name}: error`, err)
-        return false
-      }
-    })
+    posters.map((poster) => publish(poster, meta, saved, firestoreClient))
   )
   return results.every(Boolean)
 }
