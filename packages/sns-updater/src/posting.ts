@@ -24,24 +24,36 @@ export interface FeedPost {
 }
 
 /**
- * Finds a post in the author's feed that links to `url` through an external
- * embed, and returns its AT URI. This reads the record we wrote rather than the
- * AppView's rendered embed, whose shape varies (e.g. article views).
+ * Finds the earliest post in the author's feed that links to `url` through an
+ * external embed, and returns its AT URI. When duplicates exist, the earliest
+ * one is the original and the one to keep. This reads the record we wrote
+ * rather than the AppView's rendered embed, whose shape varies (e.g. article
+ * views).
  */
 export function findPostedUri(
   posts: readonly FeedPost[],
   url: string
 ): string | null {
-  return (
-    posts.find((post) => externalEmbedUri(post.record) === url)?.uri ?? null
-  )
+  let earliest: { uri: string; createdAt: string } | null = null
+  for (const post of posts) {
+    const record = asPostRecord(post.record)
+    if (
+      record == null ||
+      !AppBskyEmbedExternal.isMain(record.embed) ||
+      record.embed.external.uri !== url
+    ) {
+      continue
+    }
+    if (earliest == null || record.createdAt < earliest.createdAt) {
+      earliest = { uri: post.uri, createdAt: record.createdAt }
+    }
+  }
+  return earliest?.uri ?? null
 }
 
-function externalEmbedUri(record: unknown): string | null {
-  if (!AppBskyFeedPost.isRecord(record)) {
-    return null
-  }
+function asPostRecord(record: unknown): AppBskyFeedPost.Record | null {
   // isRecord only checks $type, so the fields are typed by the cast.
-  const { embed } = record as AppBskyFeedPost.Record
-  return AppBskyEmbedExternal.isMain(embed) ? embed.external.uri : null
+  return AppBskyFeedPost.isRecord(record)
+    ? (record as AppBskyFeedPost.Record)
+    : null
 }
