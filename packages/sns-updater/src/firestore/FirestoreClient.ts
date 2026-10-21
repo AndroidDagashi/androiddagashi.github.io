@@ -38,14 +38,10 @@ export default class FirestoreClient {
    * record its own post without overwriting the other's.
    */
   async saveMilestone(milestone: Milestone): Promise<void> {
-    // Firestore rejects undefined values, so drop the fields that are not set.
-    const fields = Object.fromEntries(
-      Object.entries(milestone).filter(([, v]) => v !== undefined)
-    )
     const result = await this.firestore
       .collection(COLLECTION_MILESTONES)
       .doc(`${milestone.number}`)
-      .set(fields, { merge: true })
+      .set(milestone, { merge: true })
 
     console.log('saved', result)
   }
@@ -55,19 +51,6 @@ export default class FirestoreClient {
       .collection(COLLECTION_MILESTONES)
       .doc(`${milestoneNumber}`)
       .get()
-    if (ref.exists) {
-      // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
-      const data = ref.data()!
-      return {
-        title: data.title,
-        number: data.number,
-        tweetUrl: data.tweetUrl,
-        createdAt: data.createdAt,
-        blueskyUri: data.blueskyUri,
-        blueskyPostedAt: data.blueskyPostedAt,
-      } as Milestone
-    } else {
-      return null
-    }
+    return ref.exists ? (ref.data() as Milestone) : null
   }
 }

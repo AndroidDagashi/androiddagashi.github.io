@@ -1,3 +1,4 @@
+import { AppBskyEmbedExternal, AppBskyFeedPost } from '@atproto/api'
 import type Milestone from './firestore/Milestone'
 
 export interface PostTargets {
@@ -31,25 +32,16 @@ export function findPostedUri(
   posts: readonly FeedPost[],
   url: string
 ): string | null {
-  for (const post of posts) {
-    if (externalEmbedUri(post.record) === url) {
-      return post.uri
-    }
-  }
-  return null
+  return (
+    posts.find((post) => externalEmbedUri(post.record) === url)?.uri ?? null
+  )
 }
 
 function externalEmbedUri(record: unknown): string | null {
-  if (!isObject(record) || !isObject(record.embed)) {
+  if (!AppBskyFeedPost.isRecord(record)) {
     return null
   }
-  const { embed } = record
-  if (embed.$type !== 'app.bsky.embed.external' || !isObject(embed.external)) {
-    return null
-  }
-  return typeof embed.external.uri === 'string' ? embed.external.uri : null
-}
-
-function isObject(v: unknown): v is Record<string, unknown> {
-  return typeof v === 'object' && v !== null
+  // isRecord only checks $type, so the fields are typed by the cast.
+  const { embed } = record as AppBskyFeedPost.Record
+  return AppBskyEmbedExternal.isMain(embed) ? embed.external.uri : null
 }

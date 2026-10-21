@@ -1,5 +1,6 @@
 import TwitterClient from './src/twitter/TwitterClient'
 import FirestoreClient from './src/firestore/FirestoreClient'
+import type Milestone from './src/firestore/Milestone'
 import TwitterConfig from './src/twitter/TwitterConfig'
 import DagashiClient from './src/dagashi/DagashiClient'
 import { readFile } from 'site-common/file'
@@ -61,6 +62,24 @@ function now(): string {
   return format(new Date(), 'EEE MMM dd kk:mm:ss xxxx yyyy')
 }
 
+type SnsFields = Omit<Milestone, 'title' | 'number'>
+
+async function record(
+  firestoreClient: FirestoreClient,
+  meta: MilestoneMeta,
+  fields: SnsFields
+): Promise<void> {
+  if (dryRun) {
+    console.log(`[dry-run] would save Milestone:${meta.number}`, fields)
+    return
+  }
+  await firestoreClient.saveMilestone({
+    title: meta.title,
+    number: meta.number,
+    ...fields,
+  })
+}
+
 async function postToTwitter(
   meta: MilestoneMeta,
   firestoreClient: FirestoreClient
@@ -76,12 +95,7 @@ async function postToTwitter(
   const tweetUrl = twitterClient.getTweetUrl(response)
   console.log('X: posted', tweetUrl)
 
-  await firestoreClient.saveMilestone({
-    title: meta.title,
-    number: meta.number,
-    tweetUrl,
-    createdAt: now(),
-  })
+  await record(firestoreClient, meta, { tweetUrl, createdAt: now() })
 }
 
 async function postToBluesky(
@@ -96,13 +110,7 @@ async function postToBluesky(
   const existingUri = findPostedUri(await client.getRecentPosts(), meta.url)
   if (existingUri != null) {
     console.log('Bluesky: already posted', existingUri)
-    if (!dryRun) {
-      await firestoreClient.saveMilestone({
-        title: meta.title,
-        number: meta.number,
-        blueskyUri: existingUri,
-      })
-    }
+    await record(firestoreClient, meta, { blueskyUri: existingUri })
     return
   }
 
@@ -115,9 +123,7 @@ async function postToBluesky(
   const response = await client.post(message, meta)
   console.log('Bluesky: posted', response.uri)
 
-  await firestoreClient.saveMilestone({
-    title: meta.title,
-    number: meta.number,
+  await record(firestoreClient, meta, {
     blueskyUri: response.uri,
     blueskyPostedAt: now(),
   })
@@ -142,29 +148,29 @@ async function main(): Promise<boolean> {
   const targets = resolvePostTargets(savedMilestone)
   const meta = createMilestoneMeta(latestClosedMilestone)
 
-  const jobs: [string, () => Promise<void>][] = []
-  if (targets.twitter) {
-    jobs.push(['X', () => postToTwitter(meta, firestoreClient)])
-  } else {
-    console.log(`X: Milestone:${meta.number} has already been posted`)
-  }
-  if (targets.bluesky) {
-    jobs.push(['Bluesky', () => postToBluesky(meta, firestoreClient)])
-  } else {
-    console.log(`Bluesky: Milestone:${meta.number} has already been posted`)
-  }
+  const posters = [
+    { name: 'X', needed: targets.twitter, post: postToTwitter },
+    { name: 'Bluesky', needed: targets.bluesky, post: postToBluesky },
+  ]
 
   // Each SNS runs and records independently, so one failing does not cause the
   // other to post again on the next run.
-  const results = await Promise.allSettled(jobs.map(([, job]) => job()))
-  let ok = true
-  results.forEach((result, i) => {
-    if (result.status === 'rejected') {
-      console.log(`${jobs[i][0]}: error`, result.reason)
-      ok = false
-    }
-  })
-  return ok
+  const results = await Promise.all(
+    posters.map(async ({ name, needed, post }) => {
+      if (!needed) {
+        console.log(`${name}: Milestone:${meta.number} has already been posted`)
+        return true
+      }
+      try {
+        await post(meta, firestoreClient)
+        return true
+      } catch (err) {
+        console.log(`${name}: error`, err)
+        return false
+      }
+    })
+  )
+  return results.every(Boolean)
 }
 
 main().then(
