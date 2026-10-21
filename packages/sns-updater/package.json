@@ -6,7 +6,8 @@
   "repository": "git@github.com:androiddagashi/androiddagashi.git",
   "scripts": {
     "update": "tsx ./index.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test 'src/**/*.test.ts'"
   },
   "devDependencies": {
     "@types/node": "26.6.5",

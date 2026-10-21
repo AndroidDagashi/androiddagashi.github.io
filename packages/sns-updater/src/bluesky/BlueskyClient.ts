@@ -1,5 +1,6 @@
 import AtpAgent, { Agent, CredentialSession, RichText, stringifyLex } from '@atproto/api'
 import type BlueskyConfig from './BlueskyConfig'
+import type { FeedPost } from '../posting'
 
 export class BlueskyClient {
   private readonly session: CredentialSession
@@ -17,6 +18,19 @@ export class BlueskyClient {
       identifier: this.config.identifier,
       password: this.config.password,
     })
+  }
+
+  /** Returns the account's own recent posts, excluding replies and reposts. */
+  async getRecentPosts(): Promise<FeedPost[]> {
+    const response = await this.agent.getAuthorFeed({
+      actor: this.config.identifier,
+      limit: 100,
+      filter: 'posts_no_replies',
+    })
+
+    return response.data.feed
+      .filter((item) => item.reason == null)
+      .map((item) => ({ uri: item.post.uri, record: item.post.record }))
   }
 
   async post(

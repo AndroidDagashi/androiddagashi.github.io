@@ -1,10 +1,21 @@
 name: Post new release on SNS accounts
 on:
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Read Firestore and the Bluesky feed without posting or saving
+        type: boolean
+        default: false
   workflow_run:
     workflows: ["Deploy Website"]
     types:
       - completed
+
+# Runs started close together would each see the milestone as not yet posted
+# and post it twice, so they are serialized.
+concurrency:
+  group: update-sns
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -22,6 +33,7 @@ jobs:
       TWITTER_SCREEN_NAME: AndroidDagashi
       BLUESKY_IDENTIFIER: androiddagashi.bsky.social
       BLUESKY_PASSWORD: ${{ secrets.BLUESKY_PASSWORD }}
+      SNS_DRY_RUN: ${{ inputs.dry_run && '1' || '' }}
 
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1

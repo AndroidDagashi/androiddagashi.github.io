@@ -33,18 +33,21 @@ export default class FirestoreClient {
     } as ServiceAccount
   }
 
-  async addMilestone(milestone: Milestone): Promise<void> {
+  /**
+   * Merges the given fields into the milestone document, so that each SNS can
+   * record its own post without overwriting the other's.
+   */
+  async saveMilestone(milestone: Milestone): Promise<void> {
+    // Firestore rejects undefined values, so drop the fields that are not set.
+    const fields = Object.fromEntries(
+      Object.entries(milestone).filter(([, v]) => v !== undefined)
+    )
     const result = await this.firestore
       .collection(COLLECTION_MILESTONES)
       .doc(`${milestone.number}`)
-      .set({
-        title: milestone.title,
-        number: milestone.number,
-        tweetUrl: milestone.tweetUrl,
-        createdAt: milestone.createdAt,
-      })
+      .set(fields, { merge: true })
 
-    console.log('added', result)
+    console.log('saved', result)
   }
 
   async getMilestone(milestoneNumber: number): Promise<Milestone | null> {
@@ -60,6 +63,8 @@ export default class FirestoreClient {
         number: data.number,
         tweetUrl: data.tweetUrl,
         createdAt: data.createdAt,
+        blueskyUri: data.blueskyUri,
+        blueskyPostedAt: data.blueskyPostedAt,
       } as Milestone
     } else {
       return null
