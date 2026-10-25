@@ -1,0 +1,85 @@
+{
+  "id": "MI_kwDOB4jhdM4BHSSc",
+  "number": 450,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/450",
+  "title": "450 2026-10-25",
+  "closedAt": "2026-10-25T10:32:49Z",
+  "description": "GrabアプリにおけるR8とプロファイル最適化の結果、コルーチンテストをflakyフリーにする、決済システムにおけるKotlin活用について、など",
+  "issues": {
+    "totalCount": 3,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAWcFZyg=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________tPPAAAAAWcGWgQ=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3941",
+        "title": "GrabアプリにおけるR8とプロファイル最適化の結果",
+        "body": "https://developer.android.com/blog/posts/grab-r8-profile-guided-optimization-anr-startup-time?hl=ja\n\n適切にR8などを適用することで、ANRを32%削減、起動時間を35%改善を達成しています",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3942",
+        "title": "コルーチンテストをflakyフリーにする",
+        "body": "https://touchlab.co/flake-free-flow-tests-pt1-coroutines\n\nCoroutineテスト用のdispatcher、schedulerなどの使い方、またBackground処理のタイミング制御などを解説しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3943",
+        "title": "決済システムにおけるKotlin活用について",
+        "body": "https://blog.jetbrains.com/kotlin/2026/10/kotlinconf-recap-lessons-from-verifone-s-architect-on-kotlin-in-mission-critical-payments/\n\n信頼性が高いシステムを構築するための、具体的な10のパターンを紹介しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
