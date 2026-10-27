@@ -2828,6 +2828,8 @@ export type FileExtensionRestrictionParametersInput = {
 
 /** Prevent commits that include changes in specified file and folder paths from being pushed to the commit graph. This includes absolute paths that contain file names. */
 export type FilePathRestrictionParametersInput = {
+  /** Files matching these patterns are allowed even when they also match a restricted path. */
+  ignoredFilePaths?: InputMaybe<Array<Scalars['String']['input']>>
   /** The file paths that are restricted from being pushed to the commit graph. */
   restrictedFilePaths: Array<Scalars['String']['input']>
 }
@@ -3663,6 +3665,8 @@ export type MaxFilePathLengthParametersInput = {
 
 /** Prevent commits with individual files that exceed the specified limit from being pushed to the commit graph. */
 export type MaxFileSizeParametersInput = {
+  /** Files matching these patterns may exceed the maximum size. */
+  ignoredFilePaths?: InputMaybe<Array<Scalars['String']['input']>>
   /** The maximum file size allowed in megabytes. This limit does not apply to Git Large File Storage (Git LFS). */
   maxFileSize: Scalars['Int']['input']
 }
@@ -4840,13 +4844,17 @@ export type PullRequestParametersInput = {
   dismissalRestriction?: InputMaybe<DismissalRestrictionInput>
   /** Require an approving review in pull requests that modify files that have a designated code owner. */
   requireCodeOwnerReview: Scalars['Boolean']['input']
+  /** When Copilot opens a pull request without a human collaborator, require one more approving review if a non-zero approval count is required. */
+  requireExtraApprovalForUnattributedChanges?: InputMaybe<
+    Scalars['Boolean']['input']
+  >
   /** Whether the most recent reviewable push must be approved by someone other than the person who pushed it. */
   requireLastPushApproval: Scalars['Boolean']['input']
   /** The number of approving reviews that are required before a pull request can be merged. */
   requiredApprovingReviewCount: Scalars['Int']['input']
   /** All conversations on code must be resolved before a pull request can be merged. */
   requiredReviewThreadResolution: Scalars['Boolean']['input']
-  /** This argument is in beta and subject to change. A collection of reviewers and associated file patterns. Each reviewer has a list of file patterns which determine the files that reviewer is required to review. */
+  /** A collection of reviewers and associated file patterns. Each reviewer has a list of file patterns which determine the files that reviewer is required to review. */
   requiredReviewers?: InputMaybe<Array<RequiredReviewerConfigurationInput>>
 }
 
