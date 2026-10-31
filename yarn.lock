@@ -39,9 +39,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.29.1":
-  version: 0.29.1
-  resolution: "@atproto/api@npm:0.29.1"
+"@atproto/api@npm:0.29.5":
+  version: 0.29.5
+  resolution: "@atproto/api@npm:0.29.5"
   dependencies:
     "@atproto/common-web": "npm:^0.5.15"
     "@atproto/lexicon": "npm:^0.7.17"
@@ -51,7 +51,7 @@ __metadata:
     multiformats: "npm:^13.0.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/b9b39ca3c0daa0b0486e20d3e4c4594ba4c7081187eaa864396543d3fcdb081204a643d4c9fd80a5a1f98b1adaf58b2b7f3fe574cfbe4a4ffb1a352bc024b60a
+  checksum: 10c0/9dc0ab6ed9ae27b05e0c72c7d7ffc388ea6989c7591e51e464b885fe4db5ed59763e60b7bd008f13cc2c61e79dc74c96944aa113900beee49c906870500cb786
   languageName: node
   linkType: hard
 
@@ -1303,7 +1303,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/plugin-helpers@npm:^7.0.0, @graphql-codegen/plugin-helpers@npm:^7.1.0, @graphql-codegen/plugin-helpers@npm:^7.4.0, @graphql-codegen/plugin-helpers@npm:^7.4.1, @graphql-codegen/plugin-helpers@npm:^7.4.2":
+"@graphql-codegen/plugin-helpers@npm:^7.0.0, @graphql-codegen/plugin-helpers@npm:^7.1.0, @graphql-codegen/plugin-helpers@npm:^7.4.0, @graphql-codegen/plugin-helpers@npm:^7.4.2":
   version: 7.4.2
   resolution: "@graphql-codegen/plugin-helpers@npm:7.4.2"
   dependencies:
@@ -1318,7 +1318,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/schema-ast@npm:^6.1.0, @graphql-codegen/schema-ast@npm:^6.1.1":
+"@graphql-codegen/schema-ast@npm:^6.1.1":
   version: 6.1.1
   resolution: "@graphql-codegen/schema-ast@npm:6.1.1"
   dependencies:
@@ -1360,26 +1360,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/typescript-operations@npm:6.1.10":
-  version: 6.1.10
-  resolution: "@graphql-codegen/typescript-operations@npm:6.1.10"
-  dependencies:
-    "@graphql-codegen/plugin-helpers": "npm:^7.4.1"
-    "@graphql-codegen/schema-ast": "npm:^6.1.0"
-    "@graphql-codegen/visitor-plugin-common": "npm:^7.2.8"
-    auto-bind: "npm:^5.0.0"
-    tslib: "npm:^2.8.0"
-  peerDependencies:
-    graphql: ^0.8.0 || ^0.9.0 || ^0.10.0 || ^0.11.0 || ^0.12.0 || ^0.13.0 || ^14.0.0 || ^15.0.0 || ^16.0.0 || ^17.0.0
-    graphql-sock: ^1.0.0
-  peerDependenciesMeta:
-    graphql-sock:
-      optional: true
-  checksum: 10c0/48e76a2efcd7012d61799550a5cbcc4ccab5c008108199293f82ea98a3906b526a511d39e34aad006890b0828510a775da05ced95bf7f3539bd4d3e5b1396d32
-  languageName: node
-  linkType: hard
-
-"@graphql-codegen/typescript-operations@npm:^6.1.10":
+"@graphql-codegen/typescript-operations@npm:6.2.0, @graphql-codegen/typescript-operations@npm:^6.1.10":
   version: 6.2.0
   resolution: "@graphql-codegen/typescript-operations@npm:6.2.0"
   dependencies:
@@ -1413,7 +1394,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@graphql-codegen/visitor-plugin-common@npm:^7.2.0, @graphql-codegen/visitor-plugin-common@npm:^7.2.10, @graphql-codegen/visitor-plugin-common@npm:^7.2.2, @graphql-codegen/visitor-plugin-common@npm:^7.2.6, @graphql-codegen/visitor-plugin-common@npm:^7.2.8, @graphql-codegen/visitor-plugin-common@npm:^7.2.9, @graphql-codegen/visitor-plugin-common@npm:^7.3.0, @graphql-codegen/visitor-plugin-common@npm:^7.5.0":
+"@graphql-codegen/visitor-plugin-common@npm:^7.2.0, @graphql-codegen/visitor-plugin-common@npm:^7.2.10, @graphql-codegen/visitor-plugin-common@npm:^7.2.2, @graphql-codegen/visitor-plugin-common@npm:^7.2.6, @graphql-codegen/visitor-plugin-common@npm:^7.2.9, @graphql-codegen/visitor-plugin-common@npm:^7.3.0, @graphql-codegen/visitor-plugin-common@npm:^7.5.0":
   version: 7.5.0
   resolution: "@graphql-codegen/visitor-plugin-common@npm:7.5.0"
   dependencies:
@@ -10523,7 +10504,7 @@ __metadata:
     "@graphql-codegen/near-operation-file-preset": "npm:5.2.3"
     "@graphql-codegen/typescript": "npm:6.1.2"
     "@graphql-codegen/typescript-document-nodes": "npm:6.1.1"
-    "@graphql-codegen/typescript-operations": "npm:6.1.10"
+    "@graphql-codegen/typescript-operations": "npm:6.2.0"
     "@octokit/graphql": "npm:9.0.5"
     "@types/node": "npm:26.6.5"
     graphql: "npm:16.14.2"
@@ -10665,7 +10646,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.29.1"
+    "@atproto/api": "npm:0.29.5"
     "@types/node": "npm:26.6.5"
     "@types/oauth": "npm:0.9.6"
     firebase-admin: "npm:14.5.0"
