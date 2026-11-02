@@ -5656,11 +5656,13 @@ export type RepositoryPermission =
   | 'ADMIN'
   /** Can read, clone, and push to this repository. They can also manage issues, pull requests, and some repository settings */
   | 'MAINTAIN'
+  /** Can read and clone this repository. Can also moderate and edit issues and manage pull requests without write access */
+  | 'MODERATE'
   /** Can read and clone this repository. Can also open and comment on issues and pull requests */
   | 'READ'
   /** Can read and clone this repository. Can also manage issues and pull requests */
   | 'TRIAGE'
-  /** Can read and clone this repository. Can also manage issues and pull requests, plus additional triage abilities */
+  /** Can read and clone this repository. Can also moderate and edit issues and manage pull requests without write access */
   | 'TRIAGE_PLUS'
   /** Can read, clone, and push to this repository. Can also manage issues and pull requests */
   | 'WRITE'
