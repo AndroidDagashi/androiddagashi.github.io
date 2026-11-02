@@ -147469,6 +147469,12 @@
             "deprecationReason": null
           },
           {
+            "name": "MODERATE",
+            "description": "Can read and clone this repository. Can also moderate and edit issues and manage pull requests without write access",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "READ",
             "description": "Can read and clone this repository. Can also open and comment on issues and pull requests",
             "isDeprecated": false,
@@ -147482,9 +147488,9 @@
           },
           {
             "name": "TRIAGE_PLUS",
-            "description": "Can read and clone this repository. Can also manage issues and pull requests, plus additional triage abilities",
-            "isDeprecated": false,
-            "deprecationReason": null
+            "description": "Can read and clone this repository. Can also moderate and edit issues and manage pull requests without write access",
+            "isDeprecated": true,
+            "deprecationReason": "TRIAGE_PLUS has been renamed to MODERATE. Use MODERATE instead. Removal on 2027-04-01 UTC."
           },
           {
             "name": "WRITE",
