@@ -2,8 +2,46 @@
   "name": "AndroidDagashi",
   "url": "https://github.com/AndroidDagashi/AndroidDagashi",
   "milestones": {
-    "totalCount": 450,
+    "totalCount": 451,
     "nodes": [
+      {
+        "id": "MI_kwDOB4jhdM4BIHgX",
+        "number": 451,
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/451",
+        "path": "451-2026-11-01",
+        "title": "451 2026-11-01",
+        "description": "Android Studio Rabbit 2が安定版に, eMudhra問題でOkHttp更新, ADSの開発ツールまとめ, Compose 1.13のrecomposition tracing, AppFunctions beta, など",
+        "closedAt": "2026-11-04T05:33:49Z",
+        "issues": {
+          "totalCount": 8,
+          "nodes": [
+            {
+              "title": "Android Studio Rabbit 2が安定版に、Change Reviewなどが登場"
+            },
+            {
+              "title": "eMudhra中間CAの鍵漏えいでOkHttpを更新すべき理由"
+            },
+            {
+              "title": "Android Dev Summitの開発ツールのアップデートまとめ"
+            },
+            {
+              "title": "Compose 1.13で「なぜ再コンポーズしたか」がトレースで分かるように"
+            },
+            {
+              "title": "Android Dev Summitで発表されたAPI・ライブラリまとめ"
+            },
+            {
+              "title": "Jetpack AppStateのTransformとStateStore"
+            },
+            {
+              "title": "computedStateOfとderivedStateOfの使い分け"
+            },
+            {
+              "title": "LiteRTがGoogle Play services経由でのGPU推論に対応"
+            }
+          ]
+        }
+      },
       {
         "id": "MI_kwDOB4jhdM4BHSSc",
         "number": 450,
@@ -1502,43 +1540,11 @@
             }
           ]
         }
-      },
-      {
-        "id": "MI_kwDOB4jhdM4A1hWn",
-        "number": 401,
-        "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/401",
-        "path": "401-2025-11-09",
-        "title": "401 2025-11-09",
-        "description": "Compose Stability Analyzer, HiltとKoinの比較, ComposeのGapBuffer, Swift SDK for Androidを使って再利用, MVVMは今もアーキテクチャの標準？, など",
-        "closedAt": "2025-11-09T11:30:42Z",
-        "issues": {
-          "totalCount": 6,
-          "nodes": [
-            {
-              "title": "Compose Stability Analyzer"
-            },
-            {
-              "title": "MVVMは今もAndroidアーキテクチャの標準？"
-            },
-            {
-              "title": "「ログ入れ忘れた！」で本番デバッグ用に再ビルドする羽目になった経験ある？"
-            },
-            {
-              "title": "Swift SDK for Androidを使ってiOSアプリのロジックをAndroidアプリで再利用する"
-            },
-            {
-              "title": "ComposeのGapBufferを理解する"
-            },
-            {
-              "title": "HiltとKoinの比較：ランタイム注入の隠れたコストとコンパイル時DIの優位性"
-            }
-          ]
-        }
       }
     ],
     "pageInfo": {
-      "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMC0yNVQwMDowMDowMFrOAR0knA==",
-      "endCursor": "Y3Vyc29yOnYyOpK0MjAyNS0xMS0wOVQwMDowMDowMFrOANYVpw==",
+      "startCursor": "Y3Vyc29yOnYyOpK0MjAyNi0xMS0wMVQwMDowMDowMFrOASB4Fw==",
+      "endCursor": "Y3Vyc29yOnYyOpK0MjAyNS0xMS0xNlQwMDowMDowMFrOANbjiQ==",
       "hasPreviousPage": false,
       "hasNextPage": true
     }

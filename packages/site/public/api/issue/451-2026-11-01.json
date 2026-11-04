@@ -1,0 +1,211 @@
+{
+  "id": "MI_kwDOB4jhdM4BIHgX",
+  "number": 451,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/451",
+  "title": "451 2026-11-01",
+  "closedAt": "2026-11-04T05:33:49Z",
+  "description": "Android Studio Rabbit 2が安定版に, eMudhra問題でOkHttp更新, ADSの開発ツールまとめ, Compose 1.13のrecomposition tracing, AppFunctions beta, など",
+  "issues": {
+    "totalCount": 8,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAXFey0s=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________N_PAAAAAXFe1ak=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3950",
+        "title": "Android Studio Rabbit 2が安定版に、Change Reviewなどが登場",
+        "body": "Android Studio Rabbit 2が安定版になり、Claude AgentやCodexなど40以上のAIエージェントをAndroid Studio内で使えるBYOA（Bring Your Own Agent）が正式に使えるようになりました。エージェントの変更やコミットをAIがレビューし、関連する差分をまとめて解説するChange Reviewも追加。XRグラス向けエミュレータも安定版になっています。\nhttps://developer.android.com/blog/posts/ai-agents-android-studio-integration",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3951",
+        "title": "eMudhra中間CAの鍵漏えいでOkHttpを更新すべき理由",
+        "body": "eMudhraの中間CA証明書8件の秘密鍵が公開情報から計算できる問題（CVE-2026-111943）について、Android向けの対応を解説。OkHttp 4.12.1 / 5.5.1以降には対象証明書を拒否するブロックリストが入っており、OSの更新に関係なく防げます。すぐ更新できない場合のHostnameVerifierによる回避策も紹介されています。\nhttps://qiita.com/HanaleiMoon/items/1ba950901c3baa1734bd",
+        "labels": {
+          "nodes": [
+            {
+              "name": "security",
+              "description": "",
+              "color": "2d754b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3952",
+        "title": "Android Dev Summitの開発ツールのアップデートまとめ",
+        "body": "Android CLIがClaude CodeとCodex向けの公式プラグインになり、新しい`android preview`ではエミュレータなしでCompose Previewを描画できます。R8 Configuration AnalyzerがAGP 9.3に組み込まれてkeepルールのコストを可視化でき、広すぎるkeepルールを置き換えるJetpack Keep（alpha）も登場。ビルド設定をYAMLで書く宣言的ビルド「Lightbuild」の早期プレビューも公開されました。\nhttps://developer.android.com/blog/posts/android-dev-summit-26-developer-tools-performance",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3953",
+        "title": "Compose 1.13で「なぜ再コンポーズしたか」がトレースで分かるように",
+        "body": "Compose 1.13から、どのstateの書き込みが再コンポーズを引き起こしたかをトレースに記録するrecomposition tracingが使えるようになります。専用スクリプトで記録したトレースをPerfettoで開くと、stateを変更したコールスタックから再コンポーズまで矢印で辿れます。runtime-tracing 1.13.0以降が必要です。\nhttps://developer.android.com/develop/ui/compose/tooling/tracing#recomposition-tracing",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3954",
+        "title": "Android Dev Summitで発表されたAPI・ライブラリまとめ",
+        "body": "アプリの機能をエージェントから呼び出せるAppFunctionsがbetaになり、ML KitにはGemini Nano 4を使うAgentic API（alpha）が追加されました。Composeの仕組みを状態管理層に広げるJetpack AppState（alpha）や、Jetpack XRのコアライブラリ（SceneCore、ARCore for Jetpack XR、XR Runtime）の安定版化も発表されています。\nhttps://developer.android.com/blog/posts/build-it-your-way-a-next-era-of-android-development",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3955",
+        "title": "Jetpack AppStateのTransformとStateStore",
+        "body": "Composeのリアクティブな仕組みをUIの外の状態管理にも使えるJetpack AppState（alpha01）の解説記事。FlowをStateに変換するTransformと、型安全なキーで状態を持ちDataStoreにも永続化できるStateStoreを紹介しています。既存のStateFlowで困っていなければ無理に移行する必要はない、という評価です。\nhttps://qiita.com/Nabe1216/items/cf6dec7247169b4a881b",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3956",
+        "title": "computedStateOfとderivedStateOfの使い分け",
+        "body": "Compose 1.13で追加されるcomputedStateOfとderivedStateOfの違いの解説。computedStateOfは読み取りのたびに計算し、derivedStateOfは結果をキャッシュします。基本はcomputedStateOfを使い、計算が重い場合や大きなメモリ割り当てが発生する場合にderivedStateOfを使うとよいそうです。\nhttps://qiita.com/Nabe1216/items/3951528497672fc8a757",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3957",
+        "title": "LiteRTがGoogle Play services経由でのGPU推論に対応",
+        "body": "LiteRT in Google Play servicesで、ML Driftを使ったGPU推論がCompiledModel APIから使えるようになりました。従来のGPU delegateより約1.4倍速く、ランタイムをアプリに同梱しなくてよいため、アプリサイズも約8MB小さくなるそうです。NPUにはまだ対応していません。\nhttps://developers.googleblog.com/smaller-apps-and-faster-gpu-inference-with-litert-in-google-play-services/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
