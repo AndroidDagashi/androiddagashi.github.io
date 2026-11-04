@@ -39,9 +39,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.29.6":
-  version: 0.29.6
-  resolution: "@atproto/api@npm:0.29.6"
+"@atproto/api@npm:0.30.0":
+  version: 0.30.0
+  resolution: "@atproto/api@npm:0.30.0"
   dependencies:
     "@atproto/common-web": "npm:^0.5.15"
     "@atproto/lexicon": "npm:^0.7.17"
@@ -51,7 +51,7 @@ __metadata:
     multiformats: "npm:^13.0.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/0fd4b74122c0102f45bf4df2124f1f4874db2b0a4b93a156e6e3f34bba966007b4b0e56060638f30098f50748bf6e02e5c4e19bfaf04e038914af677a4e99b15
+  checksum: 10c0/865363bb6cba208a905d2182e06f9fb88a3cfb6d12f08b68e66b2b308835357d384b926174302a9171b58780072293322e92663fe152f06a29454456a048e06f
   languageName: node
   linkType: hard
 
@@ -7742,12 +7742,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"iconify-icon@npm:3.0.4":
-  version: 3.0.4
-  resolution: "iconify-icon@npm:3.0.4"
+"iconify-icon@npm:3.0.5":
+  version: 3.0.5
+  resolution: "iconify-icon@npm:3.0.5"
   dependencies:
     "@iconify/types": "npm:^2.0.0"
-  checksum: 10c0/e44fffa2717e7a71d77184c753da9030290310478e6ff0686d4730baa49d3a9117251639ce194349b89b207669b9e03b07683df92cc50d4e1c3e762d1074ed3a
+  checksum: 10c0/52578617ea8f3dfb9c67e771b4f6a9ad9e599b57bde294a1ec859c6807b5478a8f773c45dc386841a4ebc8466cd11a7f036809dfa2bcbdb46f4b50a273692c86
   languageName: node
   linkType: hard
 
@@ -11030,7 +11030,7 @@ __metadata:
     "@types/twitter-text": "npm:3.1.10"
     date-fns: "npm:4.4.0"
     eslint: "npm:10.14.0"
-    iconify-icon: "npm:3.0.4"
+    iconify-icon: "npm:3.0.5"
     lodash.flatmap: "npm:4.5.0"
     markdown-it: "npm:15.0.3"
     modern-normalize: "npm:3.0.1"
@@ -11090,7 +11090,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.29.6"
+    "@atproto/api": "npm:0.30.0"
     "@types/node": "npm:26.6.6"
     "@types/oauth": "npm:0.9.6"
     firebase-admin: "npm:14.5.0"
