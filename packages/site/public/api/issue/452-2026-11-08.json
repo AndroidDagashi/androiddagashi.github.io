@@ -1,0 +1,279 @@
+{
+  "id": "MI_kwDOB4jhdM4BJOu_",
+  "number": 452,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/452",
+  "title": "452 2026-11-08",
+  "closedAt": "2026-11-08T10:55:26Z",
+  "description": "Play Consoleのトレーダー申告に困惑, ShopifyのReflex, Haze 2.1でGlassがStable, Gradle 9.9.0, ADSの全動画公開, WebView経由の広告ID漏えい, など",
+  "issues": {
+    "totalCount": 10,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAXW16kU=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________BfPAAAAAXW2zPM=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3960",
+        "title": "Play Consoleのトレーダー申告（EU/UK向けDSA対応、期限2027-02-01）で個人開発者が困惑",
+        "body": "EUのデジタルサービス法（DSA）対応として、Play Consoleで「トレーダー申告」を求められるようになり、r/androiddevで今週最も議論を集めました。収益化しているとトレーダー扱いになり、EU/UK向けのストア掲載に住所や電話番号が公開されること、2027年2月1日までに申告しないとアプリが取り下げられることに、個人開発者から反発が出ています。非トレーダーでも住所表示への同意を求められる点や、広告収益だけでもトレーダーになるのか、といった疑問も別スレッドで議論されています。\nhttps://www.reddit.com/r/androiddev/comments/1xo36zf/google_will_doxx_you_next_year_if_you_have_apps/\n関連: https://www.reddit.com/r/androiddev/comments/1xnpqch/play_console_declaration_why_must_a_nontrader/ / https://www.reddit.com/r/androiddev/comments/1xoaymz/anyone_else_confused_by_the_play_console_declare/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3961",
+        "title": "Reflex: エージェントがUIなしでアプリをビルド・テストできるShopifyのモバイルアーキテクチャ",
+        "body": "Shopifyが、AIエージェントがUIを描画せずにアプリのビルド・テスト・操作をできるようにしたMVVMベースのアーキテクチャ「Reflex」を公開しました。中核はUIに依存しないヘッドレスなCore（Android側はandroid.*をimportしない純JVMモジュール）で、Elm風のViewModel、ViewModelをJSONで公開するイントロスペクション、CLIを組み合わせています。iOSとAndroidで同じ1,700件超の振る舞いテストを動かし、CIでは両プラットフォーム合わせて約4分で終わるそうです。\nhttps://shopify.engineering/reflex",
+        "labels": {
+          "nodes": [
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3962",
+        "title": "Haze 2.1でGlass系APIがStableに",
+        "body": "ブラー／グラス効果ライブラリHazeの2.1で、haze-glassとhaze-glass-material3がStableになり、ExperimentalHazeApiのオプトインが不要になりました。新しいhazeGlassContainerは近くにあるグラス面を1つの形に結合し、追加・削除のアニメーションも自動で行います。作者のPixel 8aでの計測ではピークGPUメモリが約7〜9%減ったそうです。2.0.xの実験版Glassを使っている場合はAPIの改名があるので注意が必要です。\nhttps://chrisbanes.me/posts/haze-2.1.0/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3963",
+        "title": "Gradle 9.9.0リリース、Kotlin DSLのインクリメンタルコンパイルで再コンパイルが最大65%高速化",
+        "body": "Gradle 9.9.0がリリースされました。Kotlin DSLスクリプトがKotlin Build Tools API経由でコンパイルされるようになり、インクリメンタルコンパイルが効くことで、buildSrcやincluded buildを変更したあとの再コンパイルが大規模なマルチプロジェクトで最大65%速くなったそうです。ほかに`--tests`フィルタのメソッド以外のテストへの対応、wrapper再生成時の設定保持、Problems APIのグループ再編などが入っています。なお9.9.0では組み込みのAnt連携（AntBuilder、`ant { }`など）が非推奨になり、Gradle 10で削除される予定なので、ビルドロジックでAntを使っている場合は標準タスクへの移行が必要です。\nhttps://docs.gradle.org/9.9.0/release-notes.html\n関連: https://blog.gradle.org/side-quest-removing-ant",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3964",
+        "title": "Android Dev Summit 2026の全セッション動画が公開、Markdown・JSON・Agent Skillsでも配布",
+        "body": "4年ぶりに開催されたAndroid Dev Summit（10/28〜29）の50以上のセッション動画が公開され、r/androiddevにトラック別のまとめが投稿されています。今年はサイト側がエージェント向けに整備されていて、各セッションを要約・リンク・話者付き書き起こし・コード付きのMarkdownでダウンロードでき、全セッションのメタデータをJSONフィードで取得したり、各セッションが参照するAgent Skillsを導入したりできます。あわせて公式ブログでは、AppFunctionsを土台にしたAndroid MCP、function callingに対応したGemini Nano 4、ML KitのAgentic API／Embeddings API、Connected Apps Platformのpreview waitlistといったAI関連の発表がまとめられています。\nhttps://www.reddit.com/r/androiddev/comments/1xm59v9/icymi_every_android_dev_summit_2026_vod_is_now/\n関連: https://developer.android.com/blog/posts/android-intelligence-system-in-app-agents-ads",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3965",
+        "title": "AndroidアプリがWebView経由で広告IDなどの端末識別子を漏らしている実態の調査",
+        "body": "Google Playの1万アプリを調べたところ、ネイティブ側のSDKがWebViewのJS環境に広告ID（GAID）や位置情報を注入しており、WebViewを使うアプリの23.3%がGAIDを注入し、18.2%が実際に外部へ送信していたという研究です。注入の96%はGoogle Ads、Unity、ironSource、InMobi、AppLovinなどの同梱SDKによるもので、Data safetyで「第三者共有なし」と申告しているのに送信していたアプリもありました。WebViewと広告SDKを併用しているアプリは、SDKが何を注入しているか確認し、Data safetyの申告を見直したほうがよさそうです。\nhttps://sohom.dev/writeups/cross-boundary-mobile-tracking",
+        "labels": {
+          "nodes": [
+            {
+              "name": "security",
+              "description": "",
+              "color": "2d754b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3966",
+        "title": "Android開発の「学び直し」に疲れていませんか？というスレッド",
+        "body": "2012年からAndroidアプリを開発している投稿者が、Eclipse→Android Studio、Java→Kotlin、XML→Compose、アーキテクチャの流行の変化と、3〜4年ごとに大きな変化が来て学び直しを迫られることへの疲れを吐露し、今週のr/androiddevで最も多くの反応（197pts・112コメント）を集めました。新しいことを学ぶのは楽しいが「ついていかないと取り残される」という感覚がつらい、という話で、アーキテクトやバックエンド、エンジニアリングマネジメントに移った人の経験談も集まっています。\nhttps://www.reddit.com/r/androiddev/comments/1xljzr4/anyone_else_getting_tired_of_constantly_having_to/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3967",
+        "title": "Windows on ARMでAndroid Emulatorを動かす非公式ブリッジ",
+        "body": "Android Studioのエミュレータは公式にはWindows on ARMをサポートしていませんが、QEMUをWHPX経由で動かし、エミュレータのgRPCプロトコルを話す小さなブリッジを挟むことで、Android Studioから通常のエミュレータとして扱えるようにした個人プロジェクトです。Device Managerで作ったstockイメージがそのまま起動し、Android 12〜17のPhone／TV／Wear OSで動作、タッチ・ネットワーク・Googleサインインにも対応しているそうです。音声が出ない、120fpsに届かない、Snapdragon X機1台でしか検証していないといった制約はありますが、ARM版Windowsで開発している人には朗報かもしれません。\nhttps://www.reddit.com/r/androiddev/comments/1xpvaw7/i_managed_to_get_android_emulator_running_on/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "reddit",
+              "description": "",
+              "color": "d93f0b"
+            },
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3968",
+        "title": "IVRyが電話アプリをFlutterからネイティブに移行、コールドスタートが約74%短縮",
+        "body": "IVRyが音声通話アプリをFlutterからネイティブ（Kotlin + Compose / SwiftUI）に移行し、10月に全ユーザーへの展開を終えた事例です。もともと通話処理はネイティブ側にあり、約50本のPlatform Channelと、着信時に起動するheadless Flutter Engineの管理のせいで障害の切り分けが難しくなっていたことが理由とのこと。PoCではAndroidのコールドスタートの中央値が192.5msから49.6msに約74%短縮したそうです。\nhttps://zenn.dev/ivry/articles/d155267331a3ca",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Flutter",
+              "description": "",
+              "color": "1591E5"
+            },
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3969",
+        "title": "Turbineを使ったFlowテストがフレーキーになる原因と対策",
+        "body": "Touchlabによる、Turbine 1.2.0で書いたFlowのテストが不安定になる原因と対策のまとめです。StateFlowは最終値だけを検証し、イベントストリームは各emitを順に検証すること、目的の状態が来るまでawaitItem()をループすることを勧めています。runCurrent / advanceUntilIdle / advanceTimeByの使い分けや、cancelAndIgnoreRemainingEvents()で明示的に閉じることにも触れていて、CIでたまに落ちるコルーチンテストの点検リストとして使えます。\nhttps://touchlab.co/flake-free-flow-tests-pt2-turbine",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "test",
+              "description": "",
+              "color": "597fcc"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
