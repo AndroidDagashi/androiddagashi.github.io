@@ -2,11 +2,10 @@ name: Update Json files
 on:
   workflow_dispatch:
   schedule:
-    # schedule does not support timezone, so use UTC
-    # https://github.com/actions/runner/issues/1423
-    # https://github.community/t/timezone-support-for-scheduled-actions/17279
-    - cron: '0 01-23/2 * * *'
-    # - cron: '0 * * * *'
+    # Every 2 hours on even JST hours (includes 20:xx).
+    # Minute 17 avoids the top of the hour, when GitHub delays or drops scheduled runs under load.
+    - cron: '17 0-22/2 * * *'
+      timezone: 'Asia/Tokyo'
 
 jobs:
   push_json_and_rssfeed:
