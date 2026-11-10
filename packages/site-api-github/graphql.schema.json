@@ -20977,6 +20977,78 @@
         "possibleTypes": null
       },
       {
+        "kind": "ENUM",
+        "name": "CopilotCodeReviewEffort",
+        "description": "The effort level for a Copilot code review. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level).",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "AUTO",
+            "description": "Copilot picks the effort for each pull request.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "BALANCED",
+            "description": "Balanced effort and depth.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "LITE",
+            "description": "Lower effort, faster review.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "MAX",
+            "description": "Highest effort, deepest review.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "CopilotCodeReviewEffortLevel",
+        "description": "A Copilot code review effort level. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level).",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "AUTO",
+            "description": "Copilot picks the effort for each pull request.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "BALANCED",
+            "description": "Balanced effort and depth.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "LITE",
+            "description": "Lower effort, faster review.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "MAX",
+            "description": "Highest effort, deepest review.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
         "kind": "OBJECT",
         "name": "CopilotCodeReviewParameters",
         "description": "Request Copilot code review for new pull requests automatically if the author has access to Copilot code review and AI credits.",
@@ -21054,6 +21126,218 @@
         ],
         "interfaces": null,
         "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "CopilotCodeReviewRequestReason",
+        "description": "The stable reason a Copilot code review request was denied or conflicted with an existing request.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "ACTOR_INELIGIBLE",
+            "description": "The actor is not eligible to request Copilot code reviews.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "APP_NOT_INSTALLED",
+            "description": "The Copilot code review reviewer app is not installed.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "LICENSED_ORGANIZATION_UNAVAILABLE",
+            "description": "The organization providing the Copilot license is unavailable.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "NO_QUOTA_REMAINING",
+            "description": "The actor has no Copilot code review quota remaining.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "REPOSITORY_INELIGIBLE",
+            "description": "The repository is not eligible for Copilot code reviews.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "REQUEST_CONFLICT",
+            "description": "A Copilot code review request is already pending for this pull request.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "CopilotCodeReviewRunnerConfiguredBy",
+        "description": "Which configuration an organization's Copilot code review runner values come from.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "CODE_REVIEW",
+            "description": "The organization has saved a Copilot code review runner configuration.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "CODING_AGENT",
+            "description": "The values are inherited from the organization's Copilot coding agent runner configuration.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "CopilotCodeReviewRunnerType",
+        "description": "The type of runner Copilot code review uses.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "LABELED",
+            "description": "Runners that match the configured labels or runner group.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "STANDARD",
+            "description": "Standard GitHub-hosted runners.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "CopilotCodeReviewSeverityFilter",
+        "description": "Which review comment severities Copilot code review leaves out.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "LOW",
+            "description": "Leave out low-severity comments.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "LOW_AND_MEDIUM",
+            "description": "Leave out low- and medium-severity comments.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "NO_FILTER",
+            "description": "Keep every comment.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "CopilotCodeReviewSource",
+        "description": "A validated source reported as contributing to a Copilot code review comment.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "kind",
+            "description": "The kind of contributing source.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "CopilotCodeReviewSourceKind",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "name",
+            "description": "The reported source name, or \"custom instructions\" for CUSTOM_INSTRUCTIONS.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "String",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "path",
+            "description": "The validated repository-relative source path, if available. Commit OIDs are not exposed.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "CopilotCodeReviewSourceKind",
+        "description": "The kind of source reported as contributing to a Copilot code review comment.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "CUSTOM_INSTRUCTIONS",
+            "description": "Custom instructions.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "MCP",
+            "description": "An MCP server.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "SKILL",
+            "description": "A skill.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
         "possibleTypes": null
       },
       {
@@ -38189,6 +38473,18 @@
             "deprecationReason": null
           },
           {
+            "name": "copilotCodeReviewPolicy",
+            "description": "The configured Copilot code review policy. Requires enterprise AI controls read permissions.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "EnterpriseCopilotCodeReviewPolicy",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "createdAt",
             "description": "Identifies the date and time when the object was created.",
             "args": [],
@@ -40071,6 +40367,60 @@
         "inputFields": null,
         "interfaces": [],
         "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "EnterpriseCopilotCodeReviewPolicy",
+        "description": "The enterprise's configured Copilot code review policy, not a user's effective policy.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "policyState",
+            "description": "The configured policy. Null if the enterprise has not configured a policy.",
+            "args": [],
+            "type": {
+              "kind": "ENUM",
+              "name": "EnterpriseCopilotCodeReviewPolicyState",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "EnterpriseCopilotCodeReviewPolicyState",
+        "description": "The configured Copilot code review policy for an enterprise.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "CONFIGURED_BY_ORGANIZATION_ADMINS",
+            "description": "Organization administrators configure Copilot code review. Not supported for standalone enterprises.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "DISABLED_FOR_ALL_ORGANIZATIONS",
+            "description": "Copilot code review is disabled for all organizations.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ENABLED_FOR_ALL_ORGANIZATIONS",
+            "description": "Copilot code review is enabled for all organizations.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
         "possibleTypes": null
       },
       {
@@ -77029,6 +77379,35 @@
             "deprecationReason": null
           },
           {
+            "name": "requestCopilotCodeReview",
+            "description": "Requests a Copilot code review.\n\nEvery call attempts to advance the Copilot code review lifecycle for the pull\nrequest: if no Copilot review has been requested yet, an initial request is created;\nif the most recent Copilot review has already completed, a new request is created\nautomatically to continue the lifecycle. If a Copilot code review request is already\npending, no new request is created and `failureReason` is `REQUEST_CONFLICT`.",
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for RequestCopilotCodeReview",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "name": "RequestCopilotCodeReviewInput",
+                    "kind": "INPUT_OBJECT",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "RequestCopilotCodeReviewPayload",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "requestReviews",
             "description": "Set review requests on a pull request.",
             "args": [
@@ -78305,6 +78684,35 @@
             "deprecationReason": null
           },
           {
+            "name": "updateEnterpriseCopilotCodeReviewPolicy",
+            "description": "Updates an enterprise's Copilot code review policy using the existing policy propagation and notification behavior.",
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for UpdateEnterpriseCopilotCodeReviewPolicy",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "name": "UpdateEnterpriseCopilotCodeReviewPolicyInput",
+                    "kind": "INPUT_OBJECT",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "UpdateEnterpriseCopilotCodeReviewPolicyPayload",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "updateEnterpriseDefaultRepositoryPermissionSetting",
             "description": "Sets the base repository permission for organizations in an enterprise.",
             "args": [
@@ -79175,6 +79583,93 @@
             "deprecationReason": null
           },
           {
+            "name": "updateOrganizationCopilotCodeReviewPolicy",
+            "description": "Updates an organization's Copilot code review policy when the enterprise delegates control to organization administrators.",
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for UpdateOrganizationCopilotCodeReviewPolicy",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "name": "UpdateOrganizationCopilotCodeReviewPolicyInput",
+                    "kind": "INPUT_OBJECT",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "UpdateOrganizationCopilotCodeReviewPolicyPayload",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updateOrganizationCopilotCodeReviewRunnerConfiguration",
+            "description": "Sets the runner configuration that Copilot code review uses for an organization. A LABELED runner requires at least one label or a runner group. Invalid input does not change the configuration.",
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for UpdateOrganizationCopilotCodeReviewRunnerConfiguration",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "name": "UpdateOrganizationCopilotCodeReviewRunnerConfigurationInput",
+                    "kind": "INPUT_OBJECT",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "UpdateOrganizationCopilotCodeReviewRunnerConfigurationPayload",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updateOrganizationCopilotCodeReviewSettings",
+            "description": "Updates an organization's Copilot code review settings. Omitted settings are not changed.",
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for UpdateOrganizationCopilotCodeReviewSettings",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "name": "UpdateOrganizationCopilotCodeReviewSettingsInput",
+                    "kind": "INPUT_OBJECT",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "UpdateOrganizationCopilotCodeReviewSettingsPayload",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "updateOrganizationWebCommitSignoffSetting",
             "description": "Sets whether contributors are required to sign off on web-based commits for repositories in an organization.",
             "args": [
@@ -79749,6 +80244,35 @@
             "type": {
               "kind": "OBJECT",
               "name": "UpdateRepositoryPayload",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "updateRepositoryCopilotCodeReviewSettings",
+            "description": "Updates a repository's Copilot code review settings. Omitted settings are not changed.",
+            "args": [
+              {
+                "name": "input",
+                "description": "Parameters for UpdateRepositoryCopilotCodeReviewSettings",
+                "type": {
+                  "kind": "NON_NULL",
+                  "name": null,
+                  "ofType": {
+                    "name": "UpdateRepositoryCopilotCodeReviewSettingsInput",
+                    "kind": "INPUT_OBJECT",
+                    "ofType": null
+                  }
+                },
+                "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              }
+            ],
+            "type": {
+              "kind": "OBJECT",
+              "name": "UpdateRepositoryCopilotCodeReviewSettingsPayload",
               "ofType": null
             },
             "isDeprecated": false,
@@ -91049,6 +91573,30 @@
             "deprecationReason": null
           },
           {
+            "name": "copilotCodeReviewRunnerConfiguration",
+            "description": "The effective runner configuration that Copilot code review uses. Requires organization Copilot read permissions.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "OrganizationCopilotCodeReviewRunnerConfiguration",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "copilotCodeReviewSettings",
+            "description": "The organization's Copilot code review settings. Requires organization Copilot read permissions.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "OrganizationCopilotCodeReviewSettings",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "createdAt",
             "description": "Identifies the date and time when the object was created.",
             "args": [],
@@ -92268,6 +92816,18 @@
             "deprecationReason": null
           },
           {
+            "name": "organizationCopilotCodeReviewPolicy",
+            "description": "The configured and effective Copilot code review policy. Requires organization Copilot read permissions.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "OrganizationCopilotCodeReviewPolicy",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "packages",
             "description": "A list of packages under the owner.",
             "args": [
@@ -92583,6 +93143,18 @@
                   "ofType": null
                 },
                 "defaultValue": null,
+                "isDeprecated": false,
+                "deprecationReason": null
+              },
+              {
+                "name": "orderBy",
+                "description": "The order in which to return pinned issue fields.",
+                "type": {
+                  "kind": "INPUT_OBJECT",
+                  "name": "PinnedIssueFieldOrder",
+                  "ofType": null
+                },
+                "defaultValue": "{direction: ASC, field: POSITION}",
                 "isDeprecated": false,
                 "deprecationReason": null
               }
@@ -95973,6 +96545,440 @@
         "inputFields": null,
         "interfaces": [],
         "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "OrganizationCopilotCodeReviewDefaultEffort",
+        "description": "An organization's default Copilot code review effort.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "configured",
+            "description": "The effort stored for the organization. Null if the organization inherits the default or has stored an effort that is not currently available.",
+            "args": [],
+            "type": {
+              "kind": "ENUM",
+              "name": "CopilotCodeReviewEffortLevel",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "editable",
+            "description": "Whether organization administrators can update the setting.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "effective",
+            "description": "The effort that repositories without their own setting use. When that effort is not currently available, this reports the fallback effort instead.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "CopilotCodeReviewEffortLevel",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "githubDefault",
+            "description": "The effort the organization inherits when it does not configure one: the enterprise default when one applies, otherwise GitHub's default.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "CopilotCodeReviewEffortLevel",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "managedBy",
+            "description": "Whether the enterprise or the organization controls the setting.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "OrganizationCopilotCodeReviewPolicyManager",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "OrganizationCopilotCodeReviewEffortSetting",
+        "description": "The default Copilot code review effort to set for an organization. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level).",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "AUTO",
+            "description": "Copilot picks the effort for each pull request.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "BALANCED",
+            "description": "Balanced effort and depth.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "INHERIT",
+            "description": "Clear the organization's value so repositories inherit the default.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "LITE",
+            "description": "Lower effort, faster review.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "MAX",
+            "description": "Highest effort, deepest review.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "OrganizationCopilotCodeReviewPolicy",
+        "description": "The organization's configured and effective Copilot code review policy.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "configuredState",
+            "description": "The policy stored for the organization. Null if the organization has not configured a policy.",
+            "args": [],
+            "type": {
+              "kind": "ENUM",
+              "name": "OrganizationCopilotCodeReviewPolicyState",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "editable",
+            "description": "Whether organization administrators can update the policy.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "effectiveState",
+            "description": "The policy that applies to the organization after enterprise policy is considered.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "OrganizationCopilotCodeReviewPolicyState",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "managedBy",
+            "description": "Whether the enterprise or the organization controls the policy.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "OrganizationCopilotCodeReviewPolicyManager",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "OrganizationCopilotCodeReviewPolicyConflict",
+        "description": "Why an organization's Copilot code review policy was not updated.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "POLICY_MANAGED_BY_ENTERPRISE",
+            "description": "The enterprise policy controls the organization's policy.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "OrganizationCopilotCodeReviewPolicyManager",
+        "description": "The scope that controls an organization's Copilot code review policy.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "ENTERPRISE",
+            "description": "The enterprise policy controls the organization's policy.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ORGANIZATION",
+            "description": "Organization administrators control the policy.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "OrganizationCopilotCodeReviewPolicyState",
+        "description": "The Copilot code review policy state for an organization.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "DISABLED",
+            "description": "Copilot code review is disabled.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "ENABLED",
+            "description": "Copilot code review is enabled.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "OrganizationCopilotCodeReviewRunnerConfiguration",
+        "description": "The effective runner configuration that Copilot code review uses for an organization.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "allowRepositoryCustomization",
+            "description": "Whether repositories can use their own runner configuration.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "configuredBy",
+            "description": "Which configuration the values come from. CODING_AGENT means they are inherited from the organization's Copilot coding agent runner configuration.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "CopilotCodeReviewRunnerConfiguredBy",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "runnerGroupName",
+            "description": "The runner group used for a labeled runner, if any.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "runnerLabels",
+            "description": "The runner labels used for a labeled runner.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null,
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "name": "String",
+                    "kind": "SCALAR",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "runnerType",
+            "description": "The type of runner.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "CopilotCodeReviewRunnerType",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "OrganizationCopilotCodeReviewSettings",
+        "description": "An organization's Copilot code review settings.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "availableReviewEfforts",
+            "description": "The review efforts that can currently be set for this organization, in display order.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null,
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "name": "CopilotCodeReviewEffortLevel",
+                    "kind": "ENUM",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "defaultReviewEffort",
+            "description": "The default review effort for repositories that do not choose their own.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "OrganizationCopilotCodeReviewDefaultEffort",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "OrganizationCopilotCodeReviewSettingsConflict",
+        "description": "Why an organization's Copilot code review settings were not updated.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "SETTING_NOT_EDITABLE",
+            "description": "The organization cannot change a submitted setting.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
         "possibleTypes": null
       },
       {
@@ -101864,6 +102870,68 @@
         "inputFields": null,
         "interfaces": [],
         "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "PinnedIssueFieldOrder",
+        "description": "Ordering options for pinned issue field connections.",
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "direction",
+            "description": "The ordering direction.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "OrderDirection",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "field",
+            "description": "The field to order pinned issue fields by.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "PinnedIssueFieldOrderField",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "PinnedIssueFieldOrderField",
+        "description": "Properties by which pinned issue fields can be ordered.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "POSITION",
+            "description": "Order pinned issue fields by their configured pinned position.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
         "possibleTypes": null
       },
       {
@@ -118974,6 +120042,18 @@
             "deprecationReason": null
           },
           {
+            "name": "copilotCodeReviewEffort",
+            "description": "The persisted effective effort used to produce this Copilot code review, or null if unavailable.",
+            "args": [],
+            "type": {
+              "kind": "ENUM",
+              "name": "CopilotCodeReviewEffort",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "createdAt",
             "description": "Identifies the date and time when the object was created.",
             "args": [],
@@ -119060,6 +120140,22 @@
           {
             "name": "includesCreatedEdit",
             "description": "Check if this comment was edited and includes an edit with the creation data",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "isCopilotCodeReview",
+            "description": "Whether this review was produced by Copilot code review. Bot authorship alone does not establish provenance.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -119730,6 +120826,30 @@
             "deprecationReason": null
           },
           {
+            "name": "copilotCodeReviewSources",
+            "description": "Sources reported as contributing to this comment; may be incomplete.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null,
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "name": "CopilotCodeReviewSource",
+                    "kind": "OBJECT",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "createdAt",
             "description": "Identifies when the comment was created.",
             "args": [],
@@ -119848,6 +120968,22 @@
           {
             "name": "includesCreatedEdit",
             "description": "Check if this comment was edited and includes an edit with the creation data",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "isCopilotCodeReview",
+            "description": "Whether this comment was produced by Copilot code review.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -142508,6 +143644,18 @@
             "deprecationReason": null
           },
           {
+            "name": "repositoryCopilotCodeReviewSettings",
+            "description": "The repository's Copilot code review settings. Requires repository administration access.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "RepositoryCopilotCodeReviewSettings",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "repositoryCustomPropertyValue",
             "description": "A custom property value for the repository.",
             "args": [
@@ -144481,6 +145629,188 @@
             "deprecationReason": null
           }
         ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "RepositoryCopilotCodeReviewEffort",
+        "description": "A repository's Copilot code review effort.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "configured",
+            "description": "The effort stored for the repository. Null if the repository inherits its effort or has stored an effort that is not currently available.",
+            "args": [],
+            "type": {
+              "kind": "ENUM",
+              "name": "CopilotCodeReviewEffortLevel",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "effective",
+            "description": "The effort reviews use when the requester and the pull request do not choose one. When that effort is not currently available, this reports the effort reviews would use without it.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "CopilotCodeReviewEffortLevel",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "RepositoryCopilotCodeReviewEffortSetting",
+        "description": "The Copilot code review effort to set for a repository. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level).",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "AUTO",
+            "description": "Copilot picks the effort for each pull request.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "BALANCED",
+            "description": "Balanced effort and depth.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "INHERIT",
+            "description": "Clear the repository's value so it inherits the effort from its organization, enterprise, or GitHub's default.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "LITE",
+            "description": "Lower effort, faster review.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "MAX",
+            "description": "Highest effort, deepest review.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "RepositoryCopilotCodeReviewSettings",
+        "description": "A repository's Copilot code review settings. These settings tune reviews; they do not enable Copilot code review.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "availableReviewEfforts",
+            "description": "The review efforts that can currently be set for this repository, in display order.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": null,
+                "kind": "LIST",
+                "ofType": {
+                  "name": null,
+                  "kind": "NON_NULL",
+                  "ofType": {
+                    "name": "CopilotCodeReviewEffortLevel",
+                    "kind": "ENUM",
+                    "ofType": null
+                  }
+                }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "customInstructionsEnabled",
+            "description": "Whether reviews use the repository's custom instructions.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "mcpEnabled",
+            "description": "Whether reviews can use MCP servers.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "reviewEffort",
+            "description": "The repository's review effort.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "RepositoryCopilotCodeReviewEffort",
+                "kind": "OBJECT",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "severityFilter",
+            "description": "Which review comment severities Copilot code review leaves out.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "CopilotCodeReviewSeverityFilter",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
         "possibleTypes": null
       },
       {
@@ -150716,6 +152046,142 @@
             "type": {
               "kind": "OBJECT",
               "name": "Issue",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "RequestCopilotCodeReviewInput",
+        "description": "Autogenerated input type of RequestCopilotCodeReview",
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "pullRequestId",
+            "description": "The Node ID of the pull request to modify.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "reviewEffort",
+            "description": "The effort level to use for the Copilot code review. Omit to use the default effort level.",
+            "type": {
+              "kind": "ENUM",
+              "name": "CopilotCodeReviewEffort",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "RequestCopilotCodeReviewPayload",
+        "description": "Autogenerated return type of RequestCopilotCodeReview.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "actor",
+            "description": "Identifies the actor who performed the event.",
+            "args": [],
+            "type": {
+              "kind": "INTERFACE",
+              "name": "Actor",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "failureReason",
+            "description": "The stable reason the request was denied or conflicted with an existing request. Null when the request succeeded.",
+            "args": [],
+            "type": {
+              "kind": "ENUM",
+              "name": "CopilotCodeReviewRequestReason",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "pullRequest",
+            "description": "The pull request that is getting requests.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "PullRequest",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "reviewRequest",
+            "description": "The Copilot code review request that was created or is already pending. Null when the request was denied or conflicted with an existing request.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "ReviewRequest",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "success",
+            "description": "Did the operation succeed?",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
               "ofType": null
             },
             "isDeprecated": false,
@@ -175085,6 +176551,98 @@
       },
       {
         "kind": "INPUT_OBJECT",
+        "name": "UpdateEnterpriseCopilotCodeReviewPolicyInput",
+        "description": "Autogenerated input type of UpdateEnterpriseCopilotCodeReviewPolicy",
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "enterpriseId",
+            "description": "The ID of the enterprise whose policy to update.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "policyState",
+            "description": "The policy to set. Standalone enterprises cannot delegate to organization administrators.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "EnterpriseCopilotCodeReviewPolicyState",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UpdateEnterpriseCopilotCodeReviewPolicyPayload",
+        "description": "Autogenerated return type of UpdateEnterpriseCopilotCodeReviewPolicy.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "policy",
+            "description": "The updated enterprise policy.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "EnterpriseCopilotCodeReviewPolicy",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
         "name": "UpdateEnterpriseDefaultRepositoryPermissionSettingInput",
         "description": "Autogenerated input type of UpdateEnterpriseDefaultRepositoryPermissionSetting",
         "isOneOf": false,
@@ -178497,6 +180055,346 @@
       },
       {
         "kind": "INPUT_OBJECT",
+        "name": "UpdateOrganizationCopilotCodeReviewPolicyInput",
+        "description": "Autogenerated input type of UpdateOrganizationCopilotCodeReviewPolicy",
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "organizationId",
+            "description": "The ID of the organization whose policy to update.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "state",
+            "description": "The policy to set.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "OrganizationCopilotCodeReviewPolicyState",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UpdateOrganizationCopilotCodeReviewPolicyPayload",
+        "description": "Autogenerated return type of UpdateOrganizationCopilotCodeReviewPolicy.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "conflict",
+            "description": "Why the policy was not updated. Null if the update succeeded.",
+            "args": [],
+            "type": {
+              "kind": "ENUM",
+              "name": "OrganizationCopilotCodeReviewPolicyConflict",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "policy",
+            "description": "The organization's current policy.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "OrganizationCopilotCodeReviewPolicy",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UpdateOrganizationCopilotCodeReviewRunnerConfigurationInput",
+        "description": "Autogenerated input type of UpdateOrganizationCopilotCodeReviewRunnerConfiguration",
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "allowRepositoryCustomization",
+            "description": "Whether repositories can use their own runner configuration. When omitted, the current effective value is kept.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "organizationId",
+            "description": "The ID of the organization whose runner configuration to set.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "runnerGroupName",
+            "description": "The runner group for a labeled runner.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "runnerLabels",
+            "description": "The runner labels for a labeled runner.",
+            "type": {
+              "kind": "LIST",
+              "name": null,
+              "ofType": {
+                "name": null,
+                "kind": "NON_NULL",
+                "ofType": {
+                  "name": "String",
+                  "kind": "SCALAR",
+                  "ofType": null
+                }
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "runnerType",
+            "description": "The type of runner.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "CopilotCodeReviewRunnerType",
+                "kind": "ENUM",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UpdateOrganizationCopilotCodeReviewRunnerConfigurationPayload",
+        "description": "Autogenerated return type of UpdateOrganizationCopilotCodeReviewRunnerConfiguration.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "runnerConfiguration",
+            "description": "The organization's updated runner configuration.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "OrganizationCopilotCodeReviewRunnerConfiguration",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UpdateOrganizationCopilotCodeReviewSettingsInput",
+        "description": "Autogenerated input type of UpdateOrganizationCopilotCodeReviewSettings",
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "defaultReviewEffort",
+            "description": "The default review effort for repositories that do not choose their own. INHERIT clears the organization's value.",
+            "type": {
+              "kind": "ENUM",
+              "name": "OrganizationCopilotCodeReviewEffortSetting",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "organizationId",
+            "description": "The ID of the organization whose settings to update.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UpdateOrganizationCopilotCodeReviewSettingsPayload",
+        "description": "Autogenerated return type of UpdateOrganizationCopilotCodeReviewSettings.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "conflict",
+            "description": "Why the settings were not updated. Null if the update succeeded.",
+            "args": [],
+            "type": {
+              "kind": "ENUM",
+              "name": "OrganizationCopilotCodeReviewSettingsConflict",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "settings",
+            "description": "The organization's current settings.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "OrganizationCopilotCodeReviewSettings",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
         "name": "UpdateOrganizationWebCommitSignoffSettingInput",
         "description": "Autogenerated input type of UpdateOrganizationWebCommitSignoffSetting",
         "isOneOf": false,
@@ -180814,6 +182712,130 @@
             "type": {
               "kind": "SCALAR",
               "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "inputFields": null,
+        "interfaces": [],
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "INPUT_OBJECT",
+        "name": "UpdateRepositoryCopilotCodeReviewSettingsInput",
+        "description": "Autogenerated input type of UpdateRepositoryCopilotCodeReviewSettings",
+        "isOneOf": false,
+        "fields": null,
+        "inputFields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "customInstructionsEnabled",
+            "description": "Whether reviews use the repository's custom instructions.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "mcpEnabled",
+            "description": "Whether reviews can use MCP servers.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "repositoryId",
+            "description": "The ID of the repository whose settings to update.",
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "ID",
+                "kind": "SCALAR",
+                "ofType": null
+              }
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "reviewEffort",
+            "description": "The review effort for the repository. INHERIT clears the repository's value.",
+            "type": {
+              "kind": "ENUM",
+              "name": "RepositoryCopilotCodeReviewEffortSetting",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "severityFilter",
+            "description": "Which review comment severities Copilot code review leaves out.",
+            "type": {
+              "kind": "ENUM",
+              "name": "CopilotCodeReviewSeverityFilter",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "interfaces": null,
+        "enumValues": null,
+        "possibleTypes": null
+      },
+      {
+        "kind": "OBJECT",
+        "name": "UpdateRepositoryCopilotCodeReviewSettingsPayload",
+        "description": "Autogenerated return type of UpdateRepositoryCopilotCodeReviewSettings.",
+        "isOneOf": null,
+        "fields": [
+          {
+            "name": "clientMutationId",
+            "description": "A unique identifier for the client performing the mutation.",
+            "args": [],
+            "type": {
+              "kind": "SCALAR",
+              "name": "String",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "settings",
+            "description": "The repository's current settings.",
+            "args": [],
+            "type": {
+              "kind": "OBJECT",
+              "name": "RepositoryCopilotCodeReviewSettings",
               "ofType": null
             },
             "isDeprecated": false,
