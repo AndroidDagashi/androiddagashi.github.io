@@ -39,9 +39,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.30.3":
-  version: 0.30.3
-  resolution: "@atproto/api@npm:0.30.3"
+"@atproto/api@npm:0.31.0":
+  version: 0.31.0
+  resolution: "@atproto/api@npm:0.31.0"
   dependencies:
     "@atproto/common-web": "npm:^0.5.17"
     "@atproto/lexicon": "npm:^0.7.19"
@@ -51,7 +51,7 @@ __metadata:
     multiformats: "npm:^13.0.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/69077baf4374fd083c97d3fdfdbf4bc7f6febe2ec0e4e789302331307cc6023936f8e541df2faccc4ba771c3a1d9c422a6dad1cc97f0772796d78e35f03d6d2e
+  checksum: 10c0/fb46726a49a58f175b0886bcebc6719eb8408e2e3ec44a1c3cba672d46ea98cf81120cc9d3eccc8d8ab505ee960ed4cb602439ca4fca65c1343b558ec9c9d12c
   languageName: node
   linkType: hard
 
@@ -4923,7 +4923,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "androiddagashi.github.io@workspace:."
   dependencies:
-    prettier: "npm:3.9.10"
+    prettier: "npm:3.10.0"
   languageName: unknown
   linkType: soft
 
@@ -10007,12 +10007,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.9.10":
-  version: 3.9.10
-  resolution: "prettier@npm:3.9.10"
+"prettier@npm:3.10.0":
+  version: 3.10.0
+  resolution: "prettier@npm:3.10.0"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/0b3531593aa6fb36ac6baf629cb058bda472c59a6938774f931fe55283a07c62e6f56e621b043a82d8a3e21fc284c08c34f9e539fc70072635f79b7bae1a1067
+  checksum: 10c0/f06fa310104fc6a27ce605bfb93d1afa336c7f88115029f8b6edafe59422cb905588bc4f8fe4f00d2d72a0d9020346fea8ffdc3bf342d4659e78ded1582aac61
   languageName: node
   linkType: hard
 
@@ -10994,7 +10994,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.30.3"
+    "@atproto/api": "npm:0.31.0"
     "@types/node": "npm:26.6.6"
     "@types/oauth": "npm:0.9.6"
     firebase-admin: "npm:14.5.0"
