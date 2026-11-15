@@ -1,0 +1,115 @@
+{
+  "id": "MI_kwDOB4jhdM4BJuhD",
+  "number": 453,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/453",
+  "title": "453 2026-11-15",
+  "closedAt": "2026-11-15T10:58:13Z",
+  "description": "Kotlin 2.5.0-Beta2にif elseの新しい書き方、Kotlin 2.5.0-Beta2で入ったFull Value classesの紹介、など",
+  "issues": {
+    "totalCount": 4,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAX2lcdk=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf________m_PAAAAAX2oKsc=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3972",
+        "title": "アプリの任意のレイヤでStateを共有できるAppStateライブラリ",
+        "body": "https://developer.android.com/topic/libraries/architecture/appstate\n\nTransform / StateStoreを定義しています。ユースケースとしては例えば、UIからDataStoreを繋ぎこむといったことができるそうです。\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3973",
+        "title": "Kotlin 2.5.0-Beta2に実験的に入ったif elseの新しい書き方",
+        "body": "https://proandroiddev.com/clean-up-your-conditional-logic-exploring-kotlin-2-5-0-beta2s-new-boolean-nullable-utilities-7854207156ea\nhttps://kotlinlang.org/docs/whatsnew-eap.html#standard-library\n\nメソッドチェインの様に add(\"aaa\").onTrue { ... } のように書ける様になります。\n",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3974",
+        "title": "Kotlin 2.5.0-Beta2で入ったexperimentalな機能 Full Value classesの紹介",
+        "body": "https://ardakazanci.com/posts/kotlin-2-5-full-value-classes/\n\n複数のフィールドを持たせられる様になる機能ですが、どのような動作になるかを詳細しています",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3975",
+        "title": "KoinライブラリのSkillsが追加",
+        "body": "https://blog.insert-koin.io/koin-skills-koin-the-right-way-with-your-agent-4fe1b49d511c\n\nClaudeコードなどのAIからより使いやすくなりそうです",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
