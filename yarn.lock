@@ -39,9 +39,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@atproto/api@npm:0.30.3":
-  version: 0.30.3
-  resolution: "@atproto/api@npm:0.30.3"
+"@atproto/api@npm:0.31.2":
+  version: 0.31.2
+  resolution: "@atproto/api@npm:0.31.2"
   dependencies:
     "@atproto/common-web": "npm:^0.5.17"
     "@atproto/lexicon": "npm:^0.7.19"
@@ -51,7 +51,7 @@ __metadata:
     multiformats: "npm:^13.0.0"
     tlds: "npm:^1.234.0"
     zod: "npm:^3.23.8"
-  checksum: 10c0/69077baf4374fd083c97d3fdfdbf4bc7f6febe2ec0e4e789302331307cc6023936f8e541df2faccc4ba771c3a1d9c422a6dad1cc97f0772796d78e35f03d6d2e
+  checksum: 10c0/91390ca51d51495232601e55d59cc76314df41126683cc4805c83614f3aa284ffe680246c9a692ad025044780b3961daa4eeefe1742687254cabec084a1b8e24
   languageName: node
   linkType: hard
 
@@ -5100,7 +5100,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "androiddagashi.github.io@workspace:."
   dependencies:
-    prettier: "npm:3.9.10"
+    prettier: "npm:3.10.1"
   languageName: unknown
   linkType: soft
 
@@ -7225,9 +7225,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"firebase-admin@npm:14.5.0":
-  version: 14.5.0
-  resolution: "firebase-admin@npm:14.5.0"
+"firebase-admin@npm:14.5.1":
+  version: 14.5.1
+  resolution: "firebase-admin@npm:14.5.1"
   dependencies:
     "@fastify/busboy": "npm:^3.0.0"
     "@firebase/database-compat": "npm:^2.1.4"
@@ -7243,7 +7243,7 @@ __metadata:
       optional: true
     "@google-cloud/storage":
       optional: true
-  checksum: 10c0/1fe458a42ed0e12ec62cb04432d3e8b204efe2e9b562f940e4058b946744d673ec47536299e8b55397e5a1ce56cd22496a28668c56a8ddf45931fcfa388728b0
+  checksum: 10c0/05517b547907d90716393c8f2b24d2689172767aaedc2a596ba43d5078816d386741bcc165a76882ae6822b61b05203199aa4d0e376770b3464814edab0b7976
   languageName: node
   linkType: hard
 
@@ -10168,12 +10168,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:3.9.10":
-  version: 3.9.10
-  resolution: "prettier@npm:3.9.10"
+"prettier@npm:3.10.1":
+  version: 3.10.1
+  resolution: "prettier@npm:3.10.1"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10c0/0b3531593aa6fb36ac6baf629cb058bda472c59a6938774f931fe55283a07c62e6f56e621b043a82d8a3e21fc284c08c34f9e539fc70072635f79b7bae1a1067
+  checksum: 10c0/e8c03ea575a30e15afa75a3700e94609050502980d7c906374aea4cf623eef4dce0816100126207e675cc1ed54b7dfce60f02dbee8d61ec27dc69ce5df6c3723
   languageName: node
   linkType: hard
 
@@ -11148,10 +11148,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
-    "@atproto/api": "npm:0.30.3"
+    "@atproto/api": "npm:0.31.2"
     "@types/node": "npm:26.6.6"
     "@types/oauth": "npm:0.9.6"
-    firebase-admin: "npm:14.5.0"
+    firebase-admin: "npm:14.5.1"
     oauth: "npm:0.10.2"
     site-common: "npm:^1.0.0"
     site-config: "npm:^1.0.0"
