@@ -1126,10 +1126,10 @@ export type ConvertPullRequestToDraftInput = {
 
 /** The effort level for a Copilot code review. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level). */
 export type CopilotCodeReviewEffort =
-  /** Copilot picks the effort for each pull request. */
-  | 'AUTO'
   /** Balanced effort and depth. */
   | 'BALANCED'
+  /** Copilot picks the effort for each pull request. */
+  | 'DYNAMIC'
   /** Lower effort, faster review. */
   | 'LITE'
   /** Highest effort, deepest review. */
@@ -1137,10 +1137,10 @@ export type CopilotCodeReviewEffort =
 
 /** A Copilot code review effort level. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level). */
 export type CopilotCodeReviewEffortLevel =
-  /** Copilot picks the effort for each pull request. */
-  | 'AUTO'
   /** Balanced effort and depth. */
   | 'BALANCED'
+  /** Copilot picks the effort for each pull request. */
+  | 'DYNAMIC'
   /** Lower effort, faster review. */
   | 'LITE'
   /** Highest effort, deepest review. */
@@ -1449,7 +1449,7 @@ export type CreateIssueFieldInput = {
   name: Scalars['String']['input']
   /** The options for the issue field if applicable. */
   options?: InputMaybe<Array<IssueFieldSingleSelectOptionInput>>
-  /** The ID of the organization where the issue field will be created. */
+  /** The ID of the organization or user where the issue field will be created. */
   ownerId: Scalars['ID']['input']
   /** The visibility of the issue field. */
   visibility?: InputMaybe<IssueFieldVisibility>
@@ -1493,6 +1493,8 @@ export type CreateIssueInput = {
   projectV2Ids?: InputMaybe<Array<Scalars['ID']['input']>>
   /** The Node ID of the repository. */
   repositoryId: Scalars['ID']['input']
+  /** The Node ID of the planning status the issue starts in. It must be an open one listed in the owner's planningStatuses. If you don't have permission to set the status, it's ignored and the issue starts in Backlog. Issue statuses are in preview and only available to accounts enrolled in the preview. */
+  statusId?: InputMaybe<Scalars['ID']['input']>
   /** The title for the issue. */
   title: Scalars['String']['input']
 }
@@ -1505,11 +1507,11 @@ export type CreateIssueTypeInput = {
   color?: InputMaybe<IssueTypeColor>
   /** Description of the new issue type */
   description?: InputMaybe<Scalars['String']['input']>
-  /** Whether or not the issue type is enabled on the org level */
+  /** Whether or not the issue type is enabled */
   isEnabled: Scalars['Boolean']['input']
   /** Name of the new issue type */
   name: Scalars['String']['input']
-  /** The ID for the organization on which the issue type is created */
+  /** The ID of the owner on which the issue type is created */
   ownerId: Scalars['ID']['input']
 }
 
@@ -2284,6 +2286,8 @@ export type DiffSide =
 export type DisablePullRequestAutoMergeInput = {
   /** A unique identifier for the client performing the mutation. */
   clientMutationId?: InputMaybe<Scalars['String']['input']>
+  /** Disable the stack auto-merge request covering this pull request. This disables auto-merge for all pull requests covered by that request. */
+  includeStack?: InputMaybe<Scalars['Boolean']['input']>
   /** ID of the pull request to disable auto merge on. */
   pullRequestId: Scalars['ID']['input']
 }
@@ -2424,6 +2428,8 @@ export type EnablePullRequestAutoMergeInput = {
   commitHeadline?: InputMaybe<Scalars['String']['input']>
   /** The expected head OID of the pull request. */
   expectedHeadOid?: InputMaybe<Scalars['GitObjectID']['input']>
+  /** Enable auto-merge for this pull request and any eligible pull requests below it in the stack. */
+  includeStack?: InputMaybe<Scalars['Boolean']['input']>
   /** The merge method to use. If omitted, defaults to `MERGE`. NOTE: when merging with a merge queue any input value for merge method is ignored. */
   mergeMethod?: InputMaybe<PullRequestMergeMethod>
   /** ID of the pull request to enable auto-merge on. */
@@ -3319,10 +3325,12 @@ export type IssueFieldValueFilter = {
 
 /** The visibility of an issue field. */
 export type IssueFieldVisibility =
-  /** All */
+  /** Visible to everyone who can see the issue. */
   | 'ALL'
-  /** Org Only */
+  /** Visible to members of the owning organization and, where repository context is supplied, collaborators on that repository. */
   | 'ORG_ONLY'
+  /** Visible to the owner and to collaborators on the repository the field is read through. */
+  | 'RESTRICTED'
 
 /** Ways in which to filter lists of issues. */
 export type IssueFilters = {
@@ -4137,10 +4145,10 @@ export type OrgUpdateMemberRepositoryCreationPermissionAuditEntryVisibility =
 
 /** The default Copilot code review effort to set for an organization. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level). */
 export type OrganizationCopilotCodeReviewEffortSetting =
-  /** Copilot picks the effort for each pull request. */
-  | 'AUTO'
   /** Balanced effort and depth. */
   | 'BALANCED'
+  /** Copilot picks the effort for each pull request. */
+  | 'DYNAMIC'
   /** Clear the organization's value so repositories inherit the default. */
   | 'INHERIT'
   /** Lower effort, faster review. */
@@ -5655,10 +5663,10 @@ export type RepositoryContributionType =
 
 /** The Copilot code review effort to set for a repository. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level). */
 export type RepositoryCopilotCodeReviewEffortSetting =
-  /** Copilot picks the effort for each pull request. */
-  | 'AUTO'
   /** Balanced effort and depth. */
   | 'BALANCED'
+  /** Copilot picks the effort for each pull request. */
+  | 'DYNAMIC'
   /** Clear the repository's value so it inherits the effort from its organization, enterprise, or GitHub's default. */
   | 'INHERIT'
   /** Lower effort, faster review. */
@@ -6431,6 +6439,18 @@ export type SetIssueFieldValueInput = {
   issueFields: Array<IssueFieldCreateOrUpdateInput>
   /** The ID of the Issue to set the field value on. */
   issueId: Scalars['ID']['input']
+}
+
+/** Autogenerated input type of SetIssueStatus */
+export type SetIssueStatusInput = {
+  /** A unique identifier for the client performing the mutation. */
+  clientMutationId?: InputMaybe<Scalars['String']['input']>
+  /** The ID of the issue this issue duplicates. Required when closing an issue as a duplicate. */
+  duplicateIssueId?: InputMaybe<Scalars['ID']['input']>
+  /** The ID of the issue to update. */
+  issueId: Scalars['ID']['input']
+  /** The ID of the planning status to set. */
+  statusId: Scalars['ID']['input']
 }
 
 /** Autogenerated input type of SetOrganizationInteractionLimit */
@@ -8074,6 +8094,8 @@ export type UpdateIssueInput = {
   state?: InputMaybe<IssueState>
   /** The desired issue state, with optional rationale, state reason, or duplicate reference. Mutually exclusive with `state`. */
   stateInput?: InputMaybe<IssueStateUpdateInput>
+  /** The Node ID of the planning status to move the issue into. It must be one listed in the owner's planningStatuses. The planning status decides whether the issue is open or closed and why, so the issue is closed or reopened if needed. `state` or `stateInput` can also be sent, but only with the same state and close reason as the planning status, and without `suggest: true`. When the planning status closes the issue, `stateInput.rationale` is used as the close rationale, and a Duplicate planning status takes the issue it duplicates from `stateInput.duplicateIssueId`. The issue's status can't be cleared. Issue statuses are in preview and only available to accounts enrolled in the preview. */
+  statusId?: InputMaybe<Scalars['ID']['input']>
   /** The title for the issue. */
   title?: InputMaybe<Scalars['String']['input']>
 }
@@ -8096,7 +8118,7 @@ export type UpdateIssueTypeInput = {
   color?: InputMaybe<IssueTypeColor>
   /** The description of the issue type */
   description?: InputMaybe<Scalars['String']['input']>
-  /** Whether or not the issue type is enabled for the organization */
+  /** Whether or not the issue type is enabled */
   isEnabled?: InputMaybe<Scalars['Boolean']['input']>
   /** The ID of the issue type to update */
   issueTypeId: Scalars['ID']['input']
