@@ -9,13 +9,12 @@
   "lockFileMaintenance": {
     "enabled": true
   },
-  "dependencyDashboard": true,
+  "dependencyDashboard": {
+    "enabled": true
+  },
   "packageRules": [
     {
-      "matchUpdateTypes": [
-        "minor",
-        "patch"
-      ],
+      "matchUpdateTypes": ["minor", "patch"],
       "groupName": "all non-major dependencies",
       "groupSlug": "all-minor-patch",
       "matchPackageNames": [
@@ -29,10 +28,7 @@
         "Node 26 は 2026-10 に LTS 化予定の Current だが、本プロジェクトは静的サイト生成で Node はビルド時にしか動作しないためリスク限定的と判断し先行採用する。",
         "27 系（2027-04 予定）へ自動追随しないよう上限は 26 に固定する。"
       ],
-      "matchPackageNames": [
-        "node",
-        "@types/node"
-      ],
+      "matchPackageNames": ["node", "@types/node"],
       "allowedVersions": "<=26",
       "groupName": "Node.js"
     },
@@ -41,17 +37,11 @@
         "Node 25 以降 corepack が Node に同梱されなくなったため、Yarn は mise の npm backend (npm:@yarnpkg/cli-dist) で調達している。",
         "mise.toml の @yarnpkg/cli-dist と package.json の packageManager は同じバージョンを保つ必要があるため、同一 PR に束ねてドリフトを防ぐ。"
       ],
-      "matchPackageNames": [
-        "@yarnpkg/cli-dist",
-        "yarn"
-      ],
+      "matchPackageNames": ["@yarnpkg/cli-dist", "yarn"],
       "groupName": "Yarn"
     },
     {
-      "matchPackageNames": [
-        "vue",
-        "vue-tsc"
-      ],
+      "matchPackageNames": ["vue", "vue-tsc"],
       "allowedVersions": "<=3",
       "enabled": true,
       "groupName": "Vue.js"
@@ -82,9 +72,7 @@
       "separateMultipleMajor": false
     },
     {
-      "matchPackageNames": [
-        "graphql-request"
-      ],
+      "matchPackageNames": ["graphql-request"],
       "enabled": true
     },
     {
@@ -92,13 +80,9 @@
         "graphql v17 で追加された検証（interface 実装フィールドの deprecation 整合性チェック）に GitHub GraphQL API の公開スキーマ自体が違反しており（Project.id 等は deprecated だが interface の Node.id は非 deprecated）、graphql:schema / graphql:codegen が失敗するため v16 系に固定する。",
         "live introspection なのでスキーマ再生成では回避できず、GitHub 側の修正待ち。修正されたらこの allowedVersions を外して v17 へ再挑戦する。"
       ],
-      "matchPackageNames": [
-        "graphql"
-      ],
+      "matchPackageNames": ["graphql"],
       "allowedVersions": "<17"
     }
   ],
-  "postUpdateOptions": [
-    "yarnDedupeHighest"
-  ]
+  "postUpdateOptions": ["yarnDedupeHighest"]
 }
