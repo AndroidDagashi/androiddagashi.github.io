@@ -1,0 +1,264 @@
+{
+  "id": "MI_kwDOB4jhdM4BKmLX",
+  "number": 454,
+  "url": "https://github.com/AndroidDagashi/AndroidDagashi/milestone/454",
+  "title": "454 2026-11-22",
+  "closedAt": "2026-11-22T13:09:19Z",
+  "description": "Compose 1.13が安定版に, Android開発者認証が2027年から世界展開, Playでアダプティブ対応が必須に, AI StudioでAndroidアプリ作成, Stingray 1 Canary, など",
+  "issues": {
+    "totalCount": 12,
+    "pageInfo": {
+      "startCursor": "Y3Vyc29yOnYyOpLPf________5vPAAAAAYXPC8U=",
+      "endCursor": "Y3Vyc29yOnYyOpLPf_______-0_PAAAAAYXPG9c=",
+      "hasPreviousPage": false,
+      "hasNextPage": false
+    },
+    "nodes": [
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3979",
+        "title": "Jetpack Compose November '26リリース、Compose 1.13とMaterial 3 1.5が安定版に",
+        "body": "Compose 1.13（BOM 2026.11.01）とMaterial 3 1.5.0が安定版になりました。FlexBoxとGridがstableになり、FlowRow/FlowColumnはFlexBoxに置き換わります。Compose版のConstraintLayout/MotionLayoutとCompose Material 2は非推奨になりました。Kotlin 2.2以上とcompileSdk 37.1が必要です。\nhttps://developer.android.com/blog/posts/jetpack-compose-november-2026-release",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Jetpack Compose",
+              "description": "",
+              "color": "006b75"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3980",
+        "title": "Android開発者認証が2027年1月から世界展開へ",
+        "body": "Android開発者認証が、2027年1月からGoogle Play、Galaxy Store、Xiaomiなど7つのストアで世界的に始まります。限定配布アカウントで共有できる端末は20台から50台に増えました。CIから登録状況を確認できるDeveloper ID Status APIとDeveloper Console APIも追加されています。\nhttps://developer.android.com/blog/posts/android-developer-verification-2027",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3981",
+        "title": "Google Playで2027年4月からアダプティブ対応が必須に",
+        "body": "2027年4月から、アダプティブアプリ品質ガイドラインのTier 3を満たさないアプリは、Google Playで公開も更新もできなくなります。同じ時期から、折りたたみ端末のスクリーンショット3枚も必須です。2027年8月にはAPI 37がターゲット必須になり、大画面での画面の向きとリサイズのオプトアウトもなくなります。\nhttps://developer.android.com/blog/posts/google-play-adaptive-quality-standards",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3982",
+        "title": "Google AI StudioでFirebase連携したAndroidアプリが作れるように",
+        "body": "Google AI StudioのBuildエージェントが、Kotlin AndroidアプリにCloud Firestore、Firebase Authentication、Firebase AI Logicを自動で組み込めるようになりました。普通のGoogleアカウントで自分用のGoogle Playライブラリに公開でき、エミュレータのHD表示や音声出力にも対応しています。Buildエージェントは内部で公式のAndroid CLIを使っているそうです。\nhttps://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AI",
+              "description": "",
+              "color": "fe6d43"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3983",
+        "title": "Android Studio Stingray 1 Canary、AGPのテストスイートとPlayへのテスト公開",
+        "body": "Android Studio Stingray 1のCanaryが出ました。AGPの`testOptions`で、ユニットテストやインストゥルメンテーションテストを名前付きのスイートにまとめられます。署名付きApp Bundleを作る流れからPlay Consoleのテストトラックへ直接アップロードでき、AIのタスクごとに使うモデルを選ぶModel Assignmentも追加されています。\nhttps://developer.android.com/studio/preview/features",
+        "labels": {
+          "nodes": [
+            {
+              "name": "AndroidStudio",
+              "description": "",
+              "color": "9BC363"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3984",
+        "title": "ライブラリ作者向け、アプリのR8最適化を邪魔しないkeepルールの書き方",
+        "body": "ライブラリに入れる広すぎるconsumer keepルールが、アプリ側のDEX最適化を妨げる問題についての解説。パッケージ全体を対象にしたkeepルールを避け、Android CLIの`analyze`でAARやJARが残しているクラスやメソッドを確認する方法を紹介しています。条件付きのkeepルールを生成するJetpack Keep（alpha）も触れられています。\nhttps://developer.android.com/blog/posts/ship-smarter-keep-rules-unblock-dex-optimization",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3985",
+        "title": "AOSPのチェックアウトを8秒未満にするGoogleのABFSがOSSに",
+        "body": "Googleが、Androidのソースツリー向けのファイルシステム兼ビルドキャッシュABFS（Another Build File Service）をオープンソースにしました。ファイルをハッシュで管理して必要になったときに読み込むため、AOSPのチェックアウトが約36分から8秒未満に、フルビルドが約80分から2分強に短縮されたそうです。\nhttps://developers.googleblog.com/accelerating-development-for-massive-git-repositories/",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3986",
+        "title": "CameraX 1.7.0が安定版に",
+        "body": "CameraX 1.7.0が安定版になりました。`preview { }`や`imageCapture { }`などのKotlin DSLが追加され、Camera2Interopの新しいAPIがオプトインなしで使えます。camera-composeのCameraXViewfinderはピンチズームとタップフォーカスに標準で対応し、QHD録画やコーデックの指定もできるようになりました。\nhttps://developer.android.com/jetpack/androidx/releases/camera#1.7.0",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3987",
+        "title": "Kotlin Toolchain 0.14、iOSアプリの公開とAndroidのdesugaringに対応",
+        "body": "Kotlin Toolchain 0.14で、`kotlin publish`によるiOSアプリの公開（プレビュー）、AndroidでのJava 8以降のAPIのdesugaring、Android依存のrelease/debugバリアント選択に対応しました。0.14.1では、同梱のJREがJava4Shell（CVE-2026-114938）の修正版に更新されています。\nhttps://github.com/JetBrains/kotlin-toolchain/releases/tag/v0.14.0",
+        "labels": {
+          "nodes": [
+            {
+              "name": "Kotlin",
+              "description": "",
+              "color": "EC953C"
+            },
+            {
+              "name": "X-Plat",
+              "description": "",
+              "color": "efd4a0"
+            }
+          ]
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3988",
+        "title": "AGP 9.5以降でaapt2がlinux/arm64に対応",
+        "body": "AGP 9.5.xから、aapt2がlinux/arm64に対応したそうです。Apple silicon MacのDockerコンテナや、arm64のCIなどのarm64 Linux環境でも、基本的なAndroidアプリならビルドできるようになります。NDKはまだ対応しておらず、r31で対応予定とのことです。\nhttps://qiita.com/Nabe1216/items/90f3804f098de42a6a3f\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3989",
+        "title": "Robolectric 4.18でlinux/arm64に対応",
+        "body": "Robolectric 4.18のネイティブランタイムに、Linux arm64向けのネイティブライブラリが入りました。Apple silicon MacのDockerコンテナや、GitHubの`ubuntu-24.04-arm`ランナーなどのarm64 Linux環境でも、設定を変えずにネイティブSQLiteやネイティブグラフィックスを使うテストを実行できます。ただし、レガシーSQLiteモードはarm64では使えません。\nhttps://github.com/robolectric/robolectric/releases/tag/robolectric-4.18\n",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      },
+      {
+        "url": "https://github.com/AndroidDagashi/AndroidDagashi/issues/3990",
+        "title": "WebViewの描画プロセスが落ちてもアプリを終了させないonRenderProcessGone",
+        "body": "Android 8.0以降、WebViewの描画プロセスが落ちたときに何もしないと、アプリごと終了してしまいます。onRenderProcessGoneでtrueを返してWebViewを破棄・作り直す方法を、ブラウザのタブやWorkManagerなどの使い方ごとに紹介しています。\nhttps://qiita.com/Sherry_Studio_/items/2d9afad37b5f3cd1e592",
+        "labels": {
+          "nodes": []
+        },
+        "comments": {
+          "totalCount": 0,
+          "pageInfo": {
+            "startCursor": null,
+            "endCursor": null,
+            "hasPreviousPage": false,
+            "hasNextPage": false
+          },
+          "nodes": []
+        }
+      }
+    ]
+  }
+}
