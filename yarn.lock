@@ -4226,12 +4226,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:26.6.6, @types/node@npm:>=13.7.0":
-  version: 26.6.6
-  resolution: "@types/node@npm:26.6.6"
+"@types/node@npm:*, @types/node@npm:26.6.10, @types/node@npm:>=13.7.0":
+  version: 26.6.10
+  resolution: "@types/node@npm:26.6.10"
   dependencies:
     undici-types: "npm:~8.9.0"
-  checksum: 10c0/5cb63f644f6e85a257a9cd2403cbcbe196760e2a35fd3ec9fb8b5cff663e14cc832b198cc17b53f870a2e30900ed45a1fb3f53e6589aba26b8e8c484aa672053
+  checksum: 10c0/d249c40c72ee1e61aeb9633263e5ebf428359206926a2ca12435cf7112e09a49aa5ef7a787e413fdf66b9ad8f41fb474eeb4e18e31e9b49a64033393e888ce56
   languageName: node
   linkType: hard
 
@@ -10856,7 +10856,7 @@ __metadata:
     "@graphql-codegen/typescript-document-nodes": "npm:7.0.0"
     "@graphql-codegen/typescript-operations": "npm:7.0.1"
     "@octokit/graphql": "npm:9.0.5"
-    "@types/node": "npm:26.6.6"
+    "@types/node": "npm:26.6.10"
     graphql: "npm:16.15.0"
     site-common: "npm:1.0.0"
     site-types: "npm:1.0.0"
@@ -10870,7 +10870,7 @@ __metadata:
   resolution: "site-api@workspace:packages/site-api"
   dependencies:
     "@types/fs-extra": "npm:11.0.4"
-    "@types/node": "npm:26.6.6"
+    "@types/node": "npm:26.6.10"
     fs-extra: "npm:11.4.1"
     rimraf: "npm:6.1.4"
     site-api-github: "npm:1.0.0"
@@ -10886,7 +10886,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site-common@workspace:packages/site-common"
   dependencies:
-    "@types/node": "npm:26.6.6"
+    "@types/node": "npm:26.6.10"
     typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
@@ -10895,7 +10895,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site-config@workspace:packages/site-config"
   dependencies:
-    "@types/node": "npm:26.6.6"
+    "@types/node": "npm:26.6.10"
     site-types: "npm:1.0.0"
     typescript: "npm:6.0.3"
   languageName: unknown
@@ -10905,7 +10905,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "site-rss@workspace:packages/site-rss"
   dependencies:
-    "@types/node": "npm:26.6.6"
+    "@types/node": "npm:26.6.10"
     feed: "patch:feed@npm%3A5.2.0#~/.yarn/patches/feed-npm-5.2.0-a770610f78.patch"
     markdown-it: "npm:15.0.3"
     site-common: "npm:1.0.0"
@@ -10932,7 +10932,7 @@ __metadata:
     "@tailwindcss/forms": "npm:0.5.11"
     "@tailwindcss/vite": "npm:4.3.5"
     "@types/lodash": "npm:4.17.27"
-    "@types/node": "npm:26.6.6"
+    "@types/node": "npm:26.6.10"
     "@types/twitter-text": "npm:3.1.10"
     date-fns: "npm:4.4.0"
     eslint: "npm:10.15.0"
@@ -10990,7 +10990,7 @@ __metadata:
   resolution: "sns-updater@workspace:packages/sns-updater"
   dependencies:
     "@atproto/api": "npm:0.32.2"
-    "@types/node": "npm:26.6.6"
+    "@types/node": "npm:26.6.10"
     "@types/oauth": "npm:0.9.6"
     firebase-admin: "npm:14.5.1"
     oauth: "npm:0.10.2"
