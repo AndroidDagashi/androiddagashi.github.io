@@ -1126,10 +1126,10 @@ export type ConvertPullRequestToDraftInput = {
 
 /** The effort level for a Copilot code review. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level). */
 export type CopilotCodeReviewEffort =
+  /** Copilot picks the effort for each pull request. */
+  | 'ADAPTIVE'
   /** Balanced effort and depth. */
   | 'BALANCED'
-  /** Copilot picks the effort for each pull request. */
-  | 'DYNAMIC'
   /** Lower effort, faster review. */
   | 'LITE'
   /** Highest effort, deepest review. */
@@ -1137,10 +1137,10 @@ export type CopilotCodeReviewEffort =
 
 /** A Copilot code review effort level. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level). */
 export type CopilotCodeReviewEffortLevel =
+  /** Copilot picks the effort for each pull request. */
+  | 'ADAPTIVE'
   /** Balanced effort and depth. */
   | 'BALANCED'
-  /** Copilot picks the effort for each pull request. */
-  | 'DYNAMIC'
   /** Lower effort, faster review. */
   | 'LITE'
   /** Highest effort, deepest review. */
@@ -1182,6 +1182,15 @@ export type CopilotCodeReviewRunnerType =
   | 'LABELED'
   /** Standard GitHub-hosted runners. */
   | 'STANDARD'
+
+/** The severity Copilot code review assigned to a review comment. */
+export type CopilotCodeReviewSeverity =
+  /** High severity. */
+  | 'HIGH'
+  /** Low severity. */
+  | 'LOW'
+  /** Medium severity. */
+  | 'MEDIUM'
 
 /** Which review comment severities Copilot code review leaves out. */
 export type CopilotCodeReviewSeverityFilter =
@@ -1493,7 +1502,7 @@ export type CreateIssueInput = {
   projectV2Ids?: InputMaybe<Array<Scalars['ID']['input']>>
   /** The Node ID of the repository. */
   repositoryId: Scalars['ID']['input']
-  /** The Node ID of the planning status the issue starts in. It must be an open one listed in the owner's planningStatuses. If you don't have permission to set the status, it's ignored and the issue starts in Backlog. Issue statuses are in preview and only available to accounts enrolled in the preview. */
+  /** The Node ID of the planning status the issue starts in. It must be an open one listed in the owner's planningStatuses. If you don't have permission to set the status, it's ignored and the issue starts in Backlog. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet. */
   statusId?: InputMaybe<Scalars['ID']['input']>
   /** The title for the issue. */
   title: Scalars['String']['input']
@@ -4145,10 +4154,10 @@ export type OrgUpdateMemberRepositoryCreationPermissionAuditEntryVisibility =
 
 /** The default Copilot code review effort to set for an organization. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level). */
 export type OrganizationCopilotCodeReviewEffortSetting =
+  /** Copilot picks the effort for each pull request. */
+  | 'ADAPTIVE'
   /** Balanced effort and depth. */
   | 'BALANCED'
-  /** Copilot picks the effort for each pull request. */
-  | 'DYNAMIC'
   /** Clear the organization's value so repositories inherit the default. */
   | 'INHERIT'
   /** Lower effort, faster review. */
@@ -5663,10 +5672,10 @@ export type RepositoryContributionType =
 
 /** The Copilot code review effort to set for a repository. For more information, see [Review effort level](https://docs.github.com/en/copilot/concepts/agent-capabilities/agent-powered-workflows-and-operations/code-review#review-effort-level). */
 export type RepositoryCopilotCodeReviewEffortSetting =
+  /** Copilot picks the effort for each pull request. */
+  | 'ADAPTIVE'
   /** Balanced effort and depth. */
   | 'BALANCED'
-  /** Copilot picks the effort for each pull request. */
-  | 'DYNAMIC'
   /** Clear the repository's value so it inherits the effort from its organization, enterprise, or GitHub's default. */
   | 'INHERIT'
   /** Lower effort, faster review. */
@@ -5936,6 +5945,8 @@ export type RepositoryRuleType =
   | 'TAG'
   /** Tag name pattern */
   | 'TAG_NAME_PATTERN'
+  /** The rule type is unavailable in the current schema. This value cannot be used to create or update a rule. */
+  | 'UNKNOWN'
   /** Only allow users with bypass permission to update matching refs. */
   | 'UPDATE'
   /** Require all changes made to a targeted branch to pass the specified workflows before they can be merged. */
@@ -8094,7 +8105,7 @@ export type UpdateIssueInput = {
   state?: InputMaybe<IssueState>
   /** The desired issue state, with optional rationale, state reason, or duplicate reference. Mutually exclusive with `state`. */
   stateInput?: InputMaybe<IssueStateUpdateInput>
-  /** The Node ID of the planning status to move the issue into. It must be one listed in the owner's planningStatuses. The planning status decides whether the issue is open or closed and why, so the issue is closed or reopened if needed. `state` or `stateInput` can also be sent, but only with the same state and close reason as the planning status, and without `suggest: true`. When the planning status closes the issue, `stateInput.rationale` is used as the close rationale, and a Duplicate planning status takes the issue it duplicates from `stateInput.duplicateIssueId`. The issue's status can't be cleared. Issue statuses are in preview and only available to accounts enrolled in the preview. */
+  /** The Node ID of the planning status to move the issue into. It must be one listed in the owner's planningStatuses. The planning status decides whether the issue is open or closed and why, so the issue is closed or reopened if needed. `state` or `stateInput` can also be sent, but only with the same state and close reason as the planning status, and without `suggest: true`. When the planning status closes the issue, `stateInput.rationale` is used as the close rationale, and a Duplicate planning status takes the issue it duplicates from `stateInput.duplicateIssueId`. The issue's status can't be cleared. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet. */
   statusId?: InputMaybe<Scalars['ID']['input']>
   /** The title for the issue. */
   title?: InputMaybe<Scalars['String']['input']>
@@ -8464,6 +8475,8 @@ export type UpdateRefsInput = {
 export type UpdateRepositoryCopilotCodeReviewSettingsInput = {
   /** A unique identifier for the client performing the mutation. */
   clientMutationId?: InputMaybe<Scalars['String']['input']>
+  /** Whether reviews can use public repository search. Can only be set when the public repository search setting is available for the repository. */
+  crossRepoContextEnabled?: InputMaybe<Scalars['Boolean']['input']>
   /** Whether reviews use the repository's custom instructions. */
   customInstructionsEnabled?: InputMaybe<Scalars['Boolean']['input']>
   /** Whether reviews can use MCP servers. */

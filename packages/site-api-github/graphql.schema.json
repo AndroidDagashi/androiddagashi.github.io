@@ -20986,14 +20986,14 @@
         "interfaces": null,
         "enumValues": [
           {
-            "name": "BALANCED",
-            "description": "Balanced effort and depth.",
+            "name": "ADAPTIVE",
+            "description": "Copilot picks the effort for each pull request.",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "DYNAMIC",
-            "description": "Copilot picks the effort for each pull request.",
+            "name": "BALANCED",
+            "description": "Balanced effort and depth.",
             "isDeprecated": false,
             "deprecationReason": null
           },
@@ -21022,14 +21022,14 @@
         "interfaces": null,
         "enumValues": [
           {
-            "name": "BALANCED",
-            "description": "Balanced effort and depth.",
+            "name": "ADAPTIVE",
+            "description": "Copilot picks the effort for each pull request.",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "DYNAMIC",
-            "description": "Copilot picks the effort for each pull request.",
+            "name": "BALANCED",
+            "description": "Balanced effort and depth.",
             "isDeprecated": false,
             "deprecationReason": null
           },
@@ -21218,6 +21218,36 @@
           {
             "name": "STANDARD",
             "description": "Standard GitHub-hosted runners.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          }
+        ],
+        "possibleTypes": null
+      },
+      {
+        "kind": "ENUM",
+        "name": "CopilotCodeReviewSeverity",
+        "description": "The severity Copilot code review assigned to a review comment.",
+        "isOneOf": null,
+        "fields": null,
+        "inputFields": null,
+        "interfaces": null,
+        "enumValues": [
+          {
+            "name": "HIGH",
+            "description": "High severity.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "LOW",
+            "description": "Low severity.",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "MEDIUM",
+            "description": "Medium severity.",
             "isDeprecated": false,
             "deprecationReason": null
           }
@@ -23873,7 +23903,7 @@
           },
           {
             "name": "statusId",
-            "description": "The Node ID of the planning status the issue starts in. It must be an open one listed in the owner's planningStatuses. If you don't have permission to set the status, it's ignored and the issue starts in Backlog. Issue statuses are in preview and only available to accounts enrolled in the preview.",
+            "description": "The Node ID of the planning status the issue starts in. It must be an open one listed in the owner's planningStatuses. If you don't have permission to set the status, it's ignored and the issue starts in Backlog. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet.",
             "type": {
               "kind": "SCALAR",
               "name": "ID",
@@ -55554,7 +55584,7 @@
           },
           {
             "name": "status",
-            "description": "The status of this issue, or null when it has none or issue statuses aren't available in the repository. Issue statuses are in preview and only available to accounts enrolled in the preview.",
+            "description": "The status of this issue, or null when it has none or issue statuses aren't available in the repository. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet.",
             "args": [],
             "type": {
               "kind": "OBJECT",
@@ -56322,7 +56352,7 @@
           },
           {
             "name": "viewerCanSetStatus",
-            "description": "Whether the viewer can set this issue's status. Issue statuses are in preview and only available to accounts enrolled in the preview.",
+            "description": "Whether the viewer can set this issue's status. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -77798,7 +77828,7 @@
           },
           {
             "name": "setIssueStatus",
-            "description": "Sets the status of an issue, closing or reopening it when the status calls for it. Issue statuses are in preview and only available to accounts enrolled in the preview.",
+            "description": "Sets the status of an issue, closing or reopening it when the status calls for it. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet.",
             "args": [
               {
                 "name": "input",
@@ -93374,7 +93404,7 @@
           },
           {
             "name": "planningStatuses",
-            "description": "The planning statuses issues in the organization's repositories can be in, or null when issue statuses aren't available. Planning statuses are returned in display order. Issue statuses are in preview and only available to accounts enrolled in the preview.",
+            "description": "The planning statuses issues in the organization's repositories can be in, or null when issue statuses aren't available. Planning statuses are returned in display order. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet.",
             "args": [
               {
                 "name": "after",
@@ -96810,14 +96840,14 @@
         "interfaces": null,
         "enumValues": [
           {
-            "name": "BALANCED",
-            "description": "Balanced effort and depth.",
+            "name": "ADAPTIVE",
+            "description": "Copilot picks the effort for each pull request.",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "DYNAMIC",
-            "description": "Copilot picks the effort for each pull request.",
+            "name": "BALANCED",
+            "description": "Balanced effort and depth.",
             "isDeprecated": false,
             "deprecationReason": null
           },
@@ -103102,7 +103132,7 @@
       {
         "kind": "OBJECT",
         "name": "PlanningStatus",
-        "description": "A planning status an issue can be in. Issue statuses are in preview and only available to accounts enrolled in the preview.",
+        "description": "A planning status an issue can be in. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet.",
         "isOneOf": null,
         "fields": [
           {
@@ -103168,12 +103198,12 @@
       {
         "kind": "OBJECT",
         "name": "PlanningStatusCategory",
-        "description": "The category of a planning status, which decides whether the issue is open or closed. Issue statuses are in preview and only available to accounts enrolled in the preview.",
+        "description": "The category of a planning status, which decides whether the issue is open or closed. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet.",
         "isOneOf": null,
         "fields": [
           {
             "name": "key",
-            "description": "A stable identifier for the category, such as `new`, `backlog`, `planned`, `started`, `completed`, `not_planned` or `duplicate`. Clients should expect new keys to be added.",
+            "description": "A stable identifier for the category, such as `backlog`, `planned`, `started`, `completed`, `not_planned` or `duplicate`. Clients should expect new keys to be added.",
             "args": [],
             "type": {
               "kind": "NON_NULL",
@@ -121284,6 +121314,18 @@
             "deprecationReason": null
           },
           {
+            "name": "copilotCodeReviewSeverity",
+            "description": "The Copilot code review severity of this comment, or null if unavailable.",
+            "args": [],
+            "type": {
+              "kind": "ENUM",
+              "name": "CopilotCodeReviewSeverity",
+              "ofType": null
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
             "name": "copilotCodeReviewSources",
             "description": "Sources reported as contributing to this comment; may be incomplete.",
             "args": [],
@@ -122812,6 +122854,18 @@
                 "kind": "OBJECT",
                 "ofType": null
               }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "resolutionReason",
+            "description": "The reason this thread was resolved, if one was recorded. Currently only Copilot code review threads record a reason.",
+            "args": [],
+            "type": {
+              "kind": "ENUM",
+              "name": "PullRequestReviewThreadResolutionReason",
+              "ofType": null
             },
             "isDeprecated": false,
             "deprecationReason": null
@@ -143309,7 +143363,7 @@
           },
           {
             "name": "planningStatuses",
-            "description": "The planning statuses issues in this repository can be in, or null when issue statuses aren't available for this repository or viewer. Planning statuses are returned in display order. Issue statuses are in preview and only available to accounts enrolled in the preview.",
+            "description": "The planning statuses issues in this repository can be in, or null when issue statuses aren't available for this repository or viewer. Planning statuses are returned in display order. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet.",
             "args": [
               {
                 "name": "after",
@@ -146273,14 +146327,14 @@
         "interfaces": null,
         "enumValues": [
           {
-            "name": "BALANCED",
-            "description": "Balanced effort and depth.",
+            "name": "ADAPTIVE",
+            "description": "Copilot picks the effort for each pull request.",
             "isDeprecated": false,
             "deprecationReason": null
           },
           {
-            "name": "DYNAMIC",
-            "description": "Copilot picks the effort for each pull request.",
+            "name": "BALANCED",
+            "description": "Balanced effort and depth.",
             "isDeprecated": false,
             "deprecationReason": null
           },
@@ -146330,6 +146384,22 @@
                     "ofType": null
                   }
                 }
+              }
+            },
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "crossRepoContextEnabled",
+            "description": "Whether reviews can use public repository search.",
+            "args": [],
+            "type": {
+              "kind": "NON_NULL",
+              "name": null,
+              "ofType": {
+                "name": "Boolean",
+                "kind": "SCALAR",
+                "ofType": null
               }
             },
             "isDeprecated": false,
@@ -150311,6 +150381,12 @@
           {
             "name": "TAG_NAME_PATTERN",
             "description": "Tag name pattern",
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "UNKNOWN",
+            "description": "The rule type is unavailable in the current schema. This value cannot be used to create or update a rule.",
             "isDeprecated": false,
             "deprecationReason": null
           },
@@ -180166,7 +180242,7 @@
           },
           {
             "name": "statusId",
-            "description": "The Node ID of the planning status to move the issue into. It must be one listed in the owner's planningStatuses. The planning status decides whether the issue is open or closed and why, so the issue is closed or reopened if needed. `state` or `stateInput` can also be sent, but only with the same state and close reason as the planning status, and without `suggest: true`. When the planning status closes the issue, `stateInput.rationale` is used as the close rationale, and a Duplicate planning status takes the issue it duplicates from `stateInput.duplicateIssueId`. The issue's status can't be cleared. Issue statuses are in preview and only available to accounts enrolled in the preview.",
+            "description": "The Node ID of the planning status to move the issue into. It must be one listed in the owner's planningStatuses. The planning status decides whether the issue is open or closed and why, so the issue is closed or reopened if needed. `state` or `stateInput` can also be sent, but only with the same state and close reason as the planning status, and without `suggest: true`. When the planning status closes the issue, `stateInput.rationale` is used as the close rationale, and a Duplicate planning status takes the issue it duplicates from `stateInput.duplicateIssueId`. The issue's status can't be cleared. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet.",
             "type": {
               "kind": "SCALAR",
               "name": "ID",
@@ -183444,6 +183520,18 @@
             "type": {
               "kind": "SCALAR",
               "name": "String",
+              "ofType": null
+            },
+            "defaultValue": null,
+            "isDeprecated": false,
+            "deprecationReason": null
+          },
+          {
+            "name": "crossRepoContextEnabled",
+            "description": "Whether reviews can use public repository search. Can only be set when the public repository search setting is available for the repository.",
+            "type": {
+              "kind": "SCALAR",
+              "name": "Boolean",
               "ofType": null
             },
             "defaultValue": null,
@@ -187237,7 +187325,7 @@
           },
           {
             "name": "planningStatuses",
-            "description": "The planning statuses issues in the user's repositories can be in, or null when issue statuses aren't available. Planning statuses are returned in display order. Issue statuses are in preview and only available to accounts enrolled in the preview.",
+            "description": "The planning statuses issues in the user's repositories can be in, or null when issue statuses aren't available. Planning statuses are returned in display order. Issue statuses are in public preview and subject to change. They're rolling out gradually, so they might not be available in your repositories yet.",
             "args": [
               {
                 "name": "after",
