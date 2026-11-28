@@ -1,3 +1,7 @@
+/* eslint-disable */
+import * as Types from '../globals'
+
+import { TypedDocumentString } from '../TypedDocumentString'
 /** Internal type. DO NOT USE DIRECTLY. */
 type Exact<T extends { [key: string]: unknown }> = { [K in keyof T]: T[K] }
 /** Internal type. DO NOT USE DIRECTLY. */
@@ -6,10 +10,6 @@ export type Incremental<T> =
   | {
       [P in keyof T]?: P extends ' $fragmentName' | '__typename' ? T[P] : never
     }
-/* eslint-disable */
-import * as Types from '../globals'
-
-import { TypedDocumentString } from '../TypedDocumentString'
 export type GetMilestoneDigestsVariables = Exact<{
   repoOwner: string
   repoName: string
